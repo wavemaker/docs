@@ -1,59 +1,144 @@
 ---
-last_update: { author: "Tejaswini K" }
+last_update: { author: "Sagar Vemala" }
 ---
 
 # Overview
 
-Fundamental concepts for building and deploying wavemaker web applications.
+This section explains how applications in WaveMaker are built, packaged, and deployed across different environments. WaveMaker provides flexible build and deployment options that support traditional enterprise setups, cloud-native architectures, and modern CI/CD workflows.
 
-## Introduction
+WaveMaker seamlessly integrates with Git-based version control systems, enabling teams to follow their existing DevOps practices with full control over source code, versioning, and release pipelines. The generated project structure follows standard Maven conventions, making it easy to build, extend, and integrate with enterprise tooling.
 
-This section explains how applications in **WaveMaker** are built, packaged, and deployed across different environments. WaveMaker provides flexible build and deployment options to support traditional enterprise setups, cloud-native architectures, and modern CI/CD workflows.
-
-Depending on your application and infrastructure needs, you can choose from multiple build formats and deployment strategies.
+Depending on your application architecture and infrastructure requirements, you can choose from multiple build formats and deployment strategies to suit your delivery model.
 
 ---
 
 ## What does Build & Deploy mean in WaveMaker?
 
-In WaveMaker, **Build** refers to the process of compiling and packaging your application (frontend and backend), while **Deploy** refers to running that packaged application in a target environment such as an web server, container platform, cloud infrastructure, or CDN.
+In WaveMaker, **Build** refers to the process of compiling and packaging your application artifcats, while **Deploy** refers to running that packaged application in a target environment such as an web server, container platform, cloud infrastructure, or CDN.
 
-A WaveMaker application typically consists of:
+A WaveMaker application can be seperated into primary (artifcats)layers: **Frontend** and **Backend**, each built using industry-standard frameworks.
 
-- **Frontend** – Angular-based UI
-- **Backend** – Java-based services and APIs
+## Frontend
+The frontend layer is responsible for user interaction and presentation.
 
-These components can be built and deployed together or independently.
+- **Web Applications** – Built using **React** or **Angular**, enabling responsive and component-driven UI development  
+- **Mobile Applications** – Built using **React Native**, allowing a single codebase to deliver native experiences on both Android and iOS platforms  
+
+## Backend
+The backend layer handles business logic, data processing, and integrations.
+
+- **Java and Spring-based services** following enterprise-grade architectural patterns  
+- **REST APIs** that expose business capabilities to frontend applications and external systems  
 
 ---
 
 ## Supported Build Types
 
-WaveMaker supports multiple build approaches:
+WaveMaker supports multiple build approaches for both **backend** and **frontend** layers, allowing teams to choose the most suitable deployment model based on their infrastructure and delivery requirements.
+
+---
+
+### Backend Build Options
+
+Backend builds package the server-side application, including business logic and APIs.
 
 - **WAR Build**  
-  Package the application as a WAR file for deployment on Java application servers.
+  Packages the backend as a WAR file for deployment on standard Java application servers such as Tomcat or JBoss.
 
-- **Docker-based Build**  
-  Build the application inside a Docker container and generate a runnable Docker image.
+- **Container-based Build**  
+  Builds the backend inside a Docker container and produces a runnable Docker image, suitable for container platforms and cloud-native deployments.
+
+---
+
+### Frontend Build Options
+
+Frontend builds focus on delivering the user interface for web and mobile platforms.
 
 - **Static Content Build**  
-  Build the frontend as static assets and deploy them to a CDN, while hosting the backend separately.
+  Generates static frontend assets that can be deployed to a CDN or static hosting service, while the backend is hosted independently.
 
-Each build type produces a different output and is suited for different deployment scenarios.
+- **Native Mobile Build**  
+  Produces native mobile application installers using React Native, enabling deployment to **Android** and **iOS** app stores through standard mobile build pipelines.
+
+---
+
+Each build type generates a different output artifact and is designed to support specific deployment and operational scenarios.
+
 
 ---
 
 ## Supported Deployment Options
 
-WaveMaker applications can be deployed using:
+WaveMaker applications can be deployed across a wide range of environments, giving teams the flexibility to choose what best fits their infrastructure, scalability, and operational needs.
 
-- **One-click deployment** from the platform
-- **Web servers** such as Apache Tomcat
-- **Container-based environments** (Docker)
-- **Custom CI/CD pipelines** (for example, Jenkins)
-- **Kubernetes clusters**
-- **Cloud and private infrastructure**(AWS,Azure)
-- **CDN-based deployments** for static content
+---
+
+### One-Click Deployment (Platform Managed)
+WaveMaker provides a built-in **one-click deployment** option that allows applications to be deployed instantly from the platform.  
+This is ideal for:
+- Quick validations and demos  
+- Development and testing environments  
+- Sharing working prototypes with stakeholders  
+
+The platform automatically provisions and manages the runtime environment.
+
+---
+
+### Web Server Deployment
+Applications can be deployed on standard Java web servers such as:
+
+- **Apache Tomcat**
+- **JBoss / WildFly**
+
+This option is suitable for enterprises that already manage traditional Java application servers and want full control over runtime configurations.
+
+---
+
+### Container-Based Deployment
+WaveMaker supports containerized deployments using **Docker**, enabling:
+
+- Consistent runtime environments across environments  
+- Easy integration with modern DevOps workflows  
+- Seamless deployment to container platforms and orchestration systems  
+
+Docker images generated by WaveMaker can be pushed to any container registry and deployed as needed.
+
+---
+
+### CI/CD Pipeline Integration
+WaveMaker integrates smoothly with enterprise CI/CD pipelines such as **Jenkins**, GitHub Actions, or other automation tools.
+
+This enables:
+- Automated builds and deployments  
+- Environment-based promotions (Dev → QA → Prod)  
+- Versioned and repeatable release processes  
+
+---
+
+### Kubernetes Deployment
+Applications can be deployed to **Kubernetes clusters** for high availability, scalability, and orchestration.  
+This is ideal for large-scale, cloud-native, or microservices-based deployments.
+
+---
+
+### Cloud and Private Infrastructure
+WaveMaker applications can be deployed on major cloud platforms or private data centers, including:
+
+- **AWS**
+- **Azure**
+- Private or on-premise infrastructure  
+
+This provides flexibility to align with enterprise security, compliance, and infrastructure strategies.
+
+---
+
+### CDN-Based Deployment (Frontend)
+For frontend-only or static web deployments, applications can be hosted on a **Content Delivery Network (CDN)**.  
+This improves performance, scalability, and global accessibility while backend services run independently.
+
+---
+
+Each deployment option is designed to support different scalability, security, and operational requirements, allowing teams to choose the most suitable deployment model for their application architecture.
+
 
 ---
