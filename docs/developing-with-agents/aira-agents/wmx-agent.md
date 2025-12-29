@@ -1,6 +1,6 @@
 ---
 title: WMX Agent
-last_update: { author: "Author Name" }
+sidebar_position: 7
 ---
 
 React Native WMX components
