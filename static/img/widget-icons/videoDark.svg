@@ -1,0 +1,12 @@
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="dsing3mnna">
+            <stop stop-color="#5575AF" stop-opacity=".3" offset="0%"/>
+            <stop stop-color="#2B4077" stop-opacity=".3" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <rect stroke="#445C9B" fill="url(#dsing3mnna)" x=".5" y=".5" width="39" height="39" rx="6"/>
+        <path d="M9.667 14v7.28a2 2 0 0 0 2 2h16.666a2 2 0 0 0 2-2V14a2 2 0 0 0-2-2H11.667a2 2 0 0 0-2 2zm5.52 12.215a1.263 1.263 0 0 1-.04.667h15.52a.333.333 0 1 0 0-.667h-15.48zm-2.48 0H9.333a.333.333 0 1 0 0 .667h3.415a1.26 1.26 0 0 1-.041-.667zm1.24-.341a.597.597 0 0 0-.41.16l-.014.015a.599.599 0 0 0-.015.835l.015.014a.599.599 0 1 0 .848-.849h.001v-.001a.597.597 0 0 0-.425-.174zm8.389-7.945-2.17 1.252-.018.01-2.153 1.243a.333.333 0 0 1-.497-.287h-.002v-5.013a.333.333 0 0 1 .527-.271l2.143 1.237 2.171 1.253a.332.332 0 0 1-.001.576" fill="#EB9B74" fill-rule="nonzero"/>
+    </g>
+</svg>

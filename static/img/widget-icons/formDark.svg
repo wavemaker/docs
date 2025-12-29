@@ -1,0 +1,16 @@
+<svg width="41" height="41" viewBox="0 0 41 41" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="tasan7un1a">
+            <stop stop-color="#5575AF" stop-opacity=".3" offset="0%"/>
+            <stop stop-color="#2B4077" stop-opacity=".3" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g transform="translate(.462 .333)" fill="none" fill-rule="evenodd">
+        <rect stroke="#445C9B" fill="url(#tasan7un1a)" x=".5" y=".5" width="39" height="39" rx="6"/>
+        <g transform="translate(6.538 10)" stroke="#7DB0FF">
+            <rect x=".5" y="7.5" width="25" height="4" rx="2"/>
+            <rect x=".5" y="14.5" width="25" height="4" rx="2"/>
+            <rect x=".5" y=".5" width="25" height="4" rx="2"/>
+        </g>
+    </g>
+</svg>

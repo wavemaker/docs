@@ -1,0 +1,18 @@
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="sz2l1xf18a">
+            <stop stop-color="#5575AF" stop-opacity=".3" offset="0%"/>
+            <stop stop-color="#2B4077" stop-opacity=".3" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <rect stroke="#445C9B" fill="url(#sz2l1xf18a)" x=".5" y=".5" width="39" height="39" rx="6"/>
+        <g transform="translate(4 14)">
+            <path d="M30 0a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h28zm-.302 1.469H2.368a1 1 0 0 0-.992.883l-.007.117v6.25a1 1 0 0 0 .883.992l.117.007h27.33a1 1 0 0 0 .993-.883l.006-.117V2.47a1 1 0 0 0-.883-.993l-.117-.007z" fill="#EB9B74" fill-rule="nonzero"/>
+            <path d="M3.044 2.315H10.3a.7.7 0 0 1 .7.7v5.032a.7.7 0 0 1-.7.7H3.044a.7.7 0 0 1-.7-.7V3.015a.7.7 0 0 1 .7-.7z" fill="#EB9B74"/>
+            <rect fill="#EB9B74" x="13.677" y="4.559" width="6" height="2" rx="1"/>
+            <rect fill="#EB9B74" x="23" y="4.559" width="6" height="2" rx="1"/>
+            <rect fill="#FFF" x="3.573" y="4.559" width="6" height="2" rx="1"/>
+        </g>
+    </g>
+</svg>
