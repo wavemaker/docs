@@ -19,7 +19,8 @@ export default function RedocDocs({ specUrl }) {
         margin: 20px 0 !important;
       }
       .swagger-ui .scheme-container {
-        display: none !important;
+        display: block !important;
+        margin: 20px 0 !important;
       }
       .swagger-ui .models {
         display: none !important;

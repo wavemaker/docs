@@ -199,11 +199,11 @@ SELECT * FROM function_name(:param1, :param2)
 
 ---
 
-## Stored Procedure Architecture
+<!-- ## Stored Procedure Architecture
 
 When a stored procedure is saved, WaveMaker generates backend Java artifacts to execute it securely via REST.
 
-![alt text](assets/queries.png)
+![alt text](assets/queries.png) -->
 
 ### Generated Models
 

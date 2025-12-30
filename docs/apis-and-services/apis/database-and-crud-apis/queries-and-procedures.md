@@ -88,11 +88,11 @@ WaveMaker maps query types to the appropriate HTTP methods:
 
 ---
 
-### Query Architecture 
+<!-- ### Query Architecture 
 
 When a query is saved, WaveMaker generates supporting Java code:
 
-![alt text](assets/queries.png)
+![alt text](assets/queries.png) -->
 
 #### Models
 
