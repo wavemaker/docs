@@ -39,6 +39,21 @@ export default function RedocDocs({ specUrl }) {
       .swagger-ui section.models {
         display: none !important;
       }
+      .swagger-ui #operations-UserController {
+        display: none !important;
+      }
+      .swagger-ui .opblock-tag[data-tag="UserController"] {
+        display: none !important;
+      }
+      .swagger-ui .opblock-tag-section[data-tag="UserController"] {
+        display: none !important;
+      }
+      .swagger-ui div[id*="UserController"] {
+        display: none !important;
+      }
+      .swagger-ui .opblock[id*="/hrdb/User"] {
+        display: none !important;
+      }
     `;
     document.head.appendChild(style);
 

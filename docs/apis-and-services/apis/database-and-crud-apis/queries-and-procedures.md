@@ -73,9 +73,13 @@ Each parameter must be assigned a data type.
 
 Parameters can be bound to:
 
-- Logged-in user properties
-- Current date or time
-- Other server-side values
+- Logged-in User ID
+- Logged-in User Name
+- Current Date
+- Current Time
+- Current Date and Time
+
+Parameters can also be bound to **App Environment Properties**, enabling different values to be supplied based on the deployment environment (development, testing, production).
 
 UI components can pass values to query parameters through application variables.
 
@@ -141,7 +145,27 @@ The structure shown below illustrates how query-related artifacts are generated 
 
 ### Generated Project Structure
 
-![Query Architecture](assets/queries.png)
+
+```text
+services/
+└── hrdb/                             # Main HR database service
+    ├── designtime/                   
+    └── src/
+        └── com/
+            └── myapp/
+                └── hrdb/
+                    ├── controller/     # REST controllers for query execution
+                    │   └── QueryExecutionController.java
+                    │
+                    ├── models/         # Generated POJOs
+                    │   └── query/
+                    │       └── <QueryName>Response.java
+                    │
+                    └── service/        # Query execution services
+                        ├── HrdbQueryExecutorService.java
+                        └── HrdbQueryExecutorServiceImpl.java
+```
+
 
 Any query created and saved in this Database Service is mapped into the models, service, and controller layers shown above.
 

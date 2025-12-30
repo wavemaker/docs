@@ -221,7 +221,28 @@ When a stored procedure is saved, WaveMaker generates backend code to expose it 
 
 ### Generated Project Structure
 
-![Procedure Architecture](assets/procedures.png)
+```text
+services/
+└── hrdb/                             # Main HR database service
+    ├── designtime/                   # Design-time metadata and configuration
+    └── src/
+        └── com/
+            └── myapp/
+                └── hrdb/
+                    ├── controller/       # REST controllers for procedure execution
+                    │   └── ProcedureExecutionController.java
+                    │
+                    ├── models/           # Generated request and response POJOs
+                    │   └── procedure/
+                    │       ├── <ProcedureName>Request.java
+                    │       └── <ProcedureName>Response.java
+                    │
+                    └── service/          # Procedure execution services
+                        ├── HrdbProcedureExecutorService.java
+                        └── HrdbProcedureExecutorServiceImpl.java
+```
+
+<!-- ![Procedure Architecture](assets/procedures.png) -->
 
 Any query created and saved in this Database Service is mapped into the models, service, and controller layers shown above.
 
