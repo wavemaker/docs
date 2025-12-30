@@ -33,7 +33,7 @@ Before starting One-click Deployment, ensure the following:
 ## Deploying an Application
 
 1. Click the **Deploy** icon in the Studio header to initiate the deployment process.  
-   ![Deploy icon](../../../build-and-deploy/assets/images/oneclickdeployment.png)  
+   ![Deploy icon](../assets/images/oneclickdeployment.png)  
    During deployment, WaveMaker performs:
    - Application validation using Inspection Framework  
    - Build process  
