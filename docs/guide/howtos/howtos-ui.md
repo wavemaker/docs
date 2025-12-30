@@ -1,7 +1,8 @@
 ---
-last_update: { author: "Author Name" }
 title: "How Tos: UI Layouts"
 id: "howtos-ui"
+last_update:
+  author: "Author Name"
 ---
 ---
 ## Adding Pages
@@ -14,7 +15,7 @@ Most of the Projects need to have multiple pages and your Application needs to n
 - Give a name to the page and choose the type of the page. You can choose from page, partial, popover, header, topnav, leftnav, rightnav or footer. 
 
 
-- Choose the page template and the page layout you want to use. Depending upon the type of the page being added the options are presented. See Page Layouts and Page Templates for more details (these pages will be migrated soon). 
+- Choose the page template and the page layout you want to use. Depending upon the type of the page being added the options are presented. See here for more details on the Page Layouts and Page Templates. 
 
 
 - Once you have created the new page, an entry is created in the **Files** section of the **Files and Services** panel. 
