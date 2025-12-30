@@ -2,130 +2,237 @@
 last_update: { author: "Priyanka Bhadri" }
 ---
 
-# Queries 
+# Queries and Procedures
 
-WaveMaker lets you build custom database queries and integrate them directly into your applications. Queries help you fetch, filter, or manipulate data across one or more tables — ideal for custom reports, dashboards, or dynamic UI behavior. Every query you save in WaveMaker is automatically exposed as a **REST API** that your UI layer can call. 
 
----
 
-## Query Editor
+WaveMaker supports creating **custom database queries** to address data access scenarios that are not covered by standard CRUD operations. Queries allow you to retrieve, filter, aggregate, and modify data across one or more database tables.
 
-Use the **Query tab** inside the **Database Designer** to write and manage your database queries.
-
-- The editor supports **IntelliSense**, so pressing `Ctrl + Space` shows table and column suggestions. 
-- You can write queries in either **Native SQL** or **Hibernate Query Language (HQL)**.
-- Queries can include **parameters**, which can be marked as *required* — the associated app variable won’t run until all required values are provided. 
-- After writing a query, you must **execute** it successfully before saving. Only then will the Save button become active. 
-- Saved queries appear under **Database Resources** and can be reopened for edits. 
+Each saved query is automatically exposed as a **REST API**, which can be consumed by application widgets, variables, or external clients.
 
 ---
 
-## Generated APIs
+## When to Use Queries
 
-When you save a query, WaveMaker generates a **REST API** for it. 
+Use database queries in the following scenarios:
 
-- By default, a query yields a **paginated** API returning a list of records. 
-- If your query returns at most a single row, you can set **Records → Single** to return just one object instead of pagination. 
-- For every paginated query, WaveMaker also creates an **Export API** for downloading results as **Excel/CSV**.
----
-
-## Types of Queries
-
-WaveMaker supports two query types:
-
-1. **Native SQL:** Direct database SQL, specific to your database’s dialect. 
-2. **HQL (Hibernate Query Language):** A database-agnostic query language based on Java entities. 
+- When CRUD APIs do not meet the required data logic
+- When joining multiple tables is required
+- When aggregation or calculated fields are needed
+- When data must be filtered dynamically at runtime
+- When paginated or exportable result sets are required
 
 ---
 
-## Using Queries in Your App
+## Creating Queries
 
-To use your query in the application:
+Queries are created and managed from the **Query** tab in the **Database Designer**.
 
-1. Drag a **Data Table** (or another widget) onto your page. :contentReference
-2. Set **Retrieve Data from → Services**. A new variable is created automatically. 
-3. Select **Database APIs** as the service type and choose your query operation. 
-4. Configure pagination and fields to display. 
-5. Run the app to see results returned in the widget. 
+### Query Editor
+
+The Query Editor provides the following capabilities:
+
+- **IntelliSense support**  
+  Press `Ctrl + Space` to view available tables, columns, and query suggestions.
+
+- **Supported query languages**
+  - **Native SQL** – database-specific SQL syntax
+  - **HQL (Hibernate Query Language)** – entity-based, database-independent queries
+
+- **Query parameters**
+  - Named parameters can be defined
+  - Parameters can be marked as required
+  - Queries cannot be executed until all required parameters are provided
+
+- **Execution requirement**
+  - Queries must be executed successfully before the **Save** option is enabled
+
+- **Query management**
+  - Saved queries appear under **Database Resources**
+  - Queries can be reopened and modified as needed
+
+:::note
+Queries must be executed successfully before they can be saved.
+:::
+
+---
+
+## Choosing Between SQL and HQL
+
+WaveMaker supports both Native SQL and HQL. Use the following guidelines to select the appropriate option:
+
+| Scenario | Recommended Option |
+|--------|-------------------|
+| Database-specific features | Native SQL |
+| Database-independent logic | HQL |
+| Entity-based relationships | HQL |
+| Complex joins or aggregations | Native SQL |
+
 ---
 
 ## Parameterized Queries
 
-Rather than hard-coding values, you can add **named parameters** to your SQL using the `:` prefix. 
+WaveMaker supports **named parameters** in queries using the `:` prefix. Parameters allow values to be supplied dynamically at runtime.
 
-Example:
+### Example
+
 ```sql
 select d.NAME,
        sum(ENDDATE - STARTDATE) as days
 from VACATION v, EMPLOYEE e, DEPARTMENT d
 where e.EID = v.EMPID
-and e.DEPTID = d.DEPTID
-and d.DEPTID = :did
+  and e.DEPTID = d.DEPTID
+  and d.DEPTID = :did
 group by d.NAME
 ```
 
-When you add a parameter, specify its data type.
+### Parameter Configuration
 
-Parameters can be bound to server-side properties like:
-- Logged-in User ID
-- Current date
+Each parameter must be assigned a data type.
+
+Parameters can be bound to:
+
+- Logged-in user properties
+- Current date or time
 - Other server-side values
 
-You can also bind values from UI widgets (e.g., a dropdown) by connecting query variables to widget data.
+UI widgets can pass values to query parameters through application variables.
 
 ---
 
-## REST Operation Types
+## Generated REST APIs
 
-WaveMaker maps query types to the appropriate HTTP methods:
+When a query is saved, WaveMaker automatically exposes it as a REST API. These APIs can be consumed by application widgets, variables, or external clients.
+
+### API Behavior
+
+**SELECT queries**
+
+- Exposed as paginated APIs by default
+- Return a list of records with pagination metadata
+
+**Single-record queries**
+
+- If a query returns at most one row, set **Records → Single**
+- The API returns a single object instead of a paginated response
+
+**Export APIs**
+
+- Generated for all paginated SELECT queries
+- Support exporting results in Excel and CSV formats
+
+### REST Operation Mapping
+
+WaveMaker maps query types to HTTP methods as shown below:
 
 | Query Type | HTTP Method |
 |------------|-------------|
-| SELECT | GET |
-| INSERT | POST |
-| UPDATE | PUT |
-| DELETE | DELETE |
+| SELECT     | GET         |
+| INSERT     | POST        |
+| UPDATE     | PUT         |
+| DELETE     | DELETE      |
 
 ---
 
-<!-- ### Query Architecture 
+<!-- ## Using Queries in an Application
 
-When a query is saved, WaveMaker generates supporting Java code:
+Query APIs can be consumed directly in the application UI using WaveMaker widgets.
 
-![alt text](assets/queries.png) -->
+### Steps
 
-#### Models
+1. Drag a Data Table or another data-driven widget onto the page.
+2. Set **Retrieve Data From → Services**.
+3. A variable is created automatically.
+4. Select **Database APIs** as the service type.
+5. Choose the required query operation.
+6. Configure pagination and display fields.
+7. Run the application to view the results.
 
-- For **SELECT** queries, a `Response` POJO is generated (e.g., `<queryName>Response`) with fields matching the query output.
-- For **INSERT/UPDATE** queries, a `Request` POJO is generated.
-- Models are placed under the package: `<service_package>.models.query`.
-- If an HQL query returns existing entity types, existing model classes may be reused instead of generating new ones. 
+--- -->
 
-#### Services
+## Query Architecture
 
-- A `QueryExecutorService` class is generated in the `<service_package>.service` package.
-- Each query has an `execute<queryName>` method that:
-  - Accepts parameters (including pageable for pagination).
-  - Returns a `Response` object for SELECT queries or an `int` for non-SELECT queries.
-- For paginated queries, the return type is `Page<<queryName>Response>`.
-- Export methods (`export<queryName>`) are added for queries that return paginated data. 
+When a query is saved, WaveMaker generates backend components that follow a layered architecture.
 
-#### Controllers
+### Generated Models
 
-- A `QueryExecutorController` class is generated in `<service_package>.controller`.
-- REST endpoints corresponding to each query and its export API are exposed.
-- Methods use the service layer’s signatures to respond to API requests. 
+**SELECT queries**
+
+- Generate a response POJO named `<queryName>Response`
+- Fields correspond to the query output columns
+
+**INSERT and UPDATE queries**
+
+- Generate request POJOs
+
+**Model package location**
+
+```
+<service_package>.models.query
+```
+
+**HQL queries**
+
+- If an HQL query returns an existing entity, the corresponding entity model may be reused
+
+---
+
+### Generated Services
+
+A `QueryExecutorService` class is generated in:
+
+```
+<service_package>.service
+```
+
+For each query, an `execute<queryName>` method is generated:
+
+- Accepts query parameters and `Pageable` for pagination
+- Returns:
+  - `<queryName>Response` for SELECT queries
+  - `Page<<queryName>Response>` for paginated SELECT queries
+  - `int` for INSERT, UPDATE, and DELETE queries
+
+Export methods (`export<queryName>`) are generated for paginated SELECT queries.
+
+---
+
+### Generated Controllers
+
+A `QueryExecutorController` class is generated in:
+
+```
+<service_package>.controller
+```
+
+Responsibilities include:
+
+- Exposing REST endpoints for query execution
+- Delegating query execution to the service layer
+- Handling export API requests
 
 ---
 
 ## Notes and Limitations
 
-- WaveMaker implements its own internal pagination, so using the **LIMIT** clause in queries is not supported
-- When testing APIs, parameter names must match column names exactly (case matters) in filter queries
-- Boolean values in query filters must be `true` or `false` (not 1/0)
+- WaveMaker applies internal pagination
+- SQL LIMIT clauses are not supported
+
+When testing query APIs:
+
+- Parameter names must match column names exactly
+- Case sensitivity applies in filter queries
+- Boolean filter values must be specified as:
+  - `true` or `false`
+  - Not `1` or `0`
+- In the Test tab, ensure that the sample value for the `q` parameter is provided in the correct format.
+
+ Example:
+   ```text
+name = 'Engineering'
+```
 
 ---
 
 ## Summary
-
-By following these steps, you can write powerful custom data logic directly in your database and expose it through auto-generated APIs — easily consumed by widgets and variables in your WaveMaker application.
+Database queries in WaveMaker enable implementing custom data access logic while automatically exposing that logic as REST APIs. These APIs can be integrated directly with UI components and backend services, providing flexibility beyond standard CRUD operations.
