@@ -18,9 +18,20 @@ export default function RedocDocs({ specUrl }) {
       .swagger-ui .info {
         margin: 20px 0 !important;
       }
+      .swagger-ui .info .base-url {
+        display: none !important;
+      }
+      .swagger-ui .info hgroup.main a {
+        display: none !important;
+      }
       .swagger-ui .scheme-container {
-        display: block !important;
-        margin: 20px 0 !important;
+        display: none !important;
+      }
+      .swagger-ui .servers {
+        display: none !important;
+      }
+      .swagger-ui .servers-title {
+        display: none !important;
       }
       .swagger-ui .models {
         display: none !important;

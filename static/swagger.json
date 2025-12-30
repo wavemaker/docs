@@ -3,7 +3,7 @@
   "info" : {
     "description" : "Swagger API documentation for hrdb",
     "version" : "2.0",
-    "title" : "hrdbService Swagger Documentation",
+    "title" : "HRDB Service Swagger Documentation",
     "x-WM-SERVICE_ID" : "hrdb",
     "x-WM-SERVICE_TYPE" : "DataService"
   },

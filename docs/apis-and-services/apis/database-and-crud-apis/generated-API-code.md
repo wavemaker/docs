@@ -66,7 +66,7 @@ services/
 
 - Contains application and business logic
 - Responsible for business rule implementation, transaction management, and coordinating between controllers and repositories
-- Recommended layer for custom logic; changes here are not overwritten during regeneration or upgrades
+- Changes here are not overwritten during regeneration or upgrades
 
 ---
 
