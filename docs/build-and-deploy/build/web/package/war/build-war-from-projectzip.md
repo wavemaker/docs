@@ -49,7 +49,7 @@ mvn clean install -Pdeployment
 ```
 
 - This will generate a **project war**  file in the target directory. This file has both frontend artifacts (HTML, CSS, JS, images, etc), and backend artifacts (Java Classes).
-- This can be deployed into any webserver like Tomcat. Refer [Tomcat Deployment](../../../deploy/deploy-to-web-server.md).
+- This can be deployed into any webserver like Tomcat. Refer [Tomcat Deployment](../../../../deploy/deploy-to-web-server.md).
 
 :::note
 To learn how to generate a WAR file using Maven in WaveMaker, watch the video below:

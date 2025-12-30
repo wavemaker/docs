@@ -42,10 +42,10 @@ WaveMaker supports multiple build approaches for both **backend** and **frontend
 
 Backend builds package the server-side application, including business logic and APIs.
 
-- **[WAR Build](../build-and-deploy/web/build/package/war/build-war-from-studio.md)**
+- **[WAR Build](./build/web/package/war/build-war-from-studio.md)**
   Packages the backend as a WAR file for deployment on standard Java application servers such as Tomcat or JBoss.
 
-- **[Container-based Build](../build-and-deploy/web/build/package/docker/docker-image.md)**  
+- **[Container-based Build](./build/web/package/docker/docker-image.md)**  
   Builds the backend inside a Docker container and produces a runnable Docker image, suitable for container platforms and cloud-native deployments.
 
 ---
@@ -87,7 +87,7 @@ The platform automatically provisions and manages the runtime environment.
 ### Web Server Deployment
 Applications can be deployed on standard Java web servers such as:
 
-- **[Apache Tomcat](../build-and-deploy/web/deploy/deploy-to-web-server.md)**
+- **[Apache Tomcat](./deploy/deploy-to-web-server.md)**
 - **JBoss / WildFly**
 
 This option is suitable for enterprises that already manage traditional Java application servers and want full control over runtime configurations.

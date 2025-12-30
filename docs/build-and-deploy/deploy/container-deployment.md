@@ -12,7 +12,7 @@ This section explains how to deploy a WaveMaker application as a **Docker contai
 ## Introduction
 A Docker image is required to create a container.
 For instructions on building a Docker image, see:  
-[Build Application with Docker](../build/package/docker/docker-image.md)
+[Build Application with Docker](../build/web/package/docker/docker-image.md)
 
 ---
 

@@ -73,7 +73,7 @@ docker build --build-arg profile=deployment --build-arg wavemaker_version=11.9.1
 ```
 
 This will create docker image of your wavemaker application. You can use this and create a docker container. 
-Refer  [Deploy a docker container](../../../deploy/container-deployment.md)
+Refer  [Deploy a docker container](../../../../deploy/container-deployment.md)
 
 :::note
 The wavemakerapp/app-builder and wavemakerapp/app-runtime-tomcat Docker images are prepackaged with all the required software, dependencies, and libraries needed to build and deploy WaveMaker applications in Docker containers.

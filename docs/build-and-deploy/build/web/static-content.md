@@ -95,4 +95,4 @@ To learn how to build static content file in WaveMaker, watch the video below:
 
 ## Related Documentation
 
-- [Deploy Static Content to AWS Cloudfront](../deploy/deploy-static-content.md)
+- [Deploy Static Content to AWS Cloudfront](../../deploy/deploy-static-content.md)

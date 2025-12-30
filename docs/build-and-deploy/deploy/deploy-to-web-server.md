@@ -8,7 +8,7 @@ last_update: { author: "Tejaswini K" }
 
 WaveMaker applications are packaged as a **WAR (Web Application Archive) file**, which can be deployed to any standard Java web server running on **JDK 17 or JDK 21**.
 
-To learn how to generate a WAR file from a WaveMaker application- [Generate a WAR](../build/package/war/build-war-from-studio.md)
+To learn how to generate a WAR file from a WaveMaker application- [Generate a WAR](../build/web/package/war/build-war-from-studio.md)
 
 
 ## Supported Versions
@@ -95,4 +95,3 @@ To avoid this, compression must be disabled in `server.xml`.
 4. Save the file and restart the Tomcat server.
 
 ---
-
