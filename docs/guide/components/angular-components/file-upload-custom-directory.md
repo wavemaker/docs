@@ -11,11 +11,11 @@ As discussed in [FileUpload](https://docs.wavemaker.com/learn/app-development/wi
 
 2. Go to Java services and inside `getUploadDir` method replace the upload directory path.
 
-[![](/learn/assets/get-upload-dir.png)](/learn/assets/get-upload-dir.png)
+[![](./assets/img/get-upload-dir.png)](./assets/img/get-upload-dir.png)
 
 The uploaded file is available in the **Import Resource** window under **Resources** in the path mentioned in the Java Service. You can view the created directory and file in the below image.
 
-[![](/learn/assets/uploaded-image.png)](/learn/assets/uploaded-image.png)
+[![](./assets/img/uploaded-image.png)](./assets/img/uploaded-image.png)
 
 ## Uploading File using Apache Tomcat
 

@@ -17,7 +17,7 @@ id: "capturing-card-items"
         };
     
 
-[![list_bind](/learn/assets/list_bind.png)](/learn/assets/list_bind.png)
+[![list_bind](./assets/img/list_bind.png)](./assets/img/list_bind.png)
 
 [Cards Use Cases](/learn/app-development/widgets/datalive/cards/card-use-cases/)
 

@@ -19,7 +19,7 @@ To provide static values for the **dataset value**, we recommend you use a stati
 
 Dynamically open new tab pages based on user interaction. When you select a row in a Datatable, the details of the respective department employees are displayed in separate tab pages that get added dynamically.
 
-[![tabs preview](/learn/assets/dynamicwidgets/tabspreview.gif)](/learn/assets/dynamicwidgets/tabspreview.gif)
+[![tabs preview](./assets/gif/tabspreview.gif)](./assets/gif/tabspreview.gif)
 
 ### 1. Import DB
 
@@ -33,17 +33,17 @@ Dynamically open new tab pages based on user interaction. When you select a row 
 
 - Select Partial. Add a Partial param for the Partial page as **deptId** with an `integer` type.
 
-[![partial page](/learn/assets/dynamicwidgets/partialpage.png)](/learn/assets/dynamicwidgets/partialpage.png)
+[![partial page](./assets/img/partialpage.png)](./assets/img/partialpage.png)
 
 - Go to the Variable dialog. For the **Employee** variable under **FilterCriteria**, bind the **deptId** to the `pageParams.deptId`.
 
-[![partial bind](/learn/assets/partialbind.png)](/learn/assets/partialbind.png)
+[![partial bind](./assets/img/partialbind.png)](./assets/img/partialbind.png)
 
 ### 3. Create a Page and Model Variable
 
 - Create a Page and create a Model Variable with an Entity type of the below specified dataset.
 
-[![model variable](/learn/assets/dynamicwidgets/modelvar.png)](/learn/assets/dynamicwidgets/modelvar.png)
+[![model variable](./assets/img/modelvar.png)](./assets/img/modelvar.png)
 
 ### 4. Configure Datatable
 
@@ -61,7 +61,7 @@ Dynamically open new tab pages based on user interaction. When you select a row 
 
 - From the **Behavior** section of the properties, bind the **Default Pane Index** property to `Variables.DepartmentsInfo.dataSet.length` using the **Use Expression** tab.
 
-[![model variable](/learn/assets/use-expression-length.png)](/learn/assets/use-expression-length.png)
+[![model variable](./assets/img/use-expression-length.png)](./assets/img/use-expression-length.png)
 
 - Select **Tab Pane** and bind the **Title** property to the [Model Variable](Variables.DepartmentsInfo.dataSet[$i].name) to `Variables.DepartmentsInfo.dataSet[$i].name`.
 

@@ -20,7 +20,7 @@ Add a [Page](/learn/app-development/ui-design/designing-app), import the [HRDB](
 
 - Create a [Database CRUD](/learn/app-development/variables/database-crud) variable with the name **radioSetDataValue** for the entity department from HRDB.
 
-![radio_setfilter_variable](/learn/assets/radio_setfilter_variable.png)
+![radio_setfilter_variable](./assets/img/radio_setfilter_variable.png)
 
 ## Binding Radioset to Variable
 
@@ -28,19 +28,19 @@ Add a [Page](/learn/app-development/ui-design/designing-app), import the [HRDB](
 - Bind the datavalue of Radioset widget to the Database CRUD variable **radioSetDataValue** which is created in above step.
 - From Radioset properties panel set **Data field** value to `deptId` and also **Display field** value to `name` as shown below. In this case, **name** refers to department name, such as Engineering, Marketing, etc,. from the department table.
 
-![radio_setfiltervariable_properties](/learn/assets/radio_setfiltervariable_properties.png)
+![radio_setfiltervariable_properties](./assets/img/radio_setfiltervariable_properties.png)
 
 ## Creating Variable for List
 
 - Create another Database CRUD variable with the name **HrdbEmployeeList** for the entity Employee from HRDB.
 
-![hrdb_listvariable](/learn/assets/hrdb_listvariable.png)
+![hrdb_listvariable](./assets/img/hrdb_listvariable.png)
 
 ## Filter Records from Radioset
 
 - Now go to the Events tab of Radioset widget and set the **Change** event to `JavaScript` as shown below.
 
-![radioset_button_onchnage_jsmethod](/learn/assets/radioset_button_onchnage_jsmethod.png)
+![radioset_button_onchnage_jsmethod](./assets/img/radioset_button_onchnage_jsmethod.png)
 
 - Add below JavaScript code to the  **radioset1Change** method.
 
@@ -69,8 +69,8 @@ Page.radioset1Change = function($event, widget, newVal, oldVal) {
 
 Sample output when department name selected as **Engineering**.
 
-![radioset-output-image](/learn/assets/radioset-output-image.png)
+![radioset-output-image](./assets/img/radioset-output-image.png)
 
 Sample output when department name selected as **Marketing**.
 
-![radioset-output-image2](/learn/assets/radioset-output-image2.png)
+![radioset-output-image2](./assets/img/radioset-output-image2.png)

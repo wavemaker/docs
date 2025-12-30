@@ -9,11 +9,11 @@ Using the Tree widget, you can build a folder-file structure, and user can decid
 
 1. Drag and drop a Tree widget, and add two buttons including **Add File** and **Add Folder**.
 
-[![](/learn/assets/tree_dynamic_design.png)](/learn/assets/tree_dynamic_design.png)
+[![](./assets/img/tree_dynamic_design.png)](./assets/img/tree_dynamic_design.png)
 
 2. Select the **Tree** widget. Go to **Value** property and click the bind icon under the **Dataset** section. Go to the **Use Expression** tab and set the script variable as `treeData`.
 
-[![](/learn/assets/tree_dynamic_use-expression.png)](/learn/assets/tree_dynamic_use-expression.png)
+[![](./assets/img/tree_dynamic_use-expression.png)](./assets/img/tree_dynamic_use-expression.png)
 
 3. From the Script tab, use the following script for treeData:
 

@@ -107,7 +107,7 @@ public List<TreeData> sampleJavaOperation(String name) {
 }
 ```
 
-3. Create a [Java Service Variable](/learn/assets/var_sel.png)Service to invoke the above Java Service.
+3. Create a [Java Service Variable](./how-tos/assets/img/var_sel.png)Service to invoke the above Java Service.
 4. Drag and drop a Tree widget, bind the Dataset to the above Java Service Variable.
 5. Preview the page to see Tree widget in action.
 

@@ -6,7 +6,7 @@ id: "how-tos-wizard"
 
 A basic usage scenario is used to go through the wizard interface step by step trying to build a Registration Form. A **Generic Registration Form** that can be used by any web sites to get their users registered to their sites for example accessing trial versions of products, or for buying goods online etc. In this scenario, the user is asked to register when they need to access some resources that needs registration. To register, user is provided a Registration form for creating username and password for that user. Once the user has given the inputs, the user navigates to a page where the user has to **add personal information** and if the user is employed the **professional data** also has to be supplied by the user. Once the required data is provided by the user the user is registered and is informed of the success of registration. The scenario assumes that you will be creating the required data model for taking the login data (Person Entity), profile (Profile Entity) and professional (Profession Entity) data inputs from the user. 
 
-[![WZ_usage_dm](/learn/assets/WZ_usage_dm.png)](/learn/assets/WZ_usage_dm.png)
+[![WZ_usage_dm](./assets/img/WZ_usage_dm.png)](./assets/img/WZ_usage_dm.png)
 
 This is the set-up of an existing page - Getting Basic Details from the User for Registration with a button to invoke the Wizard to add Profile and Professional data.
 
@@ -15,15 +15,15 @@ This is the set-up of an existing page - Getting Basic Details from the User f
 - Add **button** to invoke wizard to add profile and profession data - **Click event** should navigate to the wizard page (WizardBasic) which will be designed in the next step
 - Run the App and give the inputs as needed.
 
-[![wz_userregistrationpage](/learn/assets/WZ_UserRegistrationPage.png)](/learn/assets/WZ_UserRegistrationPage.png)
+[![wz_userregistrationpage](./assets/img/WZ_UserRegistrationPage.png)](./assets/img/WZ_UserRegistrationPage.png)
 
 1. **Create a Page** named **WizardBasic** in WaveMaker App
 2. Drag and Drop a wizard on the canvas
-3. Once the Wizard is dropped on to the canvas, you will see the UI as shown below. By default only one step with the Title as Step Title is created. Note there are two action buttons – Cancel and Done respectively [![wz_usage_design](/learn/assets/WZ_usage_design.png)](/learn/assets/WZ_usage_design.png)
+3. Once the Wizard is dropped on to the canvas, you will see the UI as shown below. By default only one step with the Title as Step Title is created. Note there are two action buttons – Cancel and Done respectively [![wz_usage_design](./assets/img/WZ_usage_design.png)](./assets/img/WZ_usage_design.png)
 4. Edit the **Title** of the Step: Click on the step and in the properties panel change the Title to _Personal Data_. 
 5. **Adding More Steps to the Wizard**: Add one more step – click on the wizard canvas and click on **Add Step**. Change Step **Title** to _Professional Data_ by using the Title property of the step. 
 
-**Design the UI for Personal Data Step:** Live Form bound to the Personal entity, using 3-column layout. [![WZ_usage_step1design](/learn/assets/WZ_usage_step1design.png)](/learn/assets/WZ_usage_step1design.png) **Design UI for Professional Data Step**: Live Form bound to the Professional entity, using 1-column layout. [![WZ_usage_step2design](/learn/assets/WZ_usage_step2design.png)](/learn/assets/WZ_usage_step2design.png)
+**Design the UI for Personal Data Step:** Live Form bound to the Personal entity, using 3-column layout. [![WZ_usage_step1design](./assets/img/WZ_usage_step1design.png)](./assets/img/WZ_usage_step1design.png) **Design UI for Professional Data Step**: Live Form bound to the Professional entity, using 1-column layout. [![WZ_usage_step2design](./assets/img/WZ_usage_step2design.png)](./assets/img/WZ_usage_step2design.png)
 
 - Writing **Event** on the Wizard Step1 (Personal Data)
 
@@ -78,12 +78,12 @@ DialogService.open('alertdialog1', $scope, {
 
 - Run the app and click on Update Personal Data on User Registration page 
 
-[![WZ_usage2_run1](/learn/assets/WZ_usage2_run1.png)](/learn/assets/WZ_usage2_run1.png)
+[![WZ_usage2_run1](./assets/img/WZ_usage2_run1.png)](./assets/img/WZ_usage2_run1.png)
 
 - Enter the Personal Details and click on NEXT to enter Professional Data 
 
-[![wz_usage2_run2](/learn/assets/WZ_usage2_run2.png)](/learn/assets/WZ_usage2_run2.png)
+[![wz_usage2_run2](./assets/img/WZ_usage2_run2.png)](./assets/img/WZ_usage2_run2.png)
 
 - Run the app again and Enter the Personal Details with Employed set to NO, observe the DONE button with no navigation to Professional Data step 
 
-[![WZ_usage_run1](/learn/assets/WZ_usage_run1.png)](/learn/assets/WZ_usage_run1.png)
+[![WZ_usage_run1](./assets/img/WZ_usage_run1.png)](./assets/img/WZ_usage_run1.png)

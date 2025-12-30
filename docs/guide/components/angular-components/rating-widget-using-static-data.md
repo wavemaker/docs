@@ -11,8 +11,8 @@ id: "rating-widget-using-static-data"
     3. **Value** under **Dataset** to comma separated string containing the label values (they will be mapped to rating value in ascending order)
     4. Select **Show Captions** property, this will display the value of the selected rating. It unchecked user will see the value on hover over the rating.
     
-    [![](/learn/assets/rating_usage_props.png)](/learn/assets/rating_usage_props.png)
-3. From **Style** tab,  you can set the Icon color. [![](/learn/assets/rating_usage_style.png)](/learn/assets/rating_usage_style.png)
+    [![](./assets/img/rating_usage_props.png)](./assets/img/rating_usage_props.png)
+3. From **Style** tab,  you can set the Icon color. [![](./assets/img/rating_usage_style.png)](./assets/img/rating_usage_style.png)
 4. Preview the app to see the Rating widget in action
 
 ## See Also

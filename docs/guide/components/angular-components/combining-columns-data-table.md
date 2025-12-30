@@ -24,16 +24,16 @@ You can combine two or more columns to be displayed in a single column in a Data
 
 This will add the content from columns q1 and q2 and set it as the content for H1 column. 
 
-[![](/learn/assets/dt_ve_1.png)](/learn/assets/dt_ve_1.png)
+[![](./assets/img/dt_ve_1.png)](./assets/img/dt_ve_1.png)
     
 :::note
 q1 and q1 are the Mapped Column name for the columns Q1 and Q2.
 :::
 
-[![](/learn/assets/dt_ve_2.png)](/learn/assets/dt_ve_2.png)
+[![](./assets/img/dt_ve_2.png)](./assets/img/dt_ve_2.png)
 
 4. Run the app and see the Data Table. 
 
-[![](/learn/assets/dt_ve_3.png)](/learn/assets/dt_ve_3.png)
+[![](./assets/img/dt_ve_3.png)](./assets/img/dt_ve_3.png)
 
 

@@ -20,11 +20,11 @@ VALUES (:firstname, :lastname, :street, :city, :state, :zip, :birthdate, :picurl
 4. Select Layout and Configure Fields changing the display name and widget type if needed. Note that if the Service Variable undelying the Form, has to have some input fields the same should be done using the Data tab of the Service Variable.
 5. Your page will look like this in design mode 
 
-[![form_query_design](/learn/assets/form_query_design.png)](/learn/assets/form_query_design.png)
+[![form_query_design](./assets/img/form_query_design.png)](./assets/img/form_query_design.png)
 
 6. Run the app, enter the values and SAVE 
 
-[![form_query_run](/learn/assets/form_query_run.png)](/learn/assets/form_query_run.png)
+[![form_query_run](./assets/img/form_query_run.png)](./assets/img/form_query_run.png)
 
 Using Form as Filter Form can be used as filter for GET type of API’s. Below example is for filtering the data using a query. We will be using the Employee table of hrdb database to filter on city field.
 
@@ -41,11 +41,11 @@ SELECT * FROM EMPLOYEE WHERE CITY = :city
 4. Select Layout and Configure Fields changing the display name and widget type if needed.
 5. Drag and drop a Data Table onto the canvas and bind it to the Service Variable created when configuring Form. Your page will look like this in design mode Note: We have changed the name of the SAVE button to FILTER 
 
-[![form_filter_design](/learn/assets/form_filter_design.png)](/learn/assets/form_filter_design.png)
+[![form_filter_design](./assets/img/form_filter_design.png)](./assets/img/form_filter_design.png)
 
 6. Run the app, enter the values and FILTER, see the content of the Data Table change. 
 
-[![form_filter_run](/learn/assets/form_filter_run.png)](/learn/assets/form_filter_run.png)
+[![form_filter_run](./assets/img/form_filter_run.png)](./assets/img/form_filter_run.png)
 
 Using Form EventsFollowing events can be used to modify the behaviour of Form:
 

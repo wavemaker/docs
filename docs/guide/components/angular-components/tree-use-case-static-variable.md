@@ -8,7 +8,7 @@ sidebar_label: "Tree using Static Variable"
 We will build a tree using a simple static structure
 
 1. Drag and drop a _Tree_ widget in your canvas. Tree widget comes with multiple nodes
-2. [Create a Model Variable](/learn/assets/var_sel.png), say staticTree, giving the structure of the data to be displayed in the tree. Ensure that the _IsList_ check box is selected.
+2. [Create a Model Variable](./how-tos/assets/img/var_sel.png), say staticTree, giving the structure of the data to be displayed in the tree. Ensure that the _IsList_ check box is selected.
 3. In the _Text Editor_ enter the following code:
 
 ```json
@@ -52,9 +52,9 @@ In this code, we are specifying the node structure - the _label_ on each node, _
 If you follow this structure, the label, icon, link, and children tags are picked automatically. If you are using different tag names, then you need to specify them while binding.
 :::
 
-[![](/learn/assets/tree_statvar.png)](/learn/assets/tree_statvar.png)
+[![](./assets/img/tree_statvar.png)](./assets/img/tree_statvar.png)
 
-4. Next, bind the **Dataset ->** **Value** property of the tree widget to the dataset under the model variable created in the previous step (staticTree -> dataSet). You can see the preview on the canvas. [![](/learn/assets/tree_design.png)](/learn/assets/tree_design.png)
+4. Next, bind the **Dataset ->** **Value** property of the tree widget to the dataset under the model variable created in the previous step (staticTree -> dataSet). You can see the preview on the canvas. [![](./assets/img/tree_design.png)](./assets/img/tree_design.png)
 5. Run the application and see the menu in action. Click on the + before nodes, here item2, to expand the node.
 
 ## See Also

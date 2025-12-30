@@ -13,7 +13,7 @@ Copying to clipboard applies to input widgets only. For example, text, number, t
 
 The clipboard allows you to copy the text on a single button click or through an event handler. The following steps describe how to implement copy text to the clipboard feature on a button click.
 
-[![form_filter_design](/learn/assets/Copy_ClipBoard.png)](/learn/assets/Copy_ClipBoard.png)
+[![form_filter_design](./assets/img/Copy_ClipBoard.png)](./assets/img/Copy_ClipBoard.png)
 
 ## Step-1: Drag and Drop Widget
 

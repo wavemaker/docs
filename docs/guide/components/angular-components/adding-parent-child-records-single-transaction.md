@@ -20,7 +20,7 @@ Navigate to the Databases section and create your own database. For more inform
 - Step-1: In the database designer, add a one-to-many relation for the Parent and Child tables.
 - Step-2: Enable the **Cascade Option** for the one-to-many relation as shown in the image below. For more information, see [Working with Database Schema](/learn/app-development/services/database-services/working-database-schema/).
 
-[![](/learn/assets/form/db-cascade.png)](/learn/assets/form/db-cascade.png)
+[![](./assets/img/db-cascade.png)](./assets/img/db-cascade.png)
 
 ## Page Design
 
@@ -32,7 +32,7 @@ Navigate to the Databases section and create your own database. For more inform
 
 - Step-4: Create a model variable with **Entry** type and set the flag to the **isList** option and also the metadata same as the Child entity(Address Entity present in the database) as shown in the image below.
 
-[![](/learn/assets/form/model-variable.png)](/learn/assets/form/model-variable.png)
+[![](./assets/img/model-variable.png)](./assets/img/model-variable.png)
 
 ### Configure List inside Parent LiveForm
 
@@ -62,7 +62,7 @@ The above code adds one more Child object(address object) into the model variabl
 
 - Step-10: Now search for the `${ParentEntityName}.java` file under **FileExplorer** and check the Child entity reference name (variable name) and update the List widget name which dropped inside the Parent LiveForm with the Child reference variableName.
 
-[![](/learn/assets/form/Employeepojo.png)](/learn/assets/form/Employeepojo.png)
+[![](./assets/img/Employeepojo.png)](./assets/img/Employeepojo.png)
 
 :::note
 Ensure that the List widget naming convention is same as the related Child entity mentioned in its Parent entity. To verify the name, see .java file of the Parent entity from the File Explorer.
@@ -78,10 +78,10 @@ The page tree structure should be as below.
 
 Preview the App. You will see Employee LiveForm fields along with the button as shown below.
 
-[![preview](/learn/assets/form/Preview1.png)](/learn/assets/form/Preview1.png)
+[![preview](./assets/img/Preview1.png)](./assets/img/Preview1.png)
 
 Click the Add Address Details button; the List items and the Form will be added here. If you want to add another address details, click the button to add the same List using Form. Likewise, you can add any number of address details (List with Forms).
 
 The final object structure will be as shown in the image below along with the employee details, i.e., two address object details, including, one residential and permanent addresses.
 
-[![object structure](/learn/assets/form/objectstructure.png)](/learn/assets/form/objectstructure.png)
+[![object structure](./assets/img/objectstructure.png)](./assets/img/objectstructure.png)

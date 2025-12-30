@@ -25,7 +25,7 @@ The document explains the implementation for obtaining concurrency and record lo
     
 - Add @Version annotation for the version column as shown below.
     
-[![](/learn/assets/concurrency_annot.png)](/learn/assets/concurrency_annot.png)
+[![](./assets/img/concurrency_annot.png)](./assets/img/concurrency_annot.png)
 
 - Add the below import statement.
 
@@ -41,6 +41,6 @@ Please note the @Version annotation added in the above step might get reverted e
 5. Drag and drop a Data Table widget into the page and set the data source as the table/entity designed in Step #2.
 6. Open the Advanced Settings of the Data Table widget and uncheck the Show property for the version column. 
 
-[![](/learn/assets/concurrency_DTAS.png)](/learn/assets/concurrency_DTAS.png)
+[![](./assets/img/concurrency_DTAS.png)](./assets/img/concurrency_DTAS.png)
 
 7. Run the application and insert/update values into the Data Table widget. When two users update a row in the data table at the same time, only one of the transactions will be completed whereas the other call will fail with an error message.

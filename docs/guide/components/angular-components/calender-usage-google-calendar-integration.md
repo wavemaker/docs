@@ -6,7 +6,7 @@ id: "calender-usage-google-calendar-integration"
 
 Google Calendar is one of the most popular ways to manage events, meetings, holidays and anything else that needs to be scheduled. In this document you'll learn how to integrate google calendar events into the WaveMaker calendar widget.
 
-[![](/learn/assets/google_calendar.png)](/learn/assets/google_calendar.png)
+[![](./assets/img/google_calendar.png)](./assets/img/google_calendar.png)
 
 ## Prerequisites
 

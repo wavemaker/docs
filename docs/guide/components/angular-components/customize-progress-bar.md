@@ -5,7 +5,7 @@ sidebar_label: "Customize Progress Bar"
 ---
 ---
 
-import CustomizeProgressBar from '/learn/assets/customize_progress_bar.png';
+import CustomizeProgressBar from './how-tos/assets/img/customize_progress_bar.png';
 
 In this documentation, we will see how to customize the progress bar's background with a linear gradient and also customize the tooltip. The Progress Bar widget provides built-in tooltip functionality that can be customized to display relevant information and style the tooltip as needed.
 

@@ -13,12 +13,12 @@ For example, we will see how to filter the vacation details of employees based o
 4. From the Advanced Settings property.
     1. Set the Widget Display Property for Status field to Checkboxset.
 
-    [![](/learn/assets/multiple_filter_AS.png)](/learn/assets/multiple_filter_AS.png)
+    [![](./assets/img/multiple_filter_AS.png)](./assets/img/multiple_filter_AS.png)
 
     2. Set the Widget Display Property for Type field to Select.
 5. From the canvas, select the Type field and check the Multiple field property 
 
-[![](/learn/assets/multiple_filter_props.png)](/learn/assets/multiple_filter_props.png)
+[![](./assets/img/multiple_filter_props.png)](./assets/img/multiple_filter_props.png)
 
 6. For seeing the results, we will use a Data Table
     1. Drag and drop a Data Table

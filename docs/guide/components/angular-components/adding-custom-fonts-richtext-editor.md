@@ -36,4 +36,4 @@ We have included the `fontNamesIgnoreCheck` array to ignore checks for the font,
 <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 ```
 
-![/learn/assets/RichtextEditor/RTE-custom-font.png](/learn/assets/RichtextEditor/RTE-custom-font.png)
+![./assets/img/RTE-custom-font.png](./assets/img/RTE-custom-font.png)

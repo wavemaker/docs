@@ -22,7 +22,7 @@ _Create a department page and display employees of each department when you expa
     - Table/Entity → Department → A variable will be created automatically, for example, HrdbDepartmentData.
     - Set Records per request, Update data on input change, Request data on page load, and click **Next**.  
 
-  [![](/learn/assets/DataTableConfig.png)](/learn/assets/DataTableConfig.png)
+  [![](./assets/img/DataTableConfig.png)](./assets/img/DataTableConfig.png)
 
 - In the next window, choose **ReadOnly** function, and select **Simple View Only**.
 - Choose pagination; for example, basic.
@@ -43,7 +43,7 @@ You created a department page which displays the department table. Next, you cre
     - Type → integer.
     - Save.
 
-[![](/learn/assets/PageParam-Partial.png)](/learn/assets/PageParam-Partial.png)
+[![](./assets/img/PageParam-Partial.png)](./assets/img/PageParam-Partial.png)
 
 - In the partial, drag and drop the **List **Widget.  
 - Configure the List widget to bind the data source to the **Employee **table.
@@ -59,7 +59,7 @@ You created a department page which displays the department table. Next, you cre
     - Name Widget → Source → username (select from the dropdown)
     - Click **Done**.
 
-[![](/learn/assets/List-configuration.png)](/learn/assets/List-configuration.png)
+[![](./assets/img/List-configuration.png)](./assets/img/List-configuration.png)
 
 You created a partial which contains employee information and page params.
 
@@ -74,16 +74,16 @@ Here, we are binding deptId with the page param to filter the records for List b
 - Go to the **Filter Criteria** tab
 - Select **deptId** and set condition **is equal to**, as shown in the image below.
 
-![rowexpansion-pageparam](/learn/assets/rowexpansion-pageparam.png)
+![rowexpansion-pageparam](./assets/img/rowexpansion-pageparam.png)
 
 - Click Bind, the below dialog will open.
 - Go to the **Page Params** tab and then select **deptId** and click **Bind**.
 
-![rowexpansion-pageparam-image](/learn/assets/rowexpansion-pageparam-image.png)
+![rowexpansion-pageparam-image](./assets/img/rowexpansion-pageparam-image.png)
 
 - Click on **Save & Close**.
 
-[![](/learn/assets/employeeparambindingdeptid.png)](/learn/assets/employeeparambindingdeptid.png)In the department page, you bind the Employee (partial) and Page Params and set the row expansion property.
+[![](./assets/img/employeeparambindingdeptid.png)](./assets/img/employeeparambindingdeptid.png)In the department page, you bind the Employee (partial) and Page Params and set the row expansion property.
 
 ## Configure row expansion property
 
@@ -91,7 +91,7 @@ Here, we are binding deptId with the page param to filter the records for List b
 - Navigate to the Row Detail tab.
 - Enable Row Expansion property.
 
-[![](/learn/assets/RowExpAdvancedSettings.png)](/learn/assets/RowExpAdvancedSettings.png)
+[![](./assets/img/RowExpAdvancedSettings.png)](./assets/img/RowExpAdvancedSettings.png)
 
 - Content → Employee.
 - Partial Params → deptID → click on the **Bind Property** icon.
@@ -99,7 +99,7 @@ Here, we are binding deptId with the page param to filter the records for List b
 
 deptID fills with: bind:Widgets.DepartmentTable1.selecteditem.deptId
 
-   [![](/learn/assets/Bind_tablerow_value_RowExp.png)](/learn/assets/Bind_tablerow_value_RowExp.png)
+   [![](./assets/img/Bind_tablerow_value_RowExp.png)](./assets/img/Bind_tablerow_value_RowExp.png)
 
 1. - Click **Save**.  
 

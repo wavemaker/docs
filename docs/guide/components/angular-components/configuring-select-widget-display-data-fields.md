@@ -15,31 +15,31 @@ Usually, when giving options to the user, one would want the option to make sens
 1. Drag and drop a Select and Label widget onto the canvas.
 2. [Create a variable](https://docs.wavemaker.com/learn/app-development/variables/), and choose the variable type as the **Model**.
 
-![Model Variable](/learn/assets/select-model-variable.png)
+![Model Variable](./assets/img/select-model-variable.png)
 
 3. Select **Entry** as Type. Check the **Is List** property to confirm that the variable is storing the list and add the list values. You can use the text editor to enter the values in JSON format.
 
-![select_widget_values](/learn/assets/configure-variable.png)
+![select_widget_values](./assets/img/configure-variable.png)
 
 ## Binding Select Widget with Variable
 
 1. Bind the dataset of the **Model** variable to the **Select** widget.
 
-![select_widget_values](/learn/assets/bind-model-variable.png)
+![select_widget_values](./assets/img/bind-model-variable.png)
 
 2. Set the **Data field** property to the **dataValue** and **Display Field** to the **name** of the static variable.
 
-![select_widget_ValueProperties](/learn/assets/select_widget_ValueProperties.png)
+![select_widget_ValueProperties](./assets/img/select_widget_ValueProperties.png)
 
 3. Drag and drop two **Label** widgets and bind them using the below **Use Expression** to show the Data value and display values.
 
-    ![select_widget_displayvalue](/learn/assets/display-value.png)
+    ![select_widget_displayvalue](./assets/img/display-value.png)
 
-    ![select_widget_datavalue](/learn/assets/select-widget-datavalue.png)
+    ![select_widget_datavalue](./assets/img/select-widget-datavalue.png)
 
 4. Preview the app and see the Display Value and Data Value of the selected item from the **Select** widget displayed on the screen with the use of the **Label** widget.
 
-     ![select_widget_ListResult](/learn/assets/select_widget_ListResult.png)
+     ![select_widget_ListResult](./assets/img/select_widget_ListResult.png)
 
 
 [Select Use Cases](/learn/app-development/widgets/form-widgets/select-use-cases/)

@@ -7,7 +7,7 @@ You can change the Rating widget style at the runtime, using the **Change** eve
 
 1. Add **Javascript** to the **Change** event of the Rating widget. 
 
-[![](/learn/assets/rating_usage_statvar_event.png)](/learn/assets/rating_usage_statvar_event.png)
+[![](./assets/img/rating_usage_statvar_event.png)](./assets/img/rating_usage_statvar_event.png)
 
 2. Enter the following script. This script captures the rating value as changed by the user, and changes the color of the widget appropriately. 
 

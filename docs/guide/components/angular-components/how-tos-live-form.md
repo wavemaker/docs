@@ -40,7 +40,7 @@ To use form for updating the table, it needs to be bound to a **Data Table** or
 - Drag and drop a Data Table for the _Employee_ Variable.
 - Choose the Data Table (grid) selected item as the datasource for the Live Form. This will set the initial values that will be displayed in the form. 
 
-[![form_bind_dt](/learn/assets/form_bind_dt.png)](/learn/assets/form_bind_dt.png)
+[![form_bind_dt](./assets/img/form_bind_dt.png)](./assets/img/form_bind_dt.png)
 
 - At runtime, the row selected from the table will be displayed in the form. Make changes and click on save to commit the changes to the database.
 
@@ -56,20 +56,20 @@ Widgets like select, autocomplete, radioset, checkboxset and switch can be used 
 2. Configure layout options, as per your needs.
 3. In fields configuration step, change the required field widget type to Select. 
 
-[![lf_widget_fields](/learn/assets/lf_widget_fields.png)](/learn/assets/lf_widget_fields.png)
+[![lf_widget_fields](./assets/img/lf_widget_fields.png)](./assets/img/lf_widget_fields.png)
 
 4. Select the field from the designer.
 5. Dataset for the form field widget is auto populated with the Variable Dataset field. Data field and display field is set to field’s key. Here, the dataset can be bound to any other variable or widget. 
 
-[![lf_widget_propss](/learn/assets/lf_widget_propss.png)](/learn/assets/lf_widget_propss.png)
+[![lf_widget_propss](./assets/img/lf_widget_propss.png)](./assets/img/lf_widget_propss.png)
 
 6. The widget can be changed from Live Form advanced settings also. 
 
-[![lf_widget_as](/learn/assets/lf_widget_AS.png)](/learn/assets/lf_widget_AS.png)
+[![lf_widget_as](./assets/img/lf_widget_AS.png)](./assets/img/lf_widget_AS.png)
 
 7. Now, user can use this widget to select a value from predefined options. 
 
-[![lf_widget_run](/learn/assets/lf_widget_run.png)](/learn/assets/lf_widget_run.png)
+[![lf_widget_run](./assets/img/lf_widget_run.png)](./assets/img/lf_widget_run.png)
 
 ## Handling Related Fields in a Live Form
 

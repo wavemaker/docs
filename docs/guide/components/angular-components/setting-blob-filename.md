@@ -27,11 +27,11 @@ You can use an existing Data Table which contains the blob, or drag and drop a n
 
 - When you create a Data Table, uncheck the column as below. By doing this, the new `filename` column hides and it would not display in the Data Table.
 
-![uncheck filename column](/learn/assets/uncheck-filename-blob-download.png)
+![uncheck filename column](./assets/img/uncheck-filename-blob-download.png)
 
 - Or, when you are using an existing Data Table, click the table, go to the **Advanced Settings** of the Data Table and go to the **Columns** section. Uncheck the Blob filename column as shown in the image below.
 
-![hide data table column](/learn/assets/datatable-hide-column.png)
+![hide data table column](./assets/img/datatable-hide-column.png)
 
 ## Configure Events
 

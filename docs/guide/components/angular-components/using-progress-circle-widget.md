@@ -16,7 +16,7 @@ To use the progress circle widget for static data, you enter values in the widge
 
 _On a progress circle widget, visualize the total sales percentage of the product when you click on the item name from the data table._
 
-![](/learn/assets/CircleProgress.gif)
+![](./assets/gif/CircleProgress.gif)
 
 :::note
 In the given example, we use the Product table which invokes data from the Sales table. Therefore, make sure to connect to the `salesdb` sample database. To import the sample database, see [Connecting to a Database](/learn/app-development/services/database-services/working-with-databases/).
@@ -44,7 +44,7 @@ WHERE PRODUCT_ID = :productId
 
 - Add parameters for the `PRODUCT_ID` including TYPE and Test Value. For examples, Type: `Integer;` Test Value: `2;`
 
-[![](/learn/assets/DataBaseParams.png)](/learn/assets/DataBaseParams.png) 
+[![](./assets/img/DataBaseParams.png)](./assets/img/DataBaseParams.png) 
 
 - Click **Execute**.
 - Click **Save**, and name the query as `SalesByProduct`; itsaves as a database API.
@@ -54,7 +54,7 @@ WHERE PRODUCT_ID = :productId
 - Create a Page called **Product Sales**. To create a page, see [Page Creation](/learn/app-development/ui-design/page-creation/).
 - Design the page to contain the progress circle widget and a data table as shown in the image below:
 
-[![](/learn/assets/Dashboard-page-design.png)](/learn/assets/Dashboard-page-design.png)
+[![](./assets/img/Dashboard-page-design.png)](./assets/img/Dashboard-page-design.png)
 
 - From the widgets, drag, and drop the Grid Layout widget to design and divide the page evenly.
 
@@ -77,7 +77,7 @@ WHERE PRODUCT_ID = :productId
     - Click bind for `Label11` caption.
     - From the **Widgets** tab, select `ProductTable2` → `selecteditem` → name. See image below:
 
-[![](/learn/assets/BindCaption.png)](/learn/assets/BindCaption.png)
+[![](./assets/img/BindCaption.png)](./assets/img/BindCaption.png)
 
 - Bind the `Label12` **Caption** with the product sales value which is a **`SalesByProduct`** database API.
 
@@ -95,7 +95,7 @@ WHERE PRODUCT_ID = :productId
     9. For `ServiceSalesByProduct`, configure the Data to bind with `productId`.
     10. Go to the widgets tab, select `ProductsTable2` → `selecteditem` → `id`.
 
-[![](/learn/assets/BindServiceandTableID.png)](/learn/assets/BindServiceandTableID.png)
+[![](./assets/img/BindServiceandTableID.png)](./assets/img/BindServiceandTableID.png)
 
 - - Click **Bind**, and then **Done**.
     - Save and Close.
@@ -108,7 +108,7 @@ WHERE PRODUCT_ID = :productId
     - Go to Variable tab and select `ServiceSalesByProduct` → `dataSet` → `productSale`. See the image below:
     - Click **Bind**.
 
-[![](/learn/assets/BindProgressCircleDefault.png)](/learn/assets/BindProgressCircleDefault.png)
+[![](./assets/img/BindProgressCircleDefault.png)](./assets/img/BindProgressCircleDefault.png)
 
 - Set validation for **Minimum Value** if you want to set a value other than “0”.
 - Set the **Maximum Value**; for example, enter any number for a static value. For dynamic update, bind the **Maximum** value with the variable called `ServiceMaximumValue.dataSet[$i].total`.
@@ -116,6 +116,6 @@ WHERE PRODUCT_ID = :productId
     - Go to the Variable tab and select `ServiceMaximumValue` → `dataSet` → `total`.  See the image below:
     - Click **Bind.**
 
-[![](/learn/assets/BindProgressCircleMaximum.png)](/learn/assets/BindProgressCircleMaximum.png)
+[![](./assets/img/BindProgressCircleMaximum.png)](./assets/img/BindProgressCircleMaximum.png)
 
 Click the Preview icon to view the page. When you click on each table item, the product sale value displays on the progress circle widget. Also, on the right side of the progress circle, you will see the item name and total sale value.

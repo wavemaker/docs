@@ -9,15 +9,15 @@ The **setTimezone** method configures a widget to display date and time values b
 
 1. Drag and drop a Datetime widget. [Learn more about Datetime](/learn/app-development/widgets/form-widgets/date-time-datetime/#datetime-properties)
 
-  ![datetime_widget.png](/learn/assets/datetime_widget.png)
+  ![datetime_widget.png](./assets/img/datetime_widget.png)
 
 2. From the properties panel, set default date to **CURRENT_DATE**:
 
-  ![current_date_default_value.png](/learn/assets/current_date_default_value.png)
+  ![current_date_default_value.png](./assets/img/current_date_default_value.png)
 
 3. From Datetime widget events tab, set **On Before Load** event to JavaScript.
 
-  ![js_event.png](/learn/assets/js_event.png)
+  ![js_event.png](./assets/img/js_event.png)
 
 4. After redirecting to the script, add the below code to set Timezone of the datetime widget to the specified timezone.
 
@@ -30,7 +30,7 @@ The **setTimezone** method configures a widget to display date and time values b
          
 ```
 
-![script_screenshot.png](/learn/assets/script_screenshot.png)
+![script_screenshot.png](./assets/img/script_screenshot.png)
 
 ## Apply Time Zone to Application
 
@@ -44,8 +44,8 @@ In `App.js` write the below script. Using this script, the specified timezone wi
 }
 ```
 
-![app_js_script.png](/learn/assets/app_js_script.png)
-![timedifference.png](/learn/assets/timedifference.png)
+![app_js_script.png](./assets/img/app_js_script.png)
+![timedifference.png](./assets/img/timedifference.png)
 
 :::note
 The procedure is same for [Date and Time widget](/learn/app-development/widgets/form-widgets/date-time-datetime).

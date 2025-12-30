@@ -41,7 +41,7 @@ If a user answers "Did you use our product for building apps?" with "Yes," then 
 - Click on bind icon for the **show** property of the rating field from the properties panel.
 - Select the **Widgets** tab in binding dialog, select the question field datavalue as shown in the below image.
 
-[![](/learn/assets/form/binddialog.png)](/learn/assets/form/binddialog.png)
+[![](./assets/img/binddialog.png)](./assets/img/binddialog.png)
 
 - Now switch to **Use Expression** tab and add condition for "Yes" for the question field value as below.
 
@@ -95,7 +95,7 @@ Calculate BMI based on Height and Weight of the person.
 
 Below image shows the calculation of BMI of the person based on height and weight.
 
-[![](/learn/assets/form/conditionalbinding.png)](/learn/assets/form/conditionalbinding.png)
+[![](./assets/img/conditionalbinding.png)](./assets/img/conditionalbinding.png)
 
 ### Enable Required option
 

@@ -97,7 +97,7 @@ The variable fetches and stores the metadata from the imported API holding the m
 
 The created variable will be used in the **Markup** tab to [bind the metadata with the Form](#binding-variable-with-form).
 
-[![](/learn/assets/variable-markup-dynamicform.png)](/learn/assets/variable-markup-dynamicform.png)
+[![](./assets/img/variable-markup-dynamicform.png)](./assets/img/variable-markup-dynamicform.png)
 
 ## Creating Dynamic Form
 
@@ -105,7 +105,7 @@ The created variable will be used in the **Markup** tab to [bind the metadata wi
 
 1. Drag and drop the Form widget with an existing variable as "supportedLocale" and uncheck the Fields as you are creating a Dynamic Form.
 
-[![](/learn/assets/existing-variable-form-creation.png)](/learn/assets/existing-variable-form-creation.png)
+[![](./assets/img/existing-variable-form-creation.png)](./assets/img/existing-variable-form-creation.png)
 
 ### Binding Variable with Form
 
@@ -115,12 +115,12 @@ The created variable will be used in the **Markup** tab to [bind the metadata wi
    - With: `metadata="bind:Variables.<Variable Name>.dataSet"`
  
 
-[![](/learn/assets/add-formcode-metadata-dynamicform.png)](/learn/assets/add-formcode-metadata-dynamicform.png)
+[![](./assets/img/add-formcode-metadata-dynamicform.png)](./assets/img/add-formcode-metadata-dynamicform.png)
 
 3. Click **Save**.
 4. Click Preview to view the created Dynamic Form.
 
-[![](/learn/assets/confirm-formcode-dynamicform.png)](/learn/assets/confirm-formcode-dynamicform.png)
+[![](./assets/img/confirm-formcode-dynamicform.png)](./assets/img/confirm-formcode-dynamicform.png)
 
 ### Modifying Dynamic Form Metadata
 
@@ -128,7 +128,7 @@ In WaveMaker Studio, Form expects the metadata in a particular format given in [
 
 1. Add `on-beforerender="form1Beforerender($metadata, widget)"`.
 
-[![](/learn/assets/add-formcode-onbeforerender-dynamicform.png)](/learn/assets/add-formcode-onbeforerender-dynamicform.png)
+[![](./assets/img/add-formcode-onbeforerender-dynamicform.png)](./assets/img/add-formcode-onbeforerender-dynamicform.png)
 
 You can preview the Dynamic Form.
 

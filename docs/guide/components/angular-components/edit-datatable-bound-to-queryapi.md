@@ -21,7 +21,7 @@ In this example, we are using an Employee table from the `HRDB` sample database.
 
 3. Select the `HRDB` database from the dropdown and choose the **API Type** as **Query APIs**. **Select Query** *[the executed-query](#create-a-query)* from the dropdown. Name the variable and click **Done**.
 
-[![Query-variable-creation](/learn/assets/query-variable-creation.png)](/learn/assets/query-variable-creation.png)
+[![Query-variable-creation](./assets/img/query-variable-creation.png)](./assets/img/query-variable-creation.png)
 
 ### Create a Data Table
 
@@ -31,7 +31,7 @@ In this example, we are using an Employee table from the `HRDB` sample database.
 
 5. Go to the Data Table's Advanced Settings, navigate to the **Actions** tab, and check the **Edit** action.
 
-[![check edit action in datatable](/learn/assets/edit-action-check.png)](/learn/assets/edit-action-check.png)
+[![check edit action in datatable](./assets/img/edit-action-check.png)](./assets/img/edit-action-check.png)
 
 ### Create a Database CRUD Variable
 
@@ -39,13 +39,13 @@ In this example, we are using an Employee table from the `HRDB` sample database.
 
 7. Select the `HRDB` database from the dropdown and choose the **Employee** table (in this case). And, set the operation as **Update** from the dropdown. Name the variable and click **Done**.
 
-![update record database crud](/learn/assets/update-record-database-crud.png)
+![update record database crud](./assets/img/update-record-database-crud.png)
 
 ### Configuring Events
 
 8. Ensure to click the Data Table and navigate to the Events tab from the Properties panel. Go to the **On Record Update** event, and select *Javascript* from the dropdown.
 
-[![onrecordupdate event](/learn/assets/onrecordupdate-event.png)](/learn/assets/onrecordupdate-event.png)
+[![onrecordupdate event](./assets/img/onrecordupdate-event.png)](./assets/img/onrecordupdate-event.png)
 
 9. Go to the **Script** tab of the page, and write the following script to update the record in the **On Record Update** method.
 

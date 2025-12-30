@@ -5,9 +5,9 @@ sidebar_label: "Customizing Slider Widget"
 ---
 ---
 
-import CustomizeSlider from '/learn/assets/customize-slider.png';
-import sliderCutomizationExample from '/learn/assets/react-native/sliderCutomizationExample.png';
-import sliderLabelPositionExample from '/learn/assets/react-native/sliderLabelPositionExample.png';
+import CustomizeSlider from './how-tos/assets/img/customize-slider.png';
+import sliderCutomizationExample from './how-tos/assets/img/react-native/sliderCutomizationExample.png';
+import sliderLabelPositionExample from './how-tos/assets/img/react-native/sliderLabelPositionExample.png';
 
 The Slider widget allows you to display either numeric values or custom labels at specific points along the slider track. Labels can represent categories, ranges, or meaningful names instead of plain numbers. You can also control whether labels appear above or below the slider.  
 

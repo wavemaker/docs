@@ -54,7 +54,7 @@ In the given example, if the cell value is `Rejected` then we are applying below
 }
 ```
 **Example:**
-[![](/learn/assets/dynamictable/dynamictablecellstyle.png)](/learn/assets/dynamictable/dynamictablecellstyle.png)
+[![](./assets/img/dynamictablecellstyle.png)](./assets/img/dynamictablecellstyle.png)
 
 ## Apply Conditional Styles for row
 
@@ -67,7 +67,7 @@ Page.dynamicdataTable1Beforedatarender = function(widget, data, columns) {
 };
 ```
 
-[![](/learn/assets/dynamictable/conditionalrow.png)](/learn/assets/dynamictable/conditionalrow.png)
+[![](./assets/img/conditionalrow.png)](./assets/img/conditionalrow.png)
 
 ## Customize Edit Mode widgets
 
@@ -111,4 +111,4 @@ Page.dynamicdataTable1Beforedatarender = function(widget, data, columns) {
 };
 ```
 
-[![](/learn/assets/dynamictable/customiseviewmode.png)](/learn/assets/dynamictable/customiseviewmode.png)
+[![](./assets/img/customiseviewmode.png)](./assets/img/customiseviewmode.png)
