@@ -4,25 +4,43 @@ last_update: { author: "Priyanka Bhadri" }
 
 # Stored Procedures
 
-In many enterprise applications, standard CRUD APIs are not sufficient to handle complex business logic such as multi-step transactions, batch processing, conditional logic, or reusable database routines. For these scenarios, **stored procedures** provide a robust and efficient solution.
+In enterprise-grade applications, standard CRUD APIs are often insufficient for implementing complex database logic such as multi-step transactions, batch operations, conditional processing, or reusable routines shared across applications.  
 
-WaveMaker enables seamless integration with database stored procedures by allowing you to invoke existing procedures, configure parameters, and automatically expose them as secure REST APIs—without writing manual backend code.
+For these scenarios, **stored procedures** provide a reliable and efficient mechanism to encapsulate business logic directly at the database level.
 
-A **stored procedure** is a precompiled SQL program stored in the database that can accept input parameters, return output values, and produce result sets.
+WaveMaker enables seamless integration with existing database stored procedures by allowing you to configure and invoke them without writing custom backend code. Once configured, stored procedures are automatically exposed as secure **REST APIs**, making them easy to consume from the UI or other services.
+
+A **stored procedure** is a precompiled SQL program stored in the database that can:
+- Accept input parameters
+- Return output values
+- Produce one or more result sets
+
+---
+
+## When to Use Stored Procedures
+
+Use stored procedures in WaveMaker when:
+
+- Business logic already exists in the database
+- Multiple SQL operations must be executed atomically
+- Performance-sensitive operations must run close to the data
+- The same database logic must be reused across applications
+- Database-level validation or conditional logic is required
 
 ---
 
 ## Procedure Tab in Database Designer
 
-The **Procedure** tab is available within the **Database Designer** of a Database Service. It is used to configure and invoke stored procedures that already exist in the connected database.
+Stored procedures are configured using the **Procedure** tab within the **Database Designer** of a Database Service.
 
 Using this tab, you can:
-- Write the procedure invocation syntax
-- Execute and validate the procedure
-- Configure parameters and their types
-- Save the procedure to generate REST APIs
 
-Once saved, the procedure becomes available as a Database API and can be accessed from the **API Designer** and used throughout the application.
+- Invoke existing stored procedures or functions
+- Configure parameter modes and data types
+- Execute and validate procedures
+- Save procedures to generate REST APIs
+
+Once saved, the procedure is available as a **Database API** and can be accessed from the **API Designer** or consumed directly in the application.
 
 ---
 
@@ -40,15 +58,17 @@ Each parameter must be assigned one of the following modes:
 
 ### Parameter Data Types
 
-Each parameter must also be mapped to an appropriate data type that matches the database definition. Supported types depend on the underlying database.
+Each parameter must be mapped to a compatible data type that matches the database definition.
 
-> Some database-specific types (for example, cursors in Oracle) are supported only on compatible databases.
+:::note
+Supported parameter types depend on the underlying database. Certain database-specific types (for example, Oracle cursors) are supported only on compatible databases.
+:::
 
 ---
 
 ## Server-Side and Environment Parameters
 
-In addition to user-provided values, stored procedure parameters can be bound to server-side properties that are resolved automatically at runtime.
+In addition to client-provided values, stored procedure parameters can be bound to server-side values that are resolved automatically at runtime.
 
 ### Supported Server Properties
 
@@ -60,108 +80,104 @@ In addition to user-provided values, stored procedure parameters can be bound to
 
 ### App Environment Properties
 
-You can also bind parameters to **App Environment Properties**, allowing different values to be supplied based on the deployment environment (development, testing, production).
+Parameters can also be bound to **App Environment Properties**, enabling different values to be supplied based on the deployment environment (development, testing, production).
 
 ---
 
 ## Handling Result Sets and Cursors
 
-Stored procedures may return result sets, also referred to as **cursors**.
+Stored procedures may return one or more result sets, also referred to as **cursors**.
 
 ### Undefined Cursors
 
 When a procedure returns an undefined cursor:
-- WaveMaker generates a `content` field in the response
-- A corresponding POJO is created to represent the cursor structure
-- The result set is mapped to this generated model automatically
 
-Each cursor returned by the procedure is represented as a structured Java object, making it easy to bind results to UI widgets.
+- WaveMaker generates a `content` field in the response model
+- A corresponding POJO is generated to represent the cursor structure
+- The result set is automatically mapped to the generated model
+
+Each cursor is represented as a structured Java object, making it easy to bind the results to UI widgets such as tables or charts.
 
 ---
 
 ## Creating Stored Procedures
 
-Stored procedures and functions must be created directly in the database using the database’s native tools or SQL editors.
+Stored procedures and functions must be created directly in the database using the database’s native SQL tools.
 
 Once created:
+
+- They are automatically discovered by WaveMaker
 - They become visible in the Database Designer
-- They can be selected and invoked using the Procedure tab
+- They can be invoked using the **Procedure** tab
 - No additional import or configuration is required
 
+---
+
+## Example: Employee Stored Procedure
+
+The database contains an `Employee` table with the following columns:
 
 
-The database we used contains an Employee table with EmpID, Name and City details. Here is the _Employee table that we have designed using the DB Designer.
+![Employee Table](assets/table.png)
 
-![alt text](assets/table.png)
+### Stored Procedure Example
 
-
-The procedure entered in the DBShell under DB Tools would be:
-
- ```sql
+```sql
 DELIMITER ;;
-CREATE PROCEDURE emp_in_out(IN in_city varchar(255), OUT total integer) 
-    BEGIN SELECT COUNT(Emp_ID) 
-        INTO total
-        FROM Employee 
-        WHERE City = in_city; 
-    END;;
+CREATE PROCEDURE emp_in_out(IN in_city varchar(255), OUT total integer)
+BEGIN
+    SELECT COUNT(Emp_ID)
+    INTO total
+    FROM Employee
+    WHERE City = in_city;
+END;;
 DELIMITER ;
 ```
 
-A function would be:
+### Function Example
 
- ```sql
+```sql
 DELIMITER ;;
-CREATE FUNCTION emp_in_out(in_city varchar(255)) RETURNS integer 
-    BEGIN DECLARE emp_tot INT;
-        SELECT COUNT(Emp_ID) 
-            INTO emp_tot
-            FROM Employee 
-            WHERE City = in_city; 
-        RETURN emp_tot;
-    END;;
+CREATE FUNCTION emp_in_out(in_city varchar(255)) RETURNS integer
+BEGIN
+    DECLARE emp_tot INT;
+    SELECT COUNT(Emp_ID)
+    INTO emp_tot
+    FROM Employee
+    WHERE City = in_city;
+    RETURN emp_tot;
+END;;
 DELIMITER ;
 ```
 
 ---
 
-## Invoking Stored Procedures
+## Invoking Stored Procedures in WaveMaker
 
-To invoke a stored procedure in WaveMaker:
+To invoke a stored procedure or function:
 
 1. Open the Database Service in **Database Designer**
 2. Navigate to the **Procedure** tab
-3. Use database-specific syntax to call the procedure, for example:
+3. Use database-specific syntax to invoke the procedure
 
-   ```sql
-   CALL my_procedure(:inputParam, :outputParam)
-   ```
+**Stored procedure example:**
 
-   For functions:
+```sql
+CALL my_procedure(:inputParam, :outputParam)
+```
 
-   ```sql
-   {{ :result = call my_function(:inputParam) }}
-   ```
+**Function example:**
 
-4. Use `Ctrl + Space` to view and select available procedures
+```sql
+{{ :result = call my_function(:inputParam) }}
+```
+
+4. Use `Ctrl + Space` to view available procedures
 5. Configure parameter modes and data types
 6. Execute the procedure to validate it
 7. Save the procedure to generate the REST API
 
 ---
-
-<!-- ## Using Stored Procedures in the Application
-
-After saving a procedure:
-
-1. Create a **Database API Variable** based on the generated procedure API
-2. Bind UI input widgets to the procedure's input parameters
-3. Configure variable execution (on page load, on button click, etc.)
-4. Bind output widgets (labels, tables, charts) to the procedure response
-5. Preview the application and execute the procedure
-
---- -->
-
 
 ## Database-Specific Invocation Syntax
 
@@ -199,11 +215,9 @@ SELECT * FROM function_name(:param1, :param2)
 
 ---
 
-<!-- ## Stored Procedure Architecture
+## Generated Backend Artifacts
 
-When a stored procedure is saved, WaveMaker generates backend Java artifacts to execute it securely via REST.
-
-![alt text](assets/queries.png) -->
+When a stored procedure is saved, WaveMaker generates backend components to expose it securely as a REST API.
 
 ### Generated Models
 
@@ -213,14 +227,14 @@ Request and response POJOs are generated under:
 <service_package>.models.procedure
 ```
 
-Naming convention:
+**Naming convention:**
 
 ```
 <ProcedureName>Request
 <ProcedureName>Response
 ```
 
-A response class is generated only if the procedure returns:
+A response model is generated only if the procedure returns:
 
 - OUT parameters
 - IN-OUT parameters
@@ -228,17 +242,15 @@ A response class is generated only if the procedure returns:
 
 **Additional notes:**
 
-- If the procedure does not return output, the service method uses `Void` as the return type
+- Procedures without output return `Void`
 - Each cursor generates a corresponding POJO
-- Undefined cursors are mapped to a `content` field in the response
+- Undefined cursors are mapped to a `content` field
 
 ---
 
 ### Generated Services
 
-WaveMaker generates a service layer to execute stored procedures:
-
-
+WaveMaker generates a service layer for procedure execution.
 
 **Service class:**
 
@@ -246,13 +258,13 @@ WaveMaker generates a service layer to execute stored procedures:
 ProcedureExecutorService
 ```
 
-**Located under:**
+**Package location:**
 
 ```
 <service_package>.service
 ```
 
-**For each procedure, a method is generated:**
+**Generated method:**
 
 ```
 execute<ProcedureName>
@@ -272,7 +284,7 @@ execute<ProcedureName>
 
 ### Generated Controllers
 
-WaveMaker also generates REST controllers:
+WaveMaker also generates REST controllers.
 
 **Controller class:**
 
@@ -280,13 +292,13 @@ WaveMaker also generates REST controllers:
 ProcedureExecutorController
 ```
 
-**Located under:**
+**Package location:**
 
 ```
 <service_package>.controller
 ```
 
-**Key features:**
+**Key characteristics:**
 
 - Each procedure is exposed as a REST endpoint
 - Primitive return values are wrapped using appropriate wrapper classes (for example, `IntegerWrapper`)
@@ -295,12 +307,10 @@ ProcedureExecutorController
 
 ## Summary
 
-WaveMaker's stored procedure support allows you to:
+WaveMaker's stored procedure support enables you to reuse existing database logic while exposing it as REST APIs with minimal configuration. This approach allows you to:
 
-- Reuse existing database logic
-- Execute complex operations efficiently
-- Automatically expose procedures as REST APIs
+- Execute complex database operations efficiently
+- Preserve database-level business logic
 - Bind inputs and outputs directly to the UI
-- Maintain full transparency and control over generated backend code
+- Maintain visibility into generated backend code
 
-This approach combines low-code productivity with enterprise-grade database integration.
