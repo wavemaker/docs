@@ -5,18 +5,18 @@ id: "icon"
 
 Many widgets like Panel, Button etc. have a way to display an icon. You can choose the icons from the list of **wavicon** (thin fonts that abide the iOS and Android mobile style guidelines) or **font-awesome** icons.
 
-[![](/learn/assets/icon_dialog.png)](/learn/assets/icon_dialog.png)
+[![](./assets/img/icon_dialog.png)](./assets/img/icon_dialog.png)
 
 # Features
 
-[![](/learn/assets/icon_props.png)](/learn/assets/icon_props.png) [![](/learn/assets/icon_sel.png)](/learn/assets/icon_sel.png)
+[![](./assets/img/icon_props.png)](./assets/img/icon_props.png) [![](./assets/img/icon_sel.png)](./assets/img/icon_sel.png)
 
 There are two ways of setting the icon class for a given icon:
 
 1. Use the bind icon next to the Icon class property and bind it to any resource,
 2. From the **icon selector** on the left of the **Icon Class** property, you can:
-    1. Choose a **font-awesome** or **wavicon** icon. **NOTE**: Wavicon icons are thin fonts that abide the iOS and Android mobile style guidelines. [![](/learn/assets/icon_dialog.png)](/learn/assets/icon_dialog.png)
-    2. You can see the icon preview. You can: [![](/learn/assets/icon_preview.png)](/learn/assets/icon_preview.png)
+    1. Choose a **font-awesome** or **wavicon** icon. **NOTE**: Wavicon icons are thin fonts that abide the iOS and Android mobile style guidelines. [![](./assets/img/icon_dialog.png)](./assets/img/icon_dialog.png)
+    2. You can see the icon preview. You can: [![](./assets/img/icon_preview.png)](./assets/img/icon_preview.png)
 
 - set the _size_ of the icon as the regular _1g_, _2x_, _3x_, _4x_, or _5x_
 - choose to _rotate_ of the icon by 90, 180 or 270 degrees,

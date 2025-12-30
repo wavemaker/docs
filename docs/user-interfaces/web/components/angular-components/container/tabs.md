@@ -8,7 +8,7 @@ id: "tabs"
 
 In interface design, a Tabbed Document Interface (TDI) or Tab is a graphical control element that allows multiple documents or panels to contain within a single window. You can use these Tabs as a navigational widget for switching between sets of documents. It is an interface style most commonly associated with a web browser, web application and text-editor, and preference panes.
 
-[![tab run](/learn/assets/tab_run.png)](/learn/assets/tab_run.png)
+[![tab run](./assets/img/tab_run.png)](./assets/img/tab_run.png)
 
 ## Types of Tabs
 
@@ -43,9 +43,9 @@ When you drag and drop a Tab widget, it comes with three default three panes. Ea
 - To logically chunk the content behind the Tabs.
 - When users don't need to see content from multiple Tabs simultaneously.
 
-[![tab prop1](/learn/assets/tab_prop1.png)](/learn/assets/tab_prop1.png) 
+[![tab prop1](./assets/img/tab_prop1.png)](./assets/img/tab_prop1.png) 
 
-[![tab prop2](/learn/assets/tab_prop2.png)](/learn/assets/tab_prop2.png)
+[![tab prop2](./assets/img/tab_prop2.png)](./assets/img/tab_prop2.png)
 
 ## Methods
 

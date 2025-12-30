@@ -30,7 +30,7 @@ For form fields, the **alignment of the caption** can be configured to place as 
 3. `right`
 4. `floating`
 
-[![](/learn/assets/lf_layout.png)](/learn/assets/lf_layout.png)
+[![](./assets/img/lf_layout.png)](./assets/img/lf_layout.png)
 
 ## Layouts
 
@@ -48,6 +48,6 @@ For form fields, the **alignment of the caption** can be configured to place as 
 
 ### 4. Column Form with floating Captions (Angular material style)
 
-[![](/learn/assets/liveFormWithThreeCol.png)](/learn/assets/liveFormWithThreeCol.png)
+[![](./assets/img/liveFormWithThreeCol.png)](./assets/img/liveFormWithThreeCol.png)
 
 

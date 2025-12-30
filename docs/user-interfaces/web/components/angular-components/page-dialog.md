@@ -4,7 +4,7 @@ id: "page-dialog"
 ---
 ---
 
-[![page_struct](/learn/assets/page_struct.jpg)](/learn/assets/page_struct.jpg)
+[![page_struct](./assets/img/page_struct.jpg)](./assets/img/page_struct.jpg)
 
 ## Overview
 
@@ -14,7 +14,7 @@ Dragging and dropping a dialog creates a **view** containing the dialog. The vie
 
 Page Dialog is a popup window that displays page content and can be dismissed by the user. The **content** property of this widget can be set to the desired [partial page](/learn/app-development/ui-design/page-concepts/partial-pages/) content.
 
-[![](/learn/assets/dialog_page.png)](/learn/assets/dialog_page.png)
+[![](./assets/img/dialog_page.png)](./assets/img/dialog_page.png)
 
 ## Script Access
 

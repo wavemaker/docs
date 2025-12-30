@@ -23,5 +23,5 @@ sidebar_label: "Field Configuration"
 
 ([see here for usage](/learn/how-tos/using-filter-criteria-data-live-widgets/)).
 
-[![](/learn/assets/filter_fields.png)](/learn/assets/filter_fields.png)
+[![](./assets/img/filter_fields.png)](./assets/img/filter_fields.png)
 

@@ -9,9 +9,9 @@ This document talks of a simple Dropdown Menu usage. For usage example involvin
 
 In this section, we will walk through the steps to create a multi-level menu, with icons and links to pages at various levels.
 
-[![](/learn/assets/menu_run1.png)](/learn/assets/menu_run1.png) 
+[![](./assets/img/menu_run1.png)](./assets/img/menu_run1.png) 
 
-[![](/learn/assets/menu_run2.png)](/learn/assets/menu_run2.png) 
+[![](./assets/img/menu_run2.png)](./assets/img/menu_run2.png) 
 
 ## Using a Model Variable
 
@@ -21,7 +21,7 @@ We will be using a Model Variable for this example.
 2. Open the Variables dialog from the Variables menu and using New Variable create a Model variable ([Know more about variables)](/learn/app-development/variables/model-variable/).
 3. Name the variable as _menudata_ and _s_elect _isList_ option_._ 
 
-[![](/learn/assets/Dropdown_Var_create.png)](/learn/assets/Dropdown_Var_create.png)
+[![](./assets/img/Dropdown_Var_create.png)](./assets/img/Dropdown_Var_create.png)
 
 4. Add the following in the _Text Editor._ It defines the structure for Menu identifying _Label_, _Icon_, _Link_, and _Children_. Icons can be [halflings from glyphicons](http://glyphicons.com/) or [font awesome](https://fortawesome.github.io/Font-Awesome/cheatsheet/) icons.
 
@@ -60,11 +60,11 @@ We will be using a Model Variable for this example.
 If you follow this structure, WaveMaker picks the label, icon, link and children tags automatically. If you are using different tag names, then you need to specify them in the Menu property as shown in step: 4
 :::
 
-[![](/learn/assets/fieldeditor.png)![](/learn/assets/fieldeditor.png)](/learn/assets/fieldeditor.png)
+[![](./assets/img/fieldeditor.png)![](./assets/img/fieldeditor.png)](./assets/img/fieldeditor.png)
 
 5. Bind the _Value_ property of the Menu widget to the model variable created in the previous step. 
 
-[![](/learn/assets/menu_props.png)](/learn/assets/menu_props.png)
+[![](./assets/img/menu_props.png)](./assets/img/menu_props.png)
 
 6. Set the _Action label_, _Action icon_, _Action link_, _Sub actions_ to the appropriate item names from the model variable. 
 

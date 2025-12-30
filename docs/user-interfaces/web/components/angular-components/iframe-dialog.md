@@ -4,7 +4,7 @@ id: "iframe-dialog"
 ---
 ---
 
-[![iframe_struct](/learn/assets/iframe_struct.jpg)](/learn/assets/iframe_struct.jpg)
+[![iframe_struct](./assets/img/iframe_struct.jpg)](./assets/img/iframe_struct.jpg)
 
 ## Overview
 Dragging and dropping a dialog creates a **view** containing the dialog. The view can be selected from the **Page Structure** or from the **tabs** given at the bottom. The display of the dialog box at runtime is usually associated with the _onClick_ event of a **Button** widget. You can also trigger the dialog by calling methods from _JavaScript_.
@@ -15,7 +15,7 @@ An Iframe Dialog is a popup window that displays content from an external source
 
 **Note:** Since WaveMaker is secured, only secure URLs can be displayed in the Iframe.
 
-[![](/learn/assets/dialog_iframe.png)](/learn/assets/dialog_iframe.png)
+[![](./assets/img/dialog_iframe.png)](./assets/img/dialog_iframe.png)
 
 ## Script Access
 

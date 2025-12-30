@@ -13,9 +13,9 @@ Breadcrumbs are a type of secondary navigation and they help users to recognize 
 
 **Scenario**: Consider an app with three pages - Main, First and Second Pages. Breadcrumb in the First Page will enable one to navigate to Main Page, while the one in Second Page will provide navigation to First and Main Page.
 
-[![breadcrumb](/learn/assets/bc_run1.png)](/learn/assets/bc_run1.png)
+[![breadcrumb](./assets/img/bc_run1.png)](./assets/img/bc_run1.png)
 
-[![breadcrumb](/learn/assets/bc_run2.png)](/learn/assets/bc_run2.png)
+[![breadcrumb](./assets/img/bc_run2.png)](./assets/img/bc_run2.png)
 
 ### Create App
 
@@ -25,7 +25,7 @@ Create an app with three pages - Main, Page1, and Page2. We have used Employee P
 
 - Click the Variable option under Variables in Workspace Toolbar. Click **New Variable** and then click **Model**.  Choose the Application as Owner i.e. Application scoped. 
 
-[![create varriable](/learn/assets/Var_create.png)](/learn/assets/Var_create.png)
+[![create varriable](./assets/img/Var_create.png)](./assets/img/Var_create.png)
 
 - In the text editor of the Model Variable, enter the following code: This code sets values for the properties of _label, id, icon, and link_ to be displayed on the breadcrumb.
   - _label_ and _icon_ are the name and icon displayed on the Breadcrumb,
@@ -69,14 +69,14 @@ Create an app with three pages - Main, Page1, and Page2. We have used Employee P
 ]
 ```
 
-[![breadcrumb variable](/learn/assets/bc_var.png)](/learn/assets/bc_var.png)
+[![breadcrumb variable](./assets/img/bc_var.png)](./assets/img/bc_var.png)
     
 ### Binding Variable with Breadcrumb Widget
 
 - Drag and drop **Breadcrumb widget** onto the canvas of FirstPage
 - Bind the **value (under dataset) property** to the Model **dataset** which we have created above and set the **Action** properties to the corresponding fields from the Model.
 
-[![breadcrumb properties](/learn/assets/bc_props.png)](/learn/assets/bc_props.png)
+[![breadcrumb properties](./assets/img/bc_props.png)](./assets/img/bc_props.png)
 
 ### Steps for another Page
 

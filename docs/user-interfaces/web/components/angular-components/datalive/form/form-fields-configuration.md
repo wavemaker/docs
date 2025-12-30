@@ -25,9 +25,9 @@ If a custom column is not selected on the left panel, it will be deleted when th
     - additional Validations like **Required**, pattern matching in the form of **Regular Expression** and **Maximum Characters** allowed
     - behavior like **Auto Focus**, **Read Only**, **Show** etc can be set.
 
-[![](/learn/assets/Form_Fields.png)](/learn/assets/Form_Fields.png)
+[![](./assets/img/Form_Fields.png)](./assets/img/Form_Fields.png)
 
-![image](/learn/assets/form_field_properties.png)
+![image](./assets/img/form_field_properties.png)
 ## Form Validations
 
 There are various ways in which Form fields can be validated depending upon the underlying data type. You can see these options in the properties panel for the selected field on the canvas.
@@ -59,5 +59,5 @@ Page.form1Beforesubmit = function($data, $event) {
     };
 ```    
 
-[![](/learn/assets/LF_valid.png)](/learn/assets/LF_valid.png)
+[![](./assets/img/LF_valid.png)](./assets/img/LF_valid.png)
 

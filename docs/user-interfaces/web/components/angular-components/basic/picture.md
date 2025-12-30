@@ -17,13 +17,13 @@ The following features are available for all the **Picture** widget.
 
 1. From the **Property** panel of the media widget, find the **Source** property. Click the **Bind** icon represented by a chain-link as shown in the picture below; a Bind modal dialog pops up.
 
-    [![Media](/learn/assets/media_pic.png)](/learn/assets/media_pic.png)
+    [![Media](./assets/img/media_pic.png)](./assets/img/media_pic.png)
 
 2. In the modal dialog, click the **Resource** tab.
 
 3. Select the **Image** type from the dropdown and click the **Upload New** button, the **Import Image** modal dialog pops-up.
 
-    [![media resource](/learn/assets/media_resources.png)](/learn/assets/media_resources.png)
+    [![media resource](./assets/img/media_resources.png)](./assets/img/media_resources.png)
 
 ## Picture Customizations
 

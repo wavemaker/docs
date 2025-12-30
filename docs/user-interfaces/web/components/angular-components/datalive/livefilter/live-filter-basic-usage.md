@@ -6,7 +6,7 @@ sidebar_label: "Creating a Live Filter"
 ---
 To add filter capabilities to your app, drag-and-drop the **Live Filter** widget and bind the result from the Live Filter to the desired widget like Data Table or List. 
 
-[![](/learn/assets/lftr_sel.png)](/learn/assets/lftr_sel.png)
+[![](./assets/img/lftr_sel.png)](./assets/img/lftr_sel.png)
 
 ## STEP-1: Select Data
 
@@ -30,7 +30,7 @@ There are no variables created for any of the services in your application
 - **Update Data on input change**: This option is checked on by default. This means that whenever there is a change in the input parameter or filter field of the variable the data will be fetched from the service. This option will have an impact on the app performance.
 - **Request data on Page Load:** It is checked on by default. This allows for data to be shown when the page is loaded. If this is not checked, you will not be able to view the data when the page gets loaded. Instead, No Data Found message appears on the widget at runtime.
         
-[![](/learn/assets/livefilter_data_new.png)](/learn/assets/livefilter_data_new.png)
+[![](./assets/img/livefilter_data_new.png)](./assets/img/livefilter_data_new.png)
 
 ### Scenario 3
 If the variables are already created in the project.
@@ -41,7 +41,7 @@ If the variables are already created in the project.
 4. Once you select the variables, it shows the dataset that it is bound to.
 5. As Data Configuration options are already set for this variable, you do not see those options in this scenario. 
 
-[![](/learn/assets/lftr_data.png)](/learn/assets/lftr_data.png)
+[![](./assets/img/lftr_data.png)](./assets/img/lftr_data.png)
 
 ### Scenario 4: Binding to widget
     
@@ -50,19 +50,19 @@ If the variables are already created in the project.
 3. You can **select data node** to be the entire widget or the selecteditem node in case of another Data Table or List or Cards or result from a Live Filter
 4. As you are not using a Variable the Data Configuration options will not be available.
 
-[![](/learn/assets/livefilter_data_widget.png)](/learn/assets/livefilter_data_widget.png)
+[![](./assets/img/livefilter_data_widget.png)](./assets/img/livefilter_data_widget.png)
 
 ## STEP-2: Layout and Alignment Configuration
 
 Select the Live Filter **Layout** from _one-column, two-column or three-column_. You can also specify the **Caption** _Alignment, Position, and Size_. 
 
-[![](/learn/assets/lftr_layout.png)](/learn/assets/lftr_layout.png)
+[![](./assets/img/lftr_layout.png)](./assets/img/lftr_layout.png)
 
 ## Field Selection
 
 Once the data source and layout are selected, you can set the filter **fields**. You can choose the fields to be displayed on the filter by selecting from the list and set the appropriate widget for the fields. Click on the **Done** button. Now your filter is ready. 
 
-[![](/learn/assets/lftr_fields.png)](/learn/assets/lftr_fields.png)
+[![](./assets/img/lftr_fields.png)](./assets/img/lftr_fields.png)
 
 ## See Also
 

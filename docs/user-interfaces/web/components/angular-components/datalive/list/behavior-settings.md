@@ -17,7 +17,7 @@ Multiselect will enable users to select multiple list items at runtime. These it
 ## Disable Item
 This property will disable all the events on the item and other widgets present it.
 
-[![](/learn/assets/cards_behav1.png)](/learn/assets/cards_behav1.png)
+[![](../cards/assets/img/cards_behav1.png)](../cards/assets/img/cards_behav1.png)
 
 ## Touch Events
 

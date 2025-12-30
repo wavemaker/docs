@@ -18,7 +18,7 @@ Following properties can be set for a **FileUpload** widget:
     - By default, the On Select event of the FileUpload widget will be bound to the above mentioned Service Variable. In run mode, as the user selects the file, the Service Variable kicks in and the upload action is triggered.
     - By deleting the Variable from the widget (from the On Select Event), the Widget can be set to Select mode. In this mode, the widget will act as a file selector with no additional modes. There will be no service or operation selection on the widget and hence it will not trigger the upload action internally.
 
-[![](/learn/assets/fu_feats.png)](/learn/assets/fu_feats.png)
+[![](./assets/img/fu_feats.png)](./assets/img/fu_feats.png)
 
 ### Clear Uploaded Files from UI
 
@@ -32,7 +32,7 @@ Clear the list of uploaded files from the UI (user interface). For this, you can
 
 **clear()**: Call the `clear()` method to remove the uploaded files from the UI - all at once.
 
-![file upload clear](/learn/assets/file-upload-clear.png)
+![file upload clear](./assets/img/file-upload-clear.png)
 
 ## Properties
 

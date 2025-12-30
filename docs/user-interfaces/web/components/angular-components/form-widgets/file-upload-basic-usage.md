@@ -4,9 +4,9 @@ id: "file-upload-basic-usage"
 ---
 
 1. Drag and drop a **FileUpload** widget onto the canvas.
-2. You will be prompted to create a _FileServiceUploadFile_ Variable. For this demo purpose, retain the default selections of _Update data on input change_. **NOTE**: You can create and use any service, but keep in mind that the operation selected should be able to accept file data. The default file service _uploadFile_ operation fulfills this requirement. [![](/learn/assets/fu_servicevar.png)](/learn/assets/fu_servicevar.png)
-3. From the Properties panel, set the **Multiple** property to true, this will enable us to upload multiple files, else you can upload a single file at a time. [![fu_props](/learn/assets/fu_props.png)](/learn/assets/fu_props.png)
-4. Run the app, select files to upload [![fu_run](/learn/assets/fu_run.png)](/learn/assets/fu_run.png)
+2. You will be prompted to create a _FileServiceUploadFile_ Variable. For this demo purpose, retain the default selections of _Update data on input change_. **NOTE**: You can create and use any service, but keep in mind that the operation selected should be able to accept file data. The default file service _uploadFile_ operation fulfills this requirement. [![](./assets/img/fu_servicevar.png)](./assets/img/fu_servicevar.png)
+3. From the Properties panel, set the **Multiple** property to true, this will enable us to upload multiple files, else you can upload a single file at a time. [![fu_props](./assets/img/fu_props.png)](./assets/img/fu_props.png)
+4. Run the app, select files to upload [![fu_run](./assets/img/fu_run.png)](./assets/img/fu_run.png)
 
 [FileUpload Use Cases](/learn/app-development/widgets/basic/fileupload-use-cases/)
 

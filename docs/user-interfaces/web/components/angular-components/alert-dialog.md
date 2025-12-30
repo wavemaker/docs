@@ -4,7 +4,7 @@ id: "alert-dialog"
 ---
 ---
 
-[![alert_struct](/learn/assets/alert_struct.jpg)](/learn/assets/alert_struct.jpg)
+[![alert_struct](./assets/img/alert_struct.jpg)](./assets/img/alert_struct.jpg)
 
 ## Overview 
 Dragging and dropping a dialog creates a **view** containing the dialog. The view can be selected from the **Page Structure** or from the **tabs** given at the bottom. The display of the dialog box at runtime is usually associated with the _onClick_ event of a **Button** widget. You can also trigger the dialog by calling methods from _JavaScript_.
@@ -16,7 +16,7 @@ For **Alert Dialog**, you can set:
 - the name, the title of the alert pop-up, message to be displayed in the pop-up, text on the OK button and the type of alert - error, information, success or warning.
 - the icon for display next to the title of the alert box, you can pick the icon from the [icon dialog](/learn/app-development/widgets/basic/icon/).
 
-[![](/learn/assets/dialog_alert.png)](/learn/assets/dialog_alert.png)
+[![](./assets/img/dialog_alert.png)](./assets/img/dialog_alert.png)
 
 
 ## Script Access

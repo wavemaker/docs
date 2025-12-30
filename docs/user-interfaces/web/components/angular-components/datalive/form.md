@@ -11,7 +11,7 @@ Based on your datasource, you can create forms to contain text fields, email, da
 
 Additionally, build complex forms that contain multiple data widgets inside a single form, and form inside another form called repeated sections.
 
-[![form](/learn/assets/Form_run.png)](/learn/assets/Form_run.png)
+[![form](./assets/img/Form_run.png)](./assets/img/Form_run.png)
 
 ## Forms Types
 
@@ -41,7 +41,7 @@ You can instantly create a form without even having a dataset ready using a mode
 
 ### Layout and styling options
 
-![form layout selection](/learn/assets/form-layout-selection.png)
+![form layout selection](./assets/img/form-layout-selection.png)
 
 #### Dialog
 
@@ -65,7 +65,7 @@ Select form layout styles. For example, display form fields in a single column, 
 
 ### Configure Form Fields
 
-![Form field](/learn/assets/selectfield.gif)
+![Form field](./assets/gif/selectfield.gif)
 
 - By default, an appropriate **Form Widget** is assigned to each field. However, you can select a suitable **Form Widget** for a field.
 - Field input validation. For example, should the field be a required field, or should it contain a regex expression, or more custom [field validations](/learn/app-development/widgets/datalive/field-validator).

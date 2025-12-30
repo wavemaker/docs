@@ -13,7 +13,7 @@ The **Form** widget has inbuilt functionality to perform **POST & GET operatio
 
 Drag and drop the **Form** widget onto the page. 
 
-[![](/learn/assets/form_usage_dnd.png)](/learn/assets/form_usage_dnd.png)
+[![](./assets/img/form_usage_dnd.png)](./assets/img/form_usage_dnd.png)
 
 ## STEP 1 – Select Data
 
@@ -46,21 +46,21 @@ If the database API variables are already created in the project
 4. Once you select the variables, it shows the dataset that it is bound to.
 5. As Data Configuration options are already set for this variable, you do not see those options in this scenario.
 
-[![](/learn/assets/form_usage_var.png)](/learn/assets/form_usage_var.png)
+[![](./assets/img/form_usage_var.png)](./assets/img/form_usage_var.png)
 
 ## STEP 2: Layout and Alignment Configuration
 
 - You can choose to have a _1, 2 or 3-column layout_.
 - You can set the _Alignment, Position, and Size_ of the **Caption** for the Form.
 
-[![](/learn/assets/form_usage_layout.png)](/learn/assets/form_usage_layout.png)
+[![](./assets/img/form_usage_layout.png)](./assets/img/form_usage_layout.png)
 
 ## STEP 3: Field Configuration
 
 - The **View As** widget to represent the selected field. The widgets applicable to the field based on the field data type, are available for selection from the drop-down box.
 - In the case of a multi-column layout, you can choose the fields to be displayed in the respective columns. You can use the up and down arrows to arrange the fields.
 
-[![](/learn/assets/form_usage_data.png)](/learn/assets/form_usage_data.png)
+[![](./assets/img/form_usage_data.png)](./assets/img/form_usage_data.png)
 
 ## Using Form to trigger an Insert Query
 
@@ -79,11 +79,11 @@ VALUES (:firstname, :lastname, :street, :city, :state, :zip, :birthdate, :picurl
 4. Select Layout and Configure Fields changing the display name and widget type if needed. Note that if the database API Variable underlying the Form, has to have some input fields the same should be done using the Data tab of the Variable.
 5. Your page will look like this in design mode.
 
-[![](/learn/assets/form_query_design.png)](/learn/assets/form_query_design.png)
+[![](./assets/img/form_query_design.png)](./assets/img/form_query_design.png)
 
 6. Run the app, enter the values and SAVE.
 
-[![](/learn/assets/form_query_run.png)](/learn/assets/form_query_run.png)
+[![](./assets/img/form_query_run.png)](./assets/img/form_query_run.png)
 
 ## Using Form as Filter
 
@@ -104,9 +104,9 @@ SELECT * FROM EMPLOYEE WHERE CITY = :city
 We have changed the name of the SAVE button to FILTER 
 :::
 
-[![](/learn/assets/form_filter_design.png)](/learn/assets/form_filter_design.png)
+[![](./assets/img/form_filter_design.png)](./assets/img/form_filter_design.png)
 
 6. Run the app, enter the values and FILTER, see the content of the Data Table change. 
 
-[![](/learn/assets/form_filter_run.png)](/learn/assets/form_filter_run.png)
+[![](./assets/img/form_filter_run.png)](./assets/img/form_filter_run.png)
 

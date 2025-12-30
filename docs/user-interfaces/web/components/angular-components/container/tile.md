@@ -11,7 +11,7 @@ When to use Tile:
 
 - Unlike other containers, its size is limited, and it is not recommended to place too many widgets and/or complex widgets.
 
-![](/learn/assets/tile_design-1.png)
+![](./assets/img/tile_design-1.png)
 
 ## Properties
 

@@ -18,7 +18,7 @@ We will use the popover to display the list of employees of a particular departm
 Create a popover page and select a blank template.
 - Drag and drop a **List** onto the canvas space, select the _data source_ to the _dataset_ of the _Emp_Picurl_ query variable created in the first step and set the _layout_ to _Media List_.
 
-[![](/learn/assets/popover_configurelist.png)](/learn/assets/popover_configurelist.png)
+[![](./assets/img/popover_configurelist.png)](./assets/img/popover_configurelist.png)
 
 - Bind the _picture_ widget to the picurl field of the query variable, delete the label from the list on canvas.
 
@@ -26,11 +26,11 @@ Create a popover page and select a blank template.
 
 1. Open the page where you want to have the popover, drag and drop the popover widget. 
 
-[![](/learn/assets/popover_drag.png)](/learn/assets/popover_drag.png)
+[![](./assets/img/popover_drag.png)](./assets/img/popover_drag.png)
 
 2. Set the **content source** property to the _partial_ and the **content** as _popover page_ created in the previous step and bind the **badge** value to the _Emp_Count value_. Content defines the page to be displayed when the popover link is clicked and badge indicates the number of items that will be displayed in the content. 
 
-[![](/learn/assets/popover_badgevalue.png)](/learn/assets/popover_badgevalue.png)
+[![](./assets/img/popover_badgevalue.png)](./assets/img/popover_badgevalue.png)
 
 3. We have added a select widget for the user to select the department for which they want to see the employee list. Drag and drop a **select widget** and bind it to _Department Dataset_. Set the **display field** to _name_, and **data field** to _deptid_.
 
@@ -61,4 +61,4 @@ Repeat the steps 2 till 3 for the following:
 Content can be any HTML code or URL to another page. 
 :::
 
-[![](/learn/assets/popover_link2.png)](/learn/assets/popover_link2.png)
+[![](./assets/img/popover_link2.png)](./assets/img/popover_link2.png)

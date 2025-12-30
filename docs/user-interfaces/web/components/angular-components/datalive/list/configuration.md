@@ -5,7 +5,7 @@ sidebar_label: "Configuration"
 ---
 ---
 
-import listItemsPerRow from '/learn/assets/react-native/listItemsPerRow.png';
+import listItemsPerRow from '../../assets/img/listItemsPerRow.png';
 
 ## Items per Row
 
@@ -53,5 +53,5 @@ Pagination is dividing the set of data rows into discrete pages that will allow 
 
 **Messages** to be displayed at the time of data loading and in case no data is found can be configured.
 
-[![](/learn/assets/cards_config-1.png)](/learn/assets/cards_config-1.png)
+[![](./assets/img/cards_config-1.png)](./assets/img/cards_config-1.png)
 

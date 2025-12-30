@@ -14,7 +14,7 @@ There can be many **use case scenarios** where a wizard can be used. Examples of
 5. Register Accounts in Websites
 6. Project/App Configurations
 
-[![](/learn/assets/WZ_concept.png)](/learn/assets/WZ_concept.png)
+[![](./assets/img/WZ_concept.png)](./assets/img/WZ_concept.png)
 
 ## Features
 
@@ -25,7 +25,7 @@ There can be many **use case scenarios** where a wizard can be used. Examples of
 3. **Previous Step button** is added to all steps except the first step.
 4. Custom Caption for Action Buttons: 
 
-[![](/learn/assets/WZ_props.png)](/learn/assets/WZ_props.png)
+[![](./assets/img/WZ_props.png)](./assets/img/WZ_props.png)
 
 - **Next and Previous**: To navigate through the steps of the wizard we have Next and Previous buttons in the wizard widget. The caption for these buttons can be changed using the Next caption and Previous caption properties available in the Wizard basic properties. The captions are also bindable.
 - **Done and Cancel Buttons**: The Wizard also has a Done and Cancel Button which perform actions for Completion of the task or for Canceling of the task respectively. These button captions can be changed using the Cancel action caption and Done action caption properties respectively. Each of the above captions is also bindable.
@@ -34,13 +34,13 @@ There can be many **use case scenarios** where a wizard can be used. Examples of
     - **Step Style:** can be set as auto or justified
     - **Default Step**: bindable property acting as the starting point for the wizard. For instance, if default step is set to step 3, then at runtime the third step is the active step on a load of the wizard with the previous two steps marked as complete. 
     
-    [![](/learn/assets/WZ_defaultstep.png)](/learn/assets/WZ_defaultstep.png)
+    [![](./assets/img/WZ_defaultstep.png)](./assets/img/WZ_defaultstep.png)
 
 - **Behavior**: **Show** property of the wizard can be used to show/hide the wizard based on a variable’s value. Show feature is bindable and can be bound to a boolean field in a dataset.
 - **headernavigation**: `headernavigation` property can be added in the Markup script and set as **False** to disable the navigation through Wizard stepper header numbers.
 - **Events** in Wizards: 
 
-[![](/learn/assets/WZ_events.png)](/learn/assets/WZ_events.png) 
+[![](./assets/img/WZ_events.png)](./assets/img/WZ_events.png) 
 
 The callback events for Wizard will fire on the trigger of the specific event:
 - **OnDone:** This is a callback which fires when the Done button is pressed at the end. For Example, when Done button is clicked by the user, the order status can be set to Order Shipped and Tracking Details page can show up.
@@ -52,7 +52,7 @@ The **Step UI** is designed with a unique style to differentiate from a tab and 
 
 1. **Title**: This is the title that appears on the step, which is changed by the user in the wizard step properties. 
 
-[![](/learn/assets/WZ_steptitle.png)](/learn/assets/WZ_steptitle.png)
+[![](./assets/img/WZ_steptitle.png)](./assets/img/WZ_steptitle.png)
 
 2. **Content**: The content can only be an inline content which means that you have to design each step of the wizard like you design every page in WaveMaker. You cannot use partial content in any step of the wizard.
 3. **Behavior**: consists of the following properties that can be configured:
@@ -80,7 +80,7 @@ The **Step UI** is designed with a unique style to differentiate from a tab and 
 
 A basic usage scenario is used to go through the wizard interface step by step trying to build a Registration Form. A **Generic Registration Form** that can be used by any websites to get their users registered to their sites, for example, accessing trial versions of products, or for buying goods online etc. In this scenario, the user is asked to register when they need to access some resources that need registration. To register, the user is provided a Registration form for creating username and password for that user. Once the user has given the inputs, the user navigates to a page where the user has to **add personal information** and if the user is employed the **professional data** also has to be supplied by the user. Once the required data is provided by the user the user is registered and is informed of the success of registration. The scenario assumes that you will be creating the required data model for taking the login data (Person Entity), profile (Profile Entity) and professional (Profession Entity) data inputs from the user. 
 
-[![WZ_usage_dm](/learn/assets/WZ_usage_dm.png)](/learn/assets/WZ_usage_dm.png)
+[![WZ_usage_dm](./assets/img/WZ_usage_dm.png)](./assets/img/WZ_usage_dm.png)
 
 ## Step 1: Setup
 
@@ -91,32 +91,32 @@ This is the set-up of an existing page - Getting Basic Details from the User for
 - Add **button** to invoke wizard to add profile and profession data - **Click event** should navigate to the wizard page (WizardBasic) which will be designed in the next step
 - Run the App and give the inputs as needed.
 
-[![wz_userregistrationpage](/learn/assets/WZ_UserRegistrationPage.png)](/learn/assets/WZ_UserRegistrationPage.png)
+[![wz_userregistrationpage](./assets/img/WZ_UserRegistrationPage.png)](./assets/img/WZ_UserRegistrationPage.png)
 
 ## Step 2: Basic Properties
 
 1. **Create a Page** named **WizardBasic** in WaveMaker App
 2. Drag and Drop a wizard on the canvas. Once the Wizard is dropped onto the canvas, you will see the UI as shown below. By default only one step with the Title as Step Title is created. Note there are two action buttons – Cancel and Done respectively 
 
-[![](/learn/assets/WZ_usage_design.png)](/learn/assets/WZ_usage_design.png)
+[![](./assets/img/WZ_usage_design.png)](./assets/img/WZ_usage_design.png)
 
 3. Edit the **Title** of the Step: Click on the step and in the properties panel change the Title to _Personal Data_. 
 
-[![](/learn/assets/wz_usage_titleprops.png)](/learn/assets/wz_usage_titleprops.png)
+[![](./assets/img/wz_usage_titleprops.png)](./assets/img/wz_usage_titleprops.png)
 
 4. **Adding More Steps to the Wizard**: Add one more step – click on the wizard canvas and click on **Add Step**. Change Step **Title** to _Professional Data_ by using the Title property of the step. 
 
-[![](/learn/assets/wz_usage_addsteps.png)](/learn/assets/wz_usage_addsteps.png)
+[![](./assets/img/wz_usage_addsteps.png)](./assets/img/wz_usage_addsteps.png)
 
 ## Step3: Design UI
 
 **Design the UI for Personal Data Step:** Live Form bound to the Personal entity, using 3-column layout. 
 
-[![WZ_usage_step1design](/learn/assets/WZ_usage_step1design.png)](/learn/assets/WZ_usage_step1design.png) 
+[![WZ_usage_step1design](./assets/img/WZ_usage_step1design.png)](./assets/img/WZ_usage_step1design.png) 
 
 **Design UI for Professional Data Step**: Live Form bound to the Professional entity, using 1-column layout. 
 
-[![WZ_usage_step2design](/learn/assets/WZ_usage_step2design.png)](/learn/assets/WZ_usage_step2design.png)
+[![WZ_usage_step2design](./assets/img/WZ_usage_step2design.png)](./assets/img/WZ_usage_step2design.png)
 
 ## Step 4: Event Configuration
 
@@ -163,15 +163,15 @@ This is the set-up of an existing page - Getting Basic Details from the User for
 
 - Run the app and click on Update Personal Data on User Registration page 
 
-[![WZ_usage2_run1](/learn/assets/WZ_usage2_run1.png)](/learn/assets/WZ_usage2_run1.png)
+[![WZ_usage2_run1](./assets/img/WZ_usage2_run1.png)](./assets/img/WZ_usage2_run1.png)
 
 - Enter the Personal Details and click on NEXT to enter Professional Data 
 
-[![wz_usage2_run2](/learn/assets/WZ_usage2_run2.png)](/learn/assets/WZ_usage2_run2.png)
+[![wz_usage2_run2](./assets/img/WZ_usage2_run2.png)](./assets/img/WZ_usage2_run2.png)
 
 - Run the app again and Enter the Personal Details with Employed set to NO, observe the DONE button with no navigation to Professional Data step 
 
-[![WZ_usage_run1](/learn/assets/WZ_usage_run1.png)](/learn/assets/WZ_usage_run1.png)
+[![WZ_usage_run1](./assets/img/WZ_usage_run1.png)](./assets/img/WZ_usage_run1.png)
 
 
 

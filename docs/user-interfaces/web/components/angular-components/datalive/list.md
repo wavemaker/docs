@@ -27,5 +27,5 @@ list items can be selected by the user at run-time either
 - by a simple click of the mouse on the item or
 - _Up_ and _Down arrows_ can be used to traverse the list items. Pressing enter key on any focused item will select the item.
 
-[![](/learn/assets/LL_Features.png)](/learn/assets/LL_Features.png)
+[![](./assets/img/LL_Features.png)](./assets/img/LL_Features.png)
 

@@ -5,18 +5,18 @@ id: "checkboxset"
 ---
 CheckboxSet allows you to group a set of checkboxes under a common heading. You need to bind to a dataset to display a checkbox for each value.
 
-[![](/learn/assets/checkboxset_struct.jpg)](/learn/assets/checkboxset_struct.jpg)
+[![](./assets/img/checkboxset_struct.jpg)](./assets/img/checkboxset_struct.jpg)
 
 Using the Group By property you can group the items together under a heading. The Show Count property will show the number of items within a group.
 
-[![](/learn/assets/checkboxset_group.png)](/learn/assets/checkboxset_group.png)
+[![](./assets/img/checkboxset_group.png)](./assets/img/checkboxset_group.png)
 
 ## Change the layout of CheckboxSet - Vertical or Horizontal
 
 You can easily change the layout of the options inside the CheckboxSet, so that they are aligned vertifically, horizontally or grouped by a specific number.
 **Items per row** determine the number of items that can be shown in each row. This can be specified independently for different target devices, from the _device_ tab of the _Properties panel_.
 
-[![checkboxset layout](/learn/assets/checkboxset_horizontal.png)](/learn/assets/checkboxset_horizontal.png)
+[![checkboxset layout](./assets/img/checkboxset_horizontal.png)](./assets/img/checkboxset_horizontal.png)
 
 ## Properties
 

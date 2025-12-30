@@ -12,7 +12,7 @@ Breadcrumb is available only for web responsive apps.
 
 Most websites organize their content by a hierarchy. Some are shallow and some are deep depending on the amount of content. It is advisable to use breadcrumb navigation if the user’s hierarchy contains 3 levels or more.
 
-[![](/learn/assets/bc_run2.png)](/learn/assets/bc_run2.png)
+[![](./assets/img/bc_run2.png)](./assets/img/bc_run2.png)
 
 :::note
 You can apply Smart Template and Layout for Breadcrumb widget. For more information, see [How to apply Smart Template and Layout for Widgets](/learn/how-tos/widget-template-layout).

@@ -78,20 +78,20 @@ Data can come from various sources as listed below:
 
 The X-Axis and Y-Axis values can be set to the fields from the data source, the chart is bound to.
 
-[![](/learn/assets/charts_feat1.png)](/learn/assets/charts_feat1.png)
+[![](./assets/img/charts_feat1.png)](./assets/img/charts_feat1.png)
 
 Depending upon the data type of the underlying fields, you can choose the Data Display Format.
 
-[![](/learn/assets/chart_as_yaxis_format.png)](/learn/assets/chart_as_yaxis_format.png)
+[![](./assets/img/chart_as_yaxis_format.png)](./assets/img/chart_as_yaxis_format.png)
 
 In the case, when the data source is from Web Services or Web Socket, you can choose the Format Type to be toDate or toNumber.
 
-[![](/learn/assets/chart_as_yaxis_formattype.png)](/learn/assets/chart_as_yaxis_formattype.png) For **Pie** and **Donut charts**, the options include Label and Value fields. You can specify
+[![](./assets/img/chart_as_yaxis_formattype.png)](./assets/img/chart_as_yaxis_formattype.png) For **Pie** and **Donut charts**, the options include Label and Value fields. You can specify
 
 - the position of the Values - hidden, outside (default) or inside
 - the Value to be displayed - as key, value, percent (default) or key-value pair
 
-[![](/learn/assets/chart_as_pievalues-6.png)](/learn/assets/chart_as_pievalues-6.png)
+[![](./assets/img/chart_as_pievalues-6.png)](./assets/img/chart_as_pievalues-6.png)
 
 ## Layout
 
@@ -103,7 +103,7 @@ In the case, when the data source is from Web Services or Web Socket, you can ch
 - **Legend** position can be set to be top or bottom.
 - Layout of the **values** can be defined in terms of location, value format, caption for line charts  and more
 
-[![](/learn/assets/charts_feat2.png)](/learn/assets/charts_feat2.png)
+[![](./assets/img/charts_feat2.png)](./assets/img/charts_feat2.png)
 
 These options are available from the Advanced Settings of the chart. Apart from these properties, a **Title**, **Sub Heading**, and **Icon** can be assigned for the chart as a whole to be displayed on the top left corner of the Chart. 
 
@@ -121,7 +121,7 @@ Property determines how data points are joined and represented in the chart. Thi
 - Cardinal for smooth curves, or
 - Step
     
-[![](/learn/assets/chart_interpolation.png)](/learn/assets/chart_interpolation.png)
+[![](./assets/img/chart_interpolation.png)](./assets/img/chart_interpolation.png)
 
 ### Data Arrangement
 Data Arrangement Property (available only for Column, Area and Bar Charts) controls whether to show the areas in:
@@ -130,7 +130,7 @@ Data Arrangement Property (available only for Column, Area and Bar Charts) contr
 - stream, or
 - expand
     
-[![](/learn/assets/chart_arrangement.png)](/learn/assets/chart_arrangement.png)
+[![](./assets/img/chart_arrangement.png)](./assets/img/chart_arrangement.png)
 
 ## Data Aggregation and Grouping
 
@@ -140,7 +140,7 @@ When dealing with charts bound to live variables, you can add additional functio
 - _Order By_ property can be used to set the column by which the data needs to be sorted. By default, it will be set to the Group by column selected.
 - The values to be depicted on x and y-axis are set to the _group by_ and _aggregation columns_ respectively.
 
-[![](/learn/assets/charts_feat3.png)](/learn/assets/charts_feat3.png)
+[![](./assets/img/charts_feat3.png)](./assets/img/charts_feat3.png)
 
 ## Interaction
 
@@ -154,7 +154,7 @@ You can capture user selection in two ways:
 
 1. The various outbound properties of a chart are available for binding to other widgets or variables. The fields under _selecteditem_ will be from the underlying dataset used for binding. 
 
-[![](/learn/assets/chart_output.png)](/learn/assets/chart_output.png)
+[![](./assets/img/chart_output.png)](./assets/img/chart_output.png)
 
 2. These selected values can be accessed via JavaScript
 
@@ -171,7 +171,7 @@ Page.chart3Select = function($event, widgets, selectedItem, selectedChartItem)
     
 Here we have used the _On select_ event of the chart: 
 
-[![](/learn/assets/chart_events.png)](/learn/assets/chart_events.png)
+[![](./assets/img/chart_events.png)](./assets/img/chart_events.png)
 
 ## Chart Legend Captions
 
@@ -196,7 +196,7 @@ In WaveMaker studio, to populate the chart legend captions, you need to add the 
 1. Create a [Pie Chart](#5-pie-chart).
 2. Set the Pie Chart's "On Before Render" property to JavaScript.
 
-[![](/learn/assets/set-javascript.png)](/learn/assets/set-javascript.png)
+[![](./assets/img/set-javascript.png)](./assets/img/set-javascript.png)
 
 3. Go to the Script and add the below code snippet in it.
 
@@ -228,16 +228,16 @@ Page.chart4_1Beforerender = function(widget, chartInstance) {
 };
 ```
 
-[![](/learn/assets/onbeforerender-code.png)](/learn/assets/onbeforerender-code.png)
+[![](./assets/img/onbeforerender-code.png)](./assets/img/onbeforerender-code.png)
 
 ### Customizing charts with rounded corners
 Inorder to achieve rounded corners for column and bar charts add class **'rounded-cornered-chart'** and for area chart add class **'rounded-area-chart'** to the chart widget.
 
 #### Column Chart
-[![](/learn/assets/rounded-column-chart.png)](/learn/assets/rounded-column-chart.png)
+[![](./assets/img/rounded-column-chart.png)](./assets/img/rounded-column-chart.png)
 
 #### Bar Chart
-[![](/learn/assets/rounded-bar-chart.png)](/learn/assets/rounded-bar-chart.png)
+[![](./assets/img/rounded-bar-chart.png)](./assets/img/rounded-bar-chart.png)
 
 ### Customizing grid line on the charts
 Solid stroked line on x-axis and y-axis zero line can be achieved by adding **'stroked-zero-axis-line'** class
@@ -245,7 +245,7 @@ and dotted grid lines on y-axis can be achieved by adding **'dotted-yaxis-grid-l
 
 #### Stroked Zero line and Dotted Y-axis grid lines
 
-[![](/learn/assets/rounded-column-chart.png)](/learn/assets/rounded-column-chart.png)](/learn/assets/rounded-column-chart.png)](/learn/assets/rounded-column-chart.png)
+[![](./assets/img/rounded-column-chart.png)](./assets/img/rounded-column-chart.png)](./assets/img/rounded-column-chart.png)](./assets/img/rounded-column-chart.png)
 
 
 ## Use Cases

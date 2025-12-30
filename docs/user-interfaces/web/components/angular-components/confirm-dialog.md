@@ -4,7 +4,7 @@ id: "confirm-dialog"
 ---
 ---
 
-[![confirm_struct](/learn/assets/confirm_struct.jpg)](/learn/assets/confirm_struct.jpg)
+[![confirm_struct](./assets/img/confirm_struct.jpg)](./assets/img/confirm_struct.jpg)
 
 ## Overview 
 Dragging and dropping a dialog creates a **view** containing the dialog. The view can be selected from the **Page Structure** or from the **tabs** given at the bottom. The display of the dialog box at runtime is usually associated with the _onClick_ event of a **Button** widget. You can also trigger the dialog by calling methods from _JavaScript_.
@@ -12,7 +12,7 @@ Dragging and dropping a dialog creates a **view** containing the dialog. The vie
 ## Confirm Dialog
 Confirm Dialog is used to get confirmation from the user. In addition to the properties mentioned for Alert Dialog, it has an additional **Cancel **button. The most common usage is to confirm a delete action.
 
-[![](/learn/assets/dialog_confirm.png)](/learn/assets/dialog_confirm.png)
+[![](./assets/img/dialog_confirm.png)](./assets/img/dialog_confirm.png)
 
 
 ## Script Access

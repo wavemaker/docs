@@ -15,7 +15,7 @@ The class names for bordered table and striped table are optional. You can add t
 - table-hover
 - table-striped
 
-![datatable styles](/learn/assets/datatable-styles.png)
+![datatable styles](./assets/img/datatable-styles.png)
 
 ## Column Styles
 
@@ -33,6 +33,6 @@ The styles can be used to change the styles for the selected field.
 
 Similar to columns styling, styles can be applied to rows in the Data Table. Conditional classes can also be applied based upon the data value within the rows.
 
-[![](/learn/assets/table-config3.png)](/learn/assets/table-config3.png)
+[![](./assets/img/table-config3.png)](./assets/img/table-config3.png)
 
 For examples, see [Custom Styling Data Table Columns & Rows](/learn/how-tos/data-table-styling/)

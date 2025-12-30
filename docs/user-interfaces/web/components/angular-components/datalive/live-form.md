@@ -18,5 +18,5 @@ The Live Form fields are auto-generated from the Database CRUD Variable to which
 - be set as a read-only form and
 - different layout styles like 1-column, 2-columns or 3-columns.
 
-[![](/learn/assets/LiveForm_concept.png)](/learn/assets/LiveForm_concept.png)
+[![](./assets/img/LiveForm_concept.png)](./assets/img/LiveForm_concept.png)
 

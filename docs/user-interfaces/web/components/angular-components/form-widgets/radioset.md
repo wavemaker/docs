@@ -11,7 +11,7 @@ Radioset allows you to group a set of radio buttons under a common heading. You 
 You can easily change the layout of the options inside the RadioSet, so that they are aligned vertifically, horizontally or grouped by a specific number.
 **Items per row** determine the number of items that can be shown in each row. This can be specified independently for different target devices, from the _device_ tab of the _Properties panel_.
 
-[![radioset layout](/learn/assets/radioset_horizontal.png)](/learn/assets/radioset_horizontal.png)
+[![radioset layout](./assets/img/radioset_horizontal.png)](./assets/img/radioset_horizontal.png)
 
 ## Properties
 

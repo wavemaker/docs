@@ -34,7 +34,7 @@ Page.GroceriesTable1Beforedatarender = function(widget, data, columns) {
 };
 ```
 
-[![summaryrow1](/learn/assets/datatable_summaryrow1.png)](/learn/assets/datatable_summaryrow1.png)
+[![summaryrow1](./assets/img/datatable_summaryrow1.png)](./assets/img/datatable_summaryrow1.png)
 
 ### Multiple Summary Rows
 
@@ -53,7 +53,7 @@ Page.GroceriesTable1Beforedatarender = function(widget, data, columns) {
 };
 ```
 
-[![summaryrow2](/learn/assets/datatable_summaryrow2.png)](/learn/assets/datatable_summaryrow2.png)
+[![summaryrow2](./assets/img/datatable_summaryrow2.png)](./assets/img/datatable_summaryrow2.png)
 
 ### Summary Row with Aggregate Function and Variables
 
@@ -75,7 +75,7 @@ Page.GroceriesTable1Beforedatarender = function(widget, data, columns) {
 };
 ```
 
-[![summaryrow3](/learn/assets/datatable_summaryrow2.png)](/learn/assets/datatable_summaryrow2.png)
+[![summaryrow3](./assets/img/datatable_summaryrow2.png)](./assets/img/datatable_summaryrow2.png)
 
 ### Built In Aggregate functions
 
@@ -128,7 +128,7 @@ Page.GroceriesTable1Beforedatarender = function(widget, data, columns) {
 };
 ```
 
-[![](/learn/assets/datatable_summaryrow3.png)](/learn/assets/datatable_summaryrow3.png)
+[![](./assets/img/datatable_summaryrow3.png)](./assets/img/datatable_summaryrow3.png)
 
 ## Styling the Summary row
 
@@ -163,7 +163,7 @@ Page.GroceriesTable1Beforedatarender = function(widget, data, columns) {
 };
 ```
 
-[![](/learn/assets/datatable_summaryrow4.png)](/learn/assets/datatable_summaryrow4.png)
+[![](./assets/img/datatable_summaryrow4.png)](./assets/img/datatable_summaryrow4.png)
 
 You can also create a CSS class with all the required CSS properties inside the styles tab and use that class inside the `setSummaryRowData` function in the script page.
 
@@ -216,7 +216,7 @@ Page.GroceriesTable1Beforedatarender = function(widget, data, columns) {
 };
 ```
 
-[![](/learn/assets/datatable_summaryrow5.gif)](/learn/assets/datatable_summaryrow5.gif)
+[![](./assets/gif/datatable_summaryrow5.gif)](./assets/gif/datatable_summaryrow5.gif)
 
 ## Handling Column Visibility
 
@@ -247,8 +247,8 @@ Here is how the summary row will appear in respective screens:
 
 ### Large Screen
 
-[![](/learn/assets/datatable_summaryrow7.png)](/learn/assets/datatable_summaryrow7.png)
+[![](./assets/img/datatable_summaryrow7.png)](./assets/img/datatable_summaryrow7.png)
 
 ### Mobile Screen
 
-[![](/learn/assets/datatable_summaryrow8.png)](/learn/assets/datatable_summaryrow8.png)
+[![](./assets/img/datatable_summaryrow8.png)](./assets/img/datatable_summaryrow8.png)

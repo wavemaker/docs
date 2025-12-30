@@ -24,5 +24,5 @@ While designing Data Table in WaveMaker, the following features are provided to
 - add any other custom action,
 - export to CSV or Excel files, and much more.
 
-[![](/learn/assets/GraphicsData-Table-Widgeta.jpg)](/learn/assets/GraphicsData-Table-Widgeta.jpg)
+[![](./assets/img/GraphicsData-Table-Widgeta.jpg)](./assets/img/GraphicsData-Table-Widgeta.jpg)
 

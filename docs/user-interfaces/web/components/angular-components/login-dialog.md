@@ -4,7 +4,7 @@ id: "login-dialog"
 ---
 ---
 
-[![login_struct](/learn/assets/login_struct.jpg)](/learn/assets/login_struct.jpg)
+[![login_struct](./assets/img/login_struct.jpg)](./assets/img/login_struct.jpg)
 
 ## Overview
 
@@ -14,7 +14,7 @@ Dragging and dropping a dialog creates a **view** containing the dialog. The vie
 
 Login Dialog is a popup window that displays Login page content and can be dismissed by the user. Especially used to refresh the membership or for additional confirmation. The events that can be set include _onSuccess_, _onError_ and _onClose_.
 
-[![dialog_login](/learn/assets/dialog_login.png)](/learn/assets/dialog_login.png)
+[![dialog_login](./assets/img/dialog_login.png)](./assets/img/dialog_login.png)
 
 ## Script Access
 

@@ -5,7 +5,7 @@ id: "design-dialog"
 
 ---
 
-[![design_struct](/learn/assets/design_struct.jpg)](/learn/assets/design_struct.jpg)
+[![design_struct](./assets/img/design_struct.jpg)](./assets/img/design_struct.jpg)
 
 ## Overview
 Dragging and dropping a dialog creates a **view** containing the dialog. The view can be selected from the **Page Structure** or from the **tabs** given at the bottom. The display of the dialog box at runtime is usually associated with the _onClick_ event of a **Button** widget. You can also trigger the dialog by calling methods from _JavaScript_.
@@ -13,7 +13,7 @@ Dragging and dropping a dialog creates a **view** containing the dialog. The vie
 ## Design Dialog
 Design Dialog gives a **Form** for obtaining additional information from the user, like the name. It is a composite widget with Labels and Text widgets. It comes with two buttons **Cancel **and **Save**.
 
-[![dialog_form](/learn/assets/dialog_form.png)](/learn/assets/dialog_form.png)
+[![dialog_form](./assets/img/dialog_form.png)](./assets/img/dialog_form.png)
 
 
 ## Script Access

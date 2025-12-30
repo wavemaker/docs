@@ -6,7 +6,7 @@ id: "chips"
 
 **Chips** represent complex entities in small blocks, such as a contact. Contact chips may represent contact information in a compact way. Chips can be used for various types of entities, including free-form text, predefined text, rules, or contacts. Chips may also contain icons.
 
-[![chip design](/learn/assets/chips_design.png)](/learn/assets/chips_design.png)
+[![chip design](./assets/img/chips_design.png)](./assets/img/chips_design.png)
 
 ## Using Chips Widget
 
@@ -124,7 +124,7 @@ where
 
 In this use case, you will be using the chips widget as email recipients and create a UI of Composing an Email.
 
-[![chips ext](/learn/assets/chips_ex1.png)](/learn/assets/chips_ex1.png)
+[![chips ext](./assets/img/chips_ex1.png)](./assets/img/chips_ex1.png)
 
 Have a database called ProfileDB and a table named Profile with basic fields like first name, last name, job title, email.
 
@@ -173,9 +173,9 @@ This will check if the employee's department name is an `Engineering` and applie
 Here "item" denotes the chip object.
 :::
 
-[![chips example](/learn/assets/chips_ex3_1.png)](/learn/assets/chips_ex3_1.png)
+[![chips example](./assets/img/chips_ex3_1.png)](./assets/img/chips_ex3_1.png)
 
-[![chips example](/learn/assets/chips_ex3_2.png)](/learn/assets/chips_ex3_2.png)
+[![chips example](./assets/img/chips_ex3_2.png)](./assets/img/chips_ex3_2.png)
 
 5. Add the following class to the app using the Style tab – for skyblue and mustard
 
@@ -192,13 +192,13 @@ Here "item" denotes the chip object.
 }
 ```
 
-[![chips example](/learn/assets/chips_ex3_3.png)](/learn/assets/chips_ex3_3.png)
+[![chips example](./assets/img/chips_ex3_3.png)](./assets/img/chips_ex3_3.png)
 
 6. Preview the page 
 
-[![chips example](/learn/assets/chips_ex3_4.png)](/learn/assets/chips_ex3_4.png)
+[![chips example](./assets/img/chips_ex3_4.png)](./assets/img/chips_ex3_4.png)
 
 7. Setting the chip item class name (or Class Name property) as skyblue, will apply skyblue class to all the chips at runtime.
 
-[![chips example](/learn/assets/chips_ex3_5.png)](/learn/assets/chips_ex3_5.png)
+[![chips example](./assets/img/chips_ex3_5.png)](./assets/img/chips_ex3_5.png)
 

@@ -36,7 +36,7 @@ End-user can also be provided with a way to select rows and columns of a table.
 - Column selection needs to be further configured using the On Column Select and On Column Deselect events.
 - For Quick Edit and Inline Edit, New row position can be specified to be at the bottom or at the top of the Data Table.
 
-![table-config1](/learn/assets/table-config1.png)
+![table-config1](./assets/img/table-config1.png)
 
 ## Pagination
 
@@ -62,7 +62,7 @@ This option gives flexibility to visualize a large dataset in smaller manageable
 
 - This approach is particularly useful when dealing with datasets that are too large to be displayed all at once, as it helps improve performance, user experience, and readability.
 
-![table-config2](/learn/assets/table-config1-2.png)
+![table-config2](./assets/img/table-config1-2.png)
 
 ### Infinite Scroll
 
@@ -82,7 +82,7 @@ To export more than 100 records, the max size in the [profile](/learn/app-develo
 
 Only the contents displayed in the Data Table will be exported, as opposed to the contents of the entire underlying database table. For each column selected for display, you can customize the export value using Value Expressions. Value Expression **has** to be set for custom fields.
 
-![table-config2](/learn/assets/table-config2.png)
+![table-config2](./assets/img/table-config2.png)
 
 ## Message
 

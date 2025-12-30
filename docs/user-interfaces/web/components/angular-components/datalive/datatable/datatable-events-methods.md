@@ -366,18 +366,18 @@ Following is the flow of events for each action triggered on the Data Table.
 
 | Action | Flow |
 | --- | --- |
-| On Row Select | Single select [![](/learn/assets/rowclick_event1.png)](/learn/assets/rowclick_event1.png)   Row deselect will be called only if previously a row was selected |
-|| Multi-Select If a selected row is clicked: [![](/learn/assets/rowclick_event2a.png)](/learn/assets/rowclick_event2a.png)   If an unselected row is clicked:   [![](/learn/assets/rowclick_event2b.png)](/learn/assets/rowclick_event2b.png) |
-| On Header click | Column selection is enabled If a selected column is clicked: [![](/learn/assets/headerclick_event1a.png)](/learn/assets/headerclick_event1a.png)   If an unselected column is clicked: [![](/learn/assets/headerclick_event1b.png)](/learn/assets/headerclick_event1b.png) |
-|| Column selection is disabled & sort is enabled [![](/learn/assets/headerclick_event2.png)](/learn/assets/headerclick_event2.png) On Row Select row is triggered if select first record is enabled |
-| On Page Load | [![](/learn/assets/pageload_event1.png)](/learn/assets/pageload_event1.png)    If ‘Select first record’ is enabled:    [![](/learn/assets/pageload_event2.png)](/learn/assets/pageload_event2.png) |
-| On Filter | [![](/learn/assets/filter_event1.png)](/learn/assets/filter_event1.png) On Row Select row is triggered if select first record is enabled. |
-| On Export | [![](/learn/assets/export_event1.png)](/learn/assets/export_event1.png) |
-| On Pagination | [![](/learn/assets/pagination_event1.png)](/learn/assets/pagination_event1.png) |
-| On Click of edit or new buttons | [![](/learn/assets/editnew_event1.png)](/learn/assets/editnew_event1.png) |
-| On Click of save in edit mode | [![](/learn/assets/saveedit_event1.png)](/learn/assets/saveedit_event1.png)   If before row update returns false, operation is stopped and next events are not fired |
-| On Click of save in insert mode | [![](/learn/assets/saveinsert_event1.png)](/learn/assets/saveinsert_event1.png)   If before row insert returns false, operation is stopped and next events are not fired |
-| On Click of delete button | [![](/learn/assets/delete_event1.png)](/learn/assets/delete_event1.png)   If before row delete returns false, operation is stopped and next events are not fired |
+| On Row Select | Single select [![](./assets/img/rowclick_event1.png)](./assets/img/rowclick_event1.png)   Row deselect will be called only if previously a row was selected |
+|| Multi-Select If a selected row is clicked: [![](./assets/img/rowclick_event2a.png)](./assets/img/rowclick_event2a.png)   If an unselected row is clicked:   [![](./assets/img/rowclick_event2b.png)](./assets/img/rowclick_event2b.png) |
+| On Header click | Column selection is enabled If a selected column is clicked: [![](./assets/img/headerclick_event1a.png)](./assets/img/headerclick_event1a.png)   If an unselected column is clicked: [![](./assets/img/headerclick_event1b.png)](./assets/img/headerclick_event1b.png) |
+|| Column selection is disabled & sort is enabled [![](./assets/img/headerclick_event2.png)](./assets/img/headerclick_event2.png) On Row Select row is triggered if select first record is enabled |
+| On Page Load | [![](./assets/img/pageload_event1.png)](./assets/img/pageload_event1.png)    If ‘Select first record’ is enabled:    [![](./assets/img/pageload_event2.png)](./assets/img/pageload_event2.png) |
+| On Filter | [![](./assets/img/filter_event1.png)](./assets/img/filter_event1.png) On Row Select row is triggered if select first record is enabled. |
+| On Export | [![](./assets/img/export_event1.png)](./assets/img/export_event1.png) |
+| On Pagination | [![](./assets/img/pagination_event1.png)](./assets/img/pagination_event1.png) |
+| On Click of edit or new buttons | [![](./assets/img/editnew_event1.png)](./assets/img/editnew_event1.png) |
+| On Click of save in edit mode | [![](./assets/img/saveedit_event1.png)](./assets/img/saveedit_event1.png)   If before row update returns false, operation is stopped and next events are not fired |
+| On Click of save in insert mode | [![](./assets/img/saveinsert_event1.png)](./assets/img/saveinsert_event1.png)   If before row insert returns false, operation is stopped and next events are not fired |
+| On Click of delete button | [![](./assets/img/delete_event1.png)](./assets/img/delete_event1.png)   If before row delete returns false, operation is stopped and next events are not fired |
 
 ## Methods
 ---

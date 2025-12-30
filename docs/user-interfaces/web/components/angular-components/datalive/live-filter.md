@@ -15,5 +15,5 @@ sidebar_label: "Overview"
 - specify a cascading filter,
 - different layout styles like 1-column, 2-column or 3-column
 
-[![](/learn/assets/livefilter_concept.png)](/learn/assets/livefilter_concept.png)
+[![](./assets/img/livefilter_concept.png)](./assets/img/livefilter_concept.png)
 

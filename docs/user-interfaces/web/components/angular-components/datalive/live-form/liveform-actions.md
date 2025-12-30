@@ -44,7 +44,7 @@ For each action button, you can specify the following:
 ### How to Trigger Form Actions
 The Form Events can be triggered from actions outside the Live Form. For examples, a button placed outside the Live Form template can trigger a form save the event. 
 
-[![](/learn/assets/lf_events.png)](/learn/assets/lf_events.png)
+[![](./assets/img/lf_events.png)](./assets/img/lf_events.png)
 
 ### Adding a New Action
 
@@ -56,4 +56,4 @@ Page.test = function(){
    };
 ```
 
-[![](/learn/assets/LF_actions.png)](/learn/assets/LF_actions.png)
+[![](./assets/img/LF_actions.png)](./assets/img/LF_actions.png)

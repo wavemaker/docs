@@ -23,15 +23,15 @@ The following tables show the behavior in various scenarios:
 
 _Date Patterns_: 
 
-[![](/learn/assets/date_patterns.png)](/learn/assets/date_patterns.png)
+[![](./assets/img/date_patterns.png)](./assets/img/date_patterns.png)
 
 _Time Patterns_: 
 
-[![](/learn/assets/time_patterns.png)](/learn/assets/time_patterns.png)
+[![](./assets/img/time_patterns.png)](./assets/img/time_patterns.png)
 
 _Datetime Patterns_: 
 
-[![](/learn/assets/datetime_patterns.png)](/learn/assets/datetime_patterns.png)
+[![](./assets/img/datetime_patterns.png)](./assets/img/datetime_patterns.png)
 
 :::note
 For Time and Datetime widgets the time picker UI based on the time pattern given. For example, if the pattern is ‘hh:mm:ss a’, seconds and AM/PM pattern is displayed in time picker. If the pattern is ‘HH:mm’, 24Hr format is shown. Seconds and AM/PM are not displayed in time picker.

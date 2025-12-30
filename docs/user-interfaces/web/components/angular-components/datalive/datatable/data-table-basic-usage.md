@@ -10,7 +10,7 @@ Data Table provides a tabular view for database entities through a database se
 
 ## Configure Data Table
 
-To bind the Data Table Widget to your back-end services data, drag and drop the Data Table Widget onto the canvas. [![](/learn/assets/dt_sel.png)](/learn/assets/dt_sel.png)
+To bind the Data Table Widget to your back-end services data, drag and drop the Data Table Widget onto the canvas. [![](./assets/img/dt_sel.png)](./assets/img/dt_sel.png)
 
 ## STEP 1 – Select Data
 
@@ -48,7 +48,7 @@ If the variables based on database CRUD or web services are already created in t
 3. You can **select data node** to be the entire widget or the selecteditem node in case of another Data Table or List or Cards or result from a Live Filter
 4. As you are not using a Variable the Data Configuration options will not be available.
 
-[![](/learn/assets/dt_data.png)](/learn/assets/dt_data.png)
+[![](./assets/img/dt_data.png)](./assets/img/dt_data.png)
 
 ## Step 2 – Select Layout
 
@@ -60,18 +60,18 @@ Selecting the Layout includes two sub-steps:
 - Form Below: This can be used when you want to view data in a Table and edit the selected row from the table using a form. For example, this can be used in use case where editable items are less, for instance, Qty in a shopping cart
 - Inline Editable Table: This can be used when you want to add/edit data in a Table like a table rather than in a form. For example, this can be used in use case to create line items of an order detail table.
 
-[![](/learn/assets/dt_layout1.png)](/learn/assets/dt_layout1.png)
+[![](./assets/img/dt_layout1.png)](./assets/img/dt_layout1.png)
 
 ### ii. Read-Only Table with
         
 - Details of the selected row displayed below the table: This can be used if you wish to select some specific fields in Data Table and would like to view some special fields in the form below. For Example: Viewing catalog items showing the Basic Tech Specs of each Device in the Data Table and on selecting each row in the grid view the Network and Connectivity related Specs in the Form below.
 - Simple Table view: This Data Table provides for Read Only View of the existing Data when you want to show live data constantly refreshed. For example, Stock Trading Views, Election Results, etc.
 
-[![](/learn/assets/dt_layout2.png)](/learn/assets/dt_layout2.png)
+[![](./assets/img/dt_layout2.png)](./assets/img/dt_layout2.png)
 
 ### Selecting Pagination Style 
 
-[![](/learn/assets/dt_pagin.png)](/learn/assets/dt_pagin.png)
+[![](./assets/img/dt_pagin.png)](./assets/img/dt_pagin.png)
 
 ## STEP 3 – Select Data Table Columns
 
@@ -86,7 +86,7 @@ This step will allow us to select the fields to be shown in Data Table and once 
 If you select the Data Table layout without Form in step 2, the **Done** button appears after this step. Click the **Done** button to add the Data Table to the current page. If you select other layouts, then additional two steps to do include **select the Form layout** and **select the Form fields**. 
 :::
 
-[![](/learn/assets/dt_fields.png)](/learn/assets/dt_fields.png)
+[![](./assets/img/dt_fields.png)](./assets/img/dt_fields.png)
 
 ## STEP 4 – Select Form Layout 
 

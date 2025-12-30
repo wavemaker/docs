@@ -25,13 +25,13 @@ The following features are available for all the **Video** widget.
 
 1. From the **Property** panel of the media widget, find the **Video** section. Locate the **MP4 Source Path** option and click the **Bind** icon represented by a chain-link as shown in the picture below; a Bind modal dialog pops-up.
 
-    [![media video](/learn/assets/media_video.png)](/learn/assets/media_video.png)
+    [![media video](./assets/img/media_video.png)](./assets/img/media_video.png)
 
 2. In the modal dialog, click the **Resource** tab.
 
 3. Select the **Video** type from the dropdown and click the **Upload New** button, the **Import Video** modal dialog pops-up.
 
-    [![media resource](/learn/assets/media_resources.png)](/learn/assets/media_resources.png)
+    [![media resource](./assets/img/media_resources.png)](./assets/img/media_resources.png)
 
 ## Video Customizations
 
