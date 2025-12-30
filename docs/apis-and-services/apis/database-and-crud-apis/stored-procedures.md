@@ -96,7 +96,7 @@ When a procedure returns an undefined cursor:
 - A corresponding POJO is generated to represent the cursor structure
 - The result set is automatically mapped to the generated model
 
-Each cursor is represented as a structured Java object, making it easy to bind the results to UI widgets such as tables or charts.
+Each cursor is represented as a structured Java object, making it easy to bind the results to UI components such as tables or charts.
 
 ---
 
@@ -217,22 +217,28 @@ SELECT * FROM function_name(:param1, :param2)
 
 ## Generated Backend Artifacts
 
-When a stored procedure is saved, WaveMaker generates backend components to expose it securely as a REST API.
+When a stored procedure is saved, WaveMaker generates backend code to expose it securely as a REST API.
+
+### Generated Project Structure
+
+![Procedure Architecture](assets/procedures.png)
+
+Any query created and saved in this Database Service is mapped into the models, service, and controller layers shown above.
+
+### How Procedures Map to This Structure
+
+Any procedure—whether returning result sets or performing updates—is automatically mapped into this architecture when imported:
+
+- **Procedure output** → `models.procedure`
+- **Execution logic** → `service`
+- **REST exposure** → `controller`
+
+This ensures consistent API generation, clean separation of concerns, and predictable backend behavior for all database queries.
 
 ### Generated Models
+For SELECT queries, WaveMaker generates a response POJO in `<service_package>.models.procedure` , with fields corresponding to the query output columns.
+Both Request and Response POJO classes are generated as: `<procedureName>Request/Response`
 
-Request and response POJOs are generated under:
-
-```
-<service_package>.models.procedure
-```
-
-**Naming convention:**
-
-```
-<ProcedureName>Request
-<ProcedureName>Response
-```
 
 A response model is generated only if the procedure returns:
 
@@ -250,25 +256,15 @@ A response model is generated only if the procedure returns:
 
 ### Generated Services
 
-WaveMaker generates a service layer for procedure execution.
+WaveMaker generates a service layer for procedure execution `ProcedureExecutorService` in `<service_package>.service`
+The following service interface and implementation are generated:
 
-**Service class:**
+- `<DatabaseName>ProcedureExecutorService` 
+- `<DatabaseName>ProcedureExecutorServiceImpl`
 
-```
-ProcedureExecutorService
-```
+For every saved procedure, the following methods are generated:
 
-**Package location:**
-
-```
-<service_package>.service
-```
-
-**Generated method:**
-
-```
-execute<ProcedureName>
-```
+**Execution method:**`execute<ProcedureName>`
 
 **Method arguments:**
 
@@ -284,24 +280,13 @@ execute<ProcedureName>
 
 ### Generated Controllers
 
-WaveMaker also generates REST controllers.
+WaveMaker also generates REST controllers `ProcedureExecutorController` in  `<service_package>.controller`
 
-**Controller class:**
-
-```
-ProcedureExecutorController
-```
-
-**Package location:**
-
-```
-<service_package>.controller
-```
 
 **Key characteristics:**
 
 - Each procedure is exposed as a REST endpoint
-- Primitive return values are wrapped using appropriate wrapper classes (for example, `IntegerWrapper`)
+- Rest API is generated for each configured query and procedure. Generated method signature will be same as service layer method signature.
 
 ---
 

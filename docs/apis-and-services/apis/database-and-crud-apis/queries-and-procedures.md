@@ -6,7 +6,7 @@ last_update: { author: "Priyanka Bhadri" }
 
 WaveMaker supports creating **custom database queries** to address data access scenarios that are not covered by standard CRUD operations. Queries allow you to retrieve, filter, aggregate, and modify data across one or more database tables.
 
-Each saved query is automatically exposed as a **REST API**, which can be consumed by application widgets, variables, or external clients.
+Each saved query is automatically exposed as a **REST API**, which can be consumed by application components, variables, or external clients.
 
 ---
 
@@ -77,7 +77,7 @@ Parameters can be bound to:
 - Current date or time
 - Other server-side values
 
-UI widgets can pass values to query parameters through application variables.
+UI components can pass values to query parameters through application variables.
 
 ---
 
@@ -157,7 +157,8 @@ This ensures consistent API generation, clean separation of concerns, and predic
 
 ### Generated Models
 
-For SELECT queries, WaveMaker generates a response POJO named `<QueryName>Response` in `<service_package>.models.query` , with fields corresponding to the query output columns.
+For SELECT queries, WaveMaker generates a response POJO  `<QueryName>Response`  `<service_package>.models.query` , with fields corresponding to the query output columns.
+Both Request and Response POJO classes are generated as: `<queryName>Request/Response`
 
 For INSERT and UPDATE queries, request POJOs are generated.
 
