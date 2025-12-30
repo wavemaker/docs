@@ -10,7 +10,9 @@ A subset of How-tos is being migrated here. More will be added folder-by-folder.
 
 - [How-tos: UI Layouts](howtos-ui)
 
----
+
+> Note: Additional how-to pages will be added gradually; links to pages that aren't migrated yet have been omitted to avoid broken links.
+
 
 *   [How to use POST method to sent data to a REST API](/learn/how-tos/using-post-method-send-data-rest-api/)
 
