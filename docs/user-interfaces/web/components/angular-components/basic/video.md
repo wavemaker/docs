@@ -8,7 +8,7 @@ sidebar_label: "Video"
 WaveMaker supports video media. To use a video in your project, simply drag and drop the **Video** widget and bind it to the resource using the Property Panel.
 
 :::note
-The following table gives the browser support for **audio** and **video** resources. To learn more about audio file support, see [Audio Widget](/learn/app-development/widgets/basic/audio).
+The following table gives the browser support for **audio** and **video** resources. To learn more about audio file support, see [Audio Widget](./audio.md).
 :::
 
 |Browser|MP4|WebM|Ogg|

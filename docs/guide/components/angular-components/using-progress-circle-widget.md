@@ -19,7 +19,7 @@ _On a progress circle widget, visualize the total sales percentage of the produ
 ![](./assets/gif/CircleProgress.gif)
 
 :::note
-In the given example, we use the Product table which invokes data from the Sales table. Therefore, make sure to connect to the `salesdb` sample database. To import the sample database, see [Connecting to a Database](/learn/app-development/services/database-services/working-with-databases/).
+In the given example, we use the Product table which invokes data from the Sales table. Therefore, make sure to connect to the `salesdb` sample database. To import the sample database, see <!-- <!-- [Connecting to a Database](/learn/app-development/services/database-services/working-with-databases/) --> -->.
 :::
 
 ## Creating a database API
@@ -51,7 +51,7 @@ WHERE PRODUCT_ID = :productId
 
 ## Designing the dashboard page
 
-- Create a Page called **Product Sales**. To create a page, see [Page Creation](/learn/app-development/ui-design/page-creation/).
+- Create a Page called **Product Sales**. To create a page, see <!-- <!-- [Page Creation](/learn/app-development/ui-design/page-creation/) --> -->.
 - Design the page to contain the progress circle widget and a data table as shown in the image below:
 
 [![](./assets/img/Dashboard-page-design.png)](./assets/img/Dashboard-page-design.png)

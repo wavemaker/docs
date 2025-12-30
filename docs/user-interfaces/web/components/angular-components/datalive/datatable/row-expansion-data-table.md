@@ -14,7 +14,7 @@ Row expansion is a property in the data table widget. By enabling the row expans
 
 ## How row expansion works
 
-Typically, you create a data table and a [partial](/learn/app-development/ui-design/page-concepts/partial-pages/). A partial is a semi-page, and it is a reusable object, whereas a data table is a data widget which displays data in a tabular format. You design the partial to contain information related to the table item which you intend to expand. For example, a table field and its expansion. Once the partial has been created, you add page params in the partial page settings. And lastly, you bind the partial and page params through the data table settings for the row expansion enablement.
+Typically, you create a data table and a <!-- <!-- [partial](/learn/app-development/ui-design/page-concepts/partial-pages/) --> -->. A partial is a semi-page, and it is a reusable object, whereas a data table is a data widget which displays data in a tabular format. You design the partial to contain information related to the table item which you intend to expand. For example, a table field and its expansion. Once the partial has been created, you add page params in the partial page settings. And lastly, you bind the partial and page params through the data table settings for the row expansion enablement.
 
 ## Example
 In the following table, the **Table** is a Data Table; **Additional information** is a Partial. The **Table** connects to the **Additional information** through the specified Page Param called **Table field**. 
@@ -27,4 +27,4 @@ In the following table, the **Table** is a Data Table; **Additional informati
 | Department  → | Department ID  → | Displaying charts for budget-related info |
 | Employee name  → | Employee ID  → | Employee's profile information |
 
-For more information, see [How to Configure Row Expansion in a Data Table](/learn/how-tos/how-to-configure-row-expansion-in-a-data-table/).
+For more information, see [How to Configure Row Expansion in a Data Table](../../../../../../guide/components/angular-components/how-to-configure-row-expansion-in-a-data-table.md).

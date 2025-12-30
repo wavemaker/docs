@@ -21,7 +21,7 @@ sidebar_label: "Field Configuration"
     - _exact_ for matching the entire string;
 - **filter criteria** can be applied to referenced entities for Inline Editable and Quick Edit Data Tables 
 
-([see here for usage](/learn/how-tos/using-filter-criteria-data-live-widgets/)).
+(<!-- <!-- [see here for usage](/learn/how-tos/using-filter-criteria-data-live-widgets/) --> -->).
 
 [![](./assets/img/filter_fields.png)](./assets/img/filter_fields.png)
 

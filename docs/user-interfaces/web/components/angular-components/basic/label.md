@@ -37,7 +37,7 @@ The Label widget supports simple rich text formatting in captions:
 :::note
 - Nesting bold inside a link (e.g., `[some **bold** text](url)`) is not supported.
 - Escaping formatting (e.g., `\**not bold\**`) is not supported; formatting will always be applied if the pattern matches.
-- Links must start with http://, https://, or # to be clickable. For example, [Google](https://google.com) works, but [Google](google.com) does not.
+- Links must start with http://, https://, or # to be clickable. For example, `[Google](https://google.com)` works, but `[Google](google.com)` does not.
 - On Android, rich text is disabled if ellipsis is enabled for a lablel.
 :::
 

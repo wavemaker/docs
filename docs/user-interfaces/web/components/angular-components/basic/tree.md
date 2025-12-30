@@ -61,6 +61,6 @@ The tree widget has a few methods exposed on widget scope which can be accessed 
 
 ## Use Cases
 
-- [How to build a tree from static variable](/learn/how-tos/tree-use-case-static-variable/)
-- [How to build tree from java service](/learn/how-tos/tree-use-case-java-service/)
-- [How to build a dynamic tree](/learn/how-tos/tree-use-case-dynamic-tree/)
+- [How to build a tree from static variable](../../../../../guide/components/angular-components/tree-use-case-static-variable.md)
+- [How to build tree from java service](../../../../../guide/components/angular-components/tree-use-case-java-service.md)
+- [How to build a dynamic tree](../../../../../guide/components/angular-components/tree-use-case-dynamic-tree.md)

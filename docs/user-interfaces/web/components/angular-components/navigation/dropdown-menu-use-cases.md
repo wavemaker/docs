@@ -5,7 +5,7 @@ sidebar_label: "Creating a Dropdown Menu"
 ---
 ---
 
-This document talks of a simple Dropdown Menu usage. For usage example involving role-based menu access [see here](/learn/how-tos/restricting-menu-item-display-based-user-role/).
+This document talks of a simple Dropdown Menu usage. For usage example involving role-based menu access <!-- <!-- [see here](/learn/how-tos/restricting-menu-item-display-based-user-role/) --> -->.
 
 In this section, we will walk through the steps to create a multi-level menu, with icons and links to pages at various levels.
 
@@ -18,7 +18,7 @@ In this section, we will walk through the steps to create a multi-level menu, wi
 We will be using a Model Variable for this example.
 
 1. Create or Open the app where you want to use the Dropdown Menu
-2. Open the Variables dialog from the Variables menu and using New Variable create a Model variable ([Know more about variables)](/learn/app-development/variables/model-variable/).
+2. Open the Variables dialog from the Variables menu and using New Variable create a Model variable (<!-- <!-- [Know more about variables)](/learn/app-development/variables/model-variable/) --> -->.
 3. Name the variable as _menudata_ and _s_elect _isList_ option_._ 
 
 [![](./assets/img/Dropdown_Var_create.png)](./assets/img/Dropdown_Var_create.png)

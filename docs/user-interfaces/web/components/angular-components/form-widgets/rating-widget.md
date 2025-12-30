@@ -55,8 +55,8 @@ id: "rating-widget"
 
 You can use the Rating widget to capture the input from the user as Widgets.rating1.datavalue or from the direct bind dialog. You can also change the caption according to the user selection.
 
-- [How to build Rating widget from static data](/learn/how-tos/rating-widget-using-static-data/)
-- [How to build Rating widget from static variable data](/learn/how-tos/rating-widget-using-static-variable/)
-- [how-tos/building-rating-widget-using-variable](/learn/how-tos/building-rating-widget-using-variable)
-- [How to build an interactive rating widget](/learn/how-tos/rating-widget-interactive/)
+- [How to build Rating widget from static data](../../../../../guide/components/angular-components/rating-widget-using-static-data.md)
+- [How to build Rating widget from static variable data](../../../../../guide/components/angular-components/rating-widget-using-static-variable.md)
+- [how-tos/building-rating-widget-using-variable](../../../../../guide/components/angular-components/building-rating-widget-using-variable.md)
+- [How to build an interactive rating widget](../../../../../guide/components/angular-components/rating-widget-interactive.md)
 

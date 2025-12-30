@@ -27,6 +27,6 @@ For example, we will see how to filter the vacation details of employees based o
 
 ## See Also
 
-[Basic Usage Scenario](/learn/app-development/widgets/datalive/livefilter/live-filter-basic-usage/)  
-[How to Apply Live Filter to a Data Table/Chart](/learn/how-tos/live-filter-applying/)  
-[How to build a filtering based upon a range of values](/learn/how-tos/live-filter-range-filter/)  
+[Basic Usage Scenario](../../../user-interfaces/web/components/angular-components/datalive/livefilter/live-filter-basic-usage.md)  
+[How to Apply Live Filter to a Data Table/Chart](./live-filter-applying.md)  
+[How to build a filtering based upon a range of values](./live-filter-range-filter.md)  

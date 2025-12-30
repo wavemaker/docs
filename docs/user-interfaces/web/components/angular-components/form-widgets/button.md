@@ -38,7 +38,7 @@ Image icons are applied via the imageUrl property and are displayed as an img el
 
 ## Button Class
 
-From the Style tab of Properties panel,  you can set the button style. You can also use the Conditional Class property to set the class based upon a condition. See here for [How to](/learn/how-tos/use-conditional-class-property/). 
+From the Style tab of Properties panel,  you can set the button style. You can also use the Conditional Class property to set the class based upon a condition. See here for <!-- <!-- [How to](/learn/how-tos/use-conditional-class-property/) --> -->. 
 
 <iframe width="100%" height="450" style={{backgroundColor: "snow"}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Buttons">Button Types</iframe>
 
@@ -124,5 +124,5 @@ alert(Page.Widgets.button1.show);
     
 ## See More
 
-[Form Widgets](/learn/app-development/widgets/widget-library/#form)  
-[Button Group](/learn/app-development/widgets/form-widgets/button-group)  
+<!-- <!-- [Form Widgets](/learn/app-development/widgets/widget-library/#form) --> -->  
+[Button Group](./button-group.md)  

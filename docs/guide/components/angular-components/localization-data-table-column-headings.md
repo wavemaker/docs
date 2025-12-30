@@ -20,8 +20,8 @@ This capability can be extended to localize the column headings of a Data Table.
 3. Bind the respective message keys to the "Title" property of the columns. [![](./assets/img/locale_dt3.png)](./assets/img/locale_dt3.png)
 4. Save and Preview the application. At runtime, on changing the locale from the Select Locale widget, the column headers for the data table widget will display the respective localized values.
 
-[Localization Cases](/learn/app-development/ui-design/use-cases-ui-design/)
+<!-- <!-- [Localization Cases](/learn/app-development/ui-design/use-cases-ui-design/) --> -->
 
-- [1. Localization in WaveMaker Apps](/learn/how-tos/localization-wavemaker-apps/)
-- [2. Localization of Error Messages](/learn/how-tos/localization-error-messages/)
+- <!-- <!-- [1. Localization in WaveMaker Apps](/learn/how-tos/localization-wavemaker-apps/) --> -->
+- <!-- <!-- [2. Localization of Error Messages](/learn/how-tos/localization-error-messages/) --> -->
 - 3. Localization of Data Table Column Headings

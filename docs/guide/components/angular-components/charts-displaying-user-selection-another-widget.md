@@ -7,7 +7,7 @@ sidebar_label: "Display User Selection in another Widget"
 
 Hovering over the chart shows the values corresponding to the nearest data point. These data points can be captured and used to bind to a widget for further display or computational purposes. Here we will see how to do the same:
 
-1. We are using the _Department_ DB available after [importing the sample DB](/learn/app-development/services/database-services/working-with-databases/) which ships with the product.
+1. We are using the _Department_ DB available after <!-- <!-- [importing the sample DB](/learn/app-development/services/database-services/working-with-databases/) --> --> which ships with the product.
 
 [![](./assets/img/db_apis_db.png)](./assets/img/db_apis_db.png)
 
@@ -37,6 +37,6 @@ Hovering over the chart shows the values corresponding to the nearest data point
 
 ## See Also
 
-[Chart Widget Cases](/learn/app-development/widgets/chart/chart-widget/#use-cases)  
-[How to handling dynamic data](/learn/how-tos/charts-handling-dynamic-data/)  
-[How to displaying custom data](/learn/how-tos/charts-custom-data/)
+[Chart Widget Cases](../../../user-interfaces/web/components/angular-components/chart/chart-widget.md#use-cases)  
+[How to handling dynamic data](./charts-handling-dynamic-data.md)  
+[How to displaying custom data](./charts-custom-data.md)

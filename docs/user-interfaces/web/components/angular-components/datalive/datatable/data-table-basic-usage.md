@@ -95,7 +95,7 @@ If you have selected any of the Data Table layouts that include an inline or a d
 - You have the option of choosing **1-column, 2-column or 3-column layout**. 3-column layout is selected by default
 - You can also set the alignment, position, and size of the **caption** of the Form fields.
 
-[See here for more details](/learn/app-development/widgets/datalive/live-form/liveform-layouts/)
+[See here for more details](../live-form/liveform-layouts.md)
 
 ## STEP 5 – Select Form Fields 
 
@@ -106,5 +106,5 @@ Select the fields and set the title and widget property for each field
 3. Change the widget type for display of each field value
 4. Reorder the fields for display. In case you have selected 2- or 3-column layout, then you can specify the fields to be displayed in each column.
 
-[See here for more details](/learn/app-development/widgets/datalive/live-form/fields-configuration/)
+[See here for more details](../live-form/fields-configuration.md)
 

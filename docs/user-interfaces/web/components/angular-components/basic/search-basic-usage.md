@@ -3,7 +3,7 @@ title: "Search - Basic Usage"
 id: "search-basic-usage"
 ---
 
-WaveMaker allows you to add search capability via the **search widget**. Following are the steps in using the same. We will use the search widget to search the [**Department database from the sample HRDB imported earlier**](/learn/app-development/services/database-services/working-with-databases/#integrating-database) and display the department id and name.
+WaveMaker allows you to add search capability via the **search widget**. Following are the steps in using the same. We will use the search widget to search the <!-- <!-- [**Department database from the sample HRDB imported earlier**](/learn/app-development/services/database-services/working-with-databases/#integrating-database) --> --> and display the department id and name.
 
 [![](./assets/img/search_run1.png)](./assets/img/search_run1.png)
 
@@ -12,7 +12,7 @@ WaveMaker allows you to add search capability via the **search widget**. Followi
 [![](./assets/img/search_run3.png)](./assets/img/search_run3.png)
 
 1. Drag and drop a **search**, and four **label** widgets on a page. We have used the grid layout here. [![](./assets/img/search_design.png)](./assets/img/search_design.png)
-2. [Import the sample database](/learn/app-development/services/database-services/working-with-databases/). [Create a Variable](../assets/img/var_sel.png) based on the database CRUD APIs auto-generated when the database is imported. [![](./assets/img/search_lv.png)](./assets/img/search_lv.png)
+2. <!-- <!-- [Import the sample database](/learn/app-development/services/database-services/working-with-databases/) --> -->. [Create a Variable](../assets/img/var_sel.png) based on the database CRUD APIs auto-generated when the database is imported. [![](./assets/img/search_lv.png)](./assets/img/search_lv.png)
 3. Bind the **Value** dataset property of the search widget to the department variable created in the previuos step. [![](./assets/img/search_bind.png)](./assets/img/search_bind.png)
 4. Set the **Search key** and **Label Value** properties to the column name you want to search by, in this case, _name_. **Note**: The Search Key, Label Value, and Image Source are bindable. For example, the Label Value can be bound in this case to 'deptcode+name', using the expression option from the binding dialog. [![](./assets/img/search_props.png)](./assets/img/search_props.png)
 

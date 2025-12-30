@@ -19,7 +19,7 @@ Page.event_varonBeforeDatasetReady = function(variable, data) {
 
 <iframe width="708" height="560" src="https://docs.google.com/presentation/d/e/2PACX-1vQ_wvcYti0_pcX6CQSYhRjaXxC0VeOfIQGm0cGW9AlDUZ_PjcxA0m6ifob35W4IYZ4ERTKfzaQrqG9-/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
 
-[Calendar Cases](/learn/app-development/widgets/form-widgets/calendar/#use-cases)
+[Calendar Cases](../../../user-interfaces/web/components/angular-components/form-widgets/calendar.md#use-cases)
 
-- [1. Create an event](/learn/how-tos/calendar-usage-create-event/)
-- [2. Integrate with Google Calendar](/learn/how-tos/calender-usage-google-calendar-integration/)
+- [1. Create an event](./calendar-usage-create-event.md)
+- [2. Integrate with Google Calendar](./calender-usage-google-calendar-integration.md)

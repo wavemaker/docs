@@ -35,7 +35,7 @@ When you drag and drop an Accordion, by default three accordion panes are provid
 
 ## Usage
 
-- [Setting partial page content for Accordion within a List](/learn/how-tos/setting-partial-page-content-accordion-within-list/)
+- [Setting partial page content for Accordion within a List](../../../../../guide/components/angular-components/setting-partial-page-content-accordion-within-list.md)
 
 ## Methods
 
@@ -58,7 +58,7 @@ The accordion has few methods exposed on widget scope which can be accessed via 
 
 **Step 1:- (Prepare data and widgets)**
 
-1. Create three variables of type ‘Employee’ entity and for 1st variable from variables tab select the variable and go to data tab and for deptid keep value as 1, do the same for others also as deptid 4, 2 for respective variables, name these variables as ‘EngineeringEmployeesData’, ‘SalesEmployeesData’, ‘MarketingEmployeesData’. [Learn how to create variables from here.](/learn/app-development/variables/database-crud/#menu)
+1. Create three variables of type ‘Employee’ entity and for 1st variable from variables tab select the variable and go to data tab and for deptid keep value as 1, do the same for others also as deptid 4, 2 for respective variables, name these variables as ‘EngineeringEmployeesData’, ‘SalesEmployeesData’, ‘MarketingEmployeesData’. <!-- <!-- [Learn how to create variables from here.](/learn/app-development/variables/database-crud/#menu) --> -->
 2. Drag n Drop Accordion widget. By default, you will see accordion with 3 accordion panes.
 3. Name ‘Accordion’ widget as ‘EmployeesAccordion’ and name accordion panes as ‘engineeringEmpPane’, ‘salesEmpPane’, ‘marketingEmpPane’.
 4. Change accordion panes titles to ‘Engineering’, ‘Sales’, ‘Marketing’.

@@ -15,7 +15,7 @@ Most websites organize their content by a hierarchy. Some are shallow and some a
 [![](./assets/img/bc_run2.png)](./assets/img/bc_run2.png)
 
 :::note
-You can apply Smart Template and Layout for Breadcrumb widget. For more information, see [How to apply Smart Template and Layout for Widgets](/learn/how-tos/widget-template-layout).
+You can apply Smart Template and Layout for Breadcrumb widget. For more information, see <!-- <!-- [How to apply Smart Template and Layout for Widgets](/learn/how-tos/widget-template-layout) --> -->.
 :::
 
 ## Properties
@@ -40,6 +40,6 @@ You can apply Smart Template and Layout for Breadcrumb widget. For more informat
 
 ## See Also
 
-[Creating a Breadcrumb](/learn/app-development/widgets/navigation/breadcrumb-use-cases/)  
-[Dropdown Menu](/learn/app-development/widgets/navigation/dropdown-menu/)  
-[Creating Navigation](/learn/app-development/widgets/navigation/nav-basic-usage)  
+[Creating a Breadcrumb](./breadcrumb-use-cases.md)  
+[Dropdown Menu](./dropdown-menu.md)  
+[Creating Navigation](./nav-basic-usage.md)  

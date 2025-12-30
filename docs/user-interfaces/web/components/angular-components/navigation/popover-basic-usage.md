@@ -9,7 +9,7 @@ We will use the popover to display the list of employees of a particular departm
 
 ## 1. Import Database
 
-[Import Sample HRDB](/learn/app-development/services/database-services/working-with-databases/) and in the [Query Editor](/learn/app-development/services/database-services/working-with-queries) write two queries - one to obtain **Employee count** for a given department and one for **Employee Picurl**. 
+<!-- <!-- [Import Sample HRDB](/learn/app-development/services/database-services/working-with-databases/) --> --> and in the <!-- <!-- [Query Editor](/learn/app-development/services/database-services/working-with-queries) --> --> write two queries - one to obtain **Employee count** for a given department and one for **Employee Picurl**. 
 
 `Select count(*) from EMPLOYEE where EMPLOYEE.DEPTID = :deptid` `Select EMPLOYEE.PICURL from EMPLOYEE where EMPLOYEE.DEPTID = :deptid`
 

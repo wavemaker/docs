@@ -76,6 +76,6 @@ Page.Widgets.tree1.redraw();
 
 ## See Also
 
-[Tree Widget Cases](/learn/app-development/widgets/basic/tree/)  
-[How to build a tree from static variable](/learn/how-tos/tree-use-case-static-variable/)  
-[How to build tree from java service](/learn/how-tos/tree-use-case-java-service/)  
+[Tree Widget Cases](../../../user-interfaces/web/components/angular-components/basic/tree.md)  
+[How to build a tree from static variable](./tree-use-case-static-variable.md)  
+[How to build tree from java service](./tree-use-case-java-service.md)  

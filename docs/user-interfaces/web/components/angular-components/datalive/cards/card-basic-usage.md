@@ -21,13 +21,13 @@ You do not have any service available in your project. In this scenario, you ca
     
 ### `Retrieve Data From` 
 1. Select the **Services** option. 
-2. You will be prompted to **[Import Database](/learn/app-development/services/database-services/working-with-databases)** or **[Import Web Services](/learn/app-development/services/web-services/web-services)** or **[Create Java Service](/learn/app-development/services/java-services/java-service/)**. Click the appropriate option to proceed.
+2. You will be prompted to **<!-- <!-- [Import Database](/learn/app-development/services/database-services/working-with-databases) --> -->** or **<!-- <!-- [Import Web Services](/learn/app-development/services/web-services/web-services) --> -->** or **<!-- <!-- [Create Java Service](/learn/app-development/services/java-services/java-service/) --> -->**. Click the appropriate option to proceed.
 2. When the service is available in your application, proceed by selecting the service and follow the same steps as mentioned in [example-2](#example-2-with-an-existing-service).  
     
 [![](./assets/img/cards_basic_data1.png)](./assets/img/cards_basic_data1.png)  
 
 ## Example 2: With an Existing Service 
-When you have a service integrated in your app, for example, [Database](/learn/app-development/services/database-services/working-with-databases/), [Web Service](/learn/app-development/services/web-services/web-services), or [Java Service](/learn/app-development/services/java-services/java-service/).
+When you have a service integrated in your app, for example, <!-- <!-- [Database](/learn/app-development/services/database-services/working-with-databases/) --> -->, <!-- <!-- [Web Service](/learn/app-development/services/web-services/web-services) --> -->, or <!-- <!-- [Java Service](/learn/app-development/services/java-services/java-service/) --> -->.
 
 ### `Retrieve Data From` 
 The Services option is selected by default.  
@@ -145,6 +145,6 @@ Click on Preview button to test run the app.
 
 ## See Also
 
-[Cards Use Cases](/learn/app-development/widgets/datalive/cards/card-use-cases/)  
-[Cards Basic Usage](/learn/app-development/widgets/datalive/cards/card-basic-usage/)  
-[How to access cards items](/learn/how-tos/capturing-card-items/)  
+[Cards Use Cases](./card-use-cases.md)  
+[Cards Basic Usage](./card-basic-usage.md)  
+[How to access cards items](../../../../../../guide/components/angular-components/capturing-card-items.md)  

@@ -19,14 +19,14 @@ Use an appropriate type of form to work with different types of datasets. There 
 
 ### Form
 
-Use **Form** widget to work with a service or procedure based flow. For this, you can use a service variable or CRUD variable through API calls like, REST API, SOAP, and more. You can configure fields to use an appropriate **[Form Widget](/learn/app-development/widgets/widget-library#form-widgets)**. For example, text, number, dropdown, and more.
+Use **Form** widget to work with a service or procedure based flow. For this, you can use a service variable or CRUD variable through API calls like, REST API, SOAP, and more. You can configure fields to use an appropriate **<!-- <!-- [Form Widget](/learn/app-development/widgets/widget-library#form-widgets) --> -->**. For example, text, number, dropdown, and more.
 
 ### Live Form
 
 **Live Form** works similar to a **Form**. However, Live Form is specific to database CRUD operations when you import a database from an external resource.
 
 :::note
-Form and Live Form are two different widgets that work similarly. Live Form is used for DB Services with CRUD operations only. For more information, see [Live Forms](/learn/app-development/widgets/datalive/live-form).
+Form and Live Form are two different widgets that work similarly. Live Form is used for DB Services with CRUD operations only. For more information, see [Live Forms](./live-form).
 :::
 
 ## How do Forms work
@@ -37,7 +37,7 @@ Form and Live Form are two different widgets that work similarly. Live Form is u
 
 Firstly, to build a form, you should have a dataset. You can use APIs for REST services, java service, and database service. There are multiple ways to build and manage a datasource in WaveMaker.
 
-You can instantly create a form without even having a dataset ready using a model variable. This helps you to plan and design your form structure. For more information, see [Build a Form](/learn/app-development/widgets/datalive/form/form-usage-scenarios).
+You can instantly create a form without even having a dataset ready using a model variable. This helps you to plan and design your form structure. For more information, see [Build a Form](./form/form-usage-scenarios.md).
 
 ### Layout and styling options
 
@@ -68,7 +68,7 @@ Select form layout styles. For example, display form fields in a single column, 
 ![Form field](./assets/gif/selectfield.gif)
 
 - By default, an appropriate **Form Widget** is assigned to each field. However, you can select a suitable **Form Widget** for a field.
-- Field input validation. For example, should the field be a required field, or should it contain a regex expression, or more custom [field validations](/learn/app-development/widgets/datalive/field-validator).
+- Field input validation. For example, should the field be a required field, or should it contain a regex expression, or more custom [field validations](./field-validator.md).
 
 ### Form Actions
 

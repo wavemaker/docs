@@ -12,7 +12,7 @@ Tab is an essential navigation element of every web application. WaveMaker provi
 Now you can bind a dataset to the Tabs widget. Based on the dataset, a number of Tab panes are generated.
 
 :::note
-To provide static values for the **dataset value**, we recommend you use a static tab widget. For example, comma-separated values. For more information, see [Static Tabs](/learn/app-development/widgets/container/tabs).
+To provide static values for the **dataset value**, we recommend you use a static tab widget. For example, comma-separated values. For more information, see [Static Tabs](../../../user-interfaces/web/components/angular-components/container/tabs.md).
 :::
 
 ## Tabs Usecase
@@ -23,13 +23,13 @@ Dynamically open new tab pages based on user interaction. When you select a row 
 
 ### 1. Import DB
 
-- Navigate to the Databases section and import **Sample HR database**. For more information, see [Working with Databases](/learn/app-development/services/database-services/working-with-databases/).
+- Navigate to the Databases section and import **Sample HR database**. For more information, see <!-- <!-- [Working with Databases](/learn/app-development/services/database-services/working-with-databases/) --> -->.
 
 ### 2. Create a Partial and Configure Card Widget
 
-- Create a [Partial](/learn/app-development/ui-design/page-concepts/partial-pages) page and name it **PartialEmployee**.
+- Create a <!-- <!-- [Partial](/learn/app-development/ui-design/page-concepts/partial-pages) --> --> page and name it **PartialEmployee**.
 
-- Drag and drop the **Card** widget. Bind it to the **Employee** Entity from the [imported database](/learn/how-tos/dynamic-tabs-accordions#1-import-db) and configure the **Card** widget. For more information, see [Configure Card](/learn/app-development/widgets/datalive/cards/card-basic-usage).
+- Drag and drop the **Card** widget. Bind it to the **Employee** Entity from the [imported database](./dynamic-tabs-accordions.md#1-import-db) and configure the **Card** widget. For more information, see [Configure Card](../../../user-interfaces/web/components/angular-components/datalive/cards/card-basic-usage.md).
 
 - Select Partial. Add a Partial param for the Partial page as **deptId** with an `integer` type.
 
@@ -47,7 +47,7 @@ Dynamically open new tab pages based on user interaction. When you select a row 
 
 ### 4. Configure Datatable
 
-- Drag and drop Datatable and set the datasource as **Department** Entity from the [imported database](/learn/how-tos/dynamic-tabs-accordions#1-import-db). For more information, see [Configure Datatable](/learn/app-development/widgets/datalive/datatable/data-table-basic-usage).
+- Drag and drop Datatable and set the datasource as **Department** Entity from the [imported database](./dynamic-tabs-accordions.md#1-import-db). For more information, see [Configure Datatable](../../../user-interfaces/web/components/angular-components/datalive/datatable/data-table-basic-usage.md).
 
 ### 5. Configure Dynamic Tab
 
@@ -57,15 +57,15 @@ Dynamically open new tab pages based on user interaction. When you select a row 
 
 - Change the **Type** property to the **Dynamic** type from the dropdown.
 
-- From the **Dataset** section of the properties, bind the **Value** property to the Model Variable dataSet. The Variable created in [Step-3](/learn/how-tos/dynamic-tabs-accordions#3-create-a-page-and-model-variable).
+- From the **Dataset** section of the properties, bind the **Value** property to the Model Variable dataSet. The Variable created in [Step-3](./dynamic-tabs-accordions.md#3-create-a-page-and-model-variable).
 
 - From the **Behavior** section of the properties, bind the **Default Pane Index** property to `Variables.DepartmentsInfo.dataSet.length` using the **Use Expression** tab.
 
 [![model variable](./assets/img/use-expression-length.png)](./assets/img/use-expression-length.png)
 
-- Select **Tab Pane** and bind the **Title** property to the [Model Variable](Variables.DepartmentsInfo.dataSet[$i].name) to `Variables.DepartmentsInfo.dataSet[$i].name`.
+- Select **Tab Pane** and bind the **Title** property to `Variables.DepartmentsInfo.dataSet[$i].name`.
 
-- Set the **Content** property of the Tab Pane to the Partial page [created in Step-2](/learn/how-tos/dynamic-tabs-accordions#2-create-a-partial-and-configure-card-widget) by binding the **deptId** to `Variables.DepartmentsInfo.dataSet[$i].deptId`.
+- Set the **Content** property of the Tab Pane to the Partial page [created in Step-2](./dynamic-tabs-accordions.md#2-create-a-partial-and-configure-card-widget) by binding the **deptId** to `Variables.DepartmentsInfo.dataSet[$i].deptId`.
 
 ### 6. Add Selected Department Info to the Model
 
@@ -98,7 +98,7 @@ Page.DepartmentTable1Rowselect = function($event, widget, row) {
 - When you select the rows in the department table, a separate Tab Pane gets added dynamically to view Employee record.
 
 :::note
-You can also remove the Tab Panes added by removing the item from the Model Variable. For more information, see [Remove Item in Model Variable](/learn/app-development/variables/model-variable#removeitemindex).
+You can also remove the Tab Panes added by removing the item from the Model Variable. For more information, see <!-- <!-- [Remove Item in Model Variable](/learn/app-development/variables/model-variable#removeitemindex) --> -->.
 :::
 
 ## Dynamic Accordion

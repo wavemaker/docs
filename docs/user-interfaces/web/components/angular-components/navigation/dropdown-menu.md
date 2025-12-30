@@ -91,8 +91,8 @@ Item link has priority over _onSelect_ actions i.e. when the link is selected th
 
 ## See Also
 
-[Creating a Dropdown Menu](/learn/app-development/widgets/navigation/dropdown-menu-use-cases)  
-[Creating Navigation](/learn/app-development/widgets/navigation/nav-basic-usage)  
-[Restricting Menu Items based on the User Role](/learn/how-tos/restricting-menu-item-display-based-user-role)  
-[Dynamic Menu based on the User Role](/learn/how-tos/dynamic-menu-based-user-role)  
-[Implementing Localization for Dropdown Menu](/learn/how-tos/implementing-localization-dropdown-menu)  
+[Creating a Dropdown Menu](./dropdown-menu-use-cases.md)  
+[Creating Navigation](./nav-basic-usage.md)  
+<!-- <!-- [Restricting Menu Items based on the User Role](/learn/how-tos/restricting-menu-item-display-based-user-role) --> -->  
+<!-- <!-- [Dynamic Menu based on the User Role](/learn/how-tos/dynamic-menu-based-user-role) --> -->  
+<!-- <!-- [Implementing Localization for Dropdown Menu](/learn/how-tos/implementing-localization-dropdown-menu) --> -->  

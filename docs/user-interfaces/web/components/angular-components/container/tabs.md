@@ -18,7 +18,7 @@ Static Tabs do not need a dataset to add Tab Panes to the Tab bar. You add them 
 
 ### Dynamic Tabs
 
-You can create a fully dynamic tab component using a data source by binding a dataset to the Tabs widget. Based on the dataset, a number of Tab panes will generate. For more information, see [Using Dynamic Tabs and Accordions](/learn/how-tos/dynamic-tabs-accordions).
+You can create a fully dynamic tab component using a data source by binding a dataset to the Tabs widget. Based on the dataset, a number of Tab panes will generate. For more information, see [Using Dynamic Tabs and Accordions](../../../../../guide/components/angular-components/dynamic-tabs-accordions.md).
 
 ## Features
 
@@ -85,7 +85,7 @@ Learn how you can access Tab events using the JavaScript option. Also, you will 
     - From the variables tab, select the variable and go to the Data tab. 
     - For `deptid`, keep the value as 1, and follow the same for others, including `deptid` 4. 
     - Name the respective variables as `EngineeringEmployeesData`, `SalesEmployeesData`, `MarketingEmployeesData`.
-    - For more information, see [Learn how to create variables](/learn/app-development/variables/database-crud/#menu).
+    - For more information, see <!-- <!-- [Learn how to create variables](/learn/app-development/variables/database-crud/#menu) --> -->.
 2. Drag and Drop **Tab** widget. By default, you will see a tab with three Tab Panes.
 3. Name the Tab widget as `EmployeesTab` and name the Tab Panes as `engineeringEmpPane`, `salesEmpPane`, `marketingEmpPane`.
 4. Change Tab panes titles to `Engineering`, `Sales`, `Marketing`.
@@ -188,5 +188,5 @@ https://www.wavemakeronline.com/run-x2zq8pwbhy/ent1d52def3436/ExcelDemo_master/#
 
 ## See Also
 
-[How to Use Dynamic Tabs and Accordions](/learn/how-tos/dynamic-tabs-accordions)  
-[How to Build Tabbed Live Form](/learn/how-tos/live-form-tabbed-form/)  
+[How to Use Dynamic Tabs and Accordions](../../../../../guide/components/angular-components/dynamic-tabs-accordions.md)  
+[How to Build Tabbed Live Form](../../../../../guide/components/angular-components/live-form-tabbed-form.md)  

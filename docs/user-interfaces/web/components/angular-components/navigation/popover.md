@@ -84,4 +84,4 @@ Popovers “pop-up” when the user performs a certain action or gets to a speci
 
 ## See Also
 
-[Using Popover Widget](/learn/app-development/widgets/navigation/popover-basic-usage)
+[Using Popover Widget](./popover-basic-usage.md)

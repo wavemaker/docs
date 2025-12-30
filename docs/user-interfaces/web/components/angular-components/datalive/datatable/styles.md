@@ -7,7 +7,7 @@ sidebar_label: "Styles"
 
 ## Data Table Classes
 
-From [release 10.4](/learn/wavemaker-release-notes/v10-4-0), the default pattern of the data tables change from boxy borders to list view.
+From <!-- <!-- [release 10.4](/learn/wavemaker-release-notes/v10-4-0) --> -->, the default pattern of the data tables change from boxy borders to list view.
 
 The class names for bordered table and striped table are optional. You can add these from the right style property panel.
 
@@ -35,4 +35,4 @@ Similar to columns styling, styles can be applied to rows in the Data Table. Con
 
 [![](./assets/img/table-config3.png)](./assets/img/table-config3.png)
 
-For examples, see [Custom Styling Data Table Columns & Rows](/learn/how-tos/data-table-styling/)
+For examples, see [Custom Styling Data Table Columns & Rows](../../../../../../guide/components/angular-components/data-table-styling.md)

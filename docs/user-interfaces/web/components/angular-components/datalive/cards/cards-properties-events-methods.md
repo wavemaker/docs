@@ -7,7 +7,7 @@ sidebar_label: "Properties, Events & Methods"
 ## Properties
 
 :::important
-Card Widget is contained within a List and as such, you can set the [List Properties](/learn/app-development/widgets/datalive/list/list-properties-events-methods/#properties) too.
+Card Widget is contained within a List and as such, you can set the [List Properties](../list/list-properties-events-methods.md#properties) too.
 :::
 
 | **Event** | **Description** |
@@ -23,7 +23,7 @@ Card Widget is contained within a List and as such, you can set the [List Proper
 | Width | The width of list can be specified in em, pt, px or % (i.e 50px, 75%). |
 | Height | The height of list can be specified in em, pt, px or % (i.e 50px, 75%). |
 | **Actions** |
-| Menu Actions | This property sets the actions for the widget. To set the data and events see [menu widget](/learn/app-development/widgets/navigation/dropdown-menu/) |
+| Menu Actions | This property sets the actions for the widget. To set the data and events see [menu widget](../../navigation/dropdown-menu.md) |
 | Action Label | Label for menu items. It can be bound to a variable or set to a field from the Dataset Value variable. |
 | Action Icon | Label for menu items. It can be bound to a variable or set to a field from the Dataset Value variable. |
 | Action Link | Link for the items. It can be bound to a variable or set to a field from the Dataset Value variable. **Note:** item link has priority over _onSelect_ actions i.e. when the link is selected the onSelect actions won't get executed. |

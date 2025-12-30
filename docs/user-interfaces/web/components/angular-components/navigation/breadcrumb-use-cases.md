@@ -93,6 +93,6 @@ If the ID's are repeating then the first possible path will be shown in the brea
 
 ## See Also
 
-[Creating a Dropdown Menu](/learn/app-development/widgets/navigation/dropdown-menu-use-cases)  
-[Creating Navigation](/learn/app-development/widgets/navigation/nav-basic-usage)  
+[Creating a Dropdown Menu](./dropdown-menu-use-cases.md)  
+[Creating Navigation](./nav-basic-usage.md)  
 

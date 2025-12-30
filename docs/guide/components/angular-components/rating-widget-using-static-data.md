@@ -17,6 +17,6 @@ id: "rating-widget-using-static-data"
 
 ## See Also
 
-[Rating Widget Use Cases](/learn/app-development/widgets/form-widgets/rating-widget)  
-[How to build Rating widget from variable data](/learn/how-tos/building-rating-widget-using-variable)  
-[How to build an interactive rating widget](/learn/how-tos/rating-widget-interactive/)  
+[Rating Widget Use Cases](../../../user-interfaces/web/components/angular-components/form-widgets/rating-widget.md)  
+[How to build Rating widget from variable data](./building-rating-widget-using-variable.md)  
+[How to build an interactive rating widget](./rating-widget-interactive.md)  

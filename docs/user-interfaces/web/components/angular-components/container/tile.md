@@ -15,7 +15,7 @@ When to use Tile:
 
 ## Properties
 
-You can also use the Conditional Class property from the Style tab to set the class based upon a condition. See here for [How to](/learn/how-tos/use-conditional-class-property/).
+You can also use the Conditional Class property from the Style tab to set the class based upon a condition. See here for <!-- <!-- [How to](/learn/how-tos/use-conditional-class-property/) --> -->.
 
 | **Property** | **Description** |
 | --- | --- |

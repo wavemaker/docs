@@ -14,7 +14,7 @@ In this post, we will walk through the steps to create a simple navigation, with
 We will be using a Model Variable for the purpose of this example:
 
 1. Create or Open page where you want to use the Nav Widget.
-2. Open the Variables dialog from the Variables menu and using New Variable create a Model variable ([Know more about variables)](/learn/app-development/variables/model-variable/). 
+2. Open the Variables dialog from the Variables menu and using New Variable create a Model variable (<!-- <!-- [Know more about variables)](/learn/app-development/variables/model-variable/) --> -->. 
 
 [![](./assets/img/Nav_Var_create.png)](./assets/img/Nav_Var_create.png)
 

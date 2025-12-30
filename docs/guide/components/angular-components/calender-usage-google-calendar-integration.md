@@ -63,5 +63,5 @@ For more information, please follow this link https://support.google.com/calenda
 
 ## See Also
 
-[Calendar Cases](/learn/app-development/widgets/form-widgets/calendar/#use-cases)  
-[Create an event](/learn/how-tos/calendar-usage-create-event/)
+[Calendar Cases](../../../user-interfaces/web/components/angular-components/form-widgets/calendar.md#use-cases)  
+[Create an event](./calendar-usage-create-event.md)

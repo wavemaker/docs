@@ -14,10 +14,10 @@ You can also create different variations of the navbar such as navbars with drop
 
 <iframe width="100%" height="100" style={{backgroundColor: "snow"}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Navbar">Navbar</iframe>
 
-**WaveMaker Nav Bar** widget is used in the implementation of the default _topnav_ when the [page layout](/learn/app-development/ui-design/page-concepts/page-layouts/) is chosen to include the same. Following features are available:
+**WaveMaker Nav Bar** widget is used in the implementation of the default _topnav_ when the <!-- <!-- [page layout](/learn/app-development/ui-design/page-concepts/page-layouts/) --> --> is chosen to include the same. Following features are available:
 
 1. _Title_ and _image _for the navbar can be specified
-2. Two _nav widgets_ are provided and each can be customized to include Anchor, Menu, Popover, Button. Each of these nav widgets is aligned to the left and right of the Nav Bar. [Click here for nav widget usage](/learn/app-development/widgets/navigation/nav/).
+2. Two _nav widgets_ are provided and each can be customized to include Anchor, Menu, Popover, Button. Each of these nav widgets is aligned to the left and right of the Nav Bar. [Click here for nav widget usage](./nav.md).
 
 ## Properties
 
@@ -36,7 +36,7 @@ You can also create different variations of the navbar such as navbars with drop
 
 ## See Also
 
-[Navigation Properties and Events](/learn/app-development/widgets/navigation/nav)  
-[Basic Usage](/learn/app-development/widgets/navigation/nav-basic-usage/)  
-[Creating a Dropdown Menu](/learn/app-development/widgets/navigation/dropdown-menu-use-cases)  
-[Dynamic Menu based on the User Role](/learn/how-tos/dynamic-menu-based-user-role)  
+[Navigation Properties and Events](./nav.md)  
+[Basic Usage](./nav-basic-usage.md)  
+[Creating a Dropdown Menu](./dropdown-menu-use-cases.md)  
+<!-- <!-- [Dynamic Menu based on the User Role](/learn/how-tos/dynamic-menu-based-user-role) --> -->  

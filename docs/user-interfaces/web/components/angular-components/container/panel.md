@@ -31,7 +31,7 @@ A panel has designated sections such as header, body, and footer. [![](./assets
 
 ### Panel Styles
 
-Panel style can be set by using the **Class Name** option from the **Styles** tab of the **Properties** panel. You can also use the Conditional Class property to set the class based upon a condition. See here for [How to](/learn/how-tos/use-conditional-class-property/).
+Panel style can be set by using the **Class Name** option from the **Styles** tab of the **Properties** panel. You can also use the Conditional Class property to set the class based upon a condition. See here for <!-- <!-- [How to](/learn/how-tos/use-conditional-class-property/) --> -->.
 
 <iframe width="100%" height="800" style={{backgroundColor: "snow"}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/PanelStyle">Panel Style</iframe>
 
@@ -70,7 +70,7 @@ The panel has few methods exposed on widget scope which can be accessed via Jav
 
 **Step 1:- (Prepare data and widgets)**
 
-1. Create three variables of type ‘Employee’ entity and for 1st variable from variables tab select the variable and go to data tab and for deptid keep value as 1, do the same for others also as deptid 4, 2 for respective variables, name these variables as ‘EngineeringEmployeesData’, ‘SalesEmployeesData’, ‘MarketingEmployeesData’. [Learn how to create variables from here.](/learn/app-development/variables/database-crud/#menu)
+1. Create three variables of type ‘Employee’ entity and for 1st variable from variables tab select the variable and go to data tab and for deptid keep value as 1, do the same for others also as deptid 4, 2 for respective variables, name these variables as ‘EngineeringEmployeesData’, ‘SalesEmployeesData’, ‘MarketingEmployeesData’. <!-- <!-- [Learn how to create variables from here.](/learn/app-development/variables/database-crud/#menu) --> -->
 2. Drag and Drop two Panel widget.
 3. Name first ‘Panel’ widget as ‘engineeringPanel’ and second ‘Panel’ widget as ‘salesPanel’.
 4. Check ‘collapsible’ and ‘closable’ on both the panel widgets from properties panel options.
@@ -130,7 +130,7 @@ The panel has few methods exposed on widget scope which can be accessed via Jav
 | **Content** |
 | Content | Html content(in the case of an HTML widget) or Page's content(in the case of page container widgets) will be included in the widget. |
 | **Actions** |
-| Menu Actions | This bindable property sets the actions for the widget. To set the data and events see [dropdown menu widget](/learn/app-development/widgets/navigation/dropdown-menu-use-cases/). |
+| Menu Actions | This bindable property sets the actions for the widget. To set the data and events see [dropdown menu widget](../navigation/dropdown-menu-use-cases.md). |
 | Action Label
 (available only when the above Menu Actions is bound to a variable) | Label for anchor or menu tags generated dynamically. |
 | Action Icon   (available only when the above Menu Actions is bound to a variable) | Class for the action. Example- 'fa fa-ban' or 'glyphicon glyphicon-cloud'. |

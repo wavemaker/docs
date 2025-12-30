@@ -32,7 +32,7 @@ App.changeLocale({'datavalue': 'en'})
 | **Default Value** |
 | Value | This is the default value to display value for an editor widget. Note that the display value is just what the user sees initially, and is not always the dataValue returned by the widget. |
 | **Dataset** |
-| Value | Set this property to a variable to populate the list of values to display. By default, it is bound to the supportedLocale variable which gets created when [Localization](/learn/how-tos/localization-wavemaker-apps/ "Localization") is enabled. |
+| Value | Set this property to a variable to populate the list of values to display. By default, it is bound to the supportedLocale variable which gets created when <!-- <!-- [Localization](/learn/how-tos/localization-wavemaker-apps/ "Localization") --> --> is enabled. |
 | Data field | This property sets the dataValue to be returned by a select editor when the list is populated using the dataSet property. |
 | Display field | This property sets the displayValue to show in the select editor when the list is populated using the dataSet property. |
 | Display Expression | This is an advanced property that gives more control over what is displayed in the drop-down select list. A Display Expression uses a Javascript expression to format exactly what is shown. |
@@ -77,5 +77,5 @@ App.changeLocale({'datavalue': 'en'})
 
 ## See Also
 
-[Simple Usage Scenario](/learn/app-development/widgets/form-widgets/select-locale-usage/)  
-[Localization of Error Messages](/learn/how-tos/localization-error-messages/)  
+<!-- <!-- [Simple Usage Scenario](/learn/app-development/widgets/form-widgets/select-locale-usage/) --> -->  
+<!-- <!-- [Localization of Error Messages](/learn/how-tos/localization-error-messages/) --> -->  

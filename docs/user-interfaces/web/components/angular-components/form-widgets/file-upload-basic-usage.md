@@ -8,12 +8,12 @@ id: "file-upload-basic-usage"
 3. From the Properties panel, set the **Multiple** property to true, this will enable us to upload multiple files, else you can upload a single file at a time. [![fu_props](./assets/img/fu_props.png)](./assets/img/fu_props.png)
 4. Run the app, select files to upload [![fu_run](./assets/img/fu_run.png)](./assets/img/fu_run.png)
 
-[FileUpload Use Cases](/learn/app-development/widgets/basic/fileupload-use-cases/)
+<!-- <!-- [FileUpload Use Cases](/learn/app-development/widgets/basic/fileupload-use-cases/) --> -->
 
-- [1. FileUpload Basic Usage](/learn/app-development/widgets/form-widgets/file-upload-basic-usage/)
-- [2. How to use various file service operations](/learn/how-tos/file-upload-widget-operations/)
-- [3. How to save uploaded file to a DB](/learn/how-tos/upload-file-save-database/)
-- [4. How to upload BLOB file to a DB](/learn/how-tos/file-upload-blob-data/)
-- [5. How to upload file to custom directory](/learn/how-tos/file-upload-custom-directory/)
-- [6. How to uploaded files from Java code](/learn/how-tos/accessing-file-upload-java-code/)
-- [7. How to use FileUpload in Form and Live Form](/learn/how-tos/upload-files-from-live-form-form/)
+- [1. FileUpload Basic Usage](./file-upload-basic-usage.md)
+- [2. How to use various file service operations](../../../../../guide/components/angular-components/file-upload-widget-operations.md)
+- [3. How to save uploaded file to a DB](../../../../../guide/components/angular-components/upload-file-save-database.md)
+- [4. How to upload BLOB file to a DB](../../../../../guide/components/angular-components/file-upload-blob-data.md)
+- [5. How to upload file to custom directory](../../../../../guide/components/angular-components/file-upload-custom-directory.md)
+- [6. How to uploaded files from Java code](../../../../../guide/components/angular-components/accessing-file-upload-java-code.md)
+- [7. How to use FileUpload in Form and Live Form](../../../../../guide/components/angular-components/upload-files-from-live-form-form.md)

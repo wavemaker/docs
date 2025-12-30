@@ -21,11 +21,11 @@ While designing the Cards following features can be set:
 
 ## See More
 
-[Card Data Source](/learn/app-development/widgets/datalive/cards/cards-data-source/)  
-[Card Templates](/learn/app-development/widgets/datalive/cards/cards-templates/)  
-[Card Configuration](/learn/app-development/widgets/datalive/cards/card-configuration/)  
-[Card Behavior Settings](/learn/app-development/widgets/datalive/cards/card-behavior-settings/)  
-[Card Properties](/learn/app-development/widgets/datalive/cards/cards-properties-events-methods/#properties)  
-[Card Events](/learn/app-development/widgets/datalive/cards/cards-properties-events-methods/#events)  
-[Card Methods](/learn/app-development/widgets/datalive/cards/cards-properties-events-methods/#methods)  
-[Use Cases](/learn/app-development/widgets/datalive/cards/card-use-cases/)  
+[Card Data Source](./cards/cards-data-source.md)  
+[Card Templates](./cards/cards-templates.md)  
+[Card Configuration](./cards/card-configuration.md)  
+[Card Behavior Settings](./cards/card-behavior-settings.md)  
+[Card Properties](./cards/cards-properties-events-methods.md#properties)  
+[Card Events](./cards/cards-properties-events-methods.md#events)  
+[Card Methods](./cards/cards-properties-events-methods.md#methods)  
+[Use Cases](./cards/card-use-cases.md)  

@@ -77,6 +77,6 @@ Using Text widget, you can do the following:
 |  | [Control] [Alt] + shortcutkey (MAC) |
 
 ## See More
-[Form Widgets](/learn/app-development/widgets/widget-library/#form)  
-[Number](/learn/app-development/widgets/form-widgets/number/)  
-[Textarea](/learn/app-development/widgets/form-widgets/textarea/)
+<!-- <!-- [Form Widgets](/learn/app-development/widgets/widget-library/#form) --> -->  
+[Number](./number.md)  
+[Textarea](./textarea.md)

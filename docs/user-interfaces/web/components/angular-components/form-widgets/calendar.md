@@ -160,6 +160,6 @@ Page.Widgets.calendar.gotoDate();
 
 ## See Also
 
-[How to create an event and save it in a Database](/learn/how-tos/calendar-usage-create-event/)  
-[How to integrate with Google Calendar](/learn/how-tos/calender-usage-google-calendar-integration/)
+[How to create an event and save it in a Database](../../../../../guide/components/angular-components/calendar-usage-create-event.md)  
+[How to integrate with Google Calendar](../../../../../guide/components/angular-components/calender-usage-google-calendar-integration.md)
 

@@ -13,7 +13,7 @@ You can:
 3. Apply regular expressions to validate client side number.
 
 :::note
-Number widget applies the number formatting as per the Locale automatically. In case you do not wish to change the app behavior as per the Locale, use the Text widget with Number Type. For more information, see [Text Widget with Number Type](/learn/app-development/widgets/form-widgets/text).
+Number widget applies the number formatting as per the Locale automatically. In case you do not wish to change the app behavior as per the Locale, use the Text widget with Number Type. For more information, see [Text Widget with Number Type](./text.md).
 :::
 
 ## Properties
@@ -77,9 +77,9 @@ Number widget applies the number formatting as per the Locale automatically. In 
 
 ## See More
 
-[Form Widgets](/learn/app-development/widgets/widget-library/#form)  
-[Currency](/learn/app-development/widgets/form-widgets/currency/)  
-[Date](/learn/app-development/widgets/form-widgets/date-time-datetime/)  
-[Datetime](/learn/app-development/widgets/form-widgets/date-time-datetime/)  
-[Text](/learn/app-development/widgets/form-widgets/text/)  
+<!-- <!-- [Form Widgets](/learn/app-development/widgets/widget-library/#form) --> -->  
+[Currency](./currency.md)  
+[Date](./date-time-datetime.md)  
+[Datetime](./date-time-datetime.md)  
+[Text](./text.md)  
 

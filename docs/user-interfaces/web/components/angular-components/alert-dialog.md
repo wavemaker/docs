@@ -14,7 +14,7 @@ Dragging and dropping a dialog creates a **view** containing the dialog. The vie
 For **Alert Dialog**, you can set:
 
 - the name, the title of the alert pop-up, message to be displayed in the pop-up, text on the OK button and the type of alert - error, information, success or warning.
-- the icon for display next to the title of the alert box, you can pick the icon from the [icon dialog](/learn/app-development/widgets/basic/icon/).
+- the icon for display next to the title of the alert box, you can pick the icon from the [icon dialog](./basic/icon.md).
 
 [![](./assets/img/dialog_alert.png)](./assets/img/dialog_alert.png)
 

@@ -19,7 +19,7 @@ id: "capturing-card-items"
 
 [![list_bind](./assets/img/list_bind.png)](./assets/img/list_bind.png)
 
-[Cards Use Cases](/learn/app-development/widgets/datalive/cards/card-use-cases/)
+[Cards Use Cases](../../../user-interfaces/web/components/angular-components/datalive/cards/card-use-cases.md)
 
-- [1. Cards Basic Usage](/learn/app-development/widgets/datalive/cards/card-basic-usage/)
-- [2. How to access cards items](/learn/how-tos/capturing-card-items/)
+- [1. Cards Basic Usage](../../../user-interfaces/web/components/angular-components/datalive/cards/card-basic-usage.md)
+- [2. How to access cards items](./capturing-card-items.md)

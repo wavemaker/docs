@@ -78,7 +78,7 @@ The user can Export the Data Table to an Excel or CSV format. This option is ava
 
 '**Export Data Size**' property on data table specifies the number of records to be exported. Based on the profile settings limit, records are fetched. If you specify an export data size value, records are fetched based on this value. By default, the value is set to 100, the maximum export size. 
 
-To export more than 100 records, the max size in the [profile](/learn/app-development/deployment/configuration-profiles/) needs to be changed from the Project Configurations menu of [Project Workspace](/learn/app-development/wavemaker-overview/product-walkthrough/#project-workspace).
+To export more than 100 records, the max size in the <!-- <!-- [profile](/learn/app-development/deployment/configuration-profiles/) --> --> needs to be changed from the Project Configurations menu of <!-- <!-- [Project Workspace](/learn/app-development/wavemaker-overview/product-walkthrough/#project-workspace) --> -->.
 
 Only the contents displayed in the Data Table will be exported, as opposed to the contents of the entire underlying database table. For each column selected for display, you can customize the export value using Value Expressions. Value Expression **has** to be set for custom fields.
 

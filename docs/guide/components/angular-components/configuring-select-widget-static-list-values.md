@@ -6,9 +6,9 @@ id: "configuring-select-widget-static-list-values"
 A Select widget can be used in various ways based on the source of data. Each type of data source needs a different approach. WaveMaker Select widget works in any one of the following ways:
 
 - Using static list of values
-- [Using variable data](/learn/how-tos/configuring-select-widget-variable/)
-- [Using display and data value fields from a Variable](/learn/how-tos/configuring-select-widget-display-data-fields/)
-- [Using database fields](/learn/how-tos/configuring-select-widget-database-fields/)
+- [Using variable data](./configuring-select-widget-variable.md)
+- [Using display and data value fields from a Variable](./configuring-select-widget-display-data-fields.md)
+- [Using database fields](./configuring-select-widget-database-fields.md)
 
 1. Drag and drop a Select and Label widget onto the canvas.
 2. The simplest way to use the Select Widget is to enter the values in a comma-separated format for display in the Value property under the DATASET section. In this example, we have set the value to Travelling, Reading, Writing, Photography.
@@ -16,10 +16,10 @@ A Select widget can be used in various ways based on the source of data. Each ty
 4. The selection made by the user is displayed in a Label widget, by binding the select datavalue to it. [![](./assets/img/sel_list_res.png)](./assets/img/sel_list_res.png)
 5. Preview the app and see the selected item from the Select widget displayed in the label.
 
-[Select Use Cases](/learn/app-development/widgets/form-widgets/select-use-cases/)
+<!-- <!-- [Select Use Cases](/learn/app-development/widgets/form-widgets/select-use-cases/) --> -->
 
 - [1. How to use list of values for select widget configuration](#)
-- [2. How to use variable for select widget configuration](/learn/how-tos/configuring-select-widget-variable/)
-- [3. How to use display and data value fields for select widget configuration](/learn/how-tos/configuring-select-widget-display-data-fields/)
-- [4. How to use database fields for select widget configuration](/learn/how-tos/configuring-select-widget-database-fields/)
-- [5. How to configure cascading select](/learn/how-tos/configuring-cascading-select/)
+- [2. How to use variable for select widget configuration](./configuring-select-widget-variable.md)
+- [3. How to use display and data value fields for select widget configuration](./configuring-select-widget-display-data-fields.md)
+- [4. How to use database fields for select widget configuration](./configuring-select-widget-database-fields.md)
+- [5. How to configure cascading select](./configuring-cascading-select.md)

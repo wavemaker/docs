@@ -19,7 +19,7 @@ Using Button Group, Buttons can exist together as a group. They are great when y
 
 ## Properties
 
-Refer to  [Button widget document](/learn/app-development/widgets/form-widgets/button/) for individual Button features and properties.
+Refer to  [Button widget document](./button.md) for individual Button features and properties.
 
 | Property | Description |
 | --- | --- |
@@ -36,5 +36,5 @@ Refer to  [Button widget document](/learn/app-development/widgets/form-widgets/
 
 ## See More
 
-[Form Widgets](/learn/app-development/widgets/widget-library/#form)  
-[Button](/learn/app-development/widgets/form-widgets/button/)
+<!-- <!-- [Form Widgets](/learn/app-development/widgets/widget-library/#form) --> -->  
+[Button](./button.md)

@@ -26,7 +26,7 @@ Clear the list of uploaded files from the UI (user interface). For this, you can
 1. Choose an icon or use a default one.
 2. Write a hint description on mouse-over.
 
-**cleariconclass**: Set the class name for the Clear icon, choosing from the [icons](/learn/app-development/widgets/basic/icon). The default value of the property is `wi wi-clear`. To change the default icon, configure the property from the **Markup** tab or by using the exposed method `setClearIconClass`.
+**cleariconclass**: Set the class name for the Clear icon, choosing from the [icons](../basic/icon.md). The default value of the property is `wi wi-clear`. To change the default icon, configure the property from the **Markup** tab or by using the exposed method `setClearIconClass`.
 
 **cleariconhint**: You can set the hint property to show a text message when you mouse-over the icon. The default value is set to the text *`Clear`*. To change the default hint text, configure the property from the **Markup** tab or by using the exposed method `setClearIconHint(hint)`.
 

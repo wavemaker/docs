@@ -12,7 +12,7 @@ Dragging and dropping a dialog creates a **view** containing the dialog. The vie
 
 ## Page Dialog
 
-Page Dialog is a popup window that displays page content and can be dismissed by the user. The **content** property of this widget can be set to the desired [partial page](/learn/app-development/ui-design/page-concepts/partial-pages/) content.
+Page Dialog is a popup window that displays page content and can be dismissed by the user. The **content** property of this widget can be set to the desired <!-- <!-- [partial page](/learn/app-development/ui-design/page-concepts/partial-pages/) --> --> content.
 
 [![](./assets/img/dialog_page.png)](./assets/img/dialog_page.png)
 

@@ -10,7 +10,7 @@ Containers are semantically correct for laying out content. Its most common use 
 
 ## Properties
 
-You can also use the Conditional Class property from the Style tab to set the class based upon a condition. For more information, see the [How-to](/learn/how-tos/use-conditional-class-property/) doc.
+You can also use the Conditional Class property from the Style tab to set the class based upon a condition. For more information, see the <!-- <!-- [How-to](/learn/how-tos/use-conditional-class-property/) --> --> doc.
 
 | **Property** | **Description** |
 | --- | --- |

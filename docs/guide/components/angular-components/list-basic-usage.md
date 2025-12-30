@@ -27,7 +27,7 @@ There can be different scenarios to deal with when configuring your List Widget 
 ### Scenario 1
 You do not have any services available in your project.
     
-- You will be prompted to import a service by either [Database Integration](/learn/app-development/services/database-services/working-with-databases/), or [Web Service Integration](/learn/app-development/services/web-services/web-services/), or [Java Service Integration](/learn/app-development/services/java-services/java-service/). Click the appropriate button to proceed.
+- You will be prompted to import a service by either <!-- <!-- [Database Integration](/learn/app-development/services/database-services/working-with-databases/) --> -->, or <!-- <!-- [Web Service Integration](/learn/app-development/services/web-services/web-services/) --> -->, or <!-- <!-- [Java Service Integration](/learn/app-development/services/java-services/java-service/) --> -->. Click the appropriate button to proceed.
 - Once a service is available in your application, you can proceed to bind the widget to data source and follow the same steps as mentioned in scenario 2
 
 [![](./assets/img/list_basic_data1.png)](./assets/img/list_basic_data1.png)
@@ -95,9 +95,9 @@ Test Run or Preview the App
 
 ## See Also
 
-[How to group list items](/learn/how-tos/list-grouped/)  
-[How to group list items based upon multiple fields](/learn/how-tos/list-multi-grouped/)  
-[How to include data table within a list](/learn/how-tos/list-data-table/)  
-[How to build editable list using live form](/learn/how-tos/building-editable-list/)  
-[How to build list from the selected item of another list](/learn/how-tos/building-cascading-lists/)  
-[How to access list items](/learn/how-tos/list-item-access/)  
+[How to group list items](./list-grouped.md)  
+[How to group list items based upon multiple fields](./list-multi-grouped.md)  
+[How to include data table within a list](./list-data-table.md)  
+[How to build editable list using live form](./building-editable-list.md)  
+[How to build list from the selected item of another list](./building-cascading-lists.md)  
+[How to access list items](./list-item-access.md)  

@@ -59,6 +59,6 @@ If you follow this structure, the label, icon, link, and children tags are picke
 
 ## See Also
 
-[Tree Widget Cases](/learn/app-development/widgets/basic/tree/)  
-[How to build tree from java service](/learn/how-tos/tree-use-case-java-service/)  
-[How to build a dynamic tree](/learn/how-tos/tree-use-case-dynamic-tree/)
+[Tree Widget Cases](../../../user-interfaces/web/components/angular-components/basic/tree.md)  
+[How to build tree from java service](./tree-use-case-java-service.md)  
+[How to build a dynamic tree](./tree-use-case-dynamic-tree.md)

@@ -12,10 +12,10 @@ One can drive the content of a Select widget based upon the selection of another
 5. Bind the second Select widget to the variable (_cityVar) _created in the above step. Set the Display Field and Data Field to the City field. [![](./assets/img/sel_cs_prop2.png)](./assets/img/sel_cs_prop2.png)
 6. Run the application, select country and see the city list change.
 
-[Select Use Cases](/learn/app-development/widgets/form-widgets/select-use-cases/)
+<!-- <!-- [Select Use Cases](/learn/app-development/widgets/form-widgets/select-use-cases/) --> -->
 
-- [1. How to use list of values for select widget configuration](/learn/how-tos/configuring-select-widget-static-list-values/)
-- [2. How to use variable for select widget configuration](/learn/how-tos/configuring-select-widget-variable/)
-- [3. How to use display and data value fields for select widget configuration](/learn/how-tos/configuring-select-widget-display-data-fields/)
-- [4. How to use database fields for select widget configuration](/learn/how-tos/configuring-select-widget-database-fields/)
-- [5. How to configure cascading select](/learn/how-tos/configuring-cascading-select/)
+- [1. How to use list of values for select widget configuration](./configuring-select-widget-static-list-values.md)
+- [2. How to use variable for select widget configuration](./configuring-select-widget-variable.md)
+- [3. How to use display and data value fields for select widget configuration](./configuring-select-widget-display-data-fields.md)
+- [4. How to use database fields for select widget configuration](./configuring-select-widget-database-fields.md)
+- [5. How to configure cascading select](./configuring-cascading-select.md)

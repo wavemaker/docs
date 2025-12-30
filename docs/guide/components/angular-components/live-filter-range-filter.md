@@ -14,9 +14,9 @@ To filter data between given two values, **Show Range Selector** property from t
     - Bind the Dataset Value property of Data Table to the result node of the Live Filter created above.
 6. Run the app and select a range of dates for Start Date
 
-[Live Filter Use Cases](/learn/app-development/widgets/datalive/livefilter/livefilter-use-cases/)
+[Live Filter Use Cases](../../../user-interfaces/web/components/angular-components/datalive/livefilter/livefilter-use-cases.md)
 
-- [1. Basic Usage Scenario](/learn/app-development/widgets/datalive/livefilter/live-filter-basic-usage/)
-- [2. How to Apply Live Filter to a Data Table/Chart](/learn/how-tos/live-filter-applying/)
-- [3. How to build a filtering based upon multiple values](/learn/how-tos/live-filter-multiple-values/)
-- [4. How to build a filtering based upon a range of values](/learn/how-tos/live-filter-range-filter/)
+- [1. Basic Usage Scenario](../../../user-interfaces/web/components/angular-components/datalive/livefilter/live-filter-basic-usage.md)
+- [2. How to Apply Live Filter to a Data Table/Chart](./live-filter-applying.md)
+- [3. How to build a filtering based upon multiple values](./live-filter-multiple-values.md)
+- [4. How to build a filtering based upon a range of values](./live-filter-range-filter.md)

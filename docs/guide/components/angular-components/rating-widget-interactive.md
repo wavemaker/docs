@@ -3,7 +3,7 @@ title: "Building an Interactive Rating Widget"
 id: "rating-widget-interactive"
 ---
 ---
-You can change the Rating widget style at the runtime, using the **Change** event. Using the example from the [previous section with Variable data](/learn/how-tos/building-rating-widget-using-variable), here we will see how.
+You can change the Rating widget style at the runtime, using the **Change** event. Using the example from the [previous section with Variable data](./building-rating-widget-using-variable.md), here we will see how.
 
 1. Add **Javascript** to the **Change** event of the Rating widget. 
 
@@ -34,7 +34,7 @@ Page.rating1Change = function ($event, widget, newVal, oldVal) {
 
 ## See Also
 
-[Rating Widget Use Cases](/learn/app-development/widgets/form-widgets/rating-widget/)  
-[How to build Rating widget from static data](/learn/how-tos/rating-widget-using-static-data/)  
-[How to build Rating widget from variable data](/learn/how-tos/building-rating-widget-using-variable)  
+[Rating Widget Use Cases](../../../user-interfaces/web/components/angular-components/form-widgets/rating-widget.md)  
+[How to build Rating widget from static data](./rating-widget-using-static-data.md)  
+[How to build Rating widget from variable data](./building-rating-widget-using-variable.md)  
 

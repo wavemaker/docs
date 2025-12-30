@@ -5,13 +5,13 @@ sidebar_label: "Use Cases"
 ---
 ---
 
-- [Basic Usage - Creating an Employee List](/learn/how-tos/list-basic-usage/)
-- [How to group list items](/learn/how-tos/list-grouped/)
-- [How to group list items based upon multiple fields](/learn/how-tos/list-multi-grouped/)
-- [How to include data table within a list](/learn/how-tos/list-data-table/)
-- [How to set partial page content for Accordion within a List](/learn/how-tos/setting-partial-page-content-accordion-within-list/)
-- [How to set partial page content for Panel within a List using JavaScript](/learn/how-tos/setting-partial-page-content-panel-within-list-using-javascript/)
-- [How to build editable list using live form](/learn/how-tos/building-editable-list/)
-- [How to build list from the selected item of another list](/learn/how-tos/building-cascading-lists/)
-- [How to access list items](/learn/how-tos/list-item-access/)
+- [Basic Usage - Creating an Employee List](../../../../../../guide/components/angular-components/list-basic-usage.md)
+- [How to group list items](../../../../../../guide/components/angular-components/list-grouped.md)
+- [How to group list items based upon multiple fields](../../../../../../guide/components/angular-components/list-multi-grouped.md)
+- [How to include data table within a list](../../../../../../guide/components/angular-components/list-data-table.md)
+- [How to set partial page content for Accordion within a List](../../../../../../guide/components/angular-components/setting-partial-page-content-accordion-within-list.md)
+- [How to set partial page content for Panel within a List using JavaScript](../../../../../../guide/components/angular-components/setting-partial-page-content-panel-within-list-using-javascript.md)
+- [How to build editable list using live form](../../../../../../guide/components/angular-components/building-editable-list.md)
+- [How to build list from the selected item of another list](../../../../../../guide/components/angular-components/building-cascading-lists.md)
+- [How to access list items](../../../../../../guide/components/angular-components/list-item-access.md)
 

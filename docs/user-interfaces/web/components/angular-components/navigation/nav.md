@@ -6,7 +6,7 @@ id: "nav"
 
 The **Nav** element represents a section of a page that links to other pages or to parts within the page: a section with navigation links.
 
-**WaveMaker Nav** widget is used in the implementation of the default _leftnav_ and _rightnav_ when the [page layout](/learn/app-development/ui-design/page-concepts/page-layouts/) is chosen to include the same. Within an app, it can be used in two ways. 
+**WaveMaker Nav** widget is used in the implementation of the default _leftnav_ and _rightnav_ when the <!-- <!-- [page layout](/learn/app-development/ui-design/page-concepts/page-layouts/) --> --> is chosen to include the same. Within an app, it can be used in two ways. 
 
 ## Binding Dataset
 
@@ -16,8 +16,8 @@ Bind dataset for the nav elements using the _Value_ property and setting the _
 Provides widget to be added to the nav panels such as Anchor, Menu, Popover, Button. Depending upon the widgets added to the nav various properties can be set:
 
 1. _Anchor_: can have _hyperlink_ to specify the destination link, _target_ where the linked document should be opened
-2. _Menu_: can specify the _layout_, _position_ and _value_-_action_ combination. [Click here for more on menu usage](/learn/app-development/widgets/navigation/dropdown-menu/)
-3. _Popover_: can set the _content source_ and _content_ for further action. [Click here for Popover usage](/learn/app-development/widgets/navigation/popover/).
+2. _Menu_: can specify the _layout_, _position_ and _value_-_action_ combination. [Click here for more on menu usage](./dropdown-menu.md)
+3. _Popover_: can set the _content source_ and _content_ for further action. [Click here for Popover usage](./popover.md).
 4. _Button_: _on click event_ can be set for page navigation
 
 ## Nav Types & Layouts
@@ -59,11 +59,11 @@ Action IconClass for the icon. Choose from the options available based upon the 
 
 ## Event
 
-Each _anchor_ widget events are available for adding functionality to this layout. For more on Anchor widget see [here](/learn/app-development/widgets/basic/anchor/ "Basic Widgets").
+Each _anchor_ widget events are available for adding functionality to this layout. For more on Anchor widget see <!-- <!-- [here](/learn/app-development/widgets/basic/anchor/ "Basic Widgets") --> -->.
 
 ## Use Cases
 
-[Using Navigation](/learn/app-development/widgets/navigation/nav-basic-usage/)  
-[Working with Nav Bar](/learn/app-development/widgets/navigation/nav-bar)  
-[Creating a Dropdown Menu](/learn/app-development/widgets/navigation/dropdown-menu-use-cases)  
-[Dynamic Menu based on the User Role](/learn/how-tos/dynamic-menu-based-user-role)  
+[Using Navigation](./nav-basic-usage.md)  
+[Working with Nav Bar](./nav-bar.md)  
+[Creating a Dropdown Menu](./dropdown-menu-use-cases.md)  
+<!-- <!-- [Dynamic Menu based on the User Role](/learn/how-tos/dynamic-menu-based-user-role) --> -->  

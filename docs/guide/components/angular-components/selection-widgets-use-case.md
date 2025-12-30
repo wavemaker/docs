@@ -26,8 +26,8 @@ This document gives you the usage details of these three widgets. We will be:
 [![](./assets/img/selection_run2.png)](./assets/img/selection_run2.png)
 
 1. Open/Create a project.
-2. [Import the default hrdb database](/learn/app-development/services/database-services/working-with-databases/).
-3. [Write and save a query](/learn/app-development/services/database-services/working-with-queries) to retrieve the total number of employees from a given city, state, zip. Save it as EmpTotal.
+2. <!-- <!-- [Import the default hrdb database](/learn/app-development/services/database-services/working-with-databases/) --> -->.
+3. <!-- <!-- [Write and save a query](/learn/app-development/services/database-services/working-with-queries) --> --> to retrieve the total number of employees from a given city, state, zip. Save it as EmpTotal.
     
     select count(EMP_ID) as total
     from employee

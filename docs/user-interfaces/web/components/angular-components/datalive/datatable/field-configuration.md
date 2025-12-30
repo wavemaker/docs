@@ -20,7 +20,7 @@ The columns or fields to be displayed in a Data Table can be further configured
 6. to define the display format of the column or field, based upon the content including date, currency, decimal and many more formats;
 7. to style the fields for a better readability and for highlighting a particular value;
 8. to restrict the display based upon the security roles;
-9. filter criteria can be applied to referenced entities for Inline Editable and Quick Edit Data Tables ([see here for usage](/learn/how-tos/using-filter-criteria-data-live-widgets)).
+9. filter criteria can be applied to referenced entities for Inline Editable and Quick Edit Data Tables (<!-- <!-- [see here for usage](/learn/how-tos/using-filter-criteria-data-live-widgets) --> -->).
 
 All the above-mentioned options are available from the **Columns tab** of the **Advanced Settings** property.
 
@@ -89,7 +89,7 @@ This feature helps you group columns under a heading for better readability and 
 - _Widget Title_ - title to be displayed on the button at run-time, set by default to the column name, can be edited as per the needs
 - _Value Expression_ - You can write a custom expression to change the display setting for a table column. The expression needs to follow AngularJS conventions for binding. A sample expression is given which can be enhanced as per the needs of the application.
 
-[See here for usage example](/learn/how-tos/data-table-widget-representations/)
+[See here for usage example](../../../../../../guide/components/angular-components/data-table-widget-representations.md)
 
 #### Format Options
 
@@ -114,7 +114,7 @@ This feature helps you group columns under a heading for better readability and 
 
 - Fraction Size can be set
 
-[See here for usage example](/learn/how-tos/data-table-format-options/)
+[See here for usage example](../../../../../../guide/components/angular-components/data-table-format-options.md)
 
 ### Edit Mode Options
 
@@ -157,12 +157,12 @@ In the case, Filter Option is set to Row while designing the Data Table, then th
 
 **Styles** can be used to change the styles for the selected field.
 
-For more information about styles and properties, see [Data Table Styles](/learn/app-development/widgets/datalive/datatable/styles).
+For more information about styles and properties, see [Data Table Styles](./styles.md).
 
-For examples, see [Custom Styling Data Table Columns & Rows](/learn/how-tos/data-table-styling/)
+For examples, see [Custom Styling Data Table Columns & Rows](../../../../../../guide/components/angular-components/data-table-styling.md)
 
 ### Security Options
 
-**Role-based access** can be set to enforce security at column-level: If the [security has been enabled](/learn/app-development/app-security/app-security) in your app, then you can define the app role which has access to a specific column.
+**Role-based access** can be set to enforce security at column-level: If the <!-- <!-- [security has been enabled](/learn/app-development/app-security/app-security) --> --> in your app, then you can define the app role which has access to a specific column.
 
 [![](./assets/img/dt_security.png)](./assets/img/dt_security.png)

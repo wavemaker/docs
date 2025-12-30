@@ -129,13 +129,13 @@ In this use case, you will be using the chips widget as email recipients and cre
 Have a database called ProfileDB and a table named Profile with basic fields like first name, last name, job title, email.
 
 1. Drag and drop the chips widget onto the canvas.
-2. Create a variable based on the database CRUD APIs that is bound to Profile Table. [Know more from here](/learn/app-development/variables/database-crud/#).
+2. Create a variable based on the database CRUD APIs that is bound to Profile Table. <!-- <!-- [Know more from here](/learn/app-development/variables/database-crud/#) --> -->.
 3. Bind this variable to the dataset value property.
 4. Choose Data Field as email
 5. Choose Display Field as FirstName
 6. Drag and Drop a TextArea Field for composing messages
-7. Create a [Java Service for Sending Email](/learn/app-development/services/3rd-party-libraries/using-3rd-party-jar-files/).
-8. Create a variable based on the APIs auto-generated for the methods from the Java service. [Know more from here](/learn/app-development/variables/java-services/).
+7. Create a <!-- <!-- [Java Service for Sending Email](/learn/app-development/services/3rd-party-libraries/using-3rd-party-jar-files/) --> -->.
+8. Create a variable based on the APIs auto-generated for the methods from the Java service. <!-- <!-- [Know more from here](/learn/app-development/variables/java-services/) --> -->.
 9. From the Data tab, bind the values to those returned by the Chips widget.
 10. Drag and Drop a button – Give the caption as Send. On Click of that button trigger the service variable for Java service.
 

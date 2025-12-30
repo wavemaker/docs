@@ -7,7 +7,7 @@ The **setTimezone** method configures a widget to display date and time values b
 
 ## Using setTimezone for Datetime Widget
 
-1. Drag and drop a Datetime widget. [Learn more about Datetime](/learn/app-development/widgets/form-widgets/date-time-datetime/#datetime-properties)
+1. Drag and drop a Datetime widget. [Learn more about Datetime](../../../user-interfaces/web/components/angular-components/form-widgets/date-time-datetime.md#datetime-properties)
 
   ![datetime_widget.png](./assets/img/datetime_widget.png)
 
@@ -48,7 +48,7 @@ In `App.js` write the below script. Using this script, the specified timezone wi
 ![timedifference.png](./assets/img/timedifference.png)
 
 :::note
-The procedure is same for [Date and Time widget](/learn/app-development/widgets/form-widgets/date-time-datetime).
+The procedure is same for [Date and Time widget](../../../user-interfaces/web/components/angular-components/form-widgets/date-time-datetime.md).
 :::
 
 :::note

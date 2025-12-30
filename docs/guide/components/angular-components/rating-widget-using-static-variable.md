@@ -45,6 +45,6 @@ Data for the Rating widget can come from a Variable - Static, Live etc.. In this
 
 ## See Also
 
-[Rating Widget Use Cases](/learn/app-development/widgets/form-widgets/rating-widget/)  
-[How to build Rating widget from static data](/learn/how-tos/rating-widget-using-static-data/)  
-[How to build an interactive rating widget](/learn/how-tos/rating-widget-interactive/)  
+[Rating Widget Use Cases](../../../user-interfaces/web/components/angular-components/form-widgets/rating-widget.md)  
+[How to build Rating widget from static data](./rating-widget-using-static-data.md)  
+[How to build an interactive rating widget](./rating-widget-interactive.md)  

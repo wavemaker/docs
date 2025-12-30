@@ -5,10 +5,10 @@ id: "configuring-select-widget-display-data-fields"
 
 A Select widget can be used in various ways based on the source of data. Each type of data source needs a different approach. WaveMaker Select widget works in any one of the following ways:
 
-- [Using static list of values](/learn/how-tos/configuring-select-widget-static-list-values/)
-- [Using variable data](/learn/how-tos/configuring-select-widget-variable/)
+- [Using static list of values](./configuring-select-widget-static-list-values.md)
+- [Using variable data](./configuring-select-widget-variable.md)
 - Using display and data value fields from a Variable
-- [Using database fields](/learn/how-tos/configuring-select-widget-database-fields/)
+- [Using database fields](./configuring-select-widget-database-fields.md)
 
 Usually, when giving options to the user, one would want the option to make sense to the user while using a different value internally within the application. For example, the user may select Male/Female but the value stored could be M/F or 0/1. To cater to such needs, WaveMaker Studio offers an Entry type while creating a Model Variable. Using this option, the developer can specify different fields for the variable – one called dataValue and the other called name. For example, you want the user to select gender as Male or Female but want to use M or F internally.
 
@@ -42,10 +42,10 @@ Usually, when giving options to the user, one would want the option to make sens
      ![select_widget_ListResult](./assets/img/select_widget_ListResult.png)
 
 
-[Select Use Cases](/learn/app-development/widgets/form-widgets/select-use-cases/)
+<!-- <!-- [Select Use Cases](/learn/app-development/widgets/form-widgets/select-use-cases/) --> -->
 
-- [1. How to use list of values for select widget configuration](/learn/how-tos/configuring-select-widget-static-list-values/)
-- [2. How to use variable for select widget configuration](/learn/how-tos/configuring-select-widget-variable/)
+- [1. How to use list of values for select widget configuration](./configuring-select-widget-static-list-values.md)
+- [2. How to use variable for select widget configuration](./configuring-select-widget-variable.md)
 - [3. How to use display and data value fields for select widget configuration](#)
-- [4. How to use database fields for select widget configuration](/learn/how-tos/configuring-select-widget-database-fields/)
-- [5. How to configure cascading select](/learn/how-tos/configuring-cascading-select/)
+- [4. How to use database fields for select widget configuration](./configuring-select-widget-database-fields.md)
+- [5. How to configure cascading select](./configuring-cascading-select.md)

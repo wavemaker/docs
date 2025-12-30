@@ -14,11 +14,11 @@ Follow the below steps to Filter a List by taking the input from the Radioset:
 
 ## Add Page and Import DB
 
-Add a [Page](/learn/app-development/ui-design/designing-app), import the [HRDB](/learn/app-development/services/database-services/working-with-databases#2-sample-db) database into the application.
+Add a <!-- <!-- [Page](/learn/app-development/ui-design/designing-app) --> -->, import the <!-- <!-- [HRDB](/learn/app-development/services/database-services/working-with-databases#2-sample-db) --> --> database into the application.
 
 ## Create Variable for RadioSet
 
-- Create a [Database CRUD](/learn/app-development/variables/database-crud) variable with the name **radioSetDataValue** for the entity department from HRDB.
+- Create a <!-- <!-- [Database CRUD](/learn/app-development/variables/database-crud) --> --> variable with the name **radioSetDataValue** for the entity department from HRDB.
 
 ![radio_setfilter_variable](./assets/img/radio_setfilter_variable.png)
 

@@ -3,17 +3,17 @@ title: "How to Configure Row Expansion in a Data Table"
 id: "how-to-configure-row-expansion-in-a-data-table"
 ---
 
-In this article, you will learn how to configure row expansion on a data table. To use the [row expansion](/learn/app-development/widgets/datalive/datatable/row-expansion-data-table/) feature, you create a [data table](/learn/app-development/widgets/datalive/data-table/) and a [partial](/learn/app-development/ui-design/page-concepts/partial-pages/); you configure the partial to contain related information of the table item. A partial is a semi page which is a reusable object, and a data table is a data widget configured as a variable. You add page params in the partial page and bind it through the data table settings.
+In this article, you will learn how to configure row expansion on a data table. To use the [row expansion](../../../user-interfaces/web/components/angular-components/datalive/datatable/row-expansion-data-table.md) feature, you create a [data table](../../../user-interfaces/web/components/angular-components/datalive/data-table.md) and a <!-- <!-- [partial](/learn/app-development/ui-design/page-concepts/partial-pages/) --> -->; you configure the partial to contain related information of the table item. A partial is a semi page which is a reusable object, and a data table is a data widget configured as a variable. You add page params in the partial page and bind it through the data table settings.
 
 ### _Use Case_
 
 _Create a department page and display employees of each department when you expand the department ID._
 
-**Note**: In the following example, we use the department table which invokes the data from the Employee table. Thus, ensure the hrdb sample database is up. To import the sample database, see [Connecting to a Database](/learn/app-development/services/database-services/working-with-databases/).
+**Note**: In the following example, we use the department table which invokes the data from the Employee table. Thus, ensure the hrdb sample database is up. To import the sample database, see <!-- <!-- [Connecting to a Database](/learn/app-development/services/database-services/working-with-databases/) --> -->.
 
 ## Creating a page
 
-- Create a Page called Department. To create a page, see [Page Creation](/learn/app-development/ui-design/page-creation/).
+- Create a Page called Department. To create a page, see <!-- <!-- [Page Creation](/learn/app-development/ui-design/page-creation/) --> -->.
 - Drag and Drop a Data Table on the Department page.
 - Configure the Data Table to bind the data source to the **Department** table.
     - Retrieve Data From → Services.
