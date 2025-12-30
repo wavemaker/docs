@@ -9,7 +9,14 @@ export default [
         "label": "How-tos",
         "items": [
             "guide/howtos/howtos-documents",
-            "guide/howtos/howtos-ui"
+            "guide/howtos/howtos-ui",
+            {
+                "type": "category",
+                "label": "App Development",
+                "items": [
+                    "guide/howtos/app-development/creating-registration-page"
+                ]
+            }
         ]
     }
 ]
