@@ -68,18 +68,18 @@ Adjust connection timeouts and other settings for SOAP services.
 
 Configure WebSocket behavior and connection parameters.
 
-## Security and Access Control
+### Security and Access Control
 
 Deployment Profiles allow you to configure multiple security-related settings to control access, protect data, and enforce secure communication across environments.
 
-### SSL/TLS Encryption
+#### SSL/TLS Encryption
 
 Configure secure communication between clients and the application:
 
 - Enable HTTPS to encrypt data in transit
 - Enforce SSL to ensure all requests are served only over secure connections
 
-### X-Frame-Options
+#### X-Frame-Options
 
 Control whether application pages can be embedded within `<iframe>` elements:
 
@@ -87,10 +87,10 @@ Control whether application pages can be embedded within `<iframe>` elements:
 - **Same Origin** – Allows embedding only from the same origin
 - **Allow From** – Allows embedding from specified sources
 
-> **Note**  
+> **Note**
 > The **Allow From** option is automatically converted to a **Content Security Policy (CSP)** header for broader browser compatibility.
 
-### Session & Token Authentication
+#### Session & Token Authentication
 
 Configure session management and API token behavior:
 
@@ -103,10 +103,10 @@ Configure session management and API token behavior:
   - Choose whether tokens are passed via HTTP headers or request parameters
   - Configure token validity duration (default: **1800 seconds**)
 
-> **Note**  
+> **Note**
 > Only the token validity duration can be modified through the deployment profile. The token parameter name cannot be changed.
 
-### CORS (Cross-Origin Resource Sharing)
+#### CORS (Cross-Origin Resource Sharing)
 
 Control cross-domain access to application resources:
 
