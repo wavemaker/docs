@@ -168,10 +168,19 @@ export default [
                 "type": "doc",
                 "id": "apis-and-services/security/authentication-and-authorization"
             },
-			{
-                "type": "doc",
-                "id": "apis-and-services/security/providers"
+            {
+                "type": "category",
+                "label": "Providers",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                    {
+                    "type": "doc",
+                    "id": "apis-and-services/security/providers/openid-authentication"
+                    }
+                ]
             },
+			
             {
                 "type": "doc",
                 "id": "apis-and-services/security/hardening-app"
