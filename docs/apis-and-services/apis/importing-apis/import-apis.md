@@ -1,21 +1,21 @@
 ---
-last_update: { author: "Author Name" }
+last_update: { author: "Priyanka Bhadri" }
 ---
 
 # Import Swagger/Open API
 
-WaveMaker supports importing REST APIs that are defined using the **Swagger/OpenAPI** specification. This allows you to integrate external REST services into your application and take advantage of automatically generated metadata for building UI functionality and service integrations. Many modern backend frameworks (such as Spring Boot or .NET Core) automatically generate Swagger/OpenAPI documentation for their APIs, which makes them easy to consume in WaveMaker. 
+WaveMaker supports importing REST APIs that are defined using the **Swagger/OpenAPI** specification. This allows you to integrate external REST services into your application and take advantage of automatically generated metadata for building UI functionality and service integrations. Many modern backend frameworks (such as Spring Boot) automatically generate Swagger/OpenAPI documentation for their APIs, which makes them easy to consume in WaveMaker. 
 
 ---
 
-## Supported Widgets for Imported APIs
+<!-- ## Supported Widgets for Imported APIs
 
 WaveMaker can generate ready-to-use UI elements for services imported from Swagger/OpenAPI definitions:
 
 - **Web**: DataTable, Form, Cards (read-only), List (read-only)  
 - **Mobile**: List with Form 
 
-These widgets help you build UI screens with minimal code by binding REST API data directly to visual components.
+These widgets help you build UI screens with minimal code by binding REST API data directly to visual components. -->
 
 ---
 
@@ -45,7 +45,7 @@ https://petstore.swagger.io/v2/swagger.json
 
 After importing the Swagger definition:
 
-- WaveMaker groups related endpoints into **Entities** based on the API structure.
+- WaveMaker groups related endpoints into **Entities** based on the API structure.  
 - Each Entity may contain multiple endpoints; for example, a set of CRUD operations for a resource.
 - CRUD endpoints are automatically mapped to common operations:
 
@@ -69,7 +69,7 @@ Once imported, you can view all identified entities on the left side navigation.
 Once the Swagger API is selected and its metadata is verified:
 
 - You can configure authentication for the API.
-- Swagger definitions may include support for **OAuth 2.0**.
+- Swagger definitions may include support for **[OAuth 2.0]()**.
 - If OAuth is required, click **OAuth Provider** in the import dialog and enter the relevant values such as:
   - Access Token URL
   - Client ID
@@ -78,7 +78,7 @@ Once the Swagger API is selected and its metadata is verified:
 Authentication settings allow WaveMaker to communicate securely with protected APIs. For more detailed steps on configuring OAuth providers, refer to the OAuth Provider Configuration for REST Services documentation.
 
 ![alt text](assets/test-imported-api.png)
-![alt text](assets/websocket-configuration.png)
+<!-- ![alt text](assets/websocket-configuration.png) -->
 
 ---
 
@@ -86,7 +86,7 @@ Authentication settings allow WaveMaker to communicate securely with protected A
 
 After successful import and authentication configuration:
 
-- You can drag and drop supported widgets (like DataTable, Form, List, etc.) onto pages and bind them to the REST API operations.
+- You can drag and drop supported components (like DataTable, Form, List, etc.) onto pages and bind them to the REST API operations.
 - This enables CRUD-style interaction with the imported API without writing manual HTTP client code.
 
 ---
