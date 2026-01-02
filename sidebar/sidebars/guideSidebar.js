@@ -12,6 +12,25 @@ export default [
                 "items": [
                     "guide/howtos/app-development/creating-registration-page"
                 ]
+            },
+            {
+                "type": "category",
+                "label": "Deployment",
+                "items": [
+                    "guide/deployment/app-integration-with-azure-cdn",
+                    "guide/deployment/deployment-to-heroku",
+                    "guide/deployment/deployment-using-docker-compose",
+                    "guide/deployment/ssl-offloading",
+                    {
+                        "type": "category",
+                        "label": "Deployment to Web Server",
+                        "items": [
+                            "guide/deployment/deploy-to-webserver/wavemaker-application-deployment-jboss",
+                            "guide/deployment/deploy-to-webserver/wavemaker-application-deployment-weblogic-application-server",
+                            "guide/deployment/deploy-to-webserver/wavemaker-application-deployment-websphere-liberty-profile"
+                        ]
+                    }
+                ]
             }
         ]
     }
