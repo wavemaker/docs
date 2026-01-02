@@ -50,7 +50,7 @@ networks:
 
 ```
 
-- WaveMaker-application folder consists of Dockerfile and application code for building WaveMaker app. For Dockerfile, see [WaveMaker Dockerfile](/learn/app-development/deployment/build-with-docker), and use the Dockerfile for building WaveMaker application.
+- WaveMaker-application folder consists of Dockerfile and application code for building WaveMaker app. For Dockerfile, see [WaveMaker Dockerfile](../../build-and-deploy/build/web/package/docker/docker-image.md), and use the Dockerfile for building WaveMaker application.
 
 - The `nginx` folder consists of a `nginx` Dockerfile and a `conf` file for reverse proxy operations.
 
