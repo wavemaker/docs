@@ -88,7 +88,7 @@ const componentsData = [
                 body: "Container is an enclosing element that wraps the widgets placed within, mostly used for embedding partial pages",
                 supportedPlatforms: ["angular", "rn"],
                 rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/containers-container--docs",
-                angularDocs: "/docs/user-interfaces/web/components/angular-components/container/container/"
+                angularDocs: "/docs/user-interfaces/web/components/angular-components/container/"
             },
             {
                 lightIcon: "/img/component-icons/grid.svg",
@@ -273,7 +273,7 @@ const componentsData = [
                 supportedPlatforms: ["angular", "rn", "react"],
                 rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/form-fileupload--docs",
                 reactStorybook: "https://react-components.onwavemaker.com/?path=/story/input-fileupload--docs",
-                angularDocs: "/docs/user-interfaces/web/components/angular-components/datalive/form/file-upload/"
+                angularDocs: "/docs/user-interfaces/web/components/angular-components/form-widgets/file-upload"
             },
             {
                 lightIcon: "/img/component-icons/number.svg",
@@ -416,7 +416,7 @@ const componentsData = [
                 body: "HTML is a widget to display HTML content or to render the text content using HTML.",
                 supportedPlatforms: ["angular", "react"],
                 reactStorybook: "https://react-components.onwavemaker.com/?path=/story/basic-html--docs",
-                angularDocs: "/docs/user-interfaces/web/components/angular-components/datalive/form/html/"
+                angularDocs: "/docs/user-interfaces/web/components/angular-components/basic/html/"
             },
             {
                 lightIcon: "/img/component-icons/icon.svg",
@@ -435,7 +435,7 @@ const componentsData = [
                 body: "Iframe is a widget to display a web page content in a separate frame, without affecting the current page content or styles.",
                 supportedPlatforms: ["angular", "react"],
                 reactStorybook: "https://react-components.onwavemaker.com/?path=/story/basic-iframe--docs",
-                angularDocs: "/docs/user-interfaces/web/components/angular-components/datalive/form/iframe/"
+                angularDocs: "/docs/user-interfaces/web/components/angular-components/basic/iframe/"
             },
             {
                 lightIcon: "/img/component-icons/label.svg",
@@ -839,45 +839,45 @@ const componentsData = [
             }
         ]
     },
-    {
-        tab: "Prefabs - Custom Components & Extensions",
-        value: "prefabWidgets",
-        content: [
-            {
-                lightIcon: "/img/component-icons/youtube.svg",
-                darkIcon: "/img/component-icons/youtubeDark.svg",
-                label: "",
-                body: "The YouTube prefab connects with YouTube and displays a video on the web page.",
-                supportedPlatforms: ["angular"],
-                angularDocs: "/docs/user-interfaces/web/components/angular-components/prefab/youtube/"
-            },
-            {
-                lightIcon: "/img/component-icons/googleMaps.svg",
-                darkIcon: "/img/component-icons/googleMapsDark.svg",
-                label: "",
-                body: "The Googlemaps prefab connects with Google Maps and displays the map on your page.",
-                supportedPlatforms: ["angular"],
-                angularDocs: "/docs/user-interfaces/web/components/angular-components/prefab/googlemaps/"
-            },
-            {
-                lightIcon: "/img/component-icons/googleMaps_1.svg",
-                darkIcon: "/img/component-icons/googleMaps_1Dark.svg",
-                label: "",
-                body: "This Prefab is no longer available from version 10",
-                supportedPlatforms: ["angular"],
-                angularDocs: ""
-            },
-            {
-                lightIcon: "/img/component-icons/button.svg",
-                darkIcon: "/img/component-icons/bottomSheet.svg",
-                label: "",
-                body: "QRCode prefab that ships with WaveMaker can be used to add any text or url to your app in the QRCode format.",
-                supportedPlatforms: ["angular"],
-                angularDocs: "/docs/user-interfaces/web/components/angular-components/prefab/qrcode/"
-            },
+    // {
+    //     tab: "Prefabs - Custom Components & Extensions",
+    //     value: "prefabWidgets",
+    //     content: [
+    //         {
+    //             lightIcon: "/img/component-icons/youtube.svg",
+    //             darkIcon: "/img/component-icons/youtubeDark.svg",
+    //             label: "",
+    //             body: "The YouTube prefab connects with YouTube and displays a video on the web page.",
+    //             supportedPlatforms: ["angular"],
+    //             angularDocs: "/docs/user-interfaces/web/components/angular-components/prefab/youtube/"
+    //         },
+    //         {
+    //             lightIcon: "/img/component-icons/googleMaps.svg",
+    //             darkIcon: "/img/component-icons/googleMapsDark.svg",
+    //             label: "",
+    //             body: "The Googlemaps prefab connects with Google Maps and displays the map on your page.",
+    //             supportedPlatforms: ["angular"],
+    //             angularDocs: "/docs/user-interfaces/web/components/angular-components/prefab/googlemaps/"
+    //         },
+    //         {
+    //             lightIcon: "/img/component-icons/googleMaps_1.svg",
+    //             darkIcon: "/img/component-icons/googleMaps_1Dark.svg",
+    //             label: "",
+    //             body: "This Prefab is no longer available from version 10",
+    //             supportedPlatforms: ["angular"],
+    //             angularDocs: ""
+    //         },
+    //         {
+    //             lightIcon: "/img/component-icons/button.svg",
+    //             darkIcon: "/img/component-icons/bottomSheet.svg",
+    //             label: "",
+    //             body: "QRCode prefab that ships with WaveMaker can be used to add any text or url to your app in the QRCode format.",
+    //             supportedPlatforms: ["angular"],
+    //             angularDocs: "/docs/user-interfaces/web/components/angular-components/prefab/qrcode/"
+    //         },
 
-        ]
-    },
+    //     ]
+    // },
     {
         tab: "Mobile & Device Components",
         value: "mobileWidgets",
