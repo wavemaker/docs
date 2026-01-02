@@ -196,6 +196,10 @@ export default [
             {
                 "type": "doc",
                 "id": "apis-and-services/configurations/profiles"
+            },
+            {
+                "type": "doc",
+                "id": "apis-and-services/configurations/profile-settings"
             }
         ]
     },
