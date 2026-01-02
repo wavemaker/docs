@@ -46,6 +46,7 @@ h2.widget-header {
 .widget-cards .card-body {
   height: 100%;
   margin: 10px 0;
+  color: var(--ifm-font-color-base)
 }
 
 @media (max-width: 1000px) {

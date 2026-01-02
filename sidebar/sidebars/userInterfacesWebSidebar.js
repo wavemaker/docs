@@ -32,6 +32,10 @@ export default [
         label: "Angular Components",
         collapsible: true,
         collapsed: true,
+        link: {
+          type: "doc",
+          id: "user-interfaces/web/components/angular-components/index"
+        },
         items: [
           {
             type: "category",
