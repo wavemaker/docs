@@ -219,9 +219,62 @@ rest.wavemakeronline.basepath=/pk9yct3s6nqt/MyApp/services
 # Security Configuration
 security.enabled=true
 security.activeProviders=DATABASE
-# ...
+
+
+# CORS Settings
+security.general.cors.enabled=false
+security.general.cors.allowCredentials=false
+security.general.cors.maxAge=1600
+security.general.cors.pathEntries.root.allowedOrigins=*
+
+
+# Content Security Policy (CSP)
+security.general.csp.enabled=false
+security.general.csp.policy=
+
+
+# Frame Options
+security.general.frameOptions.enabled=true
+security.general.frameOptions.mode=SAMEORIGIN
+security.general.frameOptions.allowFromUrl=
+
+
+# SSL/TLS
+security.general.ssl.enabled=false
+security.general.ssl.port=443
+
+
+# Mutual TLS (mTLS)
+security.general.mtls.enabled=false
+security.general.truststore.config=SYSTEM_ONLY
+
+
+# XSS Protection
+security.general.xss.enabled=true
+security.general.xss.sanitizationLayer=OUTPUT
+security.general.xss.dataBackwardCompatibility=false
+
+
+# XSRF Protection
+security.general.xsrf.enabled=true
+
+
+# Session Configuration
+security.general.session.timeout=30
+security.session.persistence.type=in-memory
+
+# Remember Me
+security.general.rememberMe.enabled=true
+security.general.rememberMe.timeOut=1296000
+
+
+# Token-Based Authentication
+security.general.tokenService.enabled=true
+security.general.tokenService.parameter=WM_AUTH_TOKEN
+security.general.tokenService.tokenValiditySeconds=1800
+
 # WebSocket Configuration
 websocket.websocket.basepath=
 websocket.websocket.host=echo.websocket.org
 websocket.websocket.scheme=wss
-</details> ```
+```
