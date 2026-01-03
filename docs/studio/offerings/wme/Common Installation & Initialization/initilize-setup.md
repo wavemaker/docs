@@ -20,7 +20,7 @@ sidebar_label: "Initialize Setup"
 ```
 
 
-- To configure SSL for platform please refer [ssl configuration for platform](/docs/studio/offerings/wme/configure/config-ssl)
+- To configure SSL for platform please refer [ssl configuration for platform](/docs/studio/offerings/wme/configuration/config-ssl)
 
 - When prompted, enter the interface name. For example, eth0, ens5; and confirm the IP Address.
 - Provide the CIDR (Classless Inter-Domain Routing) range; CIDR is a network range allocation to a particular network address; it will tell you how many network IP addresses are available in a given network.

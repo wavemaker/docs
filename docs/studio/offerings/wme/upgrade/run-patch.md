@@ -41,7 +41,7 @@ sidebar_label: "Run Patch"
     bash /usr/local/content/wme/wme-installer/<version>/wme-installer.sh
 ```
 
-- To make https work, You need to add SSL certificates to Platform or router/dns level while configuring the setup using ConfigWizard after the Ugrade process completes in terminal, to add SSL certificates please refer [ssl configuration for platform](/docs/studio/offerings/wme/configure/config-ssl).
+- To make https work, You need to add SSL certificates to Platform or router/dns level while configuring the setup using ConfigWizard after the Ugrade process completes in terminal, to add SSL certificates please refer [ssl configuration for platform](../configuration/config-ssl).
 
 
 [![upgrading-wme](./assets/images/wme-patch-process.png)](./assets/images/wme-patch-process.png)

@@ -196,10 +196,10 @@ bash wme-installer.sh --data-untar
 
 #### Installing WME on New Platform Instance
 
-- For Download WaveMaker installation package please refer [WaveMaker package Installation](/docs/studio/offerings/wme/aws/install/download-copy-installer).
-- Extract Package please refer [WaveMaker package extraction](/docs/studio/offerings/wme/aws/install/extract-package).
-Initializing the setup please refer [WaveMaker Initialization](/docs/studio/offerings/wme/aws/install/initilize-setup). Make sure to provide the same CIDR Range which is used in the previous setup.
-- Setup using config wizard please refer [WaveMaker configwizard setup](/docs/studio/offerings/wme/aws/install/setup-using-cw) and use same WaveMaker studio and built apps Domain names.
+- For Download WaveMaker installation package please refer [WaveMaker package Installation](../Common%20Installation%20&%20Initialization/download-copy-installer).
+- Extract Package please refer [WaveMaker package extraction](../Common%20Installation%20&%20Initialization/extract-package).
+Initializing the setup please refer [WaveMaker Initialization](../Common%20Installation%20&%20Initialization/initilize-setup). Make sure to provide the same CIDR Range which is used in the previous setup.
+- Setup using config wizard please refer [WaveMaker configwizard setup](../ConfigPortal%20&%20Licensing/setup-using-cw) and use same WaveMaker studio and built apps Domain names.
 
 ### Setups when allowed to execute Operating System Upgrade Commands
 
@@ -233,5 +233,5 @@ Initializing the setup please refer [WaveMaker Initialization](/docs/studio/offe
 ## Add StudioWorkspace/AppDeployment Instances from launchpad
 
 - Add Newly launched Instances or Upgraded Instances to Platform from Launchpad.
-- For adding Developer Instance you can refer [WME Add Developer Capacity](/docs/studio/offerings/wme/configure/add-dev-capacity)
-- Similarly, for AppDeployment Instances you can refer [WME Add Apps Capacity](/docs/studio/offerings/wme/configure/add-apps-capacity)
+- For adding Developer Instance you can refer [WME Add Developer Capacity](../configuration/add-dev-capacity)
+- Similarly, for AppDeployment Instances you can refer [WME Add Apps Capacity](../configuration/add-apps-capacity)

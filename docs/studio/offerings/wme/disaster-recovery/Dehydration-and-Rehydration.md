@@ -183,9 +183,9 @@ bash wme-installer.sh --data-untar
 
 ## Installing WME on New Instance
 
-- For Download WaveMaker installation package please refer [WaveMaker package Installation](/docs/studio/offerings/wme/aws/install/download-copy-installer).
-- Extract Package please refer [WaveMaker package extraction](/docs/studio/offerings/wme/aws/install/extract-package).
-Initializing the setup please refer [WaveMaker Initialization](/docs/studio/offerings/wme/aws/install/initilize-setup). Make sure to provide the same CIDR Range which is used in the previous setup.
+- For Download WaveMaker installation package please refer [WaveMaker package Installation](../Common%20Installation%20&%20Initialization/download-copy-installer).
+- Extract Package please refer [WaveMaker package extraction](../Common%20Installation%20&%20Initialization/extract-package).
+Initializing the setup please refer [WaveMaker Initialization](../Common%20Installation%20&%20Initialization/initilize-setup). Make sure to provide the same CIDR Range which is used in the previous setup.
 
 :::note
 After Completing the ***WaveMaker Initialization*** process, please go with the ***migrations*** step which is given below before proceeding with the ***Configwizard***
@@ -222,7 +222,7 @@ After Completing the ***WaveMaker Initialization*** process, please go with the 
 
 ### Replace StudioWorkspace/AppDeployment Instances
 
-- Once the configwizard reaches to 100%, you can go to Launchpad and Developer Workspace [WaveMaker add developer workspace](/docs/studio/offerings/wme/configure/add-dev-capacity#add-capacity-to-developer-workspace) and  Deployment Workspace [WaveMaker add deployement workspace](/docs/studio/offerings/wme/configure/add-apps-capacity#add-capacity-to-app-deployment), remove the previously added instances and add the newly provisioned Developer and Deployment workspace Instances respectively  
+- Once the configwizard reaches to 100%, you can go to Launchpad and Developer Workspace [WaveMaker add developer workspace](../configuration/add-dev-capacity#add-capacity-to-developer-workspace) and  Deployment Workspace [WaveMaker add deployement workspace](../configuration/add-apps-capacity#add-capacity-to-app-deployment), remove the previously added instances and add the newly provisioned Developer and Deployment workspace Instances respectively  
 
 
 ### Update VCS IP’s in Passivation Disk and Database
