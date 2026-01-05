@@ -1,5 +1,5 @@
 ---
-last_update: { author: "Author Name" }
+last_update: { author: "Priyanka Bhadri" }
 ---
 
 # Java Integration Services
@@ -21,7 +21,7 @@ WaveMaker generates various backend services such as:
 
 These services are available as Spring beans, which means you can inject them into your Java Service classes using `@Autowired`.
 
-### Example: Accessing the Current Logged-In User
+### Example: Accessing the Current Logged-In User using Security services
 
 To fetch the authenticated user's information within a Java Service:
 
@@ -42,11 +42,11 @@ This makes it easy to implement authorization or personalized logic based on the
 
 You can use third-party Java libraries within your Java Services in one of two ways:
 
-### 1. Export the project to an IDE
+### a. Export the project to an IDE
 
 Export your WaveMaker project to an IDE (e.g., Eclipse, IntelliJ), add external libraries, and then re-import it back into WaveMaker. Since the project uses Maven, dependencies are handled automatically.
 
-### 2. Import JAR files into the project
+### b. Import JAR files into the project
 
 Add external JARs as project resources and reference them in your Java Service code.[Import Resource](../third-party-libraries/jar-files.md)
 

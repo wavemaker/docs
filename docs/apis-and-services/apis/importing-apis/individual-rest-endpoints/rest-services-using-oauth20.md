@@ -1,5 +1,5 @@
 ---
-last_update: { author: "Author Name" }
+last_update: { author: "Priyanka Bhadri" }
 ---
 
 # REST Services using OAuth 2.0
@@ -17,7 +17,8 @@ OAuth 2.0 allows your application to securely access external services on behalf
 ## Device Flow
 The device flow is illustrated in the below image.
 
-![alt text](assets/oauth2-authorization-flow.png)
+<!-- ![alt text](assets/oauth2-authorization-flow.png) -->
+![alt text](assets/flow.png)
 
 ## Device Flow Steps Explained
 

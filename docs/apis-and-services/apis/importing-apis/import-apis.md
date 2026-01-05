@@ -2,7 +2,7 @@
 last_update: { author: "Priyanka Bhadri" }
 ---
 
-# Import Swagger/Open API
+# Import Open API - Swagger
 
 WaveMaker provides built-in support for importing REST APIs defined using **Swagger/OpenAPI specifications** (JSON or YAML). This feature allows developers to quickly integrate external services into their applications without manual coding.
 

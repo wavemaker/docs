@@ -1,5 +1,5 @@
 ---
-last_update: { author: "Author Name" }
+last_update: { author: "Priyanka Bhadri" }
 ---
 
 # Integrating Database Services in Java Services

@@ -1,5 +1,5 @@
 ---
-last_update: { author: "Author Name" }
+last_update: { author: "Priyanka Bhadri" }
 ---
 
 # API Orchestration using API Composition Toolkit
@@ -51,11 +51,11 @@ Once injected, you can invoke the service method from within your Java Service t
 
 API Composition is enabled by default in WaveMaker. It can be controlled as follows:
 
-### For New Projects
+<!-- ### For New Projects
 
 When creating a new project, you can choose whether to enable or disable API Composition.
 
-![alt text](assets/project-settings-api-composition.png)
+![alt text](assets/project-settings-api-composition.png) -->
 
 ### For Existing Projects
 
@@ -64,6 +64,8 @@ You can update the API Composition setting via the **Project Settings** dialog:
 1. Open **Settings** in WaveMaker Studio.  
 2. Select **Project Settings**.  
 3. Enable or disable API Composition as required.
+
+![alt text](assets/orchestration.png)
 
 Once the setting is changed, you will need to reload the project and apply the update.  
 > **Warning:** Disabling API Composition when your code depends on generated service classes may cause compilation errors.

@@ -60,9 +60,11 @@ const config = {
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
           // Useful options to enforce blogging best practices
           onInlineTags: "warn",
-          onInlineAuthors: "warn",
+          onInlineAuthors: "ignore",
           onUntruncatedBlogPosts: "warn",
           authorsMapPath: "../authors.yml",
+          blogSidebarTitle: 'All posts',
+          blogSidebarCount: 'ALL',
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -228,8 +230,8 @@ const config = {
     format: 'detect',
     mermaid: true,
     hooks: {
-      onBrokenMarkdownLinks: 'ignore',
-      onBrokenMarkdownImages: 'ignore',
+      onBrokenMarkdownLinks: 'warn',
+      onBrokenMarkdownImages: 'throw',
     },
   },
 };

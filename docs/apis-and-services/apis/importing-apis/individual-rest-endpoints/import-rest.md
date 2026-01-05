@@ -1,5 +1,5 @@
 ---
-last_update: { author: "Author Name" }
+last_update: { author: "Priyanka Bhadri" }
 ---
 
 # Import REST Services
@@ -43,6 +43,7 @@ To integrate a third-party REST API into your WaveMaker app:
  The **Import** option becomes active only after a successful test. 
  
 ![alt text](assets/oauth2-configuration.png)
+<!-- ![alt text](image.png) -->
 
 ---
 
@@ -101,7 +102,7 @@ Some REST endpoints require data input (e.g., text or file uploads):
 - When such endpoints are imported, set the **Content Type** to `multipart/form-data` under the Body tab.  
 - You can specify input types as **File** or **Text**, allowing upload of files (e.g., images) or submission of textual data.  
 - For internal WaveMaker REST APIs, `application/json` or `text/plain` types are also supported. 
-
+<!-- ![alt text](image.png)# Import REST Services -->
 ![alt text](assets/server-timeout-configuration.png)
 
 ---
@@ -116,4 +117,4 @@ REST Services in WaveMaker allow seamless integration of external HTTP APIs into
 - Create service variables to invoke the API and bind responses to UI widgets.  
 - Use proxy configuration and environment properties to handle CORS and secure credentials.
 
-By treating REST services as first-class citizens within the platform, WaveMaker makes it simple to consume external APIs and integrate them with your app’s pages and logic.
+<!-- By treating REST services as first-class citizens within the platform, WaveMaker makes it simple to consume external APIs and integrate them with your app’s pages and logic. -->
