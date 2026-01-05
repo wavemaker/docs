@@ -5,13 +5,17 @@ last_update: { author: "Author Name" }
 
 AIRA is an agent-based development system that works alongside the traditional design-first workflow.  AIRA is not one AI. It is a coordinated system of specialized agents, each responsible for a specific domain in WaveMaker app development.
 
+> Right now, AIRA can be used only for design system projects when creating a new application.
+
+![](/learn/assets/design-system-enable.png)
+
 ### For New Applications
 
 AIRA works best when you are starting an application. For small apps or the early stages of a larger one, it gives you a fast, usable starting point instead of an empty project.
 
 It can generate ready-made screens, basic CRUD flows, layouts, bindings, and navigation, along with a clean file and folder structure. This removes the blank-canvas problem and helps users move forward quickly. That is a real advantage, especially for new users.
 
-### For Larger Applications
+### Using Aira For Larger Applications
 
 Larger applications benefit from AIRA, just in a different way. Big apps are not built in a single pass, and AIRA is not meant to generate everything at once.
 

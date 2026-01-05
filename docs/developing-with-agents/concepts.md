@@ -1,5 +1,5 @@
 ---
-title: Welcome to Aira
+title: Welcome to AIRA
 last_update: { author: "Author Name" }
 ---
 

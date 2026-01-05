@@ -1,5 +1,5 @@
 ---
-title: Design Mode and Aira Agent Mode
+title: Design Mode and AIRA Agent Mode
 last_update: { author: "Author Name" }
 ---
 
