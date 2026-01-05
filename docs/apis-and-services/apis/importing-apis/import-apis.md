@@ -4,9 +4,17 @@ last_update: { author: "Priyanka Bhadri" }
 
 # Import Swagger/Open API
 
-WaveMaker supports importing REST APIs that are defined using the **Swagger/OpenAPI** specification. This allows you to integrate external REST services into your application and take advantage of automatically generated metadata for building UI functionality and service integrations. Many modern backend frameworks (such as Spring Boot) automatically generate Swagger/OpenAPI documentation for their APIs, which makes them easy to consume in WaveMaker. 
+WaveMaker provides built-in support for importing REST APIs defined using **Swagger/OpenAPI specifications** (JSON or YAML). This feature allows developers to quickly integrate external services into their applications without manual coding.
 
----
+When a Swagger/OpenAPI file is imported, WaveMaker automatically generates:
+
+- **Service metadata** – Endpoints, request/response models, and parameters.  
+- **Data models** – Classes representing API payloads.  
+- **UI bindings** – Ready-to-use structures for building forms, tables, and other components.
+
+This approach simplifies API integration, ensures consistency with the external service, and accelerates application development. Many modern backend frameworks, such as **Spring Boot**, automatically generate Swagger/OpenAPI documentation, making their APIs immediately consumable within WaveMaker.
+
+<!-- --- -->
 
 <!-- ## Supported Widgets for Imported APIs
 
@@ -16,6 +24,22 @@ WaveMaker can generate ready-to-use UI elements for services imported from Swagg
 - **Mobile**: List with Form 
 
 These widgets help you build UI screens with minimal code by binding REST API data directly to visual components. -->
+
+---
+# API Workspace
+
+WaveMaker provides a dedicated **API Workspace** that serves as the central hub for all API-related activities.
+
+From the API Workspace, you can:
+
+- Connect to third-party APIs  
+- Browse endpoints, request/response models, and parameters  
+- Import API specifications (Swagger/OpenAPI)  
+- Automatically generate services and data models  
+
+A short video in this section walks through the API Workspace UI and demonstrates how developers can visually explore and integrate APIs.
+
+**Learn more:** [API Workspace](#)
 
 ---
 
@@ -40,6 +64,9 @@ https://petstore.swagger.io/v2/swagger.json
 ![alt text](assets/swagger-import-auth.png)
 
 ---
+
+
+
 
 ## Entities and Endpoints
 
@@ -75,21 +102,21 @@ Once the Swagger API is selected and its metadata is verified:
   - Client ID
   - Client Secret
 
-Authentication settings allow WaveMaker to communicate securely with protected APIs. For more detailed steps on configuring OAuth providers, refer to the OAuth Provider Configuration for REST Services documentation.
+Authentication settings allow WaveMaker to communicate securely with protected APIs. For more detailed steps on configuring OAuth providers, refer to the [OAuth Provider Configuration]().
 
 ![alt text](assets/test-imported-api.png)
 <!-- ![alt text](assets/websocket-configuration.png) -->
 
 ---
 
-## Using Imported REST Services
+<!-- ## Using Imported REST Services
 
 After successful import and authentication configuration:
 
 - You can drag and drop supported components (like DataTable, Form, List, etc.) onto pages and bind them to the REST API operations.
 - This enables CRUD-style interaction with the imported API without writing manual HTTP client code.
 
----
+--- -->
 
 
 ## Summary
