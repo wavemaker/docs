@@ -9,7 +9,7 @@ WebSockets provide a **full-duplex, bidirectional communication channel** over a
 
 WaveMaker supports integrating any third-party WebSocket service into your app. Similar to REST services, you can import a WebSocket service, create a WebSocket Variable, and bind it to Components such as charts, tables, and lists to reflect real-time updates in the UI. 
 
----
+<!-- --- -->
 
 <!-- ## What Are WebSockets?
 

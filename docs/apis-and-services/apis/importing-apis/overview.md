@@ -1,10 +1,10 @@
 ---
-last_update: { author: "Author Name" }
+last_update: { author: "Priyanka Bhadri" }
 ---
 
 # Overview
 
-Web services enable communication between different software systems across a network using standardized protocols. WaveMaker makes it easy to bring external web services into your application and work with them through **Variables** that can be bound to UI widgets for rendering dynamic data. Web services typically use HTTP or TCP protocols and exchange data in JSON, XML, or other formats. 
+Web services enable communication between different software systems across a network using standardized protocols. WaveMaker makes it easy to bring external web services into your application and work with them through **Variables** that can be bound to UI components for rendering dynamic data. Web services typically use HTTP or TCP protocols and exchange data in JSON, XML, or other formats. 
 
 ---
 
@@ -18,7 +18,7 @@ WaveMaker supports integration with multiple types of web services and allows yo
 
 ## Types of Web Services
 
-WaveMaker supports three primary types of web services:
+WaveMaker supports two primary types of web services:
 
 ### REST Services
 
