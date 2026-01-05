@@ -63,6 +63,8 @@ const config = {
           onInlineAuthors: "ignore",
           onUntruncatedBlogPosts: "warn",
           authorsMapPath: "../authors.yml",
+          blogSidebarTitle: 'All posts',
+          blogSidebarCount: 'ALL',
         },
         theme: {
           customCss: "./src/css/custom.css",
