@@ -17,7 +17,7 @@ With this upgrade, we will be sunsetting Cordova-based app generation. This deci
 
 As previously communicated in the below mentioned blog, we announced the deprecation of creating a new Cordova based application as part of the 11.6 release.
 
-https://docs.wavemaker.com/learn/blog/2024/02/29/Deprecation-notice-for-cordova-project-type/
+https://docs.wavemaker.com./Deprecation-notice-for-cordova-project-type/
 
 Initially, we planned to end the support for Cordova applications by June 2024, however, based on customers' request, we extended the support period until December 2024.
 

@@ -7,7 +7,7 @@ Performance is [key to the success](https://developers.google.com/web/fundamenta
 
 <!-- truncate -->
 
-> This feature is part of WaveMaker 10.5 release. [Checkout more details on what is included this release](learn/wavemaker-release-notes/v10-5-0). 
+> This feature is part of WaveMaker 10.5 release. [Checkout more details on what is included this release](#). 
 
 As per the Google stats link shared above, BBC lost 10% of its users with each additional second the site took to load & Pinterest gained 15% users signup when the perceived load times were reduced to 40%. So, performance is one of the important factors to consider in app development. An app with good performance can help businesses in better signups, enhanced user engagement & result in improved sales.
 
@@ -43,7 +43,7 @@ To enable an application to make its artifacts served over CDN, the developer ne
 * Cache invalidations to ensure the user is served latest response
 * Additional operations based on CDN provider & more
 
-But we wanted our low code developer to have access to all the CDN goodness very easily. So WaveMaker has made it available on click of a button, literally. With the current release, when the user deploys the WaveMaker app by clicking the "Deploy" button, it is deployed on AWS with CDN support without any additional configuration. This convenience is only available in the first phase of the deployment pipelines of the application. Note that, applications are deployed to this phase so that the app can be tested by the team & only last for limited period of time. [See deploying to live phase](/learn/app-development/deployment/manage-deployed-apps#configure-live-phase).
+But we wanted our low code developer to have access to all the CDN goodness very easily. So WaveMaker has made it available on click of a button, literally. With the current release, when the user deploys the WaveMaker app by clicking the "Deploy" button, it is deployed on AWS with CDN support without any additional configuration. This convenience is only available in the first phase of the deployment pipelines of the application. Note that, applications are deployed to this phase so that the app can be tested by the team & only last for limited period of time. [See deploying to live phase](#).
 
 ### CDN intergration with WaveMaker
 
@@ -55,7 +55,7 @@ Under the hood, WaveMaker handles all operations required for CDN deployment of 
 
 Thus ensuring the customers benefit from CDN advantages for every app developed with no additional effort.
 
-However, for deploying onto production, the customers may prefer their cloud service provider with the help of CI, CD pipelines. [Here is the documentation](/learn/app-development/deployment/app-integration-with-aws-cdn) on how to configure your CI,CD pipeline to deploy to CDN. In the subsequent releases, we will also support one-click deployment to deploy on customer cloud providers. 
+However, for deploying onto production, the customers may prefer their cloud service provider with the help of CI, CD pipelines. [Here is the documentation](#) on how to configure your CI,CD pipeline to deploy to CDN. In the subsequent releases, we will also support one-click deployment to deploy on customer cloud providers. 
 
 ### Results
 

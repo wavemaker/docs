@@ -4,7 +4,7 @@ author: "Venkatesh Gardas"
 ---
 ---
 
-​WaveMaker has enhanced its [Wizard](/learn/app-development/widgets/container/wizard/) component to better handle steps that require checking information from a server before moving forward. In general, **Next** callback allows developers to determine whether the user can proceed to the next step.
+​WaveMaker has enhanced its [Wizard](/docs/user-interfaces/web/components/angular-components/container/wizard/) component to better handle steps that require checking information from a server before moving forward. In general, **Next** callback allows developers to determine whether the user can proceed to the next step.
 
 <!-- truncate -->
 
@@ -12,7 +12,7 @@ author: "Venkatesh Gardas"
 
 ## The Challenge
 
-Many real-world applications require API-based validation before allowing users to proceed to the next step. Since [promises](/learn/app-development/widgets/datalive/field-validator/#setasyncvalidators) are not supported in the **Next** callback, developers face a roadblock when trying to implement asynchronous checks.
+Many real-world applications require API-based validation before allowing users to proceed to the next step. Since [promises](/docs/user-interfaces/web/components/angular-components/datalive/field-validator/#setasyncvalidators) are not supported in the **Next** callback, developers face a roadblock when trying to implement asynchronous checks.
 
 ## The Solution: Async/Await in Callbacks
 

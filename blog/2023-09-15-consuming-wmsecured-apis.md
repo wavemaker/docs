@@ -68,10 +68,10 @@ If the token is an ID token, configure the JWS provider, and if it is an access 
 
 WaveMaker application can be configured to accept an ID token or access token as bearer token in the authorization header. It is then validated using the JWS provider if it is an ID token or using Opaque token provider if it is an opaque access token. 
 
-This makes the application a resource server that validates ID and access tokens to share resources. To know how to configure JWS or opaque as secondary authentication providers, see [Configure JWS and Opaque providers](/learn/how-tos/configuring-jws-and-opaque-security-providers).
+This makes the application a resource server that validates ID and access tokens to share resources. To know how to configure JWS or opaque as secondary authentication providers, see [Configure JWS and Opaque providers](#).
 
 ## Configuring WaveMaker Application as Client
 
-WaveMaker application can be configured as a client to pass the ID or access token to the resource server. To know more, see [How to Pass Logged-In User ID/Access Tokens as Header](/learn/how-tos/passing-id-access-tokens-as-header).
+WaveMaker application can be configured as a client to pass the ID or access token to the resource server. To know more, see [How to Pass Logged-In User ID/Access Tokens as Header](#).
 
 

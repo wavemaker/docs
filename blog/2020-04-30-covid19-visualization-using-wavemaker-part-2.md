@@ -3,7 +3,7 @@ title: "COVID-19 Visualization using WaveMaker - Part 2"
 author: Deepak Anupalli
 ---
 
-In my last blog post, we saw how the Corona Tracker app works and we discussed how to build a dashboard using WaveMaker. I recommend you to read the [part-1](/learn/blog/2020/04/27/covid19-visualization-using-wavemaker) of the blog first. In this post, we will see how to build [visualization for charts](#how-to-build-charts-visualization) and [visualization for maps](/learn/blog/2020/04/30/covid19-visualization-using-wavemaker-part-2#how-to-build-maps-visualization).
+In my last blog post, we saw how the Corona Tracker app works and we discussed how to build a dashboard using WaveMaker. I recommend you to read the [part-1](/blog/2020/04/27/covid19-visualization-using-wavemaker) of the blog first. In this post, we will see how to build [visualization for charts](#how-to-build-charts-visualization) and [visualization for maps](/blog/2020/04/30/covid19-visualization-using-wavemaker-part-2#how-to-build-maps-visualization).
 
 <!-- truncate -->
 
@@ -13,7 +13,7 @@ Link to the app: http://apps.wavemakeronline.com/CoronaTracker/
 
 Previously, we covered how to import REST API as datasource for the app and how to create a variable to access the REST API, and binding the widgets to the created variable.
 
-For more information, see [Corona Tracker App](/learn/blog/2020/04/27/covid19-visualization-using-wavemaker#corona-tracker-app), [walkthrough of the app](/learn/blog/2020/04/27/covid19-visualization-using-wavemaker#quick-walkthrough-of-the-app), and [how to build the dashboard](/learn/blog/2020/04/27/covid19-visualization-using-wavemaker#how-to-build-the-dashboard).
+For more information, see [Corona Tracker App](/blog/2020/04/27/covid19-visualization-using-wavemaker#corona-tracker-app), [walkthrough of the app](/blog/2020/04/27/covid19-visualization-using-wavemaker#quick-walkthrough-of-the-app), and [how to build the dashboard](/blog/2020/04/27/covid19-visualization-using-wavemaker#how-to-build-the-dashboard).
 
 ## How to build Charts Visualization
 
@@ -27,7 +27,7 @@ WaveMaker has in-built nvd3 based charts which are used for building plots for v
 
 After binding the variable for the dataset, configure x-axis and y-axis from the attributes of the dataset. By just picking these attributes your chart will be ready for viewing.
 
-In this particular case for the [bar chart](/learn/app-development/widgets/chart/chart-widget#4-bar-chart), we have picked *country* on x-axis and *confirmedCases* attribute from API, to be depicted for each country on y-axis.
+In this particular case for the [bar chart](/docs/user-interfaces/web/components/angular-components/chart/chart-widget#4-bar-chart), we have picked *country* on x-axis and *confirmedCases* attribute from API, to be depicted for each country on y-axis.
 
 ### Configuring titles
 
@@ -56,11 +56,11 @@ Prefabs are typically built by a javascript developer who knows the nuances of w
 ### Creating a Prefab
 
 :::tip
-Download the **[D3Maps.zip](https://github.com/wavemaker/prefab-datamaps)**, and import it the **Prefabs** section to use it straightaway. For more information about how to use it, see [Importing Prefab](/learn/app-development/custom-widgets/custom-widgets#importing-prefabs).
+Download the **[D3Maps.zip](https://github.com/wavemaker/prefab-datamaps)**, and import it the **Prefabs** section to use it straightaway. For more information about how to use it, see [Importing Prefab](#).
 :::
 
 :::note
-To create a Datamaps Prefab, see a detailed documentation of [How to Create a Prefab Using D3 Library DataMaps](/learn/how-tos/create-prefab-using-d3-library-datamaps).
+To create a Datamaps Prefab, see a detailed documentation of [How to Create a Prefab Using D3 Library DataMaps](#).
 :::
 
 The following are the attributes provided by the Datamaps prefab developer that will appear in the Studio properties panel for binding.
@@ -103,4 +103,4 @@ Using single-click deployment from WaveMaker, the app is deployed on to containe
 
 ## See Also
 
-[COVID-19 Visualization using WaveMaker - Part 1](/learn/blog/2020/04/27/covid19-visualization-using-wavemaker)
+[COVID-19 Visualization using WaveMaker - Part 1](/blog/2020/04/27/covid19-visualization-using-wavemaker)

@@ -38,4 +38,4 @@ Name Role & Value, Info, Relationships, Meaning Sequence, Sensory Characteristic
 
 To make good use of headings on a page, add CSS class name from the **Style** properties tab, for example .h1, .h2, .h3, etc. Using any of the above headings class name, an attribute **"aria-level"** will be assigned to the HTML structure to make the screen readers understand the text specificity while scanning a page. You can copy the heading caption to the *hint* property to make it ARIA accessible.
  
-For more information on how to use accessibility, see [Accessibility in WaveMaker](/learn/app-development/ui-design/accessibility).
+For more information on how to use accessibility, see [Accessibility in WaveMaker](#).

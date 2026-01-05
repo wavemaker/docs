@@ -94,7 +94,7 @@ Then consider authentication and authorization as another layer. GraphQL is not 
 ## Integrating with a WaveMaker App
 
 The GraphQL implementation (irrespective of the language implemented in) exposes a REST endpoint which is always a POST call with the query as request body. Now, this GraphQL endpoint can be imported into a WaveMaker app like any other REST API through the REST API import interface in WaveMaker studio. Once imported, UI can be built while binding to the GraphQL data in the form of a service variable without writing any code on the UI.
-Follow the document on [working with REST APIs in a WaveMaker app](/learn/app-development/services/web-services/rest-services).
+Follow the document on [working with REST APIs in a WaveMaker app](#).
 
 
 

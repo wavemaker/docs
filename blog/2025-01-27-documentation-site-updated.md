@@ -4,7 +4,7 @@ author: "Swetha Kundaram"
 ---
 ---
 
-How often do you visit the [documentation](/learn) site?
+How often do you visit the [documentation](/) site?
 
 If you're someone who loves (or is forced to) diving into the docs for answers, you’ve probably noticed a few things look… different. And if you haven’t been back in a while, no worries – this blog is here to catch you up on everything you’ve missed.
 We’ve been working on docs behind the scenes, and now it’s time for you to explore what’s new. 
@@ -59,7 +59,7 @@ Learning while browsing? Yes, please! You can now jump directly to the Academy v
 
 ### 🎁 Feature Highlights
 
-We’ve introduced a feature highlights section on the homepage. Think of it as a mini giftbox (similar to [Gift Box](/learn/blog/2024/11/04/introducing-the-gift-box)) of useful updates and interesting features. Stay in the know without having to dig around.
+We’ve introduced a feature highlights section on the homepage. Think of it as a mini giftbox (similar to [Gift Box](/blog/2024/11/04/introducing-the-gift-box)) of useful updates and interesting features. Stay in the know without having to dig around.
 
 ![feature highlights](/img/blogs/feature-highlights.png)
 

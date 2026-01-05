@@ -4,7 +4,7 @@ author: "Naresh Ravulapalli"
 ---
 ---
 
-WaveMaker released version [11.8.0](/learn/wavemaker-release-notes/v11-8-0) on July 29, 2024. This update includes a significant upgrade to Angular 17. This upgrade is expected to enhance your application's performance and development experience.
+WaveMaker released version [11.8.0](#) on July 29, 2024. This update includes a significant upgrade to Angular 17. This upgrade is expected to enhance your application's performance and development experience.
 
 <!-- truncate -->
 

@@ -4,7 +4,7 @@ author: Tejaswi Maryala, Harish Vanama
 keywords: ['zalenium', 'selenium-grid', 'kubernetes', 'frequent-releases']
 ---
 
-WaveMaker product team is able to make [weekly patch releases and, feature packed releases](/learn/wavemaker-release-notes) every alternate months. Typically product releases involve testing of several micro services, API’s and User interface, functionality etc. WaveMaker platform is composed of several such services, and functional testing can be only done by building apps using visual drag-n-drop studio. To ensure the best product quality for releases, our QA process involves building automation tests for APIs as well as UI functionality using Selenium.  
+WaveMaker product team is able to make [weekly patch releases and, feature packed releases](#) every alternate months. Typically product releases involve testing of several micro services, API’s and User interface, functionality etc. WaveMaker platform is composed of several such services, and functional testing can be only done by building apps using visual drag-n-drop studio. To ensure the best product quality for releases, our QA process involves building automation tests for APIs as well as UI functionality using Selenium.  
 
 <!--truncate-->
 
@@ -67,4 +67,4 @@ Sanity Tests Execution|55%
 Regression Tests Execution|60% (10 hours -> 4 hours)
 Sanity and Regression as parallel Jobs|60%
 
-> Checkout what is in our latest release [WaveMaker 10.5 here](/learn/wavemaker-release-notes/v10-5-0).
+> Checkout what is in our latest release [WaveMaker 10.5 here](#).

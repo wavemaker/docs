@@ -26,7 +26,7 @@ Applies to WaveMaker Online (WMO) and WaveMaker Enterprise (WME) users.
 
 We invite you to test your applications on the WaveMaker 10.11 beta before officially releasing the 10.11 version. This service is exclusively provided on request. Please get in touch with our [support](mailto:support@wavemaker.com) team to access the WaveMaker 10.11 beta service.
 
-The areas change in WaveMaker has been with how lazy loading of JS artifacts work. Our QA team has tested this area, and the release candidate build is now deployed on staging. While testing your applications, pay closer attention to the areas of your application that may be using [Prefabs](/learn/app-development/custom-widgets/creating-prefabs) and [Partials](/learn/app-development/ui-design/page-concepts/partial-pages) in particular. 
+The areas change in WaveMaker has been with how lazy loading of JS artifacts work. Our QA team has tested this area, and the release candidate build is now deployed on staging. While testing your applications, pay closer attention to the areas of your application that may be using [Prefabs](/docs/user-interfaces/web/enterprise-capabilities/prefabs) and [Partials](#) in particular. 
 
 #### To do
 

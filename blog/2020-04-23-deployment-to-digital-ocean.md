@@ -114,7 +114,7 @@ Go ahead and try out your app's first ever kubernetes deployment and let us know
 ### References
 * To know more about Kubernetes, see [here](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 * To know more about DigitalOcean Kubernetes, see [here](https://www.digitalocean.com/docs/kubernetes/)
-* [Detailed process for deploying a WaveMaker application on DigitalOcean cluster](/learn/app-development/deployment/deployment-to-digital-ocean)
+* [Detailed process for deploying a WaveMaker application on DigitalOcean cluster](#)
 
 
 

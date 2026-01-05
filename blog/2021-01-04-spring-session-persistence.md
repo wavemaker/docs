@@ -69,9 +69,9 @@ For this approach, WaveMaker uses `spring-session-core` as a runtime dependency.
 
 There are two ways for configuring external session stores depending on your requirements by choosing from Redis and JDBC. To configure with Redis as an external store, WaveMaker adds `spring-session-data-redis` along with `lettuce-core` dependency. Similarly, for JDBC, we add a `spring-session-jdbc` dependency. WaveMaker internally adds these dependencies to scale applications and handle session management for the application.
 
-With [release 10.6](/learn/wavemaker-release-notes/v10-6-0), all the WaveMaker applications provide an option to opt for Horizontal scaling by choosing from Redis, JDBC, along with `MapSessionRepository` as a Distributed Session Registry.
+With [release 10.6](#), all the WaveMaker applications provide an option to opt for Horizontal scaling by choosing from Redis, JDBC, along with `MapSessionRepository` as a Distributed Session Registry.
 
 ![Session Persistence with Horizontal Scaling](/img/blogs/session-persistence-horizontal-scaling.png)
 
-`MapSessionRepository` is an [In-memory](/learn/app-development/app-security/session-persistence#in-memory) type that does not scale the application horizontally, and it is the default settings when you create a WaveMaker application. To enable Horizontal scaling, simply select an option from the dropdown, and follow the on-screen instructions. To learn how to use this feature, see [Horizontal Scaling using Session Persistence](/learn/app-development/app-security/session-persistence#in-memory).
+`MapSessionRepository` is an [In-memory](#) type that does not scale the application horizontally, and it is the default settings when you create a WaveMaker application. To enable Horizontal scaling, simply select an option from the dropdown, and follow the on-screen instructions. To learn how to use this feature, see [Horizontal Scaling using Session Persistence](#).
 

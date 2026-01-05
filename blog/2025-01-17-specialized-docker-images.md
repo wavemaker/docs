@@ -81,6 +81,6 @@ Begin utilizing the WaveMaker App-Builder and App-Runtime-Tomcat Docker images t
 
 With the default Dockerfile included in your WaveMaker application starting from WaveMaker Release 11.10 (scheduled to be released on 27th Jan 2025), these two images will be seamlessly integrated for a hassle-free setup as soon as they become available.
 
-Check out the reference [document](https://docs.wavemaker.com/learn/app-development/deployment/build-with-docker) to get started.
+Check out the reference [document](https://docs.wavemaker.com#) to get started.
 
 Explore these images on Docker Hub and enhance your WaveMaker deployment process with ease.

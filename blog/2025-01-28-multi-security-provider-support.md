@@ -50,7 +50,7 @@ Configuring multiple authentication providers in WaveMaker Studio is straightfor
 
 ![Multi-Security Provider Blog](/img/blogs/multi-security-provider-blog.png)
 
-For more detailed instructions, see [Multi-Security Provider Configuration](/learn/how-tos/multiple-security-provider-configuration) 
+For more detailed instructions, see [Multi-Security Provider Configuration](#) 
 
 ## Usecases
 

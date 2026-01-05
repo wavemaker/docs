@@ -5,11 +5,11 @@ author: Lovin Ahmed
 
 
 
-[Theme Builder](https://apps.wavemakeronline.com/Theme_Builder/#/Dashboard) app has introduced a new feature for recognizing a website color palette by inserting the website URL. With this, you can discover the colors used in a website and use them to build a theme. It will essentially make the theme-building process much easier by allowing you to choose the discovered colors, fonts, and more from an existing website. Furthermore, you can preview and design WaveMaker components by assigning colors, and download the theme when ready. For more information about creating a theme without any coding, see [Creating a Theme using Theme Builder](/learn/app-development/ui-design/theme-builder).
+[Theme Builder](https://apps.wavemakeronline.com/Theme_Builder/#/Dashboard) app has introduced a new feature for recognizing a website color palette by inserting the website URL. With this, you can discover the colors used in a website and use them to build a theme. It will essentially make the theme-building process much easier by allowing you to choose the discovered colors, fonts, and more from an existing website. Furthermore, you can preview and design WaveMaker components by assigning colors, and download the theme when ready. For more information about creating a theme without any coding, see [Creating a Theme using Theme Builder](#).
 
 <!-- truncate -->
 
-With WaveMaker 10.6 release, we have fixed a few bugs. [Know more details here](/learn/wavemaker-release-notes/v10-6-0).
+With WaveMaker 10.6 release, we have fixed a few bugs. [Know more details here](#).
 
 ## Input URL
 
@@ -40,7 +40,7 @@ The generated colors are available for all the input fields. Choose the colors f
 6. When ready, download the theme.
 
 :::note
-For information on how to import a theme, see [Importing Theme](/learn/app-development/ui-design/themes#import-theme).
+For information on how to import a theme, see [Importing Theme](#).
 :::
 
 ## Bug Fixes

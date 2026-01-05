@@ -30,11 +30,11 @@ View the progress of WaveMaker features and fixes in Studio.
 - Outdated application stack: AngularJS ends the support by 31 Jan 2022, including security issues. [Learn more about AngularJS version support status](https://docs.angularjs.org/misc/version-support-status)
 - Latest angular stack Angular 10
 - Several performance improvements
-- Security vulnerabilities in the dependent third party libraries to get the benefits of [up to date technology stack](/learn/wavemaker-release-notes#technology-stack)
-- Support for new [compression technique](/learn/wavemaker-release-notes/v10-2-0#enhancements)
-- Enabling [micro frontend enablement](/learn/wavemaker-release-notes/v10-5-0/#support-for-microfrontend-single-spa-framework)
-- Wavemaker-generated code is now [Veracode certificated](weaving-security-into-low-code-development/)
-- [ngx-bootstrap upgrade](/learn/wavemaker-release-notes/v10-4-0/#upgrade-to-latest-version-of-ngx---bootstrap) with enhanced features
+- Security vulnerabilities in the dependent third party libraries to get the benefits of [up to date technology stack](#)
+- Support for new [compression technique](#)
+- Enabling [micro frontend enablement](#)
+- Wavemaker-generated code is now [Veracode certificated](#)
+- [ngx-bootstrap upgrade](#) with enhanced features
 
 **Some Examples of UI Enhancements**:
 
@@ -46,7 +46,7 @@ View the progress of WaveMaker features and fixes in Studio.
 - Ability to provide widget level properties in a prefab
 - Adding tablet view support to Mobile apps
 
-And so much more. Read [WaveMaker release notes](/learn/wavemaker-release-notes) to understand the features and fixes better.
+And so much more. Read [WaveMaker release notes](#) to understand the features and fixes better.
 
 ## How do I know if I have WaveMaker 9.x apps?
 
@@ -56,13 +56,13 @@ When you start the project update, the project card converts into a folder. The 
 
 ![two versions of the project](/img/blogs/two-versions-9-10-apps.png)
 
-For more information and a guide to update, see [Upgrading an App from WaveMaker 9.x to WaveMaker 10.0](/learn/how-tos/guide-to-upgrade-an-app-wavemaker-9x-to-wavemaker-10-0/).
+For more information and a guide to update, see [Upgrading an App from WaveMaker 9.x to WaveMaker 10.0](#).
 
 ## How WaveMaker will help you with the update?
 
 Updating Angular is not relatively straightforward. However, our developers at WaveMaker have made it a little easier for you. When you initiate an update, WaveMaker takes care of the major part behind the scenes. 
 
-Even so, if you have included customizations, i.e., adding custom JavaScript code, you'll have to check and accept changes manually by verifying every single customization that runs through the process. This approach is taken care of by the [inspection framework](/learn/app-development/dev-integration/inspection-framework/) that we explicitly developed to guide you through the migration process. Further to this, you can reach out to our support team for more assistance. 
+Even so, if you have included customizations, i.e., adding custom JavaScript code, you'll have to check and accept changes manually by verifying every single customization that runs through the process. This approach is taken care of by the [inspection framework](#) that we explicitly developed to guide you through the migration process. Further to this, you can reach out to our support team for more assistance. 
 
 ## What does end of support mean for your customers?
 
@@ -82,18 +82,18 @@ You will no longer receive support, and we cannot offer the license extension.
 
 ## WaveMaker 10 Releases
 
-- [WaveMaker 10 Preview](/learn/wavemaker-release-notes/v10-0-preview)
-- [WaveMaker 10.GA](/learn/wavemaker-release-notes/v10-0-ga)
-- [WaveMaker 10.1](/learn/wavemaker-release-notes/v10-1-0)
-- [WaveMaker 10.2](/learn/wavemaker-release-notes/v10-2-0)
-- [WaveMaker 10.3](/learn/wavemaker-release-notes/v10-3-0)
-- [WaveMaker 10.4](/learn/wavemaker-release-notes/v10-4-0)
-- [WaveMaker 10.5](/learn/wavemaker-release-notes/v10-5-0)
-- [WaveMaker 10.6](/learn/wavemaker-release-notes/v10-6-0)
-- [WaveMaker 10.7](/learn/wavemaker-release-notes/v10-7-0)
-- [WaveMaker 10.8](/learn/wavemaker-release-notes/v10-8-0)
-- [WaveMaker 10.9](/learn/wavemaker-release-notes/v10-9-0)
-- [WaveMaker 10.10](/learn/wavemaker-release-notes/v10-10-0)
-- [WM 10.10.3 - Log4j2 Dependency Vulnerability](/learn/wavemaker-release-notes/v10-10-3)
+- [WaveMaker 10 Preview](#)
+- [WaveMaker 10.GA](#)
+- [WaveMaker 10.1](#)
+- [WaveMaker 10.2](#)
+- [WaveMaker 10.3](#)
+- [WaveMaker 10.4](#)
+- [WaveMaker 10.5](#)
+- [WaveMaker 10.6](#)
+- [WaveMaker 10.7](#)
+- [WaveMaker 10.8](#)
+- [WaveMaker 10.9](#)
+- [WaveMaker 10.10](#)
+- [WM 10.10.3 - Log4j2 Dependency Vulnerability](#)
 
-For the detailed list of releases, including biweekly ones, see [WaveMaker Release Notes](/learn/wavemaker-release-notes).
+For the detailed list of releases, including biweekly ones, see [WaveMaker Release Notes](#).

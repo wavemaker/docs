@@ -45,7 +45,7 @@ With 11.8.3, we’ve taken this a step further by publishing upcoming release no
 
 ![Upcoming and Latest Versions](/img/blogs/release-notes-blog/upcoming-latest-final.png)
 
-Visit our recent release notes by clicking [here](/learn/wavemaker-release-notes/v11-8-3) and reach out to our [Support Team](support@wavemaker.com) in case of any queries.
+Visit our recent release notes by clicking [here](#) and reach out to our [Support Team](mailto:support@wavemaker.com) in case of any queries.
 
 Welcome to the **New Normal** for our release notes!
 

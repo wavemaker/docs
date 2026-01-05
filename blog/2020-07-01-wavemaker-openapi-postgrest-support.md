@@ -3,7 +3,7 @@ title: "PostgREST OpenAPI support in WaveMaker"
 author: Nikhilesh K V
 ---
 
-WaveMaker has added support for importing API that are documented using [OpenAPIs, Swagger](/learn/blog/2020/04/21/wavemaker-openapi-import) specification in 10.4. However building a [robust](https://en.wikipedia.org/wiki/Robustness_principle) OpenAPI support is very important as different API while using OpenAPI/Swagger document their endpoints in subtly different ways. We tried importing OpenAPI documents from different API sources. One such example is when we tested an OpenAPI document generated through [PostgREST](http://postgrest.org/en/v7.0.0/). In this blog we'll discuss what changes we have made in 10.5 in order to support OpenAPI documents generated from such sources.
+WaveMaker has added support for importing API that are documented using [OpenAPIs, Swagger](/blog/2020/04/21/wavemaker-openapi-import) specification in 10.4. However building a [robust](https://en.wikipedia.org/wiki/Robustness_principle) OpenAPI support is very important as different API while using OpenAPI/Swagger document their endpoints in subtly different ways. We tried importing OpenAPI documents from different API sources. One such example is when we tested an OpenAPI document generated through [PostgREST](http://postgrest.org/en/v7.0.0/). In this blog we'll discuss what changes we have made in 10.5 in order to support OpenAPI documents generated from such sources.
 <!-- truncate -->
 
 ![OpenApi](/img/blogs/postGRESTlogo.png)
@@ -121,7 +121,7 @@ If you have a look at the request parameters for the POST API, you can see that 
 
 Since we did not have this kind of parsing logic in 10.4, we were unable to extract the form fields on dragging a Form widget for **Employee** Entity.
 
-> This feature is part of WaveMaker 10.5 release. [Checkout more details on what is included in this release](learn/wavemaker-release-notes/v10-5-0).
+> This feature is part of WaveMaker 10.5 release. [Checkout more details on what is included in this release](#).
 
 ## Conclusion
 

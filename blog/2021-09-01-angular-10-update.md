@@ -17,7 +17,7 @@ Please note that this Angular update does not include Ivy Engine but covers some
 
 ## What's in the Update
 
-This update impacts building WaveMaker apps using your own [CI/CD pipeline](/learn/app-development/deployment/deployment-overview) using the [Angular Build](/learn/app-development/deployment/build-options#angular-build). 
+This update impacts building WaveMaker apps using your own [CI/CD pipeline](#) using the [Angular Build](#). 
 
 |Description| Current Version | Moving to|
 |---|---|---|
@@ -40,7 +40,7 @@ There are two ways to upgrade to your build system with Angular 10.
 If you are using Docker images for building WaveMaker application, you can use them in the following ways:
 
 - Using them from the public repo containing pre-built Docker image developed and published by WaveMaker.
-- Using Docker files to build the Docker images. For more information, see [Build with Docker](/learn/app-development/deployment/build-with-docker). 
+- Using Docker files to build the Docker images. For more information, see [Build with Docker](#). 
 
 ### Testing your Application
 
@@ -48,4 +48,4 @@ If you are using Docker images for building WaveMaker application, you can use t
 To make the transition smooth, we can provide the beta link on demand to test your application. Please reach out to the [support team](mailto:support@wavemaker.com) for more details. 
 :::
 
-We recommend you test the application to see if the build is successful. For this, you must test the application using the [Angular Build](/learn/app-development/deployment/build-options#angular-build). If the build fails, we request you to contact our support team with logs. 
+We recommend you test the application to see if the build is successful. For this, you must test the application using the [Angular Build](#). If the build fails, we request you to contact our support team with logs. 

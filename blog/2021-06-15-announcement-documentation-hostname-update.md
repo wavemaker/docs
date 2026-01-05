@@ -18,10 +18,10 @@ If you have subscribed to our Team Blog via RSS feed, we request you to update t
 #### Updated URL
 
 ```
-https://docs.wavemaker.com/learn/blog/feed.xml
+https://docs.wavemaker.com/blog/feed.xml
 ```
 
-Alternatively, find the updated URL when you navigate to **[blogs](/learn/blog)** as well, as shown below.
+Alternatively, find the updated URL when you navigate to **[blogs](/blog)** as well, as shown below.
 
 ![rss feed](/img/blogs/rss-update.png)
 

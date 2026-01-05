@@ -48,7 +48,7 @@ All the changes will reflect in the preview application only when clicked on sav
 * When ready, download the theme and import to the projects.
 
 :::note
-For information on how to import a theme, see [Importing Theme](/learn/app-development/ui-design/themes#import-theme).
+For information on how to import a theme, see [Importing Theme](#).
 :::
 
 

@@ -8,7 +8,7 @@ As Java 11 Long Term Support (LTS) is reaching its end of life in October 2024, 
 
 ## Recent Changes
 
-We recently added support for Java Runtime, **[v11.7.4](/learn/wavemaker-release-notes/v11-7-4)**, released on July 1, 2024, allowing generated applications to run on either Java 17 or Java 21, depending on customer needs. However, this support is limited to runtime and does not extend to compile-time. This means that the generated applications must still be compiled with Java 11, and cannot be compiled with any higher version yet.
+We recently added support for Java Runtime, **[v11.7.4](#)**, released on July 1, 2024, allowing generated applications to run on either Java 17 or Java 21, depending on customer needs. However, this support is limited to runtime and does not extend to compile-time. This means that the generated applications must still be compiled with Java 11, and cannot be compiled with any higher version yet.
 
 <!-- truncate -->
 

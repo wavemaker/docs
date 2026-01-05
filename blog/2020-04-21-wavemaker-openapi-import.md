@@ -15,7 +15,7 @@ OpenAPI is a broadly adopted industry standard for describing modern APIs. The d
 The OpenAPI Specification (OAS) defines a standard, programming language-agnostic interface description for REST APIs, which allows both humans and computers to discover and understand the capabilities of a service without requiring access to source code, additional documentation, or inspection of network traffic. A document (or set of documents) that defines or describes an API in called the OpenAPI definition document. An OpenAPI definition uses and conforms to the OpenAPI Specification. The specification can be found [here](http://spec.openapis.org/oas/v3.0.3).
 
 :::note
-As of release 10.4, WaveMaker supports OAS 2.0. Support for OAS 3.0 is being worked upon. We made the OpenAPI support [more robust in 10.5](/learn/blog/2020/07/01/wavemaker-openapi-postgrest-support). Keep an eye on this space for more updates.
+As of release 10.4, WaveMaker supports OAS 2.0. Support for OAS 3.0 is being worked upon. We made the OpenAPI support [more robust in 10.5](/blog/2020/07/01/wavemaker-openapi-postgrest-support). Keep an eye on this space for more updates.
 :::
 
 ## Advantages of working with OpenAPIs
@@ -38,7 +38,7 @@ We at WaveMaker are working to identify all such patterns and integrating it wit
 ## Importing OpenAPI document in WaveMaker
 
 If you already have an API document that is in accordance with OpenAPI spec 2.0, it can be imported into your WaveMaker app project and integrated with the UI widgets. Refer the following document on how to do so:  
-[Importing REST APIs via OpenAPI/Swagger](/learn/app-development/services/api-designer/import-rest-apis-swagger)
+[Importing REST APIs via OpenAPI/Swagger](#)
 
 ## Importing an existing WaveMaker app’s APIs into another app
 
@@ -82,4 +82,4 @@ The [grape-swagger](https://github.com/ruby-grape/grape-swagger) gem provides fu
 - OpenAPI initiative official space: [https://www.openapis.org](https://www.openapis.org/)
 - Swagger official space: [https://swagger.io](https://swagger.io/)
 - How to generate OpenAPI definition from code: [https://www.blazemeter.com/blog/how-to-generate-openapi-definitions-from-code](https://www.blazemeter.com/blog/how-to-generate-openapi-definitions-from-code)
-- [Importing REST APIs via OpenAPI/Swagger](/learn/app-development/services/api-designer/import-rest-apis-swagger)
+- [Importing REST APIs via OpenAPI/Swagger](#)

@@ -4,7 +4,7 @@ author: "Prahalad Madepally"
 ---
 ---
 
-During mobile application development, [Appium](/learn/react-native/appium-support/), an automation testing framework, assists in extracting accessibility IDs used for writing automation scripts to ensure the application functions as expected.
+During mobile application development, [Appium](#), an automation testing framework, assists in extracting accessibility IDs used for writing automation scripts to ensure the application functions as expected.
 
 In applications built with Expo 50 and React Native 0.73, certain issues with Appium were observed, stemming from limitations in React Native 0.73. However, with the enhancements in Expo 51 and React Native 0.74, these issues related to accessibility IDs and automation testing will be resolved.
 

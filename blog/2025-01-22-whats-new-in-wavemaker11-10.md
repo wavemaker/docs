@@ -26,7 +26,7 @@ This feature is only available on request.
 
 The latest release brings the Project Migration Report feature, designed to simplify tracking changes during migrations. This report provides a detailed summary of all modifications made within a project during the migration process, ensuring transparency and making it easier to assess the impact of updates. Stay informed and confidently manage your project upgrades!
 
-Read more details in the [Inside the Migration: Introducing the Project Migration Report blog](/learn/blog/2025/01/02/migration-report/).
+Read more details in the [Inside the Migration: Introducing the Project Migration Report blog](/blog/2025/01/02/migration-report).
 
 ### Support for Multi-Security Providers
 
@@ -42,7 +42,7 @@ To ensure your applications remain secure and performant, WaveMaker applications
 - **Angular 18** (upgraded from 17, which reaches end of life on May 15, 2025).
 - **Node.js 22** (upgraded from Node.js 18).
 
-These upgrades bring the latest features and security enhancements to your applications. To keep yourself ready for the upgrade, we recommend that you upgrade your build environment (CI/CD pipelines) for Node version from 18.16.1 to 22.11.0. Check out the detailed [blog](/learn/blog/2025/01/06/angular-node-upgrades/).
+These upgrades bring the latest features and security enhancements to your applications. To keep yourself ready for the upgrade, we recommend that you upgrade your build environment (CI/CD pipelines) for Node version from 18.16.1 to 22.11.0. Check out the detailed [blog](/blog/2025/01/06/angular-node-upgrades).
 
 :::note
 The Node upgrade applies only to Web applications, while React Native applications will continue using Node version 18.
@@ -60,22 +60,22 @@ WaveMaker now supports the latest database server versions, phasing out deprecat
 |Oracle              | 12c                 | 19c, 23c           |
 | IBM DB2            | 11.1                | 11.5               |
 
-Look into out [blog post](/learn/blog/2025/01/07/database-version-updates/) for futher details.
+Look into out [blog post](/blog/2025/01/07/database-version-updates) for futher details.
  
 ### 3. Expo 52 Upgrade
 
 Starting January 27, 2025, Expo 52 will be available in React Native Studio, introducing improved tools, debugging enhancements, automation testing support, and compatibility with React Native 0.76.
 
-For more details, see the [Expo 52 Blog](/learn/blog/2024/12/16/expo-52-react-native-update/).
+For more details, see the [Expo 52 Blog](/blog/2024/12/16/expo-52-react-native-update).
 
 ## Key Enhancements
 
 **Droppable Footer for Wizard**: Users can now easily drop widgets into the wizard's action section. Earlier wizard actions like Next, Previous, Done, etc. were fixed and not editable like WaveMaker widgets. Now, users can configure, style, or add new actions based on their requirements
-**Restructured Dockerfiles**: Streamlined Dockerfiles for CI/CD of WaveMaker Applications. Have a look at the [Optimized WaveMaker App Builds & Deployments with Docker Images blog](/learn/blog/2025/01/17/specialized-docker-images/).
+**Restructured Dockerfiles**: Streamlined Dockerfiles for CI/CD of WaveMaker Applications. Have a look at the [Optimized WaveMaker App Builds & Deployments with Docker Images blog](/blog/2025/01/17/specialized-docker-images).
 
 ## Notable Bug Fixes
 
-WaveMaker 11.10 addresses various bugs reported in previous versions. Check out the [upcoming release notes](/learn/wavemaker-release-notes/v11-10-0/) for the complete list of fixes. 
+WaveMaker 11.10 addresses various bugs reported in previous versions. Check out the [upcoming release notes](#) for the complete list of fixes. 
 
 
 ## Conclusion

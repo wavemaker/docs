@@ -6,7 +6,7 @@ author: Subodh Kumar
 A real-world application is composed of multiple modules. Changes or upgrades to a given module can impact other modules and add more testing effort to the development timeline. Including a new technology into the existing app might be challenging as the existing app might not include all support, such as the build process. 
 
 :::note
-For more information about developing Micro Frontend modules, see [Developing Micro Frontend Modules in WaveMaker](/learn/app-development/sspa/micro-frontend).
+For more information about developing Micro Frontend modules, see [Developing Micro Frontend Modules in WaveMaker](#).
 ::: 
 
 <!-- truncate -->
@@ -81,7 +81,7 @@ With all the approaches and advantages described above, this pattern does come w
 ## Single-spa framework in WaveMaker 
 
 :::note
-For more information about developing Micro Frontend modules, see [Delivering WaveMaker Apps as Micro Frontend modules](/learn/app-development/sspa/micro-frontend).
+For more information about developing Micro Frontend modules, see [Delivering WaveMaker Apps as Micro Frontend modules](#).
 ::: 
 
 **Single-spa** framework allows you to compose and serve multi-framework modules into an app by including a compatible JavaScript bundle. When built, a real-world web application will not just generate JS bundles but also produce CSS and other metadata artifacts. Currently, the **Single-spa** framework does not have any specific way of loading non-code, non-JS artifacts. For this reason, the users are requested to add the additional scripts in the steps mentioned above.

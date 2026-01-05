@@ -9,7 +9,7 @@ Using WaveMaker, you can almost instantly create a chart or plot for visualizati
 
 <!-- truncate -->
 
-In this series of blog post, we discuss [how to build a dashboard](/learn/blog/2020/04/27/covid19-visualization-using-wavemaker#how-to-build-the-dashboard), and in the next post, we will see [how to build visualization for charts and maps](/learn/blog/2020/04/30/covid19-visualization-using-wavemaker-part-2). But before, let's do a little walkthrough of the app.
+In this series of blog post, we discuss [how to build a dashboard](/blog/2020/04/27/covid19-visualization-using-wavemaker#how-to-build-the-dashboard), and in the next post, we will see [how to build visualization for charts and maps](/blog/2020/04/30/covid19-visualization-using-wavemaker-part-2). But before, let's do a little walkthrough of the app.
 
 ## Corona Tracker App
 
@@ -90,12 +90,12 @@ Apart from just binding the data to API response, WaveMaker enables writing simp
 
 ### Step 5: Deploy to the cloud and we are done!
 
-For more information, see how to deploy an app with [One-Click Deployment](/learn/app-development/deployment/one-click-deployment/).
+For more information, see how to deploy an app with [One-Click Deployment](#).
 
 ## What's next?
 
-In the next series of the blog post for developing a Covid-19 visualization using WaveMaker, see how to build [visualization for charts](#how-to-build-charts-visualization) and [visualization for maps](/learn/blog/2020/04/30/covid19-visualization-using-wavemaker-part-2#how-to-build-maps-visualization).
+In the next series of the blog post for developing a Covid-19 visualization using WaveMaker, see how to build [visualization for charts](#how-to-build-charts-visualization) and [visualization for maps](/blog/2020/04/30/covid19-visualization-using-wavemaker-part-2#how-to-build-maps-visualization).
 
 ## See Also
 
-[COVID-19 Visualization using WaveMaker - Part 2](/learn/blog/2020/04/30/covid19-visualization-using-wavemaker-part-2)
+[COVID-19 Visualization using WaveMaker - Part 2](/blog/2020/04/30/covid19-visualization-using-wavemaker-part-2)

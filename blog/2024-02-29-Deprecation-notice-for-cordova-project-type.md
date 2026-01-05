@@ -14,7 +14,7 @@ WaveMaker’s support for developing mobile applications was launched in 2015 wi
 
 #### Why React Native
 
-With better performance and the latest technology, React Native stands as the first choice for application development. To understand more about how React Native is better than Cordova, see [React Native or Cordova](/learn/app-development/wavemaker-overview/react-native-and-cordova).
+With better performance and the latest technology, React Native stands as the first choice for application development. To understand more about how React Native is better than Cordova, see [React Native or Cordova](#).
 
 
 <!-- truncate -->

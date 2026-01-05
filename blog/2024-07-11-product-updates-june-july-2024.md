@@ -12,7 +12,7 @@ We are happy to announce new updates in WaveMaker that will enhance your develop
 
 WaveMaker now supports deployment on web servers using Java 17 and Java 21 alongside Java 11. This update prepares for future Java versions and enhances compatibility with modern libraries.
 
-[Read More](/learn/blog/2024/06/24/java-update-17-and-21/)
+[Read More](/blog/2024/06/24/java-update-17-and-21)
 
 
 ## Performance Improvements
@@ -28,18 +28,18 @@ WaveMaker now supports deployment on web servers using Java 17 and Java 21 along
 
 WaveMaker improves accessibility by using semantic tags like `<p>` and `<h1>–<h6>` instead of `<label>` tags outside of forms. This change ensures compliance with accessibility standards.
 
-[Read More](/learn/blog/2024/05/27/label-accessibility/)
+[Read More](/blog/2024/05/27/label-accessibility)
 
 
 ## Pull Request Flow for Custom VCS
 
 Introducing a Pull Request (PR) flow for Version Control Systems like Bitbucket, GitHub, and GitLab, enhancing collaboration and code management for teams.
 
-[Read More](/learn/app-development/deployment/pull-request-flow/)
+[Read More](#)
 
 ## See Also
 
-[v11.7.5](/learn/wavemaker-release-notes/v11-7-5) - Release date: 08 July 2024  
-[v11.7.4](/learn/wavemaker-release-notes/v11-7-4/) - Release date: 01 July 2024  
-[v11.7.3](/learn/wavemaker-release-notes/v11-7-3) - Release date: 17 June 2024  
+[v11.7.5](#) - Release date: 08 July 2024  
+[v11.7.4](#) - Release date: 01 July 2024  
+[v11.7.3](#) - Release date: 17 June 2024  
 

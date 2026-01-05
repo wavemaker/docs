@@ -39,7 +39,7 @@ How to use OpenTelemetry integration to have complete visibility of the applicat
             docker run -d -p 9411:9411 openzipkin/zipkin
   ```        
   
-  2. WaveMaker application can be deployed on specific versions of Apache Tomcat. Install Tomcat by following [installation instructions](https://docs.wavemaker.com/learn/how-tos/wavemaker-application-deployment-tomcat) and then copy step 1 downloaded opentelemetry-javaagent.jar to tomcat lib directory(**$TOMCAT_HOME/lib/**)
+  2. WaveMaker application can be deployed on specific versions of Apache Tomcat. Install Tomcat by following [installation instructions](https://docs.wavemaker.com#) and then copy step 1 downloaded opentelemetry-javaagent.jar to tomcat lib directory(**$TOMCAT_HOME/lib/**)
   
 ### 2. Instrument application code
 OpenTelemetry code instrumentation is supported for Java based applications, here are the steps  to  Instrument application code.
@@ -63,7 +63,7 @@ Here Zipkin server should be accessible to the tomcat server.
 :::
 
   3. Introduce tracing code:
-    To introduce tracing and create correlations Spring AOP(Aspect Oriented Programming) code changes needed, this code can also be introduced by using the [IDE](https://docs.wavemaker.com/learn/app-development/dev-integration/extending-application-using-ides/#steps-in-working-with-ides) at WaveMaker application.  
+    To introduce tracing and create correlations Spring AOP(Aspect Oriented Programming) code changes needed, this code can also be introduced by using the [IDE](https://docs.wavemaker.com#) at WaveMaker application.  
     Download WaveMaker Application Zip from Studio, extract the downloaded zip file to a directory and call it as `$WMAPP_HOME`
     Navigate to the maven `pom.xml` file to add following dependencies code snippet
     

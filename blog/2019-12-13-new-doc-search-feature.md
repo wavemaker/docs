@@ -3,7 +3,7 @@ title: "All-new WaveMaker docs with a powerful Search"
 author: "Swetha Kundaram"
 ---
 
-We [released](/improve-your-app-development-experience-with-the-new-wavemaker-docs/) the new WaveMaker Docs site on the 14 November 2019. We migrated from WordPress to [Docusaurus](https://docusaurus.io/) with easy-to-edit markdown files. This change has also increased the contributions from our team members. 
+We [released](#) the new WaveMaker Docs site on the 14 November 2019. We migrated from WordPress to [Docusaurus](https://docusaurus.io/) with easy-to-edit markdown files. This change has also increased the contributions from our team members. 
 
 <!--truncate-->
 
