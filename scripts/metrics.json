@@ -1,0 +1,2643 @@
+{
+  "total": 654,
+  "md": 647,
+  "mdx": 7,
+  "noAuthor": 225,
+  "authors": {
+    "Priyanka Bhadri": 29,
+    "Sagar Vemala": 2,
+    "Author Name": 385,
+    "Tejaswini K": 10,
+    "Mayank Prakash": 3
+  },
+  "noAuthorDocs": [
+    {
+      "name": "authentication-and-authorization.mdx",
+      "path": "apis-and-services/security/authentication-and-authorization.mdx"
+    },
+    {
+      "name": "overview.md",
+      "path": "build-and-deploy/build/mobile/overview.md"
+    },
+    {
+      "name": "continous-deployment.md",
+      "path": "build-and-deploy/pipeline/continous-deployment.md"
+    },
+    {
+      "name": "continous-integration.md",
+      "path": "build-and-deploy/pipeline/continous-integration.md"
+    },
+    {
+      "name": "overview.md",
+      "path": "build-and-deploy/pipeline/overview.md"
+    },
+    {
+      "name": "overview.md",
+      "path": "build-and-deploy/publish/overview.md"
+    },
+    {
+      "name": "theme-agent.md",
+      "path": "developing-with-agents/aira-agents/theme-agent.md"
+    },
+    {
+      "name": "wavemaker-agent.md",
+      "path": "developing-with-agents/aira-agents/wavemaker-agent.md"
+    },
+    {
+      "name": "wmx-agent.md",
+      "path": "developing-with-agents/aira-agents/wmx-agent.md"
+    },
+    {
+      "name": "before-you-start-with-aira.md",
+      "path": "developing-with-agents/before-you-start-with-aira.md"
+    },
+    {
+      "name": "concepts.md",
+      "path": "developing-with-agents/concepts.md"
+    },
+    {
+      "name": "accessing-file-upload-java-code.md",
+      "path": "guide/components/angular-components/accessing-file-upload-java-code.md"
+    },
+    {
+      "name": "add-master-detail-records-using-data-table.md",
+      "path": "guide/components/angular-components/add-master-detail-records-using-data-table.md"
+    },
+    {
+      "name": "adding-custom-fonts-richtext-editor.md",
+      "path": "guide/components/angular-components/adding-custom-fonts-richtext-editor.md"
+    },
+    {
+      "name": "adding-master-detail-records-transaction.md",
+      "path": "guide/components/angular-components/adding-master-detail-records-transaction.md"
+    },
+    {
+      "name": "adding-parent-child-records-single-transaction.md",
+      "path": "guide/components/angular-components/adding-parent-child-records-single-transaction.md"
+    },
+    {
+      "name": "adding-parent-child-using-form-datatable.md",
+      "path": "guide/components/angular-components/adding-parent-child-using-form-datatable.md"
+    },
+    {
+      "name": "building-cascading-lists.md",
+      "path": "guide/components/angular-components/building-cascading-lists.md"
+    },
+    {
+      "name": "building-editable-list.md",
+      "path": "guide/components/angular-components/building-editable-list.md"
+    },
+    {
+      "name": "building-rating-widget-using-variable.md",
+      "path": "guide/components/angular-components/building-rating-widget-using-variable.md"
+    },
+    {
+      "name": "calendar-usage-create-event.md",
+      "path": "guide/components/angular-components/calendar-usage-create-event.md"
+    },
+    {
+      "name": "calender-usage-google-calendar-integration.md",
+      "path": "guide/components/angular-components/calender-usage-google-calendar-integration.md"
+    },
+    {
+      "name": "capturing-card-items.md",
+      "path": "guide/components/angular-components/capturing-card-items.md"
+    },
+    {
+      "name": "charts-custom-data.md",
+      "path": "guide/components/angular-components/charts-custom-data.md"
+    },
+    {
+      "name": "charts-displaying-user-selection-another-widget.md",
+      "path": "guide/components/angular-components/charts-displaying-user-selection-another-widget.md"
+    },
+    {
+      "name": "charts-handling-dynamic-data.md",
+      "path": "guide/components/angular-components/charts-handling-dynamic-data.md"
+    },
+    {
+      "name": "checkboxset-filter-list-data.md",
+      "path": "guide/components/angular-components/checkboxset-filter-list-data.md"
+    },
+    {
+      "name": "combining-columns-data-table.md",
+      "path": "guide/components/angular-components/combining-columns-data-table.md"
+    },
+    {
+      "name": "concurrency-record-locking-wavemaker.md",
+      "path": "guide/components/angular-components/concurrency-record-locking-wavemaker.md"
+    },
+    {
+      "name": "configuring-cascading-select.md",
+      "path": "guide/components/angular-components/configuring-cascading-select.md"
+    },
+    {
+      "name": "configuring-select-widget-database-fields.md",
+      "path": "guide/components/angular-components/configuring-select-widget-database-fields.md"
+    },
+    {
+      "name": "configuring-select-widget-display-data-fields.md",
+      "path": "guide/components/angular-components/configuring-select-widget-display-data-fields.md"
+    },
+    {
+      "name": "configuring-select-widget-static-list-values.md",
+      "path": "guide/components/angular-components/configuring-select-widget-static-list-values.md"
+    },
+    {
+      "name": "configuring-select-widget-static-variable.md",
+      "path": "guide/components/angular-components/configuring-select-widget-static-variable.md"
+    },
+    {
+      "name": "configuring-select-widget-variable.md",
+      "path": "guide/components/angular-components/configuring-select-widget-variable.md"
+    },
+    {
+      "name": "copy-to-clipboard.md",
+      "path": "guide/components/angular-components/copy-to-clipboard.md"
+    },
+    {
+      "name": "customize-dynamic-datatable.md",
+      "path": "guide/components/angular-components/customize-dynamic-datatable.md"
+    },
+    {
+      "name": "customize-progress-bar.md",
+      "path": "guide/components/angular-components/customize-progress-bar.md"
+    },
+    {
+      "name": "customize-slider.md",
+      "path": "guide/components/angular-components/customize-slider.md"
+    },
+    {
+      "name": "data-table-actions.md",
+      "path": "guide/components/angular-components/data-table-actions.md"
+    },
+    {
+      "name": "data-table-column-bound-query.md",
+      "path": "guide/components/angular-components/data-table-column-bound-query.md"
+    },
+    {
+      "name": "data-table-format-options.md",
+      "path": "guide/components/angular-components/data-table-format-options.md"
+    },
+    {
+      "name": "data-table-styling.md",
+      "path": "guide/components/angular-components/data-table-styling.md"
+    },
+    {
+      "name": "data-table-widget-representations.md",
+      "path": "guide/components/angular-components/data-table-widget-representations.md"
+    },
+    {
+      "name": "dynamic-data-table-edit.md",
+      "path": "guide/components/angular-components/dynamic-data-table-edit.md"
+    },
+    {
+      "name": "dynamic-data-tables.md",
+      "path": "guide/components/angular-components/dynamic-data-tables.md"
+    },
+    {
+      "name": "dynamic-form.md",
+      "path": "guide/components/angular-components/dynamic-form.md"
+    },
+    {
+      "name": "dynamic-tabs-accordions.md",
+      "path": "guide/components/angular-components/dynamic-tabs-accordions.md"
+    },
+    {
+      "name": "edit-datatable-bound-to-queryapi.md",
+      "path": "guide/components/angular-components/edit-datatable-bound-to-queryapi.md"
+    },
+    {
+      "name": "export-data-data-table-2.md",
+      "path": "guide/components/angular-components/export-data-data-table-2.md"
+    },
+    {
+      "name": "export-data-data-table.md",
+      "path": "guide/components/angular-components/export-data-data-table.md"
+    },
+    {
+      "name": "file-upload-blob-data.md",
+      "path": "guide/components/angular-components/file-upload-blob-data.md"
+    },
+    {
+      "name": "file-upload-custom-directory.md",
+      "path": "guide/components/angular-components/file-upload-custom-directory.md"
+    },
+    {
+      "name": "file-upload-widget-operations.md",
+      "path": "guide/components/angular-components/file-upload-widget-operations.md"
+    },
+    {
+      "name": "form-conditional-flows.md",
+      "path": "guide/components/angular-components/form-conditional-flows.md"
+    },
+    {
+      "name": "form-with-wizard.md",
+      "path": "guide/components/angular-components/form-with-wizard.md"
+    },
+    {
+      "name": "get-validation-messages-form.md",
+      "path": "guide/components/angular-components/get-validation-messages-form.md"
+    },
+    {
+      "name": "how-to-configure-row-expansion-in-a-data-table.md",
+      "path": "guide/components/angular-components/how-to-configure-row-expansion-in-a-data-table.md"
+    },
+    {
+      "name": "how-tos-calendar.md",
+      "path": "guide/components/angular-components/how-tos-calendar.md"
+    },
+    {
+      "name": "how-tos-form.md",
+      "path": "guide/components/angular-components/how-tos-form.md"
+    },
+    {
+      "name": "how-tos-live-form.md",
+      "path": "guide/components/angular-components/how-tos-live-form.md"
+    },
+    {
+      "name": "how-tos-wizard.md",
+      "path": "guide/components/angular-components/how-tos-wizard.md"
+    },
+    {
+      "name": "list-basic-usage.md",
+      "path": "guide/components/angular-components/list-basic-usage.md"
+    },
+    {
+      "name": "list-data-table.md",
+      "path": "guide/components/angular-components/list-data-table.md"
+    },
+    {
+      "name": "list-grouped.md",
+      "path": "guide/components/angular-components/list-grouped.md"
+    },
+    {
+      "name": "list-item-access.md",
+      "path": "guide/components/angular-components/list-item-access.md"
+    },
+    {
+      "name": "list-multi-grouped.md",
+      "path": "guide/components/angular-components/list-multi-grouped.md"
+    },
+    {
+      "name": "live-filter-applying.md",
+      "path": "guide/components/angular-components/live-filter-applying.md"
+    },
+    {
+      "name": "live-filter-multiple-values.md",
+      "path": "guide/components/angular-components/live-filter-multiple-values.md"
+    },
+    {
+      "name": "live-filter-range-filter.md",
+      "path": "guide/components/angular-components/live-filter-range-filter.md"
+    },
+    {
+      "name": "live-form-linking-another-widget.md",
+      "path": "guide/components/angular-components/live-form-linking-another-widget.md"
+    },
+    {
+      "name": "live-form-related-fields.md",
+      "path": "guide/components/angular-components/live-form-related-fields.md"
+    },
+    {
+      "name": "live-form-tabbed-form.md",
+      "path": "guide/components/angular-components/live-form-tabbed-form.md"
+    },
+    {
+      "name": "localization-data-table-column-headings.md",
+      "path": "guide/components/angular-components/localization-data-table-column-headings.md"
+    },
+    {
+      "name": "onrender-event-list-widget.md",
+      "path": "guide/components/angular-components/onrender-event-list-widget.md"
+    },
+    {
+      "name": "radioset-filter-list.md",
+      "path": "guide/components/angular-components/radioset-filter-list.md"
+    },
+    {
+      "name": "rating-widget-interactive.md",
+      "path": "guide/components/angular-components/rating-widget-interactive.md"
+    },
+    {
+      "name": "rating-widget-using-static-data.md",
+      "path": "guide/components/angular-components/rating-widget-using-static-data.md"
+    },
+    {
+      "name": "rating-widget-using-static-variable.md",
+      "path": "guide/components/angular-components/rating-widget-using-static-variable.md"
+    },
+    {
+      "name": "selection-widgets-use-case.md",
+      "path": "guide/components/angular-components/selection-widgets-use-case.md"
+    },
+    {
+      "name": "settimezone-method.md",
+      "path": "guide/components/angular-components/settimezone-method.md"
+    },
+    {
+      "name": "setting-blob-filename.md",
+      "path": "guide/components/angular-components/setting-blob-filename.md"
+    },
+    {
+      "name": "setting-partial-page-content-accordion-within-list.md",
+      "path": "guide/components/angular-components/setting-partial-page-content-accordion-within-list.md"
+    },
+    {
+      "name": "setting-partial-page-content-panel-within-list-using-javascript.md",
+      "path": "guide/components/angular-components/setting-partial-page-content-panel-within-list-using-javascript.md"
+    },
+    {
+      "name": "tree-use-case-dynamic-tree.md",
+      "path": "guide/components/angular-components/tree-use-case-dynamic-tree.md"
+    },
+    {
+      "name": "tree-use-case-java-service.md",
+      "path": "guide/components/angular-components/tree-use-case-java-service.md"
+    },
+    {
+      "name": "tree-use-case-static-variable.md",
+      "path": "guide/components/angular-components/tree-use-case-static-variable.md"
+    },
+    {
+      "name": "upload-file-save-database.md",
+      "path": "guide/components/angular-components/upload-file-save-database.md"
+    },
+    {
+      "name": "upload-files-from-live-form-form.md",
+      "path": "guide/components/angular-components/upload-files-from-live-form-form.md"
+    },
+    {
+      "name": "using-cascading-filter-populate-live-form.md",
+      "path": "guide/components/angular-components/using-cascading-filter-populate-live-form.md"
+    },
+    {
+      "name": "using-cascading-select-autocomplete-live-form-fields.md",
+      "path": "guide/components/angular-components/using-cascading-select-autocomplete-live-form-fields.md"
+    },
+    {
+      "name": "using-cascading-select-within-live-form.md",
+      "path": "guide/components/angular-components/using-cascading-select-within-live-form.md"
+    },
+    {
+      "name": "using-live-form.md",
+      "path": "guide/components/angular-components/using-live-form.md"
+    },
+    {
+      "name": "using-progress-circle-widget.md",
+      "path": "guide/components/angular-components/using-progress-circle-widget.md"
+    },
+    {
+      "name": "using-wizard-master-detail-live-form.md",
+      "path": "guide/components/angular-components/using-wizard-master-detail-live-form.md"
+    },
+    {
+      "name": "view-master-detail-data-records-using-data-table.md",
+      "path": "guide/components/angular-components/view-master-detail-data-records-using-data-table.md"
+    },
+    {
+      "name": "working-with-charts.md",
+      "path": "guide/components/angular-components/working-with-charts.md"
+    },
+    {
+      "name": "app-integration-with-azure-cdn.md",
+      "path": "guide/deployment/app-integration-with-azure-cdn.md"
+    },
+    {
+      "name": "wavemaker-application-deployment-jboss.md",
+      "path": "guide/deployment/deploy-to-webserver/wavemaker-application-deployment-jboss.md"
+    },
+    {
+      "name": "wavemaker-application-deployment-weblogic-application-server.md",
+      "path": "guide/deployment/deploy-to-webserver/wavemaker-application-deployment-weblogic-application-server.md"
+    },
+    {
+      "name": "wavemaker-application-deployment-websphere-liberty-profile.md",
+      "path": "guide/deployment/deploy-to-webserver/wavemaker-application-deployment-websphere-liberty-profile.md"
+    },
+    {
+      "name": "deployment-to-heroku.md",
+      "path": "guide/deployment/deployment-to-heroku.md"
+    },
+    {
+      "name": "deployment-using-docker-compose.md",
+      "path": "guide/deployment/deployment-using-docker-compose.md"
+    },
+    {
+      "name": "ssl-offloading.md",
+      "path": "guide/deployment/ssl-offloading.md"
+    },
+    {
+      "name": "carousel.md",
+      "path": "user-interfaces/web/components/angular-components/advanced/carousel.md"
+    },
+    {
+      "name": "login.md",
+      "path": "user-interfaces/web/components/angular-components/advanced/login.md"
+    },
+    {
+      "name": "marquee.md",
+      "path": "user-interfaces/web/components/angular-components/advanced/marquee.md"
+    },
+    {
+      "name": "alert-dialog.md",
+      "path": "user-interfaces/web/components/angular-components/alert-dialog.md"
+    },
+    {
+      "name": "anchor.md",
+      "path": "user-interfaces/web/components/angular-components/basic/anchor.md"
+    },
+    {
+      "name": "audio.md",
+      "path": "user-interfaces/web/components/angular-components/basic/audio.md"
+    },
+    {
+      "name": "html.md",
+      "path": "user-interfaces/web/components/angular-components/basic/html.md"
+    },
+    {
+      "name": "icon.md",
+      "path": "user-interfaces/web/components/angular-components/basic/icon.md"
+    },
+    {
+      "name": "iframe.md",
+      "path": "user-interfaces/web/components/angular-components/basic/iframe.md"
+    },
+    {
+      "name": "label.md",
+      "path": "user-interfaces/web/components/angular-components/basic/label.md"
+    },
+    {
+      "name": "lottie.md",
+      "path": "user-interfaces/web/components/angular-components/basic/lottie.md"
+    },
+    {
+      "name": "message.md",
+      "path": "user-interfaces/web/components/angular-components/basic/message.md"
+    },
+    {
+      "name": "picture.md",
+      "path": "user-interfaces/web/components/angular-components/basic/picture.md"
+    },
+    {
+      "name": "progress-bar.md",
+      "path": "user-interfaces/web/components/angular-components/basic/progress-bar.md"
+    },
+    {
+      "name": "progress-circle.md",
+      "path": "user-interfaces/web/components/angular-components/basic/progress-circle.md"
+    },
+    {
+      "name": "richtext-editor.md",
+      "path": "user-interfaces/web/components/angular-components/basic/richtext-editor.md"
+    },
+    {
+      "name": "search-basic-usage.md",
+      "path": "user-interfaces/web/components/angular-components/basic/search-basic-usage.md"
+    },
+    {
+      "name": "search.md",
+      "path": "user-interfaces/web/components/angular-components/basic/search.md"
+    },
+    {
+      "name": "spinner.md",
+      "path": "user-interfaces/web/components/angular-components/basic/spinner.md"
+    },
+    {
+      "name": "tree.md",
+      "path": "user-interfaces/web/components/angular-components/basic/tree.md"
+    },
+    {
+      "name": "video.md",
+      "path": "user-interfaces/web/components/angular-components/basic/video.md"
+    },
+    {
+      "name": "chart-widget.md",
+      "path": "user-interfaces/web/components/angular-components/chart/chart-widget.md"
+    },
+    {
+      "name": "onbeforerender.md",
+      "path": "user-interfaces/web/components/angular-components/chart/onbeforerender.md"
+    },
+    {
+      "name": "confirm-dialog.md",
+      "path": "user-interfaces/web/components/angular-components/confirm-dialog.md"
+    },
+    {
+      "name": "accordion.md",
+      "path": "user-interfaces/web/components/angular-components/container/accordion.md"
+    },
+    {
+      "name": "container.md",
+      "path": "user-interfaces/web/components/angular-components/container/container.md"
+    },
+    {
+      "name": "flex-layout.md",
+      "path": "user-interfaces/web/components/angular-components/container/flex-layout.md"
+    },
+    {
+      "name": "grid-layout.md",
+      "path": "user-interfaces/web/components/angular-components/container/grid-layout.md"
+    },
+    {
+      "name": "layout.md",
+      "path": "user-interfaces/web/components/angular-components/container/layout.md"
+    },
+    {
+      "name": "panel.md",
+      "path": "user-interfaces/web/components/angular-components/container/panel.md"
+    },
+    {
+      "name": "tabs.md",
+      "path": "user-interfaces/web/components/angular-components/container/tabs.md"
+    },
+    {
+      "name": "tile.md",
+      "path": "user-interfaces/web/components/angular-components/container/tile.md"
+    },
+    {
+      "name": "wizard.md",
+      "path": "user-interfaces/web/components/angular-components/container/wizard.md"
+    },
+    {
+      "name": "card-basic-usage.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/cards/card-basic-usage.md"
+    },
+    {
+      "name": "card-behavior-settings.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/cards/card-behavior-settings.md"
+    },
+    {
+      "name": "card-configuration.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/cards/card-configuration.md"
+    },
+    {
+      "name": "card-use-cases.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/cards/card-use-cases.md"
+    },
+    {
+      "name": "cards-data-source.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/cards/cards-data-source.md"
+    },
+    {
+      "name": "cards-properties-events-methods.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/cards/cards-properties-events-methods.md"
+    },
+    {
+      "name": "cards-templates.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/cards/cards-templates.md"
+    },
+    {
+      "name": "cards.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/cards.md"
+    },
+    {
+      "name": "data-table.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/data-table.md"
+    },
+    {
+      "name": "actions.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/datatable/actions.md"
+    },
+    {
+      "name": "data-source.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/datatable/data-source.md"
+    },
+    {
+      "name": "data-table-basic-usage.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/datatable/data-table-basic-usage.md"
+    },
+    {
+      "name": "data-table-use-cases.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/datatable/data-table-use-cases.md"
+    },
+    {
+      "name": "datatable-events-methods.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/datatable/datatable-events-methods.md"
+    },
+    {
+      "name": "field-configuration.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/datatable/field-configuration.md"
+    },
+    {
+      "name": "layouts.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/datatable/layouts.md"
+    },
+    {
+      "name": "row-expansion-data-table.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/datatable/row-expansion-data-table.md"
+    },
+    {
+      "name": "styles.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/datatable/styles.md"
+    },
+    {
+      "name": "summary-row.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/datatable/summary-row.md"
+    },
+    {
+      "name": "table-configuration.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/datatable/table-configuration.md"
+    },
+    {
+      "name": "field-validator.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/field-validator.md"
+    },
+    {
+      "name": "form-configurations.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/form/form-configurations.md"
+    },
+    {
+      "name": "form-data-source.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/form/form-data-source.md"
+    },
+    {
+      "name": "form-events-methods.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/form/form-events-methods.md"
+    },
+    {
+      "name": "form-fields-configuration.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/form/form-fields-configuration.md"
+    },
+    {
+      "name": "form-layouts.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/form/form-layouts.md"
+    },
+    {
+      "name": "form-usage-scenarios.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/form/form-usage-scenarios.md"
+    },
+    {
+      "name": "form.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/form.md"
+    },
+    {
+      "name": "behavior-settings.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/list/behavior-settings.md"
+    },
+    {
+      "name": "configuration.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/list/configuration.md"
+    },
+    {
+      "name": "list-data-source.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/list/list-data-source.md"
+    },
+    {
+      "name": "list-properties-events-methods.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/list/list-properties-events-methods.md"
+    },
+    {
+      "name": "list-templates.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/list/list-templates.md"
+    },
+    {
+      "name": "list-use-cases.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/list/list-use-cases.md"
+    },
+    {
+      "name": "list.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/list.md"
+    },
+    {
+      "name": "live-filter.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/live-filter.md"
+    },
+    {
+      "name": "events-methods.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/live-form/events-methods.md"
+    },
+    {
+      "name": "fields-configuration.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/live-form/fields-configuration.md"
+    },
+    {
+      "name": "live-form-basic-usage.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/live-form/live-form-basic-usage.md"
+    },
+    {
+      "name": "live-form-data-source.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/live-form/live-form-data-source.md"
+    },
+    {
+      "name": "liveform-actions.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/live-form/liveform-actions.md"
+    },
+    {
+      "name": "liveform-configurations.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/live-form/liveform-configurations.md"
+    },
+    {
+      "name": "liveform-layouts.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/live-form/liveform-layouts.md"
+    },
+    {
+      "name": "liveform-use-cases.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/live-form/liveform-use-cases.md"
+    },
+    {
+      "name": "live-form.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/live-form.md"
+    },
+    {
+      "name": "filter-configurations.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/livefilter/filter-configurations.md"
+    },
+    {
+      "name": "live-filter-basic-usage.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/livefilter/live-filter-basic-usage.md"
+    },
+    {
+      "name": "live-filter-data-source.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/livefilter/live-filter-data-source.md"
+    },
+    {
+      "name": "livefilter-actions.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/livefilter/livefilter-actions.md"
+    },
+    {
+      "name": "livefilter-events-methods.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/livefilter/livefilter-events-methods.md"
+    },
+    {
+      "name": "livefilter-field-configuration.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/livefilter/livefilter-field-configuration.md"
+    },
+    {
+      "name": "livefilter-layouts.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/livefilter/livefilter-layouts.md"
+    },
+    {
+      "name": "livefilter-use-cases.md",
+      "path": "user-interfaces/web/components/angular-components/datalive/livefilter/livefilter-use-cases.md"
+    },
+    {
+      "name": "design-dialog.md",
+      "path": "user-interfaces/web/components/angular-components/design-dialog.md"
+    },
+    {
+      "name": "button-group.md",
+      "path": "user-interfaces/web/components/angular-components/form-widgets/button-group.md"
+    },
+    {
+      "name": "button.md",
+      "path": "user-interfaces/web/components/angular-components/form-widgets/button.md"
+    },
+    {
+      "name": "calendar.md",
+      "path": "user-interfaces/web/components/angular-components/form-widgets/calendar.md"
+    },
+    {
+      "name": "checkbox.md",
+      "path": "user-interfaces/web/components/angular-components/form-widgets/checkbox.md"
+    },
+    {
+      "name": "checkboxset.md",
+      "path": "user-interfaces/web/components/angular-components/form-widgets/checkboxset.md"
+    },
+    {
+      "name": "chips.md",
+      "path": "user-interfaces/web/components/angular-components/form-widgets/chips.md"
+    },
+    {
+      "name": "color-picker.md",
+      "path": "user-interfaces/web/components/angular-components/form-widgets/color-picker.md"
+    },
+    {
+      "name": "currency.md",
+      "path": "user-interfaces/web/components/angular-components/form-widgets/currency.md"
+    },
+    {
+      "name": "date-time-datetime.md",
+      "path": "user-interfaces/web/components/angular-components/form-widgets/date-time-datetime.md"
+    },
+    {
+      "name": "file-upload-basic-usage.md",
+      "path": "user-interfaces/web/components/angular-components/form-widgets/file-upload-basic-usage.md"
+    },
+    {
+      "name": "file-upload.md",
+      "path": "user-interfaces/web/components/angular-components/form-widgets/file-upload.md"
+    },
+    {
+      "name": "number.md",
+      "path": "user-interfaces/web/components/angular-components/form-widgets/number.md"
+    },
+    {
+      "name": "radioset.md",
+      "path": "user-interfaces/web/components/angular-components/form-widgets/radioset.md"
+    },
+    {
+      "name": "rating-widget.md",
+      "path": "user-interfaces/web/components/angular-components/form-widgets/rating-widget.md"
+    },
+    {
+      "name": "select-locale.md",
+      "path": "user-interfaces/web/components/angular-components/form-widgets/select-locale.md"
+    },
+    {
+      "name": "select.md",
+      "path": "user-interfaces/web/components/angular-components/form-widgets/select.md"
+    },
+    {
+      "name": "slider.md",
+      "path": "user-interfaces/web/components/angular-components/form-widgets/slider.md"
+    },
+    {
+      "name": "switch.md",
+      "path": "user-interfaces/web/components/angular-components/form-widgets/switch.md"
+    },
+    {
+      "name": "text.md",
+      "path": "user-interfaces/web/components/angular-components/form-widgets/text.md"
+    },
+    {
+      "name": "textarea.md",
+      "path": "user-interfaces/web/components/angular-components/form-widgets/textarea.md"
+    },
+    {
+      "name": "toggle.md",
+      "path": "user-interfaces/web/components/angular-components/form-widgets/toggle.md"
+    },
+    {
+      "name": "iframe-dialog.md",
+      "path": "user-interfaces/web/components/angular-components/iframe-dialog.md"
+    },
+    {
+      "name": "login-dialog.md",
+      "path": "user-interfaces/web/components/angular-components/login-dialog.md"
+    },
+    {
+      "name": "modal-windows-dialogs.md",
+      "path": "user-interfaces/web/components/angular-components/modal-windows-dialogs.md"
+    },
+    {
+      "name": "breadcrumb-use-cases.md",
+      "path": "user-interfaces/web/components/angular-components/navigation/breadcrumb-use-cases.md"
+    },
+    {
+      "name": "breadcrumb.md",
+      "path": "user-interfaces/web/components/angular-components/navigation/breadcrumb.md"
+    },
+    {
+      "name": "dropdown-menu-use-cases.md",
+      "path": "user-interfaces/web/components/angular-components/navigation/dropdown-menu-use-cases.md"
+    },
+    {
+      "name": "dropdown-menu.md",
+      "path": "user-interfaces/web/components/angular-components/navigation/dropdown-menu.md"
+    },
+    {
+      "name": "nav-bar.md",
+      "path": "user-interfaces/web/components/angular-components/navigation/nav-bar.md"
+    },
+    {
+      "name": "nav-basic-usage.md",
+      "path": "user-interfaces/web/components/angular-components/navigation/nav-basic-usage.md"
+    },
+    {
+      "name": "nav.md",
+      "path": "user-interfaces/web/components/angular-components/navigation/nav.md"
+    },
+    {
+      "name": "popover-basic-usage.md",
+      "path": "user-interfaces/web/components/angular-components/navigation/popover-basic-usage.md"
+    },
+    {
+      "name": "popover.md",
+      "path": "user-interfaces/web/components/angular-components/navigation/popover.md"
+    },
+    {
+      "name": "page-dialog.md",
+      "path": "user-interfaces/web/components/angular-components/page-dialog.md"
+    }
+  ],
+  "authorDocs": {
+    "Priyanka Bhadri": [
+      {
+        "name": "api-orchestration.md",
+        "path": "apis-and-services/apis/building-custom-apis/api-orchestration.md"
+      },
+      {
+        "name": "db-service-integration.md",
+        "path": "apis-and-services/apis/building-custom-apis/db-service-integration.md"
+      },
+      {
+        "name": "generated-code.md",
+        "path": "apis-and-services/apis/building-custom-apis/generated-code.md"
+      },
+      {
+        "name": "java-integration-services.md",
+        "path": "apis-and-services/apis/building-custom-apis/java-integration-services.md"
+      },
+      {
+        "name": "overview.md",
+        "path": "apis-and-services/apis/building-custom-apis/overview.md"
+      },
+      {
+        "name": "generated-API-code.md",
+        "path": "apis-and-services/apis/database-and-crud-apis/generated-API-code.md"
+      },
+      {
+        "name": "generated-apis.mdx",
+        "path": "apis-and-services/apis/database-and-crud-apis/generated-apis.mdx"
+      },
+      {
+        "name": "orm-artifacts.md",
+        "path": "apis-and-services/apis/database-and-crud-apis/orm-artifacts.md"
+      },
+      {
+        "name": "queries-and-procedures.md",
+        "path": "apis-and-services/apis/database-and-crud-apis/queries-and-procedures.md"
+      },
+      {
+        "name": "stored-procedures.md",
+        "path": "apis-and-services/apis/database-and-crud-apis/stored-procedures.md"
+      },
+      {
+        "name": "generated-code.md",
+        "path": "apis-and-services/apis/importing-apis/generated-code.md"
+      },
+      {
+        "name": "import-apis.md",
+        "path": "apis-and-services/apis/importing-apis/import-apis.md"
+      },
+      {
+        "name": "import-rest.md",
+        "path": "apis-and-services/apis/importing-apis/individual-rest-endpoints/import-rest.md"
+      },
+      {
+        "name": "rest-request-timeouts.md",
+        "path": "apis-and-services/apis/importing-apis/individual-rest-endpoints/rest-request-timeouts.md"
+      },
+      {
+        "name": "rest-services-using-oauth20.md",
+        "path": "apis-and-services/apis/importing-apis/individual-rest-endpoints/rest-services-using-oauth20.md"
+      },
+      {
+        "name": "secure-server-side-properties.md",
+        "path": "apis-and-services/apis/importing-apis/individual-rest-endpoints/secure-server-side-properties.md"
+      },
+      {
+        "name": "overview.md",
+        "path": "apis-and-services/apis/importing-apis/overview.md"
+      },
+      {
+        "name": "websockets.md",
+        "path": "apis-and-services/apis/importing-apis/websockets.md"
+      },
+      {
+        "name": "mocking-bird.md",
+        "path": "apis-and-services/apis/mocking-bird/mocking-bird.md"
+      },
+      {
+        "name": "jar-files.md",
+        "path": "apis-and-services/apis/third-party-libraries/jar-files.md"
+      },
+      {
+        "name": "profile-settings.md",
+        "path": "apis-and-services/configurations/profile-settings.md"
+      },
+      {
+        "name": "profiles.md",
+        "path": "apis-and-services/configurations/profiles.md"
+      },
+      {
+        "name": "architecture.md",
+        "path": "apis-and-services/connectors/architecture.md"
+      },
+      {
+        "name": "build-a-connector.md",
+        "path": "apis-and-services/connectors/build-a-connector.md"
+      },
+      {
+        "name": "import-connectors.md",
+        "path": "apis-and-services/connectors/import-connectors.md"
+      },
+      {
+        "name": "working-with-connectors.md",
+        "path": "apis-and-services/connectors/working-with-connectors.md"
+      },
+      {
+        "name": "debugging.md",
+        "path": "apis-and-services/testing-and-debugging/debugging.md"
+      },
+      {
+        "name": "running-and-preview-apps.md",
+        "path": "apis-and-services/testing-and-debugging/how-to-build-and-use/running-and-preview-apps.md"
+      },
+      {
+        "name": "integrate-junit-tests.md",
+        "path": "apis-and-services/testing-and-debugging/unit-testing/integrate-junit-tests.md"
+      }
+    ],
+    "Sagar Vemala": [
+      {
+        "name": "overview.md",
+        "path": "apis-and-services/apis/database-and-crud-apis/overview.md"
+      },
+      {
+        "name": "overview.md",
+        "path": "build-and-deploy/overview.md"
+      }
+    ],
+    "Author Name": [
+      {
+        "name": "architecture.md",
+        "path": "apis-and-services/concepts/architecture.md"
+      },
+      {
+        "name": "overview.md",
+        "path": "apis-and-services/concepts/overview.md"
+      },
+      {
+        "name": "techstack.md",
+        "path": "apis-and-services/concepts/techstack.md"
+      },
+      {
+        "name": "antisamy-policy-configuration.md",
+        "path": "apis-and-services/security/hardening-app/antisamy-policy-configuration.md"
+      },
+      {
+        "name": "application-hardening.md",
+        "path": "apis-and-services/security/hardening-app/application-hardening.md"
+      },
+      {
+        "name": "concurrent-sessions-handling.md",
+        "path": "apis-and-services/security/hardening-app/concurrent-sessions-handling.md"
+      },
+      {
+        "name": "host-header-injection-prevention.md",
+        "path": "apis-and-services/security/hardening-app/host-header-injection-prevention.md"
+      },
+      {
+        "name": "login-configuration.md",
+        "path": "apis-and-services/security/hardening-app/login-configuration.md"
+      },
+      {
+        "name": "other-security-hardening-measures.md",
+        "path": "apis-and-services/security/hardening-app/other-security-hardening-measures.md"
+      },
+      {
+        "name": "owasp-guidelines.md",
+        "path": "apis-and-services/security/hardening-app/owasp-guidelines.md"
+      },
+      {
+        "name": "remember-me-functionality.md",
+        "path": "apis-and-services/security/hardening-app/remember-me-functionality.md"
+      },
+      {
+        "name": "secure-connection-for-deployed-apps.md",
+        "path": "apis-and-services/security/hardening-app/secure-connection-for-deployed-apps.md"
+      },
+      {
+        "name": "security-overview-and-best-practices.md",
+        "path": "apis-and-services/security/hardening-app/security-overview-and-best-practices.md"
+      },
+      {
+        "name": "session-persistence-and-management.md",
+        "path": "apis-and-services/security/hardening-app/session-persistence-and-management.md"
+      },
+      {
+        "name": "ssl-tls-encryption.md",
+        "path": "apis-and-services/security/hardening-app/ssl-tls-encryption.md"
+      },
+      {
+        "name": "xss-prevention-techniques.md",
+        "path": "apis-and-services/security/hardening-app/xss-prevention-techniques.md"
+      },
+      {
+        "name": "hardening-app.md",
+        "path": "apis-and-services/security/hardening-app.md"
+      },
+      {
+        "name": "overview.md",
+        "path": "apis-and-services/security/overview.md"
+      },
+      {
+        "name": "openid-authentication.mdx",
+        "path": "apis-and-services/security/providers/openid-authentication.mdx"
+      },
+      {
+        "name": "saml-integration.mdx",
+        "path": "apis-and-services/security/providers/saml-integration.mdx"
+      },
+      {
+        "name": "token-based-authentication.md",
+        "path": "apis-and-services/security/providers/token-based-authentication.md"
+      },
+      {
+        "name": "providers.md",
+        "path": "apis-and-services/security/providers.md"
+      },
+      {
+        "name": "component-variants.md",
+        "path": "design-system/concept/component-variants.md"
+      },
+      {
+        "name": "design-tokens.md",
+        "path": "design-system/concept/design-tokens.md"
+      },
+      {
+        "name": "designing-best-practices.md",
+        "path": "design-system/concept/designing-best-practices.md"
+      },
+      {
+        "name": "style-workspace.md",
+        "path": "design-system/design-system-based-ui-development/style-workspace.md"
+      },
+      {
+        "name": "overview.md",
+        "path": "design-system/overview.md"
+      },
+      {
+        "name": "api-agent.md",
+        "path": "developing-with-agents/aira-agents/api-agent.md"
+      },
+      {
+        "name": "api-binding-agent.md",
+        "path": "developing-with-agents/aira-agents/api-binding-agent.md"
+      },
+      {
+        "name": "architect-agent.md",
+        "path": "developing-with-agents/aira-agents/architect-agent.md"
+      },
+      {
+        "name": "database-agent.md",
+        "path": "developing-with-agents/aira-agents/database-agent.md"
+      },
+      {
+        "name": "i18n-agent.md",
+        "path": "developing-with-agents/aira-agents/i18n-agent.md"
+      },
+      {
+        "name": "java-agent.md",
+        "path": "developing-with-agents/aira-agents/java-agent.md"
+      },
+      {
+        "name": "javascript-agent.md",
+        "path": "developing-with-agents/aira-agents/javascript-agent.md"
+      },
+      {
+        "name": "list-of-agents.md",
+        "path": "developing-with-agents/aira-agents/list-of-agents.md"
+      },
+      {
+        "name": "marketplace-agent.md",
+        "path": "developing-with-agents/aira-agents/marketplace-agent.md"
+      },
+      {
+        "name": "prism-ui-expert-agent.md",
+        "path": "developing-with-agents/aira-agents/prism-ui-expert-agent.md"
+      },
+      {
+        "name": "rescue-agent.md",
+        "path": "developing-with-agents/aira-agents/rescue-agent.md"
+      },
+      {
+        "name": "security-agent.md",
+        "path": "developing-with-agents/aira-agents/security-agent.md"
+      },
+      {
+        "name": "vcs-agent.md",
+        "path": "developing-with-agents/aira-agents/vcs-agent.md"
+      },
+      {
+        "name": "how-aira-works.md",
+        "path": "developing-with-agents/how-aira-works.md"
+      },
+      {
+        "name": "overview.md",
+        "path": "developing-with-agents/overview.md"
+      },
+      {
+        "name": "working-alongside.md",
+        "path": "developing-with-agents/working-alongside.md"
+      },
+      {
+        "name": "accessing-file-upload-java-code.md",
+        "path": "guide/howtos/accessing-file-upload-java-code.md"
+      },
+      {
+        "name": "accessing-loggedin-user-information-using-a-java-service.md",
+        "path": "guide/howtos/accessing-loggedin-user-information-using-a-java-service.md"
+      },
+      {
+        "name": "accessing-rest-apis-java-service.md",
+        "path": "guide/howtos/accessing-rest-apis-java-service.md"
+      },
+      {
+        "name": "active-directory-use-cases.md",
+        "path": "guide/howtos/active-directory-use-cases.md"
+      },
+      {
+        "name": "add-custom-filters.md",
+        "path": "guide/howtos/add-custom-filters.md"
+      },
+      {
+        "name": "add-master-detail-records-using-data-table.md",
+        "path": "guide/howtos/add-master-detail-records-using-data-table.md"
+      },
+      {
+        "name": "adding-custom-fonts-richtext-editor.md",
+        "path": "guide/howtos/adding-custom-fonts-richtext-editor.md"
+      },
+      {
+        "name": "adding-master-detail-records-transaction.md",
+        "path": "guide/howtos/adding-master-detail-records-transaction.md"
+      },
+      {
+        "name": "adding-parent-child-records-single-transaction.md",
+        "path": "guide/howtos/adding-parent-child-records-single-transaction.md"
+      },
+      {
+        "name": "adding-parent-child-using-form-datatable.md",
+        "path": "guide/howtos/adding-parent-child-using-form-datatable.md"
+      },
+      {
+        "name": "adding-ui-for-api-server-side-pagination.md",
+        "path": "guide/howtos/adding-ui-for-api-server-side-pagination.md"
+      },
+      {
+        "name": "adjust-leftnav-width.md",
+        "path": "guide/howtos/adjust-leftnav-width.md"
+      },
+      {
+        "name": "creating-registration-page.md",
+        "path": "guide/howtos/app-development/creating-registration-page.md"
+      },
+      {
+        "name": "error-handling-wavemaker-app.md",
+        "path": "guide/howtos/app-development/error-handling-wavemaker-app.md"
+      },
+      {
+        "name": "support-password-encryption.md",
+        "path": "guide/howtos/app-development/support-password-encryption.md"
+      },
+      {
+        "name": "app-migration-wavemaker-9x-10x.md",
+        "path": "guide/howtos/app-migration-wavemaker-9x-10x.md"
+      },
+      {
+        "name": "audit-history-using-crud-listeners.md",
+        "path": "guide/howtos/audit-history-using-crud-listeners.md"
+      },
+      {
+        "name": "aws-s3-connector.md",
+        "path": "guide/howtos/aws-s3-connector.md"
+      },
+      {
+        "name": "azure-file-storage-connector.md",
+        "path": "guide/howtos/azure-file-storage-connector.md"
+      },
+      {
+        "name": "azure-repos-vcs.md",
+        "path": "guide/howtos/azure-repos-vcs.md"
+      },
+      {
+        "name": "building-cascading-lists.md",
+        "path": "guide/howtos/building-cascading-lists.md"
+      },
+      {
+        "name": "building-editable-list.md",
+        "path": "guide/howtos/building-editable-list.md"
+      },
+      {
+        "name": "building-pwa-app.md",
+        "path": "guide/howtos/building-pwa-app.md"
+      },
+      {
+        "name": "building-rating-widget-using-variable.md",
+        "path": "guide/howtos/building-rating-widget-using-variable.md"
+      },
+      {
+        "name": "calendar-usage-create-event.md",
+        "path": "guide/howtos/calendar-usage-create-event.md"
+      },
+      {
+        "name": "calender-usage-google-calendar-integration.md",
+        "path": "guide/howtos/calender-usage-google-calendar-integration.md"
+      },
+      {
+        "name": "camunda-wavemaker-app-integration.md",
+        "path": "guide/howtos/camunda-wavemaker-app-integration.md"
+      },
+      {
+        "name": "capturing-card-items.md",
+        "path": "guide/howtos/capturing-card-items.md"
+      },
+      {
+        "name": "change-icon-global-spinner.md",
+        "path": "guide/howtos/change-icon-global-spinner.md"
+      },
+      {
+        "name": "changing-app-logo.md",
+        "path": "guide/howtos/changing-app-logo.md"
+      },
+      {
+        "name": "changing-default-favicon.md",
+        "path": "guide/howtos/changing-default-favicon.md"
+      },
+      {
+        "name": "changing-page-title.md",
+        "path": "guide/howtos/changing-page-title.md"
+      },
+      {
+        "name": "charts-custom-data.md",
+        "path": "guide/howtos/charts-custom-data.md"
+      },
+      {
+        "name": "charts-displaying-user-selection-another-widget.md",
+        "path": "guide/howtos/charts-displaying-user-selection-another-widget.md"
+      },
+      {
+        "name": "charts-handling-dynamic-data.md",
+        "path": "guide/howtos/charts-handling-dynamic-data.md"
+      },
+      {
+        "name": "checkboxset-filter-list-data.md",
+        "path": "guide/howtos/checkboxset-filter-list-data.md"
+      },
+      {
+        "name": "combining-columns-data-table.md",
+        "path": "guide/howtos/combining-columns-data-table.md"
+      },
+      {
+        "name": "concurrency-record-locking-wavemaker.md",
+        "path": "guide/howtos/concurrency-record-locking-wavemaker.md"
+      },
+      {
+        "name": "configure-mtls-in-wmapp.md",
+        "path": "guide/howtos/configure-mtls-in-wmapp.md"
+      },
+      {
+        "name": "configuring-aws-redshiftdb.md",
+        "path": "guide/howtos/configuring-aws-redshiftdb.md"
+      },
+      {
+        "name": "configuring-cascading-select.md",
+        "path": "guide/howtos/configuring-cascading-select.md"
+      },
+      {
+        "name": "configuring-content-security-policy.md",
+        "path": "guide/howtos/configuring-content-security-policy.md"
+      },
+      {
+        "name": "configuring-jws-and-opaque-security-providers.md",
+        "path": "guide/howtos/configuring-jws-and-opaque-security-providers.md"
+      },
+      {
+        "name": "configuring-sap-hana-clouddb.md",
+        "path": "guide/howtos/configuring-sap-hana-clouddb.md"
+      },
+      {
+        "name": "configuring-select-widget-database-fields.md",
+        "path": "guide/howtos/configuring-select-widget-database-fields.md"
+      },
+      {
+        "name": "configuring-select-widget-display-data-fields.md",
+        "path": "guide/howtos/configuring-select-widget-display-data-fields.md"
+      },
+      {
+        "name": "configuring-select-widget-static-list-values.md",
+        "path": "guide/howtos/configuring-select-widget-static-list-values.md"
+      },
+      {
+        "name": "configuring-select-widget-static-variable.md",
+        "path": "guide/howtos/configuring-select-widget-static-variable.md"
+      },
+      {
+        "name": "configuring-select-widget-variable.md",
+        "path": "guide/howtos/configuring-select-widget-variable.md"
+      },
+      {
+        "name": "connect-azure-sql-server.md",
+        "path": "guide/howtos/connect-azure-sql-server.md"
+      },
+      {
+        "name": "consuming-existing-wm-api-into-another-wm-project.md",
+        "path": "guide/howtos/consuming-existing-wm-api-into-another-wm-project.md"
+      },
+      {
+        "name": "copy-to-clipboard.md",
+        "path": "guide/howtos/copy-to-clipboard.md"
+      },
+      {
+        "name": "create-prefab-using-angular-module.md",
+        "path": "guide/howtos/create-prefab-using-angular-module.md"
+      },
+      {
+        "name": "create-prefab-using-custom-element.md",
+        "path": "guide/howtos/create-prefab-using-custom-element.md"
+      },
+      {
+        "name": "create-prefab-using-d3-library-datamaps.md",
+        "path": "guide/howtos/create-prefab-using-d3-library-datamaps.md"
+      },
+      {
+        "name": "create-prefab-using-d3-nvd3-charts.md",
+        "path": "guide/howtos/create-prefab-using-d3-nvd3-charts.md"
+      },
+      {
+        "name": "create-prefab-using-jquery-plugin.md",
+        "path": "guide/howtos/create-prefab-using-jquery-plugin.md"
+      },
+      {
+        "name": "create-prefab-using-third-party-ui-widgets.md",
+        "path": "guide/howtos/create-prefab-using-third-party-ui-widgets.md"
+      },
+      {
+        "name": "create-prefab-with-partials.md",
+        "path": "guide/howtos/create-prefab-with-partials.md"
+      },
+      {
+        "name": "create-simple-prefab.md",
+        "path": "guide/howtos/create-simple-prefab.md"
+      },
+      {
+        "name": "creating-registration-page.md",
+        "path": "guide/howtos/creating-registration-page.md"
+      },
+      {
+        "name": "custom-business-logic-using-crud-event-listeners.md",
+        "path": "guide/howtos/custom-business-logic-using-crud-event-listeners.md"
+      },
+      {
+        "name": "custom-date-picker.md",
+        "path": "guide/howtos/custom-date-picker.md"
+      },
+      {
+        "name": "custom-security-using-google-oauth-prefab.md",
+        "path": "guide/howtos/custom-security-using-google-oauth-prefab.md"
+      },
+      {
+        "name": "custom-status-code-error-message-java-service.md",
+        "path": "guide/howtos/custom-status-code-error-message-java-service.md"
+      },
+      {
+        "name": "custom-widget-template.md",
+        "path": "guide/howtos/custom-widget-template.md"
+      },
+      {
+        "name": "customise-app-style.md",
+        "path": "guide/howtos/customise-app-style.md"
+      },
+      {
+        "name": "customise-login-page.md",
+        "path": "guide/howtos/customise-login-page.md"
+      },
+      {
+        "name": "customize-breakpoints-for-widths-of-show-in-devices.md",
+        "path": "guide/howtos/customize-breakpoints-for-widths-of-show-in-devices.md"
+      },
+      {
+        "name": "customize-dynamic-datatable.md",
+        "path": "guide/howtos/customize-dynamic-datatable.md"
+      },
+      {
+        "name": "customize-existing-theme.md",
+        "path": "guide/howtos/customize-existing-theme.md"
+      },
+      {
+        "name": "customize-progress-bar.md",
+        "path": "guide/howtos/customize-progress-bar.md"
+      },
+      {
+        "name": "customize-slider.md",
+        "path": "guide/howtos/customize-slider.md"
+      },
+      {
+        "name": "customizing-post-authentication-handlers.md",
+        "path": "guide/howtos/customizing-post-authentication-handlers.md"
+      },
+      {
+        "name": "customizing-theme.md",
+        "path": "guide/howtos/customizing-theme.md"
+      },
+      {
+        "name": "data-table-actions.md",
+        "path": "guide/howtos/data-table-actions.md"
+      },
+      {
+        "name": "data-table-column-bound-query.md",
+        "path": "guide/howtos/data-table-column-bound-query.md"
+      },
+      {
+        "name": "data-table-format-options.md",
+        "path": "guide/howtos/data-table-format-options.md"
+      },
+      {
+        "name": "data-table-styling.md",
+        "path": "guide/howtos/data-table-styling.md"
+      },
+      {
+        "name": "data-table-widget-representations.md",
+        "path": "guide/howtos/data-table-widget-representations.md"
+      },
+      {
+        "name": "debug-monitor-performance-issues-using-fusion-reactor.md",
+        "path": "guide/howtos/debug-monitor-performance-issues-using-fusion-reactor.md"
+      },
+      {
+        "name": "deployment-to-heroku.md",
+        "path": "guide/howtos/deployment-to-heroku.md"
+      },
+      {
+        "name": "displaying-icon-color-based-upon-condition.md",
+        "path": "guide/howtos/displaying-icon-color-based-upon-condition.md"
+      },
+      {
+        "name": "dynamic-data-table-edit.md",
+        "path": "guide/howtos/dynamic-data-table-edit.md"
+      },
+      {
+        "name": "dynamic-data-tables.md",
+        "path": "guide/howtos/dynamic-data-tables.md"
+      },
+      {
+        "name": "dynamic-form.md",
+        "path": "guide/howtos/dynamic-form.md"
+      },
+      {
+        "name": "dynamic-locale-messageselection.md",
+        "path": "guide/howtos/dynamic-locale-messageselection.md"
+      },
+      {
+        "name": "dynamic-menu-based-user-role.md",
+        "path": "guide/howtos/dynamic-menu-based-user-role.md"
+      },
+      {
+        "name": "dynamic-tabs-accordions.md",
+        "path": "guide/howtos/dynamic-tabs-accordions.md"
+      },
+      {
+        "name": "edit-datatable-bound-to-queryapi.md",
+        "path": "guide/howtos/edit-datatable-bound-to-queryapi.md"
+      },
+      {
+        "name": "error-handling-wavemaker-app.md",
+        "path": "guide/howtos/error-handling-wavemaker-app.md"
+      },
+      {
+        "name": "export-data-data-table-2.md",
+        "path": "guide/howtos/export-data-data-table-2.md"
+      },
+      {
+        "name": "export-data-data-table.md",
+        "path": "guide/howtos/export-data-data-table.md"
+      },
+      {
+        "name": "fetch-default-number100-records-database.md",
+        "path": "guide/howtos/fetch-default-number100-records-database.md"
+      },
+      {
+        "name": "file-upload-blob-data.md",
+        "path": "guide/howtos/file-upload-blob-data.md"
+      },
+      {
+        "name": "file-upload-custom-directory.md",
+        "path": "guide/howtos/file-upload-custom-directory.md"
+      },
+      {
+        "name": "file-upload-widget-operations.md",
+        "path": "guide/howtos/file-upload-widget-operations.md"
+      },
+      {
+        "name": "form-conditional-flows.md",
+        "path": "guide/howtos/form-conditional-flows.md"
+      },
+      {
+        "name": "form-with-wizard.md",
+        "path": "guide/howtos/form-with-wizard.md"
+      },
+      {
+        "name": "generate-pdf-file-using-jasper-reports.md",
+        "path": "guide/howtos/generate-pdf-file-using-jasper-reports.md"
+      },
+      {
+        "name": "get-validation-messages-form.md",
+        "path": "guide/howtos/get-validation-messages-form.md"
+      },
+      {
+        "name": "guide-to-upgrade-an-app-wavemaker-9x-to-wavemaker-10-0.md",
+        "path": "guide/howtos/guide-to-upgrade-an-app-wavemaker-9x-to-wavemaker-10-0.md"
+      },
+      {
+        "name": "how-to-configure-row-expansion-in-a-data-table.md",
+        "path": "guide/howtos/how-to-configure-row-expansion-in-a-data-table.md"
+      },
+      {
+        "name": "how-to-upload-jdbc-driver.md",
+        "path": "guide/howtos/how-to-upload-jdbc-driver.md"
+      },
+      {
+        "name": "how-tos-calendar.md",
+        "path": "guide/howtos/how-tos-calendar.md"
+      },
+      {
+        "name": "how-tos-form.md",
+        "path": "guide/howtos/how-tos-form.md"
+      },
+      {
+        "name": "how-tos-live-form.md",
+        "path": "guide/howtos/how-tos-live-form.md"
+      },
+      {
+        "name": "how-tos-wizard.md",
+        "path": "guide/howtos/how-tos-wizard.md"
+      },
+      {
+        "name": "howtos-documents.md",
+        "path": "guide/howtos/howtos-documents.md"
+      },
+      {
+        "name": "howtos-ui.md",
+        "path": "guide/howtos/howtos-ui.md"
+      },
+      {
+        "name": "implement-openid-auth0-provider.md",
+        "path": "guide/howtos/implement-openid-auth0-provider.md"
+      },
+      {
+        "name": "implement-openid-google-provider.md",
+        "path": "guide/howtos/implement-openid-google-provider.md"
+      },
+      {
+        "name": "implement-openid-okta-provider.md",
+        "path": "guide/howtos/implement-openid-okta-provider.md"
+      },
+      {
+        "name": "implementing-forgot-password-feature-using-java-service.md",
+        "path": "guide/howtos/implementing-forgot-password-feature-using-java-service.md"
+      },
+      {
+        "name": "implementing-localization-dropdown-menu.md",
+        "path": "guide/howtos/implementing-localization-dropdown-menu.md"
+      },
+      {
+        "name": "incorporating-additional-icons.md",
+        "path": "guide/howtos/incorporating-additional-icons.md"
+      },
+      {
+        "name": "insert-data-from-excel.md",
+        "path": "guide/howtos/insert-data-from-excel.md"
+      },
+      {
+        "name": "integrating-amazon-cognito-user-authentication.md",
+        "path": "guide/howtos/integrating-amazon-cognito-user-authentication.md"
+      },
+      {
+        "name": "integrating-azure-oauth-prefab.md",
+        "path": "guide/howtos/integrating-azure-oauth-prefab.md"
+      },
+      {
+        "name": "integrating-junit-tests-for-wavemaker-application.md",
+        "path": "guide/howtos/integrating-junit-tests-for-wavemaker-application.md"
+      },
+      {
+        "name": "integrating-sample-jasper-report-wavemaker-application.md",
+        "path": "guide/howtos/integrating-sample-jasper-report-wavemaker-application.md"
+      },
+      {
+        "name": "intercept-requests-responses-api-calls-one-place.md",
+        "path": "guide/howtos/intercept-requests-responses-api-calls-one-place.md"
+      },
+      {
+        "name": "list-basic-usage.md",
+        "path": "guide/howtos/list-basic-usage.md"
+      },
+      {
+        "name": "list-data-table.md",
+        "path": "guide/howtos/list-data-table.md"
+      },
+      {
+        "name": "list-grouped.md",
+        "path": "guide/howtos/list-grouped.md"
+      },
+      {
+        "name": "list-item-access.md",
+        "path": "guide/howtos/list-item-access.md"
+      },
+      {
+        "name": "list-multi-grouped.md",
+        "path": "guide/howtos/list-multi-grouped.md"
+      },
+      {
+        "name": "live-filter-applying.md",
+        "path": "guide/howtos/live-filter-applying.md"
+      },
+      {
+        "name": "live-filter-multiple-values.md",
+        "path": "guide/howtos/live-filter-multiple-values.md"
+      },
+      {
+        "name": "live-filter-range-filter.md",
+        "path": "guide/howtos/live-filter-range-filter.md"
+      },
+      {
+        "name": "live-form-linking-another-widget.md",
+        "path": "guide/howtos/live-form-linking-another-widget.md"
+      },
+      {
+        "name": "live-form-related-fields.md",
+        "path": "guide/howtos/live-form-related-fields.md"
+      },
+      {
+        "name": "live-form-tabbed-form.md",
+        "path": "guide/howtos/live-form-tabbed-form.md"
+      },
+      {
+        "name": "localization-data-table-column-headings.md",
+        "path": "guide/howtos/localization-data-table-column-headings.md"
+      },
+      {
+        "name": "localization-error-messages.md",
+        "path": "guide/howtos/localization-error-messages.md"
+      },
+      {
+        "name": "localization-wavemaker-apps.md",
+        "path": "guide/howtos/localization-wavemaker-apps.md"
+      },
+      {
+        "name": "microfrontends-iframe.md",
+        "path": "guide/howtos/microfrontends-iframe.md"
+      },
+      {
+        "name": "mobile-app-using-bar-code.md",
+        "path": "guide/howtos/mobile-app-using-bar-code.md"
+      },
+      {
+        "name": "mobile-notify-new-version-update.md",
+        "path": "guide/howtos/mobile-notify-new-version-update.md"
+      },
+      {
+        "name": "multiple-security-provider-configuration.md",
+        "path": "guide/howtos/multiple-security-provider-configuration.md"
+      },
+      {
+        "name": "mysql-connection-using-ssl.md",
+        "path": "guide/howtos/mysql-connection-using-ssl.md"
+      },
+      {
+        "name": "one-many-relationship.md",
+        "path": "guide/howtos/one-many-relationship.md"
+      },
+      {
+        "name": "onrender-event-list-widget.md",
+        "path": "guide/howtos/onrender-event-list-widget.md"
+      },
+      {
+        "name": "passing-id-access-tokens-as-header.md",
+        "path": "guide/howtos/passing-id-access-tokens-as-header.md"
+      },
+      {
+        "name": "passing-parameters-pages.md",
+        "path": "guide/howtos/passing-parameters-pages.md"
+      },
+      {
+        "name": "passing-parameters-partial-page.md",
+        "path": "guide/howtos/passing-parameters-partial-page.md"
+      },
+      {
+        "name": "pre-post-processing-db-service-apis.md",
+        "path": "guide/howtos/pre-post-processing-db-service-apis.md"
+      },
+      {
+        "name": "prefab-as-webcomponent.md",
+        "path": "guide/howtos/prefab-as-webcomponent.md"
+      },
+      {
+        "name": "prevent-user-leaving-page-unsaved-changes.md",
+        "path": "guide/howtos/prevent-user-leaving-page-unsaved-changes.md"
+      },
+      {
+        "name": "queries-dynamic-clause.md",
+        "path": "guide/howtos/queries-dynamic-clause.md"
+      },
+      {
+        "name": "radioset-filter-list.md",
+        "path": "guide/howtos/radioset-filter-list.md"
+      },
+      {
+        "name": "rating-widget-interactive.md",
+        "path": "guide/howtos/rating-widget-interactive.md"
+      },
+      {
+        "name": "rating-widget-using-static-data.md",
+        "path": "guide/howtos/rating-widget-using-static-data.md"
+      },
+      {
+        "name": "rating-widget-using-static-variable.md",
+        "path": "guide/howtos/rating-widget-using-static-variable.md"
+      },
+      {
+        "name": "request-response-processing-rest-services.md",
+        "path": "guide/howtos/request-response-processing-rest-services.md"
+      },
+      {
+        "name": "restricting-menu-item-display-based-user-role.md",
+        "path": "guide/howtos/restricting-menu-item-display-based-user-role.md"
+      },
+      {
+        "name": "rowlevel-security-using-crud-event-listeners.md",
+        "path": "guide/howtos/rowlevel-security-using-crud-event-listeners.md"
+      },
+      {
+        "name": "saml-integration-adfs.md",
+        "path": "guide/howtos/saml-integration-adfs.md"
+      },
+      {
+        "name": "saml-integration-okta.md",
+        "path": "guide/howtos/saml-integration-okta.md"
+      },
+      {
+        "name": "saml-integration-onelogin.md",
+        "path": "guide/howtos/saml-integration-onelogin.md"
+      },
+      {
+        "name": "scheduling-java-service.md",
+        "path": "guide/howtos/scheduling-java-service.md"
+      },
+      {
+        "name": "script-access.md",
+        "path": "guide/howtos/script-access.md"
+      },
+      {
+        "name": "select-locale-usage.md",
+        "path": "guide/howtos/select-locale-usage.md"
+      },
+      {
+        "name": "selection-widgets-use-case.md",
+        "path": "guide/howtos/selection-widgets-use-case.md"
+      },
+      {
+        "name": "sending-email-using-java-service.md",
+        "path": "guide/howtos/sending-email-using-java-service.md"
+      },
+      {
+        "name": "settimezone-method.md",
+        "path": "guide/howtos/settimezone-method.md"
+      },
+      {
+        "name": "setting-blob-filename.md",
+        "path": "guide/howtos/setting-blob-filename.md"
+      },
+      {
+        "name": "setting-language-date-format.md",
+        "path": "guide/howtos/setting-language-date-format.md"
+      },
+      {
+        "name": "setting-partial-page-content-accordion-within-list.md",
+        "path": "guide/howtos/setting-partial-page-content-accordion-within-list.md"
+      },
+      {
+        "name": "setting-partial-page-content-panel-within-list-using-javascript.md",
+        "path": "guide/howtos/setting-partial-page-content-panel-within-list-using-javascript.md"
+      },
+      {
+        "name": "setting-swipe-gestures-list-widget.md",
+        "path": "guide/howtos/setting-swipe-gestures-list-widget.md"
+      },
+      {
+        "name": "single-page-app.md",
+        "path": "guide/howtos/single-page-app.md"
+      },
+      {
+        "name": "sliding-leftnav-mobile-app.md",
+        "path": "guide/howtos/sliding-leftnav-mobile-app.md"
+      },
+      {
+        "name": "splashscreens-icons.md",
+        "path": "guide/howtos/splashscreens-icons.md"
+      },
+      {
+        "name": "ssl-offloading.md",
+        "path": "guide/howtos/ssl-offloading.md"
+      },
+      {
+        "name": "sso-openid-azure-active-directory.md",
+        "path": "guide/howtos/sso-openid-azure-active-directory.md"
+      },
+      {
+        "name": "support-for-tablet-view-in-mobile.md",
+        "path": "guide/howtos/support-for-tablet-view-in-mobile.md"
+      },
+      {
+        "name": "support-inserting-parent-child-records-single-transaction-issue.md",
+        "path": "guide/howtos/support-inserting-parent-child-records-single-transaction-issue.md"
+      },
+      {
+        "name": "support-password-encryption.md",
+        "path": "guide/howtos/support-password-encryption.md"
+      },
+      {
+        "name": "switch-mariadb-to-mysql-connector.md",
+        "path": "guide/howtos/switch-mariadb-to-mysql-connector.md"
+      },
+      {
+        "name": "switch-security-provider-based-on-profile.md",
+        "path": "guide/howtos/switch-security-provider-based-on-profile.md"
+      },
+      {
+        "name": "synchronizing-java-services-controller.md",
+        "path": "guide/howtos/synchronizing-java-services-controller.md"
+      },
+      {
+        "name": "synchronizing-wavemaker-apps-ides-beta.md",
+        "path": "guide/howtos/synchronizing-wavemaker-apps-ides-beta.md"
+      },
+      {
+        "name": "synchronizing-wavemaker-apps-ides.md",
+        "path": "guide/howtos/synchronizing-wavemaker-apps-ides.md"
+      },
+      {
+        "name": "tree-use-case-dynamic-tree.md",
+        "path": "guide/howtos/tree-use-case-dynamic-tree.md"
+      },
+      {
+        "name": "tree-use-case-java-service.md",
+        "path": "guide/howtos/tree-use-case-java-service.md"
+      },
+      {
+        "name": "tree-use-case-static-variable.md",
+        "path": "guide/howtos/tree-use-case-static-variable.md"
+      },
+      {
+        "name": "twilio-connector.md",
+        "path": "guide/howtos/twilio-connector.md"
+      },
+      {
+        "name": "twilio-otp-integration.md",
+        "path": "guide/howtos/twilio-otp-integration.md"
+      },
+      {
+        "name": "upgrade-guide-wavemaker-10-to-11.md",
+        "path": "guide/howtos/upgrade-guide-wavemaker-10-to-11.md"
+      },
+      {
+        "name": "upload-file-save-database.md",
+        "path": "guide/howtos/upload-file-save-database.md"
+      },
+      {
+        "name": "upload-files-from-live-form-form.md",
+        "path": "guide/howtos/upload-files-from-live-form-form.md"
+      },
+      {
+        "name": "use-conditional-class-property.md",
+        "path": "guide/howtos/use-conditional-class-property.md"
+      },
+      {
+        "name": "use-conditional-style-property.md",
+        "path": "guide/howtos/use-conditional-style-property.md"
+      },
+      {
+        "name": "use-static-variable-pass-data-pages.md",
+        "path": "guide/howtos/use-static-variable-pass-data-pages.md"
+      },
+      {
+        "name": "using-app-environment-properties.md",
+        "path": "guide/howtos/using-app-environment-properties.md"
+      },
+      {
+        "name": "using-barcode-scanner.md",
+        "path": "guide/howtos/using-barcode-scanner.md"
+      },
+      {
+        "name": "using-camera.md",
+        "path": "guide/howtos/using-camera.md"
+      },
+      {
+        "name": "using-cascading-filter-populate-live-form.md",
+        "path": "guide/howtos/using-cascading-filter-populate-live-form.md"
+      },
+      {
+        "name": "using-cascading-select-autocomplete-live-form-fields.md",
+        "path": "guide/howtos/using-cascading-select-autocomplete-live-form-fields.md"
+      },
+      {
+        "name": "using-cascading-select-within-live-form.md",
+        "path": "guide/howtos/using-cascading-select-within-live-form.md"
+      },
+      {
+        "name": "using-cordova-plugins.md",
+        "path": "guide/howtos/using-cordova-plugins.md"
+      },
+      {
+        "name": "using-custom-formatter-for-todate.md",
+        "path": "guide/howtos/using-custom-formatter-for-todate.md"
+      },
+      {
+        "name": "using-custom-formatter.md",
+        "path": "guide/howtos/using-custom-formatter.md"
+      },
+      {
+        "name": "using-filter-conditions-variable.md",
+        "path": "guide/howtos/using-filter-conditions-variable.md"
+      },
+      {
+        "name": "using-filter-criteria-data-live-widgets.md",
+        "path": "guide/howtos/using-filter-criteria-data-live-widgets.md"
+      },
+      {
+        "name": "using-filter-criteria-database-crud-variable.md",
+        "path": "guide/howtos/using-filter-criteria-database-crud-variable.md"
+      },
+      {
+        "name": "using-function-evaluating-conditions.md",
+        "path": "guide/howtos/using-function-evaluating-conditions.md"
+      },
+      {
+        "name": "using-javascript-binding.md",
+        "path": "guide/howtos/using-javascript-binding.md"
+      },
+      {
+        "name": "using-javascript-external-url.md",
+        "path": "guide/howtos/using-javascript-external-url.md"
+      },
+      {
+        "name": "using-javascript-loop-command.md",
+        "path": "guide/howtos/using-javascript-loop-command.md"
+      },
+      {
+        "name": "using-live-form.md",
+        "path": "guide/howtos/using-live-form.md"
+      },
+      {
+        "name": "using-live-variable-apis.md",
+        "path": "guide/howtos/using-live-variable-apis.md"
+      },
+      {
+        "name": "using-media-list.md",
+        "path": "guide/howtos/using-media-list.md"
+      },
+      {
+        "name": "using-navigation-action.md",
+        "path": "guide/howtos/using-navigation-action.md"
+      },
+      {
+        "name": "using-notification-actions.md",
+        "path": "guide/howtos/using-notification-actions.md"
+      },
+      {
+        "name": "using-post-method-send-data-rest-api.md",
+        "path": "guide/howtos/using-post-method-send-data-rest-api.md"
+      },
+      {
+        "name": "using-progress-circle-widget.md",
+        "path": "guide/howtos/using-progress-circle-widget.md"
+      },
+      {
+        "name": "using-search-widget-within-navbar.md",
+        "path": "guide/howtos/using-search-widget-within-navbar.md"
+      },
+      {
+        "name": "using-service-variable-form.md",
+        "path": "guide/howtos/using-service-variable-form.md"
+      },
+      {
+        "name": "using-tree-widget.md",
+        "path": "guide/howtos/using-tree-widget.md"
+      },
+      {
+        "name": "using-variables-queries-procedure.md",
+        "path": "guide/howtos/using-variables-queries-procedure.md"
+      },
+      {
+        "name": "using-wizard-master-detail-live-form.md",
+        "path": "guide/howtos/using-wizard-master-detail-live-form.md"
+      },
+      {
+        "name": "validations-using-crudListeners.md",
+        "path": "guide/howtos/validations-using-crudListeners.md"
+      },
+      {
+        "name": "view-master-detail-data-records-using-data-table.md",
+        "path": "guide/howtos/view-master-detail-data-records-using-data-table.md"
+      },
+      {
+        "name": "wavemaker-application-deployment-jboss.md",
+        "path": "guide/howtos/wavemaker-application-deployment-jboss.md"
+      },
+      {
+        "name": "wavemaker-application-deployment-tomcat.md",
+        "path": "guide/howtos/wavemaker-application-deployment-tomcat.md"
+      },
+      {
+        "name": "wavemaker-application-deployment-weblogic-application-server.md",
+        "path": "guide/howtos/wavemaker-application-deployment-weblogic-application-server.md"
+      },
+      {
+        "name": "wavemaker-application-deployment-websphere-liberty-profile.md",
+        "path": "guide/howtos/wavemaker-application-deployment-websphere-liberty-profile.md"
+      },
+      {
+        "name": "websocket-usage-chatroom-app.md",
+        "path": "guide/howtos/websocket-usage-chatroom-app.md"
+      },
+      {
+        "name": "websocket-usage-heartrate-monitor.md",
+        "path": "guide/howtos/websocket-usage-heartrate-monitor.md"
+      },
+      {
+        "name": "widget-template-layout.md",
+        "path": "guide/howtos/widget-template-layout.md"
+      },
+      {
+        "name": "wizard-layout.md",
+        "path": "guide/howtos/wizard-layout.md"
+      },
+      {
+        "name": "working-api-with-different-pagination-formats.md",
+        "path": "guide/howtos/working-api-with-different-pagination-formats.md"
+      },
+      {
+        "name": "working-pull-refresh.md",
+        "path": "guide/howtos/working-pull-refresh.md"
+      },
+      {
+        "name": "working-with-charts.md",
+        "path": "guide/howtos/working-with-charts.md"
+      },
+      {
+        "name": "working-with-temporals.md",
+        "path": "guide/howtos/working-with-temporals.md"
+      },
+      {
+        "name": "app-portal.md",
+        "path": "studio/governance/app-portal.md"
+      },
+      {
+        "name": "projects-hub.md",
+        "path": "studio/governance/projects-hub.md"
+      },
+      {
+        "name": "team-portal.md",
+        "path": "studio/governance/team-portal.md"
+      },
+      {
+        "name": "download-copy-installer.md",
+        "path": "studio/offerings/wme/Common Installation & Initialization/download-copy-installer.md"
+      },
+      {
+        "name": "extract-package.md",
+        "path": "studio/offerings/wme/Common Installation & Initialization/extract-package.md"
+      },
+      {
+        "name": "initilize-setup.md",
+        "path": "studio/offerings/wme/Common Installation & Initialization/initilize-setup.md"
+      },
+      {
+        "name": "install-prerequisites.md",
+        "path": "studio/offerings/wme/Common Installation & Initialization/install-prerequisites.md"
+      },
+      {
+        "name": "platform-setup-with-non-root-execution.md",
+        "path": "studio/offerings/wme/Common Installation & Initialization/platform-setup-with-non-root-execution.md"
+      },
+      {
+        "name": "apply-license.md",
+        "path": "studio/offerings/wme/ConfigPortal & Licensing/apply-license.md"
+      },
+      {
+        "name": "setup-using-cw.md",
+        "path": "studio/offerings/wme/ConfigPortal & Licensing/setup-using-cw.md"
+      },
+      {
+        "name": "launching-instances-in-aws.md",
+        "path": "studio/offerings/wme/aws/launching-instances-in-aws.md"
+      },
+      {
+        "name": "wavemaker-enterprise-setup-on-aws.md",
+        "path": "studio/offerings/wme/aws/wavemaker-enterprise-setup-on-aws.md"
+      },
+      {
+        "name": "launching-instances-in-azure-vhd.md",
+        "path": "studio/offerings/wme/azure/launching-instances-in-azure-vhd.md"
+      },
+      {
+        "name": "launching-instances-in-azure.md",
+        "path": "studio/offerings/wme/azure/launching-instances-in-azure.md"
+      },
+      {
+        "name": "wavemaker-enterprise-setup-on-azure.md",
+        "path": "studio/offerings/wme/azure/wavemaker-enterprise-setup-on-azure.md"
+      },
+      {
+        "name": "add-apps-capacity.md",
+        "path": "studio/offerings/wme/configuration/add-apps-capacity.md"
+      },
+      {
+        "name": "add-dev-capacity.md",
+        "path": "studio/offerings/wme/configuration/add-dev-capacity.md"
+      },
+      {
+        "name": "config-pipeline.md",
+        "path": "studio/offerings/wme/configuration/config-pipeline.md"
+      },
+      {
+        "name": "config-ssl.md",
+        "path": "studio/offerings/wme/configuration/config-ssl.md"
+      },
+      {
+        "name": "config-users-auth-providers.md",
+        "path": "studio/offerings/wme/configuration/config-users-auth-providers.md"
+      },
+      {
+        "name": "config-vcs.md",
+        "path": "studio/offerings/wme/configuration/config-vcs.md"
+      },
+      {
+        "name": "Dehydration-and-Rehydration.md",
+        "path": "studio/offerings/wme/disaster-recovery/Dehydration-and-Rehydration.md"
+      },
+      {
+        "name": "backup-and-restore.md",
+        "path": "studio/offerings/wme/disaster-recovery/backup-and-restore.md"
+      },
+      {
+        "name": "architecture.md",
+        "path": "studio/offerings/wme/getting-started/architecture.md"
+      },
+      {
+        "name": "getting-started.md",
+        "path": "studio/offerings/wme/getting-started/getting-started.md"
+      },
+      {
+        "name": "prerequisites.md",
+        "path": "studio/offerings/wme/getting-started/prerequisites.md"
+      },
+      {
+        "name": "users-roles.md",
+        "path": "studio/offerings/wme/getting-started/users-roles.md"
+      },
+      {
+        "name": "launching-instances-in-hyperv-vhd.md",
+        "path": "studio/offerings/wme/hyperv/launching-instances-in-hyperv-vhd.md"
+      },
+      {
+        "name": "wavemaker-enterprise-setup-on-hyperv.md",
+        "path": "studio/offerings/wme/hyperv/wavemaker-enterprise-setup-on-hyperv.md"
+      },
+      {
+        "name": "introduction.md",
+        "path": "studio/offerings/wme/observability/introduction.md"
+      },
+      {
+        "name": "fluentd.md",
+        "path": "studio/offerings/wme/observability/logs-aggregation/fluentd.md"
+      },
+      {
+        "name": "kibana.md",
+        "path": "studio/offerings/wme/observability/logs-aggregation/kibana.md"
+      },
+      {
+        "name": "overview.md",
+        "path": "studio/offerings/wme/observability/logs-aggregation/overview.md"
+      },
+      {
+        "name": "alerts.md",
+        "path": "studio/offerings/wme/observability/metrics-collection/alerts.md"
+      },
+      {
+        "name": "grafana.md",
+        "path": "studio/offerings/wme/observability/metrics-collection/grafana.md"
+      },
+      {
+        "name": "overview.md",
+        "path": "studio/offerings/wme/observability/metrics-collection/overview.md"
+      },
+      {
+        "name": "prometheus.md",
+        "path": "studio/offerings/wme/observability/metrics-collection/prometheus.md"
+      },
+      {
+        "name": "enabling-proxy-in-wme.md",
+        "path": "studio/offerings/wme/proxy-configuration/enabling-proxy-in-wme.md"
+      },
+      {
+        "name": "docker-upgrade.md",
+        "path": "studio/offerings/wme/upgrade/docker-upgrade.md"
+      },
+      {
+        "name": "download-copy-patch.md",
+        "path": "studio/offerings/wme/upgrade/download-copy-patch.md"
+      },
+      {
+        "name": "extract-patch.md",
+        "path": "studio/offerings/wme/upgrade/extract-patch.md"
+      },
+      {
+        "name": "os-upgrade.md",
+        "path": "studio/offerings/wme/upgrade/os-upgrade.md"
+      },
+      {
+        "name": "passivate-containers.md",
+        "path": "studio/offerings/wme/upgrade/passivate-containers.md"
+      },
+      {
+        "name": "run-patch.md",
+        "path": "studio/offerings/wme/upgrade/run-patch.md"
+      },
+      {
+        "name": "upgrade-prerequisites.md",
+        "path": "studio/offerings/wme/upgrade/upgrade-prerequisites.md"
+      },
+      {
+        "name": "upgrade-setup.md",
+        "path": "studio/offerings/wme/upgrade/upgrade-setup.md"
+      },
+      {
+        "name": "upgrade-with-non-root-execution.md",
+        "path": "studio/offerings/wme/upgrade/upgrade-with-non-root-execution.md"
+      },
+      {
+        "name": "launching-instances-in-esxi-iso.md",
+        "path": "studio/offerings/wme/vmware-esxi/launching-instances-in-esxi-iso.md"
+      },
+      {
+        "name": "launching-instances-in-esxi-ova.md",
+        "path": "studio/offerings/wme/vmware-esxi/launching-instances-in-esxi-ova.md"
+      },
+      {
+        "name": "wavemaker-enterprise-setup-on-vmware.md",
+        "path": "studio/offerings/wme/vmware-esxi/wavemaker-enterprise-setup-on-vmware.md"
+      },
+      {
+        "name": "welcome.md",
+        "path": "studio/offerings/wme/welcome.md"
+      },
+      {
+        "name": "wme.md",
+        "path": "studio/offerings/wme.md"
+      },
+      {
+        "name": "wmo.md",
+        "path": "studio/offerings/wmo.md"
+      },
+      {
+        "name": "overview.md",
+        "path": "studio/overview.md"
+      },
+      {
+        "name": "api-workspace.md",
+        "path": "studio/workspaces/api-workspace.md"
+      },
+      {
+        "name": "database-workspace.md",
+        "path": "studio/workspaces/database-workspace.md"
+      },
+      {
+        "name": "design-canvas.md",
+        "path": "studio/workspaces/design-canvas.md"
+      },
+      {
+        "name": "security-workspace.md",
+        "path": "studio/workspaces/security-workspace.md"
+      },
+      {
+        "name": "style-workspace.md",
+        "path": "studio/workspaces/style-workspace.md"
+      },
+      {
+        "name": "vcs-workspace.md",
+        "path": "studio/workspaces/vcs-workspace.md"
+      },
+      {
+        "name": "overview.md",
+        "path": "user-interfaces/mobile/concepts/overview.md"
+      },
+      {
+        "name": "tech-stack.md",
+        "path": "user-interfaces/mobile/concepts/tech-stack.md"
+      },
+      {
+        "name": "create-page-working-with-layouts.md",
+        "path": "user-interfaces/mobile/develop/create-page-working-with-layouts.md"
+      },
+      {
+        "name": "input-validations.md",
+        "path": "user-interfaces/mobile/develop/input-validations.md"
+      },
+      {
+        "name": "life-cycle-hooks.md",
+        "path": "user-interfaces/mobile/develop/integrating-with-apis/life-cycle-hooks.md"
+      },
+      {
+        "name": "types.md",
+        "path": "user-interfaces/mobile/develop/integrating-with-apis/types.md"
+      },
+      {
+        "name": "variables.md",
+        "path": "user-interfaces/mobile/develop/integrating-with-apis/variables.md"
+      },
+      {
+        "name": "responsive-design.md",
+        "path": "user-interfaces/mobile/develop/responsive-design.md"
+      },
+      {
+        "name": "state-management.md",
+        "path": "user-interfaces/mobile/develop/state-management.md"
+      },
+      {
+        "name": "styling-with-design-tokens.md",
+        "path": "user-interfaces/mobile/develop/styling-with-design-tokens.md"
+      },
+      {
+        "name": "ui-event-handling.md",
+        "path": "user-interfaces/mobile/develop/ui-event-handling.md"
+      },
+      {
+        "name": "adding-plugins.md",
+        "path": "user-interfaces/mobile/device-capabilities-mobile/adding-plugins.md"
+      },
+      {
+        "name": "enabling-gestures.md",
+        "path": "user-interfaces/mobile/device-capabilities-mobile/enabling-gestures.md"
+      },
+      {
+        "name": "offline-support.md",
+        "path": "user-interfaces/mobile/device-capabilities-mobile/offline-support.md"
+      },
+      {
+        "name": "accessibility.md",
+        "path": "user-interfaces/mobile/enterprise-capabilities/accessibility.md"
+      },
+      {
+        "name": "language-support-i18n.md",
+        "path": "user-interfaces/mobile/enterprise-capabilities/language-support-i18n.md"
+      },
+      {
+        "name": "wmx-components-mobile.md",
+        "path": "user-interfaces/mobile/enterprise-capabilities/prefabs/wmx-components-mobile.md"
+      },
+      {
+        "name": "prefabs.md",
+        "path": "user-interfaces/mobile/enterprise-capabilities/prefabs.md"
+      },
+      {
+        "name": "role-based-access-control.md",
+        "path": "user-interfaces/mobile/enterprise-capabilities/role-based-access-control.md"
+      },
+      {
+        "name": "flipper-expo-dev-tools.md",
+        "path": "user-interfaces/mobile/testing-and-debugging/community-debugging-tools/flipper-expo-dev-tools.md"
+      },
+      {
+        "name": "ui-testing-mobile.md",
+        "path": "user-interfaces/mobile/testing-and-debugging/testing-strategies/ui-testing-mobile.md"
+      },
+      {
+        "name": "ui-testing-web.md",
+        "path": "user-interfaces/mobile/testing-and-debugging/testing-strategies/ui-testing-web.md"
+      },
+      {
+        "name": "web-and-mobile.md",
+        "path": "user-interfaces/mobile/testing-and-debugging/unit-testing/web-and-mobile.md"
+      },
+      {
+        "name": "wave-pulse-inspection-frameworks.md",
+        "path": "user-interfaces/mobile/testing-and-debugging/wm-debugging-tools/wave-pulse-inspection-frameworks.md"
+      },
+      {
+        "name": "overview.md",
+        "path": "user-interfaces/web/concepts/overview.md"
+      },
+      {
+        "name": "tech-stack.md",
+        "path": "user-interfaces/web/concepts/tech-stack.md"
+      },
+      {
+        "name": "create-page-working-with-layouts.md",
+        "path": "user-interfaces/web/develop/create-page-working-with-layouts.md"
+      },
+      {
+        "name": "input-validations.md",
+        "path": "user-interfaces/web/develop/input-validations.md"
+      },
+      {
+        "name": "life-cycle-hooks.md",
+        "path": "user-interfaces/web/develop/integrating-with-apis/life-cycle-hooks.md"
+      },
+      {
+        "name": "types.md",
+        "path": "user-interfaces/web/develop/integrating-with-apis/types.md"
+      },
+      {
+        "name": "variables.md",
+        "path": "user-interfaces/web/develop/integrating-with-apis/variables.md"
+      },
+      {
+        "name": "responsive-design.md",
+        "path": "user-interfaces/web/develop/responsive-design.md"
+      },
+      {
+        "name": "state-management.md",
+        "path": "user-interfaces/web/develop/state-management.md"
+      },
+      {
+        "name": "styling-with-design-tokens.md",
+        "path": "user-interfaces/web/develop/styling-with-design-tokens.md"
+      },
+      {
+        "name": "ui-event-handling.md",
+        "path": "user-interfaces/web/develop/ui-event-handling.md"
+      },
+      {
+        "name": "accessibility.md",
+        "path": "user-interfaces/web/enterprise-capabilities/accessibility.md"
+      },
+      {
+        "name": "language-support-i18n.md",
+        "path": "user-interfaces/web/enterprise-capabilities/language-support-i18n.md"
+      },
+      {
+        "name": "wmx-components-mobile.md",
+        "path": "user-interfaces/web/enterprise-capabilities/prefabs/wmx-components-mobile.md"
+      },
+      {
+        "name": "prefabs.md",
+        "path": "user-interfaces/web/enterprise-capabilities/prefabs.md"
+      },
+      {
+        "name": "role-based-access-control.md",
+        "path": "user-interfaces/web/enterprise-capabilities/role-based-access-control.md"
+      },
+      {
+        "name": "flipper-expo-dev-tools.md",
+        "path": "user-interfaces/web/testing-and-debugging/community-debugging-tools/flipper-expo-dev-tools.md"
+      },
+      {
+        "name": "ui-testing-mobile.md",
+        "path": "user-interfaces/web/testing-and-debugging/testing-strategies/ui-testing-mobile.md"
+      },
+      {
+        "name": "ui-testing-web.md",
+        "path": "user-interfaces/web/testing-and-debugging/testing-strategies/ui-testing-web.md"
+      },
+      {
+        "name": "web-and-mobile.md",
+        "path": "user-interfaces/web/testing-and-debugging/unit-testing/web-and-mobile.md"
+      },
+      {
+        "name": "wave-pulse-inspection-frameworks.md",
+        "path": "user-interfaces/web/testing-and-debugging/wm-debugging-tools/wave-pulse-inspection-frameworks.md"
+      }
+    ],
+    "Tejaswini K": [
+      {
+        "name": "build-options.md",
+        "path": "build-and-deploy/build/web/build-options.md"
+      },
+      {
+        "name": "docker-image.md",
+        "path": "build-and-deploy/build/web/package/docker/docker-image.md"
+      },
+      {
+        "name": "build-war-from-projectzip.md",
+        "path": "build-and-deploy/build/web/package/war/build-war-from-projectzip.md"
+      },
+      {
+        "name": "build-war-from-studio.md",
+        "path": "build-and-deploy/build/web/package/war/build-war-from-studio.md"
+      },
+      {
+        "name": "build-war-using-docker.md",
+        "path": "build-and-deploy/build/web/package/war/build-war-using-docker.md"
+      },
+      {
+        "name": "static-content.md",
+        "path": "build-and-deploy/build/web/static-content.md"
+      },
+      {
+        "name": "container-deployment.md",
+        "path": "build-and-deploy/deploy/container-deployment.md"
+      },
+      {
+        "name": "deploy-static-content.md",
+        "path": "build-and-deploy/deploy/deploy-static-content.md"
+      },
+      {
+        "name": "deploy-to-web-server.md",
+        "path": "build-and-deploy/deploy/deploy-to-web-server.md"
+      },
+      {
+        "name": "one-click deployment.md",
+        "path": "build-and-deploy/deploy/one-click deployment.md"
+      }
+    ],
+    "Mayank Prakash": [
+      {
+        "name": "mobile-components.mdx",
+        "path": "user-interfaces/mobile/components/mobile-components.mdx"
+      },
+      {
+        "name": "index.mdx",
+        "path": "user-interfaces/web/components/angular-components/index.mdx"
+      },
+      {
+        "name": "react-components.mdx",
+        "path": "user-interfaces/web/components/react-components.mdx"
+      }
+    ]
+  }
+}
