@@ -16,7 +16,8 @@ To use an external JAR file in your WaveMaker application:
 2. Choose **Import Resource** and select the `Lib` folder as the destination.  
 3. Select the JAR file you want to add (for example, `mail.jar`) and import it into the project’s `Lib` folder.
 
-![alt text](assets/jar-file-upload.png)
+<!-- ![alt text](assets/jar-file-upload.png) -->
+![alt text](assets/resourcesupload.png)
 
 ![alt text](assets/third-party-library-options.png)
 
