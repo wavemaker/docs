@@ -56,7 +56,7 @@ export default [
             },
             {
                 "type": "category",
-                "label": "Import Open API / Swagger",
+                "label": "Import APIs",
                 "collapsible": true,
                 "collapsed": true,
                 "items": [
@@ -66,7 +66,7 @@ export default [
                     },
                     {
                         "type": "category",
-                        "label": "Individual REST Endpoints",
+                        "label": "Import Individual REST Endpoints",
                         "collapsible": true,
                         "collapsed": true,
                         "items": [
@@ -135,23 +135,28 @@ export default [
                 "id": "apis-and-services/apis/mocking-bird/mocking-bird",
                 "label": "Creating Mock APIs"
             },
-            {
-                "type": "category",
-                "label": "Third party libraries",
-                "collapsible": true,
-                "collapsed": true,
-                "items": [
-                    {
-                        "type": "doc",
-                        "id": "apis-and-services/apis/third-party-libraries/jar-files"
-                    },
+             {
+                "type": "doc",
+                "id": "apis-and-services/apis/third-party-libraries/jar-files",
+                "label": "Integrating Third party libraries"
+            },
+            // {
+            //     "type": "category",
+            //     "label": "Third party libraries",
+            //     "collapsible": true,
+            //     "collapsed": true,
+            //     "items": [
+            //         {
+            //             "type": "doc",
+            //             "id": "apis-and-services/apis/third-party-libraries/jar-files"
+            //         }
                   
-                    {
-                        "type": "doc",
-                        "id": "apis-and-services/apis/third-party-libraries/using-3rd-party-libraries"
-                    }
-                ]
-            }
+            //         // {
+            //         //     "type": "doc",
+            //         //     "id": "apis-and-services/apis/third-party-libraries/using-3rd-party-libraries"
+            //         // }
+            //     ]
+            // }
         ]
     },
     {

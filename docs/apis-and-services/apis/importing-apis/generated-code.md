@@ -19,7 +19,8 @@ WaveMaker services represent fully integrated backend components, including desi
 - Developers import a **Swagger/OpenAPI specification** (JSON/YAML) that defines API endpoints, request/response structures, parameters, and authentication requirements.
 - WaveMaker interprets this spec to understand the API’s structure and available operations.
 
-![alt text](assets/importing-rest-api-overview.png)
+![alt text](assets/restapi-backend.png)
+<!-- ![alt text](image.png) -->
 
 ---
 
@@ -101,6 +102,68 @@ Holds service definition JSONs used for WaveMaker Studio and deployment:
 - The structure allows **seamless integration of third-party APIs**.
 
 ---
+## Integration with WaveMaker Runtime
+- The generated backend integrates with WaveMaker runtime automatically:
+  - Handles HTTP requests and responses
+  - Supports CRUD operations
+  - Allows addition of custom business logic
+- APIs can be tested immediately.
+
+---
+
+## Application Configuration Properties
+
+Whenever services are imported into WaveMaker, the platform automatically **generates configuration properties** that can be mapped to different environments such as Development, QA, or Production.  
+You can view and manage these properties in the **Profiles**.  
+For more information, refer to the **[Profiles](../../configurations/profiles.md)** section in the documentation.
+
+For more details on environment-specific configurations, refer to the **[Deployment Profiles](../../configurations/profile-settings.md)** section.
+
+<details>
+<summary>Click to expand configuration properties</summary>
+
+```properties
+# ---------------------------
+# WebSocket Configuration
+# ---------------------------
+websocket.websocket.basepath=
+websocket.websocket.host=echo.websocket.org
+websocket.websocket.scheme=wss
+
+# ---------------------------
+# OAuth2 (Swagger Petstore) Configuration
+# ---------------------------
+oauth2.swagger_petstore_auth.accessTokenUrl=
+oauth2.swagger_petstore_auth.authorizationUrl=https://petstore.swagger.io/oauth/authorize
+oauth2.swagger_petstore_auth.clientId=
+oauth2.swagger_petstore_auth.clientSecret=
+oauth2.swagger_petstore_auth.isPkceRequired=false
+oauth2.swagger_petstore_auth.oauth2Flow=IMPLICIT
+
+# ---------------------------
+# REST API Configurations
+# ---------------------------
+
+## Random User API
+rest.randomuser.basepath=
+rest.randomuser.host=randomuser.me
+rest.randomuser.scheme=https
+
+## Swagger API
+rest.swagger.apikey.header.api_key=
+rest.swagger.basepath=/v2
+rest.swagger.host=petstore.swagger.io
+rest.swagger.scheme=https
+
+## WaveMaker Online Services
+rest.wavemakeronline.basepath=/pk9yct3s6nqt/MyApp/services
+rest.wavemakeronline.host=https://cloud.wavemakeronline.com
+rest.wavemakeronline.scheme=https
+```
+</details>
+---
+
+
 
 
 
@@ -144,14 +207,7 @@ WaveMaker generates Java code under `src/com/myapp/swagger/`:
 
 <!-- --- -->
 
-## Integration with WaveMaker Runtime
-- The generated backend integrates with WaveMaker runtime automatically:
-  - Handles HTTP requests and responses
-  - Supports CRUD operations
-  - Allows addition of custom business logic
-- APIs can be tested immediately.
 
----
 
 ##  Summary
 1. **Time-Saving:** No need to manually write models or service stubs.

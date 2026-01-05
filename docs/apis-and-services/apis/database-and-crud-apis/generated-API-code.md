@@ -108,6 +108,38 @@ services/
 ```
 ---
 
+## Application Configuration Properties
+
+Whenever services are imported into WaveMaker, the platform automatically **generates configuration properties** that can be mapped to different environments such as Development, QA, or Production.  
+You can view and manage these properties in the **Profiles**.  
+For more information, refer to the **[Profiles](../../configurations/profiles.md)** section in the documentation.
+
+For more details on environment-specific configurations, refer to the **[Deployment Profiles](../../configurations/profile-settings.md)** section.
+
+<details>
+<summary>Click to expand configuration properties</summary>
+
+```properties
+# Database Configuration (hrdb)
+db.hrdb.dataSourceType=WM_MANAGED_DATASOURCE
+db.hrdb.driverClass=org.hsqldb.jdbcDriver
+db.hrdb.url=jdbc:hsqldb:file:{WebAppRoot}/WEB-INF/data/hrdb;shutdown=true;ifexists=true;hsqldb.lock_file=false;
+db.hrdb.username=sa
+db.hrdb.password=********
+db.hrdb.schemaName=PUBLIC
+db.hrdb.hbm2ddl=none
+db.hrdb.minPoolSize=2
+db.hrdb.maxPoolSize=4
+db.hrdb.maxPageSize=100
+db.hrdb.transactionTimeout=30
+db.hrdb.jndiName=
+```
+</details>
+
+
+---
+
+
 ## Summary
 
 WaveMaker generates a **clean, layered, and extensible Java backend** aligned with standard Spring practices.
