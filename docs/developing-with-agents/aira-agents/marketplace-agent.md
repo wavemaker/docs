@@ -3,94 +3,106 @@ title: Marketplace Agent
 last_update: { author: "Author Name" }
 ---
 
-## Overview
+The Marketplace Agent discovers and installs reusable artifacts from the WaveMaker Marketplace. Its job is to safely bring external, prebuilt components into a project without breaking it.
 
-The **wm_marketplace_agent** is responsible for discovering and installing artifacts from the WaveMaker Marketplace. Its role is to safely introduce external, prebuilt components into a project while ensuring compatibility and avoiding unsupported or destructive changes.
+The agent does not configure, customize, or refactor anything it installs. It only handles discovery, validation, and installation.
 
-This agent does not configure, customize, or refactor installed artifacts. It focuses strictly on discovery, validation, and installation.
-
-
+All changes flow through Studio APIs, consistent with other WaveMaker agents.
 
 ## Role in AIRA Architecture
 
-The Marketplace Agent operates as a specialized execution agent under the orchestration of the **wm_agent**.
+The Marketplace Agent is a specialized execution agent. It runs under the orchestration of the `wm_agent`.
 
-It is invoked when a workflow requires reusable functionality that already exists in the WaveMaker Marketplace, such as prefabs, connectors, or WMX components. While the wm_agent coordinates execution and other agents integrate or bind installed artifacts, the Marketplace Agent handles the acquisition step.
+The `wm_agent` decides *when* a marketplace artifact is needed. The Marketplace Agent handles *how* that artifact is safely acquired. Once installation completes, control returns to the `wm_agent`. Other agents then bind, configure, or extend the installed artifact.
 
-This agent does not decide *how* an artifact is used. It only ensures that the correct artifact is installed safely.
+The Marketplace Agent never decides usage or behavior.
 
+## How It Works  
 
+The agent operates between the marketplace, Studio APIs, and GitHub.
 
-## Core Responsibilities
-
-### Marketplace Discovery and Search
-
-The Marketplace Agent browses, searches, and filters WaveMaker Marketplace artifacts based on user intent and project context. It helps identify suitable artifacts and resolves ambiguity when multiple artifacts appear to match a request.
-
-Artifact selection is explicit and deliberate. No installation occurs as a side effect of discovery.
-
-### Artifact Installation
-
-The agent installs supported marketplace artifacts into the project. This includes prefabs, connectors, and WMX components, with WMX components being applicable only to React Native projects.
-
-Installation is performed only after compatibility has been validated and explicit confirmation has been obtained.
-
-### Compatibility Validation
-
-Before installation, the Marketplace Agent validates that the selected artifact is compatible with the current project type, platform, and environment. If compatibility cannot be confirmed, installation does not proceed.
-
-This validation step protects the project from runtime or build-time failures.
+- User Intent → wm_agent → Marketplace Agent
+- Marketplace Agent → Studio APIs → Application
+- GitHub → Artifact Versions → Marketplace Agent
 
 
+GitHub remains the source of truth for artifact source and versions.  
+The agent only installs approved, versioned artifacts.
 
-## Execution Scope
+## Supported Artifacts
+  
+The agent installs only supported artifact types.
 
-The Marketplace Agent operates strictly within the marketplace discovery and installation layer.
-
-It is authorized to browse marketplace listings, retrieve artifact metadata, validate compatibility, and install supported artifact types. Its scope does not include configuring artifacts, modifying application logic, or managing themes.
+- These include prefabs, connectors, and WMX components.  
+- WMX components apply only to React Native projects.  
+- Themes are explicitly excluded.
 
 Unsupported artifact types are never installed.
 
+## Core Responsibilities  
 
+### Marketplace Discovery  
 
-## Context Handling and Data Flow
+The agent searches and filters marketplace artifacts based on user intent and project context. Discovery is read-only and has no side effects.
 
-The Marketplace Agent receives scoped instructions from the wm_agent, including artifact intent, project context, and confirmation to install.
+If multiple artifacts match the request, the agent surfaces options. No installation happens during discovery.
 
-It produces installation results and artifact references that are passed back to the wm_agent. Downstream agents may then configure or bind the installed artifacts as needed.
+### Artifact Installation
 
-If artifact intent is ambiguous or compatibility is unclear, the agent pauses and requests clarification.
+Installation occurs only after explicit confirmation. The agent installs the selected artifact through Studio APIs. The agent never installs artifacts automatically or speculatively.
 
+### Compatibility Validation  
 
+Before installation, the agent validates compatibility. Validation checks include project type, platform, and supported environment. If compatibility cannot be confirmed, installation stops.
 
-## Authority and Constraints
+This step prevents build-time and runtime failures.
 
-The Marketplace Agent operates under strict installation constraints.
+## Execution Scope  
 
-It cannot install themes or unsupported artifact types. Every installation requires explicit user confirmation, and compatibility must be validated before any artifact is added to the project.
+The Marketplace Agent operates only at the acquisition layer.
 
-The agent does not bypass validation, infer suitability, or install artifacts speculatively.
+- It can browse marketplace listings, fetch metadata, validate compatibility, and install supported artifacts.  
+- It cannot configure artifacts, modify application logic, or manage themes.
 
-These constraints ensure that marketplace usage remains safe, intentional, and reversible.
+Anything beyond installation is handled by other agents.
 
+## Context Handling and Data Flow  
 
+The agent receives scoped instructions from the `wm_agent`. These instructions include artifact intent, project context, and install confirmation. The agent returns installation results and artifact references. If intent is unclear or compatibility cannot be determined, the agent pauses and requests clarification.
 
-## Execution Flow (High-Level)
+## Authority and Constraints  
 
-At a high level, the Marketplace Agent is invoked to locate and install a marketplace artifact. It identifies suitable options, validates compatibility, confirms intent, and performs installation. Once complete, control returns to the wm_agent.
+The agent operates under strict constraints.
 
-The agent does not participate in post-install configuration or usage.
+- It installs only supported artifact types.  
+- Every installation requires explicit confirmation.  
+- Compatibility validation is mandatory.
 
+The agent does not infer suitability, bypass validation, or perform speculative installs.
 
+These constraints are intentional and enforced.
 
-## Design Invariants
+## Execution Flow  
 
-The following conditions are always true for the Marketplace Agent.
+At a high level, the flow is linear and controlled.
 
-* Artifacts are installed only after explicit confirmation.
-* Compatibility is validated before installation.
-* Only supported artifact types are installed.
-* Marketplace discovery does not trigger side effects.
-* Installation is isolated from configuration and usage.
+1. The `wm_agent` identifies a need for a marketplace artifact.  
+2. The Marketplace Agent discovers matching artifacts.  
+3. Compatibility is validated against the project context.  
+4. Explicit confirmation is obtained.  
+5. The artifact is installed via Studio APIs.  
+6. Control returns to the `wm_agent`.
 
-Violation of these invariants results in an unsafe installation state.
+The agent does not participate after installation.
+
+## Non-Negotiable Rules
+
+The following conditions are always true.
+
+- Artifacts install only after explicit confirmation.  
+- Compatibility is validated before installation.  
+- Only supported artifact types are installed.  
+- Discovery never causes side effects.  
+- Installation is isolated from configuration and usage.
+
+Breaking any invariant results in an unsafe state.

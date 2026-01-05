@@ -3,6 +3,43 @@ title: How AIRA Works
 last_update: { author: "Author Name" }
 ---
 
+### Architecture Diagram
+
+```mermaid
+flowchart TD
+
+    User[User Request]
+
+    User --> wm_agent["wm_agent (Coordinator)"]
+
+    wm_agent --> wm_architect["wm_architect Architecture Decisions"]
+    wm_agent --> wm_ui["wm_ui_expert_prism UI Construction"]
+    wm_agent --> wm_js["wm_js_agent Client Logic"]
+    wm_agent --> wm_theme["wm_theme_agent Theming"]
+    wm_agent --> wm_java["wm_java_agent Backend Logic"]
+    wm_agent --> wm_db["wm_database_agent Database & Queries"]
+    wm_agent --> wm_api["wm_api_agent External APIs"]
+    wm_agent --> wm_api_bind["wm_api_binding_agent UI ↔ API Binding"]
+    wm_agent --> wm_security["wm_security_agent Security & Auth"]
+    wm_agent --> wm_i18n["wm_i18n_agent Localization"]
+    wm_agent --> wm_market["wm_marketplace_agent Marketplace Assets"]
+    wm_agent --> wm_vcs["wm_vcs_agent Version Control"]
+    wm_agent --> wm_rescue["wm_rescue_agent Incident Recovery"]
+
+    %% Logical dependencies
+    wm_ui --> wm_theme
+    wm_ui --> wm_js
+    wm_ui --> wm_api_bind
+
+    wm_api_bind --> wm_api
+    wm_api --> wm_java
+    wm_java --> wm_db
+
+    wm_security --> wm_api
+    wm_security --> wm_ui
+
+    wm_vcs --> wm_rescue
+```
 
 AIRA follows a controlled, step-by-step execution flow. Each step limits scope to prevent unintended changes.
 

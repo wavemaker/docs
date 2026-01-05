@@ -1,7 +1,10 @@
 ---
-title: Overview
-sidebar_position: 1
+title: Welcome to Aira
+last_update: { author: "Author Name" }
 ---
+
+WaveMaker 12 introduces AIRA, an agent-based development system that works alongside the traditional design-first workflow. 
+
 
 ### What Is AIRA
 

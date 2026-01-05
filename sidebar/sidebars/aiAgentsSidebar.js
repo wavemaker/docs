@@ -2,11 +2,19 @@
 export default [
     {
         "type": "doc",
+        "id": "developing-with-agents/concepts"
+    },
+    {
+        "type": "doc",
         "id": "developing-with-agents/overview"
     },
     {
         "type": "doc",
         "id": "developing-with-agents/how-aira-works"
+    },
+      {
+        "type": "doc",
+        "id": "developing-with-agents/agent-reference-list"
     },
     {
         "type": "doc",
@@ -17,11 +25,7 @@ export default [
         "label": "aira-agents",
         "collapsible": true,
         "collapsed": true,
-        "items": [
-            {
-                "type": "doc",
-                "id": "developing-with-agents/aira-agents/list-of-agents"
-            },
+        "items": [  
             {
                 "type": "doc",
                 "id": "developing-with-agents/aira-agents/wavemaker-agent"

@@ -3,10 +3,9 @@ title: AIRA Agentic App Development
 last_update: { author: "Author Name" }
 ---
 
-test commit
-WaveMaker 12 introduces AIRA, an agent-based development system that works alongside the traditional design-first workflow.  AIRA is not one AI. It is a coordinated system of specialized agents, each responsible for a specific domain in WaveMaker app development.
+AIRA is an agent-based development system that works alongside the traditional design-first workflow.  AIRA is not one AI. It is a coordinated system of specialized agents, each responsible for a specific domain in WaveMaker app development.
 
-### Starting a New Application
+### For New Applications
 
 AIRA works best when you are starting an application. For small apps or the early stages of a larger one, it gives you a fast, usable starting point instead of an empty project.
 
