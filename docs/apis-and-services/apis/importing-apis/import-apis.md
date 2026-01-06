@@ -2,7 +2,7 @@
 last_update: { author: "Priyanka Bhadri" }
 ---
 
-# Import Open API - Swagger
+# Open API - Swagger
 
 WaveMaker provides built-in support for importing REST APIs defined using **Swagger/OpenAPI specifications** (JSON or YAML). This feature allows developers to quickly integrate external services into their applications without manual coding.
 
@@ -26,7 +26,7 @@ WaveMaker can generate ready-to-use UI elements for services imported from Swagg
 These widgets help you build UI screens with minimal code by binding REST API data directly to visual components. -->
 
 ---
-# API Workspace
+## API Workspace
 
 WaveMaker provides a dedicated **API Workspace** that serves as the central hub for all API-related activities.
 
@@ -96,18 +96,26 @@ Once imported, you can view all identified entities on the left side navigation.
 Once the Swagger API is selected and its metadata is verified:
 
 - You can configure authentication for the API.
-- Swagger definitions may include support for **[OAuth 2.0]()**.
+- Swagger definitions may include support for **[OAuth 2.0](individual-rest-endpoints/rest-services-using-oauth20.md)**.
 - If OAuth is required, click **OAuth Provider** in the import dialog and enter the relevant values such as:
   - Access Token URL
   - Client ID
   - Client Secret
 
-Authentication settings allow WaveMaker to communicate securely with protected APIs. For more detailed steps on configuring OAuth providers, refer to the [OAuth Provider Configuration]().
+Authentication settings allow WaveMaker to communicate securely with protected APIs. For more detailed steps on configuring OAuth providers, refer to the [OAuth Provider Configuration](individual-rest-endpoints/rest-services-using-oauth20.md).
 
 ![alt text](assets/test-imported-api.png)
 <!-- ![alt text](assets/websocket-configuration.png) -->
 
 ---
+
+## Generated Code
+
+Once imported, WaveMaker automatically generates a complete backend for third-party APIs, including Java classes, service logic, and design-time configurations. Built on proven enterprise technologies such as Java, Spring, and Hibernate/JPA, this enables rapid and seamless API integration and customization.
+
+Developers have full access to the generated source code. Refer [generated  code](generated-code.md)
+
+
 
 <!-- ## Using Imported REST Services
 
@@ -117,6 +125,38 @@ After successful import and authentication configuration:
 - This enables CRUD-style interaction with the imported API without writing manual HTTP client code.
 
 --- -->
+
+## Application Configuration Properties
+
+Whenever services are imported into WaveMaker, the platform automatically **generates configuration properties** that can be mapped to different environments such as Development, QA, or Production.  
+You can view and manage these properties in the **Profiles**.  
+For more information, refer to the **[Profiles](../../configurations/profiles.md)** section in the documentation.
+
+For more details on environment-specific configurations, refer to the **[ Profiles Settings](../../configurations/profile-settings.md)** section.
+
+<details>
+<summary>Click to expand configuration properties</summary>
+
+```properties
+# ---------------------------
+# OAuth2 (Swagger Petstore) Configuration
+# ---------------------------
+oauth2.swagger_petstore_auth.accessTokenUrl=
+oauth2.swagger_petstore_auth.authorizationUrl=https://petstore.swagger.io/oauth/authorize
+oauth2.swagger_petstore_auth.clientId=
+oauth2.swagger_petstore_auth.clientSecret=
+oauth2.swagger_petstore_auth.isPkceRequired=false
+oauth2.swagger_petstore_auth.oauth2Flow=IMPLICIT
+
+## Swagger API
+rest.swagger.apikey.header.api_key=
+rest.swagger.basepath=/v2
+rest.swagger.host=petstore.swagger.io
+rest.swagger.scheme=https
+```
+</details>
+
+---
 
 
 ## Summary

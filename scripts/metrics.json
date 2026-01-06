@@ -1197,8 +1197,8 @@
       },
       {
         "name": "import-rest.md",
-        "path": "apis-and-services/apis/importing-apis/individual-rest-endpoints/import-rest.md",
-        "id": "apis-and-services/apis/importing-apis/individual-rest-endpoints/import-rest"
+        "path": "apis-and-services/apis/importing-apis/import-rest.md",
+        "id": "apis-and-services/apis/importing-apis/import-rest"
       },
       {
         "name": "rest-request-timeouts.md",

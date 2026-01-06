@@ -64,33 +64,37 @@ export default [
                         "type": "doc",
                         "id": "apis-and-services/apis/importing-apis/overview"
                     },
-                    {
-                        "type": "category",
-                        "label": "Import Individual REST Endpoints",
-                        "collapsible": true,
-                        "collapsed": true,
-                        "items": [
-                            {
-                                "type": "doc",
-                                "id": "apis-and-services/apis/importing-apis/individual-rest-endpoints/import-rest"
-                            },
-                            {
-                                "type": "doc",
-                                "id": "apis-and-services/apis/importing-apis/individual-rest-endpoints/rest-request-timeouts"
-                            },
-                            {
-                                "type": "doc",
-                                "id": "apis-and-services/apis/importing-apis/individual-rest-endpoints/secure-server-side-properties"
-                            },
-                            {
-                                "type": "doc",
-                                "id": "apis-and-services/apis/importing-apis/individual-rest-endpoints/rest-services-using-oauth20"
-                            }
-                        ]
-                    },
+                    // {
+                    //     "type": "category",
+                    //     "label": "Import Individual REST Endpoints",
+                    //     "collapsible": true,
+                    //     "collapsed": true,
+                    //     "items": [
+                    //         {
+                    //             "type": "doc",
+                    //             "id": "apis-and-services/apis/importing-apis/individual-rest-endpoints/import-rest"
+                    //         },
+                    //         {
+                    //             "type": "doc",
+                    //             "id": "apis-and-services/apis/importing-apis/individual-rest-endpoints/rest-request-timeouts"
+                    //         },
+                    //         {
+                    //             "type": "doc",
+                    //             "id": "apis-and-services/apis/importing-apis/individual-rest-endpoints/secure-server-side-properties"
+                    //         },
+                    //         {
+                    //             "type": "doc",
+                    //             "id": "apis-and-services/apis/importing-apis/individual-rest-endpoints/rest-services-using-oauth20"
+                    //         }
+                    //     ]
+                    // },
                     {
                         "type": "doc",
                         "id": "apis-and-services/apis/importing-apis/import-apis"
+                    },
+                    {
+                        "type": "doc",
+                        "id": "apis-and-services/apis/importing-apis/import-rest"
                     },
                     {
                         "type": "doc",

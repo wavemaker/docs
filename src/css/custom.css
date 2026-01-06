@@ -320,17 +320,6 @@ body {
 .sidebar-missing-author .menu__link {
   color: #e67e22 !important;
   font-style: italic;
-}
-
-.sidebar-missing-author .menu__link::after {
-  content: '●';
-  margin-left: 8px;
-  color: #e67e22;
-  font-size: 0.8rem;
-  vertical-align: middle;
-}
-
-.sidebar-missing-author {
   background-color: rgba(230, 126, 34, 0.05);
   border-radius: 4px;
 }
