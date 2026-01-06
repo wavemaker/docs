@@ -146,7 +146,7 @@ OAuth 2.0 provider details can be configured to secure API requests.
 - **Redirect URI**: URL where the provider sends the authorization code.
 
 These settings can be configured per environment (development, staging, production) to ensure secure authentication.
-For more information, see [Providers](../security/providers.md).
+For more information, see [Providers](../security/providers.mdx).
 
 ---
 
