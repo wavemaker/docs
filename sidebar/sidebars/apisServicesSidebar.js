@@ -178,6 +178,10 @@ export default [
                 "id": "apis-and-services/security/authentication-and-authorization"
             },
             {
+                "type": "doc",
+                "id": "apis-and-services/security/access-level-and-permissions"
+            },
+            {
                 "type": "category",
                 "label": "Providers",
                 "collapsible": true,

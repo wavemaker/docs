@@ -1,13 +1,13 @@
 {
-  "total": 639,
+  "total": 640,
   "md": 630,
-  "mdx": 9,
+  "mdx": 10,
   "noAuthor": 223,
   "authors": {
     "Priyanka Bhadri": 29,
     "Sagar Vemala": 2,
     "Author Name": 367,
-    "Shahnawaz Ahmed": 4,
+    "Shahnawaz Ahmed": 5,
     "Tejaswini K": 10,
     "Swetha Kundaram": 1,
     "Mayank Prakash": 3
@@ -1416,6 +1416,21 @@
         "id": "developing-with-agents/working-alongside"
       },
       {
+        "name": "creating-registration-page.md",
+        "path": "guide/app-development/creating-registration-page.md",
+        "id": "guide/app-development/creating-registration-page"
+      },
+      {
+        "name": "error-handling-wavemaker-app.md",
+        "path": "guide/app-development/error-handling-wavemaker-app.md",
+        "id": "guide/app-development/error-handling-wavemaker-app"
+      },
+      {
+        "name": "support-password-encryption.md",
+        "path": "guide/app-development/support-password-encryption.md",
+        "id": "guide/app-development/support-password-encryption"
+      },
+      {
         "name": "accessing-file-upload-java-code.md",
         "path": "guide/howtos/accessing-file-upload-java-code.md",
         "id": "guide/howtos/accessing-file-upload-java-code"
@@ -1474,21 +1489,6 @@
         "name": "adjust-leftnav-width.md",
         "path": "guide/howtos/adjust-leftnav-width.md",
         "id": "guide/howtos/adjust-leftnav-width"
-      },
-      {
-        "name": "creating-registration-page.md",
-        "path": "guide/howtos/app-development/creating-registration-page.md",
-        "id": "guide/howtos/app-development/creating-registration-page"
-      },
-      {
-        "name": "error-handling-wavemaker-app.md",
-        "path": "guide/howtos/app-development/error-handling-wavemaker-app.md",
-        "id": "guide/howtos/app-development/error-handling-wavemaker-app"
-      },
-      {
-        "name": "support-password-encryption.md",
-        "path": "guide/howtos/app-development/support-password-encryption.md",
-        "id": "guide/howtos/app-development/support-password-encryption"
       },
       {
         "name": "app-migration-wavemaker-9x-10x.md",
@@ -3128,6 +3128,11 @@
     ],
     "Shahnawaz Ahmed": [
       {
+        "name": "access-level-and-permissions.mdx",
+        "path": "apis-and-services/security/access-level-and-permissions.mdx",
+        "id": "apis-and-services/security/access-level-and-permissions"
+      },
+      {
         "name": "authentication-and-authorization.mdx",
         "path": "apis-and-services/security/authentication-and-authorization.mdx",
         "id": "apis-and-services/security/authentication-and-authorization"
@@ -3260,6 +3265,9 @@
     "developing-with-agents/how-aira-works",
     "developing-with-agents/overview",
     "developing-with-agents/working-alongside",
+    "guide/app-development/creating-registration-page",
+    "guide/app-development/error-handling-wavemaker-app",
+    "guide/app-development/support-password-encryption",
     "guide/components/angular-components/accessing-file-upload-java-code",
     "guide/components/angular-components/add-master-detail-records-using-data-table",
     "guide/components/angular-components/adding-custom-fonts-richtext-editor",
@@ -3365,9 +3373,6 @@
     "guide/howtos/adding-parent-child-using-form-datatable",
     "guide/howtos/adding-ui-for-api-server-side-pagination",
     "guide/howtos/adjust-leftnav-width",
-    "guide/howtos/app-development/creating-registration-page",
-    "guide/howtos/app-development/error-handling-wavemaker-app",
-    "guide/howtos/app-development/support-password-encryption",
     "guide/howtos/app-migration-wavemaker-9x-10x",
     "guide/howtos/audit-history-using-crud-listeners",
     "guide/howtos/aws-s3-connector",
