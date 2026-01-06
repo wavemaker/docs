@@ -1,22 +1,18 @@
 {
-  "total": 654,
-  "md": 647,
-  "mdx": 7,
-  "noAuthor": 224,
+  "total": 639,
+  "md": 630,
+  "mdx": 9,
+  "noAuthor": 223,
   "authors": {
     "Priyanka Bhadri": 29,
     "Sagar Vemala": 2,
-    "Author Name": 385,
+    "Author Name": 367,
+    "Shahnawaz Ahmed": 4,
     "Tejaswini K": 10,
     "Swetha Kundaram": 1,
     "Mayank Prakash": 3
   },
   "noAuthorDocs": [
-    {
-      "name": "authentication-and-authorization.mdx",
-      "path": "apis-and-services/security/authentication-and-authorization.mdx",
-      "id": "apis-and-services/security/authentication-and-authorization"
-    },
     {
       "name": "overview.md",
       "path": "build-and-deploy/build/mobile/overview.md",
@@ -1310,98 +1306,8 @@
         "id": "apis-and-services/concepts/techstack"
       },
       {
-        "name": "antisamy-policy-configuration.md",
-        "path": "apis-and-services/security/hardening-app/antisamy-policy-configuration.md",
-        "id": "apis-and-services/security/hardening-app/antisamy-policy-configuration"
-      },
-      {
-        "name": "application-hardening.md",
-        "path": "apis-and-services/security/hardening-app/application-hardening.md",
-        "id": "apis-and-services/security/hardening-app/application-hardening"
-      },
-      {
-        "name": "concurrent-sessions-handling.md",
-        "path": "apis-and-services/security/hardening-app/concurrent-sessions-handling.md",
-        "id": "apis-and-services/security/hardening-app/concurrent-sessions-handling"
-      },
-      {
-        "name": "host-header-injection-prevention.md",
-        "path": "apis-and-services/security/hardening-app/host-header-injection-prevention.md",
-        "id": "apis-and-services/security/hardening-app/host-header-injection-prevention"
-      },
-      {
-        "name": "login-configuration.md",
-        "path": "apis-and-services/security/hardening-app/login-configuration.md",
-        "id": "apis-and-services/security/hardening-app/login-configuration"
-      },
-      {
-        "name": "other-security-hardening-measures.md",
-        "path": "apis-and-services/security/hardening-app/other-security-hardening-measures.md",
-        "id": "apis-and-services/security/hardening-app/other-security-hardening-measures"
-      },
-      {
-        "name": "owasp-guidelines.md",
-        "path": "apis-and-services/security/hardening-app/owasp-guidelines.md",
-        "id": "apis-and-services/security/hardening-app/owasp-guidelines"
-      },
-      {
-        "name": "remember-me-functionality.md",
-        "path": "apis-and-services/security/hardening-app/remember-me-functionality.md",
-        "id": "apis-and-services/security/hardening-app/remember-me-functionality"
-      },
-      {
-        "name": "secure-connection-for-deployed-apps.md",
-        "path": "apis-and-services/security/hardening-app/secure-connection-for-deployed-apps.md",
-        "id": "apis-and-services/security/hardening-app/secure-connection-for-deployed-apps"
-      },
-      {
-        "name": "security-overview-and-best-practices.md",
-        "path": "apis-and-services/security/hardening-app/security-overview-and-best-practices.md",
-        "id": "apis-and-services/security/hardening-app/security-overview-and-best-practices"
-      },
-      {
-        "name": "session-persistence-and-management.md",
-        "path": "apis-and-services/security/hardening-app/session-persistence-and-management.md",
-        "id": "apis-and-services/security/hardening-app/session-persistence-and-management"
-      },
-      {
-        "name": "ssl-tls-encryption.md",
-        "path": "apis-and-services/security/hardening-app/ssl-tls-encryption.md",
-        "id": "apis-and-services/security/hardening-app/ssl-tls-encryption"
-      },
-      {
-        "name": "xss-prevention-techniques.md",
-        "path": "apis-and-services/security/hardening-app/xss-prevention-techniques.md",
-        "id": "apis-and-services/security/hardening-app/xss-prevention-techniques"
-      },
-      {
-        "name": "hardening-app.md",
-        "path": "apis-and-services/security/hardening-app.md",
-        "id": "apis-and-services/security/hardening-app"
-      },
-      {
-        "name": "overview.md",
-        "path": "apis-and-services/security/overview.md",
-        "id": "apis-and-services/security/overview"
-      },
-      {
-        "name": "openid-authentication.mdx",
-        "path": "apis-and-services/security/providers/openid-authentication.mdx",
-        "id": "apis-and-services/security/providers/openid-authentication"
-      },
-      {
-        "name": "saml-integration.mdx",
-        "path": "apis-and-services/security/providers/saml-integration.mdx",
-        "id": "apis-and-services/security/providers/saml-integration"
-      },
-      {
-        "name": "token-based-authentication.md",
-        "path": "apis-and-services/security/providers/token-based-authentication.md",
-        "id": "apis-and-services/security/providers/token-based-authentication"
-      },
-      {
-        "name": "providers.md",
-        "path": "apis-and-services/security/providers.md",
+        "name": "providers.mdx",
+        "path": "apis-and-services/security/providers.mdx",
         "id": "apis-and-services/security/providers"
       },
       {
@@ -3220,6 +3126,28 @@
         "id": "user-interfaces/web/testing-and-debugging/wm-debugging-tools/wave-pulse-inspection-frameworks"
       }
     ],
+    "Shahnawaz Ahmed": [
+      {
+        "name": "authentication-and-authorization.mdx",
+        "path": "apis-and-services/security/authentication-and-authorization.mdx",
+        "id": "apis-and-services/security/authentication-and-authorization"
+      },
+      {
+        "name": "overview.mdx",
+        "path": "apis-and-services/security/overview.mdx",
+        "id": "apis-and-services/security/overview"
+      },
+      {
+        "name": "openid-authentication.mdx",
+        "path": "apis-and-services/security/providers/openid-authentication.mdx",
+        "id": "apis-and-services/security/providers/openid-authentication"
+      },
+      {
+        "name": "saml-integration.mdx",
+        "path": "apis-and-services/security/providers/saml-integration.mdx",
+        "id": "apis-and-services/security/providers/saml-integration"
+      }
+    ],
     "Tejaswini K": [
       {
         "name": "build-options.md",
@@ -3301,25 +3229,6 @@
     "apis-and-services/concepts/architecture",
     "apis-and-services/concepts/overview",
     "apis-and-services/concepts/techstack",
-    "apis-and-services/security/authentication-and-authorization",
-    "apis-and-services/security/hardening-app/antisamy-policy-configuration",
-    "apis-and-services/security/hardening-app/application-hardening",
-    "apis-and-services/security/hardening-app/concurrent-sessions-handling",
-    "apis-and-services/security/hardening-app/host-header-injection-prevention",
-    "apis-and-services/security/hardening-app/login-configuration",
-    "apis-and-services/security/hardening-app/other-security-hardening-measures",
-    "apis-and-services/security/hardening-app/owasp-guidelines",
-    "apis-and-services/security/hardening-app/remember-me-functionality",
-    "apis-and-services/security/hardening-app/secure-connection-for-deployed-apps",
-    "apis-and-services/security/hardening-app/security-overview-and-best-practices",
-    "apis-and-services/security/hardening-app/session-persistence-and-management",
-    "apis-and-services/security/hardening-app/ssl-tls-encryption",
-    "apis-and-services/security/hardening-app/xss-prevention-techniques",
-    "apis-and-services/security/hardening-app",
-    "apis-and-services/security/overview",
-    "apis-and-services/security/providers/openid-authentication",
-    "apis-and-services/security/providers/saml-integration",
-    "apis-and-services/security/providers/token-based-authentication",
     "apis-and-services/security/providers",
     "build-and-deploy/build/mobile/overview",
     "build-and-deploy/pipeline/continous-deployment",
