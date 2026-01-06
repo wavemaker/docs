@@ -175,9 +175,13 @@ export default [
             },
 			{
                 "type": "doc",
+                "id": "apis-and-services/security/app-security"
+            },
+			{
+                "type": "doc",
                 "id": "apis-and-services/security/authentication-and-authorization"
             },
-            {
+			{
                 "type": "doc",
                 "id": "apis-and-services/security/access-level-and-permissions"
             },
@@ -189,11 +193,71 @@ export default [
                 "items": [
                     {
                     "type": "doc",
+                    "id": "apis-and-services/security/providers/login-configuration"
+                    },
+					{
+                    "type": "doc",
                     "id": "apis-and-services/security/providers/openid-authentication"
+                    },
+					{
+                    "type": "doc",
+                    "id": "apis-and-services/security/providers/secure-connection-deployed-apps"
+                    },
+					{
+                    "type": "doc",
+                    "id": "apis-and-services/security/providers/token-based-authentication"
                     },
                     {
                     "type": "doc",
                     "id": "apis-and-services/security/providers/saml-integration"
+                    }
+                ]
+            },
+            {
+                "type": "category",
+                "label": "Hardening app",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                    {
+                        "type": "doc",
+                        "id": "apis-and-services/security/hardening-app/xss-antisamy-policy-configuration"
+                    },
+					{
+                        "type": "doc",
+                        "id": "apis-and-services/security/hardening-app/owasp"
+                    },
+					{
+                        "type": "doc",
+                        "id": "apis-and-services/security/hardening-app/remember-me"
+                    },
+					{
+                        "type": "doc",
+                        "id": "apis-and-services/security/hardening-app/concurrent-sessions"
+                    },
+					{
+                        "type": "doc",
+                        "id": "apis-and-services/security/hardening-app/securing-server-side-properties-rest-services"
+                    },
+					{
+                        "type": "doc",
+                        "id": "apis-and-services/security/hardening-app/security-variables"
+                    },
+					{
+                        "type": "doc",
+                        "id": "apis-and-services/security/hardening-app/ssl-encryption"
+                    },
+					{
+                        "type": "doc",
+                        "id": "apis-and-services/security/hardening-app/xss-prevention"
+                    },
+					{
+                        "type": "doc",
+                        "id": "apis-and-services/security/hardening-app/hostheader-injection"
+                    },
+					{
+                        "type": "doc",
+                        "id": "apis-and-services/security/hardening-app/session-persistence"
                     }
                 ]
             }

@@ -1,18 +1,33 @@
 {
-  "total": 640,
+  "total": 653,
   "md": 630,
-  "mdx": 10,
-  "noAuthor": 223,
+  "mdx": 23,
+  "noAuthor": 226,
   "authors": {
     "Priyanka Bhadri": 29,
     "Sagar Vemala": 2,
-    "Author Name": 367,
-    "Shahnawaz Ahmed": 5,
+    "Author Name": 366,
+    "Shahnawaz Ahmed": 16,
     "Tejaswini K": 10,
     "Swetha Kundaram": 1,
     "Mayank Prakash": 3
   },
   "noAuthorDocs": [
+    {
+      "name": "app-security.mdx",
+      "path": "apis-and-services/security/app-security.mdx",
+      "id": "apis-and-services/security/app-security"
+    },
+    {
+      "name": "secure-connection-deployed-apps.mdx",
+      "path": "apis-and-services/security/providers/secure-connection-deployed-apps.mdx",
+      "id": "apis-and-services/security/providers/secure-connection-deployed-apps"
+    },
+    {
+      "name": "token-based-authentication.mdx",
+      "path": "apis-and-services/security/providers/token-based-authentication.mdx",
+      "id": "apis-and-services/security/providers/token-based-authentication"
+    },
     {
       "name": "overview.md",
       "path": "build-and-deploy/build/mobile/overview.md",
@@ -1304,11 +1319,6 @@
         "name": "techstack.md",
         "path": "apis-and-services/concepts/techstack.md",
         "id": "apis-and-services/concepts/techstack"
-      },
-      {
-        "name": "providers.mdx",
-        "path": "apis-and-services/security/providers.mdx",
-        "id": "apis-and-services/security/providers"
       },
       {
         "name": "component-variants.md",
@@ -3138,9 +3148,64 @@
         "id": "apis-and-services/security/authentication-and-authorization"
       },
       {
+        "name": "concurrent-sessions.mdx",
+        "path": "apis-and-services/security/hardening-app/concurrent-sessions.mdx",
+        "id": "apis-and-services/security/hardening-app/concurrent-sessions"
+      },
+      {
+        "name": "hostheader-injection.mdx",
+        "path": "apis-and-services/security/hardening-app/hostheader-injection.mdx",
+        "id": "apis-and-services/security/hardening-app/hostheader-injection"
+      },
+      {
+        "name": "owasp.mdx",
+        "path": "apis-and-services/security/hardening-app/owasp.mdx",
+        "id": "apis-and-services/security/hardening-app/owasp"
+      },
+      {
+        "name": "remember-me.mdx",
+        "path": "apis-and-services/security/hardening-app/remember-me.mdx",
+        "id": "apis-and-services/security/hardening-app/remember-me"
+      },
+      {
+        "name": "securing-server-side-properties-rest-services.mdx",
+        "path": "apis-and-services/security/hardening-app/securing-server-side-properties-rest-services.mdx",
+        "id": "apis-and-services/security/hardening-app/securing-server-side-properties-rest-services"
+      },
+      {
+        "name": "security-variables.mdx",
+        "path": "apis-and-services/security/hardening-app/security-variables.mdx",
+        "id": "apis-and-services/security/hardening-app/security-variables"
+      },
+      {
+        "name": "session-persistence.mdx",
+        "path": "apis-and-services/security/hardening-app/session-persistence.mdx",
+        "id": "apis-and-services/security/hardening-app/session-persistence"
+      },
+      {
+        "name": "ssl-encryption.mdx",
+        "path": "apis-and-services/security/hardening-app/ssl-encryption.mdx",
+        "id": "apis-and-services/security/hardening-app/ssl-encryption"
+      },
+      {
+        "name": "xss-antisamy-policy-configuration.mdx",
+        "path": "apis-and-services/security/hardening-app/xss-antisamy-policy-configuration.mdx",
+        "id": "apis-and-services/security/hardening-app/xss-antisamy-policy-configuration"
+      },
+      {
+        "name": "xss-prevention.mdx",
+        "path": "apis-and-services/security/hardening-app/xss-prevention.mdx",
+        "id": "apis-and-services/security/hardening-app/xss-prevention"
+      },
+      {
         "name": "overview.mdx",
         "path": "apis-and-services/security/overview.mdx",
         "id": "apis-and-services/security/overview"
+      },
+      {
+        "name": "login-configuration.mdx",
+        "path": "apis-and-services/security/providers/login-configuration.mdx",
+        "id": "apis-and-services/security/providers/login-configuration"
       },
       {
         "name": "openid-authentication.mdx",
@@ -3234,7 +3299,9 @@
     "apis-and-services/concepts/architecture",
     "apis-and-services/concepts/overview",
     "apis-and-services/concepts/techstack",
-    "apis-and-services/security/providers",
+    "apis-and-services/security/app-security",
+    "apis-and-services/security/providers/secure-connection-deployed-apps",
+    "apis-and-services/security/providers/token-based-authentication",
     "build-and-deploy/build/mobile/overview",
     "build-and-deploy/pipeline/continous-deployment",
     "build-and-deploy/pipeline/continous-integration",
