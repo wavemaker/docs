@@ -3,30 +3,41 @@ import Layout from '@theme/Layout';
 import metricsData from '@site/scripts/metrics.json';
 
 export default function MetricsPage() {
+
   return (
     <Layout title="Documentation Audit">
       <main style={{padding: '2rem', maxWidth: '1000px'}}>
-        <h1>Detailed Docs Metrics</h1>
+        <h1>Docs Metrics</h1>
         
         <div style={{display: 'flex', gap: '10px', marginBottom: '2rem'}}>
           <StatBox label="Total" value={metricsData.total} />
-          <StatBox label="Unassigned" value={metricsData.noAuthorDocs.length} color="#fff4f4" />
+          <StatBox label="Completed" value={metricsData.total- (metricsData.noAuthorDocs.length + metricsData.authorDocs['Author Name'].length)} color="#c6fac1ff" />
+          <StatBox label="Unassigned" value={metricsData.noAuthorDocs.length} color="#faef97ff" />
+          <StatBox label="Pending" value={metricsData.authorDocs['Author Name'].length} color="#f8aeaeff" />
         </div>
 
         {/* SECTION: UNASSIGNED DOCS */}
-        <section style={{marginBottom: '3rem'}}>
+        <section style={{marginBottom: '1rem'}}>
           <details style={{border: '1px solid #ff4444', borderRadius: '8px', padding: '1rem'}}>
             <summary style={{fontWeight: 'bold', cursor: 'pointer', color: '#ff4444'}}>
-              ⚠️ Documents with No Author ({metricsData.noAuthorDocs.length})
+              Unassigned Docs ({metricsData.noAuthorDocs.length})
             </summary>
             <DocTable docs={metricsData.noAuthorDocs} />
+          </details>
+        </section>
+        <section style={{marginBottom: '1rem'}}>
+          <details style={{border: '1px solid #ff4444', borderRadius: '8px', padding: '1rem'}}>
+            <summary style={{fontWeight: 'bold', cursor: 'pointer', color: '#ff4444'}}>
+              Pending Docs ({metricsData.authorDocs['Author Name'].length})
+            </summary>
+            <DocTable docs={metricsData.authorDocs['Author Name']} />
           </details>
         </section>
 
         {/* SECTION: PER AUTHOR */}
         <h3>Docs by Author</h3>
         {Object.entries(metricsData.authorDocs).map(([author, docs]) => (
-          <details key={author} style={{border: '1px solid #ddd', borderRadius: '8px', padding: '1rem', marginBottom: '10px'}}>
+          author == "Author Name" ? <></> : <details key={author} style={{border: '1px solid #ddd', borderRadius: '8px', padding: '1rem', marginBottom: '10px'}}>
             <summary style={{fontWeight: 'bold', cursor: 'pointer'}}>
               {author} — ({docs.length} docs)
             </summary>
