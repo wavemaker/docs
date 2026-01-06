@@ -79,6 +79,6 @@ Refer  [Deploy a docker container](../../../../deploy/container-deployment.md)
 The wavemakerapp/app-builder and wavemakerapp/app-runtime-tomcat Docker images are prepackaged with all the required software, dependencies, and libraries needed to build and deploy WaveMaker applications in Docker containers.
 
 To watch how to create a docker image, refer
-▶️ [Dockerize the wavemaker app](https://app.guidde.com/playbooks/gvbivUYhkeAcS8jdTPRBCm?origin=UHEVgZL3MXReLMMFtXRKKLRtXmG3)
+▶️ [Dockerize the wavemaker app](https://dev-next-academy.onwavemaker.com/Watch?wm=WM-b9c0d)
 
 :::
