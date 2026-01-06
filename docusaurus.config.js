@@ -65,6 +65,7 @@ const config = {
           authorsMapPath: "../authors.yml",
           blogSidebarTitle: 'All posts',
           blogSidebarCount: 'ALL',
+          path: "blogs/blog",
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -82,7 +83,6 @@ const config = {
         appId: "QCVP2DTGFE",
         apiKey: "e6c3135299d8686cb165ab06fa129dbe",
         indexName: "wavemakerdocs",
-        askAi: "oiUXwuic142f",
       },
       colorMode: {
         respectPrefersColorScheme: true,
@@ -105,8 +105,8 @@ const config = {
                 label: "Release Notes",
               },
               {
-                label: 'Features',
-                to: '#',
+                label: 'Feature Announcements',
+                to: '/feature-announcements',
               }
             ],
           },
@@ -220,8 +220,31 @@ const config = {
         /**
          * Path to data on filesystem relative to site dir.
          */
-        path: "./whatsnew",
-        authorsMapPath: "../authors.yml",
+        path: "blogs/whatsnew",
+        authorsMapPath: "../blogs/authors.yml",
+        blogSidebarTitle: 'All posts',
+        blogSidebarCount: 'ALL',
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        /**
+         * Required for any multi-instance plugin
+         */
+        id: "feature-announcements",
+        /**
+         * URL route for the blog section of your site.
+         * *DO NOT* include a trailing slash.
+         */
+        routeBasePath: "feature-announcements",
+        /**
+         * Path to data on filesystem relative to site dir.
+         */
+        path: "blogs/feature-announcements",
+        authorsMapPath: "../blogs/authors.yml",
+        blogSidebarTitle: 'All posts',
+        blogSidebarCount: 'ALL',
       },
     ],
   ],
