@@ -35,16 +35,20 @@ function highlightMissing(items) {
 }
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
-const sidebars = {
-  // By default, Docusaurus generates a sidebar from the docs folder structure
-  designSystemSidebar: highlightMissing(designSystemSidebar),
-  aiAgentsSidebar: highlightMissing(aiAgentsSidebar),
-  apisServicesSidebar: highlightMissing(apisServicesSidebar),
-  deploySidebar: highlightMissing(deploySidebar),
-  guideSidebar: highlightMissing(guideSidebar),
-  studioSidebar: highlightMissing(studioSidebar),
-  userInterfacesWebSidebar: highlightMissing(userInterfacesWebSidebar),
-  userInterfacesMobileSidebar: highlightMissing(userInterfacesMobileSidebar),
+let sidebars = {
+  designSystemSidebar,
+  aiAgentsSidebar,
+  apisServicesSidebar,
+  deploySidebar,
+  guideSidebar,
+  studioSidebar,
+  userInterfacesWebSidebar,
+  userInterfacesMobileSidebar,
 };
+
+for (const key in sidebars) {
+  // @ts-ignore
+  sidebars[key] = highlightMissing(sidebars[key]);
+}
 
 export default sidebars;
