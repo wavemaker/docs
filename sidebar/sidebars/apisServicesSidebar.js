@@ -192,12 +192,7 @@ export default [
                     "id": "apis-and-services/security/providers/saml-integration"
                     }
                 ]
-            },
-			
-            {
-                "type": "doc",
-                "id": "apis-and-services/security/hardening-app"
-            }   
+            }
         ]
     },
     {

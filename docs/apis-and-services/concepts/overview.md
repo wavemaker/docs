@@ -11,5 +11,5 @@ Fundamental concepts for building and understanding APIs and microservices.
 
 - [Architecture](./architecture.md) - Architectural patterns
 - [TechStack](./techstack.md) - Technology stack
-- [Security](../security/overview.md) - Security practices
+- [Security](../security/overview.mdx) - Security practices
 - [Testing And Debugging](../testing-and-debugging/unit-testing/integrate-junit-tests.md) - Testing strategies

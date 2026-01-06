@@ -107,6 +107,10 @@ const config = {
               {
                 label: 'Feature Announcements',
                 to: '/feature-announcements',
+              },
+              {
+                label: 'Tech Stack',
+                to: '/tech-stack',
               }
             ],
           },
