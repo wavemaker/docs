@@ -12,8 +12,9 @@ Developers have complete access to the generated source code and can confidently
 ---
 
 ## Backend Architecture
+ 
+This section describes the structure of a WaveMaker-generated service, using the **[Random User](https://randomuser.me/api/?results=5)** as an example. The same structure and patterns apply to all other third-party APIs imported into WaveMaker.
 
-This describes the structure of a WaveMaker-generated service, using **[Random User](https://randomuser.me/api/?results=5)** as an example.  
 WaveMaker services represent fully integrated backend components, including design-time configuration, generated Java code, and runtime metadata.
 
 - Developers import a **Swagger/OpenAPI specification** (JSON/YAML) that defines API endpoints, request/response structures, parameters, and authentication requirements.

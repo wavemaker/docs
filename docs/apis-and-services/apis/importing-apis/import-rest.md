@@ -58,9 +58,21 @@ When setting up a REST service, you can configure several types of parameters:
 
 These parameters automatically appear as **input fields** in the service variable definition and can be bound to UI elements or variables. 
 
-<!-- --- -->
+---
 
-<!-- ## REST Request Timeouts
+## Authentication and Security
+
+WaveMaker supports different authentication models when configuring REST services:
+
+- **No Authentication** — Default option when the service does not require credentials.  
+- **Basic Authentication** — Uses username and password.  
+- **OAuth 2.0** — Allows integration with OAuth providers. You can select from pre-configured providers or define new ones during REST service configuration. 
+
+When securing REST calls, consider using **App Environment Properties** or **Server Side Properties** to store sensitive information such as API keys, tokens, or passwords. This ensures that sensitive values are not exposed in the UI or network calls. For more details refer [Secure Server Side Properties](individual-rest-endpoints/secure-server-side-properties.md).
+
+---
+
+ ## REST Request Timeouts 
 
 WaveMaker allows you to **customize timeout and connection settings** for REST service calls. These configuration properties control how long the platform waits for connections to be established, data to be received, and how many connections can be maintained. You can override these defaults by specifying system environment variables, Java system properties, or including them in the application’s configuration file (`app.properties`). 
 
@@ -81,17 +93,69 @@ The following properties can be configured to fine-tune REST behavior:
 | `app.multipartconfig.maxFileSize` | `300 MB` | Maximum file size allowed for multipart upload requests. |
 | `app.multipartconfig.maxRequestSize` | `-1` | Maximum total size of multipart request content. A value of `-1` means no limit. 
 
---- -->
+---
 
-## Authentication and Security
 
-WaveMaker supports different authentication models when configuring REST services:
 
-- **No Authentication** — Default option when the service does not require credentials.  
-- **Basic Authentication** — Uses username and password.  
-- **OAuth 2.0** — Allows integration with OAuth providers. You can select from pre-configured providers or define new ones during REST service configuration. 
+## Overview of Properties
 
-When securing REST calls, consider using **App Environment Properties** or **Server Side Properties** to store sensitive information such as API keys, tokens, or passwords. This ensures that sensitive values are not exposed in the UI or network calls. For more details refer [Secure Server Side Properties](individual-rest-endpoints/secure-server-side-properties.md).
+WaveMaker supports two primary property types for securing sensitive data:
+
+### App Environment Properties
+
+- These are **custom properties** you define and manage.
+- They can be used throughout your application wherever environment-specific values are needed.
+- Ideal for values like API keys, tokens, endpoints, and other configuration parameters that may differ across environments.
+- Once created, App Environment Properties appear in the REST service configuration dialog under **Header** and **Query** parameter options. 
+
+### Server-Side Properties
+
+- These are **built-in variables** provided by WaveMaker.
+- Server-Side Properties typically represent dynamic runtime information (for example, current date/time or logged-in user details).
+- Like App Environment Properties, they help keep sensitive values off the client and out of direct network calls.
+
+> Both property types help ensure sensitive values are not exposed on the UI or transmitted directly from the client.
+
+---
+
+## Configuring REST Services to Use a Proxy
+
+To prevent sensitive values from being exposed in requests made directly from the client, you can enable the **Use Proxy** option when setting up REST services:
+
+1. Add the REST service as usual, providing the endpoint URL and any required parameters.  
+2. For each **Header** or **Query** parameter that should not be sent directly from the client, assign it either a **Server-Side Property** or an **App Environment Property**.  
+3. Toggle **Use Proxy** to enable proxy routing for this REST service.  
+   - When proxy is enabled, REST calls are made from the server side through the proxy, not directly from the client browser or device.  
+   - This hides the sensitive parameter values from both network traces and UI variables.
+WaveMaker enforces the use of the proxy server whenever Server-Side or App Environment Properties are used in REST service parameters.
+![alt text](../importing-apis/individual-rest-endpoints/assets/rest-service-import-dialog.png)
+![alt text](../importing-apis/individual-rest-endpoints/assets/rest-endpoint-creation.png)
+
+---
+
+## How This Affects UI and Network Calls
+
+When sensitive values (such as keys or credentials) are bound to REST service **Header** or **Query parameters**, they may appear in the Variables dialog input fields at design time. Without protection, these values could leak through UI bindings or client-side scripts. 
+
+By enabling the proxy:
+
+- Parameter values are **sent from the server**, not from the client.  
+- The client cannot see or intercept these values in the UI or network traffic.  
+- This ensures that confidential information stays on the server side and is not exposed to end users. 
+
+---
+
+## Best Practices and Considerations
+
+- If App Environment Properties are not listed under Header or Query parameter selections, ensure they are added correctly to your configuration profile.  
+- You **must enable Use Proxy** before you can assign Server-Side or App Environment Properties to REST parameters.  
+- If you modify the REST service URL or other configurations, re-test the service before saving to ensure proper behavior. 
+- Using **App Environment Properties** for reusable configuration values across environments.  
+- Leveraging **Server-Side Properties** for dynamic runtime values.  
+- Enabling **Use Proxy** so that API keys, passwords, and other sensitive data are never sent directly from the client.  
+- Ensuring that confidential parameters are handled server-side and remain hidden from UI and network traffic. 
+
+These practices help you maintain secure integration with third-party services and safeguard critical application data.
 
 ---
 
@@ -116,6 +180,12 @@ Some REST endpoints require data input (e.g., text or file uploads):
 ![alt text](individual-rest-endpoints/assets/server-timeout-configuration.png)
 
 ---
+
+## Generated Code
+
+Once imported, WaveMaker automatically generates a complete backend for third-party APIs, including Java classes, service logic, and design-time configurations. Built on proven enterprise technologies such as Java, Spring, and Hibernate/JPA, this enables rapid and seamless API integration and customization.
+
+Developers have full access to the generated source code. Refer [generated  code](generated-code.md)
 
 ## Application Configuration Properties
 

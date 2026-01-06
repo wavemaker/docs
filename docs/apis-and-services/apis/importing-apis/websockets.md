@@ -80,6 +80,12 @@ WebSocket Variables also include properties and event hooks that control behavio
 
 ---
 
+## Generated Code
+
+Once imported, WaveMaker automatically generates a complete backend for third-party APIs, including Java classes, service logic, and design-time configurations. Built on proven enterprise technologies such as Java, Spring, and Hibernate/JPA, this enables rapid and seamless API integration and customization.
+
+Developers have full access to the generated source code. Refer [Generated code](generated-code.md)
+
 ## Application Configuration Properties
 
 Whenever services are imported into WaveMaker, the platform automatically **generates configuration properties** that can be mapped to different environments such as Development, QA, or Production.  

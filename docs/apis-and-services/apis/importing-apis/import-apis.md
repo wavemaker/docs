@@ -26,7 +26,7 @@ WaveMaker can generate ready-to-use UI elements for services imported from Swagg
 These widgets help you build UI screens with minimal code by binding REST API data directly to visual components. -->
 
 ---
-# API Workspace
+## API Workspace
 
 WaveMaker provides a dedicated **API Workspace** that serves as the central hub for all API-related activities.
 
@@ -108,6 +108,14 @@ Authentication settings allow WaveMaker to communicate securely with protected A
 <!-- ![alt text](assets/websocket-configuration.png) -->
 
 ---
+
+## Generated Code
+
+Once imported, WaveMaker automatically generates a complete backend for third-party APIs, including Java classes, service logic, and design-time configurations. Built on proven enterprise technologies such as Java, Spring, and Hibernate/JPA, this enables rapid and seamless API integration and customization.
+
+Developers have full access to the generated source code. Refer [generated  code](generated-code.md)
+
+
 
 <!-- ## Using Imported REST Services
 
