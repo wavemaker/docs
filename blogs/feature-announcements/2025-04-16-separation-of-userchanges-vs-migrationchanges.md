@@ -6,7 +6,7 @@ author: "Raviteja Dugge"
 
 WaveMaker Studio now separates your code edits (User Changes) from system-generated updates (Migration Changes). This update provides improved visibility, clarity, and control over project changes, making it easier to manage your work during platform upgrades.
 
-Previously, WaveMaker Studio's **View Changes** combined both user and migration changes in a single view. This often caused confusion and made it difficult to tell apart manual edits from automatic updates. In some cases, reverting critical migration changes — especially in files like [`pom.xml`](/blog/2022/03/24/wavemaker-application-pom) and build.xml — led to build failures and unnecessary debugging.
+Previously, WaveMaker Studio's **View Changes** combined both user and migration changes in a single view. This often caused confusion and made it difficult to tell apart manual edits from automatic updates. In some cases, reverting critical migration changes — especially in files like [`pom.xml`](/feature-announcements/2022/03/24/wavemaker-application-pom) and build.xml — led to build failures and unnecessary debugging.
 
 <!-- truncate -->
 

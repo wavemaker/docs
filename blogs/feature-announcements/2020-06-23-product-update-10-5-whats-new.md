@@ -15,7 +15,7 @@ Now, let's jump straight to see what's new in this release!
 
 ***Well, speed matters!***
 
-Ensuring a consistent user experience is important not just in terms of features and looks, but also in terms of speed. With our 10.5 update, we are all set to adapt CDN into WaveMaker. This allows WaveMaker apps to work together with geographically distributed servers that enable fast, reliable, and secure delivery of the content. Now, you can deploy your apps with CDN automatically. To read our developer blog, see [delivering your apps faster with WaveMaker](/blog/2020/06/23/deliver-faster-applications-with-wavemaker).
+Ensuring a consistent user experience is important not just in terms of features and looks, but also in terms of speed. With our 10.5 update, we are all set to adapt CDN into WaveMaker. This allows WaveMaker apps to work together with geographically distributed servers that enable fast, reliable, and secure delivery of the content. Now, you can deploy your apps with CDN automatically. To read our developer blog, see [delivering your apps faster with WaveMaker](/feature-announcements/2020/06/23/deliver-faster-applications-with-wavemaker).
 
 ## Custom Formatter
 

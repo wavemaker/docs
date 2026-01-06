@@ -4,7 +4,7 @@ author: Swetha Kundaram
 ---
 ---
 
-Earlier in this blog, we announced [ending support of WaveMaker 9 (WM) Projects](/blog/2021/12/08/wavemaker9x-end-of-support). WaveMaker offered support to manage individual versions of your app with our multi-version control system so that you could simultaneously work on both WM 9 and WM 10 projects. One of the key differences between the WM 9 and WM 10 is moving from AngularJS to Angular 11. 
+Earlier in this blog, we announced [ending support of WaveMaker 9 (WM) Projects](/feature-announcements/2021/12/08/wavemaker9x-end-of-support). WaveMaker offered support to manage individual versions of your app with our multi-version control system so that you could simultaneously work on both WM 9 and WM 10 projects. One of the key differences between the WM 9 and WM 10 is moving from AngularJS to Angular 11. 
 
 Angular laid its plan in January 2018 for the [final releases of AngularJS](https://docs.angularjs.org/misc/version-support-status) before entering long-term support (LTS) and extended the LTS due to the global pandemic until December 31, 2021. As we reach the end of life of AngularJS, we officially withdrew support of WM 9 projects starting **WM 10.12 release planned for February 2, 2022**. As a result, the existing WM 9 projects get archived.
 

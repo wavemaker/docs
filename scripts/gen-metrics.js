@@ -56,9 +56,9 @@ function walk(dir) {
   });
 }
 
-console.log('Scanning directory:', docsDir);
+// console.log('Scanning directory:', docsDir);
 walk(docsDir);
 
 // 4. Ensure the output directory exists or use a simple path
 fs.writeFileSync(path.join(__dirname, 'metrics.json'), JSON.stringify(stats, null, 2));
-console.log('Metrics generated successfully:', stats);
+// console.log('Metrics generated successfully:', stats);

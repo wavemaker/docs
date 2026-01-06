@@ -12,7 +12,7 @@ We are happy to announce new updates in WaveMaker that will enhance your develop
 
 WaveMaker now supports deployment on web servers using Java 17 and Java 21 alongside Java 11. This update prepares for future Java versions and enhances compatibility with modern libraries.
 
-[Read More](/blog/2024/06/24/java-update-17-and-21)
+[Read More](/feature-announcements/2024/06/24/java-update-17-and-21)
 
 
 ## Performance Improvements
@@ -28,7 +28,7 @@ WaveMaker now supports deployment on web servers using Java 17 and Java 21 along
 
 WaveMaker improves accessibility by using semantic tags like `<p>` and `<h1>–<h6>` instead of `<label>` tags outside of forms. This change ensures compliance with accessibility standards.
 
-[Read More](/blog/2024/05/27/label-accessibility)
+[Read More](/feature-announcements/2024/05/27/label-accessibility)
 
 
 ## Pull Request Flow for Custom VCS

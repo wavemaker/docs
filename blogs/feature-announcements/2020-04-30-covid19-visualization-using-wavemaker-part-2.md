@@ -3,7 +3,7 @@ title: "COVID-19 Visualization using WaveMaker - Part 2"
 author: Deepak Anupalli
 ---
 
-In my last blog post, we saw how the Corona Tracker app works and we discussed how to build a dashboard using WaveMaker. I recommend you to read the [part-1](/blog/2020/04/27/covid19-visualization-using-wavemaker) of the blog first. In this post, we will see how to build [visualization for charts](#how-to-build-charts-visualization) and [visualization for maps](/blog/2020/04/30/covid19-visualization-using-wavemaker-part-2#how-to-build-maps-visualization).
+In my last blog post, we saw how the Corona Tracker app works and we discussed how to build a dashboard using WaveMaker. I recommend you to read the [part-1](/feature-announcements/2020/04/27/covid19-visualization-using-wavemaker) of the blog first. In this post, we will see how to build [visualization for charts](#how-to-build-charts-visualization) and [visualization for maps](/feature-announcements/2020/04/30/covid19-visualization-using-wavemaker-part-2#how-to-build-maps-visualization).
 
 <!-- truncate -->
 
@@ -13,7 +13,7 @@ Link to the app: http://apps.wavemakeronline.com/CoronaTracker/
 
 Previously, we covered how to import REST API as datasource for the app and how to create a variable to access the REST API, and binding the widgets to the created variable.
 
-For more information, see [Corona Tracker App](/blog/2020/04/27/covid19-visualization-using-wavemaker#corona-tracker-app), [walkthrough of the app](/blog/2020/04/27/covid19-visualization-using-wavemaker#quick-walkthrough-of-the-app), and [how to build the dashboard](/blog/2020/04/27/covid19-visualization-using-wavemaker#how-to-build-the-dashboard).
+For more information, see [Corona Tracker App](/feature-announcements/2020/04/27/covid19-visualization-using-wavemaker#corona-tracker-app), [walkthrough of the app](/feature-announcements/2020/04/27/covid19-visualization-using-wavemaker#quick-walkthrough-of-the-app), and [how to build the dashboard](/feature-announcements/2020/04/27/covid19-visualization-using-wavemaker#how-to-build-the-dashboard).
 
 ## How to build Charts Visualization
 
@@ -103,4 +103,4 @@ Using single-click deployment from WaveMaker, the app is deployed on to containe
 
 ## See Also
 
-[COVID-19 Visualization using WaveMaker - Part 1](/blog/2020/04/27/covid19-visualization-using-wavemaker)
+[COVID-19 Visualization using WaveMaker - Part 1](/feature-announcements/2020/04/27/covid19-visualization-using-wavemaker)
