@@ -2,7 +2,7 @@
 last_update: { author: "Priyanka Bhadri" }
 ---
 
-# Working with WebSockets
+# WebSockets
 
 WebSockets provide a **full-duplex, bidirectional communication channel** over a single TCP connection. Unlike traditional request/response protocols, WebSockets allow both the client and server to send messages at any time without repeated HTTP calls. This makes them ideal for **real-time applications** such as live dashboards, chat systems, notifications, and other interactive features. 
 
@@ -79,6 +79,31 @@ Once the WebSocket service is imported, you must create a **WebSocket Variable**
 WebSocket Variables also include properties and event hooks that control behavior such as whether the connection opens automatically on page load or how new messages are added to the dataset. 
 
 ---
+
+## Application Configuration Properties
+
+Whenever services are imported into WaveMaker, the platform automatically **generates configuration properties** that can be mapped to different environments such as Development, QA, or Production.  
+You can view and manage these properties in the **Profiles**.  
+For more information, refer to the **[Profiles](../../configurations/profiles.md)** section in the documentation.
+
+For more details on environment-specific configurations, refer to the **[ Profiles Settings](../../configurations/profile-settings.md)** section.
+
+<details>
+<summary>Click to expand configuration properties</summary>
+
+```properties
+# ---------------------------
+# WebSocket Configuration
+# ---------------------------
+websocket.websocket.basepath=
+websocket.websocket.host=echo.websocket.org
+websocket.websocket.scheme=wss
+```
+</details>
+
+---
+
+
 
 ## Summary
 

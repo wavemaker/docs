@@ -2,7 +2,7 @@
 last_update: { author: "Priyanka Bhadri" }
 ---
 
-# Import Open API - Swagger
+# Open API - Swagger
 
 WaveMaker provides built-in support for importing REST APIs defined using **Swagger/OpenAPI specifications** (JSON or YAML). This feature allows developers to quickly integrate external services into their applications without manual coding.
 
@@ -96,13 +96,13 @@ Once imported, you can view all identified entities on the left side navigation.
 Once the Swagger API is selected and its metadata is verified:
 
 - You can configure authentication for the API.
-- Swagger definitions may include support for **[OAuth 2.0]()**.
+- Swagger definitions may include support for **[OAuth 2.0](individual-rest-endpoints/rest-services-using-oauth20.md)**.
 - If OAuth is required, click **OAuth Provider** in the import dialog and enter the relevant values such as:
   - Access Token URL
   - Client ID
   - Client Secret
 
-Authentication settings allow WaveMaker to communicate securely with protected APIs. For more detailed steps on configuring OAuth providers, refer to the [OAuth Provider Configuration]().
+Authentication settings allow WaveMaker to communicate securely with protected APIs. For more detailed steps on configuring OAuth providers, refer to the [OAuth Provider Configuration](individual-rest-endpoints/rest-services-using-oauth20.md).
 
 ![alt text](assets/test-imported-api.png)
 <!-- ![alt text](assets/websocket-configuration.png) -->
@@ -117,6 +117,38 @@ After successful import and authentication configuration:
 - This enables CRUD-style interaction with the imported API without writing manual HTTP client code.
 
 --- -->
+
+## Application Configuration Properties
+
+Whenever services are imported into WaveMaker, the platform automatically **generates configuration properties** that can be mapped to different environments such as Development, QA, or Production.  
+You can view and manage these properties in the **Profiles**.  
+For more information, refer to the **[Profiles](../../configurations/profiles.md)** section in the documentation.
+
+For more details on environment-specific configurations, refer to the **[ Profiles Settings](../../configurations/profile-settings.md)** section.
+
+<details>
+<summary>Click to expand configuration properties</summary>
+
+```properties
+# ---------------------------
+# OAuth2 (Swagger Petstore) Configuration
+# ---------------------------
+oauth2.swagger_petstore_auth.accessTokenUrl=
+oauth2.swagger_petstore_auth.authorizationUrl=https://petstore.swagger.io/oauth/authorize
+oauth2.swagger_petstore_auth.clientId=
+oauth2.swagger_petstore_auth.clientSecret=
+oauth2.swagger_petstore_auth.isPkceRequired=false
+oauth2.swagger_petstore_auth.oauth2Flow=IMPLICIT
+
+## Swagger API
+rest.swagger.apikey.header.api_key=
+rest.swagger.basepath=/v2
+rest.swagger.host=petstore.swagger.io
+rest.swagger.scheme=https
+```
+</details>
+
+---
 
 
 ## Summary

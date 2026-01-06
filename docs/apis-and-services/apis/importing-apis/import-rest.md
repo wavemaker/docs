@@ -2,7 +2,7 @@
 last_update: { author: "Priyanka Bhadri" }
 ---
 
-# Import REST Services
+# Individual REST Endpoints
 
 REST Services (Representational State Transfer) are web services designed to provide lightweight, scalable, and maintainable APIs that communicate over standard HTTP protocols. In a RESTful service, resources are exposed via URLs and clients interact with them using standard HTTP methods such as GET, POST, PUT, PATCH, and DELETE. These services typically return responses in JSON or XML formats. WaveMaker makes it easy to integrate external REST services into your application and consume them using variables that can be bound to widgets for data display. 
 
@@ -42,7 +42,7 @@ To integrate a third-party REST API into your WaveMaker app:
 7. Once verified, click **Import** to bring the service into your project. 
  The **Import** option becomes active only after a successful test. 
  
-![alt text](assets/oauth2-configuration.png)
+![alt text](individual-rest-endpoints/assets/oauth2-configuration.png)
 <!-- ![alt text](image.png) -->
 
 ---
@@ -58,20 +58,30 @@ When setting up a REST service, you can configure several types of parameters:
 
 These parameters automatically appear as **input fields** in the service variable definition and can be bound to UI elements or variables. 
 
----
+<!-- --- -->
 
-## Using the REST Service in the App
+<!-- ## REST Request Timeouts
 
-After importing a REST service:
+WaveMaker allows you to **customize timeout and connection settings** for REST service calls. These configuration properties control how long the platform waits for connections to be established, data to be received, and how many connections can be maintained. You can override these defaults by specifying system environment variables, Java system properties, or including them in the application’s configuration file (`app.properties`). 
 
-1. Create a **Variable** for the REST method you want to use.  
-2. Map input fields (query, header, path, or body parameters) as required.  
-3. Invoke the variable from UI events (such as button clicks) or page load logic.  
-4. The variable’s `dataSet` property receives the response, which can be bound to widgets such as lists, grids, or charts for display. 
 
-REST services behave like any other data source in WaveMaker, enabling seamless integration with the UI via data binding. 
+### Timeout and Connection Properties
 
----
+The following properties can be configured to fine-tune REST behavior:
+
+| Property | Default Value | Description |
+|----------|---------------|-------------|
+| `app.rest.useSystemProperties` | `false` | When set to `true`, WaveMaker uses standard Java system properties (`http.proxyHost`, `http.proxyPort`, `http.nonProxyHosts`) for REST connections.  |
+| `app.rest.connectionSocketTimeout` | `360` | Maximum time in **seconds** to wait for the first byte of data after a connection is established. A timeout exception is thrown if the limit is exceeded. 
+| `app.rest.connectionTimeout` | `30` | Maximum time in **seconds** to wait for a TCP connection to be established with the REST endpoint. A timeout occurs if the connection cannot be established in this period. 
+| `app.rest.connectionRequestTimeout` | `5` | Maximum time in **seconds** to wait for a connection from the HTTP connection pool. A timeout exception will be thrown if the connection cannot be acquired within the specified period.  |
+| `app.rest.maxTotalConnections` | `100` | Maximum number of total simultaneous connections that the connection manager can maintain. |
+| `app.rest.maxConnectionsPerRoute` | `50` | Maximum number of connections per route (per REST endpoint) in the connection pool.  |
+| `app.rest.tlsVersions` | `TLSv1.3,TLSv1.2` | List of TLS protocols enabled for secure connections when invoking HTTPS services.  |
+| `app.multipartconfig.maxFileSize` | `300 MB` | Maximum file size allowed for multipart upload requests. |
+| `app.multipartconfig.maxRequestSize` | `-1` | Maximum total size of multipart request content. A value of `-1` means no limit. 
+
+--- -->
 
 ## Authentication and Security
 
@@ -81,7 +91,7 @@ WaveMaker supports different authentication models when configuring REST service
 - **Basic Authentication** — Uses username and password.  
 - **OAuth 2.0** — Allows integration with OAuth providers. You can select from pre-configured providers or define new ones during REST service configuration. 
 
-When securing REST calls, consider using **App Environment Properties** or **Server Side Properties** to store sensitive information such as API keys, tokens, or passwords. This ensures that sensitive values are not exposed in the UI or network calls. 
+When securing REST calls, consider using **App Environment Properties** or **Server Side Properties** to store sensitive information such as API keys, tokens, or passwords. This ensures that sensitive values are not exposed in the UI or network calls. For more details refer [Secure Server Side Properties](individual-rest-endpoints/secure-server-side-properties.md).
 
 ---
 
@@ -103,7 +113,33 @@ Some REST endpoints require data input (e.g., text or file uploads):
 - You can specify input types as **File** or **Text**, allowing upload of files (e.g., images) or submission of textual data.  
 - For internal WaveMaker REST APIs, `application/json` or `text/plain` types are also supported. 
 <!-- ![alt text](image.png)# Import REST Services -->
-![alt text](assets/server-timeout-configuration.png)
+![alt text](individual-rest-endpoints/assets/server-timeout-configuration.png)
+
+---
+
+## Application Configuration Properties
+
+Whenever services are imported into WaveMaker, the platform automatically **generates configuration properties** that can be mapped to different environments such as Development, QA, or Production.  
+You can view and manage these properties in the **Profiles**.  
+For more information, refer to the **[Profiles](../../configurations/profiles.md)** section in the documentation.
+
+For more details on environment-specific configurations, refer to the **[ Profile Settings](../../configurations/profile-settings.md)** section.
+
+<details>
+<summary>Click to expand configuration properties</summary>
+
+```properties
+# ---------------------------
+# REST API Configurations
+# ---------------------------
+
+## Random User API
+rest.randomuser.basepath=
+rest.randomuser.host=randomuser.me
+rest.randomuser.scheme=https
+
+```
+</details>
 
 ---
 
