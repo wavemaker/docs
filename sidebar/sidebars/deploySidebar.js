@@ -1,64 +1,62 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarConfig} */
 export default [
   {
-    type: "doc",
-    id: "build-and-deploy/overview",
+    type: 'doc',
+    id: 'build-and-deploy/overview',
   },
-
-  /* ================= BUILD ================= */
   {
-    type: "category",
-    label: "build",
+    type: 'category',
+    label: 'build',
     collapsible: true,
     collapsed: true,
     items: [
       {
-        type: "category",
-        label: "web",
+        type: 'category',
+        label: 'web',
         collapsible: true,
         collapsed: true,
         items: [
           {
-            type: "doc",
-            id: "build-and-deploy/build/web/build-options",
+            type: 'doc',
+            id: 'build-and-deploy/build/web/build-options',
           },
 
           {
-            type: "category",
-            label: "Packaging",
+            type: 'category',
+            label: 'Packaging',
             collapsible: true,
             collapsed: true,
             items: [
               {
-                type: "category",
-                label: "Package WAR",
+                type: 'category',
+                label: 'Package WAR',
                 collapsible: true,
                 collapsed: true,
                 items: [
                   {
-                    type: "doc",
-                    id: "build-and-deploy/build/web/package/war/build-war-from-studio",
+                    type: 'doc',
+                    id: 'build-and-deploy/build/web/package/war/build-war-from-studio',
                   },
                   {
-                    type: "doc",
-                    id: "build-and-deploy/build/web/package/war/build-war-from-projectzip",
+                    type: 'doc',
+                    id: 'build-and-deploy/build/web/package/war/build-war-from-projectzip',
                   },
                   {
-                    type: "doc",
-                    id: "build-and-deploy/build/web/package/war/build-war-using-docker",
+                    type: 'doc',
+                    id: 'build-and-deploy/build/web/package/war/build-war-using-docker',
                   },
                 ],
               },
 
               {
-                type: "category",
-                label: "Docker Image",
+                type: 'category',
+                label: 'Docker Image',
                 collapsible: true,
                 collapsed: true,
                 items: [
                   {
-                    type: "doc",
-                    id: "build-and-deploy/build/web/package/docker/docker-image",
+                    type: 'doc',
+                    id: 'build-and-deploy/build/web/package/docker/docker-image',
                   },
                 ],
               },
@@ -66,20 +64,20 @@ export default [
           },
 
           {
-            type: "doc",
-            id: "build-and-deploy/build/web/static-content",
+            type: 'doc',
+            id: 'build-and-deploy/build/web/static-content',
           },
         ],
       },
       {
-        type: "category",
-        label: "mobile",
+        type: 'category',
+        label: 'mobile',
         collapsible: true,
         collapsed: true,
         items: [
           {
-            type: "doc",
-            id: "build-and-deploy/build/mobile/overview",
+            type: 'doc',
+            id: 'build-and-deploy/build/mobile/overview',
           },
         ],
       },
@@ -88,63 +86,62 @@ export default [
 
   /* ================= DEPLOY ================= */
   {
-    type: "category",
-    label: "Deploy",
+    type: 'category',
+    label: 'Deploy',
     collapsible: true,
     collapsed: true,
     items: [
       {
-        type: "doc",
-        id: "build-and-deploy/deploy/one-click deployment",
+        type: 'doc',
+        id: 'build-and-deploy/deploy/one-click deployment',
       },
       {
-        type: "doc",
-        id: "build-and-deploy/deploy/deploy-to-web-server",
+        type: 'doc',
+        id: 'build-and-deploy/deploy/deploy-to-web-server',
       },
       {
-        type: "doc",
-        id: "build-and-deploy/deploy/container-deployment",
+        type: 'doc',
+        id: 'build-and-deploy/deploy/container-deployment',
       },
       {
-        type: "doc",
-        id: "build-and-deploy/deploy/deploy-static-content",
+        type: 'doc',
+        id: 'build-and-deploy/deploy/deploy-static-content',
       },
-      
     ],
   },
 
   /* ================= PUBLISH ================= */
   {
-    type: "category",
-    label: "Publish",
+    type: 'category',
+    label: 'Publish',
     collapsible: true,
     collapsed: true,
     items: [
       {
-        type: "doc",
-        id: "build-and-deploy/publish/overview",
+        type: 'doc',
+        id: 'build-and-deploy/publish/overview',
       },
     ],
   },
 
   /* ================= PIPELINE ================= */
   {
-    type: "category",
-    label: "Pipeline",
+    type: 'category',
+    label: 'Pipeline',
     collapsible: true,
     collapsed: true,
     items: [
       {
-        type: "doc",
-        id: "build-and-deploy/pipeline/overview",
+        type: 'doc',
+        id: 'build-and-deploy/pipeline/overview',
       },
       {
-        type: "doc",
-        id: "build-and-deploy/pipeline/continous-integration",
+        type: 'doc',
+        id: 'build-and-deploy/pipeline/continous-integration',
       },
       {
-        type: "doc",
-        id: "build-and-deploy/pipeline/continous-deployment",
+        type: 'doc',
+        id: 'build-and-deploy/pipeline/continous-deployment',
       },
     ],
   },

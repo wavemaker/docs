@@ -14,20 +14,20 @@ import metrics from '../scripts/metrics.json';
 // utility fn to insert style for docs without Author
 const noAuthorDocIds = new Set(metrics.noAuthorIds);
 
-/** @param {any[]} items 
+/** @param {any[]} items
  * @returns {any[]}
  */
 function highlightMissing(items) {
-  return items.map((item) => {
+  return items.map(item => {
     // If it's a category, recursively process its items
     if (item.type === 'category') {
       return { ...item, items: highlightMissing(item.items) };
     }
     // If it's a doc, check against our no Author doc list
     if (item.type === 'doc' && noAuthorDocIds.has(item.id)) {
-      return { 
-        ...item, 
-        className: 'sidebar-missing-author' // This class is added to the <li>
+      return {
+        ...item,
+        className: 'sidebar-missing-author', // This class is added to the <li>
       };
     }
     return item;
