@@ -9,41 +9,42 @@ import guideSidebar from './sidebars/guideSidebar';
 import studioSidebar from './sidebars/studioSidebar';
 import userInterfacesWebSidebar from './sidebars/userInterfacesWebSidebar';
 import userInterfacesMobileSidebar from './sidebars/userInterfacesMobileSidebar';
-/**
- * Creating a sidebar enables you to:
- - create an ordered group of docs
- - render a sidebar for each doc of that group
- - provide next/previous navigation
+import metrics from '../scripts/metrics.json';
 
- The sidebars can be generated from the filesystem, or explicitly defined here.
+// utility fn to insert style for docs without Author
+const noAuthorDocIds = new Set(metrics.noAuthorIds);
 
- Create as many sidebars as you want.
-
- @type {import('@docusaurus/plugin-content-docs').SidebarsConfig}
+/** @param {any[]} items 
+ * @returns {any[]}
  */
+function highlightMissing(items) {
+  return items.map((item) => {
+    // If it's a category, recursively process its items
+    if (item.type === 'category') {
+      return { ...item, items: highlightMissing(item.items) };
+    }
+    // If it's a doc, check against our no Author doc list
+    if (item.type === 'doc' && noAuthorDocIds.has(item.id)) {
+      return { 
+        ...item, 
+        className: 'sidebar-missing-author' // This class is added to the <li>
+      };
+    }
+    return item;
+  });
+}
+
+/** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   // By default, Docusaurus generates a sidebar from the docs folder structure
-  designSystemSidebar,
-  aiAgentsSidebar,
-  apisServicesSidebar,
-  deploySidebar,
-  guideSidebar,
-  studioSidebar,
-  userInterfacesWebSidebar,
-  userInterfacesMobileSidebar,
-
-  // But you can create a sidebar manually one by one
-  /*
-  tutorialSidebar: [
-    'intro',
-    'hello',
-    {
-      type: 'category',
-      label: 'Tutorial',
-      items: ['tutorial-basics/create-a-document'],
-    },
-  ],
-   */
+  designSystemSidebar: highlightMissing(designSystemSidebar),
+  aiAgentsSidebar: highlightMissing(aiAgentsSidebar),
+  apisServicesSidebar: highlightMissing(apisServicesSidebar),
+  deploySidebar: highlightMissing(deploySidebar),
+  guideSidebar: highlightMissing(guideSidebar),
+  studioSidebar: highlightMissing(studioSidebar),
+  userInterfacesWebSidebar: highlightMissing(userInterfacesWebSidebar),
+  userInterfacesMobileSidebar: highlightMissing(userInterfacesMobileSidebar),
 };
 
 export default sidebars;

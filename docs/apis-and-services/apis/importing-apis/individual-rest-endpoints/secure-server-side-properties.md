@@ -8,7 +8,7 @@ When integrating REST services in your WaveMaker application, it's important to 
 
 ---
 
-## Overview of Properties
+## Secure Property Types
 
 WaveMaker supports two primary property types for securing sensitive data:
 
@@ -39,6 +39,7 @@ To prevent sensitive values from being exposed in requests made directly from th
    - When proxy is enabled, REST calls are made from the server side through the proxy, not directly from the client browser or device.  
    - This hides the sensitive parameter values from both network traces and UI variables.
 WaveMaker enforces the use of the proxy server whenever Server-Side or App Environment Properties are used in REST service parameters.
+
 ![alt text](assets/rest-service-import-dialog.png)
 ![alt text](assets/rest-endpoint-creation.png)
 

@@ -12,8 +12,9 @@ Developers have complete access to the generated source code and can confidently
 ---
 
 ## Backend Architecture
+ 
+This section describes the structure of a WaveMaker-generated service, using the **[Random User](https://randomuser.me/api/?results=5)** as an example. The same structure and patterns apply to all other third-party APIs imported into WaveMaker.
 
-This describes the structure of a WaveMaker-generated service, using **[Random User](https://randomuser.me/api/?results=5)** as an example.  
 WaveMaker services represent fully integrated backend components, including design-time configuration, generated Java code, and runtime metadata.
 
 - Developers import a **Swagger/OpenAPI specification** (JSON/YAML) that defines API endpoints, request/response structures, parameters, and authentication requirements.
@@ -117,7 +118,7 @@ Whenever services are imported into WaveMaker, the platform automatically **gene
 You can view and manage these properties in the **Profiles**.  
 For more information, refer to the **[Profiles](../../configurations/profiles.md)** section in the documentation.
 
-For more details on environment-specific configurations, refer to the **[Deployment Profiles](../../configurations/profile-settings.md)** section.
+For more details on environment-specific configurations, refer to the **[ Profile Settings](../../configurations/profile-settings.md)** section.
 
 <details>
 <summary>Click to expand configuration properties</summary>
@@ -140,6 +141,12 @@ oauth2.swagger_petstore_auth.clientSecret=
 oauth2.swagger_petstore_auth.isPkceRequired=false
 oauth2.swagger_petstore_auth.oauth2Flow=IMPLICIT
 
+## Swagger API
+rest.swagger.apikey.header.api_key=
+rest.swagger.basepath=/v2
+rest.swagger.host=petstore.swagger.io
+rest.swagger.scheme=https
+
 # ---------------------------
 # REST API Configurations
 # ---------------------------
@@ -149,11 +156,7 @@ rest.randomuser.basepath=
 rest.randomuser.host=randomuser.me
 rest.randomuser.scheme=https
 
-## Swagger API
-rest.swagger.apikey.header.api_key=
-rest.swagger.basepath=/v2
-rest.swagger.host=petstore.swagger.io
-rest.swagger.scheme=https
+
 
 ## WaveMaker Online Services
 rest.wavemakeronline.basepath=/pk9yct3s6nqt/MyApp/services

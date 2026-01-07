@@ -8,4 +8,4 @@ last_update: { author: "Author Name" }
 
 - [Overview](./overview.md) - Concepts overview
 - [Architecture](./architecture.md) - Architectural patterns
-- [Security](../security/overview.md) - Security practices
+- [Security](../security/overview.mdx) - Security practices

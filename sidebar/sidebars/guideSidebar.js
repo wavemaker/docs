@@ -10,7 +10,7 @@ export default [
                 "type": "category",
                 "label": "App Development",
                 "items": [
-                    "guide/howtos/app-development/creating-registration-page"
+                    "guide/app-development/creating-registration-page"
                 ]
             },
             {
