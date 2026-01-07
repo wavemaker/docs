@@ -92,7 +92,7 @@ export default function NavbarContent() {
         <>
          <NavbarItems items={rightItems} />
          <NavbarColorModeToggle className={styles.colorModeToggle} />
-         <Link to="https://www.wavemaker.com/get-demo/" className="button button--outline button--primary">Schedule Demo</Link>
+         <Link to="https://www.wavemaker.com/get-demo/" className="button button--primary">Schedule Demo</Link>
         </>
       }
     />

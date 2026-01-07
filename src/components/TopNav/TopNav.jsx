@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Link from "@docusaurus/Link";
 import BrowserOnly from "@docusaurus/BrowserOnly";
+
+const STORAGE_KEY = "secondary_nav_active";
 
 const topNavData = [
   {
@@ -39,29 +41,40 @@ export default function SecondaryNavbar({ navItems = topNavData }) {
   return (
     <BrowserOnly fallback={<nav className="top_nav" />}>
       {() => {
-        const location = window.location;
+        const [activeId, setActiveId] = useState(null);
+
+        // Load active item from localStorage on first render
+        useEffect(() => {
+          const savedId = localStorage.getItem(STORAGE_KEY);
+          if (savedId) {
+            setActiveId(Number(savedId));
+          }
+        }, []);
+
+        const handleClick = (id) => {
+          setActiveId(id);
+          localStorage.setItem(STORAGE_KEY, id);
+        };
+
         return (
           <nav className="top_nav">
             <ul className="nav-main">
-              {navItems.map((item) => {
-                // For User Interface, check if path starts with /docs/user-interfaces/
-                // to make it active for both web and mobile sections
-                const isActive = item.label === "User Interface"
-                  ? location.pathname.startsWith("/docs/user-interfaces/")
-                  : location.pathname.startsWith(item.link);
-                return (
-                  <li
-                    key={item.id}
-                    className={
-                      isActive ? "top-nav-link-item active" : "top-nav-link-item"
-                    }
+              {navItems.map((item) => (
+                <li
+                  key={item.id}
+                  className={`top-nav-link-item ${
+                    activeId === item.id ? "active" : ""
+                  }`}
+                >
+                  <Link
+                    to={item.link}
+                    className="top-nav-link"
+                    onClick={() => handleClick(item.id)}
                   >
-                    <Link to={item.link} className="top-nav-link">
-                      {item.label}
-                    </Link>
-                  </li>
-                );
-              })}
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </nav>
         );
