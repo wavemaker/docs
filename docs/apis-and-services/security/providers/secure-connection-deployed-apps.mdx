@@ -54,7 +54,7 @@ To set up authentication using an LDAP data source, choose LDAP  as the **Securi
 
 When you choose  LDAP as the **Security Provider**, you can perform the following configurations:
 
-- LDAP URL : This field specifies the host name and port number of the LDAP server. This is the root node of which security will be able to use - ldap://localhost:389/dc=wavemaker,dc=com. For deployment profile, you can specify multiple LDAP server URLs , if required, by providing the multiple LDAP URLs as space-separated values, from the security tab of the [Profile Configuration](/learn/app-development/deployment/configuration-profiles/). 
+- LDAP URL : This field specifies the host name and port number of the LDAP server. This is the root node of which security will be able to use - ldap://localhost:389/dc=wavemaker,dc=com. For deployment profile, you can specify multiple LDAP server URLs , if required, by providing the multiple LDAP URLs as space-separated values, from the security tab of the [Profile Configuration](#). 
 
 {/*[![](/learn/assets/sec user ldap url.png)](/learn/assets/sec user ldap url.png)*/}
 
@@ -77,7 +77,7 @@ Role Mapping for logged in users can come from the configured LDAP security prov
         - Group Search Base  the search base from which the search for group membership should be performed. Eg: ou=roles, where ou is organizational unit
         - Group Name Attribute  the attribute that holds data about the role name for a group. Eg: cn (common name)
         - User Group Filter  the search filter used to search through the LDAP directory to find the roles to which an authenticated user belongs. {0} would be substituted with the user's DN. Eg: (member={0})
-    - If you select **Database** then authentication is performed using LDAP and authorization (roles) content is retrieved from the database. This allows you to use username and password credentials from LDAP while retrieving role content from a separate database. For role configuration using database [see here](/learn/app-development/app-security/authorization/#user-onboarding).
+    - If you select **Database** then authentication is performed using LDAP and authorization (roles) content is retrieved from the database. This allows you to use username and password credentials from LDAP while retrieving role content from a separate database. For role configuration using database [see here](#).
 
 ## Active Directory
 
@@ -94,7 +94,7 @@ When you choose Active Directory as the **Security Provider**, you can perform t
 - Test username:  Full DN of the user account for testing connection URL. Example: user1. If the domain is provided, then simply enter the username. On the other hand, if a domain is not provided, then username must be appended to the domain name.
 - Test user password:  The password for the test account that you use to test the AD URL.
 
-Once you have configured the security provider, click the **Test Connection** button, test user credentials are authenticated in this step. Keep in mind, during runtime, the authentication will happen based on user credentials and user search pattern. [See here for more use cases](/learn/how-tos/active-directory-use-cases/).
+Once you have configured the security provider, click the **Test Connection** button, test user credentials are authenticated in this step. Keep in mind, during runtime, the authentication will happen based on user credentials and user search pattern. [See here for more use cases](#).
 
 ### Role Mapping
 
@@ -103,13 +103,13 @@ Role Mapping for logged in users can come from the configured Active Directory s
 
 - Search User Role : Check this box to select the user role provider - Database or AD.
     - If you select **AD** then both authentication and authorization (roles) will be retrieved from the AD security provider. You need to configure the Group Role Attribute. 
-    - If you select **Database** then authentication is performed using AD and authorization (roles) content is retrieved from the database. This allows you to use username and password credentials from AD while retrieving role content from a separate database. For role configuration using database [see here](/learn/app-development/app-security/authorization/#user-onboarding).
+    - If you select **Database** then authentication is performed using AD and authorization (roles) content is retrieved from the database. This allows you to use username and password credentials from AD while retrieving role content from a separate database. For role configuration using database [see here](#).
 
 ## CAS
 
 The **Central Authentication Service** (**CAS**) is a single sign-on protocol for the web. Its purpose is to permit a user to access multiple applications while providing their credentials (such as user id and password) only once. It also allows web applications to authenticate users without gaining access to a user's security credentials, such as a password.
 
-To set up authentication using a Central Authentication Service, choose CAS  as the **Security Provider**. [Know more about single sign-on using CAS](/learn/app-development/app-security/central-authentication-system/).
+To set up authentication using a Central Authentication Service, choose CAS  as the **Security Provider**. [Know more about single sign-on using CAS](#).
 
 When you choose CAS as the **Security Provider**, you can perform the following configurations on the **Setup** tab:
 
@@ -126,16 +126,16 @@ Role Mapping for logged in users can come from the configured CAS security provi
 
 - Select User Role Provider : Choose the user role provider. There are two role providers - CAS and Database.
     - The user can configure **CAS** role attribute and the same role can be configured in the WaveMaker application.  The Role Attribute Name  needs to be configured.
-    - If you select ** Database ** then authentication is performed using CAS and authorization (roles) content is retrieved from the database. This allows you to use username and password credentials from CAS while retrieving role content from a separate database.For role configuration using database [see here](/learn/app-development/app-security/authorization/#user-onboarding).
+    - If you select ** Database ** then authentication is performed using CAS and authorization (roles) content is retrieved from the database. This allows you to use username and password credentials from CAS while retrieving role content from a separate database.For role configuration using database [see here](#).
 
 ## SAML
 
 **Security Assertion Markup Language (SAML)** is an XML-based standard for exchanging authorization and authentication data between security domains. SAML exchanges are between
 
-- an identity provider (IdP) – producer of assertions, and
-- service provider (SP) – consumer of assertions.
+- an identity provider (IdP) - producer of assertions, and
+- service provider (SP) - consumer of assertions.
 
-SAML Configuration in WaveMaker helps you configure the WaveMaker application with any SAML 2.0 compliant Identity provider. [Know more about SAML](/learn/app-development/app-security/saml-integration/).
+SAML Configuration in WaveMaker helps you configure the WaveMaker application with any SAML 2.0 compliant Identity provider. [Know more about SAML](#).
 
 ## Custom
 
