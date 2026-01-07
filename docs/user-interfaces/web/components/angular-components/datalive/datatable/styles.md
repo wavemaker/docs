@@ -35,4 +35,4 @@ Similar to columns styling, styles can be applied to rows in the Data Table. Con
 
 [![](./assets/img/table-config3.png)](./assets/img/table-config3.png)
 
-For examples, see [Custom Styling Data Table Columns & Rows](../../../../../../guide/components/angular-components/data-table-styling.md)
+For examples, see [Custom Styling Data Table Columns & Rows](../../../../../../guide/components/data-table-styling.md)

@@ -65,7 +65,7 @@ You can easily change the layout of the options inside the CheckboxSet, so that 
 
 ## See Also
 
-[Working with Selection Widgets](../../../../../guide/components/angular-components/selection-widgets-use-case.md)  
-[How to use CheckboxSet widget to filter a List](../../../../../guide/components/angular-components/checkboxset-filter-list-data.md)  
+[Working with Selection Widgets](../../../../../guide/components/selection-widgets-use-case.md)  
+[How to use CheckboxSet widget to filter a List](../../../../../guide/components/checkboxset-filter-list-data.md)  
 
 
