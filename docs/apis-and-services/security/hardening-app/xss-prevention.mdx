@@ -2,6 +2,7 @@
 last_update: { author: "Shahnawaz Ahmed" }
 ---
 # XSS Prevention
+---
 [Cross Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/) is a type of security attack, which injects malicious scripts into web applications to execute, generally in the form of a browser side script to an end-user.
 
 Typically, WaveMaker handles all XSS attacks using [Angular Sanitization](https://angular.io/api/platform-browser/DomSanitizer). Therefore, the apps are not vulnerable to XSS attacks by default. Sanitization handles untrusted values turning them into a safe value to insert into the generated code. However, in some cases, developers may want to include executable code, such as HTML (Hypertext Markup Language) content, giving developers the flexibility to bypass the code.
