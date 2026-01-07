@@ -1,14 +1,58 @@
 ---
 title: JavaScript Agent
-last_update: { author: "Author Name" }
+last_update: { author: "Swetha Kundaram" }
 ---
 
+- [When JavaScript Is Used in WaveMaker](#when-javascript-is-used-in-wavemaker)
+- [How Aira Handles JavaScript Logic](#how-aira-handles-javascript-logic)
 
-## Overview
+## When JavaScript Is Used in WaveMaker
+
+WaveMaker builds most of the application for you. You design pages visually and configure data sources without code. JavaScript is used only when the visual setup cannot express the logic you need.
+
+### How It Works
+
+- UI elements like pages and widgets are created visually.
+- Data sources like APIs and databases are configured, not coded.
+- JavaScript runs only to handle custom logic or edge cases.
+
+**UI (Visual)** → **Data (Configured)** → **JavaScript (Logic gaps)**  
+
+#### Example
+
+**A form submits data using built-in bindings**: JavaScript runs only if you need to validate a field or change behavior based on conditions.
+
+## How Aira Handles JavaScript Logic
+
+Aira uses a dedicated agent called **wm_js_agent** to handle JavaScript. This agent adds logic without changing how the app is built. Aira's job is to attach behavior where logic is needed.
+
+* Extends page or app behavior.
+* Uses existing widgets, variables, and events.
+* Respects WaveMaker’s runtime model.
+
+### How It Works
+
+1. Aira reads the existing WaveMaker page and variables.
+2. The **wm_js_agent** generates JavaScript only when required.
+3. The code runs within WaveMaker’s execution rules.
+
+**WaveMaker UI** → **Existing Variables** → **wm_js_agent** → **JavaScript Logic**  
+
+![](/learn/assets/js-agent-flow.png)
+
+#### Example
+
+**A page already has a button and a variable**: The **wm_js_agent** adds logic to run when the button is clicked. Nothing visual changes. Only behavior does.
+
+
+## wm_js_agent
 
 The **wm_js_agent** is the JavaScript execution agent within the AIRA system. Its responsibility is to generate and integrate JavaScript that extends or customizes behavior at the page or application level while remaining fully compliant with WaveMaker’s execution model.
 
 This agent works strictly within the boundaries of existing UI structure and variables. It does not introduce new UI elements, alter markup, or redefine application structure. Its purpose is to attach behavior, not to reshape the interface.
+
+
+
 
 ## Role in AIRA Architecture
 
