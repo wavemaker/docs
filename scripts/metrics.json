@@ -6,10 +6,10 @@
   "authors": {
     "Priyanka Bhadri": 29,
     "Sagar Vemala": 2,
-    "Author Name": 366,
+    "Author Name": 365,
     "Shahnawaz Ahmed": 16,
     "Tejaswini K": 10,
-    "Swetha Kundaram": 1,
+    "Swetha Kundaram": 2,
     "Mayank Prakash": 3
   },
   "noAuthorDocs": [
@@ -1374,11 +1374,6 @@
         "name": "java-agent.md",
         "path": "developing-with-agents/aira-agents/java-agent.md",
         "id": "developing-with-agents/aira-agents/java-agent"
-      },
-      {
-        "name": "javascript-agent.md",
-        "path": "developing-with-agents/aira-agents/javascript-agent.md",
-        "id": "developing-with-agents/aira-agents/javascript-agent"
       },
       {
         "name": "marketplace-agent.md",
@@ -3275,6 +3270,11 @@
         "name": "agent-reference-list.md",
         "path": "developing-with-agents/agent-reference-list.md",
         "id": "developing-with-agents/agent-reference-list"
+      },
+      {
+        "name": "javascript-agent.md",
+        "path": "developing-with-agents/aira-agents/javascript-agent.md",
+        "id": "developing-with-agents/aira-agents/javascript-agent"
       }
     ],
     "Mayank Prakash": [
@@ -3318,7 +3318,6 @@
     "developing-with-agents/aira-agents/database-agent",
     "developing-with-agents/aira-agents/i18n-agent",
     "developing-with-agents/aira-agents/java-agent",
-    "developing-with-agents/aira-agents/javascript-agent",
     "developing-with-agents/aira-agents/marketplace-agent",
     "developing-with-agents/aira-agents/prism-ui-expert-agent",
     "developing-with-agents/aira-agents/rescue-agent",
