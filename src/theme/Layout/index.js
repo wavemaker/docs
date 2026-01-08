@@ -6,16 +6,14 @@ import SecondaryNavbar from "@site/src/components/TopNav/TopNav";
 
 export default function LayoutWrapper(props) {
   const location = useLocation();
-
-  const isDocsPage = location.pathname.startsWith("/docs");
   return (
     <>
       <Layout {...props}>
       <BrowserOnly fallback={<div />}>
         {() => {
           const pathname = window.location.pathname;
-          const isDocsPage = pathname.startsWith("/docs");
-          return isDocsPage ? <SecondaryNavbar /> : null;
+          const isHomePage = pathname === '/';
+          return isHomePage ? null : <SecondaryNavbar />;
         }}
       </BrowserOnly>
       {props.children}
