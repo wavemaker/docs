@@ -54,7 +54,7 @@ const envData = [
   {
     id: 5,
     icon: '/img/icon/studio-icon.svg',
-    title: 'Studio',
+    title: 'Platform',
     desc: 'Visual tools to build experiences ',
     link: '/docs/studio/overview',
   },

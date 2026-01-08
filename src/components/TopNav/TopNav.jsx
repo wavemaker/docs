@@ -27,7 +27,7 @@ const topNavData = [
   },
   {
     id: 5,
-    label: "Studio",
+    label: "Platform",
     link: "/docs/studio/overview",
   },
   {
