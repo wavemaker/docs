@@ -251,6 +251,6 @@ and dotted grid lines on y-axis can be achieved by adding **'dotted-yaxis-grid-l
 ## Use Cases
 
 - <!-- <!-- [Basic Usage](/learn/app-development/widgets/chart/charts-basic-usage/) --> -->
-- [How to capture user selection](../../../../../guide/components/angular-components/charts-displaying-user-selection-another-widget.md)
-- [How to handling dynamic data](../../../../../guide/components/angular-components/charts-handling-dynamic-data.md)
-- [How to displaying custom data](../../../../../guide/components/angular-components/charts-custom-data.md)  
+- [How to capture user selection](../../../../../guide/components/charts-displaying-user-selection-another-widget.md)
+- [How to handling dynamic data](../../../../../guide/components/charts-handling-dynamic-data.md)
+- [How to displaying custom data](../../../../../guide/components/charts-custom-data.md)  

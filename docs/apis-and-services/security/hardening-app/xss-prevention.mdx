@@ -2,6 +2,7 @@
 last_update: { author: "Shahnawaz Ahmed" }
 ---
 # XSS Prevention
+---
 [Cross Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/) is a type of security attack, which injects malicious scripts into web applications to execute, generally in the form of a browser side script to an end-user.
 
 Typically, WaveMaker handles all XSS attacks using [Angular Sanitization](https://angular.io/api/platform-browser/DomSanitizer). Therefore, the apps are not vulnerable to XSS attacks by default. Sanitization handles untrusted values turning them into a safe value to insert into the generated code. However, in some cases, developers may want to include executable code, such as HTML (Hypertext Markup Language) content, giving developers the flexibility to bypass the code.
@@ -14,7 +15,7 @@ In this document, you will learn how to configure UI (User Interface) to render 
 ## Sanitization in Datatable widget
 
 :::note
-From [WaveMaker 10.13.0](/learn/wavemaker-release-notes/v10-13-0), Datatable columns render plain text to prevent XSS attacks. Before this change, the content was rendering HTML format.
+From [WaveMaker 10.13.0](#), Datatable columns render plain text to prevent XSS attacks. Before this change, the content was rendering HTML format.
 :::
 
 In the following example, Datatable contains employee details and their current status. The **status** column uses HTML with inline styles, posing a potential XSS attack threat. 

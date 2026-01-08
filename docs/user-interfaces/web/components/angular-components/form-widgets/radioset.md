@@ -57,6 +57,6 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 
 ## Use Cases
 
-- [Working with Selection Widgets](../../../../../guide/components/angular-components/selection-widgets-use-case.md)
-- [How to use Radioset widget to filter a List](../../../../../guide/components/angular-components/radioset-filter-list.md) 
+- [Working with Selection Widgets](../../../../../guide/components/selection-widgets-use-case.md)
+- [How to use Radioset widget to filter a List](../../../../../guide/components/radioset-filter-list.md) 
 

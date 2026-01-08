@@ -89,7 +89,7 @@ This feature helps you group columns under a heading for better readability and 
 - _Widget Title_ - title to be displayed on the button at run-time, set by default to the column name, can be edited as per the needs
 - _Value Expression_ - You can write a custom expression to change the display setting for a table column. The expression needs to follow AngularJS conventions for binding. A sample expression is given which can be enhanced as per the needs of the application.
 
-[See here for usage example](../../../../../../guide/components/angular-components/data-table-widget-representations.md)
+[See here for usage example](../../../../../../guide/components/data-table-widget-representations.md)
 
 #### Format Options
 
@@ -114,7 +114,7 @@ This feature helps you group columns under a heading for better readability and 
 
 - Fraction Size can be set
 
-[See here for usage example](../../../../../../guide/components/angular-components/data-table-format-options.md)
+[See here for usage example](../../../../../../guide/components/data-table-format-options.md)
 
 ### Edit Mode Options
 
@@ -159,7 +159,7 @@ In the case, Filter Option is set to Row while designing the Data Table, then th
 
 For more information about styles and properties, see [Data Table Styles](./styles.md).
 
-For examples, see [Custom Styling Data Table Columns & Rows](../../../../../../guide/components/angular-components/data-table-styling.md)
+For examples, see [Custom Styling Data Table Columns & Rows](../../../../../../guide/components/data-table-styling.md)
 
 ### Security Options
 

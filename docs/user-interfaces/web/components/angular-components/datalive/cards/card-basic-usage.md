@@ -147,4 +147,4 @@ Click on Preview button to test run the app.
 
 [Cards Use Cases](./card-use-cases.md)  
 [Cards Basic Usage](./card-basic-usage.md)  
-[How to access cards items](../../../../../../guide/components/angular-components/capturing-card-items.md)  
+[How to access cards items](../../../../../../guide/components/capturing-card-items.md)  

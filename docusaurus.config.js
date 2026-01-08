@@ -18,6 +18,7 @@ const config = {
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    experimental_faster: true,
   },
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
@@ -144,7 +145,7 @@ const config = {
                 <h4 class="message">Stuck somewhere? Our<br/>team is ready to assist you.</h4>
                 </div>
                 <div class="col col--6 text--right">
-                <button class="button button--dark">Send Message</button>
+                <a href="https://www.wavemaker.com/get-demo/" class="button button--dark">Send Message</a>
                 </div>
                 </div>
                 `,
@@ -154,7 +155,7 @@ const config = {
                   <div class="footer-main-section row">
                   <div class="col col--5">
                   <a href="/" target="_blank" class="logo-links"> <img src="/img/wm-logo.svg"/>Wavemaker</a>
-                  <p class="footer-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum aliquet accumsan porta lectus ridiculus in mattis. Netus sodales in volutpat</p>
+                  <p class="footer-desc">WaveMaker provided a flexible solution that allows us to model, design, and create web-based solutions that pass all security checks.</p>
                   </div>
                     <div class="col col--2">
                       <ul class="footer-nav-list">

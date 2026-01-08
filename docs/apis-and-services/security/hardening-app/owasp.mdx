@@ -2,6 +2,7 @@
 last_update: { author: "Shahnawaz Ahmed" }
 ---
 # OWASP
+---
 [OWASP](https://www.owasp.org/index.php/About_OWASP) is an open community dedicated to enabling organizations to conceive, develop, acquire, operate, and maintain applications that can be trusted. The OWASP Top 10 provides a list of the [10 Most Critical Web Application Security Risks](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project)
 
 XSS (Cross-site scripting) and CSRF (Cross-Site Request Forgery) attacks are listed in the OWASP top 10 security.
@@ -29,7 +30,7 @@ In this case, all the scripts will be executed, this is the default setting.
 In this case, the scripts will be encoded so that they cannot be executed in data access. For example, the script code:` <script>alert(document.cookie)</script>` will be converted to `&lt ; script &gt ; alert(document.cookie) &lt ; /script &gt ;`, thus rendering the script invalid.
 ### WHITE LIST
 In this case, the scripts will be filtered based on
-- **Policy file**: this will implement XSS protection based on the rules defined in `/src/main/webapp/WEB-INF/wm-xss-policies.xml`. The default policy file is `wm-xss-policies.xml`. According to this default policy file, script tags will be removed. However, you can upload your own policy file which will be uploaded to WEB-INF folder. Clicking on to the file name will open it in the editor. Go through the [document](/learn/app-development/app-security/xss-antisamy-policy-configuration/) for more descriptions on AntiSamy rules. 
+- **Policy file**: this will implement XSS protection based on the rules defined in `/src/main/webapp/WEB-INF/wm-xss-policies.xml`. The default policy file is `wm-xss-policies.xml`. According to this default policy file, script tags will be removed. However, you can upload your own policy file which will be uploaded to WEB-INF folder. Clicking on to the file name will open it in the editor. Go through the [document](#) for more descriptions on AntiSamy rules. 
 
 {/*[![](/learn/assets/security_OWSP_XSSpolicy.png)](/learn/assets/security_OWSP_XSSpolicy.png)*/}
 

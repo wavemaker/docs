@@ -27,4 +27,4 @@ In the following table, the **Table** is a Data Table; **Additional informati
 | Department  → | Department ID  → | Displaying charts for budget-related info |
 | Employee name  → | Employee ID  → | Employee's profile information |
 
-For more information, see [How to Configure Row Expansion in a Data Table](../../../../../../guide/components/angular-components/how-to-configure-row-expansion-in-a-data-table.md).
+For more information, see [How to Configure Row Expansion in a Data Table](../../../../../../guide/components/how-to-configure-row-expansion-in-a-data-table.md).

@@ -79,13 +79,13 @@ If the variables are already created in the project.
 
 ## See Also
 
-- [How to split live form](../../../../../../guide/components/angular-components/live-form-tabbed-form.md)
-- [How to link live form to another widget](../../../../../../guide/components/angular-components/live-form-linking-another-widget.md)
-- [How to configure related fields in a Live Form](../../../../../../guide/components/angular-components/live-form-related-fields.md)
-- [How to use cascading select and automplete widgets for fields in a Live Form](../../../../../../guide/components/angular-components/using-cascading-select-autocomplete-live-form-fields.md)
-- [How to configure cascading select for fields in a Live Form](../../../../../../guide/components/angular-components/using-cascading-select-within-live-form.md)
-- [How to add master-detail records from the same Live Form](../../../../../../guide/components/angular-components/adding-master-detail-records-transaction.md)
-- [How to use cascaded Live Filter to populate Live Form](../../../../../../guide/components/angular-components/using-cascading-filter-populate-live-form.md)
-- [How to add master-detail records from Live Form using Wizard](../../../../../../guide/components/angular-components/using-wizard-master-detail-live-form.md)
+- [How to split live form](../../../../../../guide/components/live-form-tabbed-form.md)
+- [How to link live form to another widget](../../../../../../guide/components/live-form-linking-another-widget.md)
+- [How to configure related fields in a Live Form](../../../../../../guide/components/live-form-related-fields.md)
+- [How to use cascading select and automplete widgets for fields in a Live Form](../../../../../../guide/components/using-cascading-select-autocomplete-live-form-fields.md)
+- [How to configure cascading select for fields in a Live Form](../../../../../../guide/components/using-cascading-select-within-live-form.md)
+- [How to add master-detail records from the same Live Form](../../../../../../guide/components/adding-master-detail-records-transaction.md)
+- [How to use cascaded Live Filter to populate Live Form](../../../../../../guide/components/using-cascading-filter-populate-live-form.md)
+- [How to add master-detail records from Live Form using Wizard](../../../../../../guide/components/using-wizard-master-detail-live-form.md)
 - <!-- <!-- [How to progressively add fields to a record using Wizard](/learn/how-tos/using-wizard-progressive-data-entry-live-form/) --> -->
 - <!-- <!-- [How to accumulate data over multiple steps in a Wizard and save at the last step](/learn/how-tos/using-wizard-cumulative-data-entry-live-form/) --> -->

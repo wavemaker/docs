@@ -8,5 +8,5 @@ sidebar_label: "Use Cases"
 You can use Card Widget in many different ways.  The following links talk about the different use cases:
 
 - [Creating Employee Cards](./card-basic-usage.md)
-- [How to capture card items](../../../../../../guide/components/angular-components/capturing-card-items.md)
+- [How to capture card items](../../../../../../guide/components/capturing-card-items.md)
 

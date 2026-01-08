@@ -35,7 +35,7 @@ When you drag and drop an Accordion, by default three accordion panes are provid
 
 ## Usage
 
-- [Setting partial page content for Accordion within a List](../../../../../guide/components/angular-components/setting-partial-page-content-accordion-within-list.md)
+- [Setting partial page content for Accordion within a List](../../../../../guide/components/setting-partial-page-content-accordion-within-list.md)
 
 ## Methods
 

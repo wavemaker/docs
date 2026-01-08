@@ -18,7 +18,7 @@ Static Tabs do not need a dataset to add Tab Panes to the Tab bar. You add them 
 
 ### Dynamic Tabs
 
-You can create a fully dynamic tab component using a data source by binding a dataset to the Tabs widget. Based on the dataset, a number of Tab panes will generate. For more information, see [Using Dynamic Tabs and Accordions](../../../../../guide/components/angular-components/dynamic-tabs-accordions.md).
+You can create a fully dynamic tab component using a data source by binding a dataset to the Tabs widget. Based on the dataset, a number of Tab panes will generate. For more information, see [Using Dynamic Tabs and Accordions](../../../../../guide/components/dynamic-tabs-accordions.md).
 
 ## Features
 
@@ -188,5 +188,5 @@ https://www.wavemakeronline.com/run-x2zq8pwbhy/ent1d52def3436/ExcelDemo_master/#
 
 ## See Also
 
-[How to Use Dynamic Tabs and Accordions](../../../../../guide/components/angular-components/dynamic-tabs-accordions.md)  
-[How to Build Tabbed Live Form](../../../../../guide/components/angular-components/live-form-tabbed-form.md)  
+[How to Use Dynamic Tabs and Accordions](../../../../../guide/components/dynamic-tabs-accordions.md)  
+[How to Build Tabbed Live Form](../../../../../guide/components/live-form-tabbed-form.md)  

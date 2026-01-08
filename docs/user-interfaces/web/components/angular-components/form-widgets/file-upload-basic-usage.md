@@ -11,9 +11,9 @@ id: "file-upload-basic-usage"
 <!-- <!-- [FileUpload Use Cases](/learn/app-development/widgets/basic/fileupload-use-cases/) --> -->
 
 - [1. FileUpload Basic Usage](./file-upload-basic-usage.md)
-- [2. How to use various file service operations](../../../../../guide/components/angular-components/file-upload-widget-operations.md)
-- [3. How to save uploaded file to a DB](../../../../../guide/components/angular-components/upload-file-save-database.md)
-- [4. How to upload BLOB file to a DB](../../../../../guide/components/angular-components/file-upload-blob-data.md)
-- [5. How to upload file to custom directory](../../../../../guide/components/angular-components/file-upload-custom-directory.md)
-- [6. How to uploaded files from Java code](../../../../../guide/components/angular-components/accessing-file-upload-java-code.md)
-- [7. How to use FileUpload in Form and Live Form](../../../../../guide/components/angular-components/upload-files-from-live-form-form.md)
+- [2. How to use various file service operations](../../../../../guide/components/file-upload-widget-operations.md)
+- [3. How to save uploaded file to a DB](../../../../../guide/components/upload-file-save-database.md)
+- [4. How to upload BLOB file to a DB](../../../../../guide/components/file-upload-blob-data.md)
+- [5. How to upload file to custom directory](../../../../../guide/components/file-upload-custom-directory.md)
+- [6. How to uploaded files from Java code](../../../../../guide/components/accessing-file-upload-java-code.md)
+- [7. How to use FileUpload in Form and Live Form](../../../../../guide/components/upload-files-from-live-form-form.md)
