@@ -207,42 +207,49 @@ export default function Home() {
             <EnvList prop={envData} />
           </motion.section>
         </div>
+        <div className="rightside-img-section">
+          <section className="section-space">
+            <div className="left-content">
+              <span className="highlight-span">Explore</span>
+              <h2 className="title">
+                Become A Certified
+                <br /> Developer
+              </h2>
+              <p className="desc">
+                Discover the WaveMaker Academy and explore a curated set of expert-led courses. Gain
+                the knowledge you need to build confidently with WaveMaker.
+              </p>
+              <Link to="https://next-academy.onwavemaker.com/" className="button button--primary">
+                Go to Academy
+              </Link>
+            </div>
+            <div className="right-content">
+              <img src="/img/section-img/courses-Illustration.svg" />
+            </div>
+          </section>
+        </div>
+        <div className="leftside-img-section">
+          <section className="section-space">
+            <div className="left-content">
+              <img src="/img/section-img/marketplace-Illustration.svg" />
+            </div>
+            <div className="right-content">
+              <span className="highlight-span">What's New</span>
+              <h2 className="title">Marketplace</h2>
+              <p className="desc">
+                A library for developers in the WaveMaker community, where they can access
+                ready-to-use artifacts and also contribute back to the ecosystem.
+              </p>
+              <Link
+                to="https://next-marketplace.onwavemaker.com/"
+                className="button button--primary"
+              >
+                Start Building
+              </Link>
+            </div>
+          </section>
+        </div>
 
-        <section className="rightside-img-section content-space'">
-          <div className="left-content">
-            <span className="highlight-span">Explore</span>
-            <h2 className="title">
-              Become A Certified
-              <br /> Developer
-            </h2>
-            <p className="desc">
-              Discover the WaveMaker Academy and explore a curated set of expert-led courses. Gain
-              the knowledge you need to build confidently with WaveMaker.
-            </p>
-            <Link to="https://next-academy.onwavemaker.com/" className="button button--primary">
-              Go to Academy
-            </Link>
-          </div>
-          <div className="right-content">
-            <img src="/img/section-img/courses-Illustration.svg" />
-          </div>
-        </section>
-        <section className="leftside-img-section content-space'">
-          <div className="left-content">
-            <img src="/img/section-img/marketplace-Illustration.svg" />
-          </div>
-          <div className="right-content">
-            <span className="highlight-span">What's New</span>
-            <h2 className="title">Marketplace</h2>
-            <p className="desc">
-              A library for developers in the WaveMaker community, where they can access
-              ready-to-use artifacts and also contribute back to the ecosystem.
-            </p>
-            <Link to="https://next-marketplace.onwavemaker.com/" className="button button--primary">
-              Start Building
-            </Link>
-          </div>
-        </section>
         {/* <section className="resources-list-section">
           <h3 className="section-title">Additional Resources</h3>
           <ResourceList prop={resourcesData} />

@@ -16,7 +16,6 @@
     "gen-metrics": "node scripts/gen-metrics.js"
   },
   "dependencies": {
-    "@chakra-ui/react": "^3.30.0",
     "@docusaurus/core": "3.9.2",
     "@docusaurus/preset-classic": "3.9.2",
     "@docusaurus/theme-mermaid": "^3.9.2",
