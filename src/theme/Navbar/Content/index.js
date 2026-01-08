@@ -17,6 +17,55 @@ import NavbarMobileSidebarToggle from "@theme/Navbar/MobileSidebar/Toggle";
 import NavbarLogo from "@theme/Navbar/Logo";
 import NavbarSearch from "@theme/Navbar/Search";
 import styles from "./styles.module.css";
+
+export const RenderEcosystemDropdown = ({ config }) => (
+  <Menu.Root positioning={{ placement: "bottom-center" }}>
+    <Menu.Trigger asChild>
+      <IconButton className="action-btn grid " size={24} variant="ghost">
+        <Grip />
+      </IconButton>
+    </Menu.Trigger>
+    <Portal>
+      <Menu.Positioner>
+        <Menu.Content className="drop-down-menu-eco">
+          <Menu.ItemGroup>
+            <Menu.ItemGroupLabel className="menu-label-eco">
+              Ecosystem
+            </Menu.ItemGroupLabel>
+
+            {config?.map((item) => (
+              <Menu.Item key={item.id} asChild borderRadius={"12px"}>
+                <a
+                  href={item.hyperlink}
+                  target="_blank"
+                  className="dropdown-menu-item-eco"
+                >
+                  <HStack gap={"20px"} alignItems={"flex-start"}>
+                    <Box className="menu-img-icon-wrapper">
+                      <Image
+                        src={item.icon}
+                        h={"100%"}
+                        w={"100%"}
+                        fit={"contain"}
+                      />
+                    </Box>
+
+                    <VStack alignItems={"flex-start"} gap={0}>
+                      <h4 className="menu-item-title">{item.title}</h4>
+                      <p className=" menu-item-desc">{item.description}</p>
+                    </VStack>
+                  </HStack>
+                </a>
+              </Menu.Item>
+            ))}
+          </Menu.ItemGroup>
+        </Menu.Content>
+      </Menu.Positioner>
+    </Portal>
+  </Menu.Root>
+);
+
+
 function useNavbarItems() {
   // TODO temporary casting until ThemeConfig type is improved
   return useThemeConfig().navbar.items;
