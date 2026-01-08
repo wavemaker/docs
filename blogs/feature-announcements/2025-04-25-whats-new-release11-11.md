@@ -18,7 +18,7 @@ Let’s walk through what’s new in 11.11.
 
 WaveMaker Studio now separates Migration Changes from User Changes in **View Changes**. This gives you crystal-clear visibility, making it easier to understand what the platform changed vs. what you’ve edited.
 
-[Read more →](/feature-announcements/2025/04/16/separation-of-userchanges-vs-migrationchanges)
+[Read more →](/blog/2025/04/16/separation-of-userchanges-vs-migrationchanges)
 
 
 #### 2. Studio Preview Opens in a New Tab
@@ -31,7 +31,7 @@ WaveMaker Studio now separates Migration Changes from User Changes in **View Cha
 
 We’ve transitioned from Angular’s module-based architecture to standalone components, reducing bundle size and improving performance. Your apps now load faster (up to 8.9% smaller bundle size), are more maintainable, and align with the latest Angular best practices.
 
-[Why this matters →](/feature-announcements/2025/04/16/migrating-to-standalone-components)
+[Why this matters →](/blog/2025/04/16/migrating-to-standalone-components)
 
 #### 4. Leaner Angular Apps with Cleaned-Up i18n Files
 
@@ -41,7 +41,7 @@ We’ve optimized Angular builds by cleaning out unused localization files. For 
 
 Result? Smaller builds, faster loads.
 
-[More details →](/feature-announcements/2025/04/16/reduced-bundle-size-cleanup-i18n-files)
+[More details →](/blog/2025/04/16/reduced-bundle-size-cleanup-i18n-files)
 
 #### 6. A More Accurate Canvas: True WYSIWYG
 

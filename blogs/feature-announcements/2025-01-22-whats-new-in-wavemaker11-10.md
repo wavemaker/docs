@@ -26,7 +26,7 @@ This feature is only available on request.
 
 The latest release brings the Project Migration Report feature, designed to simplify tracking changes during migrations. This report provides a detailed summary of all modifications made within a project during the migration process, ensuring transparency and making it easier to assess the impact of updates. Stay informed and confidently manage your project upgrades!
 
-Read more details in the [Inside the Migration: Introducing the Project Migration Report blog](/feature-announcements/2025/01/02/migration-report).
+Read more details in the [Inside the Migration: Introducing the Project Migration Report blog](/blog/2025/01/02/migration-report).
 
 ### Support for Multi-Security Providers
 
@@ -60,7 +60,7 @@ WaveMaker now supports the latest database server versions, phasing out deprecat
 |Oracle              | 12c                 | 19c, 23c           |
 | IBM DB2            | 11.1                | 11.5               |
 
-Look into out [blog post](/feature-announcements/2025/01/07/database-version-updates) for futher details.
+Look into out [blog post](/blog/2025/01/07/database-version-updates) for futher details.
  
 ### 3. Expo 52 Upgrade
 
@@ -71,7 +71,7 @@ For more details, see the [Expo 52 Blog](/feature-announcements/2024/12/16/expo-
 ## Key Enhancements
 
 **Droppable Footer for Wizard**: Users can now easily drop widgets into the wizard's action section. Earlier wizard actions like Next, Previous, Done, etc. were fixed and not editable like WaveMaker widgets. Now, users can configure, style, or add new actions based on their requirements
-**Restructured Dockerfiles**: Streamlined Dockerfiles for CI/CD of WaveMaker Applications. Have a look at the [Optimized WaveMaker App Builds & Deployments with Docker Images blog](/feature-announcements/2025/01/17/specialized-docker-images).
+**Restructured Dockerfiles**: Streamlined Dockerfiles for CI/CD of WaveMaker Applications. Have a look at the [Optimized WaveMaker App Builds & Deployments with Docker Images blog](/blog/2025/01/17/specialized-docker-images).
 
 ## Notable Bug Fixes
 
