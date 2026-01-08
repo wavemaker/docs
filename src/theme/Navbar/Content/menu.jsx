@@ -32,9 +32,9 @@ const MenuSection = () => {
       link: "https://rn-components.onwavemaker.com/",
     },
     {
-      label: "Docs",
-      icon: "/img/icon/docs-icon.svg",
-      link: " https://next-docs.wavemaker.com/",
+      label: "Academy",
+      icon: "/img/icon/academy-icon.svg",
+      link: " https://next-academy.wavemaker.com/",
       subMenu: [],
     },
     {
@@ -44,9 +44,15 @@ const MenuSection = () => {
       subMenu: [],
     },
     {
-      label: "Schedule Demo",
+      label: "Studio",
       icon: "/img/wm-logo.svg",
-      link: "https://www.wavemaker.com/get-demo/",
+      link: "https://www.wavemakeronline.com/",
+      subMenu: [],
+    },
+    {
+      label: "Wavemaker UI Kit",
+      icon: "/img/icon/ds-icon.svg",
+      link: "https://www.figma.com/community/file/1463103184874870889/wavemaker-ui-kit",
       subMenu: [],
     },
   ];
