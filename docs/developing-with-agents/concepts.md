@@ -1,6 +1,6 @@
 ---
 title: Welcome to AIRA
-last_update: { author: "Author Name" }
+last_update: { author: "Swetha Kundaram" }
 ---
 
 WaveMaker 12 introduces AIRA, an agent-based development system that works alongside the traditional design-first workflow. 

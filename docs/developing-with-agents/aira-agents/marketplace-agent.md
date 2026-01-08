@@ -1,6 +1,6 @@
 ---
 title: Marketplace Agent
-last_update: { author: "Author Name" }
+last_update: { author: "Swetha Kundaram" }
 ---
 
 The Marketplace Agent discovers and installs reusable artifacts from the WaveMaker Marketplace. Its job is to safely bring external, prebuilt components into a project without breaking it.

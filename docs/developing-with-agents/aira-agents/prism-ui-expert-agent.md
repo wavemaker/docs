@@ -1,6 +1,6 @@
 ---
 title: Prism UI Expert Agent
-last_update: { author: "Author Name" }
+last_update: { author: "Swetha Kundaram" }
 ---
 
 

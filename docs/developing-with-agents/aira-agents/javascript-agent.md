@@ -6,43 +6,129 @@ last_update: { author: "Swetha Kundaram" }
 - [When JavaScript Is Used in WaveMaker](#when-javascript-is-used-in-wavemaker)
 - [How Aira Handles JavaScript Logic](#how-aira-handles-javascript-logic)
 
+
 ## When JavaScript Is Used in WaveMaker
 
-WaveMaker builds most of the application for you. You design pages visually and configure data sources without code. JavaScript is used only when the visual setup cannot express the logic you need.
+WaveMaker builds most of the application through visual design and configuration. Pages, widgets, APIs, and database connections are created without writing code. JavaScript is used only when the visual setup cannot express the required logic. It exists to handle behavior, not structure.
 
 ### How It Works
 
-- UI elements like pages and widgets are created visually.
-- Data sources like APIs and databases are configured, not coded.
-- JavaScript runs only to handle custom logic or edge cases.
+1. UI elements like pages and widgets are created visually.
+2. Data sources such as APIs and databases are configured using bindings.
+3. JavaScript runs only to handle custom logic, validations, or edge cases.
 
-**UI (Visual)** → **Data (Configured)** → **JavaScript (Logic gaps)**  
+Execution flow:
 
-#### Example
+```
+UI (Visual) → Data (Configured) → JavaScript (Logic only)
+```
 
-**A form submits data using built-in bindings**: JavaScript runs only if you need to validate a field or change behavior based on conditions.
+### Example
+
+**A form submits data using built-in bindings**: JavaScript runs only when validation rules or conditional behavior cannot be expressed through configuration.
+
 
 ## How Aira Handles JavaScript Logic
 
-Aira uses a dedicated agent called **wm_js_agent** to handle JavaScript. This agent adds logic without changing how the app is built. Aira's job is to attach behavior where logic is needed.
+Aira uses a dedicated execution agent called **wm_js_agent** to manage JavaScript. The agent extends behavior without changing how the application is built.
 
-* Extends page or app behavior.
-* Uses existing widgets, variables, and events.
-* Respects WaveMaker’s runtime model.
+Its responsibility is to attach logic where required while remaining fully compliant with WaveMaker’s runtime model.
 
-### How It Works
+### What the JavaScript Agent Does
 
-1. Aira reads the existing WaveMaker page and variables.
-2. The **wm_js_agent** generates JavaScript only when required.
-3. The code runs within WaveMaker’s execution rules.
+The **wm_js_agent** can:
 
-**WaveMaker UI** → **Existing Variables** → **wm_js_agent** → **JavaScript Logic**  
+* Extend page-level or app-level behavior
+* Create and bind event handlers (button clicks, input changes, variable success/error events)
+* Apply form validations using the WaveMaker DSL validation framework
+* Perform data manipulation and iterations
+* Integrate approved JavaScript libraries
+
+If an expected event handler does not exist, the agent creates it automatically.
 
 ![](/learn/assets/js-agent-flow.png)
 
-#### Example
+### What the JavaScript Agent Does NOT Do
 
-**A page already has a button and a variable**: The **wm_js_agent** adds logic to run when the button is clicked. Nothing visual changes. Only behavior does.
+The agent never:
+
+* Creates new UI widgets or pages
+* Modifies markup or layout
+* Redefines application structure
+
+Using JavaScript for layout or basic data binding is trash.
+
+## How the JavaScript Agent Identifies Targets
+
+Before generating any code, the agent analyzes the existing page.
+
+### Targeting Process
+
+1. Reads the WaveMaker page metadata and DOM structure.
+2. Identifies widgets, forms, and variables already present.
+3. Locates relevant events or creates them if missing.
+4. Attaches JavaScript logic to those events.
+
+Targeting depends heavily on widget naming.
+
+### Naming Requirements
+
+Good naming enables accurate targeting:
+
+* `showHidePasswordButton`
+* `shippingForm`
+* `submitRequestBtn`
+
+Bad naming causes ambiguity and slower execution:
+
+* `button1`
+* `formField2`
+* `ABCbutton`
+
+The agent only manipulates existing elements.
+It never injects UI components.
+
+## How It Works (End-to-End)
+
+Execution flow:
+
+```
+WaveMaker UI
+   ↓
+Page & DOM Analysis
+   ↓
+Widget and Variable Identification
+   ↓
+Event Binding (existing or auto-created)
+   ↓
+JavaScript Logic Execution
+```
+
+---
+
+## Example
+
+A page already contains a button and a bound variable.
+
+A prompt requests custom behavior on button click.
+The **wm_js_agent** locates the button, creates a click handler if missing, and attaches the logic.
+
+No UI elements change.
+Only behavior is added.
+
+---
+
+## Notes and Best Practices
+
+* Always specify the page name in prompts to limit search scope.
+* Use descriptive widget names for any element that requires JavaScript.
+* Be explicit about the behavior you want.
+* Generic prompts trigger broader project searches and reduce performance.
+
+For complex or multi-step workflows, use the Planner agent.
+It will delegate JavaScript tasks to **wm_js_agent** when needed.
+
+
 
 
 ## wm_js_agent

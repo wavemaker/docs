@@ -1,6 +1,6 @@
 ---
 title: Design Mode and AIRA Agent Mode
-last_update: { author: "Author Name" }
+last_update: { author: "Swetha Kundaram" }
 ---
 
 > Think of AIRA as another contributor. AIRA does not directly overwrite your manual design work. 

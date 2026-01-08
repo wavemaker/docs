@@ -1,6 +1,6 @@
 ---
 title: AIRA Agentic App Development
-last_update: { author: "Author Name" }
+last_update: { author: "Swetha Kundaram" }
 ---
 
 AIRA is an agent-based development system that works alongside the traditional design-first workflow.  AIRA is not one AI. It is a coordinated system of specialized agents, each responsible for a specific domain in WaveMaker app development.

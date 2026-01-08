@@ -1,6 +1,6 @@
 ---
 title: Theme Agent
-sidebar_position: 7
+last_update: { author: "Swetha Kundaram" }
 ---
 
 

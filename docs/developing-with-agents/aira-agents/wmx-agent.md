@@ -1,6 +1,6 @@
 ---
 title: WMX Agent
-sidebar_position: 7
+last_update: { author: "Swetha Kundaram" }
 ---
 
 React Native WMX components

@@ -1,6 +1,6 @@
 ---
 title: How AIRA Works
-last_update: { author: "Author Name" }
+last_update: { author: "Swetha Kundaram" }
 ---
 
 ### Architecture Diagram
