@@ -1,11 +1,5 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarConfig} */
 export default [
-  {
-    type: 'category',
-    label: 'How-tos',
-    items: [
-      'guide/howtos/howtos-documents',
-      'guide/howtos/howtos-ui',
       {
         type: 'category',
         label: 'App Development',
@@ -30,8 +24,6 @@ export default [
           },
         ],
       },
-    ],
-  },
   {
     type: 'category',
     label: 'Components',
@@ -266,14 +258,14 @@ export default [
     ],
   },
 
-  {
-    type: 'category',
-    label: 'migrated-docs',
-    collapsible: true,
-    collapsed: true,
-    items: [
-      {
-        docs: [
+  // {
+  //   type: 'category',
+  //   label: 'migrated-docs',
+  //   collapsible: true,
+  //   collapsed: true,
+  //   items: [
+  //     {
+  //       docs: [
           {
             type: 'category',
             label: 'Deployment',
@@ -492,9 +484,9 @@ export default [
               'guide/migrated-docs/app-migration-wavemaker-9x-10x',
             ],
           },
-        ],
-        Teams: ['guide/migrated-docs/azure-repos-vcs'],
-        Mobile: [
+        // ],
+        // Teams: ['guide/migrated-docs/azure-repos-vcs'],
+        // Mobile: [
           {
             type: 'category',
             label: 'Cordova (Hybrid Mobile)',
@@ -523,8 +515,8 @@ export default [
               },
             ],
           },
-        ],
-      },
-    ],
-  },
+        // ],
+  //    },
+   // ],
+ // },
 ];
