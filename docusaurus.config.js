@@ -64,7 +64,7 @@ const config = {
           onInlineAuthors: "ignore",
           onUntruncatedBlogPosts: "warn",
           authorsMapPath: "../authors.yml",
-          blogSidebarTitle: 'All posts',
+          blogSidebarTitle: 'All Blogs',
           blogSidebarCount: 'ALL',
           path: "blogs/blog",
         },
@@ -227,7 +227,7 @@ const config = {
          */
         path: "blogs/whatsnew",
         authorsMapPath: "../blogs/authors.yml",
-        blogSidebarTitle: 'All posts',
+        blogSidebarTitle: 'Release Notes',
         blogSidebarCount: 'ALL',
       },
     ],
@@ -248,7 +248,7 @@ const config = {
          */
         path: "blogs/feature-announcements",
         authorsMapPath: "../blogs/authors.yml",
-        blogSidebarTitle: 'All posts',
+        blogSidebarTitle: 'Feature Announcements',
         blogSidebarCount: 'ALL',
       },
     ],
