@@ -107,3 +107,11 @@ Once your Java Service method uses the imported library, you can invoke it from 
 ## Summary
 
 Using third-party JARs allows you to extend your application with custom logic that leverages existing Java libraries.
+
+---
+
+## How-To Guides
+
+Learn more about working with third-party files through these practical guides:
+
+- [Synchronizing WaveMaker Apps with IDEs](/docs/guide/migrated-docs/synchronizing-wavemaker-apps-ides-beta.md) - Synchronizing WaveMaker Apps with IDEs

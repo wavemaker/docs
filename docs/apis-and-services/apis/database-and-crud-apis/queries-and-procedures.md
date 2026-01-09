@@ -251,6 +251,8 @@ name = 'Engineering'
 
 ---
 
+
+
 ## Summary
 
 Database queries in WaveMaker enable implementing custom data access logic while automatically exposing that logic as **REST APIs**.
@@ -264,3 +266,12 @@ Database queries in WaveMaker enable implementing custom data access logic while
 - **Export functionality** for paginated queries
 
 This approach provides flexibility and power while maintaining low-code productivity.
+
+## How-To Guides
+
+Learn more about working with databases and queries through these practical guides:
+
+- [Working with Dynamic Query Clauses](/docs/guide/migrated-docs/queries-dynamic-clause) - Build flexible queries with runtime conditions
+
+
+---

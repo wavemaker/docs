@@ -121,3 +121,11 @@ WebSockets enable real-time communication between the client and server in WaveM
 - Use secure `wss://` endpoints to avoid browser security issues. 
 
 WebSocket support in WaveMaker makes it easier to build responsive, real-time applications without custom networking code.
+
+## How-To Guides
+
+Learn more about working with WebSockets and real-time services through these practical guides:
+
+- [WebSocket Usage in Chatroom App](/docs/guide/migrated-docs/websocket-usage-chatroom-app) - Build real-time chat applications with WebSockets
+
+---
