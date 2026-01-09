@@ -122,7 +122,7 @@ The wavemakerapp/app-builder Docker image is packed with required software packa
 
 
 To visualise, refer 
-▶️ [Generate war using docker](https://app.guidde.com/playbooks/gvbivUYhkeAcS8jdTPRBCm?origin=UHEVgZL3MXReLMMFtXRKKLRtXmG3)
+▶️ [Generate war using docker](https://next-academy.onwavemaker.com/Watch?wm=WM-49BD97DDB1)
 :::
 
 

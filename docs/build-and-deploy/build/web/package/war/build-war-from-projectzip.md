@@ -54,5 +54,5 @@ mvn clean install -Pdeployment
 :::note
 To learn how to generate a WAR file using Maven in WaveMaker, watch the video below:
 
-▶️ [Generate a WAR using MAVEN](https://app.guidde.com/playbooks/6xnaPU78dt88y8AtsMUH2r)
+▶️ [Generate a WAR using MAVEN](https://next-academy.onwavemaker.com/Watch?wm=WM-07E5BE8F68)
 :::
