@@ -34,7 +34,7 @@ const MenuSection = () => {
     {
       label: "Academy",
       icon: "/img/icon/academy-icon.svg",
-      link: " https://next-academy.wavemaker.com/",
+      link: " https://next-academy.onwavemaker.com/",
       subMenu: [],
     },
     {
