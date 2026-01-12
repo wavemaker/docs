@@ -101,3 +101,13 @@ By integrating database services within Java Services, you can:
 - Execute and integrate named queries programmatically.
 
 This approach provides flexibility to implement custom business rules while still using WaveMaker's generated data access layer.
+
+## How-To Guides
+
+Learn more about working with APIs and Java services through these practical guides:
+
+- [Accessing REST APIs from Java Service](/docs/guide/migrated-docs/accessing-rest-apis-java-service) - Call external REST APIs from Java code
+- [Pre and Post Processing for Database Service APIs](/docs/guide/migrated-docs/pre-post-processing-db-service-apis) - Add hooks to database operations
+- [Custom Status Code and Error Messages](/docs/guide/migrated-docs/custom-status-code-error-message-java-service) - Handle errors and HTTP responses
+
+

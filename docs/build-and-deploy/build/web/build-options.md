@@ -79,4 +79,4 @@ Settings → Profile Configuration → Build Options
 
 For a deeper understanding of build options in WaveMaker, refer to the video below:
 
-▶️ [Understanding Build Options in WaveMaker](https://app.guidde.com/playbooks/gvbivUYhkeAcS8jdTPRBCm?origin=UHEVgZL3MXReLMMFtXRKKLRtXmG3)
+▶️ [Understanding Build Options in WaveMaker](https://next-academy.onwavemaker.com/Watch?wm=WM-F1B323D0D3)

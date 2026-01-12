@@ -213,6 +213,7 @@ rest.randomuser.scheme=https
 
 ---
 
+
 ## Summary
 
 REST Services in WaveMaker allow seamless integration of external HTTP APIs into your low-code application:
@@ -222,5 +223,21 @@ REST Services in WaveMaker allow seamless integration of external HTTP APIs into
 - Test endpoints before importing.  
 - Create service variables to invoke the API and bind responses to UI widgets.  
 - Use proxy configuration and environment properties to handle CORS and secure credentials.
+
+---
+
+
+## How-To Guides
+
+Learn more about working with REST services and web APIs through these practical guides:
+
+- [Using App Environment Properties](/docs/guide/migrated-docs/using-app-environment-properties) - Configure environment-specific values for APIs
+- [Using POST Method to Send Data to REST API](/docs/guide/migrated-docs/using-post-method-send-data-rest-api) - Send data to external APIs
+- [Request and Response Processing for REST Services](/docs/guide/migrated-docs/request-response-processing-rest-services) - Handle API request/response transformation
+- [Intercept Requests and Responses for API Calls](/docs/guide/migrated-docs/intercept-requests-responses-api-calls-one-place) - Add middleware logic to API calls
+- [Working with APIs with Different Pagination Formats](/docs/guide/migrated-docs/working-api-with-different-pagination-formats) - Handle various pagination strategies
+- [Adding UI for API with Server-Side Pagination](/docs/guide/migrated-docs/adding-ui-for-api-server-side-pagination) - Implement paginated data displays
+
+---
 
 <!-- By treating REST services as first-class citizens within the platform, WaveMaker makes it simple to consume external APIs and integrate them with your app’s pages and logic. -->

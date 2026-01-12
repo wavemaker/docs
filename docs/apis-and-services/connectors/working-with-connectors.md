@@ -182,3 +182,18 @@ A `true` value indicates that the OTP is valid and verified.
 ---
 
 This completes the integration and usage guide for the Twilio Connector in WaveMaker.
+
+## How-To Guides
+
+Learn more about connectors through these practical guides:
+
+- [AWS S3 Connector](/docs/guide/migrated-docs/aws-s3-connector) - Integrate with Amazon S3 storage
+- [Azure File Storage Connector](/docs/guide/migrated-docs/azure-file-storage-connector) - Connect to Azure storage services
+- [Insert Data from Excel](/docs/guide/migrated-docs/insert-data-from-excel) - Import Excel data into your application
+- [AWS S3 Connector](/docs/guide/migrated-docs/aws-s3-connector) - Integrate with Amazon S3 storage
+- [Twilio Connector](/docs/guide/migrated-docs/twilio-connector) - Add SMS and communication features
+- [Twilio OTP Integration](/docs/guide/migrated-docs/twilio-otp-integration) - Implement one-time password authentication
+- [Integrating Jasper Reports in WaveMaker](/docs/guide/migrated-docs/integrating-sample-jasper-report-wavemaker-application) - Add reporting capabilities
+- [Generate PDF Files Using Jasper Reports](/docs/guide/migrated-docs/generate-pdf-file-using-jasper-reports) - Create PDF documents dynamically
+
+---

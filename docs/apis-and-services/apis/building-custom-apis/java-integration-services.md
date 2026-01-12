@@ -103,6 +103,10 @@ public Feed fetchAuthenticatedFeed(String url, String username, String password,
 
 This allows you to retrieve RSS/Atom feeds or feeds requiring authentication from within your Java Service code.
 
+---
+
+
+
 ## Summary
 
 Java Integration Services enable you to:
@@ -113,3 +117,19 @@ Java Integration Services enable you to:
 - Invoke advanced services like SOAP and RSS/Atom feeds directly from Java services.
 
 This approach empowers you to extend backend logic while maintaining reuse and coherence with WaveMaker's service ecosystem.
+
+---
+
+## How-To Guides
+
+Learn more about working with Java services through these practical guides:
+
+- [Sending Email Using Java Service](/docs/guide/migrated-docs/sending-email-using-java-service) - Implement email functionality in your applications
+- [Implementing Forgot Password Feature Using Java Service](/docs/guide/migrated-docs/implementing-forgot-password-feature-using-java-service) - Build password recovery workflows
+- [Scheduling Java Service](/docs/guide/migrated-docs/scheduling-java-service) - Configure scheduled tasks and cron jobs
+- [Synchronizing Java Services with Controller](/docs/guide/migrated-docs/synchronizing-java-services-controller) - Coordinate service and controller layers
+- [Integrating Amazon Cognito for User Authentication](/docs/guide/migrated-docs/integrating-amazon-cognito-user-authentication) - Add AWS Cognito authentication
+- [Accessing Logged-In User Information](/docs/guide/migrated-docs/accessing-loggedin-user-information-using-a-java-service) - Retrieve current user details
+- [Camunda and WaveMaker Integration](/docs/guide/migrated-docs/camunda-wavemaker-app-integration) - Integrate workflow management
+
+---

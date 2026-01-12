@@ -16,9 +16,9 @@ We’re thrilled to announce the release of WaveMaker Studio 11.9.0, packed with
 
 | Upgrade | Description |
 | ------- | ----------- |
-| Java 17 & 21 Support | With the deprecation of Java 11 LTS, we now support both Java 17 and 21, providing developers the flexibility to [choose either version](/feature-announcements/2024/08/29/java-17-and-21-upgrade) for application development and runtime environments, based on project requirements. |
-| Javax to Jakarta Namespace Migration | As we moved to latest technology stack, We have fully transitioned to the Jakarta namespace. Learn more in our detailed [blog](/feature-announcements/2024/09/24/javax-to-jakarta) post. |
-| Servlet & Spring Framework Upgrades | Updated to Servlet 6.x and Spring 6.1.13 for a more modern tech stack. Explore the [Effects on WaveMaker applications](/feature-announcements/2024/10/01/spring6-upgrade). |
+| Java 17 & 21 Support | With the deprecation of Java 11 LTS, we now support both Java 17 and 21, providing developers the flexibility to [choose either version](/blog/2024/08/29/java-17-and-21-upgrade) for application development and runtime environments, based on project requirements. |
+| Javax to Jakarta Namespace Migration | As we moved to latest technology stack, We have fully transitioned to the Jakarta namespace. Learn more in our detailed [blog](/blog/2024/09/24/javax-to-jakarta) post. |
+| Servlet & Spring Framework Upgrades | Updated to Servlet 6.x and Spring 6.1.13 for a more modern tech stack. Explore the [Effects on WaveMaker applications](/blog/2024/10/01/spring6-upgrade). |
 | New & Sleek Database Designer | A sleek redesign that simplifies schema management and improves developer workflow. Read about it [here](/feature-announcements/2024/10/11/new-sleek-db-designer). |
 | WebSocket Services | Easily build real-time features like live chats and notifications with WebSocket support. |
 | WCAG 2.1 AA Accessibility Compliance | Applications now fully meet WCAG 2.1 AA standards, ensuring accessibility for all users. |

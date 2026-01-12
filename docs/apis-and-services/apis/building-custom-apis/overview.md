@@ -116,12 +116,13 @@ Any changes made to the service definition are automatically reflected across th
 
 ---
 
+
 ## Summary
 
-- **Custom Logic:** Implement business rules, calculations, validations, or workflow automation.  
-- **Integration:** Connect with external REST APIs, messaging systems, or cloud services.  
-- **Reusability:** Java Services can be reused across multiple pages and projects.  
-- **REST Exposure:** Easily expose methods as REST APIs with input/output mapping.  
+- **Custom Logic:** Implement business rules, calculations, validations, or workflow automation.
+- **Integration:** Connect with external REST APIs, messaging systems, or cloud services.
+- **Reusability:** Java Services can be reused across multiple pages and projects.
+- **REST Exposure:** Easily expose methods as REST APIs with input/output mapping.
 - **Dependency Injection:** Use Spring components, autowired services, and other Java frameworks.  
 
 

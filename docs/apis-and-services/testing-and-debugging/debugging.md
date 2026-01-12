@@ -157,3 +157,10 @@ WaveMaker provides several tools to diagnose and resolve issues:
 - **Deployed Application Logs** — Retrieve logs for apps already deployed to understand runtime issues outside the development environment.
 
 Using these debugging techniques together helps you quickly root-cause errors and ensure your WaveMaker application behaves as designed.
+
+## How-To Guides
+
+Learn more about debugging through these practical guides:
+
+- [Debug Performance Issues using Fusion Reactor](/docs/guide/migrated-docs/debug-monitor-performance-issues-using-fusion-reactor.md) - Learn how to setup Fusion Reactor tool for WaveMaker Application Performance Monitoring
+

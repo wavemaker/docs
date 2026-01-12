@@ -59,7 +59,7 @@ Learning while browsing? Yes, please! You can now jump directly to the Academy v
 
 ### 🎁 Feature Highlights
 
-We’ve introduced a feature highlights section on the homepage. Think of it as a mini giftbox (similar to [Gift Box](/feature-announcements/2024/11/04/introducing-the-gift-box)) of useful updates and interesting features. Stay in the know without having to dig around.
+We’ve introduced a feature highlights section on the homepage. Think of it as a mini giftbox (similar to [Gift Box](/blog/2024/11/04/introducing-the-gift-box)) of useful updates and interesting features. Stay in the know without having to dig around.
 
 ![feature highlights](/img/blogs/feature-highlights.png)
 

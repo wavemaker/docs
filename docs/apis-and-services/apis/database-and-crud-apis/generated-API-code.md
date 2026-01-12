@@ -145,3 +145,20 @@ db.hrdb.jndiName=
 WaveMaker generates a **clean, layered, and extensible Java backend** aligned with standard Spring practices.
 
 Developers can inspect, extend, and maintain the codebase while benefiting from **rapid API generation** and **upgrade-safe customization**.
+
+
+---
+
+## How-To Guides
+
+Learn more about working with databases and queries through these practical guides:
+
+
+- [Connecting to Azure SQL Server](/docs/guide/migrated-docs/connect-azure-sql-server) - Configure Azure SQL Server database connections
+- [Uploading JDBC Drivers](/docs/guide/migrated-docs/how-to-upload-jdbc-driver) - Add custom JDBC drivers for database connectivity
+- [Configuring AWS Redshift Database](/docs/guide/migrated-docs/configuring-aws-redshiftdb) - Set up Amazon Redshift connections
+- [Configuring SAP HANA Cloud Database](/docs/guide/migrated-docs/configuring-sap-hana-clouddb) - Integrate with SAP HANA Cloud
+- [MySQL Connection Using SSL](/docs/guide/migrated-docs/mysql-connection-using-ssl) - Secure MySQL connections with SSL/TLS
+- [Switch from MariaDB to MySQL Connector](/docs/guide/migrated-docs/switch-mariadb-to-mysql-connector) - Migration guide for connector changes
+
+---
