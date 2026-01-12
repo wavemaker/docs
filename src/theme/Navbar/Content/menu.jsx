@@ -22,36 +22,36 @@ const MenuSection = () => {
 
   const menu = [
     {
-      label: "React",
-      icon: "/img/icon/react-sicon.svg",
-      link: "https://react-components.onwavemaker.com/",
-    },
-    {
-      label: "React Native",
-      icon: "/img/icon/reactnative-sicon.svg",
-      link: "https://rn-components.onwavemaker.com/",
-    },
-    {
       label: "Academy",
-      icon: "/img/icon/academy-icon.svg",
+      icon: "https://dev-ecosystem.s3.us-east-1.amazonaws.com/icon/academy-icon.svg",
       link: " https://next-academy.wavemaker.com/",
       subMenu: [],
     },
     {
       label: "Marketplace",
-      icon: "/img/icon/marketplace-icon.svg",
-      link: "https://next-marketplace.onwavemaker.com/",
+      icon: "https://dev-ecosystem.s3.us-east-1.amazonaws.com/icon/marketplace-icon.svg",
+      link: "https://marketplace.onwavemaker.com/",
       subMenu: [],
     },
     {
-      label: "Studio",
-      icon: "/img/wm-logo.svg",
+      label: "Web",
+      icon: "https://dev-ecosystem.s3.us-east-1.amazonaws.com/icon/react-sicon.svg",
+      link: "https://react-components.onwavemaker.com/",
+    },
+    {
+      label: "Mobile",
+      icon: "https://dev-ecosystem.s3.us-east-1.amazonaws.com/icon/reactnative-sicon.svg",
+      link: "https://rn-components.onwavemaker.com/",
+    },
+    {
+      label: "Platform",
+      icon: "https://dev-ecosystem.s3.us-east-1.amazonaws.com/icon/wm-icon.svg",
       link: "https://www.wavemakeronline.com/",
       subMenu: [],
     },
     {
-      label: "Wavemaker UI Kit",
-      icon: "/img/icon/ds-icon.svg",
+      label: "UI Kit",
+      icon: "https://dev-ecosystem.s3.us-east-1.amazonaws.com/icon/ds-icon.svg",
       link: "https://www.figma.com/community/file/1463103184874870889/wavemaker-ui-kit",
       subMenu: [],
     },

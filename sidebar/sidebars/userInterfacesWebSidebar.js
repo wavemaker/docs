@@ -346,6 +346,26 @@ export default [
     collapsed: true,
     items: [
       {
+        type: 'category',
+        label: 'Create a page',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/page/overview',
+          },
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/page/types',
+          },
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/page/properties',
+          },
+        ],
+      },
+      {
         type: 'doc',
         id: 'user-interfaces/web/develop/create-page-working-with-layouts',
       },
