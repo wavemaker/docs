@@ -90,7 +90,7 @@ WaveMaker supports multiple ways to configure the CDN URL.
 :::note
 To learn how to build static content file in WaveMaker, watch the video below:
 
-▶️ [Build static content ](https://next-academy.onwavemaker.com/Watch?wm=WM-49E878DE75)
+▶️ [Build static content ](https://next-academy.wavemaker.com/Watch?wm=WM-49E878DE75)
 :::
 
 ## Related Documentation

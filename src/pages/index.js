@@ -219,7 +219,7 @@ export default function Home() {
                 Discover the WaveMaker Academy and explore a curated set of expert-led courses. Gain
                 the knowledge you need to build confidently with WaveMaker.
               </p>
-              <Link to="https://next-academy.onwavemaker.com/" className="button button--primary">
+              <Link to="https://next-academy.wavemaker.com/" className="button button--primary">
                 Go to Academy
               </Link>
             </div>
