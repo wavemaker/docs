@@ -9,219 +9,143 @@ last_update: { author: "Swetha Kundaram" }
 
 ## When JavaScript Is Used in WaveMaker
 
-WaveMaker builds most of the application through visual design and configuration. Pages, widgets, APIs, and database connections are created without writing code. JavaScript is used only when the visual setup cannot express the required logic. It exists to handle behavior, not structure.
+WaveMaker builds application structure through visual design and configuration. Pages, components, APIs, and data sources are defined without writing code. You use JavaScript when application behavior cannot be fully defined through visual configuration alone. Its role is to implement custom logic while leaving application structure unchanged.
 
-### How It Works
+### Execution Context
 
-1. UI elements like pages and widgets are created visually.
-2. Data sources such as APIs and databases are configured using bindings.
-3. JavaScript runs only to handle custom logic, validations, or edge cases.
+Visual configuration executes first. JavaScript runs after UI and data bindings are executed. JavaScript complements WaveMaker features and it does not replace them.
 
-Execution flow:
+![JS WaveMaker](../../../static/learn/assets/js-wavemaker.png)
 
-```
-UI (Visual) → Data (Configured) → JavaScript (Logic only)
-```
+#### **UI (Visual) → Data (Configured) → JavaScript (Behavior)**
+
+- UI elements like pages and components are created visually.
+- Data sources such as APIs and databases are configured using bindings.
+- JavaScript runs only to handle custom logic, validations, or edge cases.
 
 ### Example
 
-**A form submits data using built-in bindings**: JavaScript runs only when validation rules or conditional behavior cannot be expressed through configuration.
+A form submits data using built-in bindings. JavaScript runs only when validation rules or conditional behavior cannot be expressed visually.
 
 
 ## How Aira Handles JavaScript Logic
 
-Aira uses a dedicated execution agent called **wm_js_agent** to manage JavaScript. The agent extends behavior without changing how the application is built.
+Aira manages all custom JavaScript through a dedicated execution agent called **wm_js_agent**. The agent attaches behavior to an existing application. It does not alter layout, markup, or application structure. All generated code follows WaveMaker’s runtime and lifecycle rules.
 
-Its responsibility is to attach logic where required while remaining fully compliant with WaveMaker’s runtime model.
 
-### What the JavaScript Agent Does
+## JavaScript Logic Categories in Aira
 
-The **wm_js_agent** can:
+Aira applies JavaScript based on the type of logic required. Each category follows strict boundaries.
 
-* Extend page-level or app-level behavior
-* Create and bind event handlers (button clicks, input changes, variable success/error events)
-* Apply form validations using the WaveMaker DSL validation framework
-* Perform data manipulation and iterations
-* Integrate approved JavaScript libraries
+### UI Logic and Event-Driven Behavior
 
+UI logic controls how existing components behave in response to user actions or system events.
+
+The JavaScript agent binds logic to widget events such as clicks, input changes, or visibility toggles.
 If an expected event handler does not exist, the agent creates it automatically.
 
-![](/learn/assets/js-agent-flow.png)
+This logic may:
 
-### What the JavaScript Agent Does NOT Do
+* Show or hide fields based on input
+* Enable or disable actions conditionally
+* Update widget values dynamically
 
-The agent never:
+The agent respects component lifecycle and timing, especially for dialogs, tabs, wizards, and other dynamically loaded UI.
+Logic is attached only when target elements are available in the DOM.
 
-* Creates new UI widgets or pages
-* Modifies markup or layout
-* Redefines application structure
+The agent never creates or modifies components. It attaches behavior only.
 
-Using JavaScript for layout or basic data binding is trash.
+![alt text](../../../static/learn/assets/ui-js-agent.png)
+
+
+### Data and Backend Interaction Logic
+
+JavaScript coordinates data flow between the UI and backend services.
+
+The agent works with:
+
+* API variables
+* Database-backed variables
+* Java service responses
+
+It can transform responses, chain calls conditionally, and execute logic on variable lifecycle events such as `onSuccess` or `onError`.
+
+When interacting with APIs or backend services, the JavaScript agent follows WaveMaker-supported callback and event-based patterns.
+Promise-based or framework-agnostic async patterns are intentionally avoided to remain compliant with the platform runtime.
+
+![alt text](../../../static/learn/assets/backend-js-agent.png)
+
+JavaScript coordinates and responds to backend interactions, but it does not implement backend logic or replace server-side services.
+
+
+### Validation Logic
+
+Validation ensures data correctness before actions are executed. The JavaScript agent applies validation using the WaveMaker DSL validation framework. This keeps validation consistent with platform standards. The agent can apply required-field checks, contextual constraints, and inferred rules based on field usage.
+Optional fields are skipped when context indicates they are not required.
+
+![alt text](../../../static/learn/assets/validation-js-agent.png)
+
+Validation logic runs before submission or variable execution. No UI structure is modified during validation.
+
+
 
 ## How the JavaScript Agent Identifies Targets
 
-Before generating any code, the agent analyzes the existing page.
+Before generating code, the agent analyzes the existing application state.
 
-### Targeting Process
+It reads page metadata and DOM structure to identify components, forms, and variables already present.
+It then locates relevant events or determines where new handlers must be created.
 
-1. Reads the WaveMaker page metadata and DOM structure.
-2. Identifies widgets, forms, and variables already present.
-3. Locates relevant events or creates them if missing.
-4. Attaches JavaScript logic to those events.
+Logic is attached only after this analysis completes.
+No unrelated elements are touched.
 
-Targeting depends heavily on widget naming.
 
-### Naming Requirements
 
-Good naming enables accurate targeting:
+## Importance of Naming and Prompt Precision
 
-* `showHidePasswordButton`
-* `shippingForm`
-* `submitRequestBtn`
+Accurate targeting depends heavily on naming.
 
-Bad naming causes ambiguity and slower execution:
+Descriptive widget and variable names allow the agent to locate elements reliably and efficiently.
+Poor naming increases ambiguity and slows execution.
 
-* `button1`
-* `formField2`
-* `ABCbutton`
+Prompts should clearly specify the page, target elements, and expected behavior.
+Generic prompts expand the search scope and reduce predictability.
 
-The agent only manipulates existing elements.
-It never injects UI components.
+If the required context is missing or ambiguous, the agent does not infer intent and requests clarification before generating or attaching JavaScript logic.
 
-## How It Works (End-to-End)
 
-Execution flow:
+
+## End-to-End Execution Flow
 
 ```
-WaveMaker UI
+User Prompt
    ↓
-Page & DOM Analysis
+Page Scope Resolution
+   ↓
+DOM and Metadata Analysis
    ↓
 Widget and Variable Identification
    ↓
-Event Binding (existing or auto-created)
+Event Detection or Creation
    ↓
-JavaScript Logic Execution
+JavaScript Logic Attachment
+   ↓
+Runtime Execution
 ```
 
----
+Each step is required.
+Skipping any step breaks predictability.
+
+
 
 ## Example
 
-A page already contains a button and a bound variable.
+A page already contains a form, a submit button, and a bound API variable.
 
-A prompt requests custom behavior on button click.
-The **wm_js_agent** locates the button, creates a click handler if missing, and attaches the logic.
+A prompt requests conditional validation and submit behavior.
+The **wm_js_agent** identifies the relevant fields, applies contextual validation, creates a submit handler if missing, and attaches the logic.
 
-No UI elements change.
+The UI remains unchanged.
 Only behavior is added.
 
----
-
-## Notes and Best Practices
-
-* Always specify the page name in prompts to limit search scope.
-* Use descriptive widget names for any element that requires JavaScript.
-* Be explicit about the behavior you want.
-* Generic prompts trigger broader project searches and reduce performance.
-
-For complex or multi-step workflows, use the Planner agent.
-It will delegate JavaScript tasks to **wm_js_agent** when needed.
-
-
-
-
-## wm_js_agent
-
-The **wm_js_agent** is the JavaScript execution agent within the AIRA system. Its responsibility is to generate and integrate JavaScript that extends or customizes behavior at the page or application level while remaining fully compliant with WaveMaker’s execution model.
-
-This agent works strictly within the boundaries of existing UI structure and variables. It does not introduce new UI elements, alter markup, or redefine application structure. Its purpose is to attach behavior, not to reshape the interface.
-
-
-
-
-## Role in AIRA Architecture
-
-The JavaScript Agent operates as a specialized execution agent under the orchestration of the **wm_agent**.
-
-It is invoked when a workflow requires behavior that cannot be expressed purely through declarative bindings or configuration. While the Prism UI Expert Agent defines structure and bindings, the JavaScript Agent adds controlled procedural behavior where explicitly required.
-
-This agent does not make architectural or UI decisions. It implements behavior that has already been approved at the planning or design level.
-
-
-## Core Responsibilities
-
-### WaveMaker-Compliant JavaScript Generation
-
-The JavaScript Agent generates JavaScript functions and event handlers that conform to WaveMaker’s supported execution patterns. All generated code respects the framework’s lifecycle rules and integration points.
-
-The agent does not introduce framework-agnostic or browser-specific shortcuts. Its output is designed to coexist safely with WaveMaker’s runtime.
-
-### Event and Behavior Binding
-
-The agent attaches JavaScript to existing events such as widget actions, variable lifecycle callbacks, or application-level hooks. This includes updating handlers like `onSuccess`, `onError`, and similar event-driven entry points.
-
-The agent does not create new variables or redefine existing ones. It only binds behavior to what already exists.
-
-### Project Integration
-
-Generated JavaScript is integrated into the project in the appropriate location based on scope, such as page-level or app-level scripts. The agent ensures that integration respects WaveMaker’s loading and execution order.
-
-For React Native projects, the agent may add or update Expo plugin references when explicitly required and supported.
-
-### Context-Driven Code Access
-
-The JavaScript Agent operates on a strictly contextual basis. It inspects or references only the specific parts of the project that are required for the requested behavior.
-
-Unrelated files, variables, or structures are never touched.
-
-## Execution Scope
-
-The JavaScript Agent operates exclusively within the JavaScript behavior layer of a WaveMaker project.
-
-It is authorized to generate JavaScript functions, attach event handlers, bind event attributes in existing page markup, update variable lifecycle callbacks, and manage supported Expo plugin references in React Native contexts.
-
-Its scope does not include UI structure, widget configuration, variable creation, or backend logic.
-
-## Context Handling and Data Flow
-
-The JavaScript Agent receives scoped instructions from the wm_agent, typically including target pages, variables, widgets, and the events to which behavior should be attached.
-
-The agent produces JavaScript code and updated event bindings. These outputs are returned to the wm_agent to support coordination and downstream validation.
-
-If required context is missing or ambiguous, the agent does not infer intent. It pauses and requests clarification before proceeding.
-
-
-## Authority and Constraints
-
-The JavaScript Agent operates under strict technical constraints.
-
-It may only use verified WaveMaker widget and variable capabilities. It cannot add, remove, or alter widgets or markup structure, and it cannot create or delete variables. Its role is limited to attaching behavior to existing constructs.
-
-The agent must not use JavaScript promises when working with WaveMaker service invokes. All service interactions must follow the callback or event-based patterns supported by the platform.
-
-It must respect DOM loading and lifecycle rules, particularly when interacting with dialogs, tabs, wizards, or other dynamically loaded components.
-
-These constraints ensure that generated JavaScript remains safe, predictable, and compatible with WaveMaker’s runtime.
-
-
-## Execution Flow (High-Level)
-
-At a high level, the JavaScript Agent is invoked after the relevant UI structure and variables already exist. It generates and attaches JavaScript behavior to specific events, integrates that code into the project at the appropriate scope, and returns control to the wm_agent.
-
-The agent never initiates structural changes and never executes logic outside its assigned behavioral scope.
-
-
-
-## Design Invariants
-
-The following conditions are always true for the JavaScript Agent.
-
-* The agent modifies behavior, not structure.
-* JavaScript is generated only for existing pages, widgets, and variables.
-* All service interactions follow WaveMaker-supported callback or event patterns.
-* DOM lifecycle rules are respected at all times.
-* Code changes are localized and context-driven.
-
-If any of these invariants are violated, the resulting behavior is considered invalid.
 
