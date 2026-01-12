@@ -173,24 +173,28 @@ export default [
         type: 'doc',
         id: 'apis-and-services/security/overview',
       },
-      {
-        type: 'doc',
-        id: 'apis-and-services/security/app-security',
-      },
+    //   {
+    //     type: 'doc',
+    //     id: 'apis-and-services/security/app-security',
+    //   },
       {
         type: 'doc',
         id: 'apis-and-services/security/authentication-and-authorization',
       },
-      {
-        type: 'doc',
-        id: 'apis-and-services/security/access-level-and-permissions',
-      },
+    //   {
+    //     type: 'doc',
+    //     id: 'apis-and-services/security/access-level-and-permissions',
+    //   },
       {
         type: 'category',
         label: 'Providers',
         collapsible: true,
         collapsed: true,
         items: [
+             {
+            type: 'doc',
+            id: 'apis-and-services/security/providers/overview',
+          },
           {
             type: 'doc',
             id: 'apis-and-services/security/providers/login-configuration',

@@ -1,142 +1,128 @@
 ---
-last_update: { author: "Shahnawaz Ahmed" }
+last_update: { author: "Priyanka Bhadri" }
 ---
 
-# Authentication & Authorization
----
-Authentication and authorization form the core of application security. Together, they ensure that only valid users can access an application and that each user can perform only the actions they are permitted to perform.
 
-This chapter explains these concepts in detail, introduces Role-Based Access Control (RBAC), and describes how WaveMaker enforces authentication and authorization consistently across application layers.
+# Authentication and Authorization
+
+WaveMaker provides a unified security framework to verify user identities and control access to application resources. Authentication ensures only valid users can enter the application, while authorization determines what actions they can perform based on assigned roles and permissions.
+
+This document covers:
+
+- Authentication
+- User Onboarding
+- Authorization
+- Access Levels and Permissions
+
+---
 
 ## Authentication
 
-Authentication is the process of verifying the identity of a user or system attempting to access an application. It answers the question:
+Authentication is the process of verifying a user's identity before granting access to an application. WaveMaker intercepts secured requests and validates credentials through the configured authentication provider.
 
-**Who is making this request?**
+### How Authentication Works
 
-Authentication typically involves validating credentials such as usernames and passwords, tokens, or certificates, and establishing a trusted identity for the duration of a session or request.
+1. A user attempts to access the application.  
+2. WaveMaker intercepts the request through the security filter.  
+3. The user's credentials are verified by the configured authentication provider.  
+4. If authentication succeeds, the user proceeds to onboarding; if it fails, access is denied.
 
-### Authentication Flow
+### Supported Authentication Providers
 
-```mermaid
-sequenceDiagram
-    participant Client
-    participant Server
-    participant AuthProvider
+WaveMaker supports multiple authentication mechanisms:
 
-    Client->>Server: Request with credentials
-    Server->>AuthProvider: Validate credentials
-    AuthProvider-->>Server: Authentication success or failure
-    Server-->>Client: Access granted or 401 Unauthorized
-```
+- **Database Authentication** – Username and password stored in application database tables  
+- **LDAP / Active Directory** – Enterprise directory integration for centralized user management  
+- **Central Authentication Service (CAS) / SAML** – Federated single sign-on for enterprise applications  
+- **OpenID Connect / OAuth2** – Modern cloud or social login providers  
+- **Custom Java Authentication** – Fully customizable authentication flows  
 
-If authentication fails, the server rejects the request and returns an HTTP 401 (Unauthorized) response. If authentication succeeds, the authenticated identity is associated with the request context and passed to subsequent authorization checks.
+### Behavior for Unauthenticated Requests
+
+- Requests from unauthenticated users return HTTP 401 or are redirected to the configured login page.  
+- Login flows are automatically generated based on the selected provider.  
+
+Authentication forms the foundation of security by ensuring that only verified users enter the application.
+
+---
+
+## User Onboarding
+
+After authentication, WaveMaker performs **user onboarding**, which retrieves additional user information from the authentication provider.  
+
+This includes:
+
+- **Username** – Unique user identifier  
+- **Assigned Roles** – Predefined roles determining access permissions  
+- **Group Memberships** – Optional grouping to simplify role assignment and management  
+
+The onboarding process maps users to roles, which are then used for role-based access control (RBAC).
+
+---
 
 ## Authorization
 
-Authorization determines what an authenticated user is allowed to do. It answers the question:
+Authorization determines **what an authenticated user is allowed to access or perform** within the application. WaveMaker uses a **role-based access control (RBAC)** model, where permissions are assigned to roles rather than individual users.
 
-**Is this user permitted to access this resource or perform this action?**
+### How Authorization Works
 
-Authorization is evaluated only after successful authentication and is based on access rules such as roles, permissions, or policies.
+1. User roles are retrieved during onboarding.  
+2. Access requests for pages, services, or UI components are evaluated against the assigned roles.  
+3. If the user has the required role, access is granted; otherwise, it is denied.  
+4. All checks are enforced on the server to prevent client-side bypass.
 
-### Authorization Flow
+### Where Authorization Applies
 
-```mermaid
-sequenceDiagram
-    participant Client
-    participant Server
-    participant AuthorizationEngine
+- **Application Pages** – Restrict which pages a user can view  
+- **Backend Services and APIs** – Control which services a user can invoke  
+- **UI Components and Actions** – Conditionally render or enable features based on roles  
 
-    Client->>Server: Authenticated request
-    Server->>AuthorizationEngine: Check access rules
-    AuthorizationEngine-->>Server: Allowed or denied
-    Server-->>Client: Resource or 403 Forbidden
-```
+Authorization ensures users can only perform actions permitted by their roles, maintaining security and application integrity.
 
-If authorization fails, the server responds with HTTP 403 (Forbidden), indicating that the user is authenticated but does not have sufficient privileges.
+---
 
-## Authentication vs Authorization
 
-```mermaid
-flowchart LR
-    A[Incoming Request]
-    B[Authentication]
-    C[Authorization]
-    D[Access Granted]
-    E[Access Denied]
+## Access Levels and Permissions
 
-    A --> B
-    B -->| Authenticated | C
-    B -->| Failed | E
-    C -->| Allowed | D
-    C -->| Denied | E
-```
+Once roles are defined in a WaveMaker application, you can configure **access levels and permissions** to control how these roles interact with application resources. Permissions determine who can view or interact with specific pages, services, and UI components.
 
-Authentication verifies identity and always occurs first. Authorization verifies permissions and occurs only after authentication.
+### Permission Levels
 
-## Role-Based Access Control (RBAC)
+WaveMaker supports three primary permission levels that can be applied to resources and services:
 
-Role-Based Access Control (RBAC) is a widely adopted authorization model in which permissions are assigned to roles, and roles are assigned to users. Instead of managing permissions for individual users, RBAC simplifies access control by grouping permissions into well-defined roles.
+- **Everyone** – Grants access to all users, regardless of whether they are logged in. This is typically used for public resources such as About or Contact pages.  
+- **Authenticated** – Grants access only to users who have successfully signed in. Most secured resources default to this level once authentication is enabled.  
+- **Role‑Based Authorization** – After a resource is set to “Authenticated,” you can further restrict access by assigning specific roles. Only users with those roles will be allowed to use the resource.
 
-### Core RBAC Concepts
+By default, application resources and services are set to “Authenticated,” meaning they are accessible only after the user logs in. You can override this default by assigning a different permission level as needed. :contentReference[oaicite:0]{index=0}
 
-- **User** – An authenticated identity  
-- **Role** – A named collection of permissions  
-- **Permission** – Approval to perform an action or access a resource  
-- **Resource** – APIs, services, pages, or data  
+### Applying Permissions
 
-### RBAC Model
+Permissions can be configured for different types of application elements:
 
-```mermaid
-flowchart LR
-    U[User]
-    R[Role]
-    P[Permission]
-    Res[Resource]
+- **Web Resources** – These include application pages created in WaveMaker. Each page can have its own permission level.  
+- **Services** – This includes database services, web services, and custom Java services. Permissions can be set for each service and its endpoints.  
+- **Prefabs** – Permissions set on a Prefab affect all the services invoked within that Prefab.  
 
-    U --> R
-    R --> P
-    P --> Res
-```
+Permissions follow a **hierarchical model**: if a resource does not have a specific permission assigned, it inherits the permission of its parent. For example, if a database is set to “Authenticated,” its contained controllers and operations will inherit that permission unless explicitly overridden. :contentReference[oaicite:1]{index=1}
 
-This model enables centralized permission management, reduces duplication of access rules, and clearly separates identity from access control logic.
+### Permission Inheritance
 
-## RBAC in WaveMaker
+Permission inheritance means that child resources automatically adopt the permission level of their parent when no explicit permission is defined. For example:  
+- If a database service is set to “Authenticated,” its controllers and operations inherit the same level.  
+- If a controller has specific role restrictions, only those are applied to its operations if defined; otherwise, the controller’s permissions cascade down. :contentReference[oaicite:2]{index=2}
 
-WaveMaker implements RBAC as a server-enforced authorization model, ensuring that access rules are consistently applied and cannot be bypassed from the client.
 
-In WaveMaker:
 
-- Users are authenticated using a configured security provider  
-- Authenticated users are associated with one or more roles  
-- Roles define access to APIs, services, data operations, and UI actions  
+---
 
-Authorization rules are evaluated on every request, regardless of whether the request originates from the application UI, a REST API call, or an external integration.
+## Summary
 
-### WaveMaker RBAC Enforcement Flow
+WaveMaker's authentication and authorization framework provides a **complete, flexible, and server-enforced security model**:
 
-```mermaid
-sequenceDiagram
-    participant Client
-    participant WaveMakerServer
-    participant SecurityContext
+- **Comprehensive** – Combines authentication, onboarding, and authorization  
+- **Flexible** – Supports multiple authentication providers and custom logic  
+- **Server-Enforced** – Prevents access through client-side circumvention  
+- **Secure by Default** – Includes protections against common web threats  
 
-    Client->>WaveMakerServer: Authenticated request
-    WaveMakerServer->>SecurityContext: Resolve user roles
-    SecurityContext-->>WaveMakerServer: Roles and permissions
-    WaveMakerServer->>WaveMakerServer: Enforce RBAC rules
-    WaveMakerServer-->>Client: Resource or 403 Forbidden
-```
-
-## Securing Application Layers
-
-WaveMaker enforces authentication and authorization across multiple layers of an application:
-
-- **API layer** – Controls access to exposed services  
-- **Service layer** – Enforces business-level permissions  
-- **Data layer** – Restricts create, read, update, and delete operations  
-- **UI layer** – Conditionally enables, disables, or hides actions based on roles  
-
-This layered approach ensures that security does not rely solely on client-side controls and remains effective even when APIs are accessed directly.
-
+By leveraging this framework, applications ensure that only authenticated users can access resources and perform only authorized actions.
