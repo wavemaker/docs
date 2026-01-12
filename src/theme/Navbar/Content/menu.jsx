@@ -45,7 +45,7 @@ const MenuSection = () => {
     },
     {
       label: "Platform",
-      icon: "https://dev-ecosystem.s3.us-east-1.amazonaws.com/icon/wm-icon.svg",
+      icon: "https://dev-ecosystem.s3.us-east-1.amazonaws.com/icon/wm-logo.svg",
       link: "https://www.wavemakeronline.com/",
       subMenu: [],
     },
