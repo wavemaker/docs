@@ -1,118 +1,133 @@
 ---
 last_update: { author: "Shahnawaz Ahmed" }
 ---
-# Overview
----
-Application security is a foundational concern in modern software development. As applications increasingly rely on distributed architectures, APIs, and browser-based clients, enforcing robust security controls becomes critical to protecting data, users, and systems.
 
-This chapter introduces the core concepts of application security as they apply to applications built using WaveMaker. It provides a high-level understanding of authentication, authorization, security providers, safeguards, and the role of generated backend code—without delving into detailed configurations or provider-specific implementations. Those aspects are covered in subsequent chapters.
+#  Overview
 
----
+Application security in WaveMaker provides a structured framework to safeguard application resources. It controls who can access the application, verifies user identities using supported authentication mechanisms, and enforces authorization rules to ensure users can perform only permitted actions.
 
-## About Application Security
+This overview introduces the WaveMaker security model and explains how authentication, user onboarding, and authorization work together to secure application pages, services, and APIs.
 
-In a typical web application, client-side code (such as JavaScript executed in a browser) can be inspected, modified, or replayed by users. Because of this, **security cannot be enforced reliably on the client**. All critical security decisions—such as identity validation, access control, and data protection—must be enforced on the server.
-
-```mermaid
-%%{init: {
-  "theme": "default",
-  "themeVariables": {
-    "fontSize": "30px",
-    "font-family": "DM Sans"
-  }
-}}%%
-flowchart LR
-    User["User / Client<br/>(Browser, App, API Client)"]
-    ClientCode["Client-side <br/>Code<br/>(JavaScript, UI)"]
-    Server["Application Server"]
-    Auth["Identity <br/>Verification<br/>(Authentication)"]
-    Access["Access <br/>Control<br/>(Authorization)"]
-    Data["Protected <br/>Resources<br/>(APIs, Data, Services)"]
-    Threats["Threat <br/>Mitigation<br/>(Validation, <br/>Rate Limits,<br/>Input Checks)"]
-
-    User --> ClientCode
-    ClientCode -->|Request| Server
-
-    Server --> Auth
-    Auth --> Access
-    Access --> Threats
-    Threats --> Data
-
-    Data -->|Response| Server
-    Server --> ClientCode
-```
-Application security generally addresses the following goals:
-
-- **Identity verification** – Ensuring that a user or system is who it claims to be  
-- **Access control** – Restricting access to resources based on roles or permissions  
-- **Data protection** – Preventing unauthorized access or modification of sensitive data  
-- **Threat mitigation** – Protecting against unauthorized access, data leakage, or misuse of APIs  
-
-WaveMaker follows a **server-centric security model**, where incoming requests are evaluated and enforced through backend security mechanisms before accessing application resources.
 
 ---
 
-## Authentication & Authorization
+## What Is Application Security?
 
-Authentication and authorization are closely related but serve distinct purposes in application security.
+Application security ensures that only authenticated users can access the application and that users can perform actions only within the scope of their assigned roles.
 
-- **Authentication** answers the question:  
-  *Who is the user making this request?*  
-  It involves validating credentials and establishing an authenticated identity.
+WaveMaker security is based on three core components:
 
-- **Authorization** answers the question:  
-  *What is the authenticated user allowed to do?*  
-  It determines whether the user has sufficient privileges to access a resource or perform an action.
+- **Authentication** – Verifies the identity of the user  
+- **User Onboarding** – Retrieves user details and maps them to roles  
+- **Authorization** – Controls access to application resources  
 
-In a secured application, authentication always precedes authorization. A request must first establish identity before access rules can be evaluated.
-
-WaveMaker supports enforcing both authentication and authorization consistently across application layers, including APIs, services, data operations, and UI-driven actions.
+These components work together to provide a secure and scalable access control mechanism.
 
 ---
 
-## Security Providers
 
-A security provider defines **how authentication is performed** and **how user identities are resolved**. Different applications have different security requirements, ranging from simple credential checks to enterprise-grade identity integrations.
 
-WaveMaker allows applications to integrate with a variety of security providers, enabling flexibility across use cases such as:
 
-- Enterprise directory services  
-- Token-based authentication systems  
-- Form-based or credential-based login mechanisms  
-- External identity providers  
+## Security Enforcement Flow
 
-Once a provider is configured and attached to an application, it becomes the source of truth for user authentication and identity resolution. Provider-specific details are abstracted from application logic, allowing developers to focus on business functionality.
+The WaveMaker security framework follows a clear, structured sequence:
+
+1. **Request Interception** – Incoming requests are intercepted by the security framework.  
+2. **Authentication** – User identity is verified using the configured authentication provider.  
+3. **User Onboarding** – Additional user details, roles, and group memberships are retrieved.  
+4. **Authorization Evaluation** – Permissions are checked against the user’s assigned roles.  
+5. **Access Enforcement** – Access to pages, services, and APIs is granted or denied based on the evaluation.  
+
+This unified approach ensures **consistent security across the entire application stack**, from UI to database.
+
+
+![SecurityOverview](assets/overview2.png)
+
+
+
+
+
+## Core Security Components
+
+WaveMaker’s security framework is built on three core components that work together to protect applications. These components ensure users are authenticated, their roles are mapped, and access to resources is properly controlled.
+
+### Authentication – Verifying User Identity
+Authentication is the first step in securing an application. It confirms that a user is who they claim to be before granting access.
+
+WaveMaker supports multiple authentication mechanisms, including:
+
+- **Database-based authentication** – Traditional username/password verification against the application database.  
+- **LDAP / Active Directory** – Enterprise directory integration for centralized user management.  
+- **Central Authentication Service (CAS) / SAML** – Federated authentication for single sign-on (SSO) capabilities.  
+- **OpenID Connect** – Modern OAuth 2.0-based identity verification for cloud applications.  
+- **Custom authentication** – Java-based services to implement proprietary authentication logic.
+
+If a user fails authentication, access is denied, returning an HTTP 401 response or redirecting to a login flow.
 
 ---
 
-## Safeguards
+### User Onboarding – Mapping Users to Roles
+After authentication, WaveMaker retrieves additional user details during **onboarding**:
 
-Safeguards represent **protective measures applied after authentication**, ensuring that application behavior remains secure during runtime.
+- **Username** – Unique user identifier.  
+- **Assigned roles** – Predefined roles that determine access permissions.  
+- **Group memberships** – Optional grouping to simplify role assignment and management.  
 
-These safeguards help:
+This information is mapped to application roles, forming the foundation for **role-based access control (RBAC)** and ensuring that users can only perform authorized actions.
 
-- Enforce authorization rules on resources and operations  
-- Prevent unauthorized API access  
-- Secure data access paths  
-- Control exposure of backend services  
+---
 
-In WaveMaker, safeguards are applied consistently across the application stack, ensuring that security rules are enforced regardless of how a request is initiated (UI, API, or external integration).
+### Authorization – Enforcing Access Control
+Authorization determines **what an authenticated user can do** within the application. WaveMaker uses a **role-based access control (RBAC) model**, where permissions are assigned to roles rather than individual users. This ensures scalable and maintainable access management.
+
+Authorization is applied consistently across:
+
+- **Application pages and UI components** – Controls visibility and interaction.  
+- **Backend services and APIs** – Secures business logic and data endpoints.  
+- **Actions and workflows** – Ensures users perform only allowed operations.  
+
+All checks are enforced **server-side**, ensuring security even if client-side code is modified or bypassed.
+
+---
+
+### Server-Side Enforcement
+
+All authentication and authorization checks are enforced on the server. While the UI can conditionally show or hide features, server-side validation ensures that application resources remain protected even if client-side logic is modified or bypassed.
+
+---
+
+### Built-In Protections
+
+WaveMaker includes several **pre-configured security mechanisms** to protect applications against common threats:
+
+- **CSRF (Cross-Site Request Forgery) Protection** – Prevents unauthorized actions triggered from malicious websites.  
+- **XSS (Cross-Site Scripting) Protection** – Protects against injection of malicious scripts in UI components.  
+- **HTTP 401 / 403 Enforcement** – Ensures proper responses for unauthorized or forbidden access.  
+- **Secure Default Settings** – Sensible defaults reduce risk even for applications with minimal security customization.  
+- **Role-Based Access Controls (RBAC)** – Fine-grained access control based on roles, ensuring users can perform only authorized operations.
 
 ---
 
 ## Generated Backend Code
 
-When a security provider is imported and configured, WaveMaker automatically generates backend security code as part of the application build process.
-
-This generated code:
+When a security provider is configured, WaveMaker automatically generates backend security code during the build process. This code:
 
 - Integrates security controls into the backend runtime  
-- Establishes request-level security enforcement  
-- Applies authentication and authorization checks uniformly  
-- Aligns with established backend security frameworks  
+- Enforces authentication and authorization consistently  
+- Aligns with standard backend security frameworks  
 
-The generated code is managed by the platform and evolves with application configuration, reducing the need for manual security boilerplate while ensuring consistency and correctness.
-
-Developers can rely on this generated layer as the backbone of application security, while focusing on defining security rules and application behavior through configuration and design.
+Managed by the platform, it evolves with configuration changes, reducing manual boilerplate and letting developers focus on defining roles, permissions, and application behavior.
 
 ---
+
+## Summary
+
+Security in WaveMaker provides a complete and flexible access control framework:
+
+- **Comprehensive** – Combines authentication, user onboarding, and authorization  
+- **Flexible** – Supports multiple authentication providers and custom logic  
+- **Server-Enforced** – Prevents access through client-side circumvention  
+- **Secure by Default** – Includes protections against common web security threats  
+
+By using WaveMaker’s security framework, applications ensure that only authenticated users can access protected resources and that users can perform only the actions permitted by their assigned roles.
+
