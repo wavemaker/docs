@@ -195,10 +195,10 @@ export default [
             type: 'doc',
             id: 'apis-and-services/security/providers/overview',
           },
-          {
-            type: 'doc',
-            id: 'apis-and-services/security/providers/login-configuration',
-          },
+        //   {
+        //     type: 'doc',
+        //     id: 'apis-and-services/security/providers/login-configuration',
+        //   },
           {
             type: 'doc',
             id: 'apis-and-services/security/providers/openid-authentication',
@@ -214,6 +214,10 @@ export default [
           {
             type: 'doc',
             id: 'apis-and-services/security/providers/saml-integration',
+          },
+          {
+            type: 'doc',
+            id: 'apis-and-services/security/providers/active-directory',
           },
         ],
       },
