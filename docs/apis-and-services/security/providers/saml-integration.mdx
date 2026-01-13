@@ -1,219 +1,298 @@
 ---
-title: SAML Integration
-last_update: { author: "Shahnawaz Ahmed" }
+last_update: { author: "Priyanka Bhadri" }
 ---
 
-# SAML Integration
+# SAML Integration in WaveMaker
+
+
+Security Assertion Markup Language (SAML) is an XML-based standard that enables secure exchange of authentication and authorization information between an **Identity Provider (IdP)** and a **Service Provider (SP)**. It is commonly used in enterprise environments to implement **Single Sign-On (SSO)** and **Single Logout (SLO)** (subject to Identity Provider support).
+
+WaveMaker supports SAML-based authentication, allowing applications to delegate user authentication to external identity providers such as Azure AD, Okta, Keycloak, Ping Identity, and other SAML-compliant systems. This enables centralized identity management, consistent security enforcement, and seamless user login experiences.
+
+In a WaveMaker application:
+- WaveMaker acts as the **Service Provider (SP)**
+- An external system acts as the **Identity Provider (IdP)**
+
 ---
-**Security Assertion Markup Language (SAML)** is an XML-based open standard for exchanging authentication and authorization data between different parties. The SAML exchanges are usually between
+
+## How SAML Authentication Works in WaveMaker
+
+1. A user attempts to access a secured WaveMaker application or page.
+2. The application redirects the user to the configured SAML Identity Provider.
+3. The Identity Provider authenticates the user using its own login mechanism.
+4. After successful authentication, the IdP sends a **SAML Assertion** back to the WaveMaker application.
+5. WaveMaker validates the assertion, extracts user identity information, and establishes a session.
+6. User roles are resolved and authorization rules are applied.
+
+This flow allows users to authenticate once and access the application without managing credentials within WaveMaker.
+
+---
+
+## SAML Integration Architecture
+
+- **Service Provider (SP):** WaveMaker application  
+- **Identity Provider (IdP):** External SAML provider  
+- **SAML Assertion:** XML document containing authenticated user details  
+- **Metadata Exchange:** Configuration information exchanged between SP and IdP  
+
+WaveMaker relies on SAML metadata to establish trust and define endpoints, certificates, and binding details.
+
+---
+
+## Supported Identity Providers
+
+WaveMaker SAML integration works with any SAML 2.0-compliant provider, including:
+
+- Azure Active Directory
+- Okta
+- Keycloak
+- Ping Identity
+- ADFS
+- Custom enterprise IdPs
+
+---
+
+## Configuring SAML in WaveMaker
+
+### Step 1: Enable Security
+
+1. Open the application in WaveMaker Studio.
+2. Navigate to **Security** settings.
+3. Enable application security if it is not already enabled.
 
 
-- identity provider (IdP) - producer of assertions, and
-a service provider (sp) - the consumer of assertions.
-- Using Open ID, WaveMaker applications can let their customers login using their already existing identity such as Google Account, Okta, or AuthO. It is also possible to implement SSO by setting up multiple applications use the same Open ID provider. Some well-known Open ID providers include **Google**, **Okta**, and **AuthO**. For example, Twitter uses Open ID authentication where you can select Identity Provider like Google to login.
+### Step 2: Select SAML as the Authentication Provider
 
-The identity provider could be any vendor like ADFS, OneLogin, Okta etc. which supports SAML-based Single Sign-On (SSO). The service provider is your WaveMaker application which makes use of Identity Provider to enable single sign-on across all your WaveMaker applications.
+1. Choose **SAML** as the authentication provider.
+2. Provide a unique **Provider Name**.
+3. Specify whether SAML is the primary authentication mechanism.
 
-The advantages of SAML SSO
 
-- Each and every application do not need to maintain the authentication info (such as user accounts, credentials etc)
-The application user does not need to enter credentials for logging into each & every application
-- To configure SAML SSO, the Service Provider (SP) needs to know about the identity provider metadata (URL) and the identity provider needs to know about the service provider metadata URL and SSO endpoint URL.
+### Step 3: Configure Identity Provider (IdP) Details
 
-WaveMaker application can be integrated with SAML 2.0 complaint Identity Provider. However, it supports only two profiles - **Web Browser SSO Profile** and **Single Logout Profile** as explained in the sections below.
+You can configure the IdP using **Metadata URL** or **Metadata XML**.
 
-## SAML Profiles
-A SAML profile outlines the set of rules that describe how to embed assertions and extract them from a framework or protocol. Profiles can also define a set of constraints on the use of general SAML protocol or SAML assertions in particular contexts.
+#### Metadata URL
+Provide the URL exposed by the Identity Provider that returns SAML metadata.
 
-### SAML Web Browser SSO Profile
-Web Single Sign-On (SSO), as a subset of identity and access management, was proposed to tackle the usability, security, and management issues. With SSO, a user authenticates once to a trusted third-party, called Identity Provider (IdP), and subsequently gains access to all federated websites (i.e. Service Providers) he/she is entitled to – without being prompted with another login dialog.
+**Example (Azure AD):**
 
-In an SSO flow (see the figure below) user U navigates user agent U-A (e.g.a browser) and tries to access a restricted resource on SP (1). The user is not authenticated yet, SP generates a token request (2) and redirects U-A with the token request to IdP (3,4). In the following step, U authenticates himself to IdP (5) according to the supported authentication mechanisms. Subsequently, the security token is issued and sent through U-A to SP,
+`https://login.microsoftonline.com/common/federationmetadata/2007-06/federationmetadata.xml`
 
-```mermaid
-%%{init: {"themeVariables": {"fontSize": "20px"}}}%%
-sequenceDiagram
-    autonumber
-    participant IdP as IdP (Identity Provider)
-    participant UA as User Agent
-    participant SP as SP (Service Provider)
 
-    UA->>SP: 1. Initial request for protected resource
-    SP-->>UA: 2. Token Request / Redirect to IdP
-    UA->>SP: 3. Request forwarded via User Agent
-    UA->>IdP: 4. Redirect to Identity Provider
-    IdP->>UA: 5. Authentication
-    IdP-->>UA: 6. Authentication Response (SAML Assertion)
-    UA->>SP: 7. Assertion delivered to Service Provider
+> Note:  
+> - Metadata URLs do **not** require alias or password  
+> - The URL must be publicly accessible from the WaveMaker runtime  
+> - If validation fails, ensure HTTPS access, valid certificates, and correct tenant configuration
+
+#### Metadata XML
+Alternatively, paste the full metadata XML content provided by the IdP.
+
+
+### Step 4: Configure Service Provider (SP) Settings
+
+WaveMaker automatically generates SP metadata, including:
+
+- Entity ID  
+- Assertion Consumer Service (ACS) URL  
+- Single Logout (SLO) URL  
+
+This metadata must be uploaded or registered with the Identity Provider to establish trust.
+
+
+### Step 5: Attribute Mapping
+
+Map IdP attributes to WaveMaker user fields:
+
+- **Username / User ID**
+- **Email**
+- **Display Name**
+- **Roles or Groups (optional)**
+
+Role mapping can be:
+- Derived directly from SAML assertions, or
+- Looked up from a database using the authenticated username
+
+
+### Step 6: Configure Authorization
+
+After authentication:
+- Access levels and permissions are applied
+- Pages, services, and APIs are protected based on roles
+- Unauthorized users are blocked automatically
+
+---
+
+## Runtime Behavior
+
+At runtime:
+
+- Users are redirected to the Identity Provider for login
+- Sessions are created after successful SAML validation
+- Security context is maintained across UI, services, and APIs
+- Optional Single Logout (SLO) can terminate sessions across applications
+
+This ensures consistent security enforcement across the entire application stack.
+
+---
+
+
+
+## When to Use SAML
+
+SAML is recommended for:
+
+- Enterprise environments with centralized identity management
+- Applications requiring single sign-on across systems
+- Organizations that use SAML-compliant identity providers
+- Scenarios where credentials must remain external to the application
+
+---
+
+## Assertion Validation and Security
+
+WaveMaker enforces SAML security entirely on the backend by:
+
+- Verifying digital signatures using IdP certificates
+- Validating issuer, audience, and token expiry
+- Preventing replay attacks
+- Applying authentication and authorization server-side
+
+This prevents client-side manipulation and ensures consistent enforcement.
+
+---
+
+## Generated Backend Code
+
+
+When SAML authentication is configured in WaveMaker, the platform automatically generates a **security service structure** that handles authentication, authorization, and request enforcement. This structure is managed by WaveMaker and should not be modified manually.
+
+#### Project Structure
+
+```text
+services/
+└── securityService
+    ├── designtime
+    ├── src
+    │   └── saml
+    │       ├── metadata
+    │       │   └── idpMetadata.xml
+    │       └── key-store.jks
+    └── servicedefs
 ```
-### Single Logout Profile
-Once a principal has authenticated to an identity provider, the authenticating entity may establish a session with the principal (typically by means of a cookie, URL re-writing, or some other implementation-specific means). The identity provider may subsequently issue assertions to service providers or other relying parties, based on this authentication event; a relying party may use this to establish its own session with the principal.
-
-In such a situation, the identity provider can act as a session authority and the relying parties as session participants. At some later time, the principal may wish to terminate his or her session with all session participants in a given session managed by the session authority. This case may be satisfied using this profile of the SAML Single Logout protocol.
-
-Note that a principal (or an administrator terminating a principal's session) may choose to terminate this "global" session either by contacting the session authority, or an individual session participant. Also, note that an identity provider acting as a session authority may itself act as a session participant in situations in which it is the relying party for another identity provider's assertions regarding that principle. The SSO flow is shown below.
-
-```mermaid
-%%{init: {"themeVariables": {"fontSize": "30px"}}}%%
-sequenceDiagram
-    autonumber
-    participant SP1 as Session Participant
-    participant SP2 as Another Session Participant
-    participant UA as User Agent
-    participant IdP as Identity Provider
-
-    SP1->>IdP: <LogoutRequest> <br/>(issued by Session Participant)
-
-    Note right of IdP: Identity Provider determines<br/>session participants <br/>Are any other system entities<br/>participating in this session?
-
-    IdP->>SP2: <LogoutRequest> <br/>(if another session participant exists)
-
-    SP2->>IdP: Principal's local session terminated <br/> <LogoutResponse> returned
-
-    Note right of IdP: Steps 3 and 4 are repeated<br/>for each "other" session participant <br/>discovered in Step 2
-
-    IdP->>SP1: <LogoutResponse> <br/>issued to originating Session Participant
-
-```
-
-## SAML Integration with WaveMaker App
-### Steps Involved
-Register WaveMaker application with Identity Provider
-Configure the Identity Provider information in WaveMaker application
-Configure Keystore
-Configure Role Mapping
-### Registering WaveMaker app with Identity Provider
-Each and every application that wants to integrate with Identity Provider (IdP) for SAML SSO has to be registered with that IdP by providing application endpoint URL. Once the application is registered with IdP, the IdP provides a metadata URL that contains the IdP certificate, sso endpoint URL etc.
-
-While registering the application with IdP, some IdP providers ask for Service Provider’s (SP) endpoint URL which can be obtained as mentioned in the below section.
-
-### Configure IdP with WaveMaker application
-
-![alt text](../assets/configure-idp-ss.png)
-
-After enabling Security and on selecting SAML as the Security Provider for your app:
-
-1. In the 1st section, Service Provider (Application) Information, three read-only URLs are displayed which are required for application registration with IdP (as mentioned in the above section). They are:
-
-    - Metadata URL - the metadata URL of the service provider which gives information about the service provider.
 
 
 
-    ```
-        {app-hosted-url} + /saml2/service-provider-metadata/saml
-    ```
+### Design-Time Configuration (`designtime`)
 
-    - Audience URL - the service provider endpoint where the assertions are received.
-    ```
-        {app-hosted-url} + /login/saml2/sso/saml
-    ```
+The `designtime` folder stores security configuration created in WaveMaker Studio. This includes authentication provider details, application roles, secured URL mappings, and global security settings. These configurations define how security is applied consistently across the application.
 
-    - Single Logout URL - This logs out the user from the IdP i.e global log out.
-    ```
-        {app-hosted-url} + /logout/saml2/slo
-    ```
-    ![alt text](../assets/saml_config-dialogue.png)
 
-2. In the 2nd section - Identity Provider Configuration, enter the Metadata URL of the application registered with IdP as obtained from the above section.
 
-    - Enter the metadata URL of the app and select the load button.
-    - Once the load button is clicked, the metadata URL is valid & the IdP endpoint URL should be loaded. This validates the IdP metadata URL.
+### Runtime SAML Assets (`src/saml`)
 
-    ![alt text](../assets/saml_config-id-provider.png)
+The `src/saml` directory contains runtime artifacts required for SAML authentication.
 
-    - You can also choose to upload the Metadata file.
-    ![alt text](../assets/saml_metadata-source-file-turned-off.png)
+- **`idpMetadata.xml`**  
+  Contains Identity Provider metadata such as SSO endpoints and signing certificates. This file is used by WaveMaker to validate incoming SAML assertions.
 
-3. In the 3rd section: the service provider configuration options are shown:
+- **`key-store.jks`**  
+  Stores cryptographic keys used to sign and verify SAML messages, establishing trust between the WaveMaker application (Service Provider) and the Identity Provider.
 
-#### Configure Keystore 
-The SAML message exchange requires a public/private key pair for every participating entity in the message exchange. The Idp key pair is maintained by the IdP provider, but the Service Provider’s key pair should be maintained by the service provider, in this case, the WaveMaker application. In most of the production deployments, a valid key pair is recommended to be used, but during application development, WaveMaker helps in auto-generating a key pair for you which should be used only for demo purposes, but not for actual deployment. 
 
-Below configuration gives information about configuring key pair for your application. In this, the user is prompted to choose auto-generate option or upload a valid key pair in JKS format.
 
-- The user can auto-generate or import a Java KeyStore (JKS).
-- Auto-Generate - If the user chooses to auto-generate a keystore, WaveMaker will generate a self-signed private-public key pair and store it in the keystore with the following details as input
-    - Alias - This is required for the self-signed public key which is generated and imported into the keystore
-    - Password - this is the keystore password. This should be a minimum of 6 characters
-    - Subject Name - This is the Subject name of the self-signed certificate.
+### Service Definitions (`servicedefs`)
 
-    ![alt text](../assets/saml_service_provider_config.png)
+Service definition files connect the configured security settings to the runtime. They enable consistent server-side enforcement of authentication and authorization rules across the application.
 
-- Import - The user can import a java keystore into WaveMaker. The inputs required are
-    - Alias - the alias of the public key for the service provider.
-    - Password - this is the keystore password. This should be a minimum of 6 characters
 
-    ![alt text](../assets/saml_keystore-import-off.png)
 
-4. In the 4th section - Role Mapping: The roles of an application user logged in through SAML SSO can be mapped using a SAML attribute or database-backed roles. A SAML attribute that maintains the roles can be configured by selecting the SAML as the user role provider as shown below.
-    ![alt text](../assets/saml_search-role-on.png)
+### How It Works
 
-In case if the DB is selected as the user role provider, then each and every SAML user must pre-exist in the specified user's table with the roles. You can follow the [steps given here](#) for the same.
+At runtime, WaveMaker intercepts secured requests, redirects users to the configured Identity Provider, validates SAML assertions using the imported metadata and keystore, resolves user roles, and enforces authorization rules on the server.
 
-## Configuration Files
-The SAML Configuration done will be stored in a saml-options.json file under project option in Files tab as shown below :
-![alt text](../assets/saml-options-json.png)
+---
 
-The keystore.jks file is also available in the project option under the files tab as shown under and it can be downloaded:
 
-![alt text](../assets/saml-keystore-jks.png)
 
-Once the configuration is done you can run the app and you will be logged into your app. You will see the message “Redirecting to sso login…”
+## Application Configuration Properties
 
-## Deployment of Application that is Configured with SAML
-During the app development in WaveMaker, application URLs like Metadata, Audience and Single Signout URL are configured 
-with any of the Identity Provider (for instance- Okta, Onelogin, ADFS, Pingone, etc.). However, these URLs being run URLs
- are temporary in nature, as such cannot be used for the deployed application. When the WaveMaker application is deployed
-  in the container, the hostname/*tenantid changes and therefore, the URLs that are to be _configured/registered in the
-   SAML IdP* should change. For Example, in WaveMaker Studio,
+Whenever security is configured in WaveMaker, the platform automatically **generates configuration properties** that can be mapped to different environments such as Development, QA, or Production.  
+You can view and manage these properties in the **Profiles**.  
+For more information, refer to the **[Profiles](../../configurations/profiles.md)** section in the documentation.
 
-- The **Audience URL** during development would look like this:
+For more details on environment-specific configurations, refer to the **[Deployment Profiles](../../configurations/profile-settings.md)** section.
 
-    `https://wavemakeronline.com/studio/services/saml2/service-provider-metadata/saml`
+<details>
+<summary>Click to expand configuration properties</summary>
 
-    whereas, for deployment app, the URL should typically look like:
-
-    `(http/https)://{hostname}/{appname}/saml2/service-provider-metadata/saml`
-
-    The Single Signon URL during development would look like this:
-
-    `https://wavemakeronline.com/{tenantid}/{appname}/login/saml2/sso/saml`
-
-    whereas, for deployment app, the URL should typically look like:
-
-    `(http/https)://{hostname}/{appname}/login/saml2/sso/saml`
-
-    The Single Signout URL during development would look like this:
-
-    `https://wavemakeronline.com/studio/services/logout/saml2/slo`
-
-    whereas, for deployment app, the URL should typically look like:
-
-    `(http/https)://{hostname}/{appname}/logout/saml2/slo`
-:::note
-You can get the hostname by looking at the URL of any deployed app from your account. It will typically be of the format: tenant_id.cloud.wavemakeronline.com for apps deployed to WaveMaker Cloud (ref Managed Deployed App for details).
-:::
-
-## Reverting to OpenSAML 3
-SAML upgraded to use OpenSAML 4.3.0 library from [WaveMaker 11.3](#), which includes a third-party repository **[Shibboleth](#)** in the pom.xml file.
-
-However, if required, you can remove the repository and revert to the OpenSAML 3.4.6 version by following the steps below.
-
-### Steps to revert Opensaml version
-1. Remove the below repository from the pom.xml.
-    ```
-        <repositories>
-            <repository>
-            <id>Shibboleth</id>
-            <name>Shibboleth</name>
-            <url>https://build.shibboleth.net/nexus/content/repositories/releases/</url>
-            </repository>
-        </repositories>
-    ```
-2. Add the `<opensaml.version>` property in the pom.xml in the properties section, as shown below.
+```properties
+# Security Configuration (SAML)
+security.activeProviders=SAML
+security.enabled=true
+security.general.client.ssl.hostNameVerification.enabled=true
+security.general.cookie.base64Encode=true
+security.general.cookie.jvmRoute=
+security.general.cookie.maxAge=-1
+security.general.cookie.path=
+security.general.cookie.sameSite=
+security.general.cors.allowCredentials=false
+security.general.cors.enabled=false
+security.general.cors.maxAge=1600
+security.general.cors.pathEntries.root.allowedOrigins=*
+security.general.csp.enabled=false
+security.general.csp.policy=
+security.general.frameOptions.allowFromUrl=
+security.general.frameOptions.enabled=true
+security.general.frameOptions.mode=SAMEORIGIN
+security.general.login.maxSessionsAllowed=-1
+security.general.mtls.enabled=false
+security.general.mtls.keystore.file=
+security.general.mtls.keystore.fileType=
+security.general.mtls.keystore.password=
+security.general.rememberMe.enabled=false
+security.general.rememberMe.timeOut=1296000
+security.general.request.allowedHosts=
+security.general.session.timeout=30
+security.general.ssl.enabled=false
+security.general.ssl.port=443
+security.general.tokenService.enabled=true
+security.general.tokenService.parameter=WM_AUTH_TOKEN
+security.general.tokenService.tokenValiditySeconds=1800
+security.general.truststore.config=SYSTEM_ONLY
+security.general.truststore.file=
+security.general.truststore.fileType=
+security.general.truststore.password=
+security.general.xsrf.enabled=true
+security.general.xss.dataBackwardCompatibility=false
+security.general.xss.enabled=true
+security.general.xss.sanitizationLayer=OUTPUT
+security.providers.saml.entityBaseURL=#{null}
+security.providers.saml.idpMetadataFile=/saml/metadata/idpMetadata.xml
+security.providers.saml.idpMetadataSource=URL
+security.providers.saml.idpMetadataUrl=https://login.microsoftonline.com/common/federationmetadata/2007-06/federationmetadata.xml
+security.providers.saml.keyAlias=azure-ad-saml
+security.providers.saml.keyStoreFile=key-store.jks
+security.providers.saml.keyStorePassword=azure-ad-saml
+security.providers.saml.maxAuthenticationAge=7200
+security.providers.saml.roleMappingEnabled=false
+security.providers.saml.urlValidateType=STRICT
+security.session.persistence.type=in-memory
 
 ```
-    <opensaml.version>3.4.6</opensaml.version>
-```
-3. Add the property `security.providers.saml.useOpenSaml3=true` in the `development.properties` file.
-4. Add the property `security.providers.saml.useOpenSaml3=${security.providers.saml.useOpenSaml3}`
+</details>
+
+
+
+
+---
+
+
+
+## Summary
+
+SAML integration in WaveMaker enables secure, enterprise-grade authentication by delegating user identity verification to trusted external providers. With built-in metadata handling, automatic backend code generation, and seamless runtime enforcement, WaveMaker simplifies SAML adoption while maintaining strong security practices.
+
+By using SAML, applications benefit from centralized authentication, improved user experience through SSO, and consistent security across pages, services, and APIs.
+
+---
