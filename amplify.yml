@@ -19,7 +19,7 @@ frontend:
       - key: 'Cache-Control'
         value: 'max-age=2629744'
   artifacts:
-    baseDirectory: /website/build
+    baseDirectory: website/build
     files:
       - '**/*'
   cache:
