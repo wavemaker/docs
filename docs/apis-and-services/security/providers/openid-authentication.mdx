@@ -1,136 +1,305 @@
 ---
-title: OpenID Authentication
-last_update: { author: "Shahnawaz Ahmed" }
+last_update: { author: "Priyanka Bhadri" }
 ---
 
-# OpenID Authentication
+# OpenID Connect (OIDC) Integration in WaveMaker
+
+OpenID Connect (OIDC) is a modern identity layer built on top of the OAuth 2.0 protocol. It enables applications to authenticate users by delegating identity verification to trusted external **Identity Providers (IdPs)** such as Google, Okta, Auth0, Azure AD, and other OIDC-compliant systems.
+
+WaveMaker supports OpenID Connect authentication, allowing applications to rely on standardized token-based identity verification instead of managing credentials directly. This approach improves security, simplifies login flows, and enables seamless **single sign-on (SSO)** across applications.
+
+In a WaveMaker application:
+- WaveMaker acts as the **Client / Relying Party**
+- An external system acts as the **OpenID Provider (IdP)**
+
 ---
-In this document, we will describe how to use **OpenID authentication** in a WaveMaker application. 
+
+## How OpenID Authentication Works in WaveMaker
+
+1. A user attempts to access a secured WaveMaker application or page.
+2. The application redirects the user to the configured OpenID Provider.
+3. The Identity Provider authenticates the user.
+4. After successful authentication, the provider issues an **ID Token** (and optionally an access token).
+5. WaveMaker validates the token and establishes a user session.
+6. User identity and roles are resolved.
+7. Authorization rules are applied.
+
+This flow allows secure authentication without exposing user credentials to the application.
+
+---
+
+## OpenID Integration Architecture
+
+- **Client (WaveMaker):** Requests authentication and validates tokens  
+- **Identity Provider (IdP):** Authenticates users and issues tokens  
+- **ID Token (JWT):** Cryptographically signed token containing user identity  
+- **Metadata Discovery:** Provider configuration retrieved using a discovery endpoint  
+
+WaveMaker uses OpenID metadata to dynamically discover provider endpoints, supported scopes, and signing keys.
+
+---
+
+## Supported Identity Providers
+
+WaveMaker OpenID integration works with any OpenID Connect–compliant provider, including:
+
+- Google
+- Azure Active Directory
+- Okta
+- Auth0
+- Keycloak
+- Custom enterprise OpenID providers
+
+---
+
+## Configuring OpenID in WaveMaker
+
+### Step 1: Enable Security
+
+1. Open the application in WaveMaker Studio.
+2. Navigate to **Security** settings.
+3. Enable application security if it is not already enabled.
 
 
-Using Open ID, WaveMaker applications can let their customers login using their already existing identity such as Google Account, Okta, or AuthO. It is also possible to implement SSO by setting up multiple applications use the same Open ID provider. Some well-known Open ID providers include **Google**, **Okta**, and **AuthO**. For example, Twitter uses Open ID authentication where you can select Identity Provider like Google to login.
-## How Open ID Authentication Helps
-Open ID Authentication helps verify the user identity with the Identity Providers. Following are some points how it helps:
+### Step 2: Select OpenID as the Authentication Provider
 
-- **Easy maintainance of usernames and passwords:** Open ID stops proliferation of username, passwords enabling reuse of identify from providers such as Google, Apple & Facebook. Developers also benefit from not needing store usernames and passwords.
-
-- **Lower Password security risks:** Open ID providers do not share passwords with any website and protect online identity.
-
-- **Simple Sign-up process:** With WaveMaker, developer delegates authentication to Open ID providers like Google, Facebook, Okta, Auth0 or any other Open ID standards. You login with a single click, avoiding the efforts and time to feed the redundant information to use an application.
+1. Choose **OpenID Connect** as the authentication provider.
+2. Provide a unique **Provider Name**.
+3. Specify whether OpenID is the primary authentication mechanism.
 
 
+### Step 3: Configure Identity Provider Details
 
-## OpenID Authentication Workflow
+Provide the OpenID provider configuration using the **Discovery URL**.
 
-1. **User** accesses the **Application**.
-2. **Application** displays options to choose from available **Identity Providers**.
-3. **User** gets directed to the **Identity Provider** to provide necessary details for authentication and authorization.
-4. **Identity Provider** verifies the user’s identity and validates the user details.
-5. **User** successfully logs into the application and the role is assigned to the user
-6. Session gets established between **User** and **Application**.
+**Example (Google):**
+
+`https://accounts.google.com/.well-known/openid-configuration`
 
 
-```mermaid
-%%{init: {"themeVariables": {"fontSize": "20px"}}}%%
-sequenceDiagram
-    autonumber
+WaveMaker uses this endpoint to automatically retrieve:
+- Authorization endpoint
+- Token endpoint
+- User info endpoint
+- Signing keys (JWKS)
 
-    participant UA as User Agent
-    participant APP as Application
-    participant IDP as Identity Provider<br/>(Google, Okta, OAuth)
 
-    UA ->> APP: Access Application
-    APP -->> UA: Authentication Request<br/>(OpenID provider details)
+### Step 4: Configure Client Credentials
 
-    UA ->> IDP: OpenID Authentication Request
-    Note right of IDP: Validation of credentials
+Register the WaveMaker application with the Identity Provider and configure:
 
-    IDP -->> UA: Successful Response<br/>(contains user details)
+- **Client ID**
+- **Client Secret**
+- **Redirect URI** (generated by WaveMaker)
 
-    UA ->> APP: Redirection to Application
-    Note right of APP: Creation of session
+These values establish trust between WaveMaker and the Identity Provider.
 
-    APP -->> UA: Session established<br/>(Role assigned)
-    APP -->> UA: Application renders<br/>Authenticated State
+
+### Step 5: Attribute Mapping
+
+Map OpenID claims to WaveMaker user fields:
+
+- **Subject / Username**
+- **Email**
+- **Display Name**
+- **Roles or Groups (optional)**
+
+Role mapping can be:
+- Extracted from token claims, or
+- Resolved from a database using the authenticated user identifier
+
+
+### Step 6: Configure Authorization
+
+After authentication:
+- Access levels and permissions are applied
+- Pages, services, and APIs are protected based on roles
+- Unauthorized users are blocked automatically
+
+---
+
+## Runtime Behavior
+
+At runtime:
+
+- Users are redirected to the Identity Provider for authentication
+- Tokens are validated using provider signing keys
+- Sessions are established securely
+- Security context is applied across UI, services, and APIs
+
+This ensures consistent security enforcement across the application stack.
+
+---
+
+## Token Validation and Security
+
+WaveMaker validates OpenID tokens by:
+
+- Verifying JWT signatures using provider public keys
+- Validating issuer, audience, and expiration
+- Protecting against token replay
+- Enforcing authentication and authorization server-side
+
+All validation occurs on the backend to prevent client-side manipulation.
+
+---
+
+## Generated Backend Code
+
+
+When OpenID Connect authentication is configured in WaveMaker, the platform automatically generates a **security service** that manages authentication, authorization, and request interception at runtime. This structure is platform-managed and should not be edited manually.
+
+### Project Structure
+
+```text
+services/
+└── securityService
+    ├── designtime
+    │   ├── auth-info.json
+    │   ├── general-options.json
+    │   ├── intercept-urls.json
+    │   ├── roles.json
+    │   ├── securityService_API.json
+    │   ├── service-info.json
+    │   └── wm-xss-policies.json
+    └── src
+        └── servicedefs
+            └── securityService-service-definitions.json
+```
+
+### Design-Time Configuration (`designtime`)
+
+The `designtime` folder contains security configuration created through WaveMaker Studio. These files define how OpenID authentication and authorization are applied across the application.
+
+- **`auth-info.json`**  
+  Stores OpenID provider details such as issuer URL, client ID, scopes, and token endpoints.
+
+- **`general-options.json`**  
+  Defines global security settings including session management, token behavior, CORS, CSRF, and SSL options.
+
+- **`intercept-urls.json`**  
+  Specifies secured URL patterns and the access levels required to invoke them.
+
+- **`roles.json`**  
+  Defines application roles used for role-based access control (RBAC).
+
+- **`securityService_API.json`**  
+  Exposes internal security-related APIs used by the WaveMaker platform.
+
+- **`service-info.json`**  
+  Contains metadata describing the security service.
+
+- **`wm-xss-policies.json`**  
+  Configures XSS protection policies enforced at runtime.
+
+---
+
+### Runtime Service Definitions (`src/servicedefs`)
+
+The service definition files connect the design-time security configuration to the backend runtime. They enable consistent, server-side enforcement of:
+
+- OpenID authentication  
+- Token validation  
+- Role resolution  
+- Authorization rules  
+
+---
+
+## How It Works at Runtime
+
+At runtime, WaveMaker intercepts secured requests and redirects users to the configured OpenID Identity Provider for authentication. Once authentication is successful, the issued ID and access tokens are validated, a security context is established, user roles are resolved, and authorization rules are enforced entirely on the server.
+
+This ensures secure and consistent access control across application pages, services, and APIs.
+
+---
+
+
+
+## Application Configuration Properties
+
+Whenever security is configured in WaveMaker, the platform automatically **generates configuration properties** that can be mapped to different environments such as Development, QA, or Production.  
+You can view and manage these properties in the **Profiles**.  
+For more information, refer to the **[Profiles](../../configurations/profiles.md)** section in the documentation.
+
+For more details on environment-specific configurations, refer to the **[Deployment Profiles](../../configurations/profile-settings.md)** section.
+
+<details>
+<summary>Click to expand configuration properties</summary>
+
+```properties
+# Security Configuration (OPEN ID GOOGLE)
+
+security.activeProviders=OPENID.google
+security.enabled=true
+security.general.client.ssl.hostNameVerification.enabled=true
+security.general.cookie.base64Encode=true
+security.general.cookie.jvmRoute=
+security.general.cookie.maxAge=-1
+security.general.cookie.path=
+security.general.cookie.sameSite=
+security.general.cors.allowCredentials=false
+security.general.cors.enabled=false
+security.general.cors.maxAge=1600
+security.general.cors.pathEntries.root.allowedOrigins=*
+security.general.csp.enabled=false
+security.general.csp.policy=
+security.general.frameOptions.allowFromUrl=
+security.general.frameOptions.enabled=true
+security.general.frameOptions.mode=SAMEORIGIN
+security.general.login.maxSessionsAllowed=-1
+security.general.mtls.enabled=false
+security.general.mtls.keystore.file=
+security.general.mtls.keystore.fileType=
+security.general.mtls.keystore.password=
+security.general.rememberMe.enabled=false
+security.general.rememberMe.timeOut=1296000
+security.general.request.allowedHosts=
+security.general.session.timeout=30
+security.general.ssl.enabled=false
+security.general.ssl.port=443
+security.general.tokenService.enabled=true
+security.general.tokenService.parameter=WM_AUTH_TOKEN
+security.general.tokenService.tokenValiditySeconds=1800
+security.general.truststore.config=SYSTEM_ONLY
+security.general.truststore.file=
+security.general.truststore.fileType=
+security.general.truststore.password=
+security.general.xsrf.enabled=true
+security.general.xss.dataBackwardCompatibility=false
+security.general.xss.enabled=true
+security.general.xss.sanitizationLayer=OUTPUT
+security.providers.openId.google.authorizationUrl=https://accounts.google.com/o/oauth2/v2/auth
+security.providers.openId.google.clientId=***.apps.googleusercontent.com
+security.providers.openId.google.clientSecret=***
+security.providers.openId.google.jwkSetUrl=https://www.googleapis.com/oauth2/v3/certs
+security.providers.openId.google.logoutUrl=
+security.providers.openId.google.roleMappingEnabled=true
+security.providers.openId.google.roleProvider=OPENID
+security.providers.openId.google.scopes=openid,email,profile
+security.providers.openId.google.tokenUrl=https://oauth2.googleapis.com/token
+security.providers.openId.google.userInfoUrl=https://openidconnect.googleapis.com/v1/userinfo
+security.providers.openId.google.userNameAttributeName=email
+security.session.persistence.type=in-memory
+
 
 ```
-## Configuring Open ID
-
-1. Go to **Project** > **Security**.
-![alt text](../assets/security-workspace-ss.png)
-2. Go to **Authentication & Authorization**.
-
-3. Enable **Authentication**.
-
-4. Go to **Security Providers** > **Open ID**.
-
-5. Select **Provider ID** from the drop-down menu. For example Google or Custom (Okta, AuthO).
-
-![alt text](../assets/security-provider-ss.png)
-
-Once the Open ID provider is selected, you can configure the security specifications based on the provider.
-
-:::note 
-- For more information, see [Google as provider](https://cloud.google.com/solutions/security)
-- For more information, see [Okta as provider](https://www.okta.com/)
-
-:::
-
-## Properties
-Below are the Open ID Authentication security specifications used to configure the application with the Open ID Identity Provider.
-
-{/*![alt text](../assets/identity-provider-info.png)*/}
-
-
-### Identity Provider Information
-This section contains configuration properties for Identity Provider.
-
-- **Provider ID:** Allows User to select the Identity Provider
-- **Authorization URL:** Endpoint that initiates the authentication of the end user
-- **Token URL:** Endpoint used to communicate Access token, ID token and refresh token
-- **JWKS URL:** Json Web Key Set (JWKS) endpoint stores the information on public keys used to verify the Json Web tokens
-
-
-:::note
-JWKS property can also be configured using a certificate file that contains a public key instead of fetching the keys from the JWK set URL. Users can upload the certificate file into the application src/main/resources folder and use classpath:filename, or if the file is in a file system use file:filepath. The JWKS property can be configured with both file and URL separated with a ;. The public key is read from the file path and in case of any failures it will fall back to the URL.
-:::
-
-- **User Info Endpoint:** User Info endpoint allows the client application to fetch the required claims about the authenticated end user
-- **Logout URL:** Endpoint used by the client application to erase provider-side session and related cookies
-
-
-### Service Provider Information
-This section contains configuration properties for service provider.
-
-- **Redirect URL:** Redirect endpoint is the URL to which the client receives the response
-### Integration Information
-This section contains configuration properties for integration between Service Provider and Identity Provider.
-
-- **Client ID:** Unique identity for the registered client
-- **Client Secret:** Client specific information that is only known to application and the authorization server. This is application's password
-- **Scopes:** Scope parameter is used to authorize access to user information
-- **User Name Attribute:** Allows to configure the attribute value associated with user name fetched from Identity Provider
-
-
-### Role Mapping
-Role Mapping is used to assign you with security roles during login. You are given access and assignements based on the assigned role.
-
-**Search User Role:** Enable this option to select the user role provider. You are provided with two options:
-
-1. Open ID
-2. Database
-
-**Open ID:** When you select **Open ID**, both authentication and authorization will be retrieved from the Open ID security provider. You need to provide:
-
-- **Role Attribute:** This field allows you to assign the required role.
-
-**Database:** When you select **Database**, authentication is performed using Open ID and authorization content is retrieved from the database. This allows you to use username and password credentials from Open ID while retrieving role content from the database. For role configuration using database, [see here](#).
-
-
+</details>
 
 
 
 ---
 
+## When to Use OpenID Connect
 
+OpenID Connect is recommended in the following scenarios:
 
+- Modern cloud-based and SaaS applications
+- Social login and enterprise identity integrations
+- Applications requiring token-based authentication
+- Environments that follow OAuth 2.0 and OpenID Connect standards
+
+---
+
+## Summary
+
+OpenID Connect integration in WaveMaker enables secure and modern authentication using industry-standard, token-based identity verification. By delegating authentication to trusted Identity Providers, validating signed tokens, and enforcing role-based access entirely on the server, WaveMaker delivers scalable and secure authentication with minimal configuration effort.
