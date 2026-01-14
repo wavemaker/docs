@@ -36,12 +36,12 @@ const MenuSection = () => {
     {
       label: "Web",
       icon: "https://dev-ecosystem.s3.us-east-1.amazonaws.com/icon/react-sicon.svg",
-      link: "https://react-components.onwavemaker.com/",
+      link: "https://react-components.wavemaker.com/",
     },
     {
       label: "Mobile",
       icon: "https://dev-ecosystem.s3.us-east-1.amazonaws.com/icon/reactnative-sicon.svg",
-      link: "https://rn-components.onwavemaker.com/",
+      link: "https://rn-components.wavemaker.com/",
     },
     {
       label: "Platform",

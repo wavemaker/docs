@@ -23,8 +23,8 @@ const componentsData = [
                 label: "Form",
                 body: "Form is a group of input elements put together to post data, typically updating data through a web service call",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/data-form--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/data-form--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/data-form--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/data-form--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/datalive/form/"
             },
             {
@@ -33,8 +33,8 @@ const componentsData = [
                 label: "List",
                 body: "List is a widget that presents a list view of data, which contains a template for designing each list item",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/data-list--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/data-list--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/data-list--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/data-list--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/datalive/list/"
             },
             {
@@ -43,8 +43,8 @@ const componentsData = [
                 label: "Cards",
                 body: "Cards is a single unit of content or functionality, presented in a concise visual package, to easily update, maintain, and personalize content area.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/data-card--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/data-card--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/data-card--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/data-card--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/datalive/cards/"
             },
             {
@@ -53,8 +53,8 @@ const componentsData = [
                 label: "Live Form",
                 body: "Live Form is a group of input elements put together to submit data, typically resulting in creating or updating a database row",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/data-liveform--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/data-liveform--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/data-liveform--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/data-liveform--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/datalive/live-form/"
             },
             {
@@ -77,8 +77,8 @@ const componentsData = [
                 label: "Accordion",
                 body: "Accordion is a stacked list of UI components, with only one component expanded or viewed at any point in time, and the rest collapsed",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/containers-accordion--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/containers-accordion--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/containers-accordion--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/containers-accordion--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/container/accordion/"
             },
             {
@@ -87,7 +87,7 @@ const componentsData = [
                 label: "Container",
                 body: "Container is an enclosing element that wraps the widgets placed within, mostly used for embedding partial pages",
                 supportedPlatforms: ["angular", "rn"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/containers-container--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/containers-container--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/container/"
             },
             {
@@ -96,7 +96,7 @@ const componentsData = [
                 label: "Grid Layout",
                 body: "Grid Layout helps division of pages or content area into cells or grids based on the 12-column fluid grid system, which helps in proper placement of the widgets for responsive design.",
                 supportedPlatforms: ["angular", "rn"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/containers-gridlayout--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/containers-gridlayout--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/container/grid-layout/"
             },
             {
@@ -105,7 +105,7 @@ const componentsData = [
                 label: "Flex Layout",
                 body: "Flex Layout is a layout that arranges its children in a single column or row, either vertically or horizontally.",
                 supportedPlatforms: ["rn"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/containers-linearlayout--docs"
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/containers-linearlayout--docs"
             },
             {
                 lightIcon: "/img/component-icons/panel.svg",
@@ -113,8 +113,8 @@ const componentsData = [
                 label: "Panel",
                 body: "Panel has designated sections such as header, body, and footer and can be used to group a set of widgets together.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/containers-panel--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/containers-panel--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/containers-panel--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/containers-panel--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/container/panel/"
             },
             {
@@ -123,7 +123,7 @@ const componentsData = [
                 label: "Linear Layout",
                 body: "Linear Layout is a layout that arranges its children in a single column or row, either vertically or horizontally.",
                 supportedPlatforms: ["react"],
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/containers-linear-layout--docs"
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/containers-linear-layout--docs"
             },
             {
                 lightIcon: "/img/component-icons/tabs.svg",
@@ -131,7 +131,7 @@ const componentsData = [
                 label: "Tabs",
                 body: "Tabs are Multiple UI components placed in a single window, with only one active component and headings allowing navigation to other components",
                 supportedPlatforms: ["angular", "rn"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/containers-tabs--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/containers-tabs--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/container/tabs/"
             },
             {
@@ -140,8 +140,8 @@ const componentsData = [
                 label: "Tile",
                 body: "Tile is a form of UI components to group a set of widgets together and to apply a uniform style to the content",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/containers-tile--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/basic-tile--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/containers-tile--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/basic-tile--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/container/tile/"
             },
             {
@@ -150,7 +150,7 @@ const componentsData = [
                 label: "Wizard",
                 body: "Wizard is a form of UI components to group a set of widgets together and to apply a uniform style to the content",
                 supportedPlatforms: ["angular", "rn"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/containers-wizard--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/containers-wizard--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/container/wizard/"
             }
         ]
@@ -165,8 +165,8 @@ const componentsData = [
                 label: "Button",
                 body: "Button is a control that can be clicked to perform an action.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/form-button--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/basic-button--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/form-button--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/basic-button--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/form-widgets/button"
             },
             {
@@ -175,7 +175,7 @@ const componentsData = [
                 label: "Button Group",
                 body: "Button Group is the arrangement of buttons grouped together.",
                 supportedPlatforms: ["angular", "rn"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/form-buttongroup--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/form-buttongroup--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/form-widgets/button-group/"
             },
             {
@@ -184,8 +184,8 @@ const componentsData = [
                 label: "Calendar",
                 body: "Calendar widget allows the user to select a date from the calendar displayed.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/form-calendar--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/input-calendar--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/form-calendar--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/input-calendar--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/form-widgets/calendar/"
             },
             {
@@ -194,8 +194,8 @@ const componentsData = [
                 label: "Checkbox",
                 body: "Checkbox allows the user to choose one or multiple of a predefined set of options.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/form-checkbox--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/input-checkbox--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/form-checkbox--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/input-checkbox--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/form-widgets/checkbox/"
             },
             {
@@ -204,8 +204,8 @@ const componentsData = [
                 label: "CheckboxSet",
                 body: "CheckboxSet is the arrangement of checkbox widgets grouped together.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/form-checkboxset--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/input-checkboxset--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/form-checkboxset--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/input-checkboxset--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/form-widgets/checkboxset/"
             },
             {
@@ -214,8 +214,8 @@ const componentsData = [
                 label: "Chips",
                 body: "Chips allow user to search data and add, delete and edit the same.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/form-chips--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/input-chips--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/form-chips--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/input-chips--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/form-widgets/chips/"
             },
             {
@@ -224,7 +224,7 @@ const componentsData = [
                 label: "Color Picker",
                 body: "Color Picker widget is to select the color and translate to a hex value.",
                 supportedPlatforms: ["angular", "react"],
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/input-colorpicker--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/input-colorpicker--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/form-widgets/color-picker/"
             },
             {
@@ -233,7 +233,7 @@ const componentsData = [
                 label: "Composite",
                 body: "Composite widget allows combining multiple input widgets into a single composite value.",
                 supportedPlatforms: ["react"],
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/input-composite--docs"
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/input-composite--docs"
             },
             {
                 lightIcon: "/img/component-icons/currency.svg",
@@ -241,8 +241,8 @@ const componentsData = [
                 label: "Currency",
                 body: "Currency is a special text widget to input the currency type data, with the display format based on the currency type.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/form-currency--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/input-currency--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/form-currency--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/input-currency--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/form-widgets/currency/"
             },
             {
@@ -251,8 +251,8 @@ const componentsData = [
                 label: "Date",
                 body: "Date widget helps to select a date from a calendar within the date range.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/form-date--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/input-date--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/form-date--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/input-date--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/form-widgets/date-time-datetime/"
             },
             {
@@ -261,8 +261,8 @@ const componentsData = [
                 label: "Datetime",
                 body: "Datetime is a composite widget of date and time widgets.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/form-datetime--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/input-datetime--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/form-datetime--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/input-datetime--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/form-widgets/date-time-datetime/"
             },
             {
@@ -271,8 +271,8 @@ const componentsData = [
                 label: "FileUpload",
                 body: "FileUpload is a widget that pops up a file browsing window to select files and upload.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/form-fileupload--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/input-fileupload--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/form-fileupload--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/input-fileupload--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/form-widgets/file-upload"
             },
             {
@@ -281,8 +281,8 @@ const componentsData = [
                 label: "Number",
                 body: "Number allows input of a number. It works with the selected app Locale and displays the number localized format.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/form-number--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/input-number--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/form-number--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/input-number--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/form-widgets/number/"
             },
             {
@@ -291,8 +291,8 @@ const componentsData = [
                 label: "Radioset",
                 body: "Radioset is the arrangement of radio widgets grouped together.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/form-radioset--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/input-radioset--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/form-radioset--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/input-radioset--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/form-widgets/radioset/"
             },
             {
@@ -301,8 +301,8 @@ const componentsData = [
                 label: "Rating",
                 body: "Rating Widget allows users to input ratings as data.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/form-rating--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/input-rating--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/form-rating--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/input-rating--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/form-widgets/rating-widget/"
             },
             {
@@ -311,8 +311,8 @@ const componentsData = [
                 label: "Select",
                 body: "Select provides a drop-down list that with a list of items a user can select from.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/form-select--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/input-select--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/form-select--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/input-select--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/form-widgets/select/"
             },
             {
@@ -321,7 +321,7 @@ const componentsData = [
                 label: "Select Locale",
                 body: "Select Locale Widget is for Language selection from the list of support languages.",
                 supportedPlatforms: ["angular", "rn"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/form-selectlocale--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/form-selectlocale--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/form-widgets/select-locale/"
             },
             {
@@ -330,8 +330,8 @@ const componentsData = [
                 label: "Slider",
                 body: "Slider is a widget control with a handle that can be moved right and left (horizontal slider) on a bar to select a value from within the range of allowed values.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/form-slider--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/input-slider--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/form-slider--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/input-slider--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/form-widgets/slider/"
             },
             {
@@ -340,8 +340,8 @@ const componentsData = [
                 label: "Switch",
                 body: "Switch widget can help switching between 3 or more different options by pressing a single key.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/form-switch--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/input-switch--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/form-switch--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/input-switch--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/form-widgets/switch/"
             },
             {
@@ -350,8 +350,8 @@ const componentsData = [
                 label: "Text",
                 body: "Text allows input of a single line of text.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/form-text--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/input-text--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/form-text--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/input-text--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/form-widgets/text/"
             },
             {
@@ -360,8 +360,8 @@ const componentsData = [
                 label: "Textarea",
                 body: "Textarea allows for multiple rows of data to be shown and entered.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/form-textarea--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/input-textarea--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/form-textarea--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/input-textarea--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/form-widgets/textarea/"
             },
             {
@@ -370,8 +370,8 @@ const componentsData = [
                 label: "Time",
                 body: "Time widget helps to select a time from within a specified time range.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/form-time--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/input-time--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/form-time--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/input-time--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/form-widgets/date-time-datetime/"
             },
             {
@@ -380,7 +380,7 @@ const componentsData = [
                 label: "Toggle",
                 body: "Toggle is a widget that can help switching between two different options by pressing a single key.",
                 supportedPlatforms: ["angular", "rn"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/form-toggle--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/form-toggle--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/form-widgets/toggle/"
             }
         ]
@@ -395,8 +395,8 @@ const componentsData = [
                 label: "Anchor",
                 body: "Anchor is used as a navigation link within the app or an external URL.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/basic-anchor--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/basic-anchor--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/basic-anchor--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/basic-anchor--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/basic/anchor/"
             },
             {
@@ -406,7 +406,7 @@ const componentsData = [
                 body: "Audio widget is to embed an audio player into the project.",
                 supportedPlatforms: ["angular", "rn", "react"],
                 rnStorybook: "",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/basic-audio--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/basic-audio--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/basic/audio"
             },
             {
@@ -415,7 +415,7 @@ const componentsData = [
                 label: "HTML",
                 body: "HTML is a widget to display HTML content or to render the text content using HTML.",
                 supportedPlatforms: ["angular", "react"],
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/basic-html--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/basic-html--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/basic/html/"
             },
             {
@@ -424,8 +424,8 @@ const componentsData = [
                 label: "Icon",
                 body: "Icon widget is for displaying a comprehensible symbol or graphic.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/basic-icon--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/basic-icon--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/basic-icon--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/basic-icon--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/basic/icon/"
             },
             {
@@ -434,7 +434,7 @@ const componentsData = [
                 label: "Iframe",
                 body: "Iframe is a widget to display a web page content in a separate frame, without affecting the current page content or styles.",
                 supportedPlatforms: ["angular", "react"],
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/basic-iframe--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/basic-iframe--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/basic/iframe/"
             },
             {
@@ -443,8 +443,8 @@ const componentsData = [
                 label: "Label",
                 body: "Label is a uneditable text as a heading or to describe another widget.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/basic-label--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/basic-label--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/basic-label--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/basic-label--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/basic/label/"
             },
             {
@@ -453,7 +453,7 @@ const componentsData = [
                 label: "Lottie",
                 body: "Lottie is a widget to display animations in the project.",
                 supportedPlatforms: ["rn"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/basic-lottie--docs"
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/basic-lottie--docs"
             },
             {
                 lightIcon: "/img/component-icons/message.svg",
@@ -461,8 +461,8 @@ const componentsData = [
                 label: "Message",
                 body: "Message is a widget to display success, info, loading, error or warning messages to the user.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/basic-message--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/basic-message--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/basic-message--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/basic-message--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/basic/message/"
             },
             {
@@ -471,8 +471,8 @@ const componentsData = [
                 label: "Picture",
                 body: "Picture is a widget to display images in the project.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/basic-picture--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/basic-picture--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/basic-picture--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/basic-picture--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/basic/picture"
             },
             {
@@ -481,8 +481,8 @@ const componentsData = [
                 label: "Progress Bar",
                 body: "Progress Bar is an actual indicator of activity progress with time/percentage.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/basic-progressbar--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/basic-progressbar--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/basic-progressbar--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/basic-progressbar--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/basic/progress-bar/"
             },
             {
@@ -491,8 +491,8 @@ const componentsData = [
                 label: "Progress Circle",
                 body: "Progress Circle is an actual indicator of activity progress with time/percentage.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/basic-progresscircle--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/basic-progresscircle--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/basic-progresscircle--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/basic-progresscircle--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/basic/progress-circle/"
             },
             {
@@ -501,7 +501,7 @@ const componentsData = [
                 label: "Richtext Editor",
                 body: "Richtext Editor is an input control for formatted text content, optionally including media (WYSIWYG).",
                 supportedPlatforms: ["angular", "react"],
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/basic-richtexteditor--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/basic-richtexteditor--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/basic/richtext-editor/"
             },
             {
@@ -510,8 +510,8 @@ const componentsData = [
                 label: "Search",
                 body: "Search within a data source and give results.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/basic-search--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/basic-search--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/basic-search--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/basic-search--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/basic/search/"
             },
             {
@@ -520,8 +520,8 @@ const componentsData = [
                 label: "Spinner",
                 body: "Spinner is a widget for a visual indicator of activity in progress.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/basic-spinner--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/basic-spinner--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/basic-spinner--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/basic-spinner--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/basic/spinner/"
             },
             {
@@ -530,7 +530,7 @@ const componentsData = [
                 label: "Tree",
                 body: "Tree widget can be used to display data in a hierarchical format.",
                 supportedPlatforms: ["angular", "react"],
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/basic-tree--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/basic-tree--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/basic/tree/"
             },
             {
@@ -539,8 +539,8 @@ const componentsData = [
                 label: "Video",
                 body: "Video is a widget to embed a media player into the project.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/basic-video--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/basic-video--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/basic-video--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/basic-video--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/basic/video"
             },
             {
@@ -549,7 +549,7 @@ const componentsData = [
                 label: "Webview",
                 body: "Webview is a widget to display a web page content in a page.",
                 supportedPlatforms: ["rn"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/basic-webview--docs"
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/basic-webview--docs"
             },
             {
                 lightIcon: "/img/component-icons/bottomSheet.svg",
@@ -557,7 +557,7 @@ const componentsData = [
                 label: "Tooltip",
                 body: "Tooltip is a message that appears when a user hovers over, clicks on, or taps an element.",
                 supportedPlatforms: ["rn"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/basic-tooltip--docs"
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/basic-tooltip--docs"
             }
         ]
     },
@@ -571,7 +571,7 @@ const componentsData = [
                 label: "Line",
                 body: "Line chart displays information as a series of data points called 'markers' connected by straight line segments.",
                 supportedPlatforms: ["angular", "rn"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/charts-linechart--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/charts-linechart--docs",
                 angularDocs: ""
             },
             {
@@ -580,8 +580,8 @@ const componentsData = [
                 label: "Column",
                 body: "Column charts display vertical bars going across the horizontal axis.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/charts-columnschart--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/charts-bar-column-chart--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/charts-columnschart--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/charts-bar-column-chart--docs",
                 angularDocs: ""
             },
             {
@@ -590,8 +590,8 @@ const componentsData = [
                 label: "Area",
                 body: "Area chart is a line chart with the areas below the lines filled.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/charts-areachart--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/charts-line-area-chart--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/charts-areachart--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/charts-line-area-chart--docs",
                 angularDocs: ""
             },
             {
@@ -600,8 +600,8 @@ const componentsData = [
                 label: "Pie",
                 body: "Pie chart is a type of graph in which a circle is divided into sectors that each represent a proportion of the whole.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/charts-piechart--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/charts-pie-donut-chart--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/charts-piechart--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/charts-pie-donut-chart--docs",
                 angularDocs: ""
             },
             {
@@ -610,8 +610,8 @@ const componentsData = [
                 label: "Bar",
                 body: "Bar chart presents grouped data with horizontal bars with lengths proportional to the values that they represent.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/charts-barchart--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/charts-bar-column-chart--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/charts-barchart--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/charts-bar-column-chart--docs",
                 angularDocs: ""
             },
             {
@@ -628,8 +628,8 @@ const componentsData = [
                 label: "Donut",
                 body: "Donut is a type of graph in which a circle is divided into sectors that each represent a proportion of the whole, with an inner circle showing summary.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/charts-donutchart--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/charts-pie-donut-chart--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/charts-donutchart--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/charts-pie-donut-chart--docs",
                 angularDocs: ""
             },
             {
@@ -638,8 +638,8 @@ const componentsData = [
                 label: "Bubble",
                 body: "Bubble chart is a type of chart that displays three dimensions of data.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/charts-bubblechart--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/charts-bubble-chart--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/charts-bubblechart--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/charts-bubble-chart--docs",
                 angularDocs: ""
             }
         ]
@@ -654,7 +654,7 @@ const componentsData = [
                 label: "Footer",
                 body: "Footer is a layout component that provides a footer section for the application.",
                 supportedPlatforms: ["react"],
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/layout-footer--docs"
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/layout-footer--docs"
             },
             {
                 lightIcon: "/img/component-icons/bottomSheet.svg",
@@ -662,7 +662,7 @@ const componentsData = [
                 label: "Header",
                 body: "Header is a layout component that provides a header section for the application.",
                 supportedPlatforms: ["react"],
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/layout-header--docs"
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/layout-header--docs"
             },
             {
                 lightIcon: "/img/component-icons/bottomSheet.svg",
@@ -670,7 +670,7 @@ const componentsData = [
                 label: "LeftNav",
                 body: "LeftNav is a layout component that provides a left navigation panel for the application.",
                 supportedPlatforms: ["react"],
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/layout-leftnav--docs"
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/layout-leftnav--docs"
             },
             {
                 lightIcon: "/img/component-icons/bottomSheet.svg",
@@ -678,7 +678,7 @@ const componentsData = [
                 label: "RightNav",
                 body: "RightNav is a layout component that provides a right navigation panel for the application.",
                 supportedPlatforms: ["react"],
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/layout-rightnav--docs"
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/layout-rightnav--docs"
             },
             {
                 lightIcon: "/img/component-icons/bottomSheet.svg",
@@ -686,7 +686,7 @@ const componentsData = [
                 label: "TopNav",
                 body: "TopNav is a layout component that provides a top navigation bar for the application.",
                 supportedPlatforms: ["react"],
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/layout-topnav--docs"
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/layout-topnav--docs"
             }
         ]
     },
@@ -708,8 +708,8 @@ const componentsData = [
                 label: "Dropdown Menu",
                 body: "Dropdown Menu is a pull-down menu interface used for defining navigation structure within the app or for external links.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/navigation-menu--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/navigation-menu--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/navigation-menu--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/navigation-menu--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/navigation/dropdown-menu/"
             },
             {
@@ -726,7 +726,7 @@ const componentsData = [
                 label: "Nav Bar",
                 body: "Nav Bar is a grouping of nav widgets for navigation capabilities.",
                 supportedPlatforms: ["angular", "rn"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/navigation-navbar--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/navigation-navbar--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/navigation/nav-bar/"
             },
             {
@@ -735,8 +735,8 @@ const componentsData = [
                 label: "Popover",
                 body: "Popover is a container-type graphical control element that opens in its parent window and blocks any other interaction until selected.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/navigation-popover--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/navigation-popover--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/navigation-popover--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/navigation-popover--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/navigation/popover/"
             }
         ]
@@ -751,8 +751,8 @@ const componentsData = [
                 label: "Carousel",
                 body: "Carousel displays two or more items either images, text or any content, that transitions in a cyclic order.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/advanced-carousel--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/advanced-carousel--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/advanced-carousel--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/advanced-carousel--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/advanced/carousel/"
             },
             {
@@ -761,8 +761,8 @@ const componentsData = [
                 label: "Login",
                 body: "Login is used for taking credentials for authentication, embedded within a page.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/advanced-login--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/advanced-login--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/advanced-login--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/advanced-login--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/advanced/login/"
             },
             {
@@ -771,7 +771,7 @@ const componentsData = [
                 label: "Marquee",
                 body: "Marquee is a container to keep scrolling content. The scrolling can be in horizontal or in the vertical direction.",
                 supportedPlatforms: ["angular", "react"],
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/advanced-marquee--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/advanced-marquee--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/advanced/marquee/"
             }
         ]
@@ -786,8 +786,8 @@ const componentsData = [
                 label: "Alert",
                 body: "Alert Dialog is a special dialog that is displayed when the user needs to take an immediate action.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/dialogs-alert--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/dialogs-alert-dialog--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/dialogs-alert--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/dialogs-alert-dialog--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/modal-windows-dialogs/#alert-dialog"
             },
             {
@@ -796,8 +796,8 @@ const componentsData = [
                 label: "Confirm",
                 body: "Confirm Dialog gives a special dialog box that is displayed which requires user’s consent to complete the action.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/dialogs-confirm--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/dialogs-confirm-dialog--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/dialogs-confirm--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/dialogs-confirm-dialog--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/modal-windows-dialogs/#confirm-dialog"
             },
             {
@@ -806,8 +806,8 @@ const componentsData = [
                 label: "Design",
                 body: "Design Dialog gives a small window that communicates information to the user and prompts them for a response. The content of the dialog is customizable.",
                 supportedPlatforms: ["angular", "rn", "react"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/dialogs-design--docs",
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/dialogs-dialog--docs",
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/dialogs-design--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/dialogs-dialog--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/modal-windows-dialogs/#design-dialog"
             },
             {
@@ -816,7 +816,7 @@ const componentsData = [
                 label: "Iframe",
                 body: "Iframe Dialog is a dialog box that loads an external webpage.",
                 supportedPlatforms: ["angular", "react"],
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/dialogs-iframe-dialog--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/dialogs-iframe-dialog--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/modal-windows-dialogs/#login-dialog"
             },
             {
@@ -825,7 +825,7 @@ const componentsData = [
                 label: "Page",
                 body: "Page Dialog is a dialog box that loads the partial page content.",
                 supportedPlatforms: ["angular", "react"],
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/dialogs-page-dialog--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/dialogs-page-dialog--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/modal-windows-dialogs/#page-dialog"
             },
             {
@@ -834,7 +834,7 @@ const componentsData = [
                 label: "Login",
                 body: "Login Dialog is a dialog box that allows you to customize the login dialog.",
                 supportedPlatforms: ["angular", "react"],
-                reactStorybook: "https://react-components.onwavemaker.com/?path=/story/dialogs-login-dialog--docs",
+                reactStorybook: "https://react-components.wavemaker.com/?path=/story/dialogs-login-dialog--docs",
                 angularDocs: "/docs/user-interfaces/web/components/angular-components/modal-windows-dialogs/"
             }
         ]
@@ -888,7 +888,7 @@ const componentsData = [
                 label: "Barcode scanner",
                 body: "Barcode scanner can be used for scanning barcode.",
                 supportedPlatforms: ["rn"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/device-barcodescanner--docs"
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/device-barcodescanner--docs"
             },
             {
                 lightIcon: "/img/component-icons/camera.svg",
@@ -896,7 +896,7 @@ const componentsData = [
                 label: "Camera",
                 body: "Camera can be used to access the device camera for taking pictures and videos.",
                 supportedPlatforms: ["rn"],
-                rnStorybook: "https://rn-components.onwavemaker.com/?path=/docs/device-camera--docs"
+                rnStorybook: "https://rn-components.wavemaker.com/?path=/docs/device-camera--docs"
             },
             {
                 lightIcon: "/img/component-icons/bottomSheet.svg",
