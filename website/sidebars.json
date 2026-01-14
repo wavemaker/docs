@@ -945,12 +945,19 @@
 				"label": "Design and Theming",
 				"items": [
 				  "react-native/styles",
+				  {
+						"type": "category",
+						"label": "Layout",
+						"items": [
+							"react-native/auto-layout",
+							"react-native/edge-to-edge-layout"
+						]
+				  },
 				  "react-native/theme",
 				  "react-native/custom-icon-fonts",
 				  "react-native/splash-screen",
 				  "react-native/progress-loader",
 				  "react-native/skeleton-loader",
-				  "react-native/edge-to-edge-layout",
 				  "react-native/animations",
 				  "react-native/accessibility-support-react-native"
 				]
