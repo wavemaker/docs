@@ -792,7 +792,7 @@ button.btn.btn-icon {
   }
   img {
     max-height: 380px;
-    width: 100%;
+    width: auto;
   }
   .section-space {
     display: flex;

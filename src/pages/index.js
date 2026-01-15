@@ -224,14 +224,14 @@ export default function Home() {
               </Link>
             </div>
             <div className="right-content">
-              <img src="/img/section-img/courses-Illustration.svg" />
+              <img src="/img/section-img/certification.gif" />
             </div>
           </section>
         </div>
         <div className="leftside-img-section">
           <section className="section-space">
             <div className="left-content">
-              <img src="/img/section-img/marketplace-Illustration.svg" />
+              <img src="/img/section-img/theme-docs.gif" />
             </div>
             <div className="right-content">
               <span className="highlight-span">What's New</span>

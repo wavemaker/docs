@@ -23,35 +23,35 @@ const MenuSection = () => {
   const menu = [
     {
       label: "Academy",
-      icon: "https://dev-ecosystem.s3.us-east-1.amazonaws.com/icon/academy-icon.svg",
+      icon: "/img/icon/acd-icon.svg",
       link: " https://next-academy.wavemaker.com/",
       subMenu: [],
     },
     {
       label: "Marketplace",
-      icon: "https://dev-ecosystem.s3.us-east-1.amazonaws.com/icon/marketplace-icon.svg",
+      icon: "/img/icon/mp-icon.png",
       link: "https://marketplace.onwavemaker.com/",
       subMenu: [],
     },
     {
       label: "Web",
-      icon: "https://dev-ecosystem.s3.us-east-1.amazonaws.com/icon/react-sicon.svg",
+      icon: "/img/icon/rs-icon.svg",
       link: "https://react-components.wavemaker.com/",
     },
     {
       label: "Mobile",
-      icon: "https://dev-ecosystem.s3.us-east-1.amazonaws.com/icon/reactnative-sicon.svg",
+      icon: "/img/icon/rns-icon.svg",
       link: "https://rn-components.wavemaker.com/",
     },
     {
       label: "Platform",
-      icon: "https://dev-ecosystem.s3.us-east-1.amazonaws.com/icon/wm-logo.svg",
+      icon: "/img/icon/wm-logo.svg",
       link: "https://www.wavemakeronline.com/",
       subMenu: [],
     },
     {
       label: "UI Kit",
-      icon: "https://dev-ecosystem.s3.us-east-1.amazonaws.com/icon/ds-icon.svg",
+      icon: "/img/icon/ds-icon.svg",
       link: "https://www.figma.com/community/file/1463103184874870889/wavemaker-ui-kit",
       subMenu: [],
     },
