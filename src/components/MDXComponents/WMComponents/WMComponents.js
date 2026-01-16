@@ -953,7 +953,7 @@ const ComponentCards = ({ components, show }) => {
     );
 }
 
-const Components = ({ show }) => {
+const WMComponents = ({ show }) => {
 
     return (
         <>
@@ -961,4 +961,4 @@ const Components = ({ show }) => {
         </>
     );
 }
-export default Components;
+export default WMComponents;
