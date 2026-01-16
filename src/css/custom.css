@@ -169,6 +169,9 @@
 [data-theme='dark'] .section-title {
   --ifm-heading-color: #fff;
 }
+[data-theme='dark'] .env-list-item .content-wrapper .env-item-desc{
+ color: inherit;
+}
 [data-theme='dark'] .rightside-img-section,
 [data-theme='dark'] .leftside-img-section {
   background-color: transparent;
@@ -319,6 +322,7 @@ body {
     line-height: 16px;
     font-weight: 500;
     word-wrap: normal;
+    color: #00070e;
   }
 }
 
