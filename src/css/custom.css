@@ -269,7 +269,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  top: 39%;
+  vertical-align: bottom;
   margin-left: 6px;
 }
 .menu-wrapper {

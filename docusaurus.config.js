@@ -128,7 +128,13 @@ const config = {
             versions: {
             current: {label: 'v12.0.0'},
             },
-            href: '#'
+            href: '#',
+            dropdownItemsAfter: [
+              {
+                href: 'https://archive-docs.wavemaker.com/',
+                label: 'Older Versions v10, v11',
+              },
+            ],
           },
         ],
       },
