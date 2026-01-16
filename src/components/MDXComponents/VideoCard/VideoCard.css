@@ -1,0 +1,100 @@
+.video-card-container {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  padding: 1.25rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  text-decoration: none !important;
+  color: inherit !important;
+  margin: 1rem 0;
+  overflow: hidden;
+  align-items: center;
+}
+
+[data-theme='light'] .video-card-container {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.video-card-container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-color: var(--ifm-color-primary);
+}
+
+.video-card-content {
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.video-card-content h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--ifm-heading-color);
+}
+
+.video-card-content p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--ifm-font-color-base);
+  opacity: 0.8;
+  line-height: 1.5;
+}
+
+.video-card-thumbnail-container {
+  flex: 0 0 200px;
+  max-width: 200px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.thumbnail-fallback {
+  aspect-ratio: 16 / 9;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+}
+
+.thumbnail-fallback::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(var(--ifm-color-primary-rgb), 0.2) 0%, transparent 70%);
+}
+
+.video-card-thumbnail {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.video-card-container:hover .video-card-thumbnail {
+  transform: scale(1.05);
+}
+
+@media (max-width: 640px) {
+  .video-card-container {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+  .video-card-thumbnail-container {
+    flex: none;
+    max-width: 100%;
+  }
+}
