@@ -30,7 +30,7 @@ const MenuSection = () => {
     {
       label: "Marketplace",
       icon: "/img/icon/mp-icon.png",
-      link: "https://marketplace.onwavemaker.com/",
+      link: "https://marketplace.wavemaker.com/",
       subMenu: [],
     },
     {
