@@ -425,11 +425,11 @@ export default [
     items: [
       {
         type: 'doc',
-        id: 'studio/workspaces/api-workspace',
+        id: 'studio/workspaces/api-explorer',
       },
       {
         type: 'doc',
-        id: 'studio/workspaces/database-workspace',
+        id: 'studio/workspaces/database-explorer',
       },
       {
         type: 'doc',
