@@ -437,7 +437,7 @@ export default [
       },
       {
         type: 'doc',
-        id: 'studio/workspaces/security-workspace',
+        id: 'studio/workspaces/security-configurator',
       },
       {
         type: 'doc',
@@ -445,7 +445,7 @@ export default [
       },
       {
         type: 'doc',
-        id: 'studio/workspaces/vcs-workspace',
+        id: 'studio/workspaces/vcs-manager',
       },
     ],
   },
