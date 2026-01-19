@@ -49,5 +49,5 @@ The export process generates:
 :::note
 To learn how to generate a WAR file in WaveMaker, watch the video below:
 
-▶️ [Generate a WAR from studio](https://next-academy.wavemaker.com/Watch?wm=WM-F1B323D0D3)
+▶️ [Generate a WAR from studio](https://next-academy.wavemaker.com/Watch?wm=F1B323D0D3)
 :::
