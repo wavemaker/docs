@@ -195,34 +195,42 @@ export default [
             type: 'doc',
             id: 'apis-and-services/security/providers/overview',
           },
+          {
+            type: 'doc',
+            id: 'apis-and-services/security/providers/secure-connection-deployed-apps',
+          },
         //   {
         //     type: 'doc',
         //     id: 'apis-and-services/security/providers/login-configuration',
         //   },
-          {
-            type: 'doc',
-            id: 'apis-and-services/security/providers/cas',
-          },
+
+         
           {
             type: 'doc',
             id: 'apis-and-services/security/providers/database',
+          },
+             {
+            type: 'doc',
+            id: 'apis-and-services/security/providers/demo',
           },
           {
             type: 'doc',
             id: 'apis-and-services/security/providers/openid-authentication',
           },
-          {
+            {
             type: 'doc',
-            id: 'apis-and-services/security/providers/secure-connection-deployed-apps',
+            id: 'apis-and-services/security/providers/saml-integration',
           },
+           {
+            type: 'doc',
+            id: 'apis-and-services/security/providers/cas',
+          },
+          
           {
             type: 'doc',
             id: 'apis-and-services/security/providers/token-based-authentication',
           },
-          {
-            type: 'doc',
-            id: 'apis-and-services/security/providers/saml-integration',
-          },
+        
           {
             type: 'doc',
             id: 'apis-and-services/security/providers/active-directory',
