@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "@theme-original/Layout";
-import Link from "@docusaurus/Link";
 export default function LayoutWrapper(props) {
   return (
     <>
@@ -45,12 +44,14 @@ export default function LayoutWrapper(props) {
         <div style={{ marginTop: "8px", color: "#595959" }}>
           <p style={{ margin: "0" }}>
             For newer WaveMaker versions (v12 and above), please visit the{" "}
-            <Link
-              to="https://next-docs.wavemaker.com/"
+            <a
+              href="https://next-docs.wavemaker.com"
+              data-ga-ignore
+              target="_blank"
               style={{ color: "#1890ff", textDecoration: "none" }}
             >
               Latest WaveMaker Docs
-            </Link>
+            </a>
             .
           </p>
         </div>
