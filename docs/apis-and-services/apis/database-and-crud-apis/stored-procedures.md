@@ -31,7 +31,7 @@ Use stored procedures in WaveMaker when:
 
 ## Procedure Tab in Database Designer
 
-Stored procedures are configured using the **Procedure** tab within the **[Database Workspace](../../../studio/workspaces/database-workspace.md)** of a Database Service.
+Stored procedures are configured using the **Procedure** tab within the **[Database Explorer](../../../studio/workspaces/database-explorer.mdx)** of a Database Service.
 
 Using this tab, you can:
 

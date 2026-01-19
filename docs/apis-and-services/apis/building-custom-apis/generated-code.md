@@ -112,7 +112,7 @@ Defines Spring bean configurations for the Java Service, including dependency in
 1. Business logic is implemented in `MyJavaService.java`.
 2. Controller methods in `MyJavaController.java` expose the logic as REST APIs.
 3. WaveMaker generates and maintains API metadata in the `designtime` folder.
-4. APIs appear in **[API Designer](../../../studio/workspaces/api-workspace.md)→ Core APIs**.
+4. APIs appear in **[API Explorer](../../../studio/workspaces/api-explorer.mdx) → Core APIs**.
 5. Updates made in the API Designer are reflected in the design-time metadata automatically.
 
 ---

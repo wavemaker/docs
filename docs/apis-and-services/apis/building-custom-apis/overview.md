@@ -85,7 +85,7 @@ You can further customize the API definition using the **API Designer**, includi
 
 ## Exposing Java Services as REST APIs
 
-Once a Java Service is saved, it becomes available as a **REST API** in the  **[API workspace](../../../studio/workspaces/api-workspace.md)**
+Once a Java Service is saved, it becomes available as a **REST API** in the  **[API Explorer](../../../studio/workspaces/api-explorer.mdx)**
 
 - For each method in the Java Service, an API endpoint is automatically generated.  
 - The **type of API** (GET, POST, etc.) is auto-assigned based on the method name.  

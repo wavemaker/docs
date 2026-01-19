@@ -25,7 +25,7 @@ Use database queries in the following scenarios:
 ## Creating Queries
 
 
-Queries are created and managed from the **Query** tab in the **[Database Workspace](../../../studio/workspaces/database-workspace.md)**. When creating queries, the editor provides several capabilities:
+Queries are created and managed from the **Query** tab in the **[Database Explorer](../../../studio/workspaces/database-explorer.mdx)**. When creating queries, the editor provides several capabilities:
 
 - **IntelliSense support** – press `Ctrl + Space` to view available tables, columns, and query suggestions.  
 - **Supported query languages**:  

@@ -51,13 +51,13 @@ From the Database Workspace, you can:
 
 A short video in this section walks through the Database Workspace UI and demonstrates how developers can visually interact with their databases.
 
-Learn more: [Database Workspace](../../../studio/workspaces/database-workspace.md)
+Learn more: [Database Explorer](../../../studio/workspaces/database-explorer.mdx)
 
 ---
 
 ## Auto-Generated APIs: Standard CRUD
 
-Once a database is connected, WaveMaker automatically generates CRUD APIs for selected tables and views. These APIs are managed and exposed through the  **[API Workspace](../../../studio/workspaces/api-workspace.md)**
+Once a database is connected, WaveMaker automatically generates CRUD APIs for selected tables and views. These APIs are managed and exposed through the  **[API Explorer](../../../studio/workspaces/api-explorer.mdx)**
 
 #### Generated APIs:
 - Follow REST conventions  
@@ -74,7 +74,7 @@ All generated APIs are visualized using a standard **Swagger (OpenAPI)** interfa
 
 This allows teams to finalize and validate backend APIs independently before building the UI.
 
-Learn more: [API Workspace](../../../studio/workspaces/api-workspace.md)
+Learn more: [API Explorer](../../../studio/workspaces/api-explorer.mdx)
 
 ---
 

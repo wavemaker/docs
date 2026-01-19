@@ -201,6 +201,10 @@ export default [
         //   },
           {
             type: 'doc',
+            id: 'apis-and-services/security/providers/cas',
+          },
+          {
+            type: 'doc',
             id: 'apis-and-services/security/providers/openid-authentication',
           },
           {

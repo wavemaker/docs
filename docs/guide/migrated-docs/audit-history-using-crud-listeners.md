@@ -16,7 +16,7 @@ In the following example, we use three Event Listeners, including:
 ## Download and Import Database File
 
 1. Download the [EmployeeDB](/learn/assets/Audithistory-using-crudListeners/EmployeeDB_dump.sql) SQL file. 
-2. Import the file in [DB Tools](/docs/studio/workspaces/database-workspace#db-scripts).
+2. Import the file in [DB Tools](/docs/studio/workspaces/database-explorer#db-scripts).
 3. Connect to the Database from your application. 
 
 ## Create a Java Service to Insert Transactional Details
