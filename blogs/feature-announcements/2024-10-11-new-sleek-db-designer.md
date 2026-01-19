@@ -66,6 +66,6 @@ We believe this update will help your team focus more on building and less on ma
 
 
 ## When will it be rolled out?
-:::impact
+:::tip Impact
 The new sleek designer will be introduced and made available to application developers with the WaveMaker 11.9.0 release.
 :::

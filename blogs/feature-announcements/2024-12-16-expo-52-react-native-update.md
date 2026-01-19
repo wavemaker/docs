@@ -40,7 +40,7 @@ The New Architecture is a rewrite of the internals of React Native to enable app
 
 Accessibility takes center stage in Expo 52, addressing limitations that existed in version 50. Notably, accessibility IDs, which were previously unavailable for nested components on iOS, are now supported. This update is a game-changer for developers striving to make their apps more inclusive and compliant with accessibility standards.
 
-:::impact
+:::tip Impact
 Simplifies the process of automation testing via accessibility id in iOS.
 :::
 

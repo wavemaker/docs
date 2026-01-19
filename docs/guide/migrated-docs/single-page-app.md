@@ -11,7 +11,7 @@ A Single Page App (SPA) significantly enhances how the application UI renders by
 
 Enabling SPA behavior ensures that navigation across pages only updates the content section, while static areas such as the header, left navigation, and footer remain unchanged. This results in smoother page transitions.
 
-:::impact
+:::tip Impact
 
 With release 11.8.0, SPA behavior will be enabled in the new applications by default. You need to enable it for the previously created applications.
 

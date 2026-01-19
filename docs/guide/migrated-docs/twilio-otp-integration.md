@@ -193,7 +193,8 @@ Also add below Custom Filter in **general-options.json** file.
 
 In the above image, *Send OTP* button triggeres the *sendOTP* variable created. Bind the variable data parameters in the variable dialog. OnSuccess of this variable open the dialog to accept OTP.
 
-:::example
+Example
+
 Below code helps you to open the ValidateOTP dialog only when sendOTP response is true.
 ```js
 Page.sendOTPCodeonSuccess = function(variable, data) {
@@ -206,7 +207,7 @@ Page.sendOTPCodeonSuccess = function(variable, data) {
     }
 };
 ```
-:::
+
 
 Also Design the dialog to accept OTP code and validate the OTP.
 
@@ -214,7 +215,7 @@ Also Design the dialog to accept OTP code and validate the OTP.
 
 In the above image, *Validate OTP* button triggeres the *validateOTP* variable created. Bind the variable data parameters in the variable dialog. OnSuccess of this variable close the dialog and check the `securityInfo.userAttributes.otpverification` if value is *success* then navigate to landing page.
 
-:::example
+Example
 
 Below code helps you to close the ValidateOTP dialog and check the userAttribute, if success then navigates to the landing page.
 ```js
@@ -234,6 +235,5 @@ Page.validateOTPonSuccess = function(variable, data) {
     }
 };
 ```
-:::
 
 4. Now preview the app, enter login credentials in *Login* page. Once authentication is successful, it will be redirected to *OTPPage*. Enter phoneNumber or email and select the channel and then click on *Send OTP* button. A dialog will be popped up to validate OTP. Once OTP is validated you will be redirected to user landing page.

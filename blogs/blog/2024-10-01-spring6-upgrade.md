@@ -52,7 +52,7 @@ To support the Servlet 6 upgrade, you will need to transition to web servers tha
 
 ## Next Steps?
 
-:::impact
+:::tip Impact
 Beginning with our **11.9 release on October 21, 2024**, all new WaveMaker projects will use **Servlet 6** and **Spring 6**, and existing applications will be **migrated** automatically. However, some may still require manual intervention in specific use cases. 
 :::
 

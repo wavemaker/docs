@@ -28,7 +28,7 @@ In response to these varying needs, we've decided to offer our customers complet
 
 ## What this means for you
 
-:::impact
+:::tip Impact
 Starting with the 11.9 release (as planned on October 21, 2024), please ensure that you update your build system and deployment environment so they are compatible with Java 17 for both compiling and running applications, which will be the default starting with the 11.9 release. If you prefer to use Java 21, you can easily make the switch.
 :::
 

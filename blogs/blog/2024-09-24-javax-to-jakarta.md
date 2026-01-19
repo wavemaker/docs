@@ -24,7 +24,7 @@ This is a significant shift, as not only your application but also all its depen
 
 Currently, WaveMaker applications are built using **Servlet 4**, which is based on Java EE and utilizes the javax namespace. However, with the transition from Java EE to Jakarta EE, we need to update all javax references to jakarta, including third-party dependencies used in the application.
 
-:::impact
+:::tip Impact
 Starting with our **11.9 release, scheduled for October 21, 2024**, WaveMaker applications will be upgraded from **Servlet 4 (Java EE)** to **Servlet 6 (Jakarta EE)**. This shift will be a breaking change, as applications must migrate from javax to jakarta to remain compatible with the latest standards.
 :::
 
