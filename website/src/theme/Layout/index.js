@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "@theme-original/Layout";
-
+import Link from "@docusaurus/Link";
 export default function LayoutWrapper(props) {
   return (
     <>
@@ -29,7 +29,10 @@ export default function LayoutWrapper(props) {
           }}
         >
           <span style={{ display: "flex", alignItems: "center" }}>
-            <svg viewBox="0 0 12 16" style={{ width: "20px", height: "20px", color: "#f5222d" }}>
+            <svg
+              viewBox="0 0 12 16"
+              style={{ width: "20px", height: "20px", color: "#f5222d" }}
+            >
               <path
                 fill="currentColor"
                 fill-rule="evenodd"
@@ -37,14 +40,17 @@ export default function LayoutWrapper(props) {
               ></path>
             </svg>
           </span>
-          This is Archive Documentation for WaveMaker v10 and v11
+          This is the archived documentation for WaveMaker v10 and v11
         </div>
         <div style={{ marginTop: "8px", color: "#595959" }}>
           <p style={{ margin: "0" }}>
-            For newer WaveMaker versions (v12 and above), please visit{" "}
-            <a href="https://next-docs.wavemaker.com/" target="_blank" style={{ color: "#1890ff", textDecoration: "none" }}>
+            For newer WaveMaker versions (v12 and above), please visit the{" "}
+            <Link
+              to="https://next-docs.wavemaker.com/"
+              style={{ color: "#1890ff", textDecoration: "none" }}
+            >
               Latest WaveMaker Docs
-            </a>
+            </Link>
             .
           </p>
         </div>
