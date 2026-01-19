@@ -1,74 +1,66 @@
 ---
-last_update: { author: "Priyanka Bhadri" }
+last_update: { author: "Sagar Vemala" }
 ---
 
 # Overview
 
-Web services enable communication between different software systems across a network using standardized protocols. WaveMaker makes it easy to bring external web services into your application and work with them through **Variables** that can be bound to UI components for rendering dynamic data. Web services typically use HTTP or TCP protocols and exchange data in JSON, XML, or other formats. 
+# Overview
 
----
+APIs enable applications to communicate with external systems over a network using standard protocols such as HTTP or TCP. They expose well-defined interfaces that allow clients to request data or trigger operations in a consistent and predictable way. Most APIs exchange data in widely used formats like JSON or XML, making them easy to integrate across different platforms.
 
-## Introduction
-
-A **web service** is a software component that allows machine-to-machine interaction over a network, based on a service contract described in a standard format. Clients interact with the service according to this contract, and responses are typically sent over HTTP with JSON or XML payloads. 
-
-WaveMaker supports integration with multiple types of web services and allows you to invoke them using variables that store returned data in their `dataSet` property.
-
----
-
-## Types of Web Services
-
-WaveMaker supports two primary types of web services:
-
-### REST Services
-
-REST (Representational State Transfer) services expose resources via unique URLs and standard HTTP operations (GET, POST, PUT, DELETE, etc.). Responses are usually in JSON or XML format. REST services can be imported into your WaveMaker app and invoked through service variables. 
-
-
-
-### WebSocket Services
-
-WebSocket services provide a persistent, bidirectional communication channel over a single TCP connection, allowing real-time data streams between the client and server. Once a WebSocket service is imported, you can create a WebSocket variable to send and receive messages in real time. 
-
----
-
-
-
-
-## Working with REST Services
-
-- REST services can be imported by specifying the URL and defining HTTP method, parameters, and response format.  
-- Query, path, header, and body parameters are configured during import and appear as input fields in the corresponding variable.  
-- You can set up authentication (None, Basic, or OAuth 2.0) and test the service before importing it. 
-
-Learn more: [Rest Services](./import-rest.md)
-
+WaveMaker simplifies working with external APIs by allowing you to import them into your application and invoke them at runtime. The data returned from API calls can be easily consumed within the app and connected to UI components, enabling you to build dynamic, data-driven experiences with help of Varibles avoiding dealing with low-level networking concerns.
 
 
 ---
 
+## Supported API Types
 
+WaveMaker supports the following API types:
 
-## Working with WebSocket Services
+### REST APIs
 
-- WebSocket services support full-duplex, real-time communication.  
-- Import the WebSocket endpoint (typically with a `wss://` URL), configure sample request/response payloads, and create a WebSocket variable.  
-- Incoming messages are stored in the variable and can be consumed by UI widgets in real time.  
-- WebSocket variables offer methods for opening and closing connections, sending messages, and reacting to incoming data.
+REST (Representational State Transfer) APIs expose resources through unique URLs and standard HTTP methods such as GET, POST, PUT, and DELETE. Responses are typically returned in JSON or XML format.
 
-Learn more: [WebSocket Services](websockets.md)
+WaveMaker supports importing REST APIs in two ways:
+- **Endpoint-based import** by providing a REST endpoint URL
+- **Contract-based import** using **OpenAPI (Swagger)** specifications
 
+This allows you to quickly onboard both individual endpoints and fully documented APIs.
 
 ---
 
+### WebSocket APIs
 
+WebSocket APIs enable persistent, bidirectional communication over a single TCP connection, making them suitable for real-time data exchange.
+
+Once imported, WebSocket APIs allow applications to send and receive messages continuously without repeated requests.
+
+---
+
+## Using APIs in WaveMaker
+
+### REST APIs
+
+- Import REST APIs using either a direct endpoint or an OpenAPI (Swagger) definition.  
+- Configure HTTP methods, parameters, request bodies, and response formats during import.  
+- Define query, path, header, and body parameters as required.  
+- Set up authentication options such as None, Basic, or OAuth 2.0, and test APIs before importing.
+
+Learn more: [REST APIs](./import-rest.md)
+
+---
+
+### WebSocket APIs
+
+- Import the WebSocket endpoint (typically using a `wss://` URL).  
+- Configure sample request and response payloads as needed.  
+- Open and close connections, send messages, and handle incoming data in real time.
+
+Learn more: [WebSocket APIs](websockets.md)
+
+---
 
 ## Summary
 
-WaveMaker provides rich support for integrating different kinds of web services and consuming them using service variables:
+WaveMaker offers built-in capabilities to connect applications with external systems through standard APIs. It supports both REST APIs, including OpenAPI (Swagger)–based imports, and WebSocket APIs for real-time communication. These integrations allow applications to retrieve, stream, and interact with external data efficiently, while keeping implementation complexity to a minimum.
 
-- **REST Services** — Lightweight HTTP APIs with JSON/XML responses.  
-- **WebSocket Services** — Persistent, full-duplex channels for real-time data.  
-- Web service variables can be created to trigger these services at runtime and bind results to UI widgets. 
-
-This approach enables you to rapidly connect your application to external systems and present live or remote data without writing boilerplate networking code.
