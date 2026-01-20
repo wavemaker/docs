@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Layout from '@theme/Layout';
 import techStackData from './tech-stack-data.json';
 import styles from './styles.module.css';
-
+import Link from '@docusaurus/Link';
 export default function TechStackPage() {
   const versions = Object.keys(techStackData).sort((a, b) => {
     const parse = (v) => v.replace(/^v/, '').split('.').map(Number);
