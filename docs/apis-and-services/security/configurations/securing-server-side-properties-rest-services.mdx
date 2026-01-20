@@ -1,45 +1,77 @@
 ---
 sidebar_label: "Secure Server-side Properties"
-last_update: { author: "Shahnawaz Ahmed" }
+last_update: { author: "Priyanka Bhadri" }
 ---
-# Securing Server Side and App Environment Properties in REST Services
+
+# Securing Server-Side and App Environment Properties in REST Services
+
+When working with REST services, it is critical to protect sensitive information such as API keys, passwords, and other confidential data. This ensures that sensitive app information is not exposed in the UI or during network calls.  
+
+WaveMaker provides a mechanism to achieve this using a **Proxy Server** in combination with **App Environment Properties** and **Server-Side Properties** for request headers and query parameters.
+
 ---
-When working with REST Services, it is essential to protect your API keys and passwords and ensure your app sensitive information hides from the UI and network calls. You can do this by using proxy server when configuring REST Services. For this, you should use App Environment Properties or Server Side Properties for Header and Query params.
 
-## What are App Environment Properties and Server-Side Properties and how to use them?
+## App Environment Properties vs. Server-Side Properties
 
-App Environment properties and Server Side Properties are similar. However, Server Side Properties are implicit variable or standard WaveMaker variables. It contains dynamic information, for examples, current time, current date, a logged-in user’ data which changes based on the user. 
+Both App Environment Properties and Server-Side Properties help secure sensitive data, but they differ in usage and scope:
 
-Whearas App Environment Properties are explicit variable. You create App Environment Properties once and you can use them any number of times across the project. Configure different values for different environments, and store API keys, passwords, imported services, and more. To learn how to create an App Environment Property, see [Using App Environment Properties](#).
+- **Server-Side Properties**  
+  - Implicit variables provided by WaveMaker.  
+  - Contain dynamic information such as the current user’s data, current date, or current time.  
+  - Automatically updated based on runtime context.
+
+- **App Environment Properties**  
+  - Explicit variables created by the developer.  
+  - Can be reused across the project multiple times.  
+  - Useful for storing API keys, passwords, imported services, and environment-specific values.  
+  - Can be configured with different values for different environments (e.g., Dev, QA, Production).  
+
+To learn how to create App Environment Properties, see [Using App Environment Properties](/docs/guide/migrated-docs/using-app-environment-properties).
 
 :::important
-When adding App Environment Properties, ensure to click the “+” button after each entry. When done, click the immediate “Save” button, followed by the next “Save” button of the Config Profile window.
+When adding App Environment Properties:
+1. Click the **“+”** button after each entry.  
+2. Click the immediate **“Save”** button.  
+3. Then click the **Save** button of the Config Profile window to finalize changes.
 :::
 
-When you create App Environment Properties, they should appear in Web Services window under the Header and Query param types.
+Once created, App Environment Properties appear in the **Web Services** window under **Header** and **Query Param** types.
 
-## Configuring Proxy Server
+---
 
-When configuring REST API, you add parameter name, data type and test value depending on the service requirements. To learn how to add REST services, see [Third Party REST Services](#). Following are the three types of Properties for using Header and Query params data types:
+## Configuring a Proxy Server
 
-1. App Environment Properties
-2. Server Side Properties
-3. UI Type
+When configuring a REST API:
 
-After you add the Endpoint URL, to use the Proxy Server, slide the toggle to enable the Use Proxy setting. The Server Side Properties and App Environment Properties enforces you to use the Proxy server by default. This is to protect app sensitive information from viewing via network calls and UI. 
+1. Add the required **parameter name**, **data type**, and **test value** as per the service requirements.
+   To learn more, see [Third Party REST Services](../../apis/importing-apis/import-rest.md).  
 
-{/*[![](/learn/assets/ServerSidePropertiesHeader.png)](/learn/assets/ServerSidePropertiesHeader.png)*/}
+2. There are **three types of properties** you can use for headers and query parameters:  
+   - App Environment Properties  
+   - Server-Side Properties  
+   - UI Type
 
-{/*[![](/learn/assets/ServerSidePropertiesQuery.png)](/learn/assets/ServerSidePropertiesQuery.png)*/}
+3. After specifying the **Endpoint URL**, enable the **Use Proxy** toggle to route requests through the proxy server.  
 
-## How it impacts UI
+> Note: Using Server-Side Properties or App Environment Properties automatically enforces the Proxy Server by default. This prevents sensitive information from being exposed via network calls or the client-side UI.
 
-When you add REST service and bind them with the Header and Query param, the param values could essentially carry app-sensitive data. It should be hidden from the UI and network calls. However, in the Variables dialog, you can view param data in the input fields. Thus, it allows you to bind the data to any widget or variable, and it can potentially make it viewable to the client-side environment. 
 
-To hide the params data that passes to Variable and network call, you must enable the Proxy server. By doing this, the data transfers from a Proxy Server instead of making a direct call.
 
-## Things to be aware of
+---
 
-- If you do not see any App Environment Properties in the Header Param or Query Param, you should add them. For more information, see [Adding App Environment Properties](#).
-- Without enabling **Use Proxy**, you cannot set the properties to Server Side Properties or App Environment Properties.
-- If you make any changes to the URL when configuring the web service, you should test it before you save the service. 
+## Impact on the UI
+
+When binding REST services to **header** or **query parameters**, these parameters may carry sensitive data.  
+
+- In the **Variables** dialog, parameter values are visible in input fields, which allows them to be bound to widgets or other variables.  
+- To prevent this sensitive data from being exposed to the client-side, the **Proxy Server** must be enabled.  
+- When enabled, requests are routed through the proxy, ensuring that sensitive information is **never directly exposed** in network calls or the UI.
+
+---
+
+## Key Points to Remember
+
+- If App Environment Properties do not appear in header or query param dropdowns, you must add them first.
+  See [Adding App Environment Properties](/docs/guide/migrated-docs/using-app-environment-properties) for details.
+- **Use Proxy** must be enabled to use Server-Side or App Environment Properties.  
+- Any changes to the service URL should be **tested** before saving the REST service configuration.

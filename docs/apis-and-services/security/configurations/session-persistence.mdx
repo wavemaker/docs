@@ -1,75 +1,100 @@
 ---
-last_update     : { author: "Shahnawaz Ahmed" }
+last_update : { author: "Priyanka Bhadri" }
 sidebar_label: "Session Persistence"
 ---
-# Session Persistence - Scaling Application
----
-Session persistence is a configuration where you can store sessions. You should configure session persistence to enable Horizontal Scaling.
 
-Horizontal Scaling replicates the application with multiple nodes and servers. With this approach, the load is distributed among these nodes. Typically, Horizontal scaling can serve more users and requests and there is no limit on the number of nodes that can serve the same application.
+# Session Persistence – Scaling Applications
+
+Session Persistence defines where and how user session data is stored. Configuring session persistence is essential when enabling **horizontal scaling**, as it ensures that user sessions remain available across multiple application instances.
+
+Horizontal scaling involves running the application on multiple nodes or servers. Incoming requests are distributed across these nodes, allowing the application to handle higher traffic and more concurrent users. With proper session persistence in place, there is no practical limit to the number of nodes that can serve the same application.
+
+---
 
 ## How to Configure Session Persistence
 
-1. Connect to the {/*[Database](/learn/assets/db_new.png).*/}
-2. Go to the **Security** menu.
+1. Connect to the application database.
+2. Navigate to the **Security** menu.
+3. Open the **Authentication and Authorization** tab and enable **Authentication**.
+4. From the left navigation, select **Login Configuration**.
+5. Scroll down to the **Session Persistence** section.
+6. Choose a **Type** from the following options:
+   - **In-Memory**
+   - **REDIS**
+   - **JDBC**
+   - **MONGODB**
 
-{/*![app-security](/learn/assets/sec_access.png)*/}
+---
 
-3. Navigate to the **Authentication and Authorization** tab and enable **Authentication**.
-
-{/*![authentication-authorization](/learn/assets/authentication-authorization.png)*/}
-
-4. Go to **Login configuration** from the left navigation.
-5. Scroll down to **Session Persistence**.
-6. Select **Type** from the following:
-
-    1. **In-Memory**
-    2. **REDIS**
-    3. **JDBC**
-    4. **MONGODB**
+## Session Persistence Types
 
 ### In-Memory
 
-In-Memory is the default selected option; this will work fine for a single node application.
+**In-Memory** is the default option and is suitable for **single-node deployments**.  
+Session data is stored locally within the application instance and is not shared across nodes.
+
+---
 
 ### REDIS
 
-When you select REDIS, you have to provide the following information:
+When **REDIS** is selected, session data is stored in a centralized Redis cache, making it ideal for horizontally scaled applications.
 
-1. Host
-2. Port
-3. Password
-4. Database
+You must provide the following details:
+1. Host  
+2. Port  
+3. Password  
+4. Database  
 
-For more information, see [Host, port, password and database](https://redis.io/topics/rediscli#host-port-password-and-database).
-The Database is 0 by default. You can configure this according to the REDIS setup.
+For more information, refer to **Host, port, password, and database** in the [Redis documentation](https://redis.io/topics/rediscli#host-port-password-and-database)
 
-{/*[![REDIS session persistence](/learn/assets/redis-session-persistence.png)*/}
+The default Redis database is **0**, but this can be changed based on your Redis setup.
+
+
+---
 
 ### JDBC
 
-For JDBC, it displays a dropdown of all the imported databases in the project. The application typically has multiple logins and it stores multiple login sessions, and those sessions and their timeout information is stored in the table.
+With **JDBC** session persistence, user session data is stored in a relational database.
 
-{/*[![jdbc session persistence](/learn/assets/jdbc-session-persistence.png)*/}
+- The configuration displays a dropdown containing all databases imported into the project.
+- Applications may have multiple active login sessions, and each session—along with its timeout information—is stored in database tables.
 
-1. Select the Database from the dropdown to configure session persistence.
+To configure JDBC session persistence:
+1. Select a database from the dropdown.
 
 :::note
-Ensure the selected database should be in editable mode and not read-only.
+The selected database must be in **editable mode** and not configured as read-only.
 :::
 
-2. **Save** the settings.
+2. Click **Save** to apply the settings.
 
+{/*[![JDBC session persistence](/learn/assets/jdbc-session-persistence.png)*/}
 
-### Mongo DB
+---
 
-You can configure a MongoDB database for storing sessions. 
+### MongoDB
 
-1. From the Security window, choose **Session Persistence**
-2. Choose the **Type** `MONGODB` from the dropdown.
-3. Provide all the required details, such as Database name, Port, Host, Username, and Password. 
+MongoDB can also be used to store application session data.
+
+To configure MongoDB session persistence:
+1. Open the **Security** window and select **Session Persistence**.
+2. Choose **Type** as `MONGODB`.
+3. Provide the required details:
+   - Database Name
+   - Host
+   - Port
+   - Username
+   - Password
 4. Click **Save**.
 
-The required driver and the configuration files gets automatically imported into the project, and the application can connect to MongoDB.
+WaveMaker automatically imports the required drivers and configuration files, enabling the application to connect to MongoDB seamlessly.
 
-{/*[![mongodb security configuration](/learn/assets/session-persistence/mongodb-security-window.png)*/}
+---
+
+## Summary
+
+Session Persistence enables WaveMaker applications to maintain user sessions reliably, especially in **horizontally scaled environments**. By externalizing session storage, applications can distribute load across multiple nodes without losing session continuity.
+
+WaveMaker supports multiple session persistence strategies—**In-Memory, Redis, JDBC, and MongoDB**—allowing teams to choose the most appropriate option based on deployment size, scalability requirements, and infrastructure preferences. With built-in configuration and automatic dependency management, WaveMaker simplifies session persistence while ensuring secure and consistent se
+
+

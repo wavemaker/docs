@@ -1,22 +1,73 @@
 ---
-last_update: { author: "Shahnawaz Ahmed" }
+last_update: { author: "Priyanka Bhadri" }
 ---
+
+
 # Concurrent Sessions
+
+At WaveMaker, application security is a continuous priority. **Concurrent Sessions** add an additional layer of protection by controlling how many active sessions a single user can maintain at the same time.
+
+By leveraging the **Spring Security framework** in the WaveMaker-generated application code, concurrent session control prevents users from authenticating to the same application more than a configured number of times simultaneously.
+
 ---
-At WaveMaker, we constantly bring ways to make applications more secure. Configure application login settings to add an extra security layer by using concurrent sessions. By taking advantage of the Spring framework in WaveMaker generated application code, Spring Security prevents app users from concurrently authenticating to the same application more than a specified number of times.
 
-## How it works
+## How It Works
 
-WaveMaker developers can easily enable maximum concurrent sessions in the Spring framework. It allows you to impose a setting and restrict their application users. You can create a policy to choose what happens when max concurrent sessions have reached. One of the policies is to invalidate the least recently used session.
+WaveMaker allows developers to configure a maximum number of concurrent sessions per user using Spring Security.
 
-Max Concurrent sessions can be any positive number or -1 (for unlimited concurrent sessions) but not a zero.
+Once enabled:
+- A limit is enforced on the number of active sessions a user can maintain.
+- When the maximum number of concurrent sessions is reached, a predefined policy determines the behavior.
+- One such policy is to **invalidate the least recently used session** to allow a new login.
 
-## Configuring Concurrent Sessions in WaveMaker Apps
+The maximum concurrent sessions value:
+- Can be any **positive number**
+- Can be set to **-1** for unlimited sessions
+- **Cannot be set to 0**
 
-Concurrent Sessions feature is disabled by default and set to -1 for unlimited concurrent sessions.
-The number of concurrent sessions can be configured from the Security dialog.
+---
 
-1. Go to **Security** -> **Authentication** -> **Login Configuration** -> **Max Concurrent Sessions per User**.
-2. Set the value for allowed **Max Concurrent Session per User**.
-{/*[![concurrent-sessions](/learn/assets/concurrent-sessions.png)](/learn/assets/concurrent-sessions.png)*/}
+## Configuring Concurrent Sessions in WaveMaker Applications
+
+The Concurrent Sessions feature is **disabled by default** and is set to **-1**, allowing unlimited concurrent sessions.
+
+To configure this setting:
+
+1. Navigate to **Security** → **Authentication** → **Login Configuration** → **Max Concurrent Sessions per User**.
+2. Specify the allowed number of **Max Concurrent Sessions per User**.
+
+
+---
+
+## Security Best Practices
+
+When configuring concurrent sessions, consider the following best practices to balance security and user experience:
+
+- Set a **low session limit** (such as 1 or 2) for applications handling sensitive or privileged data.
+- Use the **invalidate least recently used session** policy to prevent session hoarding while allowing legitimate re-logins.
+- Combine concurrent session limits with **short session timeouts** for enhanced protection.
+- Monitor session-related logs to identify unusual login patterns or potential account misuse.
+- Avoid setting unlimited sessions (`-1`) for externally accessible or high-risk applications unless explicitly required.
+
+---
+
+## Recommended Configuration Scenarios
+
+| Use Case | Recommended Max Concurrent Sessions |
+|--------|-------------------------------------|
+| Highly sensitive internal apps | 1 |
+| Enterprise business applications | 1–2 |
+| Public or low-risk applications | 2–3 |
+| Testing or development environments | -1 (Unlimited) |
+
+---
+
+## Important Notes
+
+- Concurrent session control is enforced **server-side** using Spring Security.
+- Session limits apply **per user**, not per device.
+- Logging out from one session immediately frees up a slot for a new session.
+- Changes to concurrent session settings require application redeployment to take effect.
+
+
 

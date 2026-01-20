@@ -258,10 +258,10 @@ export default [
             type: 'doc',
             id: 'apis-and-services/security/configurations/concurrent-sessions',
           },
-          {
-            type: 'doc',
-            id: 'apis-and-services/security/configurations/securing-server-side-properties-rest-services',
-          },
+        //   {
+        //     type: 'doc',
+        //     id: 'apis-and-services/security/configurations/securing-server-side-properties-rest-services',
+        //   },
           {
             type: 'doc',
             id: 'apis-and-services/security/configurations/security-variables',
