@@ -41,6 +41,9 @@ OpenID Connect (OIDC) is an identity layer built on the OAuth 2.0 protocol. It e
 - Reduces password management and security risk  
 - Simplifies user login experience with single sign-on (SSO)
 
+To learn more about configuring OpenID Connect in WaveMaker, including provider setup, token handling, attribute mapping, and environment-specific configurations, refer to the **[OpenID Connect Authentication](openid-authentication.mdx)** section in the WaveMaker Security documentation.
+
+
 ---
 
 ## Central Authentication Service (CAS)
@@ -60,6 +63,8 @@ CAS is an open, widely used single sign-on (SSO) protocol that enables users to 
 - Supports single sign-on across multiple applications  
 - Centralizes credential verification  
 - Reduces repeated logins in enterprise environments
+
+To learn more about configuring CAS Connect in WaveMaker, including provider setup, token handling, attribute mapping, and environment-specific configurations, refer to the **[CAS Authentication](cas.md)** section in the WaveMaker Security documentation.
 
 ---
 
@@ -81,6 +86,8 @@ SAML is an XML-based standard for exchanging authentication and authorization da
 - Centralized identity management by the IdP  
 - Supports both login and single logout (SLO)
 
+To learn more about configuring SAML Connect in WaveMaker, including provider setup, token handling, attribute mapping, and environment-specific configurations, refer to the **[SAML Authentication](saml-integration.mdx)** section in the WaveMaker Security documentation.
+
 ---
 
 
@@ -101,6 +108,8 @@ LDAP is a widely used protocol for accessing and maintaining distributed directo
 - Alternatively, LDAP can be used for authentication while a database is used to look up application roles.  
 This provides flexibility when role information is managed separately from user credentials.
 
+To learn more about configuring OpenID Connect in WaveMaker, including provider setup, token handling, attribute mapping, and environment-specific configurations, refer to the **[LDAP Authentication](active-directory.md)** section in the WaveMaker Security documentation.
+
 ---
 
 ## Active Directory
@@ -120,6 +129,8 @@ Active Directory (AD) is Microsoft’s directory service and is compatible with 
 - If only authentication is done via AD, roles can be retrieved from a database using the authenticated username.  
 This hybrid approach allows central credential management with customized role control. 
 
+To learn more about configuring OpenID Connect in WaveMaker, including provider setup, token handling, attribute mapping, and environment-specific configurations, refer to the **[LDAP Authentication](active-directory.md)** section in the WaveMaker Security documentation.
+
 ---
 
 ## Demo Security Provider
@@ -134,6 +145,8 @@ The **Demo** provider is a simple built‑in authentication mechanism designed f
 - Not recommended for production use. 
 
 Developers can add or remove users and assign them roles directly within the Demo provider configuration, making it convenient for early development and prototyping. 
+
+To learn more about configuring demo Connect in WaveMaker, including provider setup, token handling, attribute mapping, and environment-specific configurations, refer to the **[Demo Authentication](demo.md)** section in the WaveMaker Security documentation.
 
 ---
 
@@ -165,7 +178,40 @@ Opaque tokens do not expose user data within the token itself. Instead:
 4. On successful validation, user identity and roles are retrieved for authorization.  
 This enables secure API access and federation with external services. 
 
+To learn more about configuring Token-Based Authentication(JWS / OPAQUE) Connect in WaveMaker, including provider setup, token handling, attribute mapping, and environment-specific configurations, refer to the **[Token-Based Authentication(JWS / OPAQUE)](token-based-authentication.mdx)** section in the WaveMaker Security documentation.
+
 ---
+
+## Custom Security
+
+Custom Security in WaveMaker allows developers to implement **bespoke authentication logic** when built-in providers such as OpenID Connect, SAML, or LDAP do not meet specific requirements. It provides full control over how users are authenticated and how identity and roles are resolved.
+
+<!-- With Custom Security, authentication can be implemented against **any external system**, such as legacy identity services, proprietary APIs, databases, or custom token-based mechanisms, while still leveraging WaveMaker’s server-side authorization and security enforcement. -->
+
+
+
+### How Custom Security Works
+
+1. A user attempts to log in to the application.
+2. WaveMaker routes the authentication request to a **custom authentication manager** implemented by the developer.
+3. The custom logic validates user credentials or tokens using an external system.
+4. Upon successful validation, user identity information is constructed programmatically.
+5. User roles are resolved and assigned.
+6. WaveMaker establishes a secure session and applies authorization rules.
+
+
+
+### Benefits
+
+- Supports authentication against **any custom or legacy system**
+- Enables advanced or non-standard authentication flows
+- Provides full control over user identity and role resolution
+- Integrates seamlessly with WaveMaker’s authorization model
+- Maintains upgrade safety by isolating custom logic
+
+---
+
+To learn more about implementing Custom Security in WaveMaker, including creating a custom authentication manager, handling credentials, resolving roles, and securing APIs, refer to the **[Custom Authentication](custom.md)** section in the WaveMaker Security documentation.
 
 
 
@@ -207,5 +253,6 @@ WaveMaker supports a range of authentication providers to meet diverse integrati
 - **Demo Provider** – Development‑friendly provider for testing and prototyping.  
 - **JWS** – Token validation for JWT‑based identity tokens.  
 - **Opaque Token** – Token introspection for opaque access tokens.
+- **Custom Security** - plug in own authentication logic using Java
 
 These providers enable applications to integrate with existing identity systems, support SSO, and validate user credentials and tokens securely, allowing flexible and scalable authentication configurations.
