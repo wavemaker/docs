@@ -29,14 +29,15 @@ Understand and procure the [Prerequisites](./prerequisites.md).
 
 Choose a cloud provider from
 
-1. [AWS](/docs/studio/offerings/wme/aws/wavemaker-enterprise-setup-on-aws)
-2. [Azure](/docs/studio/offerings/wme/azure/wavemaker-enterprise-setup-on-azure)
+1. [AWS](../installation/platforms/aws/launching-instances-in-aws.md)
+2. [Azure](../installation/platforms/azure/launching-instances-in-azure.md)
 3. GCP (Follow general prerequisites and installation steps)
 
 Or, choose any on-premise virtualization providers from
 
-1. [VMWare Esxi](/docs/studio/offerings/wme/vmware-esxi/wavemaker-enterprise-setup-on-vmware)
-2. [Hyper-V](/docs/studio/offerings/wme/hyperv/wavemaker-enterprise-setup-on-hyperv)
+1. [VMWare ESXi (OVA)](../installation/platforms/vmware-esxi/launching-instances-in-esxi-ova.md)
+2. [VMWare ESXi (ISO)](../installation/platforms/vmware-esxi/launching-instances-in-esxi-iso.md)
+3. [Hyper-V](../installation/platforms/hyperv/launching-instances-in-hyperv-vhd.md)
 
 Or, you can choose bare-metal or any other option as well.
 

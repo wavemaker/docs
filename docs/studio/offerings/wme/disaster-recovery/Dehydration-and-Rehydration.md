@@ -101,11 +101,11 @@ bash wme-installer.sh --data-archive
 
 #### AWS
 
-- To launch WME Platform instance in AWS cloud environment please refer [WME Platform instance Infrastructure in AWS](/docs/studio/offerings/wme/aws/wavemaker-enterprise-setup-on-aws).
+- To launch WME Platform instance in AWS cloud environment please refer [WME Platform instance Infrastructure in AWS](../installation/platforms/aws/launching-instances-in-aws.md).
   
 #### AZURE
 
-- To launch WME Platform virtual machines in AZURE cloud environment please refer [WME Platform instance Infrastructure in AZURE](/docs/studio/offerings/wme/azure/wavemaker-enterprise-setup-on-azure).
+- To launch WME Platform virtual machines in AZURE cloud environment please refer [WME Platform instance Infrastructure in AZURE](../installation/platforms/azure/launching-instances-in-azure.md).
   
 #### GCP
 
@@ -113,11 +113,11 @@ bash wme-installer.sh --data-archive
 
 #### VMWARE ESXI
 
-- To create WME Platform virtual machines in VMware Esxi please refer [WME Platform instance Infrastructure in VMware Esxi](/docs/studio/offerings/wme/vmware-esxi/wavemaker-enterprise-setup-on-vmware).
+- To create WME Platform virtual machines in VMware Esxi please refer [WME Platform instance Infrastructure in VMware Esxi](../installation/platforms/vmware-esxi/launching-instances-in-esxi-ova.md).
 
 #### Hyper-V
 
-- To create WME Platform virtual machines in Hyper-V please refer [WME Platform instance Infrastructure in Hyper-V](/docs/studio/offerings/wme/hyperv/wavemaker-enterprise-setup-on-hyperv).
+- To create WME Platform virtual machines in Hyper-V please refer [WME Platform instance Infrastructure in Hyper-V](../installation/platforms/hyperv/launching-instances-in-hyperv-vhd.md).
 
 #### Volumes Based Disks Restoring(AWS, GCP, Azure)
 
@@ -183,9 +183,9 @@ bash wme-installer.sh --data-untar
 
 ## Installing WME on New Instance
 
-- For Download WaveMaker installation package please refer [WaveMaker package Installation](../Common%20Installation%20&%20Initialization/download-copy-installer).
-- Extract Package please refer [WaveMaker package extraction](../Common%20Installation%20&%20Initialization/extract-package).
-Initializing the setup please refer [WaveMaker Initialization](../Common%20Installation%20&%20Initialization/initilize-setup). Make sure to provide the same CIDR Range which is used in the previous setup.
+- For Download WaveMaker installation package please refer [WaveMaker package Installation](../installation/common-steps/download-copy-installer.md).
+- Extract Package please refer [WaveMaker package extraction](../installation/common-steps/extract-package.md).
+- Initializing the setup please refer [WaveMaker Initialization](../installation/common-steps/initilize-setup.md). Make sure to provide the same CIDR Range which is used in the previous setup.
 
 :::note
 After Completing the ***WaveMaker Initialization*** process, please go with the ***migrations*** step which is given below before proceeding with the ***Configwizard***

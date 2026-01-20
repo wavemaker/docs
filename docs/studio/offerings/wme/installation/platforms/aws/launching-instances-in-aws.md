@@ -255,5 +255,5 @@ UUID=<your-block-device-UUID>    /data     ext4     defaults ,nofail  0  2
 
 ## What's next
 
-- Install [prerequisites softwares](../../../common-steps/install-prerequisites) based on OS.
+- Install [prerequisites softwares](../../common-steps/install-prerequisites.md) based on OS.
 - Start WME Installation process.
