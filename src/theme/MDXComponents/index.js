@@ -12,6 +12,7 @@ import Admonition from '@theme/Admonition';
 import Mermaid from '@theme/Mermaid';
 import VideoCard from '@site/src/components/MDXComponents/VideoCard/VideoCard';
 import WMComponents from '@site/src/components/MDXComponents/WMComponents/WMComponents';
+import Link from '@docusaurus/Link';
 const MDXComponents = {
   Head,
   details: MDXDetails, // For MD mode support, see https://github.com/facebook/docusaurus/issues/9092#issuecomment-1602902274
@@ -31,6 +32,7 @@ const MDXComponents = {
   admonition: Admonition,
   mermaid: Mermaid,
   VideoCard,
-  WMComponents
+  WMComponents,
+  Link
 };
 export default MDXComponents;
