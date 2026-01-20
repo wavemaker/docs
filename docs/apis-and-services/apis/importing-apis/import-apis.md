@@ -111,9 +111,107 @@ Authentication settings allow WaveMaker to communicate securely with protected A
 
 ## Generated Code
 
-Once imported, WaveMaker automatically generates a complete backend for third-party APIs, including Java classes, service logic, and design-time configurations. Built on proven enterprise technologies such as Java, Spring, and Hibernate/JPA, this enables rapid and seamless API integration and customization.
+WaveMaker enables developers to import **third-party APIs** and automatically generate a fully functional backend, including Java classes, service logic, and design-time configurations. It follows proven enterprise patterns built on Java, Spring, and Hibernate/JPA. This makes it easy to quickly integrate and customize APIs.
 
-Developers have full access to the generated source code. Refer [generated  code](generated-code.md)
+Developers have complete access to the generated source code and can confidently extend or customize it without affecting future platform upgrades.
+
+This section describes the structure of a WaveMaker-generated service, using the **[Pet Store](https://petstore.swagger.io/v2/swagger.json)** as an example.
+
+### Folder Structure
+
+```plaintext
+services/
+├── authService/
+├── hrdb/
+├── MyJavaService/
+└── swagger/
+    ├── designtime/
+    │   ├── service-info.json
+    │   ├── swagger_API_REST_SERVICE.json
+    │   ├── swagger_apiTarget.json
+    │   ├── swagger_connection_settings.json
+    │   └── swagger_original_spec.json
+    ├── src/
+    │   └── com/
+    │       └── wavemaker/
+    │           └── myapp1/
+    │               └── swagger/
+    │                   ├── model/
+    │                   │   ├── Category.java
+    │                   │   ├── ModelApiResponse.java
+    │                   │   ├── Order.java
+    │                   │   ├── Pet.java
+    │                   │   ├── PetIdUploadImageBody.java
+    │                   │   ├── PetPetIdBody.java
+    │                   │   ├── Tag.java
+    │                   │   └── User.java
+    │                   └── service/
+    │                       ├── PetService.java
+    │                       ├── StoreService.java
+    │                       └── UserService.java
+    ├── servicedefs/
+    │   └── swagger-service-definitions.json
+    ├── service_swagger.spring.xml
+    └── swagger_apiTarget.json
+```
+
+### services/
+
+The `services` directory is the root container for all backend services in a WaveMaker application.
+
+Each subfolder represents a distinct service type, such as database services, Java services, REST services, or Swagger / OpenAPI integrations.  
+This structure keeps backend logic modular, organized, and scalable.
+
+
+### swagger/
+
+The `swagger` folder represents a backend service generated from a **Swagger / OpenAPI specification**.
+
+WaveMaker consumes the specification and automatically generates configuration, Java models, service classes, and runtime wiring—enabling quick and transparent integration with external APIs.
+
+
+### Design-Time Configuration (`designtime/`)
+
+Contains configuration files managed by **WaveMaker Studio** during Swagger import.  
+These files define how the Swagger service is configured and exposed within the platform.
+
+**Key files:**
+- `swagger_API_REST_SERVICE.json` – Endpoint and operation metadata  
+- `swagger_apiTarget.json` – Base URLs and target mappings  
+- `swagger_connection_settings.json` – Authentication and connection settings  
+- `swagger_original_spec.json` – Original Swagger/OpenAPI specification  
+- `service-info.json` – Service metadata  
+
+> ⚠️ Platform-managed files — do not modify manually.
+
+
+### Generated Code (`src/`)
+
+Contains generated, readable, and extensible Java code derived from the Swagger definition.
+
+- **`model/`** – POJOs representing request and response payloads  
+- **`service/`** – Java service classes that encapsulate REST calls and response handling  
+
+These classes can be safely used in custom business logic.
+
+
+### Service Definitions (`servicedefs/`)
+
+- `swagger-service-definitions.json`  
+
+Defines available service operations, input/output types, and mappings between design-time configuration and runtime execution.
+
+
+### Spring Configuration
+
+- `service_swagger.spring.xml`  
+
+Spring configuration used to wire the Swagger service at runtime, ensuring proper dependency injection and secure invocation.
+
+
+---
+
+
 
 
 

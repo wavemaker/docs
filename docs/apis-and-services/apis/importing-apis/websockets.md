@@ -82,9 +82,66 @@ WebSocket Variables also include properties and event hooks that control behavio
 
 ## Generated Code
 
-Once imported, WaveMaker automatically generates a complete backend for third-party APIs, including Java classes, service logic, and design-time configurations. Built on proven enterprise technologies such as Java, Spring, and Hibernate/JPA, this enables rapid and seamless API integration and customization.
+WaveMaker enables developers to import **third-party APIs** and automatically generate a fully functional backend, including Java classes, service logic, and design-time configurations. It follows proven enterprise patterns built on Java, Spring, and Hibernate/JPA. This makes it easy to quickly integrate and customize APIs.
 
-Developers have full access to the generated source code. Refer [Generated code](generated-code.md)
+Developers have complete access to the generated source code and can confidently extend or customize it without affecting future platform upgrades.
+ 
+This section describes the structure of a WaveMaker-generated service, using the **[Web Socket](wss://echo.websocket.org/)** as an example.
+
+
+
+### Folder Structure
+
+```plaintext
+services/
+├─ authService/
+├─ securityService/
+├─ websocket/
+│  ├─ designtime/
+│  │  ├─ service-info.json
+│  │  ├─ websocket_API_WEBSOCKET_SERVICE.json
+│  │  ├─ websocket_apiTarget.json
+│  │  └─ websocket_connection_settings.json
+│  ├─ src/
+│  │  ├─ servicedefs/
+│  │  │  └─ websocket-service-definitions.json
+│  │  ├─ service_websocket.spring.xml
+│  │  └─ websocket_apiTarget.json
+```
+
+### websocket/
+
+The `websocket` folder represents a backend service generated for **WebSocket-based communication**.
+
+WaveMaker uses this service type to enable real-time, bidirectional messaging between the client and server, making it ideal for live updates, notifications, and streaming data scenarios.
+
+
+### Design-Time Configuration (`designtime/`)
+
+The `designtime` folder contains configuration files managed by **WaveMaker Studio** that define how the WebSocket service is configured and exposed.
+
+**Key files:**
+- `websocket_API_WEBSOCKET_SERVICE.json` – Defines WebSocket endpoints, message mappings, and operation metadata  
+- `websocket_apiTarget.json` – Stores target connection details such as WebSocket URLs and paths  
+- `websocket_connection_settings.json` – Contains connection and authentication settings  
+- `service-info.json` – Holds service metadata such as name, type, and version  
+
+> ⚠️ These files are platform-managed and should not be modified manually.
+
+
+
+### Runtime Configuration & Definitions
+
+- **`servicedefs/websocket-service-definitions.json`**  
+  Defines available WebSocket operations, message payload types, and mappings used at runtime.
+
+- **`service_websocket.spring.xml`**  
+  Spring configuration file that wires the WebSocket service, ensuring proper initialization, dependency injection, and secure message handling.
+
+---
+
+
+
 
 ## Application Configuration Properties
 

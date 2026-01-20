@@ -181,11 +181,94 @@ Some REST endpoints require data input (e.g., text or file uploads):
 
 ---
 
-## Generated Code
+## Generated Backend Code
 
-Once imported, WaveMaker automatically generates a complete backend for third-party APIs, including Java classes, service logic, and design-time configurations. Built on proven enterprise technologies such as Java, Spring, and Hibernate/JPA, this enables rapid and seamless API integration and customization.
+WaveMaker enables developers to import **third-party APIs** and automatically generate a fully functional backend, including Java classes, service logic, and design-time configurations. It follows proven enterprise patterns built on Java, Spring, and Hibernate/JPA. This makes it easy to quickly integrate and customize APIs.
 
-Developers have full access to the generated source code. Refer [generated  code](generated-code.md)
+Developers have complete access to the generated source code and can confidently extend or customize it without affecting future platform upgrades.
+ 
+This section describes the structure of a WaveMaker-generated service, using the **[Random User](https://randomuser.me/api/?results=5)** as an example.
+
+###  Folder Structure
+
+```plaintext
+services/
+├── authService/
+├── hrdb/
+├── MyJavaService/
+└── randomuser/
+    ├── designtime/
+    │   ├── randomuser_API_REST_SERVICE.json
+    │   ├── randomuser_apiTarget.json
+    │   ├── randomuser_connection_settings.json
+    │   └── service-info.json
+    ├── src/
+    │   └── com/
+    │       └── myapp/
+    │           └── randomuser/
+    │               ├── model/
+    │               └── service/
+    │                   └── RandomuserService.java
+    ├── conf/
+    │   └── randomuser.properties
+    └── servicedefs/
+        └── randomuser-service-definitions.json
+```
+
+---
+
+###  `services/`
+
+- Root folder for all backend services in the project.  
+- Each subfolder represents a service, e.g., `authService`, `hrdb`, `MyJavaService`, `randomuser`.
+
+---
+
+###  `randomuser/`
+
+Main folder for the `randomuser` service, containing both design-time configuration and generated backend code.
+
+#### a. `designtime/`
+
+Holds JSON configuration files used by WaveMaker at design-time (in Studio):
+
+- **`randomuser_API_REST_SERVICE.json`** – Defines API endpoints, request/response models, and mappings.  
+- **`randomuser_apiTarget.json`** – Contains target configuration for connecting to the API (base URLs, endpoints).  
+- **`randomuser_connection_settings.json`** – Stores connection/authentication settings for the API.  
+- **`service-info.json`** – Metadata about the service such as name, type, and version.  
+
+#### b. `src/com/myapp/randomuser/`
+
+Java source code generated for the service:
+
+- **`model/`** – Java classes representing API data structures (request/response objects).  
+- **`service/`** – Service classes implementing logic to call the API.  
+  - **`RandomuserService.java`** – Main service class handling API calls and integrating with business logic.  
+
+#### c. `conf/`
+
+Configuration files for the service at runtime:
+
+- **`randomuser.properties`** – Holds runtime properties such as API endpoints and authentication tokens.  
+
+#### d. `servicedefs/`
+
+Holds service definition JSONs used for WaveMaker Studio and deployment:
+
+- **`randomuser-service-definitions.json`** – Defines all available service methods, parameters, and data structures.  
+
+---
+
+###  Key Points
+
+- WaveMaker generates **fully readable Java code** in `src/`.  
+- `designtime/` and `servicedefs/` are used internally by WaveMaker Studio for API integration and **should not be deleted**.  
+- Properties in `conf/` allow **runtime customization** without changing code.  
+- The structure allows **seamless integration of third-party APIs**.
+
+---
+
+
 
 ## Application Configuration Properties
 
