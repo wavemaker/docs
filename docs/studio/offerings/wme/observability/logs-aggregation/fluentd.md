@@ -1,6 +1,6 @@
 ---
 title: "Fluentd Tags"
-last_update: { author: "Author Name" }
+last_update: { author: "Krishna Rao Chintu" }
 id: "fluentd"
 sidebar_label: "fluentd tags"
 ---

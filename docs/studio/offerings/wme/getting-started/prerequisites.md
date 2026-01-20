@@ -1,8 +1,8 @@
 ---
 title: "WaveMaker Enterprise Prerequisites"
-last_update: { author: "Author Name" }
+last_update: { author: "Krishna Rao Chintu" }
 id: "prerequisites"
-sidebar_label: "What you'll need"
+sidebar_label: "Prerequisites"
 ---
 
 You can setup WaveMaker Enterprise on any machine.

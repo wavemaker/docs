@@ -1,6 +1,6 @@
 ---
 title: "Initialize Setup"
-last_update: { author: "Author Name" }
+last_update: { author: "Krishna Rao Chintu" }
 id: "initilize-setup"
 sidebar_label: "Initialize Setup"
 ---

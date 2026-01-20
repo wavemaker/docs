@@ -1,6 +1,6 @@
 ---
 title: "WaveMaker Enterprise Architecture"
-last_update: { author: "Author Name" }
+last_update: { author: "Krishna Rao Chintu" }
 id: "architecture"
 sidebar_label: "Architecture"
 ---
@@ -13,13 +13,13 @@ Instances are like host computers where you can do so much more than just storin
 
 WaveMaker On-Premise Platform consists of multiple internal services to run WaveMaker Studio, Cloud, VCS, and more. Each of these services runs in a separate [Docker Container](https://www.docker.com/resources/what-container) and services talk to each other via REST services.
 
-![platform architecture](./assets/images/platform-architecture.png)
+![platform architecture](./getting-started/assets/images/platform-architecture.png)
 
  
 
 Platform Containers work to make calls to the Docker engine to perform operations like starting a new user container, starting or stopping a container, and more.
 
-![vm architecture](./assets/images/vm-arch.png)
+![vm architecture](./getting-started/assets/images/vm-arch.png)
 
 ### StudioWorkspace Instance
 

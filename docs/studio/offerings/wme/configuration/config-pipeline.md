@@ -1,6 +1,6 @@
 ---
 title: "WaveMaker Enterprise Configure Pipeline"
-last_update: { author: "Author Name" }
+last_update: { author: "Krishna Rao Chintu" }
 id: "config-pipeline"
 sidebar_label: "Configure Pipeline"
 ---

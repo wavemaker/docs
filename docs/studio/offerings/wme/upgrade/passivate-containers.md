@@ -1,6 +1,6 @@
 ---
 title: "Passivate Containers"
-last_update: { author: "Author Name" }
+last_update: { author: "Krishna Rao Chintu" }
 id: "passivate-containers"
 sidebar_label: "Passivate Containers"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "WaveMaker Enterprise Configure VCS"
-last_update: { author: "Author Name" }
+last_update: { author: "Krishna Rao Chintu" }
 id: "config-vcs"
 sidebar_label: "Configure VCS"
 ---

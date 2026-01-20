@@ -1,6 +1,6 @@
 ---
 title: "WME Add Users and Authentication Provider"
-last_update: { author: "Author Name" }
+last_update: { author: "Krishna Rao Chintu" }
 id: "config-users-auth-providers"
 sidebar_label: "Users Onboarding"
 ---

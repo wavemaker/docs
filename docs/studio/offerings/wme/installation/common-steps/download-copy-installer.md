@@ -1,6 +1,6 @@
 ---
 title: "Download and Copy Installer"
-last_update: { author: "Author Name" }
+last_update: { author: "Krishna Rao Chintu" }
 id: "download-copy-installer"
 sidebar_label: "Download and Copy Installer"
 ---

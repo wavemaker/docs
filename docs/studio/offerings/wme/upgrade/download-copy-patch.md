@@ -1,6 +1,6 @@
 ---
 title: "Download and Copy Patch"
-last_update: { author: "Author Name" }
+last_update: { author: "Krishna Rao Chintu" }
 id: "download-copy-patch"
 sidebar_label: "Download and Copy Patch"
 ---

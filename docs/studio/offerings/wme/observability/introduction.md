@@ -1,6 +1,6 @@
 ---
 title: "Observability"
-last_update: { author: "Author Name" }
+last_update: { author: "Krishna Rao Chintu" }
 id: "introduction"
 sidebar_label: "Introduction"
 ---

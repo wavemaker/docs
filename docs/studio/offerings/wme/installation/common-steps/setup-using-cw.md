@@ -1,6 +1,6 @@
 ---
 title: "Setup Using ConfigPortal"
-last_update: { author: "Author Name" }
+last_update: { author: "Krishna Rao Chintu" }
 id: "setup-using-cw"
 sidebar_label: "Setup Using ConfigPortal"
 ---
@@ -14,7 +14,7 @@ sidebar_label: "Setup Using ConfigPortal"
    - Subsequent operations like upgrades needs this password.
 - Password must contain 8-20 characters, with at least one lower case alphabet, one upper case alphabet, one digit and a special character (underscore(_), at(@), dot(.))
 
-    [![setting up username and password](../Common%20Installation%20&%20Initialization/assets/images/setting-username-and-password.png)](../Common%20Installation%20&%20Initialization/assets/images/setting-username-and-password.png)
+    [![setting up username and password](./assets/images/setting-username-and-password.png)](./assets/images/setting-username-and-password.png)
 
 - Select the services required for the setup. Here, 
    - The Developer Studio Platform is a default service and it is responsible for the functionality of running the WaveMaker studio. 
@@ -24,43 +24,43 @@ sidebar_label: "Setup Using ConfigPortal"
    - The Monitoring serivice is responsible for monitoing the platform and Deployed apps. 
      - This can be disable if dont want to monitor the logs and metrics.
 
-    [![select-services](../Common%20Installation%20&%20Initialization/assets/images/select-services.png)](../Common%20Installation%20&%20Initialization/assets/images/select-services.png)
+    [![select-services](./assets/images/select-services.png)](./assets/images/select-services.png)
 
 - Setup domain by giving enterprise name and click on next. 
     - Enterprise Name is your enterprise name. 
     - Domain names are used to access studio and deployed apps by your developers. 
     - The Domain Names should be mapped in your DNS or developer host file.
 
-    [![domain-setup](../Common%20Installation%20&%20Initialization/assets/images/domain-setup.png)](../Common%20Installation%20&%20Initialization/assets/images/domain-setup.png)
+    [![domain-setup](./assets/images/domain-setup.png)](./assets/images/domain-setup.png)
 
 - To access the Platform with the secure connection via https, 
     - It is required to upload the ssl certificates by uploading the bundle certificate and pemfile.
 
-    [![ssl for platform](../Common%20Installation%20&%20Initialization/assets/images/ssl-for-platform.png)](../Common%20Installation%20&%20Initialization/assets/images/ssl-for-platform.png)
+    [![ssl for platform](./assets/images/ssl-for-platform.png)](./assets/images/ssl-for-platform.png)
 
     
 - To trust internal CA certified SSL certificates for establishing a secure connection,
     - It is required to upload the root and intermediate certificates. 
     - The root certificate is a certificate issued by the recognised organizations.
 
-    [![import-CA-cert](../Common%20Installation%20&%20Initialization/assets/images/importca-cert.png)](../Common%20Installation%20&%20Initialization/assets/images/importca-cert.png)
+    [![import-CA-cert](./assets/images/importca-cert.png)](./assets/images/importca-cert.png)
 
 - To build the application inside a platform with a custom configuration,
     - A Developer can upload their own configured NPM and MAVEN repository config files and this can be useful if the developers uses their own libraries which are hosted into their own secured repository.
 
-    [![repository configuration](../Common%20Installation%20&%20Initialization/assets/images/repositoy-configuration.png)](../Common%20Installation%20&%20Initialization/assets/images/repositoy-configuration.png)
+    [![repository configuration](./assets/images/repositoy-configuration.png)](./assets/images/repositoy-configuration.png)
 
 - Create an admin user for WaveMaker launchpad access by providing an email address and password. 
     - These credentials are used to access launchpad and do adminstration of WME setup like adding users, setting up vcs, adding capacity etc.
     - Password must be highly recommending to contain 8-20 characters, with at least one lower case alphabet, one upper case alphabet, one digit and a special character (underscore(_), at(@), dot(.))
   
-    [![creating admin user](../Common%20Installation%20&%20Initialization/assets/images/creating-admin-user.png)](../Common%20Installation%20&%20Initialization/assets/images/creating-admin-user.png)
+    [![creating admin user](./assets/images/creating-admin-user.png)](./assets/images/creating-admin-user.png)
 
 - Installation may take 45 mins to 60 mins. Please wait and watch on this page for the status until it reached 100%.
     - You can watch the logs by selecting on the **GROUP NAME** and then by selecting the service.
     - You can also see the logs by selecting on the logs icon and also can download the logs.
   
-    [![installation process](../Common%20Installation%20&%20Initialization/assets/images/installation.png)](../Common%20Installation%20&%20Initialization/assets/images/installation.png)
+    [![installation process](./assets/images/installation.png)](./assets/images/installation.png)
 
 - Click on launchpad for further operations.
 - Map `<PLATFORM_IP>` with the Domain name given in ur DNS or put an host entry in ur machine.

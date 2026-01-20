@@ -1,6 +1,6 @@
 ---
 title: "Install Prerequisites Softwares"
-last_update: { author: "Author Name" }
+last_update: { author: "Krishna Rao Chintu" }
 id: "install-prerequisites"
 sidebar_label: "Install Prerequisites Softwares"
 ---

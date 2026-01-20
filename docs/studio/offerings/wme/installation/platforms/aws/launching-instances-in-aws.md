@@ -1,6 +1,6 @@
 ---
 title: "Preparing Infrastructure on AWS"
-last_update: { author: "Author Name" }
+last_update: { author: "Krishna Rao Chintu" }
 id: "launching-instances-in-aws"
 sidebar_label: "Prepare Infrastructure"
 ---
@@ -255,5 +255,5 @@ UUID=<your-block-device-UUID>    /data     ext4     defaults ,nofail  0  2
 
 ## What's next
 
-- Install [prerequisites softwares](../Common%20Installation%20&%20Initialization/install-prerequisites) based on OS.
+- Install [prerequisites softwares](../../../common-steps/install-prerequisites) based on OS.
 - Start WME Installation process.

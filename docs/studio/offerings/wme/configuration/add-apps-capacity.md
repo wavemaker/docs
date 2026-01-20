@@ -1,6 +1,6 @@
 ---
 title: "WME Add Apps Capacity"
-last_update: { author: "Author Name" }
+last_update: { author: "Krishna Rao Chintu" }
 id: "add-apps-capacity"
 sidebar_label: "Add Apps Capacity"
 ---

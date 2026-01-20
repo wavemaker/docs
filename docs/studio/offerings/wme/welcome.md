@@ -1,6 +1,6 @@
 ---
 title: "Welcome to WaveMaker Enterprise Guide"
-last_update: { author: "Author Name" }
+last_update: { author: "Krishna Rao Chintu" }
 id: "welcome"
 sidebar_label: "Welcome"
 ---

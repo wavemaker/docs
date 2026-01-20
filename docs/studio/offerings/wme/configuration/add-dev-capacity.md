@@ -1,6 +1,6 @@
 ---
 title: "WME Add Developer Capacity"
-last_update: { author: "Author Name" }
+last_update: { author: "Krishna Rao Chintu" }
 id: "add-dev-capacity"
 sidebar_label: "Add Developer Capacity"
 ---

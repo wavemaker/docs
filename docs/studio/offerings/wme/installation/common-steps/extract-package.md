@@ -1,6 +1,6 @@
 ---
 title: "Extract Package"
-last_update: { author: "Author Name" }
+last_update: { author: "Krishna Rao Chintu" }
 id: "extract-package"
 sidebar_label: "Extract Package"
 ---

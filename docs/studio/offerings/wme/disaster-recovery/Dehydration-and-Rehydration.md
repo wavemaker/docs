@@ -1,6 +1,6 @@
 ---
 title: "Dehydration and Rehydration"
-last_update: { author: "Author Name" }
+last_update: { author: "Krishna Rao Chintu" }
 id: "dehydration-and-rehydration"
 sidebar_label: "Dehydration and Rehydration"
 ---

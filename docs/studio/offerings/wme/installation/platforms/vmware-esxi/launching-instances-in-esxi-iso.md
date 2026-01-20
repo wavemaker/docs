@@ -1,6 +1,6 @@
 ---
 title: "WaveMaker Enterprise Setup on VMware ESXi using ISO"
-last_update: { author: "Author Name" }
+last_update: { author: "Krishna Rao Chintu" }
 id: "launching-instances-in-esxi-iso"
 sidebar_label: "Prepare infrastructure using ISO"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "WaveMaker Enterprise Setup on VMWare ESXi using OVA"
-last_update: { author: "Author Name" }
+last_update: { author: "Krishna Rao Chintu" }
 id: "launching-instances-in-esxi-ova"
 sidebar_label: "Prepare Infrastructure using OVA"
 ---

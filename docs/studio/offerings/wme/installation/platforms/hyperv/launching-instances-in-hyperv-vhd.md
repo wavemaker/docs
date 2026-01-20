@@ -1,6 +1,6 @@
 ---
 title: "WaveMaker Enterprise Setup on Hyper-V using VHD"
-last_update: { author: "Author Name" }
+last_update: { author: "Krishna Rao Chintu" }
 id: "launching-instances-in-hyper-v-vhd"
 sidebar_label: "Prepare Infrastructure using VHD"
 ---

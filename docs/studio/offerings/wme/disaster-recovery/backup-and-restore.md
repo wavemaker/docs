@@ -1,6 +1,6 @@
 ---
 title: "Backup and Restore "
-last_update: { author: "Author Name" }
+last_update: { author: "Krishna Rao Chintu" }
 id: "backup-and-restore"
 sidebar_label: "Backup and Restore "
 ---

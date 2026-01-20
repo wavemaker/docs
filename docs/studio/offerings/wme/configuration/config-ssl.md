@@ -1,6 +1,6 @@
 ---
 title: "WaveMaker Enterprise Configure SSL for Platform"
-last_update: { author: "Author Name" }
+last_update: { author: "Krishna Rao Chintu" }
 id: "config-ssl"
 sidebar_label: "Configure SSL"
 ---

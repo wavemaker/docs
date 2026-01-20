@@ -1,6 +1,6 @@
 ---
 title: "WME Run Patch"
-last_update: { author: "Author Name" }
+last_update: { author: "Krishna Rao Chintu" }
 id: "run-patch"
 sidebar_label: "Run Patch"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "OS Upgrade"
-last_update: { author: "Author Name" }
+last_update: { author: "Krishna Rao Chintu" }
 id: "os-upgrade"
 sidebar_label: "OS Upgrade"
 ---

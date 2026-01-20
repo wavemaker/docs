@@ -1,6 +1,6 @@
 ---
 title: "WaveMaker Enterprise Setup Process"
-last_update: { author: "Author Name" }
+last_update: { author: "Krishna Rao Chintu" }
 id: "getting-started"
 sidebar_label: "WaveMaker Enterprise Setup Process"
 ---
