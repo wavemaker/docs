@@ -1221,3 +1221,22 @@ button.btn.btn-icon {
 }
 @media only screen and (min-width: 993px) {
 }
+
+/* Temporary css */
+/* Style dead links unless they are inside .navbar or .theme-doc-sidebar-container */
+a[href=""]:not(:is(.navbar, .navbar * , .theme-doc-sidebar-container, .theme-doc-sidebar-container *)),
+a[href="#"]:not(:is(.navbar, .navbar *, .theme-doc-sidebar-container, .theme-doc-sidebar-container *)) {
+  color: red;
+}
+
+a[href=""]:hover:not(:is(.navbar, .navbar *, .theme-doc-sidebar-container, .theme-doc-sidebar-container *))::after,
+a[href="#"]:hover:not(:is(.navbar, .navbar *, .theme-doc-sidebar-container, .theme-doc-sidebar-container *))::after {
+  content: " ⚠️ dead link";
+  font-size: 0.8em;
+  color: red;
+  margin-left: 0.25em;
+}
+
+
+
+/* Temporary css */
