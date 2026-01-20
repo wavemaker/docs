@@ -242,4 +242,4 @@ Organization
 
 - [Projects Hub](./projects-hub.md)
 - [App Portal](./app-portal.md)
-- [WME Variant](../offerings/wme.md)
+- [WME Variant](../offerings/wme)

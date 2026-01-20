@@ -459,5 +459,5 @@ backup:
 
 - [Team Portal](./team-portal.md)
 - [Projects Hub](./projects-hub.md)
-- [WME Variant](../offerings/wme.md)
+- [WME Variant](../offerings/wme)
 - [WMO Variant](../offerings/wmo.md)

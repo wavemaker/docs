@@ -40,7 +40,7 @@ WaveMaker Cloud is a Containerized Cloud, which consists of three instances.
 2. AppDeployment Instance 
 3. Platform Instance 
 
-Both StudioWorkspace and AppDeployment are managed by Platform instance. For more information about the platform concepts, see [WaveMaker Architecture](getting-started/architecture.md).
+Both StudioWorkspace and AppDeployment are managed by Platform instance. For more information about the platform concepts, see [WaveMaker Architecture](./architecture).
 
 ### 3. Config Portal
 
