@@ -235,6 +235,10 @@ export default [
             type: 'doc',
             id: 'apis-and-services/security/providers/active-directory',
           },
+          {
+            type: 'doc',
+            id: 'apis-and-services/security/providers/custom',
+          },
         ],
       },
       {
