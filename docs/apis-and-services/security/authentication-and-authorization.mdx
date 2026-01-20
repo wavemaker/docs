@@ -94,7 +94,7 @@ WaveMaker supports three primary permission levels that can be applied to resour
 - **Authenticated** – Grants access only to users who have successfully signed in. Most secured resources default to this level once authentication is enabled.  
 - **Role‑Based Authorization** – After a resource is set to “Authenticated,” you can further restrict access by assigning specific roles. Only users with those roles will be allowed to use the resource.
 
-By default, application resources and services are set to “Authenticated,” meaning they are accessible only after the user logs in. You can override this default by assigning a different permission level as needed. :contentReference[oaicite:0]{index=0}
+By default, application resources and services are set to “Authenticated,” meaning they are accessible only after the user logs in. You can override this default by assigning a different permission level as needed. 
 
 ### Applying Permissions
 
@@ -104,13 +104,13 @@ Permissions can be configured for different types of application elements:
 - **Services** – This includes database services, web services, and custom Java services. Permissions can be set for each service and its endpoints.  
 - **Prefabs** – Permissions set on a Prefab affect all the services invoked within that Prefab.  
 
-Permissions follow a **hierarchical model**: if a resource does not have a specific permission assigned, it inherits the permission of its parent. For example, if a database is set to “Authenticated,” its contained controllers and operations will inherit that permission unless explicitly overridden. :contentReference[oaicite:1]{index=1}
+Permissions follow a **hierarchical model**: if a resource does not have a specific permission assigned, it inherits the permission of its parent. For example, if a database is set to “Authenticated,” its contained controllers and operations will inherit that permission unless explicitly overridden. 
 
 ### Permission Inheritance
 
 Permission inheritance means that child resources automatically adopt the permission level of their parent when no explicit permission is defined. For example:  
 - If a database service is set to “Authenticated,” its controllers and operations inherit the same level.  
-- If a controller has specific role restrictions, only those are applied to its operations if defined; otherwise, the controller’s permissions cascade down. :contentReference[oaicite:2]{index=2}
+- If a controller has specific role restrictions, only those are applied to its operations if defined; otherwise, the controller’s permissions cascade down. 
 
 
 

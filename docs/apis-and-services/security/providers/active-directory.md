@@ -1,58 +1,211 @@
+---
+last_update: { author: "Priyanka Bhadri" }
+---
 
 # Active Directory (LDAP)
 
-WaveMaker supports **Active Directory (AD)** authentication using the **LDAP protocol**, allowing users to log in with their enterprise credentials. This enables secure, centralized authentication and optional role-based access control (RBAC) by mapping AD groups to application roles.
+Lightweight Directory Access Protocol (LDAP) is a widely used directory service protocol that enables centralized authentication and authorization against enterprise directory systems such as **Active Directory**, **OpenLDAP**, and other LDAP-compliant servers.
+
+WaveMaker supports LDAP-based authentication, allowing applications to authenticate users directly against an external directory without storing credentials within the application. This enables centralized identity control, consistent access policies, and seamless enterprise integration.
+
+In a WaveMaker application:
+- WaveMaker acts as the **Service Provider**
+- An external **LDAP Directory** acts as the authentication source
 
 ---
 
-## How Active Directory Authentication Works
+## How LDAP Authentication Works in WaveMaker
 
-1. A user attempts to access a secured WaveMaker page or API.
-2. WaveMaker binds to the configured AD server using the provided credentials.
-3. The user is searched in AD using the **Root DN** and **User Search Pattern**.
-4. The entered password is validated against Active Directory.
-5. On successful authentication, WaveMaker establishes a session and optionally resolves roles/groups.
+1. A user attempts to access a secured WaveMaker application or resource.
+2. WaveMaker intercepts the request and prompts for credentials.
+3. The provided username and password are sent to the configured LDAP server.
+4. The LDAP server authenticates the user via a bind operation.
+5. Upon successful authentication:
+   - User details are resolved
+   - Groups or roles are fetched (if configured)
+6. A secure session is established in WaveMaker.
+7. Authorization rules are applied based on resolved roles.
 
----
-
-## Configuration Parameters
-
-| Parameter               | Description                             | Example / Notes                                                              |
-| ----------------------- | --------------------------------------- | ---------------------------------------------------------------------------- |
-| **URL**                 | LDAP server URL for AD                  | `ldap://ad.mydomain.com:389`                                                 |
-| **Domain**              | Active Directory domain name            | `mydomain.com` (optional; if not provided, include in username during login) |
-| **Root DN**             | Base distinguished name for user search | `dc=mydomain,dc=com`                                                         |
-| **User Search Pattern** | LDAP query pattern to locate users      | `(sAMAccountName={0})` (`{0}` is replaced with login username)               |
-| **Test Username**       | User account for testing                | `jdoe`                                                                       |
-| **Test User Password**  | Password for test account               | `Test@123`                                                                   |
+ LDAP authentication happens **directly and synchronously** without redirects or token exchanges.
 
 ---
 
-## Example Configuration JSON
+## LDAP Integration Architecture
 
-```json
-{
-  "url": "ldap://ad.mydomain.com:389",
-  "domain": "mydomain.com",
-  "rootDn": "dc=mydomain,dc=com",
-  "userSearchPattern": "(sAMAccountName={0})",
-  "testUsername": "jdoe",
-  "testUserPassword": "Test@123"
-}
+- **WaveMaker Application**  
+  Acts as the authentication client and authorization enforcer.
+
+- **LDAP Server**  
+  Validates user credentials and provides directory attributes.
+
+- **LDAP Bind Operation**  
+  Confirms user identity using directory credentials.
+
+- **Group / Role Resolution**  
+  Determines user permissions based on directory group membership or mapped roles.
+
+All authentication and authorization decisions are enforced **server-side**.
+
+---
+
+## Supported LDAP Providers
+
+WaveMaker LDAP integration works with any LDAP v3-compliant directory, including:
+
+- Microsoft Active Directory
+- OpenLDAP
+- Apache Directory Server
+- IBM Tivoli Directory Server
+- Custom enterprise LDAP implementations
+
+---
+
+## Configuring LDAP in WaveMaker
+
+### Step 1: Enable Security
+
+1. Open the application in WaveMaker Studio.
+2. Navigate to **Security** settings.
+3. Enable application security if it is not already enabled.
+
+
+
+### Step 2: Select LDAP as the Authentication Provider
+
+1. Choose **LDAP** as the authentication provider.
+2. Provide a unique **Provider Name**.
+3. Specify whether LDAP is the primary authentication mechanism.
+
+
+
+### Step 3: Configure LDAP Server Details
+
+Key LDAP configuration parameters include:
+
+- **LDAP URL**  
+  Example: `ldap://ldap.company.com:389`
+
+- **Base DN**  
+  Root location for user and group searches  
+  Example: `dc=company,dc=com`
+
+- **User DN Pattern**  
+  Template used to bind users  
+  Example: `uid={0},ou=users`
+
+- **Manager DN (optional)**  
+  Used for searching users/groups  
+  Example: `cn=admin,dc=company,dc=com`
+
+- **Manager Password**
+
+- **Group Search Base (optional)**  
+  Location to resolve group memberships
+
+
+
+### Step 4: Attribute and Role Mapping
+
+WaveMaker maps LDAP attributes to application-level identities:
+
+- **Username / User ID**
+- **Display Name**
+- **Email (optional)**
+- **Roles / Groups (optional)**
+
+Role mapping can be:
+- Derived directly from LDAP group membership
+- Mapped using role prefixes (for example: `ROLE_`)
+- Resolved via database lookup post-authentication
+
+
+
+### Step 5: Configure Authorization
+
+After successful authentication:
+- Pages, services, and APIs are protected using roles
+- Access rules are enforced consistently
+- Unauthorized access is automatically blocked
+
+
+
+## Runtime Behavior
+
+At runtime:
+
+- Credentials are validated directly against the LDAP server
+- No tokens, assertions, or redirects are involved
+- Sessions are managed by WaveMaker
+- Authorization is applied uniformly across UI, services, and APIs
+
+This ensures low-latency authentication with strong server-side enforcement.
+
+---
+
+## When to Use LDAP
+
+- LDAP authentication is recommended for:
+- Enterprise environments with centralized directories
+- Applications requiring direct authentication against Active Directory
+- Internal systems with controlled network access
+- Scenarios where credentials must not be stored in the application
+
+---
+
+## Generated Backend Code
+
+
+When LDAP authentication is configured, WaveMaker automatically generates and wires the backend security implementation using **Spring Security LDAP**.
+
+### Project Structure
+
+
+```text
+services/
+└── securityService
+    ├── designtime
+    ├── src
+    └── servicedefs
 ```
 
+
+### Design-Time Configuration (`designtime`)
+
+The `designtime` folder stores LDAP configuration defined in WaveMaker Studio, including:
+
+- Authentication provider details
+- LDAP connection parameters
+- Role and group mappings
+- Secured URL configurations
+- Global security options
+
+These settings are environment-agnostic and drive runtime behavior.
+
+
+
+### Runtime LDAP Wiring (Internal)
+
+At build and runtime, WaveMaker internally configures:
+
+- `LdapAuthenticationProvider`
+- `BindAuthenticator`
+- `LdapAuthoritiesPopulator`
+
+These components:
+- Perform LDAP bind authentication
+- Resolve user authorities (roles)
+- Integrate with WaveMaker’s security context
+
+This wiring is **automatic, server-side, and not exposed as editable source code**.
+
+
+
+### Service Definitions (`servicedefs`)
+
+Service definition files link LDAP authentication to the application’s runtime security flow, ensuring consistent enforcement across all layers.
+
 ---
-
-## Testing the Configuration
-
-1. Enter the **Test Username** (`jdoe`) and **Test User Password** (`Test@123`) in WaveMaker login.
-2. WaveMaker connects to the AD server via LDAP on the configured URL and port.
-3. Searches for the user under the **Root DN** using the **User Search Pattern**.
-4. If the user exists and the password matches, login succeeds.
-5. Adjust **Root DN**, **domain**, or **search pattern** if login fails.
-
----
-
+<!-- 
 ## Runtime Behavior
 
 * WaveMaker binds to AD to validate credentials.
@@ -60,17 +213,9 @@ WaveMaker supports **Active Directory (AD)** authentication using the **LDAP pro
 * Optionally maps AD groups to WaveMaker roles for **role-based access control (RBAC)**.
 * Security context is applied across all secured pages, services, and APIs.
 
----
+--- -->
 
-## Best Practices
 
-* Use **LDAPS (`ldaps://ad.mydomain.com:636`)** in production for encrypted communication.
-* Ensure the test user exists and has proper permissions for binding and searching.
-* Verify that the **Root DN** and **User Search Pattern** match your AD structure.
-* Create separate test users to verify login and role mapping.
-* Keep your AD connection settings up-to-date to avoid authentication failures.
-
----
 
 ## Application Configuration Properties
 
@@ -78,15 +223,16 @@ Whenever security is configured in WaveMaker, the platform automatically **gener
 You can view and manage these properties in the **Profiles**.  
 For more information, refer to the **[Profiles](../../configurations/profiles.md)** section in the documentation.
 
-For more details on environment-specific configurations, refer to the **[Deployment Profiles](../../configurations/profile-settings.md)** section.
+For more details on environment-specific configurations, refer to the **[ Profiles](../../configurations/profile-settings.md)** section.
 
 <details>
 <summary>Click to expand configuration properties</summary>
 
 ```properties
-# Security Configuration (OPEN ID GOOGLE)
+# Security Configuration (LDAP)
 
-security.activeProviders=OPENID.google
+# General Security Settings
+security.activeProviders=SAML
 security.enabled=true
 security.general.client.ssl.hostNameVerification.enabled=true
 security.general.cookie.base64Encode=true
@@ -125,17 +271,15 @@ security.general.xsrf.enabled=true
 security.general.xss.dataBackwardCompatibility=false
 security.general.xss.enabled=true
 security.general.xss.sanitizationLayer=OUTPUT
-security.providers.openId.google.authorizationUrl=https://accounts.google.com/o/oauth2/v2/auth
-security.providers.openId.google.clientId=***.apps.googleusercontent.com
-security.providers.openId.google.clientSecret=***
-security.providers.openId.google.jwkSetUrl=https://www.googleapis.com/oauth2/v3/certs
-security.providers.openId.google.logoutUrl=
-security.providers.openId.google.roleMappingEnabled=true
-security.providers.openId.google.roleProvider=OPENID
-security.providers.openId.google.scopes=openid,email,profile
-security.providers.openId.google.tokenUrl=https://oauth2.googleapis.com/token
-security.providers.openId.google.userInfoUrl=https://openidconnect.googleapis.com/v1/userinfo
-security.providers.openId.google.userNameAttributeName=email
+
+# LDAP Provider Configuration
+security.providers.ldap.url=ldap://ad.mydomain.com:389
+security.providers.ldap.domain=mydomain.com
+security.providers.ldap.rootDn=dc=mydomain,dc=com
+security.providers.ldap.userSearchPattern=(sAMAccountName={0})
+security.providers.ldap.roleMappingEnabled=true
+
+# Session Configuration
 security.session.persistence.type=in-memory
 
 
