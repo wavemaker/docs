@@ -11,6 +11,7 @@ id: "data-table-styling"
 
 The following style classes have been defined from the Style tab:
 
+```css
 .pink {
     background-color: #F8E0E0;
 }
@@ -20,6 +21,7 @@ The following style classes have been defined from the Style tab:
 .green {
     background-color: #D8F6CE;
 }
+```
 
 <iframe width="708" height="560" src="https://docs.google.com/presentation/d/e/2PACX-1vTwZeGOaeN9tvLmf-G7QlbIrdRuaig6QgAhoAfR5p9bUZEqkpnJXZXRrQV65JjDbyno75KWSxSCeL2i/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
 

@@ -66,68 +66,69 @@ Here Zipkin server should be accessible to the tomcat server.
     To introduce tracing and create correlations Spring AOP(Aspect Oriented Programming) code changes needed, this code can also be introduced by using the [IDE](https://docs.wavemaker.com#) at WaveMaker application.  
     Download WaveMaker Application Zip from Studio, extract the downloaded zip file to a directory and call it as `$WMAPP_HOME`
     Navigate to the maven `pom.xml` file to add following dependencies code snippet
-    
+
 `$WMAPP_HOME---->pom.xml`
 
-          <dependencies>
-            <dependency>
-                  <groupId>io.opentelemetry</groupId>
-                  <artifactId>opentelemetry-sdk</artifactId>
-                  <version>1.11.0</version>
-            </dependency>
-           <dependencies>
+```xml
+<dependencies>
+  <dependency>
+        <groupId>io.opentelemetry</groupId>
+        <artifactId>opentelemetry-sdk</artifactId>
+        <version>1.11.0</version>
+  </dependency>
+<dependencies>
+```
     
 
 Navigate to the `project-user-spring.xml` in the below path and add the given snippet
 
-
 `$WMAPP_HOME -----> src/main/webapp/WEB-INF/project-user-spring.xml`
 
-```    
-          <beans xmlns="http://www.springframework.org/schema/beans"
-              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                  xmlns:aop="http://www.springframework.org/schema/aop"
-              xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd 
-              http://www.springframework.org/schema/aop   
-                  http://www.springframework.org/schema/aop/spring-aop-3.0.xsd ">
-                  <!--<context:component-scan base-package="com.aop.aspect"/>-->
-                  <bean id="LogAspect" class="com.aop.aspect.LogAspect"/>
+```xml
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:aop="http://www.springframework.org/schema/aop"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd 
+    http://www.springframework.org/schema/aop   
+        http://www.springframework.org/schema/aop/spring-aop-3.0.xsd ">
+        <!--<context:component-scan base-package="com.aop.aspect"/>-->
+        <bean id="LogAspect" class="com.aop.aspect.LogAspect"/>
 
-              <aop:config>  
-                <aop:aspect id="myaspect" ref="LogAspect" >  
-                   <!-- @Before -->  
-                   <aop:pointcut id="pointCutBefore" expression="within (com.wavemaker.*.*.controller..*) || within (com.wavemaker.runtime.rest.controller..*)|| within (com.*.*.controller..*)"/>  
-                   <aop:before method="before" pointcut-ref="pointCutBefore" />
-                </aop:aspect>  
-              </aop:config>  
-          </beans>
+    <aop:config>  
+      <aop:aspect id="myaspect" ref="LogAspect" >  
+         <!-- @Before -->  
+         <aop:pointcut id="pointCutBefore" expression="within (com.wavemaker.*.*.controller..*) || within (com.wavemaker.runtime.rest.controller..*)|| within (com.*.*.controller..*)"/>  
+         <aop:before method="before" pointcut-ref="pointCutBefore" />
+      </aop:aspect>  
+    </aop:config>  
+</beans>
 ```
 
 Create a new java file with given package structure and copy code to the created Java source file
 
 `$WMAPP_HOME ----->src/main/java/com/aop/aspect/LogAspect.java`
 
-```
-          package com.aop.aspect;
+```java
+package com.aop.aspect;
 
-          import org.aspectj.lang.JoinPoint;
-          import org.slf4j.Logger;
-          import org.slf4j.LoggerFactory;
-          import io.opentelemetry.api.trace.Span;
-          import jakarta.servlet.http.HttpServletResponse;
-          import org.springframework.beans.factory.annotation.Autowired;
-          public class LogAspect {
+import org.aspectj.lang.JoinPoint;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import io.opentelemetry.api.trace.Span;
+import jakarta.servlet.http.HttpServletResponse;
+import org.springframework.beans.factory.annotation.Autowired;
+public class LogAspect {
 
-              private static final Logger logger = LoggerFactory.getLogger(LogAspect.class);
+    private static final Logger logger = LoggerFactory.getLogger(LogAspect.class);
 
-              @Autowired
-              private HttpServletResponse response;
+    @Autowired
+    private HttpServletResponse response;
 
-             public void before(JoinPoint jp) {
-                  Span currentSpan = Span.current();
-                  currentSpan.setAttribute("x-wm-request-track-id", response.getHeader("x-wm-request-track-id"));
-              }
-          }
+   public void before(JoinPoint jp) {
+        Span currentSpan = Span.current();
+        currentSpan.setAttribute("x-wm-request-track-id", response.getHeader("x-wm-request-track-id"));
+    }
+}
 ```
 
 ### 3. Build and Deploy application

@@ -20,11 +20,13 @@ You can capture the result of the Search widget in two ways:
 
 1. Using the **outbound properties** of **data value** - which contains the dataset returned by the search to be bound to the list or Data Table, **query** - search text entered by the user and **show**. [![](./assets/img/search_outbound.png)](./assets/img/search_outbound.png)
 2. Using **JavaScript** - From the event tab, set the **onSubmit** event to JavaScript. [![](./assets/img/search_event.png)](./assets/img/search_event.png) In the Script the following function will be created The selected item can be accessed by '$event.data.item' property as follows: Here we have set the labels to the department name and id returned by the search widget. NOTE: The label names might vary in your project.
-    
-    Page.search1Submit = function($event, widget) {
-            Page.Widgets.label3.caption = $event.data.item.deptid;
-            Page.Widgets.label4.caption = $event.data.item.name;
-        };
+
+```javascript
+Page.search1Submit = function($event, widget) {
+        Page.Widgets.label3.caption = $event.data.item.deptid;
+        Page.Widgets.label4.caption = $event.data.item.name;
+    };
+```
     
 3. Save and run the application.
 4. The page will display the search widget along with the labels.

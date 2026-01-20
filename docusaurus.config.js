@@ -261,7 +261,6 @@ const config = {
   ],
   themes: ["@docusaurus/theme-mermaid"],
   markdown: {
-    format: 'detect',
     mermaid: true,
     hooks: {
       onBrokenMarkdownLinks: 'warn',

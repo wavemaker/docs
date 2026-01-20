@@ -63,4 +63,4 @@ sidebar_label: "Setup Using ConfigPortal"
     [![installation process](../Common%20Installation%20&%20Initialization/assets/images/installation.png)](../Common%20Installation%20&%20Initialization/assets/images/installation.png)
 
 - Click on launchpad for further operations.
-- Map <PLATFORM_IP> with the Domain name given in ur DNS or put an host entry in ur machine.
+- Map `<PLATFORM_IP>` with the Domain name given in ur DNS or put an host entry in ur machine.

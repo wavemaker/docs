@@ -22,7 +22,7 @@ This connector exposes api to send messages to and receive messages from Twilio 
 
 ## Step 2: Configure twilio configurable properties in profiles
 1. By default externalized connector properties are added in the project profiles Know More.
-2. Connector externalized properties are prefixed with **connector.${connectorName}**
+2. Connector externalized properties are prefixed with **connector.$\{connectorName}**
 
 ```Java
 connector.twilio-connector.default.twilio.account.SID=

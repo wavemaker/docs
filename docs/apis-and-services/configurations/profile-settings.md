@@ -165,7 +165,7 @@ These options affect application bundling, optimization, and performance. For mo
 
 This provides the deployment properties file, illustrating how it is generated and containing all application, database, REST API, security, and WebSocket configurations based on the provided settings. It serves as a complete reference to understand how various configurations are applied during deployment and how they affect the behavior of the application across different environments.
 
-`<details>
+<details>
 <summary>View Full Deployment Properties</summary>
 
 ```properties
@@ -278,3 +278,5 @@ websocket.websocket.basepath=
 websocket.websocket.host=echo.websocket.org
 websocket.websocket.scheme=wss
 ```
+
+</details>

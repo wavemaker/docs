@@ -19,7 +19,7 @@ Use an appropriate type of form to work with different types of datasets. There 
 
 ### Form
 
-Use **Form** widget to work with a service or procedure based flow. For this, you can use a service variable or CRUD variable through API calls like, REST API, SOAP, and more. You can configure fields to use an appropriate **<!-- <!-- [Form Widget](/learn/app-development/widgets/widget-library#form-widgets) --> -->**. For example, text, number, dropdown, and more.
+Use **Form** widget to work with a service or procedure based flow. For this, you can use a service variable or CRUD variable through API calls like, REST API, SOAP, and more. You can configure fields to use an appropriate. For example, text, number, dropdown, and more.
 
 ### Live Form
 
@@ -57,7 +57,7 @@ Set the alignment of the form. You can choose from the left, center, right, and 
 
 #### Position
 
-Set the position of the input field and label placement as shown in the image above: {label: field}, {field: label}, {label: field below}.
+Set the position of the input field and label placement as shown in the image above: \{label: field}, \{field: label}, \{label: field below}.
 
 #### Layout Style
 

@@ -15,6 +15,7 @@ Ensure that the error message returned by the web service server meets the follo
 - _messageKey_ is the key value that should be defined in the i18n file as shown in the steps below.
 - _id_, _message_ and _parameters_ are optional and can be sent for detailed logging of exception.
 
+```js
 {
   "errors": {
     "error": [
@@ -29,6 +30,7 @@ Ensure that the error message returned by the web service server meets the follo
     ]
   }
 }
+```
 
 **Steps**
 

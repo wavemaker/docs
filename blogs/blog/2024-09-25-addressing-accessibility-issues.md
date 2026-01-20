@@ -31,7 +31,8 @@ In this new version, the component tree is significantly flattened, enabling aut
 
 For example, consider two scenarios: in one, we set the maximum depth level to 33 using Expo 50 and React Native 0.73, and in the second, we set it to 150 using Expo 51 and React Native 0.74.
 
-<details><summary>Expo 50 and React Native 0.73</summary>
+<details>
+<summary>Expo 50 and React Native 0.73</summary>
 
 ![Expo 50 and React Native 0.73](/img/blogs/expo50-reactnative-73.png)
 
@@ -41,7 +42,8 @@ Beyond this level, Appium encounters a limitation, unable to expand or interact 
 
 </details>
 
-<details><summary>Expo 51 and React Native 0.74</summary>
+<details>
+<summary>Expo 51 and React Native 0.74</summary>
 
 ![Expo 51 and React Native 0.74](/img/blogs/expo51-reactnative-74.png)
 
