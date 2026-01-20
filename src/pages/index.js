@@ -265,13 +265,12 @@ export default function Home() {
                 Discover the Wavemaker Academy and explore a curated set of expert-led courses. Gain
                 the knowledge you need to build confidently with Wavemaker.
               </p>
-              <a
-                href="https://www.figma.com/community/file/1463103184874870889"
-                target="_blank"
+              <Link
+                to="https://www.figma.com/community/file/1463103184874870889"
                 className="button button__white"
               >
                 Open in Figma
-              </a>
+              </Link>
             </div>
           </section>
         </div>

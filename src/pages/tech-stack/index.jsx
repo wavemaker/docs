@@ -97,15 +97,13 @@ export default function TechStackPage() {
                         return (
                           <li key={iIdx} className={isChanged ? styles.itemChanged : ''}>
                             <div className={styles.libraryInfo}>
-                              <a
-                                href={item.url}
-                                target={item.url === '#' ? undefined : '_blank'}
-                                rel={item.url === '#' ? undefined : 'noopener noreferrer'}
+                              <Link
+                                to={item.url}
                                 className={styles.libraryLink}
                               >
                                 {item.library}
                                 {isChanged && <span className={styles.updateBadge}>Updated</span>}
-                              </a>
+                              </Link>
                               {item.description && <span className={styles.libraryDesc}>{item.description}</span>}
                             </div>
                             <span className={styles.libraryVersion}>{item.version || 'N/A'}</span>
