@@ -185,6 +185,35 @@ export default [
     //     type: 'doc',
     //     id: 'apis-and-services/security/access-level-and-permissions',
     //   },
+
+     {
+        type: 'category',
+        label: 'Configurations',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          {
+            type: 'doc',
+            id: 'apis-and-services/security/configurations/remember-me',
+          },
+          {
+            type: 'doc',
+            id: 'apis-and-services/security/configurations/concurrent-sessions',
+          },
+        //   {
+        //     type: 'doc',
+        //     id: 'apis-and-services/security/configurations/securing-server-side-properties-rest-services',
+        //   },
+          {
+            type: 'doc',
+            id: 'apis-and-services/security/configurations/security-variables',
+          },
+          {
+            type: 'doc',
+            id: 'apis-and-services/security/configurations/session-persistence',
+          },
+        ],
+      },
       {
         type: 'category',
         label: 'Providers',
@@ -244,34 +273,7 @@ export default [
           },
         ],
       },
-      {
-        type: 'category',
-        label: 'Configurations',
-        collapsible: true,
-        collapsed: true,
-        items: [
-          {
-            type: 'doc',
-            id: 'apis-and-services/security/configurations/remember-me',
-          },
-          {
-            type: 'doc',
-            id: 'apis-and-services/security/configurations/concurrent-sessions',
-          },
-        //   {
-        //     type: 'doc',
-        //     id: 'apis-and-services/security/configurations/securing-server-side-properties-rest-services',
-        //   },
-          {
-            type: 'doc',
-            id: 'apis-and-services/security/configurations/security-variables',
-          },
-          {
-            type: 'doc',
-            id: 'apis-and-services/security/configurations/session-persistence',
-          },
-        ],
-      },
+     
       {
         type: 'category',
         label: 'Hardening app',
