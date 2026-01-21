@@ -13,7 +13,7 @@ const config = {
   tagline: "Welcome to the Learning Center",
   url: "https://www.wavemaker.com",
   organizationName: "WaveMaker, Inc.",
-  favicon: "img/icon/wm-docs-logo.svg",
+  favicon: "https://dev-ecosystem.s3.us-east-1.amazonaws.com/menu-icon/docs-icon.png",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -93,7 +93,7 @@ const config = {
         title: "WaveMaker Docs",
         logo: {
           alt: "WaveMaker Logo",
-          src: "img/icon/wm-docs-logo.svg",
+          src: "https://dev-ecosystem.s3.us-east-1.amazonaws.com/menu-icon/docs-icon.png",
         },
         items: [
           {
