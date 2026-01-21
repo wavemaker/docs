@@ -49,6 +49,14 @@ export default function LayoutWrapper(props) {
               data-ga-ignore
               target="_blank"
               style={{ color: "#1890ff", textDecoration: "none" }}
+              onClick={(e) => {
+                e.preventDefault();
+                window.open(
+                  "https://next-docs.wavemaker.com",
+                  "_blank",
+                  "noopener,noreferrer"
+                );
+              }}
             >
               Latest WaveMaker Docs
             </a>
