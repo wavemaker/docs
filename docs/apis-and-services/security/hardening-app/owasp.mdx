@@ -1,62 +1,138 @@
 ---
-last_update: { author: "Shahnawaz Ahmed" }
+last_update: { author: "Priyanka Bhadri" }
 ---
+
 # OWASP
+
+ **OWASP (Open Web Application Security Project)** is a global open community dedicated to helping organizations design, develop, acquire, operate, and maintain applications that can be trusted.
+
+One of OWASP’s most influential resources is the **OWASP Top 10**, which identifies the  
+[10 Most Critical Web Application Security Risks](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project).
+
+Among these risks, **Cross-Site Scripting (XSS)** and **Cross-Site Request Forgery (CSRF)** consistently rank as some of the most common and dangerous vulnerabilities in web applications.
+
 ---
-[OWASP](https://www.owasp.org/index.php/About_OWASP) is an open community dedicated to enabling organizations to conceive, develop, acquire, operate, and maintain applications that can be trusted. The OWASP Top 10 provides a list of the [10 Most Critical Web Application Security Risks](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project)
 
-XSS (Cross-site scripting) and CSRF (Cross-Site Request Forgery) attacks are listed in the OWASP top 10 security.
+## Understanding XSS and CSRF
 
-[XSS](https://www.owasp.org/index.php/Top_10_2013-A3-Cross-Site_Scripting_(XSS)) flaws occur whenever an application takes untrusted data and sends it to a web browser without proper validation or escaping. XSS allows attackers to execute scripts in the victim’s browser which can hijack user sessions, deface web sites, or redirect the user to malicious sites.
+### Cross-Site Scripting (XSS)
 
-A [CSRF](https://www.owasp.org/index.php/Top_10_2013-A8-Cross-Site_Request_Forgery_(CSRF)) attack forces a logged-on victim’s browser to send a forged HTTP request, including the victim’s session cookie and any other automatically included authentication information, to a vulnerable web application. This allows the attacker to force the victim’s browser to generate requests which the vulnerable application thinks are legitimate requests from the victim.
+[XSS](https://www.owasp.org/index.php/Top_10_2013-A3-Cross-Site_Scripting_(XSS)) vulnerabilities occur when an application accepts untrusted input and sends it to the browser without proper validation or escaping. This allows attackers to inject and execute malicious scripts in a victim’s browser.
 
-The same-origin policy is an important security concept implemented by web browsers to prevent Javascript code from making requests against a different origin (e.g., different domain) than the one from which it was served. Although the same-origin policy is effective in preventing resources from different origins, it also prevents legitimate interactions between a server and clients of a known and trusted origin. [Cross-Origin Resource Sharing (CORS)](https://spring.io/understanding/CORS) is a technique for relaxing the same-origin policy, allowing Javascript on a web page to consume a REST API served from a different origin.
+The impact of XSS attacks includes:
+- Hijacking user sessions
+- Stealing sensitive information
+- Defacing websites
+- Redirecting users to malicious sites
+
+### Cross-Site Request Forgery (CSRF)
+
+A [CSRF](https://www.owasp.org/index.php/Top_10_2013-A8-Cross-Site_Request_Forgery_(CSRF)) attack tricks a logged-in user’s browser into sending a forged HTTP request to a vulnerable application. Because the browser automatically includes session cookies and authentication headers, the application treats the request as a legitimate action initiated by the user.
+
+### Same-Origin Policy and CORS
+
+The **Same-Origin Policy** is a core browser security mechanism that prevents JavaScript from making requests to a different origin (for example, a different domain) than the one from which it was loaded. While this policy protects against malicious cross-origin access, it can also block valid communication between trusted systems.
+
+**[Cross-Origin Resource Sharing (CORS)](https://spring.io/understanding/CORS)** provides a controlled way to relax the same-origin policy, allowing web applications to safely consume APIs and resources hosted on different origins.
 
 ---
 
 ## Preventing XSS Attacks
 
-XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser side script, to a different end-user. For example, attacker can write the following script in a text box ` <script>alert(document.cookie)</script>` which gets executed.
+XSS attacks occur when attackers inject browser-side scripts into a web application that are later executed in another user’s browser. For example, an attacker might submit the following input in a text field:
 
-{/*[![](/learn/assets/security_OWSP_XSS.png)](/learn/assets/security_OWSP_XSS.png)*/}
+```html
+<script>alert(document.cookie)</script>
+```
 
-In WaveMaker Security dialog provides three strategies to handle XSS:
+If not properly handled, this script executes and exposes sensitive data such as cookies.
 
-### NONE
-In this case, all the scripts will be executed, this is the default setting.
+WaveMaker provides multiple strategies to handle XSS attacks through the Security dialog.
 
-### ENCODE
-In this case, the scripts will be encoded so that they cannot be executed in data access. For example, the script code:` <script>alert(document.cookie)</script>` will be converted to `&lt ; script &gt ; alert(document.cookie) &lt ; /script &gt ;`, thus rendering the script invalid.
-### WHITE LIST
+### XSS Protection Modes
+
+#### NONE
+
+No XSS protection is applied. All scripts are allowed to execute.
+This is the default configuration and is **not recommended** for production environments.
+
+#### ENCODE
+
+All scripts are encoded before being processed, ensuring they are rendered as plain text instead of executable code.
+
+**Example:**
+
+Input:
+```html
+<script>alert(document.cookie)</script>
+```
+
+Is converted to:
+```html
+&lt;script&gt;alert(document.cookie)&lt;/script&gt;
+```
+
+This prevents the browser from interpreting the input as a script.
+
+#### WHITE LIST
 In this case, the scripts will be filtered based on
-- **Policy file**: this will implement XSS protection based on the rules defined in `/src/main/webapp/WEB-INF/wm-xss-policies.xml`. The default policy file is `wm-xss-policies.xml`. According to this default policy file, script tags will be removed. However, you can upload your own policy file which will be uploaded to WEB-INF folder. Clicking on to the file name will open it in the editor. Go through the [document](#) for more descriptions on AntiSamy rules. 
+- **Policy file**: this will implement XSS protection based on the rules defined in `/src/main/webapp/WEB-INF/wm-xss-policies.xml`. The default policy file is `wm-xss-policies.xml`. According to this default policy file, script tags will be removed. However, you can upload your own policy file which will be uploaded to WEB-INF folder. Clicking on to the file name will open it in the editor. Go through the [document](xss-antisamy-policy-configuration.mdx) for more descriptions on AntiSamy rules. 
 
-{/*[![](/learn/assets/security_OWSP_XSSpolicy.png)](/learn/assets/security_OWSP_XSSpolicy.png)*/}
 
-- **Manual tags**: Custom tag rules can be specified in terms of HTML tags which are categorized based on their actions. The possible actions are Validate, Remove, Truncate and Filter. These rules are used while handling the tags in the XSS attacks. You can add or delete tags against an action. We can specify the action for all Unknown tags also. 
 
-{/*[![](/learn/assets/security_OWSP_XSStags.png)](/learn/assets/security_OWSP_XSStags.png)*/}
+
+
+The default policy removes `<script>` tags. Developers can upload a custom policy file, which is stored in the WEB-INF folder. Clicking the file name opens it in the editor. Refer to the AntiSamy documentation for detailed rule definitions.
+
+![Tags](../assets/tags.png)  
+
+- **Manual tags**: Custom tag rules can be specified in terms of HTML tags which are categorized based on their actions. The possible actions are Validate, Remove, Truncate and Filter. These rules are used while handling the tags in the XSS attacks. You can add or delete tags against an action. We can specify the action for all Unknown tags also. 
+
+![Whitelist](../assets/whitelist.png)  
+
+---
+
 ## Preventing CSRF Attacks
 
-CSRF is an attack that tricks the victim into submitting a malicious request. This security attack exploits the trust a user has for a particular site. Attacks are launched by placing malicious actions on their site so that browsers of people visiting these pages would open them with/without user action.
+CSRF attacks exploit the trust a user has in a website by forcing their browser to submit malicious requests without explicit user intent. These attacks are often triggered by embedding malicious actions in external websites.
 
-Angular provides a mechanism to counter CSRF. When performing XHR requests, the _$http_ service reads a token from a cookie (by default, `XSRF-TOKEN`) and sets it as an HTTP header (`X-XSRF-TOKEN`). Since the only JavaScript that runs on your domain can read the cookie, your server can be assured that the XHR came from JavaScript running on your domain. The header will not be set for cross-domain requests.
+Angular provides built-in CSRF protection. During XHR requests, the `$http` service reads a token from a cookie (default: `XSRF-TOKEN`) and includes it as an HTTP header (`X-XSRF-TOKEN`). Since only JavaScript running on the same domain can read the cookie, the server can verify that the request originated from a trusted source.
 
-WaveMaker Defaults: Cookie Name: `wm_xsrf_token`. This cookie gets set at run-time during the Login process. Header Name: `X-WM-XSRF-TOKEN` (User can customize it through security dialog)
+> **Note:** The CSRF header is not sent for cross-domain requests.
 
-{/*[![](/learn/assets/security_OWSP_CSRF.png)](/learn/assets/security_OWSP_CSRF.png)*/}
+### WaveMaker CSRF Defaults
+
+- **Cookie Name:** `wm_xsrf_token` (Set at runtime during the login process)
+- **Header Name:** `X-WM-XSRF-TOKEN`
+
+These values can be customized using the Security dialog.
+
+---
 
 ## Enabling CORS
 
-Cross-origin resource sharing (CORS) is a mechanism that allows restricted resources (e.g. fonts) on a web page to be requested from another domain outside the domain from which the first resource was served. A web page may freely embed cross-origin images, stylesheets, scripts, iframes, and videos.
+Cross-Origin Resource Sharing (CORS) allows a web application to request restricted resources from a different domain than the one serving the application. Examples include images, stylesheets, scripts, iframes, and videos.
 
-CORS defines a way in which a browser and server can interact to determine whether or not it is safe to allow the cross-origin request. When CORS is enabled, following options are provided to configure:
+CORS defines a secure interaction model between the browser and server to determine whether a cross-origin request should be allowed. When CORS is enabled in WaveMaker, the following configuration options are available:
 
-1. **Allow Credentials**: This option is to allow users to include credentials (including cookies and auth data) to be sent with the XHR requests.
-2. **Max Age**: This option is used to set the validity, in seconds, of the pre-flight request response.
-3. **Path**: Only the resources (in the WaveMaker app) in the mentioned path can be exposed.
-4. **Origins**: WaveMaker app resources can be exposed only to these origins.
+### CORS Configuration Options
 
-{/*[![](/learn/assets/security_OWSP_CORS.png)](/learn/assets/security_OWSP_CORS.png)*/}
+- **Allow Credentials**
+  Allows cookies and authentication data to be sent with XHR requests.
 
+- **Max Age**
+  Specifies the duration (in seconds) for which the pre-flight response is cached by the browser.
+
+- **Path**
+  Restricts CORS access to specific resource paths within the WaveMaker application.
+
+- **Origins**
+  Defines the list of trusted origins that are allowed to access application resources.
+
+![OWASP](../assets/owasp.png)  
+
+---
+
+## Summary
+
+By combining OWASP best practices with WaveMaker's built-in security features, applications can achieve strong protection against common web vulnerabilities while maintaining flexibility and ease of development.
