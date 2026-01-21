@@ -1,45 +1,118 @@
----
-last_update: { author: "Author Name" }
----
+# WaveMaker Documentation
 
-# Website
+Welcome to the WaveMaker Documentation repository! This site is built with [Docusaurus](https://docusaurus.io/) and serves as the comprehensive documentation hub for WaveMaker platform.
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+🌐 **Live Site**: [doc.wavemaker.com](https://docs.wavemaker.com/)
 
-## Installation
+## Quick Start
+
+### Prerequisites
+
+- **Node.js** >= 20.0
+- **npm** or **yarn**
+- **Git**
+
+### Local Development
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/wavemaker/docs.git
+   cd docs
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start development server**
+   ```bash
+   npm start
+   ```
+   
+   This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+
+4. **Access the site**
+   - Local URL: `http://localhost:3000`
+   - The site will automatically reload when you make changes
+
+### Build for Production
 
 ```bash
-yarn
-```
-
-## Local Development
-
-```bash
-yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-## Build
-
-```bash
-yarn build
+npm run build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-## Deployment
+## Project Structure
 
-Using SSH:
-
-```bash
-USE_SSH=true yarn deploy
+```
+docs/
+├── docs/                    # Documentation content (MDX/Markdown files)
+│   ├── apis-and-services/   # API and services documentation
+│   ├── user-interfaces/     # UI component documentation
+│   ├── studio/             # Studio-related docs
+│   └── ...
+├── blogs/                   # Blog content
+│   ├── blog/               # Main blog posts
+│   ├── feature-announcements/  # Feature announcements
+│   └── whatsnew/           # Release notes
+├── sidebar/                 # Sidebar configurations
+│   └── sidebars/           # Individual sidebar files
+├── src/                    # React components and custom pages
+├── static/                 # Static assets (images, files)
+├── scripts/                # Utility scripts
+└── docusaurus.config.js    # Docusaurus configuration
 ```
 
-Not using SSH:
+## Available Scripts
+
+- `npm start` - Start development server
+- `npm run build` - Build for production
+- `npm run serve` - Serve production build locally
+- `npm run clear` - Clear Docusaurus cache
+- `npm run manage-docs` - Interactive CLI tool for managing documentation
+- `npm run gen-metrics` - Generate documentation metrics
+
+## Documentation Management
+
+We provide a powerful CLI tool to help manage documentation structure:
 
 ```bash
-GIT_USER=<Your GitHub username> yarn deploy
+npm run manage-docs
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch
+This interactive tool allows you to:
+- Create new sidebars
+- Add categories to existing sidebars
+- Create new documentation pages
+- Maintain proper file organization
+
+## Contributing
+
+We welcome contributions! Please see our [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines on:
+
+- Content creation and editing
+- File organization conventions
+- Markdown and MDX best practices
+- Review process
+- Style guidelines
+
+## Technology Stack
+
+- **Framework**: [Docusaurus 3.x](https://docusaurus.io/)
+- **Content**: MDX (Markdown + JSX)
+- **Styling**: CSS Modules + Custom CSS
+- **Search**: Algolia DocSearch
+- **Diagrams**: Mermaid
+
+## Support
+
+- 📖 **Documentation**: [Docusaurus Documentation](https://docusaurus.io/docs)
+- 🐛 **Issues**: [GitHub Issues](https://github.com/wavemaker/docs/issues)
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/wavemaker/docs/discussions)
+
+## License
+
+This project is licensed under the terms specified by WaveMaker, Inc. 
+
