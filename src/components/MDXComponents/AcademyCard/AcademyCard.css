@@ -64,10 +64,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 0.6rem 1rem;
-  background: var(--ifm-color-primary);
-  color: white !important;
-  border-radius: 8px;
+  color: var(--ifm-color-primary) !important;
   font-weight: 600;
   font-size: 0.875rem;
   text-decoration: none !important;
@@ -76,8 +73,8 @@
 }
 
 .academy-card-link:hover {
-  background: var(--ifm-color-primary-darker);
-  transform: translateY(-1px);
+  color: var(--ifm-color-primary-darker) !important;
+  text-decoration: underline;
 }
 
 .academy-card-link img {

@@ -12,7 +12,7 @@ function AcademyCard({ title, description, academyLink, children }) {
         <div className="academy-card-action">
           <Link to={academyLink} className="academy-card-link">
             <img width="32" height="32" src="/img/icon/acd-icon.svg" alt="Academy Icon"/>
-            <span>View On WaveMaker Academy</span>
+            <span>View on Academy</span>
           </Link>
         </div>
       </div>
