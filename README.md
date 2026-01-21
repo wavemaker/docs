@@ -2,7 +2,7 @@
 
 Welcome to the WaveMaker Documentation repository! This site is built with [Docusaurus](https://docusaurus.io/) and serves as the comprehensive documentation hub for WaveMaker platform.
 
-🌐 **Live Site**: [doc.wavemaker.com](https://docs.wavemaker.com/)
+🌐 **Live Site**: [docs.wavemaker.com](https://docs.wavemaker.com/)
 
 ## Quick Start
 
