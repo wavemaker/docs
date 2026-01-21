@@ -10,7 +10,9 @@ import NavbarMobileSidebarToggle from '@theme/Navbar/MobileSidebar/Toggle';
 import NavbarLogo from '@theme/Navbar/Logo';
 import NavbarSearch from '@theme/Navbar/Search';
 import styles from './styles.module.css';
-import MenuSection from './menu';
+import { AppLauncher } from "wm-ui-components"
+// import MenuSection from './menu';
+
 
 function useNavbarItems() {
   // TODO temporary casting until ThemeConfig type is improved
@@ -82,7 +84,8 @@ export default function NavbarContent() {
         <>
           <NavbarItems items={rightItems} />
           <NavbarColorModeToggle className={styles.colorModeToggle} />
-          <MenuSection />
+           <AppLauncher excludeId="docs" />
+          {/* <MenuSection /> */}
           <Link to="https://www.wavemaker.com/get-demo/" className="button button--primary">
             Schedule Demo
           </Link>
