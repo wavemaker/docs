@@ -1,5 +1,5 @@
 ---
-last_update: { author: "Tejaswini K" }
+last_update: { author: "Praveen Chandra" }
 ---
 # Deploy Static Content to AWS CDN
 
