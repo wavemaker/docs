@@ -1,3 +1,5 @@
+import { label } from 'framer-motion/client';
+
 /** @type {import('@docusaurus/plugin-content-docs').SidebarConfig} */
 export default [
   {
@@ -12,15 +14,23 @@ export default [
     items: [
       {
         type: 'doc',
-        id: 'studio/governance/app-portal',
+        id: 'studio/governance/project-collaboration',
+        label: 'Project Collaboration'
       },
       {
         type: 'doc',
-        id: 'studio/governance/projects-hub',
+        id: 'studio/governance/artifact-management',
+        label: 'Artifact Management'
       },
       {
         type: 'doc',
-        id: 'studio/governance/team-portal',
+        id: 'studio/governance/code-repository-configuration',
+        label: 'Code Repository Configuration'
+      },
+      {
+        type: 'doc',
+        id: 'studio/governance/application-deployments-demo',
+        label: 'Application Deployments - Demo'
       },
     ],
   },
