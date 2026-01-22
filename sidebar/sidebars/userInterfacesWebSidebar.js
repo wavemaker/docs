@@ -366,6 +366,31 @@ export default [
         ],
       },
       {
+        type: 'category',
+        label: 'layout-and-style',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/layout-and-style/overview',
+            label: 'Layout and Style',
+          },
+
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/layout-and-style/types',
+            label: 'types',
+          },
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/layout-and-style/auto-layout',
+            label: 'Auto Layout',
+          },
+        ],
+      },
+
+      {
         type: 'doc',
         id: 'user-interfaces/web/develop/create-page-working-with-layouts',
       },
