@@ -1,8 +1,8 @@
 ---
 title: "Users and Roles"
-last_update: { author: "Author Name" }
+last_update: { author: "Krishna Rao Chintu" }
 id: "users-roles"
-sidebar_label: "Users & Roles"
+sidebar_label: "WME User Roles"
 ---
 
 Learn how roles and activities are defined in WME.

@@ -1,6 +1,6 @@
 ---
 title: "Alerts"
-last_update: { author: "Author Name" }
+last_update: { author: "Krishna Rao Chintu" }
 id: "alerts"
 sidebar_label: "Alerts"
 ---

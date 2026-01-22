@@ -100,10 +100,10 @@ export default [
             type: 'doc',
             id: 'apis-and-services/apis/importing-apis/websockets',
           },
-          {
-            type: 'doc',
-            id: 'apis-and-services/apis/importing-apis/generated-code',
-          },
+        //   {
+        //     type: 'doc',
+        //     id: 'apis-and-services/apis/importing-apis/generated-code',
+        //   },
         ],
       },
       {
@@ -185,6 +185,35 @@ export default [
     //     type: 'doc',
     //     id: 'apis-and-services/security/access-level-and-permissions',
     //   },
+
+     {
+        type: 'category',
+        label: 'Configurations',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          {
+            type: 'doc',
+            id: 'apis-and-services/security/configurations/remember-me',
+          },
+          {
+            type: 'doc',
+            id: 'apis-and-services/security/configurations/concurrent-sessions',
+          },
+        //   {
+        //     type: 'doc',
+        //     id: 'apis-and-services/security/configurations/securing-server-side-properties-rest-services',
+        //   },
+          {
+            type: 'doc',
+            id: 'apis-and-services/security/configurations/security-variables',
+          },
+          {
+            type: 'doc',
+            id: 'apis-and-services/security/configurations/session-persistence',
+          },
+        ],
+      },
       {
         type: 'category',
         label: 'Providers',
@@ -215,28 +244,36 @@ export default [
           },
           {
             type: 'doc',
-            id: 'apis-and-services/security/providers/openid-authentication',
-          },
-            {
-            type: 'doc',
             id: 'apis-and-services/security/providers/saml-integration',
           },
            {
             type: 'doc',
             id: 'apis-and-services/security/providers/cas',
           },
+          {
+            type: 'doc',
+            id: 'apis-and-services/security/providers/openid-authentication',
+          },
+
+             {
+            type: 'doc',
+            id: 'apis-and-services/security/providers/active-directory',
+          },
+            
           
           {
             type: 'doc',
             id: 'apis-and-services/security/providers/token-based-authentication',
           },
         
+       
           {
             type: 'doc',
-            id: 'apis-and-services/security/providers/active-directory',
+            id: 'apis-and-services/security/providers/custom',
           },
         ],
       },
+     
       {
         type: 'category',
         label: 'Hardening app',
@@ -253,22 +290,6 @@ export default [
           },
           {
             type: 'doc',
-            id: 'apis-and-services/security/hardening-app/remember-me',
-          },
-          {
-            type: 'doc',
-            id: 'apis-and-services/security/hardening-app/concurrent-sessions',
-          },
-          {
-            type: 'doc',
-            id: 'apis-and-services/security/hardening-app/securing-server-side-properties-rest-services',
-          },
-          {
-            type: 'doc',
-            id: 'apis-and-services/security/hardening-app/security-variables',
-          },
-          {
-            type: 'doc',
             id: 'apis-and-services/security/hardening-app/ssl-encryption',
           },
           {
@@ -278,10 +299,6 @@ export default [
           {
             type: 'doc',
             id: 'apis-and-services/security/hardening-app/hostheader-injection',
-          },
-          {
-            type: 'doc',
-            id: 'apis-and-services/security/hardening-app/session-persistence',
           },
         ],
       },

@@ -62,18 +62,86 @@
 
 .thumbnail-fallback {
   aspect-ratio: 16 / 9;
-  display: grid;
-  place-items: center;
-  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url('/img/background/academy-video-background.png');
+  background-size: cover;
+  background-position: center;
   position: relative;
+  text-align: left;
+  padding: 1.5rem;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.thumbnail-fallback::after {
+.thumbnail-fallback::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at center, rgba(var(--ifm-color-primary-rgb), 0.2) 0%, transparent 70%);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, transparent 100%);
+  z-index: 0;
+}
+
+.thumbnail-text {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  z-index: 1;
+  line-height: 1.2;
+  max-width: 80%;
+}
+
+.thumbnail-subtext {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #4b5563;
+  margin-bottom: 4px;
+  z-index: 1;
+  text-transform: none;
+}
+
+.thumbnail-fallback svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 42px;
+  height: 42px;
+  /* color: var(--ifm-color-primary);
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2)); */
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+
+.video-card-container:hover .thumbnail-fallback svg {
+  transform: translate(-50%, -50%) scale(1.1);
+  opacity: 1;
+}
+
+.thumbnail-fallback::after {
+  content: 'Academy';
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.thumbnail-fallback::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%231a73e8'%3E%3Cpath d='M12 3L1 9L12 15L21 10.09V17H23V9M5 13.18V17.18L12 21L19 17.18V13.18L12 17L5 13.18Z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 14px;
+  padding-left: 18px;
 }
 
 .video-card-thumbnail {

@@ -1,0 +1,81 @@
+---
+last_update: { author: "Priyanka Bhadri" }
+---
+
+# Remember Me
+
+The **Remember Me** feature allows an application to retain a user’s authenticated session by storing session details in a persistent cookie.  
+By default, this cookie remains valid for **15 days** or until the user explicitly signs out of the application—whichever occurs first.
+
+---
+
+## How It Works
+
+When a user logs in with the **“Remember Me”** option selected on the login page, the application creates and stores a *remember-me* cookie in the user’s browser.
+
+On subsequent visits:
+- If a valid remember-me cookie is present,
+- The application automatically authenticates the user,
+- And grants access **without requiring credentials to be entered again**.
+
+In essence, Remember Me enables **automatic login** by including a remember-me cookie in the request headers.
+
+---
+
+## Remember Me in WaveMaker Applications
+
+- The Remember Me feature is **enabled by default** when security is turned on in a WaveMaker application.
+- During login, the authentication request includes the `j_rememberme` parameter with a value of `true` or `on` when the user selects the Remember Me option.
+- After successful authentication:
+  - WaveMaker issues a cookie named `remember-me`
+  - The cookie value uniquely identifies the authenticated user for future requests.
+- On subsequent requests, the application validates:
+  - The username associated with the cookie
+  - The cookie’s expiry time
+
+Only valid cookies allow automatic login.
+
+---
+
+
+
+## Remember Me Configuration
+
+The following Remember Me settings can be configured per application.
+
+### Enable or Disable Remember Me
+
+Remember Me is enabled by default.  
+It can be disabled by updating:
+- `auth-info.json`
+- Environment-specific **profile property files**
+
+
+### Expiry Interval
+
+The default lifetime of the remember-me cookie is **15 days** from the time of creation.  
+This duration can be modified by updating:
+- `auth-info.json`
+- Environment-specific **profile property files**
+
+
+---
+
+## Remember Me Cookie Expiry
+
+The remember-me cookie remains valid until:
+- **15 days** have elapsed from creation, or
+- The user explicitly signs out of the application  
+
+Whichever occurs first.
+
+---
+
+## Limitations
+
+The Remember Me feature is supported **only** for the following security providers:
+
+- Demo
+- Database
+- LDAP
+

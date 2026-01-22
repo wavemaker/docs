@@ -1,6 +1,6 @@
 ---
 title: "WaveMaker Enterprise Upgrade"
-last_update: { author: "Author Name" }
+last_update: { author: "Krishna Rao Chintu" }
 id: "upgrade-setup"
 sidebar_label: "Upgrade Overview"
 ---

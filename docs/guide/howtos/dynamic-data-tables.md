@@ -34,6 +34,7 @@ Here we will see how to create a dynamic grid based on the metadata returned fro
 6. For the buttons placed on the canvas, navigate to the Events tab from the properties panel and choose JavaScript as operation for the **on Click** event.
 7. Below is an example code snippet to change the grid dataset’s dynamically at runtime.
     
+    ```javascript
     Page.button1Click = function ($event, widget) {
         Page.Widgets.SVGrid.dataset = Page.Variables.DeptData.dataSet;
     };
@@ -41,6 +42,7 @@ Here we will see how to create a dynamic grid based on the metadata returned fro
     Page.button2Click = function ($event, widget) {
         Page.Widgets.SVGrid.dataset = Page.Variables.UserData.dataset;
     };
+    ```
     
     Image: dynamic_grid4.png
 

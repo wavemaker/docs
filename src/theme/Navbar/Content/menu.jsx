@@ -41,7 +41,7 @@ const MenuSection = () => {
     {
       label: "Mobile",
       icon: "/img/icon/rns-icon.svg",
-      link: "https://rn-components.wavemaker.com/",
+      link: "https://reactnative-components.wavemaker.com/",
     },
     {
       label: "Platform",

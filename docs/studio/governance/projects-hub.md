@@ -326,4 +326,4 @@ Projects
 
 - [Team Portal](./team-portal.md)
 - [App Portal](./app-portal.md)
-- [WME Variant](../offerings/wme.md)
+- [WME Variant](../offerings/wme/welcome.md)

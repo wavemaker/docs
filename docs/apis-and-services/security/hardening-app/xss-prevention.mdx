@@ -1,5 +1,5 @@
 ---
-last_update: { author: "Shahnawaz Ahmed" }
+last_update: { author: "Priyanka Bhadri" }
 ---
 # XSS Prevention
 ---
@@ -22,7 +22,7 @@ In the following example, Datatable contains employee details and their current 
 
 WaveMaker sanitizes the Datatable widget, and when HTML is found in any column, it renders plain text as a result (see the image below).
 
-{/*[![](/learn/assets/xss_datatable1.png)](/learn/assets/xss_datatable1.png)*/}
+![Rendering HTML in table](../assets/preview4.png)
 
 ### Rendering HTML in Datatable
 
@@ -34,11 +34,13 @@ To render HTML content in Datatable, we recommend configuring the **status** col
 2. Select the **Status** column.
 3. Go to **View Mode** and select **Label** from the **Widget** dropdown. (see the image below)
 
-{/*[![](/learn/assets/xss_datatable3.png)](/learn/assets/xss_datatable3.png)*/}
+
 
 The **status** column renders HTML without displaying inline styles to the column data; this is because WaveMaker applies sanitization to the Label widget. 
 
-{/*[![](/learn/assets/xss_datatable2.png)](/learn/assets/xss_datatable2.png)*/}
+![Rendering HTML in table](../assets/preview.png)
+
+
 ## Using Formatters
 
 The default behavior of WaveMaker UI widgets is to sanitize the content rendered inside them, preventing any possibility of an XSS vulnerability in the app. However, if the developer wants to bypass sanitization in the widgets, the Formatters `trustAs` can be used at the time of binding data to the widgets.
@@ -56,7 +58,7 @@ You can access **trustAs** Formatters from:
 
 Configure the **trustAs** flag from the **Use Expression** tab of the Variable binding dialog. 
 
-{/*[![](/learn/assets/xss_datatable7.png)](/learn/assets/xss_datatable7.png)*/}
+![Rendering HTML in table](../assets/formatters.png)
 
 #### Value Expression
 
@@ -93,11 +95,11 @@ Following example shows the **Value Expression** field configuring `trustAs` for
 trustAs: 'html'"></wm-label>
 ```
 
-{/*[![](/learn/assets/xss_datatable4.png)](/learn/assets/xss_datatable4.png)*/}
+![Rendering HTML in table](../assets/preview2.png)
 
 When you add the **trustAs** formatter, it renders HTML with the inline styles while disabling the sanitization for the **status** column (see the image below).
 
-{/*[![](/learn/assets/xss_datatable5.png)](/learn/assets/xss_datatable5.png)*/}
+![Rendering HTML in table](../assets/preview3.png)
 
 :::warning
 When using this flag, ensure you thoroughly follow [security context](https://angular.io/guide/security#sanitization-and-security-contexts). Else, the content may not render appropriately. Plus, it can put your app at risk of XSS vulnerability.

@@ -1,6 +1,6 @@
 ---
 title: "Enabling Proxy in WaveMaker Enterprise"
-last_update: { author: "Author Name" }
+last_update: { author: "Krishna Rao Chintu" }
 id: "enabling-proxy-in-wme"
 sidebar_label: "Enabling Proxy in WaveMaker Enterprise"
 ---

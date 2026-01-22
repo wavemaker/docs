@@ -20,7 +20,7 @@ You can combine two or more columns to be displayed in a single column in a Data
 2. From the Columns tab, add two new columns - H1 and H2
 3. In the View Mode section, enter the following for Value Expression:
     
-{{row.getProperty('q1') + row.getProperty('q2')}}
+`{{row.getProperty('q1') + row.getProperty('q2')}}`
 
 This will add the content from columns q1 and q2 and set it as the content for H1 column. 
 

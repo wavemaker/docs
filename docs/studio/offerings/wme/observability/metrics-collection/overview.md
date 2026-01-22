@@ -1,6 +1,6 @@
 ---
 title: "Metrics Collection"
-last_update: { author: "Author Name" }
+last_update: { author: "Krishna Rao Chintu" }
 id: "overview"
 sidebar_label: "Overview"
 ---

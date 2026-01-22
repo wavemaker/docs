@@ -1,1 +1,43 @@
-# Overview
+---
+title: "Overview"
+last_update: { author: "Tejaswini K" }
+id: "overview"
+sidebar_label: "Overview"
+---
+
+A pipeline handles the build, test, and deployment flow for a WaveMaker application across environments. It removes manual steps and ensures controlled, repeatable releases from development to production.
+
+WaveMaker supports two delivery models:
+- **WaveMaker Internal CI/CD Pipeline** – a managed pipeline that runs entirely inside the WaveMaker platform.
+- **External CI/CD Pipeline Integration** – a bring-your-own-tools model that connects WaveMaker apps to an existing DevOps stack.
+
+## WaveMaker Internal CI/CD Pipeline
+
+Choose the internal pipeline when you want a ready-made workflow. WaveMaker orchestrates the entire CI/CD path, letting teams focus on application changes while the platform handles builds, packaging, and promotions.
+
+**Typical stages**
+- Development / Build – compile and package the application once.
+- Testing or QA – run automated suites to validate the build.
+- Staging – rehearse the release in a production-like environment.
+- Production (Live) – deploy the vetted artifact to end users.
+
+The same build artifact moves through every stage via deployment profiles. This keeps environments aligned and avoids surprises caused by rebuilding for each destination.
+
+**Why teams use it**
+- Minimal setup since the pipeline is managed by WaveMaker
+- Pipeline status available directly in WaveMaker Studio and Apps Portal
+
+## External CI/CD Pipeline Integration
+
+External integration is for teams that already run their own CI/CD tooling. WaveMaker remains the development environment, but your existing services take care of orchestration.
+
+**How it works**
+- Keep application source in your version control system.
+- Trigger builds and quality checks through your CI tool, such as Jenkins.
+- Script packaging, security scans, and approvals to match internal policies.
+- Deploy artifacts to platforms you manage, like Kubernetes clusters or on-prem infrastructure.
+
+## Choosing a Pipeline Model
+
+- Select the **Internal CI/CD Pipeline** when you want WaveMaker to manage builds and promotions with the least amount of setup.
+- Select **External CI/CD Integration** when you need complete ownership of tooling, infrastructure, and deployment workflows.

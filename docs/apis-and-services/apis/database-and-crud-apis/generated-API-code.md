@@ -160,5 +160,7 @@ Learn more about working with databases and queries through these practical guid
 - [Configuring SAP HANA Cloud Database](/docs/guide/migrated-docs/configuring-sap-hana-clouddb) - Integrate with SAP HANA Cloud
 - [MySQL Connection Using SSL](/docs/guide/migrated-docs/mysql-connection-using-ssl) - Secure MySQL connections with SSL/TLS
 - [Switch from MariaDB to MySQL Connector](/docs/guide/migrated-docs/switch-mariadb-to-mysql-connector) - Migration guide for connector changes
+- [Audit History Using CRUD Listeners](/docs/guide/migrated-docs/audit-history-using-crud-listeners) - Track data changes and maintain audit trails
+
 
 ---

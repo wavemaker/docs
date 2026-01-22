@@ -27,19 +27,29 @@ By using configuration profiles, developers can easily deploy the same applicati
 
 Every WaveMaker application includes at least two default profiles:
 
-- **Development** – used by the Studio Run option
-- **Deployment** – used when deploying the application
+- **Development** – used when running the application from Studio  
+- **Deployment** – used when deploying the application  
 
-You can also create custom profiles for specific environments (such as QA or Production). Deployment Profiles determine which configuration values are applied when the application is deployed.
+You can also create **custom profiles** for specific environments such as QA or Production.
+
+All application configuration values are defined in a single base file, `configurable.properties`. This file contains the complete set of properties used by the application.
+
+When a specific profile (Development, Deployment, or any custom profile) requires different values, only those overridden properties are defined in that profile. At runtime or during deployment, WaveMaker first loads the base properties from `configurable.properties` and then applies the profile-specific overrides, ensuring the correct configuration is used for the active environment.
 
 ## Generated Project Structure
 
 
 ```text
 MyApp
-└── profiles/
-   └── deployment.properties
-   └── development.properties
+├── profiles/
+│   ├── deployment.properties
+│   └── development.properties
+└── src/
+    └── main/
+        └── webapp/
+            └── WEB-INF/
+                └── configurable.properties
+
 ```
 
 

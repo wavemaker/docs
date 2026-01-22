@@ -4,12 +4,404 @@ last_update: { author: "Shahnawaz Ahmed" }
 
 # VCS Manager
 
-The VCS Manager in WaveMaker provides a unified workspace to manage your application’s source code and its evolution over time. It brings common version control operations—such as pulling changes, pushing commits, reviewing modifications, and tracking history—directly into the WaveMaker UI, enabling a smooth workflow for teams working in parallel.
+The VCS Manager in WaveMaker helps you manage and track your application's source code as it evolves. It brings essential version control workflows into a single, easy-to-navigate workspace.
 
-This workspace allows you to clearly see what has changed, who made those changes, and how different versions of the same file compare. It also helps you safely synchronize local work with remote repositories, handle merge conflicts when they arise, and connect your project to external version control systems like GitHub or Bitbucket.
+- Manage your application's source code and track changes over time from one place
 
-To get familiar with the layout, options, and workflows available in this workspace, watch the **[VCS Manager Walkthrough video](https://app.guidde.com/share/playbooks/9W5WHiWsENAqc4AzErVkmS?origin=UHEVgZL3MXReLMMFtXRKKLRtXmG3)**. The video walks through the UI step by step, helping you understand how WaveMaker presents version control and supports collaborative development before you start using it in your day-to-day work.
+- Perform core version control actions like pull, push, view changes, and review commit history
 
-:::info
-Watch the **[walkthrough video](https://app.guidde.com/share/playbooks/9W5WHiWsENAqc4AzErVkmS?origin=UHEVgZL3MXReLMMFtXRKKLRtXmG3)** to explore the VCS Manager UI and understand how to manage your project’s code effectively.
-:::
+- Collaborate smoothly by comparing versions, resolving conflicts, and syncing with external repositories
+
+Watch the VCS Manager Walkthrough video below to explore the UI and understand how these workflows come together in WaveMaker.
+
+<AcademyCard
+  title="VCS Manager"
+  
+  academyLink="https://next-academy.wavemaker.com/Walkthrough?wm=A469BCA143"
+>
+
+
+  <div style={{ position: "relative", paddingBottom: "56.25%" }}>
+    <iframe
+      style={{
+        width: "100%",
+        height: "100%",
+        position: "absolute",
+        left: 0,
+        top: 0,
+        borderRadius: 10
+      }}
+      src="https://embed.app.guidde.com/playbooks/9W5WHiWsENAqc4AzErVkmS?mode=videoOnly"
+      title="VCS Manager"
+      frameBorder={0}
+      referrerPolicy="unsafe-url"
+      allowFullScreen="true"
+      allow="clipboard-write"
+      sandbox="allow-popups allow-popups-to-escape-sandbox allow-scripts allow-forms allow-same-origin allow-presentation"
+    />
+  </div>
+  <div style={{ display: "none" }}>
+    <p>
+      00:00: Hi, and welcome!. In this video, we'll take a guided walk through
+      of the VCS Manage in
+    </p>
+    <p>
+      00:06: WaveMaker. Along the way, you'll see how this space helps you
+      manage and maintain your code repository—bringing together contributions
+      from multiple developers working in parallel, while keeping versions clean
+      and manageable.
+    </p>
+    <p>00:18: Let's get started.</p>
+    <p>00:20: For this video, we have set up a project.</p>
+    <p>
+      00:23: We have a single page called dashboard. And an imported database.
+    </p>
+    <p>
+      00:28: So, this actions have created code, which are organised in the
+      project structure as folders and files.
+    </p>
+    <p>
+      00:34: This will help us set up the context and view the source code and
+      it's evolution.
+    </p>
+    <p>00:40: So, let's get to the VCS workspace as shown here.</p>
+    <p>
+      00:43: In the VCS dropdown we see five options, which are behind the
+      scene, mostly, VCS commands, which we are fairly familiar with. Pull,
+      Push, View changes, and commit history.
+    </p>
+    <p>
+      00:56: The 5th option is for configuration of your project with an
+      external repo, that you might own.
+    </p>
+    <p>
+      01:02: This makes it possible to push code directly to your own external
+      repo.
+    </p>
+    <p>
+      01:07: When we go to the pool changes menu wave maker Checks if there are
+      any uncommitted local changes.
+    </p>
+    <p>
+      01:13: If so it temporarily stashes them pulls the latest changes from the
+      remote master into the local repository and then reapply the stashed
+      changes.
+    </p>
+    <p>01:23: Once the pull is completed successfully the project reloads.</p>
+    <p>01:27: There can be merge conflicts during a pool more on that later.</p>
+    <p>01:32: Let us go to the next menu item, "Push Changes".</p>
+    <p>01:35: This invokes the push changes dialogue.</p>
+    <p>
+      01:38: We see the project name and a text area to type in our commit
+      message below the text area is an uneditable text box that adequately
+      lists down all uncommitted changes.
+    </p>
+    <p>01:50: Let us enter our commit message describing the changes.</p>
+    <p>
+      01:53: Make sure the description is comprehensive enough for other
+      contributors
+    </p>
+    <p>
+      01:57: Click on "Ok" to confirm and save your commit message for the push
+      operation.
+    </p>
+    <p>
+      02:02: Clicking on the view changes would open up the dialogue where we
+      can view all our uncommited changes.
+    </p>
+    <p>
+      02:08: But, since we just now pushed our changes, the local repository is
+      clean and the dialogue won't show up in this case.
+    </p>
+    <p>
+      02:15: We will visit that dialogue later, after we make some local changes
+    </p>
+    <p>02:20: Let us now, visit the next menu item, "Commit History".</p>
+    <p>02:24: This is the commit history dialogue.</p>
+    <p>
+      02:26: All the commits made by various contributors are listed here with
+      the latest on the top.
+    </p>
+    <p>02:31: In this case the sole contributor is me.</p>
+    <p>02:35: So the author column shows only one name.</p>
+    <p>
+      02:38: letters visit the first commit by clicking on the view changes link
+      of the last item in the row
+    </p>
+    <p>02:45: As soon as we create a project in wavemaker.</p>
+    <p>02:48: It creates a host of files behind the scene.</p>
+    <p>
+      02:51: These files are project configuration files UI related front-end
+      files service-related back-end files, etc. All these files get committed
+      and pushed on the very first creation of The Project
+    </p>
+    <p>
+      03:03: As we go further, we will be making changes to pages such as modify
+      Pages create Pages etc.
+    </p>
+    <p>
+      03:11: So we are specifically interested in the pages section within all
+      the committed files.
+    </p>
+    <p>
+      03:16: So let us go through all the files, which were created by default
+      within the pages section of the commit.
+    </p>
+    <p>
+      03:24: Here you can see the files related to a page of type partial in a
+      folder called common like common dot CSS and so on.
+    </p>
+    <p>03:32: Here we can see all the files related to the Login page.</p>
+    <p>
+      03:37: On the creation of a project in wavemaker. It Creates a page by
+      default, called the main page. And here you can see all the files, related
+      to the main page in the main folder.
+    </p>
+    <p>03:49: Other pages created are, footer, header, Etc.</p>
+    <p>
+      03:54: Now let us go visit the commit history space where files have been
+      added or modified and committed.
+    </p>
+    <p>
+      04:00: What we are trying to do here is observe how the VCS were spaces UI
+      presents the differences between the two versions of the same file before
+      and after the commit.
+    </p>
+    <p>
+      04:12: Here, we see the commit history list. The most recent at the top.
+    </p>
+    <p>
+      04:17: On the rightmost side of each row is a call to action called "View
+      Changes".
+    </p>
+    <p>
+      04:22: Let us go to the latest commit and view the interface of how the
+      changes are presented.
+    </p>
+    <p>
+      04:28: At the very top we see the commit ID followed by the timestamp and
+      author.
+    </p>
+    <p>
+      04:33: And then there is a listed table of all files, either modified
+      added or deleted if present.
+    </p>
+    <p>
+      04:40: On the right end of each row is a icon button that will take us to
+      the actual changes of that particular file. Let's view one.
+    </p>
+    <p>04:47: I am selecting the employee dot HTML file.</p>
+    <p>
+      04:50: This is a newly added file and hence the previous server version
+      shows blank and the content of the committed version is shown on the
+      right.
+    </p>
+    <p>
+      05:11: Let's see what the difference shows in the committed version in
+      line 29 a new object called Go to page. Employee got inserted and this
+      means a new page navigation variable for the newly created employee page.
+      Got added.
+    </p>
+    <p>05:24: this is a 10 line insertion</p>
+    <p>
+      05:30: No let us go checkout some files that have changes to existing
+      lines of code. For that, I would like to select the second commit from
+      top, which has the commit message, Modified left nav and header.
+    </p>
+    <p>
+      05:41: As you can see, there are two files here that were modified in this
+      commit.
+    </p>
+    <p>05:45: header dot HTML and left nav dot HTML</p>
+    <p>05:49: let us first checkout the header.HTML file.</p>
+    <p>
+      05:54: In the server version of the file we see some red highlighting.
+    </p>
+    <p>
+      05:57: For example in line 7 the value top right is highlighted in red and
+      correspondingly in the committed version of the file. We see it has been
+      replaced by the value start and this has been highlighted as Green
+    </p>
+    <p>
+      06:11: now red highlighting means an omission and green highlighting means
+      an addition.
+    </p>
+    <p>
+      06:18: Similarly, let's go visit the changes of the left nav dot HTML
+      file.
+    </p>
+    <p>
+      06:24: We see the same pattern of suggesting red highlighting as a
+      mission.
+    </p>
+    <p>
+      06:28: Here we see the entire lines of code from the second to sixth liner
+      emitted.
+    </p>
+    <p>06:33: Let us revisit the pull menu.</p>
+    <p>
+      06:39: If you recall we have encountered this prompt before so I am
+      clicking okay to pull changes from remote.
+    </p>
+    <p>
+      06:46: So my changes were stashed and changes were pulled from remote and
+      now it will try and apply my changes on top.
+    </p>
+    <p>06:54: If you recall I created a page called employee.</p>
+    <p>
+      06:59: another team's member made changes to that Pages page title and
+      committed
+    </p>
+    <p>
+      07:03: I too have made changes to the page title so you can see here. We
+      have encountered emerge conflict.
+    </p>
+    <p>07:10: Now let us see how it can be resolved.</p>
+    <p>
+      07:12: What we see here, are three options, "Apply Local", meaning discard
+      changes from Remote and override with my local changes.
+    </p>
+    <p>
+      07:21: The 2nd option is "Apply Remote", meaning override local changes
+      with changes from remote.
+    </p>
+    <p>
+      07:27: The third and last option is "Resolve conflict" which means,
+      manually edit the merged file and apply.
+    </p>
+    <p>07:34: let us go through the rest of this UI</p>
+    <p>07:36: on the left menu we see two grouping filters category named as</p>
+    <p>07:42: all others and pages</p>
+    <p>
+      07:45: Since we have only one file that has conflict we see the count of
+      all and pages as one.
+    </p>
+    <p>
+      07:51: The next grouping is change type and we see there are a total of 6
+      files with changes.
+    </p>
+    <p>07:58: count of files with changes from both local and remote is one</p>
+    <p>
+      08:02: total files with changes in the local R3 and remote files with
+      changes are 4 the main content area has two tabs review merge that gives a
+      list of files with conflicts.
+    </p>
+    <p>
+      08:15: The other TAB called resolve conflict opens up the files with
+      conflict in the diff format one by one.
+    </p>
+    <p>
+      08:22: Here I am chosen to go with the resolve conflict button on the
+      rightmost side of each files row. This gives me control to review and
+      resolve conflict manually by editing the merged file.
+    </p>
+    <p>
+      08:34: So, I am hitting the edit button here, to go and manually edit the
+      file.
+    </p>
+    <p>
+      08:38: We are presented with the three, split windows UI. On the left is
+      the Remote server file. On the right is the local file, and in the middle
+      is the merged file. The place where the conflict exists, is highlighted
+      red.
+    </p>
+    <p>08:52: Let us see the situation here.</p>
+    <p>
+      08:54: The caption attribute on line number 6 is where the conflict
+      resides. The remote file has the value, Employee Listing, And the local
+      file has the value as, Employee List.
+    </p>
+    <p>09:07: And I want the value to be, Employee List, like the local.</p>
+    <p>
+      09:11: I can do this in three ways, discard remote, or take local, or
+      manually edit the merged file and make the value as, Employee List.
+    </p>
+    <p>
+      09:21: So I go to the merge result window and Manually edit the caption
+      value as Employee List
+    </p>
+    <p>
+      09:32: Since this was the only conflict, I am going ahead and hitting on
+      the apply button here.
+    </p>
+    <p>
+      09:36: So we are left with no files that has conflicts. and this prompt
+      asks me to reload the project.
+    </p>
+    <p>
+      09:43: We must take note here, that files which had no conflicts are
+      pulled in, if from remote, and applied if from local.
+    </p>
+    <p>
+      09:50: So we see that, as expected both the tabs are devoid of any files
+      with conflict.
+    </p>
+    <p>
+      10:04: let us go to the filter called, All, to see all the changed files
+      list. and we can see here that only one file had conflicts and it is green
+      now, which means it has been resolved
+    </p>
+    <p>
+      10:16: we can go and view how we resolved it by clicking on this edit
+      button here.
+    </p>
+    <p>
+      10:22: So since, everything looks good here. I want to finish the merge
+      and move on. Hitting ok for this prompt here.
+    </p>
+    <p>10:29: And the project reloads.</p>
+    <p>
+      10:34: There is one more menu, we said, we will revisit, once we have
+      local changes. And that is, View Changes.
+    </p>
+    <p>10:42: So let's see,</p>
+    <p>10:43: how does the view changes UI looks like.</p>
+    <p>
+      10:46: So this dialogue structurally lists down all the files which are
+      changed locally.
+    </p>
+    <p>10:50: There are two folders and one file in the root directory</p>
+    <p>
+      10:54: So in the List of files, we can visit any files, and compare to the
+      files in the remote.
+    </p>
+    <p>11:10: And that's about it with the View changes menu.</p>
+    <p>11:14: Let's visit the last Menu, that is, Push to External Repo.</p>
+    <p>
+      11:17: we are presented with this simple UI where wavemaker provides us
+      the settings to set up our project with an external Repo
+    </p>
+    <p>
+      11:25: this enables us to pull and push code directly to an external
+      repository that we might own.
+    </p>
+    <p>11:31: The first option is github.</p>
+    <p>
+      11:33: This is a form with four Fields we need to provide the data for the
+      respective github account and hit export.
+    </p>
+    <p>11:39: This will set up the project directly with the github account.</p>
+    <p>
+      11:43: The same goes with Bit bucket. If you own a Bitbucket account, you
+      can set up this project directly with your Bitbucket account
+    </p>
+    <p>11:50: If you have a Git Repo account, set it up here.</p>
+    <p>
+      11:56: So that was all, you need to know to set up your WaveMaker project
+      to your External repo.
+    </p>
+    <p>
+      12:01: I hope this walkthrough adequately equipped you with the knowledge
+      of the VCS manager of wavemaker. You have learned how to pull and push
+      code how to view your changes and compared against files on the remote how
+      to resolve conflict if required
+    </p>
+    <p>
+      12:16: and most of all how to work collaboratively with fellow teammates
+      on the same project.
+    </p>
+  </div>
+
+  </AcademyCard>
+
+

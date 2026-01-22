@@ -63,11 +63,11 @@ security.general.csp.policy=script-src 'self'; style-src 'self' 'nonce-${NONCE_V
 ```
 :::
 
-## ${NONCE_VALUE}
+## $\{NONCE_VALUE}
 
-### What is ${NONCE_VALUE}
+### What is $\{NONCE_VALUE}`
 
-If you notice, an additional keyword is mentioned against the style-src directive, nonce-${NONCE_VALUE}. This is a placeholder for the WaveMaker backend to generate a random nonce value and supply the same to the browser on every page refresh. Without this, widgets based on specific 3rd party libs like nvd3, ngx-bs, etc. will not work properly.
+If you notice, an additional keyword is mentioned against the style-src directive, nonce-$\{NONCE_VALUE}. This is a placeholder for the WaveMaker backend to generate a random nonce value and supply the same to the browser on every page refresh. Without this, widgets based on specific 3rd party libs like nvd3, ngx-bs, etc. will not work properly.
 
 ### How it works
 

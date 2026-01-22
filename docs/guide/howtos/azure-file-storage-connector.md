@@ -33,7 +33,7 @@ The process shows how to upload, download or delete file in storage account:
 
 ## Step 2: Configure azurefilestorage properties in profiles
 1. By default externalized connector properties are added in the project profiles Know More.
-2. Connector externalized properties are prefixed with **connector.${connectorName}**
+2. Connector externalized properties are prefixed with **connector.$\{connectorName}**
 
 `
 connector.azurefilestorage.default.azure.connectionString=

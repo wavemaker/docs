@@ -19,7 +19,7 @@ Image: deploymentProfile-1.png
 
 We do not recommend fetching large number of records in a single call from server during development mode i.e., run-mode of the app for optimized performance. However, in case you would like to view the changes in the select widget in run mode, please follow the approach below:
 
-1. Open File explorer --> <project_name> --> profiles --> development.properties file. 2. Set db.datbaseName.maxPageSize to the required number.
+1. Open File explorer --> `<project_name>` --> profiles --> development.properties file. 2. Set db.datbaseName.maxPageSize to the required number.
 
 Image: developmentprofile.png**Disclaimer:** It's not advised to change the number of records from development.properties file. **Recommendation:** It's recommended to use search widget with autocomplete instead of select widget.
 

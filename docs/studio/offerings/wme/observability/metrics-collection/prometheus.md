@@ -1,6 +1,6 @@
 ---
 title: "Prometheus"
-last_update: { author: "Author Name" }
+last_update: { author: "Krishna Rao Chintu" }
 id: "prometheus"
 sidebar_label: "Prometheus"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Kibana"
-last_update: { author: "Author Name" }
+last_update: { author: "Krishna Rao Chintu" }
 id: "kibana"
 sidebar_label: "Kibana"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Upgrade Prerequisites"
-last_update: { author: "Author Name" }
+last_update: { author: "Krishna Rao Chintu" }
 id: "upgrade-prerequisites"
 sidebar_label: "Upgrade Prerequisites"
 ---

@@ -20,10 +20,10 @@ The shared _PosterWidget_ uses [OMDB](http://www.omdbapi.com/) API to fetch reso
 :::
  
 ## Convert Angular Component into Prefabs
-Angular Framework recommends <a href="https://angular.io/guide/elements" target="_blank">**Angular Elements**</a> to export its components as Web Componenets. The <a href="https://angular.io/guide/elements#transforming-components-to-custom-elements" target="_blank"> documentation </a> covers the process in detail with sample <a href="https://angular.io/guide/elements#example-a-popup-service" target="_blank"> code </a>as well. 
+Angular Framework recommends [**Angular Elements**](https://angular.io/guide/elements) to export its components as Web Componenets. The [documentation](https://angular.io/guide/elements#transforming-components-to-custom-elements) covers the process in detail with sample [code](https://angular.io/guide/elements#example-a-popup-service) as well. 
 
 ### Sample Angular Component 
-For this demonstration we will use a `PosterWidget` Component developed with Angular version 9. The code for the component can be found in the <a target="_blank" href="https://github.com/subodhkumarWM/WebComponent-Angular-9">Github repository</a>. The repo has the Angular elements configured for the project. So, on building it generates Web Component artefacts for the `PosterWidget` angular component. 
+For this demonstration we will use a `PosterWidget` Component developed with Angular version 9. The code for the component can be found in the [Github repository](https://github.com/subodhkumarWM/WebComponent-Angular-9). The repo has the Angular elements configured for the project. So, on building it generates Web Component artefacts for the `PosterWidget` angular component. 
 
 However, you can download the artefacts directly from here & continue with the rest of the steps. The artefact is a zip file & on extracting it provides following files,
 * polyfills-*.js
@@ -147,7 +147,7 @@ Image: howto_prefab_wc_09
 Unlike Angular, currently there is no official support from React to develop Web Components. However, there are several community backed projects which can help in achieving it. Alternatively, developers can build Custom Element wrapper classes over existing react components as well. Lots of community blogs are available for both approaches which can be referred.
 
 ### Sample React Component
-For this demonstration we will use a `PosterWidget` Component developed with React Version 17. The sample React component is converted into a Web Component using Custom Element Wrapper approach in which each lifecycle event of React is mapped to corresponding event in CustomElement. The code for the component can be found in the <a target="_blank" href="https://github.com/subodhkumarWM/WebComponent-React">Github repository</a>. The repo has all the details to build & generate  Web Component artefacts for the `PosterWidget` React component. 
+For this demonstration we will use a `PosterWidget` Component developed with React Version 17. The sample React component is converted into a Web Component using Custom Element Wrapper approach in which each lifecycle event of React is mapped to corresponding event in CustomElement. The code for the component can be found in the [Github repository](https://github.com/subodhkumarWM/WebComponent-React). The repo has all the details to build & generate  Web Component artefacts for the `PosterWidget` React component. 
 
 However, you can download the artefacts directly from here & continue with the rest of the steps. The artefact is a zip file & on extracting it provides following files,
 * `react-poster-widget.min.js`

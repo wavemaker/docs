@@ -1,0 +1,70 @@
+---
+last_update: { author: "Priyanka Bhadri" }
+
+---
+
+# Security Variables 
+
+WaveMaker automatically creates a **variable** and **two actions** whenever authentication is enabled. These integrate with the default **login page** and **logout button** in the top navigation. Even if you design a custom login page, these variables and actions can be bound to handle authentication seamlessly.
+
+This page provides a unified overview for quick reference.
+
+---
+
+## 1. `loggedInUser`
+
+- **Purpose:** Holds the details of the currently authenticated user.  
+- **Contents:** Populated based on the user profile fields defined in your security provider.  
+- **Usage:** Can be used to display user information, control page access, or drive conditional UI elements.
+
+---
+
+## 2. `loginAction`
+
+- **Purpose:** Handles the login process by capturing user input and performing authentication.  
+- **Parameters:**
+  - `username` – the user’s login ID
+  - `password` – the user’s password
+  - `rememberMe` – optional, retains session details across visits
+
+- **Key Properties:**
+  - `useDefaultSuccessHandler`:  
+    Determines whether the default post-login behavior (e.g., landing page selection) is applied.  
+    :::note
+    To override the default behavior, uncheck `useDefaultSuccessHandler` and implement a custom **onSuccess** event.
+    :::
+
+- **Remember Me:**  
+  - Retains the session in a persistent cookie.
+  - Default validity: **15 days** or until the user signs out, whichever occurs first.  
+  :::note
+  During testing, restarting the application creates a new session, so the cookie will not persist.
+  :::
+
+- **Functionality:**  
+  - Validates `username` and `password` against the configured security provider.
+  - Establishes a secure session for the authenticated user.
+
+For more details, see [Remember Me](#).
+
+---
+
+## 3. `logoutAction`
+
+- **Purpose:** Handles user sign-out from the application.  
+- **Redirect To:**  
+  Specifies the page to navigate to after logout. By default, this is set to the login page but can be customized to any application page.  
+- **Functionality:**  
+  - Clears the session.
+  - Ensures the user is no longer authenticated.
+
+---
+
+## Usage Notes
+
+- These variables and actions are **server-side enforced**, ensuring secure authentication and authorization.  
+- They can be used with **default widgets** or **custom login/logout pages**.  
+- Together with features like **Remember Me** and **Concurrent Sessions**, they allow you to create secure, scalable, and user-friendly authentication flows.
+
+---
+

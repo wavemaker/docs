@@ -4,22 +4,435 @@ last_update: { author: "Shahnawaz Ahmed" }
 
 # Security Configurator
 
-The Security Configurator in WaveMaker is a centralized workspace designed to help you define, manage, 
-and fine-tune the security of your application. It brings together all major security-related
-configurations, ranging from transport-level security and safeguards to authentication, authorization, 
-and role-based access control, into a single, intuitive interface.
+The Security Configurator in WaveMaker is a centralized workspace that lets you define, manage, and 
+fine-tune all aspects of application security from a single, intuitive interface—covering everything
+ from secure communication to access control.
 
-This configurator allows you to visually explore and configure how your application handles secure
-communication, protects against common web vulnerabilities, integrates with identity providers,
-and controls access to pages, services, and prefabs. It presents a structured and cohesive view of
-application security.
 
-To help you become familiar with this workspace, we recommend watching the **[Security Configurator 
-Walkthrough video](https://app.guidde.com/share/playbooks/fuAUQXoo4xSoZ8Nuo5VbD2?origin=UHEVgZL3MXReLMMFtXRKKLRtXmG3)**. This video provides a guided tour of the UI, explaining where each configuration 
-lives and how the different sections relate to one another. It is the ideal starting point before you 
-begin configuring security for your application.
+- Centralized management of application security settings
 
-:::info
-Watch the **[walkthrough video](https://app.guidde.com/share/playbooks/fuAUQXoo4xSoZ8Nuo5VbD2?origin=UHEVgZL3MXReLMMFtXRKKLRtXmG3)** to explore the Security Configurator UI and understand its structure and 
-capabilities.
-:::
+- Configure authentication, authorization, and role-based access control
+
+- Protect applications against common web vulnerabilities
+
+- Integrate with external identity providers
+
+- Control access to pages, services, and prefabs visually
+
+<AcademyCard
+  title="VCS Manager"
+  
+  academyLink="https://next-academy.wavemaker.com/Walkthrough?wm=4D1920DAA4"
+>
+<>
+  <div style={{ position: "relative", paddingBottom: "56.25%" }}>
+    <iframe
+      style={{
+        width: "100%",
+        height: "100%",
+        position: "absolute",
+        left: 0,
+        top: 0,
+        borderRadius: 10
+      }}
+      src="https://embed.app.guidde.com/playbooks/fuAUQXoo4xSoZ8Nuo5VbD2?mode=videoOnly"
+      title="Security Configurator"
+      frameBorder={0}
+      referrerPolicy="unsafe-url"
+      allowFullScreen="true"
+      allow="clipboard-write"
+      sandbox="allow-popups allow-popups-to-escape-sandbox allow-scripts allow-forms allow-same-origin allow-presentation"
+    />
+  </div>
+  <div style={{ display: "none" }}>
+    <p>
+      00:00: In this video we are walking you through the Security Configuration
+      Workspace. We will go through each and every security configuration in
+      details and where and how it is done
+    </p>
+    <p>
+      00:10: You will learn how to configure key security settings to ensure
+      proper access control and system safeguards.
+    </p>
+    <p>
+      00:17: To access the main security configuration workspace click on the
+      settings icon in the left nav.
+    </p>
+    <p>
+      00:23: Click the Security tab to open the security configuration options
+      available in the workspace.
+    </p>
+    <p>
+      00:28: There are two tabs here, General and Authentication and
+      Authorisation.
+    </p>
+    <p>
+      00:33: In general are present the configuration of SSL, Safeguards and
+      Trust store.
+    </p>
+    <p>
+      00:39: You can turn on Secure Socket layer(SSL) here and provide your port
+      number to enable secure communications
+    </p>
+    <p>
+      00:46: Now let's visit the Safeguard tab. Here you can configure XSS,
+      X-frame, CORS, and Allowed Hosts, settings.
+    </p>
+    <p>
+      00:55: XSS or Cross Site Scripting, is a web security vulnerability where
+      an attacker manages to inject malicious JavaScript into a website, and
+      that script runs in the victim's browser as if it were trusted site
+    </p>
+    <p>
+      01:08: code. In XSS settings you will find three options, None, Encode,
+      and Whitelist.
+    </p>
+    <p>
+      01:14: You can choose based on your requirement and fill in the required
+      details.
+    </p>
+    <p>
+      01:19: When you select Encode strategy for XSS, you have this three
+      options, Input, Output, or Both, in the Sanitisation layer.
+    </p>
+    <p>
+      01:27: Encoding neutralises dangerous special characters into encoded
+      string so that the browser treats them as HTML code, which otherwise could
+      have been part of malicious scripting code.
+    </p>
+    <p>
+      01:38: Whitelist validation is allowing only known good-input, and,
+      rejecting everything else. When the strategy is selected as whitelist, you
+      can choose the policy to be manual or imported. And then you have all the
+      Tag rules options to choose from
+    </p>
+    <p>
+      01:53: X-frame options tells the browser whether your web page is allowed
+      to be embedded inside an iframe on another site.
+    </p>
+    <p>
+      02:00: Its main purpose is to prevent clickjacking attacks. Let us explore
+      the configuration options here.
+    </p>
+    <p>
+      02:07: x frame configuration options are deny same Origin or allow from
+    </p>
+    <p>
+      02:12: if you choose same origin only urls from only your domain will be
+      allowed.
+    </p>
+    <p>
+      02:18: And if you chose allow from it'll let you enter the domains that
+      you want to allow from.
+    </p>
+    <p>
+      02:24: Let's move on to the cross Origin resource sharing cause
+      configuration.
+    </p>
+    <p>
+      02:29: If we turn on allow credentials toggle, it allows user to include
+      credentials like cookies and auth data to be sent with requests.
+    </p>
+    <p>02:37: We can also configure and set path entries.</p>
+    <p>
+      02:40: This takes comma separated domains and allows them. The default is
+      to allow any hostname.
+    </p>
+    <p>
+      02:46: Now, let's navigate to Trust store configurations, this is where we
+      configure trusted certificates,
+    </p>
+    <p>02:53: used to validate server certificates for external API calls.</p>
+    <p>
+      02:57: The first thing to do here is set the type, 4 options, Disable,
+      System Trust store, Custom Trust store, and Both.
+    </p>
+    <p>
+      03:06: System trust store uses the default java trust store, the custom
+      trust store uses the provided Custom trust store.
+    </p>
+    <p>03:14: and the fourth is both.</p>
+    <p>
+      03:17: When we select "system trust store", we need to choose the App
+      Trust store file type. And based on what we select, we have to upload the
+      respective file and provide the Trust store password.
+    </p>
+    <p>
+      03:29: The file types allowed for upload are, JKS, PKCS-12, and JC-E-K-S.
+    </p>
+    <p>
+      03:36: Mutual tls configuration is a setup where both sides of a
+      connection or authenticate each other using tls certificates.
+    </p>
+    <p>
+      03:44: The server validates client and the client validates the server, so
+      let us see what we have in store here in mutual tls.
+    </p>
+    <p>
+      03:52: So when mtl's is turned on we have a bunch of key store values
+      configuration similar to trust store configuration.
+    </p>
+    <p>
+      03:59: We first chose the key store file type and then upload the
+      respective file and then provide the password.
+    </p>
+    <p>04:05: and here as well the file types are jk's pkcs12 and JC ek's</p>
+    <p>
+      04:12: Trust store hostname verification is a tls security. Check that
+      ensures the server you connected to is actually the server you intended to
+      connect to not just any server with a valid certificate so in this last
+      section of trust store configuration TAB we enable or disable. Just that
+    </p>
+    <p>
+      04:32: With this we have visited all the possible configuration of the
+      general tab.
+    </p>
+    <p>
+      04:37: Let us move to the next tab, that is, Authentication and
+      authorisation.
+    </p>
+    <p>04:43: By default we see that Authentication is turned off.</p>
+    <p>04:47: And a Warning message makes it abundantly clear.</p>
+    <p>
+      04:50: This also means that our application needs no sign in and anybody
+      can just hit the url and use the application.
+    </p>
+    <p>04:57: Ok, let us enable authentication.</p>
+    <p>
+      05:00: As soon as we do that, we see a host of configuration settings open
+      up. Let us go through them one by one.
+    </p>
+    <p>
+      05:07: This enablement also means that any user who tried to access the
+      application, needs to Authenticate himself with some sort of credentials
+      like username and password.
+    </p>
+    <p>
+      05:17: Among the settings that were exposed we see settings for
+      Authentication and Authorisation.
+    </p>
+    <p>
+      05:23: And there is a message that says, "No Security Providers Available.
+      Click here to add".
+    </p>
+    <p>
+      05:29: We can either use that Message or Click the blue plus button
+      besides the Security providers tab.
+    </p>
+    <p>
+      05:35: This action introduces the select dropdown that has the list of
+      Security providers to choose from
+    </p>
+    <p>
+      05:42: The options provided in the drop-down are demo database ldap active
+      directory Cass Samuel open ID custom jw's and opaque.
+    </p>
+    <p>
+      05:54: Let us select each of them one by one and explore the settings
+      provided.
+    </p>
+    <p>
+      05:59: The first option was demo and on selecting it. We can see that wave
+      maker has created two dummy roles admin and user and has provided dummy
+      credentials for the two users to authenticate themselves.
+    </p>
+    <p>
+      06:13: This demo provider is just to give a simulation of how
+      authentication and authorization feels like.
+    </p>
+    <p>
+      06:20: Let us chose database now. On choosing database as the security
+      provider we see settings that asks for selecting the database that will
+      provide Authentications,
+    </p>
+    <p>
+      06:30: selecting the user table that holds the Authentication credentials
+      for all users, then various columns for the user and the role mapping
+    </p>
+    <p>
+      06:38: Now let us select LDAP. it asks for the LDAP server URL. Then it
+      asks for Manager Distinguished name and password.
+    </p>
+    <p>
+      06:47: And it also asks for various LDAP specific User fields and Role
+      mapping fields, if enabled
+    </p>
+    <p>06:53: Next let us go to active directory as security provider.</p>
+    <p>
+      06:57: We see settings similar to ldap here. It asks for active directory
+      domain and route distinguished.
+    </p>
+    <p>
+      07:04: And in User and Role mapping sections we see Active directory
+      specific fields.
+    </p>
+    <p>
+      07:09: Now, let us move on to the next provider CAS. It stands for Central
+      Authentication Service, which is a Single Sign-On protocol.
+    </p>
+    <p>
+      07:17: As you can see, CAS comes with its own set of configuration fields,
+      and we will go through each of them one by one.
+    </p>
+    <p>
+      07:25: The first field is the Server URL, which represents the context
+      path of the CAS server.
+    </p>
+    <p>07:32: Next is the Login URL.</p>
+    <p>
+      07:34: This is the login path relative to the server URL, and it specifies
+      where the login page will be displayed.
+    </p>
+    <p>
+      07:42: The third field is the Logout URL. This is the logout path relative
+      to the server URL, and it defines where the logout action needs to be
+      invoked.
+    </p>
+    <p>
+      07:53: Following that is the Validation URL, which is the endpoint where
+      service ticket validation takes place.
+    </p>
+    <p>08:00: The next field is the Service parameter name.</p>
+    <p>
+      08:03: This configures the request parameter that the system should look
+      for when sending a request to CAS.
+    </p>
+    <p>
+      08:09: Finally, the last configuration field in CAS is the Ticket
+      parameter name.
+    </p>
+    <p>
+      08:15: This configures the request parameter that is checked when
+      attempting to determine whether a CAS ticket has been sent from the
+      server.
+    </p>
+    <p>
+      08:21: After all this configurations are put in place we can test it with
+      the help of the proded Test Connection button.
+    </p>
+    <p>
+      08:27: Next is the Role mapping which can be provided either by the CAS
+      server or by a database table.
+    </p>
+    <p>08:34: Next we move on to sam'l.</p>
+    <p>
+      08:36: Sam'l is an xml-based open standard used for single sign-on, and it
+      stands for security assertion markup language. Let us see what are its
+      configuration settings.
+    </p>
+    <p>
+      08:46: metadata URL this URL exposes the service providers sam'l metadata
+      which the identity provider users to retrieve configuration details such
+      as endpoints certificates and supported by bindings
+    </p>
+    <p>09:01: audience URL</p>
+    <p>
+      09:03: this URL uniquely identifies the service provider and is used by
+      the identity provider to ensure that the sampler session is issued for the
+      intended application.
+    </p>
+    <p>09:13: single sign-on URL</p>
+    <p>
+      09:16: this is the end point on the service provider where the identity
+      provider sends the sound response after successful user authentication.
+    </p>
+    <p>09:25: single sign out URL</p>
+    <p>
+      09:28: this is the endpoint on the service provider that the identity
+      provider calls to initiate logout and terminate the user's session across
+      systems.
+    </p>
+    <p>
+      09:38: Next section is the Identity provider settings. this is a toggle
+      between the Identity provider metadata url or to upload the metadata file.
+    </p>
+    <p>
+      09:47: Let us now visit the Login Configuration section. We can configure
+      the app's login behavior by choosing Page or Dialog.
+    </p>
+    <p>
+      09:55: Select Page to handle login on a dedicated page, where users are
+      always redirected on app load.Select Dialog to prompt login through a
+      dialog.
+    </p>
+    <p>10:04: The same configuration for the case when session times out.</p>
+    <p>
+      10:08: The next field is the session timeout, wher it takes a number in
+      minutes.
+    </p>
+    <p>
+      10:13: So the following field is Cookie Max age. This field also takes a
+      number in minutes. A positive value is the time in minutes till when the
+      cookie persists after browser closes. And a negative value means cookie is
+      removed on browser close.
+    </p>
+    <p>10:28: The next field is for Maximum Concurrent Sessions, by a user.</p>
+    <p>
+      10:32: When the maximum session limit is reached, the least recently used
+      session is expired.
+    </p>
+    <p>
+      10:37: Setting the value to -1 makes it no limit for number of sessions,
+      or to a positive integer to limit them.
+    </p>
+    <p>
+      10:44: The next configuration section is Session persistence. The types
+      allowed are in memory, and various database types and it's credentials
+    </p>
+    <p>
+      10:53: The last tab under authentication is csrf or cross-site request
+      forgery.
+    </p>
+    <p>
+      11:00: Csrf is a security attack where a malicious website tricks are
+      logged in users browser into sending an unauthorized request to a trusted
+      website.
+    </p>
+    <p>11:09: here the form asks for token name</p>
+    <p>11:12: first table we encounter an authorization is April's</p>
+    <p>
+      11:15: the UI provides means to add new app roles here and which pages
+      they have access to
+    </p>
+    <p>
+      11:21: and the roles that are already there in the service providers are
+      listed here based on the roles. We can also configure the respective
+      landing page.
+    </p>
+    <p>
+      11:30: In Authorisation the second tab is Pages. This is a list of all the
+      pages in the application.
+    </p>
+    <p>11:36: and against each of them is the configurable access level.</p>
+    <p>
+      11:41: For example, for the dashboard page, access can be given to either
+      everyone or to only authenticated user.
+    </p>
+    <p>11:48: If Authenticated then we can do multi choosing of user roles.</p>
+    <p>
+      11:52: The services tab under Authorisation list all the service providers
+      along with the services, in this case mostly REST endpoints.
+    </p>
+    <p>
+      12:01: Each of this end points' access level can be configured just like
+      pages Access level that we just saw.
+    </p>
+    <p>12:08: Last but not the least is the Prefab tab.</p>
+    <p>
+      12:11: This tab Lists all prefabs used in an application. And here also we
+      can configure the Access level of each prefab based on the user role if
+      Authenticated.
+    </p>
+    <p>
+      12:22: With this, we conclude this walkthrough video. We hope you are now
+      familiar with the Security Configuration Workspace and can confidently
+      configure application security based on your app's specific security
+      requirements.
+    </p>
+  </div>
+</>
+
+
+  
+
+  </AcademyCard>

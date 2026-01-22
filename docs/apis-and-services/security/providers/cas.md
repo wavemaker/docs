@@ -196,6 +196,7 @@ For more details on environment-specific configurations, refer to the **[Deploym
 
 ```properties
 # Security Configuration (CAS)
+
 security.activeProviders=CAS
 security.enabled=true
 security.providers.cas.serverUrl=https://mydomain.com:8080/cas

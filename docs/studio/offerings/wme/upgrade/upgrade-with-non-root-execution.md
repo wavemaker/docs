@@ -1,6 +1,6 @@
 ---
 title: "Upgrade with Non Root WME Execution"
-last_update: { author: "Author Name" }
+last_update: { author: "Krishna Rao Chintu" }
 id: "upgrade-non-root-execution"
 sidebar_label: "Upgrade Non Root WME Execution"
 ---

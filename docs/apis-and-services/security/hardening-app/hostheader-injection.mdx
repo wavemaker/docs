@@ -1,41 +1,54 @@
 ---
-last_update: { author: "Shahnawaz Ahmed" }
+last_update: { author: "Priyanka Bhadri" }
 ---
 
 # Prevent HostHeader Injection
----
-At WaveMaker, we continuously bring ways to make applications more secure by ensuring the way applications are built and that it stands a better chance of not being breached.
 
-Handling HTTP host header in an unsafe way can lead to nasty host header attacks. These vulnerabilities typically occur due to our wrong assumption that the header is not user-controllable. We end up trusting Host headers, resulting in poor validation or escaping of values.
+WaveMaker emphasizes building secure applications that are resilient against common web vulnerabilities, including HostHeader attacks.  
+
+Improper handling of the HTTP `Host` header can lead to serious security issues. These attacks often occur because applications **assume the Host header is safe and unmodifiable**, leading to insufficient validation or escaping.
+
+---
 
 ## Potential Risks
 
-Typically, an attacker injects a harmful payload into host header, which can manipulate server-side behavior. Therefore, Host header attacks can lead to:
+Attackers can inject malicious payloads into the Host header, which may result in:
 
-- Web-cache poisoning
-- Password reset poisoning
+- **Web-cache poisoning**  
+- **Password reset poisoning**  
 
-For more information, see [OWASP in WaveMaker](#).
+For additional details, refer to [OWASP in WaveMaker](owasp.mdx).
+
+---
 
 ## Preventing HostHeader Injection
 
-In reality, Hostheader is user-controllable and can be manipulated by using tools like Burp Proxy. Therefore, it is necessary to:
+Since the Host header is **user-controllable** and can be manipulated using tools like Burp Proxy, it is critical to:
 
-- Validate the Hostheader
-- Whitelist permitted hostname or domains
+- **Validate the Host header** in all incoming requests  
+- **Whitelist permitted hostnames or domains**
 
-## How WaveMaker Prevents HostHeader Injection
+---
 
-Hostnames are domain names through which you run your application. You can specify the Hostnames where the WaveMaker application is deployed to prevent HTTP Host header injection attacks. 
+## How WaveMaker Mitigates HostHeader Injection
 
-Here you can determine which Hostnames should be allowed. The platform will reject HTTP requests with different Host header values than the specified list. The default behavior is to allow any hostname if not configured.
+WaveMaker allows you to specify which hostnames are permitted for your application. Requests with a `Host` header **not included in the allowed list will be rejected**.  
 
-## How to configure Allowed Hosts
+- By default, if no hostnames are configured, **all hostnames are allowed**.  
+- Configuring allowed hosts ensures that only requests with legitimate host headers are processed, preventing malicious injections.
 
-In a WaveMaker application, the list of allowed Hostnames can be configured from **Security** -> **Safeguards** dialog, as shown below.
+---
 
-- In the Safeguards dialog, go to **Allowed Hosts** section,
-- Add the permitted hostnames or domains in the **Hosts** field and click **Save**.
+## Configuring Allowed Hosts in WaveMaker
 
-{/*[![hostheader-injection](/learn/assets/allowed-hosts.png)](/learn/assets/allowed-hosts.png)*/}
+To specify allowed hostnames:
 
+1. Open your WaveMaker application.  
+2. Navigate to **Security** → **Safeguards**.  
+3. In the **Allowed Hosts** section, add the permitted hostnames or domains in the **Hosts** field.  
+4. Click **Save** to apply the changes.  
+
+This configuration ensures your application only accepts requests from trusted domains, mitigating HostHeader injection attacks.
+
+
+![Host Injection](../assets/host.png)
