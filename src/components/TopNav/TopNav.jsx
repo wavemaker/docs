@@ -12,7 +12,7 @@ const topNavData = [
   {
     id: 2,
     label: "Design System",
-    firstItemLink: "/docs/design-system/overview",
+    firstItemLink: "/docs/design-system/concepts/overview",
     rootLink: "/docs/design-system/",
   },
   {

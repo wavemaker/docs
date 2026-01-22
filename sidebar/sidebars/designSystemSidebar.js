@@ -1,39 +1,23 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarConfig} */
 export default [
-  {
-    type: 'doc',
-    id: 'design-system/overview',
-  },
-  {
-    type: 'category',
-    label: 'concept',
-    collapsible: true,
-    collapsed: true,
-    items: [
-      {
-        type: 'doc',
-        id: 'design-system/concept/component-variants',
-      },
-      {
-        type: 'doc',
-        id: 'design-system/concept/design-tokens',
-      },
-      {
-        type: 'doc',
-        id: 'design-system/concept/designing-best-practices',
-      },
-    ],
-  },
-  {
-    type: 'category',
-    label: 'design-system-based-ui-development',
-    collapsible: true,
-    collapsed: true,
-    items: [
-      {
-        type: 'doc',
-        id: 'design-system/design-system-based-ui-development/style-workspace',
-      },
-    ],
-  },
-];
+				{
+		"type": "category",
+		"label": "Concepts",
+		"items": [
+		"design-system/concepts/overview",
+		"design-system/concepts/design-token-architecture",
+		"design-system/concepts/working-with-style-workspace",
+		"design-system/concepts/component-variants",
+		"design-system/concepts/best-practices"
+		]
+	},
+				{
+		"type": "category",
+		"label": "Autocode",
+		"items": [
+			"design-system/figma-autocode-plugin/working-with-autocode-plugin",
+			"design-system/figma-autocode-plugin/design-guidelines",
+			"design-system/figma-autocode-plugin/figma-cheat-sheet"
+		]
+		}
+	]
