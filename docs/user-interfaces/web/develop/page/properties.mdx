@@ -1,3 +1,28 @@
 ---
-last_update: { author: "Author Name" }
+last_update: { author: "Raj Kumar Reddy Abbadi" }
 ---
+# Page Properties
+
+### Cache
+By default, when a user navigates away from a page, the page instance is destroyed to free up memory and resources.
+
+When Cache is enabled, the page instance is preserved in memory instead of being deleted. This allows the application to restore the page exactly as it was when the user navigates back, including UI state, variable values, and scroll position.
+
+### Refresh Data on Attach
+When Refresh Data on Attach is enabled, all page variables configured with “Request data on page load” = true are automatically refreshed whenever the page is attached back to the view.
+
+### Page Title
+The Page Title defines the document title that is set in run mode. When the page is rendered, this value is applied as the browser’s document title (for example, shown in the browser tab or window title).
+
+### Page Params
+Pass data from one page to another page within an app by defining the Page Params. This applies to pages and partial pages. There can be many scenarios where you will need to pass data to a specific page. For example:
+
+#### How parameters work
+A typical page URL for a given app would be like this: https://www.app.com/#pagename Once the Page Param has been defined the URL changes to https://www.app.com/#pagename?param1=1¶m2=abc This URL format will allow the data to be retained on browser refresh and reload. As is evident from the above example, multiple parameters are also supported.
+
+### Validations for Page name
+When creating a page, the following naming conventions should to be followed.
+
+- The page name should contain at least one character, and it cannot be a number.
+- The page name cannot contain special characters.
+- The page name cannot start with a number.

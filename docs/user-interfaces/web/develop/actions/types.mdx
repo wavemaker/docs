@@ -1,3 +1,44 @@
 ---
-last_update: { author: "Author Name" }
+last_update: { author: "Raj Kumar Reddy Abbadi" }
 ---
+# Types of Actions
+
+## Navigation Action
+The Navigation Action in WaveMaker provides built-in navigation capabilities that enable movement between pages or views within an application. Navigation actions define how and when page transitions occur in response to events.
+```
+// Example 1: Navigate to TestPage
+Page.Actions.goToPage_TestPage.invoke();
+
+// Example 2: Navigate to TestPage with url params
+Page.Actions.goToPage_TestPage.invoke({
+     data: {
+         'param1': "param value",
+         "param2": "param value 2"
+     }
+});
+
+// Example 3: Navigate to TestPage by setting the input fields
+Var nv = Page.Actions.goToPage_TestPage;
+nv.setData({
+   'param1': "param value",
+   "param2": "param value 2"
+});
+nv.invoke();
+```
+
+## Login Action
+The Login Action in WaveMaker provides a standardized mechanism for user authentication. Automatically created when security is enabled, it integrates with the configured security provider and supports flexible customization through properties and events. By leveraging the Login Action, applications can implement secure, role-based access with minimal configuration.
+
+The Login Action exposes standard action lifecycle events, These events can be used to implement custom authentication logic, error handling, or navigation behavior.:
+- onSuccess
+- onError
+- onBeforeInvoke
+
+## Logout Action
+A Logout Action is automatically created when you implement Security in your application. You can edit the Properties and Events of the Logout Action from the Actions dialog.
+
+## Timer Action
+Timer action can be used to trigger events repeatedly at timed intervals.
+
+## Notification Action
+Notification Action is an action to show UI notifications in the app in the form of a toaster, alert or a confirmation box. It provides message capabilities, a way for the app to notify the end users. Based on the operation selected app can notify the user through an Alert/Confirm dialog or a simple toaster message. This action can be useful in cases like error handling, confirm user action, etc.

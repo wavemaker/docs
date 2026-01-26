@@ -355,13 +355,14 @@ export default [
             type: 'doc',
             id: 'user-interfaces/web/develop/page/overview',
           },
-          {
-            type: 'doc',
-            id: 'user-interfaces/web/develop/page/types',
-          },
+          // {
+          //   type: 'doc',
+          //   id: 'user-interfaces/web/develop/page/types',
+          // },
           {
             type: 'doc',
             id: 'user-interfaces/web/develop/page/properties',
+            label: 'Properties',
           },
         ],
       },
@@ -387,6 +388,31 @@ export default [
             id: 'user-interfaces/web/develop/layout-and-style/auto-layout',
             label: 'Auto Layout',
           },
+        ],
+      },
+       {
+        type: 'category',
+        label: 'Integrating with APIs',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/integrating-with-apis/overview',
+          },
+           {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/integrating-with-apis/variables',
+          },
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/integrating-with-apis/life-cycle-hooks',
+          },
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/integrating-with-apis/types',
+          },
+         
         ],
       },
       {
@@ -430,11 +456,10 @@ export default [
           }
         ],
       },
-
-      {
-        type: 'doc',
-        id: 'user-interfaces/web/develop/create-page-working-with-layouts',
-      },
+      // {
+      //   type: 'doc',
+      //   id: 'user-interfaces/web/develop/create-page-working-with-layouts',
+      // },
       {
         type: 'doc',
         id: 'user-interfaces/web/develop/styling-with-design-tokens',
@@ -443,10 +468,10 @@ export default [
         type: 'doc',
         id: 'user-interfaces/web/develop/responsive-design',
       },
-      {
-        type: 'doc',
-        id: 'user-interfaces/web/develop/ui-event-handling',
-      },
+      // {
+      //   type: 'doc',
+      //   id: 'user-interfaces/web/develop/ui-event-handling',
+      // },
       {
         type: 'doc',
         id: 'user-interfaces/web/develop/input-validations',
@@ -454,32 +479,7 @@ export default [
       {
         type: 'doc',
         id: 'user-interfaces/web/develop/state-management',
-      },
-      {
-        type: 'category',
-        label: 'Integrating with APIs',
-        collapsible: true,
-        collapsed: true,
-        items: [
-          {
-            type: 'doc',
-            id: 'user-interfaces/web/develop/integrating-with-apis/overview',
-          },
-           {
-            type: 'doc',
-            id: 'user-interfaces/web/develop/integrating-with-apis/variables',
-          },
-          {
-            type: 'doc',
-            id: 'user-interfaces/web/develop/integrating-with-apis/life-cycle-hooks',
-          },
-          {
-            type: 'doc',
-            id: 'user-interfaces/web/develop/integrating-with-apis/types',
-          },
-         
-        ],
-      },
+      }
     ],
   },
   {
