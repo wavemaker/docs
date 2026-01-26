@@ -463,6 +463,10 @@ export default [
         items: [
           {
             type: 'doc',
+            id: 'user-interfaces/web/develop/integrating-with-apis/overview',
+          },
+          {
+            type: 'doc',
             id: 'user-interfaces/web/develop/integrating-with-apis/life-cycle-hooks',
           },
           {
