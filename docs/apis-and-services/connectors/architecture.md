@@ -48,7 +48,7 @@ A Connector in WaveMaker is a reusable Java-based backend extension that enables
 
 WaveMaker provides a set of ready-to-use Connectors maintained by the community or the platform team. 
 
-You can see the full list of supported Connectors and how to use them in the Marketplace [Connectors List](https://next-marketplace.onwavemaker.com/marketplaceartifacts/124)
+You can see the full list of supported Connectors and how to use them in the Marketplace [Connectors List](https://marketplace.wavemaker.com/artifacts?name=Connectors)
 
 ![alt text](assets/connector-import-dialog.png)
 
