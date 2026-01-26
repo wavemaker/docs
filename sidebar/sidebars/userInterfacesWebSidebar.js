@@ -380,13 +380,54 @@ export default [
           {
             type: 'doc',
             id: 'user-interfaces/web/develop/layout-and-style/types',
-            label: 'types',
+            label: 'Types',
           },
           {
             type: 'doc',
             id: 'user-interfaces/web/develop/layout-and-style/auto-layout',
             label: 'Auto Layout',
           },
+        ],
+      },
+      {
+        type: 'category',
+        label: 'Event Handling',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/events/overview',
+            label: 'Overview',
+          },
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/events/variables',
+            label: 'Variables',
+          },
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/events/javascriptaccess',
+            label: 'JavaScript Access',
+          },
+        ],
+      },
+      {
+        type: 'category',
+        label: 'Actions',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/actions/overview',
+            label: 'Overview',
+          },
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/actions/types',
+            label: 'Types',
+          }
         ],
       },
 

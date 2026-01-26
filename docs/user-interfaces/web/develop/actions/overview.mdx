@@ -1,0 +1,122 @@
+---
+last_update: { author: "Raj Kumar Reddy Abbadi" }
+---
+# Overview
+
+In **WaveMaker Studio**, a page represents a complete UI view within an application. You can create **any number of pages** in an app, and each page follows a predefined layout structure that ensures consistency and reusability.
+
+### Page Layout Structure
+
+Every **WaveMaker page** is built using a well-defined layout structure that helps maintain consistency, responsiveness, and ease of development across the application. The page layout is divided into **three main sections**, each serving a specific purpose.
+
+---
+
+#### Header
+
+The **Header** section appears at the top of the page and is typically used for global or page-level information. It commonly contains:
+
+- Top navigation menus
+- User profile actions (login, logout, settings)
+- Global actions like notifications or search
+
+The header can be defined directly within a page or implemented as a **reusable partial**, allowing it to be shared across multiple pages for a consistent user experience.
+
+---
+
+#### Content
+
+The **Content** section forms the main body of the page where most user interactions occur. This section is designed to be flexible and supports complex layouts.
+
+To improve structure and usability, the content area is further divided into two parts:
+
+##### Left Panel
+
+The **Left Panel** is typically used for secondary navigation or contextual information. Common use cases include:
+
+- Navigation menus
+- Contextual tools or actions related to the page
+
+<!-- The width of the left panel can be controlled using layout properties such as `columnwidth`. Like the header, the left panel is often implemented as a reusable partial. -->
+
+##### Page Content
+
+The **Page Content** area is the primary workspace of the page. It contains the core UI components and business functionality, such as:
+
+- Layouts
+- UI Components
+- Charts and dashboards
+- Custom components
+
+This area dynamically updates based on user interactions and data bindings and usually occupies the majority of the available screen space.
+
+---
+
+#### Footer
+
+The **Footer** section appears at the bottom of the page and is generally used for supplementary or informational content, including:
+
+- Copyright information
+- Application version details
+- Legal links (Privacy Policy, Terms of Service)
+- Secondary navigation or help links
+
+Like other sections, the footer can be created as a reusable partial to ensure consistency across the application.
+
+---
+
+This structured approach allows WaveMaker applications to be modular, reusable, and easy to maintain while delivering a consistent user interface across all pages.
+
+
+By default, WaveMaker generates a standard page markup that follows this structure, which can be customized based on application requirements.
+
+### Sample Page Markup
+
+```html
+<wm-page name="page" pagetitle="My Page">
+    <wm-header content="header" name="header"></wm-header>
+    <wm-content name="content">
+        <wm-left-panel columnwidth="2" content="leftnav" name="leftpanel"></wm-left-panel>
+        <wm-page-content columnwidth="10" name="pagecontent"></wm-page-content>
+    </wm-content>
+    <wm-footer content="footer" name="footer"></wm-footer>
+</wm-page>
+
+```
+### Properties
+Each page in WaveMaker comes with configurable properties that control its behavior and lifecycle.
+
+#### Page Properties
+
+- **Cache**: Enables caching of the page to improve performance.
+
+- **Refresh Data on Attach**: Automatically refreshes bound data when the page is attached to the DOM.
+
+- **Page Title**: Sets the title of the page, which can be used for navigation and browser titles.
+
+- **Page Params**: Defines parameters that can be passed to the page for dynamic data handling.
+
+ 
+### Events
+
+WaveMaker provides lifecycle and system events at the page level, allowing you to execute custom logic when specific actions occur.
+
+#### Supported Page Events
+
+- **On Attach**: Triggered when the page is loaded and attached to the DOM.
+
+- **On Detach**: Triggered when the page is removed from the DOM.
+
+- **On Destroy**: Executed when the page instance is destroyed.
+
+- **On Orientation Change**: Triggered when the device orientation changes (mobile/tablet).
+
+- **On Resize**: Triggered when the browser window or container size changes.
+
+### Homepage Configuration
+
+By default, every WaveMaker application has a **Home Page**.
+
+- The page named **Main** is set as the homepage by default.
+- You can customize the default homepage from App Settings, Select the desired page from the Homepage dropdown.
+
+This allows flexible control over the app’s entry point without changing navigation logic.
