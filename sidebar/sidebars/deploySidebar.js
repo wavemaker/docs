@@ -79,6 +79,22 @@ export default [
             type: 'doc',
             id: 'build-and-deploy/build/mobile/overview',
           },
+          {
+            type: 'doc',
+            id: 'build-and-deploy/build/mobile/appchef',
+          },
+          {
+            type: 'doc',
+            id: 'build-and-deploy/build/mobile/cli',
+          },
+          {
+            type: 'doc',
+            id: 'build-and-deploy/build/mobile/expo',
+          },
+          {
+            type: 'doc',
+            id: 'build-and-deploy/build/mobile/configuration',
+          },
         ],
       },
     ],
@@ -120,6 +136,38 @@ export default [
       {
         type: 'doc',
         id: 'build-and-deploy/publish/overview',
+      },
+      {
+        type: 'category',
+        label: 'mobile',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          {
+            type: 'doc',
+            id: 'build-and-deploy/publish/mobile/overview',
+          },
+          {
+            type: 'doc',
+            id: 'build-and-deploy/publish/mobile/certificates-and-signing',
+          },
+          {
+            type: 'doc',
+            id: 'build-and-deploy/publish/mobile/android-publishing',
+          },
+          {
+            type: 'doc',
+            id: 'build-and-deploy/publish/mobile/ios-publishing',
+          },
+          {
+            type: 'doc',
+            id: 'build-and-deploy/publish/mobile/enterprise-distribution',
+          },
+          {
+            type: 'doc',
+            id: 'build-and-deploy/publish/mobile/testing-distribution',
+          },
+        ],
       },
     ],
   },
