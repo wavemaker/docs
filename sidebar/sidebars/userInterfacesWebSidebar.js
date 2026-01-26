@@ -465,6 +465,10 @@ export default [
             type: 'doc',
             id: 'user-interfaces/web/develop/integrating-with-apis/overview',
           },
+           {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/integrating-with-apis/variables',
+          },
           {
             type: 'doc',
             id: 'user-interfaces/web/develop/integrating-with-apis/life-cycle-hooks',
@@ -473,10 +477,7 @@ export default [
             type: 'doc',
             id: 'user-interfaces/web/develop/integrating-with-apis/types',
           },
-          {
-            type: 'doc',
-            id: 'user-interfaces/web/develop/integrating-with-apis/variables',
-          },
+         
         ],
       },
     ],

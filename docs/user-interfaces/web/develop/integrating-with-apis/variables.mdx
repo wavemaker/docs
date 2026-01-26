@@ -1,6 +1,13 @@
-# Variables and Types in WaveMaker
+---
+last_update: { author: "Priyanka Bhadri" }
+---
 
-This document explains **what variables are in WaveMaker**, the **different variable types available**, and **when to use each one** while building applications.
+
+# Variables and Types
+
+In WaveMaker, variables are used to manage data and actions within an application. They act as the bridge between the UI, backend services, and application state.
+
+Variables can fetch data, store values, invoke services, and respond to user actions. They are tightly integrated with UI widgets through data binding.
 
 ---
 
@@ -37,176 +44,44 @@ WaveMaker variables are scoped at different levels depending on where they are c
 
 ## Types of Variables in WaveMaker
 
-WaveMaker provides multiple variable types to support different use cases.
+When creating a variable in WaveMaker, you can select the target action based on the type of data source or service you want to interact with. Each variable type is designed to simplify data handling and integration with the appropriate backend or frontend logic.
+
+| Variable Type      | Description |
+|-------------------|-------------|
+| **Database CRUD**  | Enables Create, Read, Update, and Delete (CRUD) operations on database tables. Strongly typed according to the database schema to ensure consistency and reduce errors. |
+| **Imported APIs**  | Used to consume APIs imported via Swagger or OpenAPI definitions. Operations and data models are automatically generated for seamless integration with external services. |
+| **Database APIs**  | Invokes custom database queries, stored procedures, or APIs exposed from the database layer. Ideal for advanced database interactions beyond standard CRUD operations. |
+| **Web Service**    | Integrates external REST or SOAP web services. Perfect for connecting with third-party systems and leveraging external functionality. |
+| **Java Service**   | Calls custom Java services implemented in the backend. Ideal for executing complex business logic or backend computations. |
+| **Security Service** | Handles authentication, authorization, and other security-related operations such as login, logout, and user management. |
+| **Model**          | Defines custom data structures for temporary storage and UI state management. Independent of backend services, useful for managing client-side data within the application. |
+
+
+## Creating Variables
+
+Variables are created from the Variables section in WaveMaker Studio and can be defined at either the App or Page level.
+
+### Steps
+1. Open the **Variables** tab at the App or Page level.
+2. Click **Add Variable**.
+3. Select the required variable type.
+4. Configure the variable properties and provide a meaningful name.
+5. Bind or trigger the variable using UI events or page lifecycle actions.
 
 ---
 
-## 1. Data Variables
 
-**Purpose:**
 
-* Interact with database tables
+## Binding Variables
 
-**Key Features:**
+Binding variables connects data or actions to UI components, enabling dynamic behavior in the application.
 
-* Auto-generated CRUD operations
-* Strongly typed based on database schema
-* Supports pagination, filtering, and sorting
+Variables can be bound in the following ways:
+- **Data Binding**: Bind variable data directly to widget properties (for example, binding a list to a table).
+- **Event Binding**: Trigger variables on UI events such as `onClick`, `onLoad`, or `onChange`.
+- **Page Lifecycle Binding**: Execute variables automatically during page load using auto-execute or page events.
 
-**Common Operations:**
-
-* Read
-* Insert
-* Update
-* Delete
-
-**Use Case Example:**
-Fetching a list of users from a database table and displaying it in a data table.
-
----
-
-## 2. Service Variables
-
-**Purpose:**
-
-* Consume backend services
-
-**Supported Service Types:**
-
-* REST services
-* Java services
-* SOAP services
-* Swagger / OpenAPI integrations
-
-**Key Features:**
-
-* Auto-generated request and response models
-* Configurable headers, query params, and body
-* Supports authentication and security configurations
-
-**Use Case Example:**
-Calling an external payment API or an internal Java service.
-
----
-
-## 3. Live Variables
-
-**Purpose:**
-
-* Enable real-time data updates
-
-**Key Features:**
-
-* Automatically refresh data when backend changes
-* Useful for dashboards and collaborative apps
-
-**Use Case Example:**
-Displaying live order status updates without page refresh.
-
----
-
-## 4. Model Variables
-
-**Purpose:**
-
-* Hold temporary or structured data
-
-**Key Features:**
-
-* User-defined data models
-* Can represent single objects or lists
-* Does not automatically connect to backend
-
-**Use Case Example:**
-Storing form data before submitting it to a service.
-
----
-
-## 5. App Variables
-
-**Purpose:**
-
-* Maintain global state across pages
-
-**Key Features:**
-
-* Accessible from any page
-* Persists during the app session
-
-**Use Case Example:**
-Storing logged-in user details or selected language.
-
----
-
-## 6. Page Variables
-
-**Purpose:**
-
-* Manage page-specific data
-
-**Key Features:**
-
-* Exists only during the lifecycle of a page
-* Helps reduce memory usage
-
-**Use Case Example:**
-Holding selected row data in a page-level table.
-
----
-
-## 7. Device Variables
-
-**Purpose:**
-
-* Access device-specific capabilities
-
-**Key Features:**
-
-* Camera
-* GPS
-* File upload
-* Contacts (based on platform support)
-
-**Use Case Example:**
-Capturing an image using a mobile device camera.
-
----
-
-## Variable Data Types
-
-WaveMaker variables support multiple data types, including:
-
-* String
-* Number (Integer, Long, Double)
-* Boolean
-* Date / Timestamp
-* Object
-* List / Array
-
-These types are either:
-
-* Auto-derived (from database or service definitions)
-* Manually defined (in model variables)
-
----
-
-## Data Binding with Variables
-
-Variables are tightly integrated with WaveMaker’s UI:
-
-* Bind variable data directly to widgets
-* Trigger variables on events (onClick, onLoad, onChange)
-* Chain variables using success and error callbacks
-
----
-
-## Best Practices
-
-* Use **Page Variables** whenever data is page-specific
-* Prefer **Model Variables** for form handling
-* Avoid overusing **App Variables** to prevent unwanted coupling
-* Name variables clearly based on their purpose
-* Handle error and success callbacks for service and data variables
+Variable binding allows the UI to display, update, and react to data seamlessly.
 
 ---
 
