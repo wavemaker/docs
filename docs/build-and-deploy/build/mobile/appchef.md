@@ -286,7 +286,6 @@ Access after login:
 - [CLI Builds](./cli) – Local command-line builds alternative
 - [Expo Builds](./expo) – Expo EAS Build alternative
 - [Configuration](./configuration) – App settings and certificates
-- [Testing](./testing) – QR installation and device testing
 
 **Publishing Documentation:**
 - [Publishing Overview](../../publish/mobile/overview) – Distribution workflow after building

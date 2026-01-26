@@ -63,5 +63,4 @@ Key points about publishing:
 ## Related Documentation
 
 - [Mobile Publishing Overview](./mobile/overview) – Mobile app distribution channels and workflows
-- [Web Deployment](../deploy/overview) – Deploying web applications to servers
 - [Building Mobile Apps](../build/mobile/overview) – Creating APK and IPA files for distribution

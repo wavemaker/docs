@@ -325,7 +325,6 @@ Verify keystore credentials correct.
 - [AppChef](./appchef) – WaveMaker cloud builds alternative
 - [CLI](./cli) – Local builds alternative
 - [Configuration](./configuration) – App settings
-- [Testing](./testing) – Device testing with Expo Go
 
 **Publishing Documentation:**
 - [Publishing Overview](../../publish/mobile/overview) – Distribution channels

@@ -213,7 +213,6 @@ File → Export → React Native Zip
 - [CLI Builds](./cli) – Local/CI-CD builds with wm-reactnative-cli
 - [Expo Builds](./expo) – Expo EAS Build integration
 - [Configuration](./configuration) – App settings, permissions, plugins
-- [Testing](./testing) – Preview mode, device testing, QR installation
 
 **Publishing Documentation:**
 - [Publishing Overview](../../publish/mobile/overview) – Distribution channels and workflow

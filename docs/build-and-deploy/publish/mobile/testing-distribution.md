@@ -582,7 +582,6 @@ Key points about testing and beta distribution:
 - [Mobile Build Overview](../../build/mobile/overview) – Build methods for testing
 - [AppChef Builds](../../build/mobile/appchef) – QR codes for direct testing
 - [CLI Builds](../../build/mobile/cli) – Build test packages locally
-- [Testing](../../build/mobile/testing) – Preview mode and device testing strategies
 
 **Publishing Documentation:**
 

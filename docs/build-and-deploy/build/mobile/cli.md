@@ -253,7 +253,6 @@ pod cache clean --all
 - [AppChef](./appchef) – Cloud-based alternative
 - [Expo Builds](./expo) – Expo EAS Build alternative
 - [Configuration](./configuration) – App settings and certificates
-- [Testing](./testing) – Device testing strategies
 
 **Publishing Documentation:**
 - [Publishing Overview](../../publish/mobile/overview) – Distribution after building

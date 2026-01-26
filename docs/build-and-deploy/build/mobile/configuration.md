@@ -337,7 +337,6 @@ Android 9+ blocks HTTP by default. Configure `network_security_config.xml`:
 - [AppChef](./appchef) – Upload certificates to cloud builds
 - [CLI](./cli) – Provide certificates to local builds
 - [Expo Builds](./expo) – Configure certificates in EAS
-- [Testing](./testing) – Testing configured apps
 
 **Publishing Documentation:**
 - [Publishing Overview](../../publish/mobile/overview) – App ID and version management
