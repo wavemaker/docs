@@ -1,363 +1,96 @@
 ---
-last_update: { author: "Author Name" }
+last_update: { author: "Priyanka Bhadri" }
 ---
 
-# Variables
-
-Managing variables and configuration for API integration.
-
-## Overview
-
-Variables provide a flexible way to manage API endpoints, authentication tokens, and configuration across different environments. This guide covers best practices for using variables in API integration.
-
-## Environment Variables
-
-### Using Process Environment Variables
-
-```javascript
-// config.js
-const config = {
-  apiUrl: process.env.REACT_APP_API_URL || 'http://localhost:3000',
-  apiKey: process.env.REACT_APP_API_KEY,
-  environment: process.env.NODE_ENV,
-};
-
-export default config;
-```
-
-### .env File Structure
-
-```bash
-# .env.development
-REACT_APP_API_URL=http://localhost:3000/api
-REACT_APP_API_KEY=dev_key_12345
-REACT_APP_TIMEOUT=5000
-
-# .env.production
-REACT_APP_API_URL=https://api.production.com
-REACT_APP_API_KEY=prod_key_67890
-REACT_APP_TIMEOUT=10000
-```
-
-## API Configuration Variables
-
-### Base Configuration
-
-```javascript
-// api/config.js
-export const apiConfig = {
-  baseURL: process.env.REACT_APP_API_URL,
-  timeout: parseInt(process.env.REACT_APP_TIMEOUT) || 5000,
-  headers: {
-    'Content-Type': 'application/json',
-    'Accept': 'application/json',
-  },
-};
-```
-
-### Endpoint Variables
-
-```javascript
-// api/endpoints.js
-export const endpoints = {
-  auth: {
-    login: '/auth/login',
-    logout: '/auth/logout',
-    refresh: '/auth/refresh',
-  },
-  users: {
-    list: '/users',
-    detail: (id) => `/users/${id}`,
-    create: '/users',
-    update: (id) => `/users/${id}`,
-    delete: (id) => `/users/${id}`,
-  },
-  products: {
-    list: '/products',
-    detail: (id) => `/products/${id}`,
-    search: '/products/search',
-  },
-};
-```
-
-## Request Variables
-
-### Dynamic Headers
-
-```javascript
-const getAuthHeaders = () => {
-  const token = localStorage.getItem('authToken');
-  return {
-    'Authorization': `Bearer ${token}`,
-    'X-Client-Version': process.env.REACT_APP_VERSION,
-  };
-};
-
-const apiRequest = async (url, options = {}) => {
-  const response = await fetch(url, {
-    ...options,
-    headers: {
-      ...apiConfig.headers,
-      ...getAuthHeaders(),
-      ...options.headers,
-    },
-  });
-  return response;
-};
-```
-
-### Query Parameters
-
-```javascript
-const buildQueryString = (params) => {
-  const queryParams = new URLSearchParams();
-
-  Object.entries(params).forEach(([key, value]) => {
-    if (value !== null && value !== undefined) {
-      queryParams.append(key, value);
-    }
-  });
-
-  return queryParams.toString();
-};
-
-// Usage
-const fetchUsers = async (filters) => {
-  const queryString = buildQueryString({
-    page: filters.page,
-    limit: filters.limit,
-    search: filters.search,
-    sortBy: filters.sortBy,
-  });
-
-  const url = `${apiConfig.baseURL}/users?${queryString}`;
-  return apiRequest(url);
-};
-```
-
-## State Variables for API Data
-
-### Using State for API Variables
-
-```javascript
-import { useState, useEffect } from 'react';
-
-const useApiVariables = () => {
-  const [apiUrl, setApiUrl] = useState(process.env.REACT_APP_API_URL);
-  const [apiKey, setApiKey] = useState(null);
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-
-  useEffect(() => {
-    // Load API key from secure storage
-    const loadApiKey = async () => {
-      const key = await getSecureApiKey();
-      setApiKey(key);
-    };
-    loadApiKey();
-  }, []);
-
-  return {
-    apiUrl,
-    apiKey,
-    isAuthenticated,
-    setApiUrl,
-    setIsAuthenticated,
-  };
-};
-```
-
-## Context for Global API Variables
-
-```javascript
-import { createContext, useContext, useState } from 'react';
-
-const ApiContext = createContext();
-
-export const ApiProvider = ({ children }) => {
-  const [baseURL, setBaseURL] = useState(process.env.REACT_APP_API_URL);
-  const [authToken, setAuthToken] = useState(null);
-  const [requestConfig, setRequestConfig] = useState({
-    timeout: 5000,
-    retries: 3,
-  });
-
-  const updateAuthToken = (token) => {
-    setAuthToken(token);
-    if (token) {
-      localStorage.setItem('authToken', token);
-    } else {
-      localStorage.removeItem('authToken');
-    }
-  };
-
-  return (
-    <ApiContext.Provider
-      value={{
-        baseURL,
-        authToken,
-        requestConfig,
-        setBaseURL,
-        updateAuthToken,
-        setRequestConfig,
-      }}
-    >
-      {children}
-    </ApiContext.Provider>
-  );
-};
-
-export const useApi = () => {
-  const context = useContext(ApiContext);
-  if (!context) {
-    throw new Error('useApi must be used within ApiProvider');
-  }
-  return context;
-};
-```
-
-## Variable Validation
-
-```javascript
-const validateApiConfig = () => {
-  const requiredVars = [
-    'REACT_APP_API_URL',
-    'REACT_APP_API_KEY',
-  ];
-
-  const missing = requiredVars.filter(
-    varName => !process.env[varName]
-  );
-
-  if (missing.length > 0) {
-    throw new Error(
-      `Missing required environment variables: ${missing.join(', ')}`
-    );
-  }
-};
-
-// Call during app initialization
-validateApiConfig();
-```
-
-## Secure Variable Storage
-
-### Storing Sensitive Variables
-
-```javascript
-// Use secure storage for sensitive data
-const secureStorage = {
-  setItem: (key, value) => {
-    // Encrypt before storing
-    const encrypted = encrypt(value);
-    localStorage.setItem(key, encrypted);
-  },
-
-  getItem: (key) => {
-    // Decrypt after retrieving
-    const encrypted = localStorage.getItem(key);
-    return encrypted ? decrypt(encrypted) : null;
-  },
-
-  removeItem: (key) => {
-    localStorage.removeItem(key);
-  },
-};
-
-// Usage
-secureStorage.setItem('apiKey', apiKey);
-const storedKey = secureStorage.getItem('apiKey');
-```
-
-## Variable Best Practices
-
-### 1. Never Hardcode Sensitive Data
-
-```javascript
-// ❌ Bad - Hardcoded API key
-const apiKey = 'sk_live_1234567890';
-
-// ✅ Good - Use environment variables
-const apiKey = process.env.REACT_APP_API_KEY;
-```
-
-### 2. Use Default Values
-
-```javascript
-// ✅ Good - Provide sensible defaults
-const config = {
-  timeout: process.env.REACT_APP_TIMEOUT || 5000,
-  retries: process.env.REACT_APP_RETRIES || 3,
-  baseURL: process.env.REACT_APP_API_URL || 'http://localhost:3000',
-};
-```
-
-### 3. Validate Required Variables
-
-```javascript
-// ✅ Good - Validate on startup
-if (!process.env.REACT_APP_API_URL) {
-  throw new Error('REACT_APP_API_URL is required');
-}
-```
-
-## Variable Naming Conventions
-
-```javascript
-// Use consistent naming patterns
-const API_CONFIG = {
-  // Environment-specific
-  BASE_URL: process.env.REACT_APP_API_URL,
-
-  // Feature flags
-  ENABLE_ANALYTICS: process.env.REACT_APP_ENABLE_ANALYTICS === 'true',
-
-  // Timeouts (in milliseconds)
-  REQUEST_TIMEOUT: 5000,
-  RETRY_DELAY: 1000,
-
-  // Limits
-  MAX_RETRIES: 3,
-  PAGE_SIZE: 20,
-};
-```
-
-## Dynamic Variable Updates
-
-```javascript
-const useDynamicConfig = () => {
-  const [config, setConfig] = useState({
-    apiUrl: process.env.REACT_APP_API_URL,
-    timeout: 5000,
-  });
-
-  const updateConfig = (newConfig) => {
-    setConfig(prev => ({
-      ...prev,
-      ...newConfig,
-    }));
-  };
-
-  // Fetch remote configuration
-  useEffect(() => {
-    const fetchRemoteConfig = async () => {
-      try {
-        const response = await fetch('/api/config');
-        const remoteConfig = await response.json();
-        updateConfig(remoteConfig);
-      } catch (error) {
-        console.error('Failed to fetch remote config:', error);
-      }
-    };
-
-    fetchRemoteConfig();
-  }, []);
-
-  return { config, updateConfig };
-};
-```
-
-## Related Documentation
-
-- [Life Cycle Hooks](./life-cycle-hooks.md)
-- [Types](./types.md)
-- [State Management](../state-management.md)
+
+# Variables and Types
+
+In WaveMaker, variables are used to manage data and actions within an application. They act as the bridge between the UI, backend services, and application state.
+
+Variables can fetch data, store values, invoke services, and respond to user actions. They are tightly integrated with UI widgets through data binding.
+
+---
+
+## What is a Variable in WaveMaker?
+
+A **variable** in WaveMaker is a configurable entity used to:
+
+* Store data
+* Fetch data from databases or services
+* Bind data to UI components
+* Trigger actions (create, update, delete, fetch)
+* Maintain application or page state
+
+Variables act as the **data and action layer** between the UI and backend services.
+
+---
+
+## Variable Scope
+
+WaveMaker variables are scoped at different levels depending on where they are created:
+
+### 1. App-Level Variables
+
+* Available across the entire application
+* Useful for shared data (logged-in user info, global settings)
+
+### 2. Page-Level Variables
+
+* Available only within a specific page
+* Destroyed when the user navigates away from the page
+* Ideal for page-specific data and actions
+
+---
+
+## Types of Variables in WaveMaker
+
+When creating a variable in WaveMaker, you can select the target action based on the type of data source or service you want to interact with. Each variable type is designed to simplify data handling and integration with the appropriate backend or frontend logic.
+
+| Variable Type      | Description |
+|-------------------|-------------|
+| **Database CRUD**  | Enables Create, Read, Update, and Delete (CRUD) operations on database tables. Strongly typed according to the database schema to ensure consistency and reduce errors. |
+| **Imported APIs**  | Used to consume APIs imported via Swagger or OpenAPI definitions. Operations and data models are automatically generated for seamless integration with external services. |
+| **Database APIs**  | Invokes custom database queries, stored procedures, or APIs exposed from the database layer. Ideal for advanced database interactions beyond standard CRUD operations. |
+| **Web Service**    | Integrates external REST or SOAP web services. Perfect for connecting with third-party systems and leveraging external functionality. |
+| **Java Service**   | Calls custom Java services implemented in the backend. Ideal for executing complex business logic or backend computations. |
+| **Security Service** | Handles authentication, authorization, and other security-related operations such as login, logout, and user management. |
+| **Device Variable** | Exposes device-specific features and state for mobile applications, enabling interaction with native capabilities such as camera, network, and storage. |
+
+![Variable types ](../../assets/variables.png)
+
+## Creating Variables
+
+Variables are created from the Variables section in WaveMaker Studio and can be defined at either the App or Page level.
+
+### Steps
+1. Open the **Variables** tab at the Page level.
+2. Click **Add Variable**.
+3. Select the required variable type.
+4. Configure the variable properties and provide a meaningful name.
+5. Bind or trigger the variable using UI events or page lifecycle actions.
+
+![Variable](../../assets/variableTypes.png)
+
+
+---
+
+
+
+## Binding Variables
+
+Binding variables connects data or actions to UI components, enabling dynamic behavior in the application.
+
+Variables can be bound in the following ways:
+- **Data Binding**: Bind variable data directly to widget properties (for example, binding a list to a table).
+- **Event Binding**: Trigger variables on UI events such as `onClick`, `onLoad`, or `onChange`.
+- **Page Lifecycle Binding**: Execute variables automatically during page load using auto-execute or page events.
+
+Variable binding allows the UI to display, update, and react to data seamlessly.
+
+---
+
+## Summary
+
+Variables are the backbone of data flow in WaveMaker applications. Understanding the different variable types and scopes helps in building scalable, maintainable, and efficient applications.
+
+Choosing the right variable type ensures better performance, cleaner design, and easier debugging.

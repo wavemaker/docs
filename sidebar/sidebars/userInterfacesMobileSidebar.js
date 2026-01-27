@@ -65,18 +65,20 @@ export default [
         collapsible: true,
         collapsed: true,
         items: [
+            {
+            type: 'doc',
+            id: 'user-interfaces/mobile/develop/integrating-with-apis/overview',
+          },
+            {
+            type: 'doc',
+            id: 'user-interfaces/mobile/develop/integrating-with-apis/variables',
+          },
           {
             type: 'doc',
             id: 'user-interfaces/mobile/develop/integrating-with-apis/life-cycle-hooks',
           },
-          {
-            type: 'doc',
-            id: 'user-interfaces/mobile/develop/integrating-with-apis/types',
-          },
-          {
-            type: 'doc',
-            id: 'user-interfaces/mobile/develop/integrating-with-apis/variables',
-          },
+        
+        
         ],
       },
     ],

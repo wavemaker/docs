@@ -1,0 +1,158 @@
+---
+last_update: { author: "Priyanka Bhadri" }
+---
+
+
+# Overview
+
+WaveMaker provides a streamlined and consistent approach to working with backend APIs using Variables. Rather than writing manual API calls or handling low-level request–response logic, developers interact with declarative variables that are tightly integrated with the UI, workflows, and data binding framework.
+
+This overview explains the foundational concepts for API consumption in WaveMaker, covering the variables model, different variable types, their lifecycle, and how generated APIs simplify backend integration.
+
+---
+
+## Variables
+
+In WaveMaker, **variables act as the bridge between the application UI and backend services**. Every API call—whether it is a database query, a REST service, or a third-party integration—is represented as a variable.
+
+Variables abstract the complexity of:
+
+- Request construction  
+- Response handling  
+- Error management  
+- State tracking  
+
+This abstraction allows developers to focus on application behavior and user experience rather than low-level API plumbing.
+
+---
+
+## Variable Types
+
+WaveMaker provides different variable types based on their scope and purpose within an application.
+
+### Service Variables
+
+**Service Variables** are used to invoke backend services and represent all server-side interactions in a WaveMaker application. These variables are typically auto-generated when a service is imported or configured.
+
+Service Variables can be created for the following backend sources:
+
+- **Database APIs**  
+  CRUD operations generated from connected databases.
+
+- **Imported APIs**  
+  REST or SOAP services imported into the application.
+
+- **Web Services**  
+  External web services exposed over HTTP.
+
+- **Java Services**  
+  Custom Java logic implemented on the server side.
+
+- **Security Services**  
+  APIs related to authentication, authorization, and user management.
+
+- **Device Variable**  
+  Provides access to device-specific capabilities and data such as network status, camera, file system, and location.
+
+
+
+- **Other Services**  
+  Platform-provided or custom services exposed through WaveMaker.
+
+
+Service Variables provide a consistent interface for invoking backend operations while automatically handling request execution, response mapping, and error propagation.
+
+
+### Page Variables
+
+Page Variables are scoped to a single page and are typically used for page-level data fetching, UI interactions, and temporary state management. These variables are initialized when the page loads and are destroyed when the user navigates away.
+
+### App Variables
+
+App Variables have application-wide scope and persist across page navigation. They are commonly used to store user context, shared state, and configuration data.
+
+
+---
+
+## Variable Execution Flow
+
+In WaveMaker, backend services are defined and managed through the **API Workspace**. The API Workspace serves as the central place to configure, test, and organize APIs such as database operations, REST services, Java services, and other integrations. Once configured, these APIs are consumed within the application as **variables**.
+
+Each variable follows a defined execution flow that determines when a backend operation is triggered and how its result is processed.
+
+### Variable Lifecycle 
+
+The variable execution flow consists of the following stages:
+
+- **Initialization** – Variable configuration and input parameters are prepared  
+- **Invocation** – The variable is triggered automatically or manually  
+- **Execution** – The configured backend service or database operation is executed  
+- **Success** – Response data is processed and made available for data binding  
+- **Error** – Execution failures are captured and exposed for handling  
+
+This structured flow ensures predictable and consistent API interactions across the application.
+
+> For more information on configuring backend services, see the **API Workspace** documentation.
+
+
+
+### Variable Events
+
+WaveMaker provides lifecycle events that allow developers to attach custom logic at specific points in the variable execution flow, without writing boilerplate code.
+
+Common events include:
+
+- **On Before List Records / On Before Update** – Modify inputs or filter criteria before execution  
+- **On Result** – Access the raw response returned by the backend  
+- **On Dataset Ready** – Work with processed data that is ready for UI binding  
+- **On Success** – Handle successful execution outcomes  
+- **On Error** – Handle failures and error scenarios  
+- **On Can Update** – Conditionally allow or restrict update operations  
+
+These events enable fine-grained, event-driven control over how variables interact with backend APIs.
+
+
+
+### Auto Invocation and Manual Execution
+
+Variables can be configured to execute in different ways based on application requirements:
+
+- **Auto-invoke** – Automatically execute during page load or application startup  
+- **Manual invocation** – Trigger execution in response to user actions or workflow events  
+
+This flexibility helps optimize performance, control data freshness, and deliver a responsive user experience while keeping backend interactions declarative and easy to manage.
+
+---
+
+## Page Variable Metadata
+
+When a variable is created in WaveMaker, its configuration is automatically stored in the backend as a JSON file for the page. For example, `Main.variables.json` under: `src/main/webapp/pages/Main/`
+
+
+contains the metadata of all variables defined on the page, including **Database CRUD variables** and **Service Variables**. This file tracks properties such as:
+
+- **Variable Name and ID** – Unique identifier for the variable  
+- **Owner and Scope** – Page-level, App-level, or Service-level  
+- **Type** – Database, REST, Java, or custom service  
+- **Operation** – Read, create, update, delete, or invoke  
+- **Data Binding** – Values bound to the variable  
+- **Lifecycle Settings** – Auto-update, max results, in-flight behavior  
+- **Entity Mapping** – Table name, columns, relationships, and primary keys  
+- **Events & Filters** – Hooks such as `onBeforeUpdate`, `onResult`, or filter criteria  
+
+For example, a `Database CRUD` variable like `fetchEmployeeVariable` stores all information required to fetch `Employee` data from `hrdb`, including relationships to `Department` and nested employee-manager relations.
+
+  
+> ⚡ Tip: Any changes to the variable in the page designer are automatically updated in this JSON file. You can also inspect this file to understand the backend structure of your page variables.
+
+---
+
+
+## Summary
+
+WaveMaker variables provide a **declarative, low-code approach** to consuming backend APIs.  
+
+- They abstract API complexity, handle lifecycle and events automatically, and integrate tightly with the UI.  
+- Service, Page, and App Variables cover different scopes and use cases.  
+- Variables are persisted as JSON metadata in the backend, ensuring predictable, reproducible behavior across pages and environments.  
+- Using the API Workspace and lifecycle events, developers can manage backend operations efficiently while focusing on application logic and user experience.
