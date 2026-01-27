@@ -11,7 +11,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 const config = {
   title: "WaveMaker Docs",
   tagline: "Welcome to the Learning Center",
-  url: "https://www.wavemaker.com",
+  url: "https://next-docs.wavemaker.com",
   organizationName: "WaveMaker, Inc.",
   favicon: "https://dev-ecosystem.s3.us-east-1.amazonaws.com/menu-icon/docs-icon.png",
 
