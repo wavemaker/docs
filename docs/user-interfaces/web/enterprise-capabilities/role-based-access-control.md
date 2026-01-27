@@ -781,7 +781,7 @@ test('regular user cannot see delete button', () => {
 
 ## Related Documentation
 
-- [Accessibility](./accessibility.md)
-- [Language Support i18n](./language-support-i18n.md)
-- [State Management](../develop/state-management.md)
-- [UI Event handling](../develop/ui-event-handling.md)
+- [Accessibility](./accessibility)
+- [Language Support i18n](./language-support-i18n)
+- [State Management](../develop/state-management)
+- [UI Event handling](../develop/ui-event-handling)
