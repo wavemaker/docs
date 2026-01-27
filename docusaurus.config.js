@@ -82,7 +82,7 @@ const config = {
       image: "img/docusaurus-social-card.jpg",
       algolia: {
         appId: "QCVP2DTGFE",
-        apiKey: "e6c3135299d8686cb165ab06fa129dbe",
+        apiKey: "5c6569989dc17486081c8ab5cd736d10",
         indexName: "next_wavemakerdocs",
       },
       colorMode: {
