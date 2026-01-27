@@ -408,10 +408,10 @@ export default [
             type: 'doc',
             id: 'user-interfaces/web/develop/integrating-with-apis/life-cycle-hooks',
           },
-          {
-            type: 'doc',
-            id: 'user-interfaces/web/develop/integrating-with-apis/types',
-          },
+          // {
+          //   type: 'doc',
+          //   id: 'user-interfaces/web/develop/integrating-with-apis/types',
+          // },
          
         ],
       },
@@ -460,14 +460,14 @@ export default [
       //   type: 'doc',
       //   id: 'user-interfaces/web/develop/create-page-working-with-layouts',
       // },
-      {
-        type: 'doc',
-        id: 'user-interfaces/web/develop/styling-with-design-tokens',
-      },
-      {
-        type: 'doc',
-        id: 'user-interfaces/web/develop/responsive-design',
-      },
+      // {
+      //   type: 'doc',
+      //   id: 'user-interfaces/web/develop/styling-with-design-tokens',
+      // },
+      // {
+      //   type: 'doc',
+      //   id: 'user-interfaces/web/develop/responsive-design',
+      // },
       // {
       //   type: 'doc',
       //   id: 'user-interfaces/web/develop/ui-event-handling',
