@@ -499,17 +499,20 @@ export default [
             type: 'doc',
             id: 'user-interfaces/web/enterprise-capabilities/prefabs/overview',
           },
-          {
+                    {
             type: 'doc',
             id: 'user-interfaces/web/enterprise-capabilities/prefabs/create-prefab',
           },
-          {
+                    {
             type: 'doc',
             id: 'user-interfaces/web/enterprise-capabilities/prefabs/publishing',
-          }
+          },
         ],
       },
-      
+      // {
+      //   type: 'doc',
+      //   id: 'user-interfaces/web/enterprise-capabilities/prefabs',
+      // },
       // {
       //   type: 'doc',
       //   id: 'user-interfaces/web/enterprise-capabilities/role-based-access-control',
