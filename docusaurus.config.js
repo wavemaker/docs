@@ -83,7 +83,7 @@ const config = {
       algolia: {
         appId: "QCVP2DTGFE",
         apiKey: "e6c3135299d8686cb165ab06fa129dbe",
-        indexName: "wavemakerdocs",
+        indexName: "next_wavemakerdocs",
       },
       colorMode: {
         respectPrefersColorScheme: true,
