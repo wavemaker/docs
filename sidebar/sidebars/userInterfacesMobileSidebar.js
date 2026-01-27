@@ -65,18 +65,20 @@ export default [
         collapsible: true,
         collapsed: true,
         items: [
+            {
+            type: 'doc',
+            id: 'user-interfaces/mobile/develop/integrating-with-apis/overview',
+          },
+            {
+            type: 'doc',
+            id: 'user-interfaces/mobile/develop/integrating-with-apis/variables',
+          },
           {
             type: 'doc',
             id: 'user-interfaces/mobile/develop/integrating-with-apis/life-cycle-hooks',
           },
-          {
-            type: 'doc',
-            id: 'user-interfaces/mobile/develop/integrating-with-apis/types',
-          },
-          {
-            type: 'doc',
-            id: 'user-interfaces/mobile/develop/integrating-with-apis/variables',
-          },
+        
+        
         ],
       },
     ],
@@ -124,20 +126,64 @@ export default [
     collapsed: true,
     items: [
       {
+        type: 'doc',
+        id: 'user-interfaces/mobile/testing-and-debugging/debugging-overview',
+        label: 'Debugging Overview',
+      },
+      {
         type: 'category',
-        label: 'community-debugging-tools',
+        label: 'Community Debugging Tools',
         collapsible: true,
         collapsed: true,
         items: [
           {
             type: 'doc',
-            id: 'user-interfaces/mobile/testing-and-debugging/community-debugging-tools/flipper-expo-dev-tools',
+            id: 'user-interfaces/mobile/testing-and-debugging/community-debugging-tools/chrome-devtools',
+            label: 'Chrome DevTools',
+          },
+          {
+            type: 'doc',
+            id: 'user-interfaces/mobile/testing-and-debugging/community-debugging-tools/react-devtools',
+            label: 'React DevTools',
+          },
+          {
+            type: 'doc',
+            id: 'user-interfaces/mobile/testing-and-debugging/community-debugging-tools/react-native-devtools',
+            label: 'React Native DevTools',
+          },
+          {
+            type: 'doc',
+            id: 'user-interfaces/mobile/testing-and-debugging/community-debugging-tools/expo-dev-tools',
+            label: 'Expo Dev Tools',
+          },
+          {
+            type: 'doc',
+            id: 'user-interfaces/mobile/testing-and-debugging/community-debugging-tools/flipper',
+            label: 'Flipper (Deprecated)',
+          },
+          {
+            type: 'doc',
+            id: 'user-interfaces/mobile/testing-and-debugging/community-debugging-tools/reactotron',
+            label: 'Reactotron',
           },
         ],
       },
       {
         type: 'category',
-        label: 'testing-strategies',
+        label: 'WaveMaker Debugging Tools',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          {
+            type: 'doc',
+            id: 'user-interfaces/mobile/testing-and-debugging/wm-debugging-tools/wavepulse',
+            label: 'WavePulse',
+          },
+        ],
+      },
+      {
+        type: 'category',
+        label: 'Testing Strategies',
         collapsible: true,
         collapsed: true,
         items: [
@@ -153,25 +199,13 @@ export default [
       },
       {
         type: 'category',
-        label: 'unit-testing',
+        label: 'Unit Testing',
         collapsible: true,
         collapsed: true,
         items: [
           {
             type: 'doc',
             id: 'user-interfaces/mobile/testing-and-debugging/unit-testing/web-and-mobile',
-          },
-        ],
-      },
-      {
-        type: 'category',
-        label: 'wm-debugging-tools',
-        collapsible: true,
-        collapsed: true,
-        items: [
-          {
-            type: 'doc',
-            id: 'user-interfaces/mobile/testing-and-debugging/wm-debugging-tools/wave-pulse-inspection-frameworks',
           },
         ],
       },

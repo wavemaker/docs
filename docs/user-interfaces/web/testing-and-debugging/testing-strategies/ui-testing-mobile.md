@@ -1,5 +1,5 @@
 ---
-last_update: { author: "Author Name" }
+last_update: { author: 'Author Name' }
 ---
 
 # UI Testing Mobile
@@ -13,9 +13,13 @@ Mobile UI testing ensures your application works correctly across different devi
 ## Types of Mobile Testing
 
 ### 1. Unit Testing
+
 ### 2. Integration Testing
+
 ### 3. UI Automation Testing
+
 ### 4. Manual Testing
+
 ### 5. Device Testing
 
 ## Mobile Testing Frameworks
@@ -25,12 +29,14 @@ Mobile UI testing ensures your application works correctly across different devi
 End-to-end testing framework for React Native.
 
 **Installation:**
+
 ```bash
 npm install --save-dev detox
 npm install --save-dev detox-cli
 ```
 
 **Configuration:**
+
 ```json
 // .detoxrc.json
 {
@@ -66,6 +72,7 @@ npm install --save-dev detox-cli
 ```
 
 **Basic Test:**
+
 ```javascript
 describe('Login Screen', () => {
   beforeAll(async () => {
@@ -99,6 +106,7 @@ describe('Login Screen', () => {
 ```
 
 **Gesture Testing:**
+
 ```javascript
 describe('Gestures', () => {
   it('should swipe to delete item', async () => {
@@ -126,12 +134,14 @@ describe('Gestures', () => {
 Cross-platform mobile automation framework.
 
 **Installation:**
+
 ```bash
 npm install --save-dev appium
 npm install --save-dev webdriverio
 ```
 
 **Configuration:**
+
 ```javascript
 // wdio.conf.js
 exports.config = {
@@ -162,6 +172,7 @@ exports.config = {
 ```
 
 **iOS Test:**
+
 ```javascript
 describe('iOS App', () => {
   it('should find element by accessibility id', async () => {
@@ -183,6 +194,7 @@ describe('iOS App', () => {
 ```
 
 **Android Test:**
+
 ```javascript
 describe('Android App', () => {
   it('should find element by resource id', async () => {
@@ -191,7 +203,9 @@ describe('Android App', () => {
   });
 
   it('should scroll to element', async () => {
-    await $('android=new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(text("Terms"))');
+    await $(
+      'android=new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(text("Terms"))',
+    );
     await expect($('~terms-checkbox')).toBeDisplayed();
   });
 
@@ -206,25 +220,28 @@ describe('Android App', () => {
 Declarative mobile UI testing framework.
 
 **Installation:**
+
 ```bash
 curl -Ls "https://get.maestro.mobile.dev" | bash
 ```
 
 **Test Flow:**
+
 ```yaml
 # login-flow.yaml
 appId: com.example.app
 ---
 - launchApp
-- tapOn: "Login"
-- inputText: "user@example.com"
-- tapOn: "Password"
-- inputText: "password123"
-- tapOn: "Sign In"
-- assertVisible: "Welcome back"
+- tapOn: 'Login'
+- inputText: 'user@example.com'
+- tapOn: 'Password'
+- inputText: 'password123'
+- tapOn: 'Sign In'
+- assertVisible: 'Welcome back'
 ```
 
 **Running Tests:**
+
 ```bash
 maestro test login-flow.yaml
 ```
@@ -232,6 +249,7 @@ maestro test login-flow.yaml
 ## XCUITest (iOS Native)
 
 **Swift Test:**
+
 ```swift
 import XCTest
 
@@ -278,6 +296,7 @@ class LoginTests: XCTestCase {
 ## Espresso (Android Native)
 
 **Kotlin Test:**
+
 ```kotlin
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions.*
@@ -332,6 +351,7 @@ class LoginActivityTest {
 ### Screenshotting
 
 **Detox Screenshots:**
+
 ```javascript
 describe('Visual Tests', () => {
   it('should match homepage screenshot', async () => {
@@ -342,6 +362,7 @@ describe('Visual Tests', () => {
 ```
 
 **Appium Screenshots:**
+
 ```javascript
 it('captures screenshot on failure', async () => {
   await driver.saveScreenshot('./screenshots/error.png');
@@ -365,6 +386,7 @@ describe('Visual regression', () => {
 ### Real Device Testing
 
 **BrowserStack:**
+
 ```javascript
 // wdio.conf.js
 exports.config = {
@@ -391,6 +413,7 @@ exports.config = {
 ```
 
 **Sauce Labs:**
+
 ```javascript
 capabilities: [
   {
@@ -423,8 +446,8 @@ gcloud firebase test android run \
 ```javascript
 import { PerformanceObserver, performance } from 'react-native-performance';
 
-const observer = new PerformanceObserver((list) => {
-  list.getEntries().forEach((entry) => {
+const observer = new PerformanceObserver(list => {
+  list.getEntries().forEach(entry => {
     console.log('Performance:', entry.name, entry.duration);
   });
 });
@@ -446,7 +469,9 @@ describe('Performance', () => {
     const start = Date.now();
 
     await element(by.id('products-tab')).tap();
-    await waitFor(element(by.id('product-list'))).toBeVisible().withTimeout(5000);
+    await waitFor(element(by.id('product-list')))
+      .toBeVisible()
+      .withTimeout(5000);
 
     const duration = Date.now() - start;
     expect(duration).toBeLessThan(1000); // Should load in under 1 second
@@ -714,9 +739,3 @@ e2e/
     ├── detox.config.js
     └── jest.config.js
 ```
-
-## Related Documentation
-
-- [UI Testing Web](./ui-testing-web.md)
-- [Web & Mobile](../unit-testing/web-and-mobile.md)
-- [Flipper, Expo, Dev tools...](../community-debugging-tools/flipper-expo-dev-tools.md)

@@ -1,5 +1,5 @@
 ---
-last_update: { author: "Author Name" }
+last_update: { author: 'Author Name' }
 ---
 
 # UI Testing Web
@@ -68,11 +68,13 @@ Testing complete user flows through the application.
 Modern end-to-end testing framework.
 
 **Installation:**
+
 ```bash
 npm install --save-dev cypress
 ```
 
 **Basic Test:**
+
 ```javascript
 describe('Login Flow', () => {
   beforeEach(() => {
@@ -107,6 +109,7 @@ describe('Login Flow', () => {
 ```
 
 **Custom Commands:**
+
 ```javascript
 // cypress/support/commands.js
 Cypress.Commands.add('login', (email, password) => {
@@ -125,11 +128,13 @@ cy.login('user@example.com', 'password123');
 Cross-browser automation framework.
 
 **Installation:**
+
 ```bash
 npm install --save-dev @playwright/test
 ```
 
 **Basic Test:**
+
 ```javascript
 import { test, expect } from '@playwright/test';
 
@@ -157,6 +162,7 @@ test.describe('Shopping Cart', () => {
 ```
 
 **Multiple Browser Testing:**
+
 ```javascript
 import { test, devices } from '@playwright/test';
 
@@ -175,11 +181,13 @@ test('mobile responsive layout', async ({ page }) => {
 Headless Chrome automation.
 
 **Installation:**
+
 ```bash
 npm install --save-dev puppeteer
 ```
 
 **Basic Test:**
+
 ```javascript
 const puppeteer = require('puppeteer');
 
@@ -217,11 +225,13 @@ describe('Search functionality', () => {
 Visual testing and review platform.
 
 **Installation:**
+
 ```bash
 npm install --save-dev @percy/cli @percy/cypress
 ```
 
 **Cypress Integration:**
+
 ```javascript
 import '@percy/cypress';
 
@@ -243,11 +253,13 @@ describe('Visual Tests', () => {
 Visual testing for Storybook.
 
 **Installation:**
+
 ```bash
 npm install --save-dev chromatic
 ```
 
 **Usage:**
+
 ```bash
 npx chromatic --project-token=<token>
 ```
@@ -257,11 +269,13 @@ npx chromatic --project-token=<token>
 Visual regression testing tool.
 
 **Installation:**
+
 ```bash
 npm install --save-dev backstopjs
 ```
 
 **Configuration:**
+
 ```javascript
 // backstop.json
 {
@@ -296,11 +310,13 @@ npm install --save-dev backstopjs
 Automated accessibility testing.
 
 **Installation:**
+
 ```bash
 npm install --save-dev @axe-core/react
 ```
 
 **Integration:**
+
 ```javascript
 import React from 'react';
 
@@ -311,6 +327,7 @@ if (process.env.NODE_ENV !== 'production') {
 ```
 
 **Cypress Plugin:**
+
 ```javascript
 import 'cypress-axe';
 
@@ -334,11 +351,13 @@ describe('Accessibility tests', () => {
 Automated accessibility testing tool.
 
 **Installation:**
+
 ```bash
 npm install --save-dev pa11y
 ```
 
 **Usage:**
+
 ```javascript
 const pa11y = require('pa11y');
 
@@ -356,11 +375,13 @@ test('page is accessible', async () => {
 Automated performance testing.
 
 **Installation:**
+
 ```bash
 npm install --save-dev @lhci/cli
 ```
 
 **Configuration:**
+
 ```javascript
 // lighthouserc.js
 module.exports = {
@@ -491,7 +512,7 @@ afterEach(() => {
 // Component
 <button data-testid="submit-button" onClick={handleSubmit}>
   Submit
-</button>
+</button>;
 
 // Test
 cy.get('[data-testid="submit-button"]').click();
@@ -671,10 +692,3 @@ Test reporting framework.
 ```bash
 npm install --save-dev @wdio/allure-reporter
 ```
-
-## Related Documentation
-
-- [UI Testing Mobile](./ui-testing-mobile.md)
-- [Web & Mobile](../unit-testing/web-and-mobile.md)
-- [Wave Pulse, Inspection frameworks](../wm-debugging-tools/wave-pulse-inspection-frameworks.md)
-- [Accessibility](../../enterprise-capabilities/accessibility.md)

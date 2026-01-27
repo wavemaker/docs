@@ -719,4 +719,6 @@ e2e/
 
 - [UI Testing Web](./ui-testing-web.md)
 - [Web & Mobile](../unit-testing/web-and-mobile.md)
-- [Flipper, Expo, Dev tools...](../community-debugging-tools/flipper-expo-dev-tools.md)
+- [Debugging Overview](../debugging-overview.md) – All debugging tools and methods
+- [React Native DevTools](../community-debugging-tools/react-native-devtools.md) – Official debugging for Expo 52+
+- [Expo Dev Tools](../community-debugging-tools/expo-dev-tools.md) – Built-in Expo CLI tools

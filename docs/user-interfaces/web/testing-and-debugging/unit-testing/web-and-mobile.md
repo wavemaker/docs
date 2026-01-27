@@ -1,5 +1,5 @@
 ---
-last_update: { author: "Author Name" }
+last_update: { author: 'Author Name' }
 ---
 
 # Web & Mobile
@@ -25,11 +25,13 @@ Unit testing ensures individual components and functions work correctly in isola
 Most popular JavaScript testing framework.
 
 **Installation:**
+
 ```bash
 npm install --save-dev jest @testing-library/react @testing-library/jest-dom
 ```
 
 **Configuration (jest.config.js):**
+
 ```javascript
 module.exports = {
   testEnvironment: 'jsdom',
@@ -37,11 +39,7 @@ module.exports = {
   moduleNameMapper: {
     '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
   },
-  collectCoverageFrom: [
-    'src/**/*.{js,jsx,ts,tsx}',
-    '!src/**/*.d.ts',
-    '!src/index.js',
-  ],
+  collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}', '!src/**/*.d.ts', '!src/index.js'],
   coverageThreshold: {
     global: {
       branches: 80,
@@ -54,6 +52,7 @@ module.exports = {
 ```
 
 **Setup File (jest.setup.js):**
+
 ```javascript
 import '@testing-library/jest-dom';
 
@@ -78,6 +77,7 @@ Object.defineProperty(window, 'matchMedia', {
 Testing library focused on testing React components from the user's perspective.
 
 **Basic Component Test:**
+
 ```javascript
 import { render, screen, fireEvent } from '@testing-library/react';
 import Button from './Button';
@@ -108,11 +108,13 @@ describe('Button Component', () => {
 Fast unit test framework powered by Vite.
 
 **Installation:**
+
 ```bash
 npm install --save-dev vitest @testing-library/react @testing-library/jest-dom
 ```
 
 **Configuration (vitest.config.js):**
+
 ```javascript
 import { defineConfig } from 'vitest/config';
 import react from '@vitejs/plugin-react';
@@ -389,7 +391,7 @@ describe('AuthContext', () => {
     render(
       <AuthProvider>
         <TestComponent />
-      </AuthProvider>
+      </AuthProvider>,
     );
 
     expect(screen.getByText('Login')).toBeInTheDocument();
@@ -399,7 +401,7 @@ describe('AuthContext', () => {
     render(
       <AuthProvider>
         <TestComponent />
-      </AuthProvider>
+      </AuthProvider>,
     );
 
     fireEvent.click(screen.getByText('Login'));
@@ -410,7 +412,7 @@ describe('AuthContext', () => {
     render(
       <AuthProvider>
         <TestComponent />
-      </AuthProvider>
+      </AuthProvider>,
     );
 
     fireEvent.click(screen.getByText('Login'));
@@ -425,11 +427,13 @@ describe('AuthContext', () => {
 ### React Native Testing
 
 **Installation:**
+
 ```bash
 npm install --save-dev @testing-library/react-native
 ```
 
 **Component Test:**
+
 ```javascript
 import { render, fireEvent } from '@testing-library/react-native';
 import MobileButton from './MobileButton';
@@ -442,18 +446,14 @@ describe('MobileButton', () => {
 
   test('handles press events', () => {
     const onPress = jest.fn();
-    const { getByText } = render(
-      <MobileButton title="Press me" onPress={onPress} />
-    );
+    const { getByText } = render(<MobileButton title="Press me" onPress={onPress} />);
 
     fireEvent.press(getByText('Press me'));
     expect(onPress).toHaveBeenCalled();
   });
 
   test('applies disabled style', () => {
-    const { getByText } = render(
-      <MobileButton title="Press me" disabled />
-    );
+    const { getByText } = render(<MobileButton title="Press me" disabled />);
 
     const button = getByText('Press me');
     expect(button.props.style).toMatchObject({
@@ -499,9 +499,7 @@ import SwipeableItem from './SwipeableItem';
 describe('SwipeableItem', () => {
   test('handles swipe left', () => {
     const onSwipeLeft = jest.fn();
-    const { getByTestId } = render(
-      <SwipeableItem onSwipeLeft={onSwipeLeft} testID="swipeable" />
-    );
+    const { getByTestId } = render(<SwipeableItem onSwipeLeft={onSwipeLeft} testID="swipeable" />);
 
     const item = getByTestId('swipeable');
 
@@ -577,7 +575,7 @@ describe('Storage tests', () => {
 
     expect(localStorage.setItem).toHaveBeenCalledWith(
       'preferences',
-      JSON.stringify({ theme: 'dark' })
+      JSON.stringify({ theme: 'dark' }),
     );
   });
 });
@@ -606,11 +604,13 @@ describe('ProfileCard', () => {
 ## Coverage Reports
 
 **Run tests with coverage:**
+
 ```bash
 npm test -- --coverage
 ```
 
 **Coverage configuration:**
+
 ```javascript
 // jest.config.js
 module.exports = {
@@ -714,6 +714,7 @@ npm test -- --testNamePattern="login"
 ## Continuous Integration
 
 **GitHub Actions (.github/workflows/test.yml):**
+
 ```yaml
 name: Tests
 
@@ -745,5 +746,6 @@ jobs:
 
 - [UI Testing Web](../testing-strategies/ui-testing-web.md)
 - [UI Testing Mobile](../testing-strategies/ui-testing-mobile.md)
-- [Wave Pulse, Inspection frameworks](../wm-debugging-tools/wave-pulse-inspection-frameworks.md)
+- [WavePulse](../../../mobile/testing-and-debugging/wm-debugging-tools/wavepulse.md) – WaveMaker debugging tool
+- [Debugging Overview](../../../mobile/testing-and-debugging/debugging-overview.md) – All debugging tools and methods
 - [State Management](../../develop/state-management.md)

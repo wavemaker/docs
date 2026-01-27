@@ -1,5 +1,5 @@
 ---
-last_update: { author: "Author Name" }
+last_update: { author: 'Author Name' }
 ---
 
 # Flipper, Expo, Dev tools
@@ -67,6 +67,7 @@ const MyComponent = () => (
 ```
 
 **Features:**
+
 - View component hierarchy
 - Inspect props and state
 - Modify styles in real-time
@@ -195,6 +196,7 @@ expo start --dev-client --clear
 JavaScript bundler interface.
 
 **Features:**
+
 - Bundle progress
 - Error reporting
 - Cache management
@@ -216,10 +218,12 @@ expo start --android
 #### 3. Debug Menu
 
 Access by shaking device or pressing:
+
 - iOS Simulator: Cmd+D
 - Android Emulator: Cmd+M / Ctrl+M
 
 **Options:**
+
 - Reload
 - Debug Remote JS
 - Enable Fast Refresh
@@ -237,6 +241,7 @@ npm install -g react-native-debugger
 ```
 
 **Features:**
+
 - Redux DevTools integration
 - React DevTools
 - Network inspection
@@ -349,7 +354,7 @@ const onRenderCallback = (
   baseDuration, // Estimated time without memoization
   startTime, // When render started
   commitTime, // When committed
-  interactions // Set of interactions
+  interactions, // Set of interactions
 ) => {
   console.log(`${id} ${phase} took ${actualDuration}ms`);
 };
@@ -377,9 +382,8 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 
 const store = createStore(
   reducer,
-  composeWithDevTools(
-    // other store enhancers
-  )
+  composeWithDevTools(),
+  // other store enhancers
 );
 ```
 
@@ -464,6 +468,7 @@ console.assert(value > 0, 'Value must be positive');
 ### Network Tab
 
 **Features:**
+
 - All HTTP requests
 - WebSocket connections
 - Request/response headers
@@ -497,6 +502,7 @@ fetch('/api/data')
 ### Sources Tab
 
 **Features:**
+
 - Breakpoints
 - Watch expressions
 - Call stack
@@ -577,10 +583,9 @@ npm install --save-dev reactotron-react-native
 import Reactotron from 'reactotron-react-native';
 import { reactotronRedux } from 'reactotron-redux';
 
-Reactotron
-  .configure({
-    name: 'MyApp',
-  })
+Reactotron.configure({
+  name: 'MyApp',
+})
   .useReactNative({
     networking: {
       ignoreUrls: /symbolicate/,
@@ -657,7 +662,7 @@ Debug JavaScript and TypeScript in VS Code.
 ```javascript
 // Set breakpoints by clicking line numbers
 // Or use debugger statement
-const calculateTotal = (items) => {
+const calculateTotal = items => {
   debugger; // Execution will pause here
   return items.reduce((sum, item) => sum + item.price, 0);
 };
@@ -701,14 +706,9 @@ module.exports = {
 ### 4. Leverage Browser Extensions
 
 Install these helpful extensions:
+
 - React DevTools
 - Redux DevTools
 - JSON Formatter
 - Color Picker
 - Lighthouse
-
-## Related Documentation
-
-- [Wave Pulse, Inspection frameworks](../wm-debugging-tools/wave-pulse-inspection-frameworks.md)
-- [UI Testing Web](../testing-strategies/ui-testing-web.md)
-- [UI Testing Mobile](../testing-strategies/ui-testing-mobile.md)

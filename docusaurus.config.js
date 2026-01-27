@@ -11,7 +11,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 const config = {
   title: "WaveMaker Docs",
   tagline: "Welcome to the Learning Center",
-  url: "https://www.wavemaker.com",
+  url: "https://next-docs.wavemaker.com",
   organizationName: "WaveMaker, Inc.",
   favicon: "https://dev-ecosystem.s3.us-east-1.amazonaws.com/menu-icon/docs-icon.png",
 
@@ -82,8 +82,8 @@ const config = {
       image: "img/docusaurus-social-card.jpg",
       algolia: {
         appId: "QCVP2DTGFE",
-        apiKey: "e6c3135299d8686cb165ab06fa129dbe",
-        indexName: "wavemakerdocs",
+        apiKey: "5c6569989dc17486081c8ab5cd736d10",
+        indexName: "next_wavemakerdocs",
       },
       colorMode: {
         respectPrefersColorScheme: true,

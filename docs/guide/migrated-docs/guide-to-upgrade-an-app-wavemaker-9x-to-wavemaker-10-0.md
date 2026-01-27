@@ -27,7 +27,7 @@ We recommend you to process the project upgrade as fast as possible not only to
 
 ### Handling custom code
 
-One of the key differences between the WM 9.4 and WM 10.0 is moving from AngularJS to Angular 7. This transit does not necessarily mean rewriting the code all over again. WaveMaker has automated the process for you already. However, the custom code does not automatically upgrade. We have a code analysis and inspection tool that will find and flag unsupported methods in your application's custom code. From this, you can create a list of tasks your team has to handle for the upgrade to WM 10.0. Learn more about the [inspection framework](/docs/user-interfaces/web/testing-and-debugging/wm-debugging-tools/wave-pulse-inspection-frameworks).
+One of the key differences between the WM 9.4 and WM 10.0 is moving from AngularJS to Angular 7. This transit does not necessarily mean rewriting the code all over again. WaveMaker has automated the process for you already. However, the custom code does not automatically upgrade. We have a code analysis and inspection tool that will find and flag unsupported methods in your application's custom code. From this, you can create a list of tasks your team has to handle for the upgrade to WM 10.0. Learn more about the [inspection framework](#).
 
 ## Getting Started with Upgrading an App
 
@@ -77,7 +77,7 @@ In the **Preview **mode**,** check all the following:
 
 1. Preview all the pages.
 2. Test typical breakage cases.
-3. Using the [inspection framework](/docs/user-interfaces/web/testing-and-debugging/wm-debugging-tools/wave-pulse-inspection-frameworks), check custom AngularJS code for the following:
+3. Using the [inspection framework](#), check custom AngularJS code for the following:
     - Services
     - Directives
     - AngularJS provided service injections
