@@ -226,7 +226,7 @@ Key points about the Marketplace Agent:
 
 ## Related Documentation
 
-- [Prefabs (Web)](../../user-interfaces/web/enterprise-capabilities/prefabs) – Creating and using reusable UI components for web
+- [Prefabs (Web)](#) – Creating and using reusable UI components for web
 - [Prefabs (Mobile)](../../user-interfaces/mobile/enterprise-capabilities/prefabs) – Creating and using reusable UI components for mobile
 - [Connectors Architecture](../../apis-and-services/connectors/architecture) – Understanding connector structure and integration
 - [Building Connectors](../../apis-and-services/connectors/build-a-connector) – Creating custom external service integrations
