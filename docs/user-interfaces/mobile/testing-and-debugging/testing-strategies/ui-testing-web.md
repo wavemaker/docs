@@ -676,5 +676,6 @@ npm install --save-dev @wdio/allure-reporter
 
 - [UI Testing Mobile](./ui-testing-mobile.md)
 - [Web & Mobile](../unit-testing/web-and-mobile.md)
-- [Wave Pulse, Inspection frameworks](../wm-debugging-tools/wave-pulse-inspection-frameworks.md)
+- [WavePulse](../wm-debugging-tools/wavepulse.md) – WaveMaker debugging tool
+- [Debugging Overview](../debugging-overview.md) – All debugging tools and methods
 - [Accessibility](../../enterprise-capabilities/accessibility.md)

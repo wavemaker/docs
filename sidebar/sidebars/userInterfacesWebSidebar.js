@@ -564,18 +564,6 @@ export default [
           },
         ],
       },
-      {
-        type: 'category',
-        label: 'wm-debugging-tools',
-        collapsible: true,
-        collapsed: true,
-        items: [
-          {
-            type: 'doc',
-            id: 'user-interfaces/web/testing-and-debugging/wm-debugging-tools/wave-pulse-inspection-frameworks',
-          },
-        ],
-      },
     ],
   },
 ];

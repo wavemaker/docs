@@ -745,5 +745,6 @@ jobs:
 
 - [UI Testing Web](../testing-strategies/ui-testing-web.md)
 - [UI Testing Mobile](../testing-strategies/ui-testing-mobile.md)
-- [Wave Pulse, Inspection frameworks](../wm-debugging-tools/wave-pulse-inspection-frameworks.md)
+- [WavePulse](../wm-debugging-tools/wavepulse.md) – WaveMaker debugging tool
+- [Debugging Overview](../debugging-overview.md) – All debugging tools and methods
 - [State Management](../../develop/state-management.md)

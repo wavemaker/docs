@@ -25,7 +25,7 @@ Preview applications in a web browser directly from WaveMaker Studio at any poin
 - Testing JavaScript logic
 - Debugging with Chrome DevTools
 
-**Learn more:** [Web Preview Testing](../../../build-and-deploy/build/mobile/testing)
+**Learn more:** [Mobile Build Overview](../../../build-and-deploy/build/mobile/overview)
 
 ### Expo Go / Development Build
 
@@ -47,7 +47,7 @@ Run Expo projects locally using Expo CLI with two options:
 - Real device performance testing
 - Using React Native DevTools
 
-**Learn more:** [Expo Debugging](./community-debugging-tools/expo-debug)
+**Learn more:** [Expo Dev Tools](./community-debugging-tools/expo-dev-tools)
 
 ### App Installers (APK/IPA)
 
