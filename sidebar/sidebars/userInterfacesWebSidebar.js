@@ -355,14 +355,15 @@ export default [
             type: 'doc',
             id: 'user-interfaces/web/develop/page/overview',
           },
-          // {
-          //   type: 'doc',
-          //   id: 'user-interfaces/web/develop/page/types',
-          // },
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/page/types',
+            label: 'Types',
+          },
           {
             type: 'doc',
             id: 'user-interfaces/web/develop/page/properties',
-            label: 'Properties',
+            label: 'Properties & Behaviour',
           },
         ],
       },
@@ -375,18 +376,23 @@ export default [
           {
             type: 'doc',
             id: 'user-interfaces/web/develop/layout-and-style/overview',
-            label: 'Layout and Style',
+            label: 'Overview',
           },
 
           {
             type: 'doc',
             id: 'user-interfaces/web/develop/layout-and-style/types',
-            label: 'Types',
+            label: 'Supporting Components',
           },
           {
             type: 'doc',
             id: 'user-interfaces/web/develop/layout-and-style/auto-layout',
             label: 'Auto Layout',
+          },
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/layout-and-style/styling-with-design-tokens',
+            label: 'Styling with Design Tokens',
           },
         ],
       },
@@ -403,15 +409,17 @@ export default [
            {
             type: 'doc',
             id: 'user-interfaces/web/develop/integrating-with-apis/variables',
+            label: 'Variables',
           },
           {
             type: 'doc',
             id: 'user-interfaces/web/develop/integrating-with-apis/life-cycle-hooks',
           },
-          // {
-          //   type: 'doc',
-          //   id: 'user-interfaces/web/develop/integrating-with-apis/types',
-          // },
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/integrating-with-apis/types',
+            label: 'Variable Types',
+          },
          
         ],
       },
@@ -456,22 +464,7 @@ export default [
           }
         ],
       },
-      // {
-      //   type: 'doc',
-      //   id: 'user-interfaces/web/develop/create-page-working-with-layouts',
-      // },
-      // {
-      //   type: 'doc',
-      //   id: 'user-interfaces/web/develop/styling-with-design-tokens',
-      // },
-      // {
-      //   type: 'doc',
-      //   id: 'user-interfaces/web/develop/responsive-design',
-      // },
-      // {
-      //   type: 'doc',
-      //   id: 'user-interfaces/web/develop/ui-event-handling',
-      // },
+     
       {
         type: 'doc',
         id: 'user-interfaces/web/develop/input-validations',
