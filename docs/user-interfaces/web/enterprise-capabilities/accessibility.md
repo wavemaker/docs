@@ -1,803 +1,140 @@
 ---
-last_update: { author: "Author Name" }
+last_update: { author: "Priyanka Bhadri" }
 ---
 
 # Accessibility
 
-Building accessible user interfaces that work for everyone, including people with disabilities.
 
-## Overview
+Accessibility plays a vital role in building high‑quality applications that can be used by everyone, including people with disabilities. WaveMaker adheres to international standards for web accessibility, such as the Web Content Accessibility Guidelines (WCAG) and WAI‑ARIA, to ensure UI components and applications are inclusive and assistive‑technology friendly.
 
-Web accessibility (a11y) ensures that websites and applications are usable by everyone, regardless of their abilities or disabilities. This includes users who rely on screen readers, keyboard navigation, or other assistive technologies.
-
-## Why Accessibility Matters
-
-- **Legal Compliance**: Many countries require web accessibility (ADA, Section 508, WCAG)
-- **Inclusive Design**: Ensures everyone can use your application
-- **Better UX**: Accessibility improvements benefit all users
-- **SEO Benefits**: Semantic HTML improves search engine rankings
-- **Market Reach**: Expands your potential user base
-
-## WCAG Principles (POUR)
-
-### 1. Perceivable
-
-Information must be presentable to users in ways they can perceive.
-
-```jsx
-// ✅ Good - Alt text for images
-<img src="profile.jpg" alt="User profile photo of John Doe" />
-
-// ✅ Good - Text alternatives for icons
-<button aria-label="Close dialog">
-  <CloseIcon />
-</button>
-
-// ❌ Bad - Missing alt text
-<img src="profile.jpg" />
-```
-
-### 2. Operable
-
-User interface components must be operable.
-
-```jsx
-// ✅ Good - Keyboard accessible
-<button onClick={handleClick} onKeyPress={handleKeyPress}>
-  Submit
-</button>
-
-// ✅ Good - Focus management
-<input
-  type="text"
-  autoFocus
-  onBlur={handleBlur}
-/>
-
-// ❌ Bad - Mouse-only interaction
-<div onClick={handleClick}>Click me</div>
-```
-
-### 3. Understandable
-
-Information and operation must be understandable.
-
-```jsx
-// ✅ Good - Clear labels and instructions
-<label htmlFor="email">
-  Email Address
-  <input
-    type="email"
-    id="email"
-    aria-describedby="email-help"
-    required
-  />
-</label>
-<small id="email-help">
-  We'll never share your email with anyone else.
-</small>
-
-// ❌ Bad - Unclear placeholder-only label
-<input type="email" placeholder="Email" />
-```
-
-### 4. Robust
-
-Content must be robust enough to work with various assistive technologies.
-
-```jsx
-// ✅ Good - Semantic HTML
-<nav>
-  <ul>
-    <li><a href="/home">Home</a></li>
-    <li><a href="/about">About</a></li>
-  </ul>
-</nav>
-
-// ❌ Bad - Non-semantic markup
-<div className="nav">
-  <div className="nav-item" onClick={goHome}>Home</div>
-  <div className="nav-item" onClick={goAbout}>About</div>
-</div>
-```
-
-## Semantic HTML
-
-### Use Proper HTML Elements
-
-```jsx
-// ✅ Good - Semantic HTML
-<header>
-  <nav>
-    <ul>
-      <li><a href="/home">Home</a></li>
-    </ul>
-  </nav>
-</header>
-
-<main>
-  <article>
-    <h1>Article Title</h1>
-    <p>Content...</p>
-  </article>
-</main>
-
-<footer>
-  <p>&copy; 2025 Company Name</p>
-</footer>
-
-// ❌ Bad - Generic divs everywhere
-<div className="header">
-  <div className="nav">
-    <div className="nav-item">Home</div>
-  </div>
-</div>
-```
-
-### Heading Hierarchy
-
-```jsx
-// ✅ Good - Proper heading order
-<h1>Main Page Title</h1>
-<section>
-  <h2>Section Title</h2>
-  <h3>Subsection</h3>
-  <h3>Another Subsection</h3>
-</section>
-
-// ❌ Bad - Skipping heading levels
-<h1>Main Page Title</h1>
-<h4>Section Title</h4>
-```
-
-## ARIA (Accessible Rich Internet Applications)
-
-### ARIA Roles
-
-```jsx
-// Navigation
-<nav role="navigation" aria-label="Main navigation">
-  <ul>
-    <li><a href="/home">Home</a></li>
-  </ul>
-</nav>
-
-// Search
-<form role="search">
-  <input type="search" aria-label="Search" />
-  <button type="submit">Search</button>
-</form>
-
-// Dialog
-<div role="dialog" aria-labelledby="dialog-title" aria-modal="true">
-  <h2 id="dialog-title">Confirm Action</h2>
-  <p>Are you sure?</p>
-</div>
-```
-
-### ARIA Labels
-
-```jsx
-// aria-label for icon buttons
-<button aria-label="Close" onClick={handleClose}>
-  <CloseIcon />
-</button>
-
-// aria-labelledby for complex labels
-<section aria-labelledby="section-heading">
-  <h2 id="section-heading">User Settings</h2>
-  {/* Content */}
-</section>
-
-// aria-describedby for additional context
-<input
-  type="password"
-  aria-label="Password"
-  aria-describedby="password-requirements"
-/>
-<div id="password-requirements">
-  Password must be at least 8 characters long.
-</div>
-```
-
-### ARIA States
-
-```jsx
-// aria-expanded for collapsible content
-<button
-  aria-expanded={isOpen}
-  aria-controls="content-id"
-  onClick={toggleContent}
->
-  Toggle Content
-</button>
-<div id="content-id" hidden={!isOpen}>
-  Content...
-</div>
-
-// aria-checked for custom checkboxes
-<div
-  role="checkbox"
-  aria-checked={isChecked}
-  tabIndex={0}
-  onClick={handleToggle}
-  onKeyPress={handleKeyPress}
->
-  {isChecked ? '☑' : '☐'} Option
-</div>
-
-// aria-selected for tabs
-<div role="tablist">
-  <button
-    role="tab"
-    aria-selected={activeTab === 'tab1'}
-    aria-controls="panel1"
-    id="tab1"
-  >
-    Tab 1
-  </button>
-</div>
-```
-
-### ARIA Live Regions
-
-```jsx
-// Announce dynamic updates to screen readers
-const NotificationCenter = () => {
-  const [message, setMessage] = useState('');
-
-  return (
-    <div
-      role="status"
-      aria-live="polite"
-      aria-atomic="true"
-    >
-      {message}
-    </div>
-  );
-};
-
-// For urgent messages
-<div role="alert" aria-live="assertive">
-  Error: Form submission failed!
-</div>
-```
-
-## Keyboard Navigation
-
-### Focus Management
-
-```jsx
-import { useRef, useEffect } from 'react';
-
-const Dialog = ({ isOpen, onClose }) => {
-  const closeButtonRef = useRef();
-
-  useEffect(() => {
-    if (isOpen) {
-      // Focus close button when dialog opens
-      closeButtonRef.current?.focus();
-    }
-  }, [isOpen]);
-
-  if (!isOpen) return null;
-
-  return (
-    <div role="dialog" aria-modal="true">
-      <h2>Dialog Title</h2>
-      <p>Content...</p>
-      <button ref={closeButtonRef} onClick={onClose}>
-        Close
-      </button>
-    </div>
-  );
-};
-```
-
-### Tab Order
-
-```jsx
-// Control tab order with tabIndex
-<div>
-  <button tabIndex={0}>First</button>
-  <button tabIndex={0}>Second</button>
-  <button tabIndex={-1}>Not in tab order</button>
-  <a href="#" tabIndex={0}>Third</a>
-</div>
-```
-
-### Keyboard Event Handling
-
-```jsx
-const KeyboardAccessibleDiv = ({ onClick }) => {
-  const handleKeyPress = (event) => {
-    // Activate on Enter or Space
-    if (event.key === 'Enter' || event.key === ' ') {
-      event.preventDefault();
-      onClick();
-    }
-  };
-
-  return (
-    <div
-      role="button"
-      tabIndex={0}
-      onClick={onClick}
-      onKeyPress={handleKeyPress}
-    >
-      Click or press Enter/Space
-    </div>
-  );
-};
-```
-
-### Skip Links
-
-```jsx
-// Allow keyboard users to skip to main content
-const Layout = ({ children }) => {
-  return (
-    <>
-      <a href="#main-content" className="skip-link">
-        Skip to main content
-      </a>
-
-      <header>
-        <nav>{/* Navigation */}</nav>
-      </header>
-
-      <main id="main-content">
-        {children}
-      </main>
-    </>
-  );
-};
-
-// CSS for skip link
-// .skip-link {
-//   position: absolute;
-//   top: -40px;
-//   left: 0;
-//   background: #000;
-//   color: white;
-//   padding: 8px;
-//   text-decoration: none;
-// }
-// .skip-link:focus {
-//   top: 0;
-// }
-```
-
-## Forms Accessibility
-
-### Proper Labels
-
-```jsx
-// ✅ Good - Explicit label association
-<label htmlFor="username">
-  Username
-  <input type="text" id="username" name="username" />
-</label>
-
-// ✅ Good - Implicit label association
-<label>
-  Email
-  <input type="email" name="email" />
-</label>
-
-// ❌ Bad - No label
-<input type="text" placeholder="Username" />
-```
-
-### Form Validation and Error Messages
-
-```jsx
-const AccessibleForm = () => {
-  const [errors, setErrors] = useState({});
-
-  return (
-    <form>
-      <div>
-        <label htmlFor="email">Email</label>
-        <input
-          type="email"
-          id="email"
-          aria-invalid={!!errors.email}
-          aria-describedby={errors.email ? 'email-error' : undefined}
-        />
-        {errors.email && (
-          <div id="email-error" role="alert">
-            {errors.email}
-          </div>
-        )}
-      </div>
-
-      <button type="submit">Submit</button>
-    </form>
-  );
-};
-```
-
-### Required Fields
-
-```jsx
-// Visual and programmatic indication
-<label htmlFor="name">
-  Name <span aria-label="required">*</span>
-  <input
-    type="text"
-    id="name"
-    required
-    aria-required="true"
-  />
-</label>
-```
-
-### Fieldset and Legend
-
-```jsx
-// Group related form controls
-<fieldset>
-  <legend>Contact Information</legend>
-
-  <label htmlFor="phone">Phone</label>
-  <input type="tel" id="phone" />
-
-  <label htmlFor="email">Email</label>
-  <input type="email" id="email" />
-</fieldset>
-```
-
-## Color and Contrast
-
-### Minimum Contrast Ratios
-
-```css
-/* WCAG AA (minimum) */
-/* Normal text: 4.5:1 */
-/* Large text (18pt+): 3:1 */
-
-/* ✅ Good contrast */
-.text-on-light {
-  color: #212529; /* Dark gray on white background */
-  background-color: #ffffff;
-}
-
-/* ✅ Good contrast for buttons */
-.primary-button {
-  color: #ffffff; /* White on blue */
-  background-color: #0056b3; /* Dark blue */
-}
-
-/* ❌ Bad - Insufficient contrast */
-.low-contrast {
-  color: #999999; /* Light gray */
-  background-color: #ffffff; /* White */
-}
-```
-
-### Don't Rely on Color Alone
-
-```jsx
-// ✅ Good - Multiple indicators
-const StatusBadge = ({ status }) => {
-  const getStatusInfo = (status) => {
-    switch (status) {
-      case 'success':
-        return { color: 'green', icon: '✓', text: 'Success' };
-      case 'error':
-        return { color: 'red', icon: '✗', text: 'Error' };
-      case 'warning':
-        return { color: 'orange', icon: '!', text: 'Warning' };
-      default:
-        return { color: 'gray', icon: '–', text: 'Unknown' };
-    }
-  };
-
-  const { color, icon, text } = getStatusInfo(status);
-
-  return (
-    <span className={`badge badge-${color}`}>
-      <span aria-hidden="true">{icon}</span>
-      <span>{text}</span>
-    </span>
-  );
-};
-
-// ❌ Bad - Color only
-<span className="text-green">Success</span>
-```
-
-## Focus Indicators
-
-### Visible Focus Styles
-
-```css
-/* ✅ Good - Clear focus indicator */
-button:focus,
-a:focus,
-input:focus {
-  outline: 2px solid #0056b3;
-  outline-offset: 2px;
-}
-
-/* ✅ Good - Custom focus ring */
-.custom-focus:focus {
-  box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.5);
-  outline: none;
-}
-
-/* ❌ Bad - Removing focus outline */
-*:focus {
-  outline: none;
-}
-```
-
-### Focus Visible (Modern Approach)
-
-```css
-/* Only show focus on keyboard navigation */
-button:focus-visible {
-  outline: 2px solid #0056b3;
-  outline-offset: 2px;
-}
-
-/* No outline on mouse click */
-button:focus:not(:focus-visible) {
-  outline: none;
-}
-```
-
-## Screen Reader Only Content
-
-```css
-/* Visually hidden but accessible to screen readers */
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
-```
-
-```jsx
-// Usage
-<button>
-  <TrashIcon />
-  <span className="sr-only">Delete item</span>
-</button>
-```
-
-## Accessible Components
-
-### Accessible Modal
-
-```jsx
-import { useEffect, useRef } from 'react';
-
-const AccessibleModal = ({ isOpen, onClose, title, children }) => {
-  const modalRef = useRef();
-  const previousActiveElement = useRef();
-
-  useEffect(() => {
-    if (isOpen) {
-      previousActiveElement.current = document.activeElement;
-      modalRef.current?.focus();
-
-      // Trap focus inside modal
-      const handleKeyDown = (e) => {
-        if (e.key === 'Escape') {
-          onClose();
-        }
-      };
-
-      document.addEventListener('keydown', handleKeyDown);
-
-      return () => {
-        document.removeEventListener('keydown', handleKeyDown);
-        previousActiveElement.current?.focus();
-      };
-    }
-  }, [isOpen, onClose]);
-
-  if (!isOpen) return null;
-
-  return (
-    <div
-      className="modal-overlay"
-      onClick={onClose}
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="modal-title"
-    >
-      <div
-        ref={modalRef}
-        className="modal-content"
-        onClick={(e) => e.stopPropagation()}
-        tabIndex={-1}
-      >
-        <h2 id="modal-title">{title}</h2>
-        {children}
-        <button onClick={onClose} aria-label="Close dialog">
-          Close
-        </button>
-      </div>
-    </div>
-  );
-};
-```
-
-### Accessible Dropdown
-
-```jsx
-const AccessibleDropdown = ({ label, options, onSelect }) => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [selectedIndex, setSelectedIndex] = useState(-1);
-
-  const handleKeyDown = (event) => {
-    switch (event.key) {
-      case 'ArrowDown':
-        event.preventDefault();
-        setSelectedIndex((prev) =>
-          prev < options.length - 1 ? prev + 1 : 0
-        );
-        break;
-      case 'ArrowUp':
-        event.preventDefault();
-        setSelectedIndex((prev) =>
-          prev > 0 ? prev - 1 : options.length - 1
-        );
-        break;
-      case 'Enter':
-        if (selectedIndex >= 0) {
-          onSelect(options[selectedIndex]);
-          setIsOpen(false);
-        }
-        break;
-      case 'Escape':
-        setIsOpen(false);
-        break;
-    }
-  };
-
-  return (
-    <div>
-      <button
-        aria-haspopup="listbox"
-        aria-expanded={isOpen}
-        onClick={() => setIsOpen(!isOpen)}
-        onKeyDown={handleKeyDown}
-      >
-        {label}
-      </button>
-
-      {isOpen && (
-        <ul role="listbox" aria-label={label}>
-          {options.map((option, index) => (
-            <li
-              key={option.id}
-              role="option"
-              aria-selected={index === selectedIndex}
-              onClick={() => {
-                onSelect(option);
-                setIsOpen(false);
-              }}
-            >
-              {option.label}
-            </li>
-          ))}
-        </ul>
-      )}
-    </div>
-  );
-};
-```
-
-## Testing Accessibility
-
-### Automated Testing Tools
-
-```bash
-# Install axe-core for automated testing
-npm install --save-dev @axe-core/react
-```
-
-```javascript
-import { useEffect } from 'react';
-
-if (process.env.NODE_ENV !== 'production') {
-  const axe = require('@axe-core/react');
-  const React = require('react');
-  const ReactDOM = require('react-dom');
-
-  axe(React, ReactDOM, 1000);
-}
-```
-
-### Manual Testing Checklist
-
-1. **Keyboard Navigation**
-   - Tab through all interactive elements
-   - Use Enter/Space to activate buttons
-   - Use arrow keys for custom controls
-
-2. **Screen Reader Testing**
-   - Test with NVDA (Windows), JAWS (Windows), or VoiceOver (Mac)
-   - Ensure all content is announced properly
-   - Verify page structure makes sense
-
-3. **Zoom Testing**
-   - Test at 200% zoom
-   - Ensure no content is cut off
-   - Check that layouts remain usable
-
-4. **Color Contrast**
-   - Use tools like WebAIM Contrast Checker
-   - Verify all text meets WCAG standards
-
-## Best Practices
-
-### 1. Test with Real Users
-
-Include people with disabilities in your testing process.
-
-### 2. Use Semantic HTML First
-
-Before reaching for ARIA, use proper HTML elements.
-
-```jsx
-// ✅ Good - Native button
-<button onClick={handleClick}>Click me</button>
-
-// ❌ Bad - Div with ARIA
-<div role="button" tabIndex={0} onClick={handleClick}>
-  Click me
-</div>
-```
-
-### 3. Progressive Enhancement
-
-Build core functionality first, enhance with JavaScript.
-
-### 4. Provide Text Alternatives
-
-All non-text content should have text alternatives.
-
-### 5. Make Touch Targets Large Enough
-
-Minimum 44x44 pixels for touch targets.
-
-```css
-button {
-  min-width: 44px;
-  min-height: 44px;
-  padding: 8px 16px;
-}
-```
-
-## Accessibility Checklist
-
-- [ ] All images have alt text
-- [ ] Form inputs have associated labels
-- [ ] Proper heading hierarchy (h1-h6)
-- [ ] Sufficient color contrast (4.5:1 for normal text)
-- [ ] Keyboard navigation works throughout
-- [ ] Focus indicators are visible
-- [ ] ARIA attributes used correctly
-- [ ] No keyboard traps
-- [ ] Skip links provided
-- [ ] Error messages are announced to screen readers
-- [ ] Live regions used for dynamic content
-- [ ] Touch targets are at least 44x44 pixels
-
-## Related Documentation
-
-- [Role based Access Control](./role-based-access-control.md)
-- [Language Support i18n](./language-support-i18n.md)
-- [UI Event handling](../develop/ui-event-handling.md)
-- [Input validations](../develop/input-validations.md)
+To support accessibility, WaveMaker automatically assigns appropriate ARIA roles and attributes to its widgets, making it possible for screen readers and other assistive technologies to interpret UI elements and their purpose correctly. Developers can configure or refine text captions and accessibility hints to provide meaningful context for users relying on assistive tools.
+
+WaveMaker’s accessibility enhancements aim to cover key WCAG “A” and “AA” success criteria, including meaningful semantics, relationships between UI elements, input identification, error prevention, and non‑text contrast.
+
+---
+
+## How Accessibility Works in WaveMaker
+
+WaveMaker ensures that applications are accessible by embedding semantic information directly into UI components. Each widget automatically includes ARIA roles, labels, and attributes that convey meaning to assistive technologies such as screen readers. Developers can further enhance accessibility by configuring hints, labels, and focus behaviors, allowing users with different abilities to interact with applications effectively. This approach provides a consistent, standards-compliant experience across devices while reducing the manual effort required to implement accessibility.
+
+
+### ARIA Roles and Attributes
+
+WaveMaker uses ARIA roles and attributes to improve accessibility across its widget library. These attributes help screen readers understand the purpose, structure, and relationships of UI elements.
+
+Developers can provide meaningful text for widgets using the **Hint** property, which is then exposed as an `aria‑label` in the HTML output, aiding assistive technologies.
+
+---
+
+## Steps to Ensure Accessibility in WaveMaker
+
+ Ensure accessibility in WaveMaker by setting meaningful Hint values for widgets, which automatically populate the aria-label for screen readers. Review the Accessibility section for each widget to provide descriptive labels, tooltips, and alternative text.
+
+<!-- ### Labels
+1. For every widget you add via drag-and-drop, check the **Accessibility** section in the Properties panel.  
+2. Copy or bind the captions of label widgets to the **Hint** property in the Accessibility section.  
+3. By default, all labels and text fields have a **Hint** value of `"Label text"`, which can be edited as needed.  
+4. The **Hint** property serves two purposes:
+   - Appears as **tooltip text** on hover.
+   - Automatically populates the **`aria-label`** attribute, which is used by assistive technologies (screen readers) to interpret the widget content. -->
+
+  ### Example: Adding Accessibility to a Label Widget
+
+
+
+1. **Select the Label Widget**  
+   - Drag and drop a **Label** widget onto your page or form.
+
+2. **Open the Accessibility Section**  
+   - In the Properties panel, expand the **Accessibility** section.
+
+3. **Set the Hint Property**  
+   - Copy or bind the text of the label to the **Hint** property.  
+   - Example: For a label displaying `"First Name"`, set the Hint as `"Enter your first name"`.  
+   - By default, the Hint is `"Label text"`. Always update it with a meaningful description.
+
+4. **Understand the Effect**  
+   - The **Hint** serves two purposes:
+     - Appears as **tooltip text** on hover for general users.  
+     - Automatically sets the **`aria-label`** attribute for screen readers, making the label accessible to assistive technologies.
+
+5. **Preview Accessibility**  
+   - Use the browser preview to check that the `aria-label` is correctly applied.  
+   - Screen readers will announce the label text based on the Hint property.
+
+![Accessibility Steps ](../assets/accessiblity.png)
+
+   
+
+---
+
+
+## Predefined ARIA Attributes in WaveMaker
+
+WaveMaker UI components include predefined ARIA attributes to support accessibility. These attributes provide screen readers and assistive technologies with semantic information about UI elements.
+
+| Component | ARIA Labels | Role / Attributes |
+|-----------|-------------|-----------------|
+| App logo | `aria-label="Image"` | — |
+| Header | `aria-label="Page header"` | `banner` |
+| Page | `aria-label="Main page content"` | — |
+| Mobile Navbar | `aria-label="Title"` | `link` |
+| Mobile Tabbar | `aria-label="Home"` | `link` |
+| Heading | `aria-label="Label text"` | `heading`, `aria-level="1"` |
+| Login Input | `aria-label="Text field"` | — |
+| Login Button | `aria-label="Login"` | — |
+| Validation Errors | `aria-label="error message"`, `aria-hidden="true"`, `aria-live="polite"` | `alert` |
+| Anchors | `aria-label="Link"` | — |
+| Button | `aria-label="Button"` | — |
+| Checkbox | `aria-label="Checkbox"`, `aria-checked="false"` | `checkbox` |
+| Toggle Switch | `aria-label="Toggle"`, `aria-checked="false"` | — |
+| Rating | `aria-label="1 out of 5 ratings"`, `aria-checked="true"`, `aria-multiselectable="true"` | `radio` |
+| Currency | `aria-label="country currency"` | — |
+| Datetime | `aria-label="Date and time field"` | — |
+| Time Input | `aria-label="Time field"`, `aria-atomic="true"` | `timer` |
+| Pagination | `aria-label="Page 1"` | — |
+| Calendar View | `aria-label="Month view"` | — |
+| Search Input | `aria-label="search field"` | — |
+| Slider | `aria-label="slider"`, `aria-orientation="Vertical/horizontal"` | `slider` |
+| Selectbox | `aria-label="Select options"`, `aria-expanded="false"`, `aria-hashpop="true"` | `listbox` |
+| Selectbox Options | — | `option` |
+| Accordion Tabs | `aria-expanded="true/false"` | `tab` |
+| List | — | `list`, `listitem` |
+| Datatable | — | `table` |
+| Panel | `aria-label="panel"`, `aria-label="panel-header"`, `aria-label="panel-content"`, `aria-label="panel-footer"` | — |
+| Charts | `aria-label="pie chart"` | — |
+| Left Panel | `aria-label="Left navigation"` | `navigation` |
+| Right Panel | `aria-label="Right navigation"` | `complementary` |
+| Top Nav | `aria-label="Second level navigation"` | `navigation` |
+| Footer | `aria-label="Page footer"` | `contentinfo` |
+| Partials | — | `complementary` |
+| Spinner | `aria-label="Loading..."`, `aria-live="assertive"`, `aria-busy="true"` | `alert` |
+| Picture | `aria-label="Placeholder Image"` | — |
+| Icon | `aria-label="user icon"` | — |
+| Popover | `aria-label="user icon"` | `menubar` |
+| Dialog | — | `aria-modal="true"`, `dialog` |
+| Audio | — | — |
+
+---
+
+
+## Accessibility Best Practices
+
+When designing accessible applications with WaveMaker:
+
+- Ensure all widgets have meaningful labels and hints for assistive technology.
+- Use proper heading structures to convey content hierarchy.
+- Provide alternative text or descriptions for images and non‑text elements.
+- Enable keyboard navigation using appropriate focus and tab order settings.
+- Effective use of color contrast is also an important aspect of making your app accessible.
+
+  - WCAG 2.0 level "AA" requires a contrast ratio of at least 4.5:1 for normal text and 3:1 for large text.
+  - WCAG 2.1 requires a contrast ratio of at least 3:1 for graphics and user interface components (such as form input borders).
+  - WCAG Level "AAA" requires a contrast ratio of at least 7:1 for normal text and 4.5:1 for large text. 
+For more information about the color contrast ratio before designing or developing any application, see [Contrast Checker](https://webaim.org/resources/contrastchecker/).
+
+---
+
+## Summary
+
+WaveMaker ensures that applications are inclusive and accessible by adhering to WCAG and WAI‑ARIA standards. Built-in ARIA roles, attributes, and widget hints allow screen readers and assistive technologies to interpret the UI correctly. By following accessibility best practices—meaningful labels, keyboard navigation, proper headings, alternative text, and sufficient contrast—developers can create applications that are usable by all users across devices and platforms.
