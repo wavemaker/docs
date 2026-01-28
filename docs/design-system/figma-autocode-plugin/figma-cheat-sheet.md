@@ -1,7 +1,8 @@
 ---
-id: "figma-cheat-sheet"
-title: "Figma Cheat Sheet"
-sidebar_label: "Figma Cheat Sheet"
+id: figma-cheat-sheet
+title: Figma Cheat Sheet
+sidebar_label: Figma Cheat Sheet
+last_update: { author: "WaveMaker" }
 ---
 ---
 

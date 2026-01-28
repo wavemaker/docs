@@ -1,7 +1,8 @@
 ---
-id: "design-guidelines"
-title: "Creating AutoCode-Friendly Designs in Figma"
-sidebar_label: "Design Guideline"
+id: design-guidelines
+title: Creating AutoCode-Friendly Designs in Figma
+sidebar_label: Design Guideline
+last_update: { author: "WaveMaker" }
 ---
 ---
 

@@ -1,8 +1,8 @@
 ---
-title: "Working with Style Workspace"
-sidebar_label: "Style Workspace"
+title: Working with Style Workspace
+sidebar_label: Style Workspace
+last_update: { author: "WaveMaker" }
 ---
-
 import EnableDesignSystem from './assets/img/enable-design-system.png';
 
 The **Style Workspace** in WaveMaker Studio is your **visual control panel** for managing and customizing your application's design.  
