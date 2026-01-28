@@ -357,14 +357,14 @@ export default [
           },
           {
             type: 'doc',
-            id: 'user-interfaces/web/develop/page/types',
-            label: 'Types',
-          },
-          {
-            type: 'doc',
             id: 'user-interfaces/web/develop/page/properties',
             label: 'Properties & Behaviour',
           },
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/page/types',
+            label: 'Types',
+          }
         ],
       },
       {
