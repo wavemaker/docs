@@ -1,9 +1,9 @@
 ---
-title: "Switching Security Providers based on Profile"
-id: "switch-security-provider-based-on-profile"
-sidebar_label: "Switching Security Providers based on Profile"
+title: Switching Security Providers based on Profile
+id: switch-security-provider-based-on-profile
+sidebar_label: Switching Security Providers based on Profile
+last_update: { author: "WaveMaker" }
 ---
-
 WaveMaker supports many security providers which can be enabled from the Security dialog.
 You can now switch between the security providers based on the profile that is being used to build the application. To learn more about profiles, see [Configuration Profiles](#).
 

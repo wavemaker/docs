@@ -1,8 +1,8 @@
 ---
-title: "How to fetch more than the default number(100) of records from database?"
-id: "fetch-default-number100-records-database"
+title: How to fetch more than the default number(100) of records from database?
+id: fetch-default-number100-records-database
+last_update: { author: "WaveMaker" }
 ---
-
 Variables provide data integration for the widgets. Variables are the gateways for the users to control, manage and synchronize the data from the database/web service or any other service in the backend. In case user wants to fetch the record from database and show it in select widget.
 
 **Please find the approach below:** The "records per request" property on the variable will fetch a maximum of 100 records since there is a upper limit of 100 records set in the development profile(development.properties file).

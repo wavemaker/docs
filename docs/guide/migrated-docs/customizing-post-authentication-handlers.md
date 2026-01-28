@@ -1,8 +1,8 @@
 ---
-title: "Customizing Post Authentication Handlers"
-id: "customizing-post-authentication-handlers"
+title: Customizing Post Authentication Handlers
+id: customizing-post-authentication-handlers
+last_update: { author: "WaveMaker" }
 ---
-
 In a Security enabled WaveMaker app, post-authentication the following actions are performed.
 
 1. The Default Success Handler, which includes generation of CSRF token, storing the session context, etc., gets invoked.

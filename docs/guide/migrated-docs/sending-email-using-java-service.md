@@ -1,6 +1,7 @@
 ---
-title: "Sending Email using WaveMaker Connector"
-id: "sending-email-using-java-service"
+title: Sending Email using WaveMaker Connector
+id: sending-email-using-java-service
+last_update: { author: "WaveMaker" }
 ---
 ---
 

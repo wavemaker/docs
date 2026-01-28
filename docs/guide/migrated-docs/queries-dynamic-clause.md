@@ -1,8 +1,8 @@
 ---
-title: "Queries with Dynamic Where Clause"
-id: "queries-dynamic-clause"
+title: Queries with Dynamic Where Clause
+id: queries-dynamic-clause
+last_update: { author: "WaveMaker" }
 ---
-
 ## Use Case
 
 Constructing a Query Where Clause Dynamically

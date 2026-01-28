@@ -1,7 +1,8 @@
 ---
-title: "Prefab as a Web Component"
-id: "prefab-as-webcomponent"
-sidebar_label: "Prefab as a Web Component"
+title: Prefab as a Web Component
+id: prefab-as-webcomponent
+sidebar_label: Prefab as a Web Component
+last_update: { author: "WaveMaker" }
 ---
 ---
 

@@ -1,6 +1,7 @@
 ---
-title: "Adjust Left Navigation Width"
-id: "adjust-leftnav-width"
+title: Adjust Left Navigation Width
+id: adjust-leftnav-width
+last_update: { author: "WaveMaker" }
 ---
 ---
 

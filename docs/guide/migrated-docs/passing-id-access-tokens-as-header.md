@@ -1,8 +1,8 @@
 ---
-title: "How to Pass Logged-In User ID/Access Tokens as Header"
-id: "passing-id-access-tokens-as-header"
+title: How to Pass Logged-In User ID/Access Tokens as Header
+id: passing-id-access-tokens-as-header
+last_update: { author: "WaveMaker" }
 ---
-
 WaveMaker applications with OpenID as the security provider will store your ID token and access token as **Server** attributes during the authentication process to log into the application. These attributes can be accessed from the SecurityService getAllAttributes method.
 
 You can get the ID token or the access token of the currently logged-in user and pass them as a Bearer token in the Authorization header using an HTTP request processor.

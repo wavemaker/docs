@@ -1,6 +1,7 @@
 ---
-title: "Connect to MySQL database using SSL"
-id: "mysql-connection-using-ssl"
+title: Connect to MySQL database using SSL
+id: mysql-connection-using-ssl
+last_update: { author: "WaveMaker" }
 ---
 ---
 

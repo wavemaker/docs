@@ -1,6 +1,7 @@
 ---
-title: "How to Switch MariaDB to MySQL Connector"
-id: "switch-mariadb-to-mysql-connector"
+title: How to Switch MariaDB to MySQL Connector
+id: switch-mariadb-to-mysql-connector
+last_update: { author: "WaveMaker" }
 ---
 ---
 

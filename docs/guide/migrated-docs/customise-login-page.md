@@ -1,8 +1,8 @@
 ---
-title: "Customise Login Page"
-id: "customise-login-page"
+title: Customise Login Page
+id: customise-login-page
+last_update: { author: "WaveMaker" }
 ---
-
 A Login page is added to your app, by default.
 
 1. You can select from the list of default templates and change it for this page, [know more](/docs/user-interfaces/web/concepts/overview)

@@ -1,6 +1,7 @@
 ---
-title: "Using Live Variable APIs"
-id: "using-live-variable-apis"
+title: Using Live Variable APIs
+id: using-live-variable-apis
+last_update: { author: "WaveMaker" }
 ---
 ---
 

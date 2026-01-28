@@ -1,7 +1,8 @@
 ---
-title: "Form Factor: Customize Breakpoints for Device Widths in Show in Devices"
-id: "customize-breakpoints-for-widths-of-show-in-devices"
-sidebar_label: "Customize Breakpoints Show in Devices"
+title: Form Factor: Customize Breakpoints for Device Widths in Show in Devices
+id: customize-breakpoints-for-widths-of-show-in-devices
+sidebar_label: Customize Breakpoints Show in Devices
+last_update: { author: "WaveMaker" }
 ---
 ---
 

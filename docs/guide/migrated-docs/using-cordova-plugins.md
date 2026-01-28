@@ -1,6 +1,7 @@
 ---
-title: "Using Cordova Plugins"
-id: "using-cordova-plugins"
+title: Using Cordova Plugins
+id: using-cordova-plugins
+last_update: { author: "WaveMaker" }
 ---
 ---
 

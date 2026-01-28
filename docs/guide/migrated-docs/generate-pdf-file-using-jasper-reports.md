@@ -1,6 +1,7 @@
 ---
-title: "How to generate PDF File using Jasper Reports"
-id: "generate-pdf-file-using-jasper-reports"
+title: How to generate PDF File using Jasper Reports
+id: generate-pdf-file-using-jasper-reports
+last_update: { author: "WaveMaker" }
 ---
 ---
 ## Step 1:  Import the jasper-report-connector to project

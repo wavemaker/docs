@@ -1,6 +1,7 @@
 ---
-title: "Working with API with different pagination formats"
-id: "working-api-with-different-pagination-formats"
+title: Working with API with different pagination formats
+id: working-api-with-different-pagination-formats
+last_update: { author: "WaveMaker" }
 ---
 ---
 

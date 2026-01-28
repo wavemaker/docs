@@ -1,6 +1,7 @@
 ---
-title: "Implementing Forgot Password feature using Java Service"
-id: "implementing-forgot-password-feature-using-java-service"
+title: Implementing Forgot Password feature using Java Service
+id: implementing-forgot-password-feature-using-java-service
+last_update: { author: "WaveMaker" }
 ---
 ---
 

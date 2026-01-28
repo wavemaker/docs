@@ -1,6 +1,7 @@
 ---
-title: "Using JavaScript in Binding"
-id: "using-javascript-binding"
+title: Using JavaScript in Binding
+id: using-javascript-binding
+last_update: { author: "WaveMaker" }
 ---
 ---
 This How To:

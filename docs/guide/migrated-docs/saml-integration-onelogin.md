@@ -1,8 +1,8 @@
 ---
-title: "SAML Integration - OneLogin"
-id: "saml-integration-onelogin"
+title: SAML Integration - OneLogin
+id: saml-integration-onelogin
+last_update: { author: "WaveMaker" }
 ---
-
 [_OneLogin_™](https://www.onelogin.com/) is a cloud-based IAM vendor providing users a secure SSO portal to access all their cloud and on-prem applications from any device.
 
 Following are the steps to Configure SAML with OneLogin:

@@ -1,6 +1,7 @@
 ---
-title: "Accessing REST APIs from Java Service"
-id: "accessing-rest-apis-java-service"
+title: Accessing REST APIs from Java Service
+id: accessing-rest-apis-java-service
+last_update: { author: "WaveMaker" }
 ---
 ---
 

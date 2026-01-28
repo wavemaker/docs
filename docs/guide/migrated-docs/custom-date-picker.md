@@ -1,6 +1,7 @@
 ---
-title: "Custom Date Picker in Mobile"
-id: "custom-date-picker"
+title: Custom Date Picker in Mobile
+id: custom-date-picker
+last_update: { author: "WaveMaker" }
 ---
 ---
 

@@ -1,6 +1,7 @@
 ---
-title: "Using JavaScript to loop a command"
-id: "using-javascript-loop-command"
+title: Using JavaScript to loop a command
+id: using-javascript-loop-command
+last_update: { author: "WaveMaker" }
 ---
 ---
 

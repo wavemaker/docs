@@ -1,8 +1,8 @@
 ---
-title: "SAML Integration - ADFS"
-id: "saml-integration-adfs"
+title: SAML Integration - ADFS
+id: saml-integration-adfs
+last_update: { author: "WaveMaker" }
 ---
-
 **Active Directory **Federation Services (**ADFS**) is a software component developed by Microsoft that can be installed on Windows Server operating systems to provide users with single sign-on access to systems and applications located across organizational boundaries.
 
 Active Directory Federation Services (AD FS) simplifies access to systems and applications using a claims-based access (CBA) authorization mechanism to maintain application security. AD FS supports Web single-sign-on (SSO) technologies that help information technology (IT) organizations collaborate across organizational boundaries.

@@ -1,7 +1,8 @@
 ---
-title: "Integrate Amazon S3(Simple Storage Service) into WaveMaker App"
-id: "aws-s3-connector"
-sidebar_label: "Integrate Amazon S3 into WaveMaker App"
+title: Integrate Amazon S3(Simple Storage Service) into WaveMaker App
+id: aws-s3-connector
+sidebar_label: Integrate Amazon S3 into WaveMaker App
+last_update: { author: "WaveMaker" }
 ---
 ---
 

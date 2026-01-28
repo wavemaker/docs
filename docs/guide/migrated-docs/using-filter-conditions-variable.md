@@ -1,6 +1,7 @@
 ---
-title: "Using Filter Conditions on Variable"
-id: "using-filter-conditions-variable"
+title: Using Filter Conditions on Variable
+id: using-filter-conditions-variable
+last_update: { author: "WaveMaker" }
 ---
 ---
 ## Showcases

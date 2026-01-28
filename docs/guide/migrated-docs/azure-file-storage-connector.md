@@ -1,7 +1,8 @@
 ---
-title: "Integrate Azure File Storage into WaveMaker App"
-id: "azure-file-storage-connector"
-sidebar_label: "Integrate Azure File Storage"
+title: Integrate Azure File Storage into WaveMaker App
+id: azure-file-storage-connector
+sidebar_label: Integrate Azure File Storage
+last_update: { author: "WaveMaker" }
 ---
 ---
 

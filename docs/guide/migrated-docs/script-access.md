@@ -1,8 +1,8 @@
 ---
-title: "Accessing Script"
-id: "script-access"
+title: Accessing Script
+id: script-access
+last_update: { author: "WaveMaker" }
 ---
-
 ## Partial from Parent Page
 ---
 ### Accessing the Widgets and Variables of Partial from Parent Page through Scripting

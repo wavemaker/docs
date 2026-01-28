@@ -1,8 +1,8 @@
 ---
-title: "Using Filter Criteria for a Database CRUD Variable"
-id: "using-filter-criteria-database-crud-variable"
+title: Using Filter Criteria for a Database CRUD Variable
+id: using-filter-criteria-database-crud-variable
+last_update: { author: "WaveMaker" }
 ---
-
 **Scenario**: To filter the rows fetched from a database table using the Filter Criteria option of Database CRUD Variable (of 'read' type). **Features**
 
 - Filter Fields functionality acts as a query builder.

@@ -1,6 +1,7 @@
 ---
-title: "Custom Security using Google OAuth Prefab"
-id: "custom-security-using-google-oauth-prefab"
+title: Custom Security using Google OAuth Prefab
+id: custom-security-using-google-oauth-prefab
+last_update: { author: "WaveMaker" }
 ---
 ---
 

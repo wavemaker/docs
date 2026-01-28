@@ -1,6 +1,7 @@
 ---
-title: "Setting Splashscreen Images and App Icons"
-id: "splashscreens-icons"
+title: Setting Splashscreen Images and App Icons
+id: splashscreens-icons
+last_update: { author: "WaveMaker" }
 ---
 ---
 

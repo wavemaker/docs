@@ -1,6 +1,7 @@
 ---
-title: "Passing Parameters to Partial Page"
-id: "passing-parameters-partial-page"
+title: Passing Parameters to Partial Page
+id: passing-parameters-partial-page
+last_update: { author: "WaveMaker" }
 ---
 ---
 

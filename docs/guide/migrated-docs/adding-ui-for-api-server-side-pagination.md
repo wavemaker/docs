@@ -1,7 +1,8 @@
 ---
-title: "Adding UI Pagination for API Server-side Pagination"
-id: "adding-ui-for-api-server-side-pagination"
-sidebar_label: "UI for API Server-side Pagination"
+title: Adding UI Pagination for API Server-side Pagination
+id: adding-ui-for-api-server-side-pagination
+sidebar_label: UI for API Server-side Pagination
+last_update: { author: "WaveMaker" }
 ---
 ---
 

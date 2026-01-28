@@ -1,6 +1,7 @@
 ---
-title: "Changing App Logo"
-id: "changing-app-logo"
+title: Changing App Logo
+id: changing-app-logo
+last_update: { author: "WaveMaker" }
 ---
 ---
 App Logo is used in multiple places, for example:

@@ -1,7 +1,8 @@
 ---
-title: "How to Design a workflow in Camunda BPM and integrate into a WaveMaker app"
-id: "camunda-wavemaker-app-integration"
-sidebar_label: "Design a workflow in Camunda BPM and integrate into a WaveMaker app"
+title: How to Design a workflow in Camunda BPM and integrate into a WaveMaker app
+id: camunda-wavemaker-app-integration
+sidebar_label: Design a workflow in Camunda BPM and integrate into a WaveMaker app
+last_update: { author: "WaveMaker" }
 ---
 ---
 

@@ -1,6 +1,7 @@
 ---
-title: "Connect To SAP Hana Cloud Database"
-id: "configuring-sap-hana-clouddb"
+title: Connect To SAP Hana Cloud Database
+id: configuring-sap-hana-clouddb
+last_update: { author: "WaveMaker" }
 ---
 ---
 

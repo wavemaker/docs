@@ -1,6 +1,7 @@
 ---
-title: "Integrating Amazon Cognito for User Authentication"
-id: "integrating-amazon-cognito-user-authentication"
+title: Integrating Amazon Cognito for User Authentication
+id: integrating-amazon-cognito-user-authentication
+last_update: { author: "WaveMaker" }
 ---
 ---
 

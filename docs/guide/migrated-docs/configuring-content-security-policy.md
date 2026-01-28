@@ -1,6 +1,7 @@
 ---
-title: "Configuring Content-Security-Policy"
-id: "configuring-content-security-policy"
+title: Configuring Content-Security-Policy
+id: configuring-content-security-policy
+last_update: { author: "WaveMaker" }
 ---
 ---
 

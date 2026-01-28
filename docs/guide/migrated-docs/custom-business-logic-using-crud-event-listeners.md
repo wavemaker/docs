@@ -1,7 +1,8 @@
 ---
-title: "Custom Business Logic using DB CRUD Event Listeners"
-id: "custom-business-logic-using-crud-event-listeners"
-sidebar_label: "Custom Logic DB Event Listeners"
+title: Custom Business Logic using DB CRUD Event Listeners
+id: custom-business-logic-using-crud-event-listeners
+sidebar_label: Custom Logic DB Event Listeners
+last_update: { author: "WaveMaker" }
 ---
 ---
 

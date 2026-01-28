@@ -1,7 +1,8 @@
 ---
-title: "How to apply Custom Template for Widgets"
-id: "custom-widget-template"
-sidebar_label: "Custom Template for Widgets"
+title: How to apply Custom Template for Widgets
+id: custom-widget-template
+sidebar_label: Custom Template for Widgets
+last_update: { author: "WaveMaker" }
 ---
 ---
 

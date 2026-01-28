@@ -1,6 +1,7 @@
 ---
-title: "Using Filter Criteria for a Data and Live Widgets"
-id: "using-filter-criteria-data-live-widgets"
+title: Using Filter Criteria for a Data and Live Widgets
+id: using-filter-criteria-data-live-widgets
+last_update: { author: "WaveMaker" }
 ---
 ---
 

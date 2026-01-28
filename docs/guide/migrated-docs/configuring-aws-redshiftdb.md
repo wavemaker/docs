@@ -1,6 +1,7 @@
 ---
-title: "Connect To AWS Redshift Database"
-id: "configuring-aws-redshiftdb"
+title: Connect To AWS Redshift Database
+id: configuring-aws-redshiftdb
+last_update: { author: "WaveMaker" }
 ---
 ---
 

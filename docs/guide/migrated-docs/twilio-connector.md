@@ -1,7 +1,8 @@
 ---
-title: "Integrate Twilio connector into WaveMaker App"
-id: "twilio-connector"
-sidebar_label: "Integrate Twilio Connector"
+title: Integrate Twilio connector into WaveMaker App
+id: twilio-connector
+sidebar_label: Integrate Twilio Connector
+last_update: { author: "WaveMaker" }
 ---
 ---
 

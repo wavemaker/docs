@@ -1,6 +1,7 @@
 ---
-title: "Incorporating Additional Icons"
-id: "incorporating-additional-icons"
+title: Incorporating Additional Icons
+id: incorporating-additional-icons
+last_update: { author: "WaveMaker" }
 ---
 ---
 In WaveMaker, widgets can display icon for Panel, Button, and more. You can choose the icons from the list of wavicons or font-awesome icons. You can use glyph icons, available [here](http://getbootstrap.com/components/#glyphicons).
