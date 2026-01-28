@@ -1,10 +1,9 @@
 ---
-title: "WME Add Apps Capacity"
-last_update: { author: "Krishna Rao Chintu" }
-id: "add-apps-capacity"
-sidebar_label: "Add Apps Capacity"
+title: WME Add Apps Capacity
+last_update: { author: "WaveMaker" }
+id: add-apps-capacity
+sidebar_label: Add Apps Capacity
 ---
-
 Every Deployed application allocated with a container. The infrastructure adding here will be used for this purpose.
 
 To add instances to Platform, you need to provide ssh credentials.

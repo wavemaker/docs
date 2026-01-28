@@ -1,10 +1,9 @@
 ---
-title: "Metrics Collection"
-last_update: { author: "Krishna Rao Chintu" }
-id: "overview"
-sidebar_label: "Overview"
+title: Metrics Collection
+last_update: { author: "WaveMaker" }
+id: overview
+sidebar_label: Overview
 ---
-
 *Metrics* is needed to get realtime application performance insights.
 
 In WaveMaker platform, we have integrated the **Prometheus** monitoring tool. Prometheus is widely used and has a lot of opensource modules and tools which are

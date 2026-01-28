@@ -1,10 +1,9 @@
 ---
-title: "Dehydration and Rehydration"
-last_update: { author: "Krishna Rao Chintu" }
-id: "dehydration-and-rehydration"
-sidebar_label: "Dehydration and Rehydration"
+title: Dehydration and Rehydration
+last_update: { author: "WaveMaker" }
+id: dehydration-and-rehydration
+sidebar_label: Dehydration and Rehydration
 ---
-
 This process is used to rotate instances periodically or for disaster recovery when WME data(`/wm-data and /wm-runtime in directory/volumes Platform Instance`) is available but machines are corrupted and make sure have to use the same WME version for the recovery process.
 
 ## Data Storage in WME

@@ -1,10 +1,9 @@
 ---
-title: "WaveMaker Enterprise Setup on Hyper-V using VHD"
-last_update: { author: "Krishna Rao Chintu" }
-id: "launching-instances-in-hyper-v-vhd"
-sidebar_label: "Prepare Infrastructure using VHD"
+title: WaveMaker Enterprise Setup on Hyper-V using VHD
+last_update: { author: "WaveMaker" }
+id: launching-instances-in-hyper-v-vhd
+sidebar_label: Prepare Infrastructure using VHD
 ---
-
 ## Prerequisite
 
 - VHD file shared by WaveMaker team

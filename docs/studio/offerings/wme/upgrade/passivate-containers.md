@@ -1,12 +1,9 @@
 ---
-title: "Passivate Containers"
-last_update: { author: "Krishna Rao Chintu" }
-id: "passivate-containers"
-sidebar_label: "Passivate Containers"
+title: Passivate Containers
+last_update: { author: "WaveMaker" }
+id: passivate-containers
+sidebar_label: Passivate Containers
 ---
-
-
-
 ## Passivate containers in StudioWorkspace/AppDeployment Instances from the launchpad
 
 - In order to upgrade WME from 10.x to below 11.2.x version, it is recommended to passivate the containers in StudioWorkspaceInstance and AppDeploymentInstance.., It is not needed when upgrading above 11.2.x versions.

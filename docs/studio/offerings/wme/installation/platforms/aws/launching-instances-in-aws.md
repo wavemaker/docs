@@ -1,10 +1,9 @@
 ---
-title: "Preparing Infrastructure on AWS"
-last_update: { author: "Krishna Rao Chintu" }
-id: "launching-instances-in-aws"
-sidebar_label: "Prepare Infrastructure"
+title: Preparing Infrastructure on AWS
+last_update: { author: "WaveMaker" }
+id: launching-instances-in-aws
+sidebar_label: Prepare Infrastructure
 ---
-
 ## Prerequisites
 
 - AWS (Amazon Web Service) account with access to launch instances and to create security groups.

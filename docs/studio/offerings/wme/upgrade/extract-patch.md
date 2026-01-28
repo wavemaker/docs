@@ -1,10 +1,9 @@
 ---
-title: "Extract Package"
-last_update: { author: "Krishna Rao Chintu" }
-id: "extract-patch"
-sidebar_label: "Extract Package"
+title: Extract Package
+last_update: { author: "WaveMaker" }
+id: extract-patch
+sidebar_label: Extract Package
 ---
-
 Assuming you have already downloaded the patch and kept inside user home folder of the platform Instance.
 
 ## Extract the package of the patch

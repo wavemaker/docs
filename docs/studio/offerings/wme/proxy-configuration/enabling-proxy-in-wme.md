@@ -1,10 +1,9 @@
 ---
-title: "Enabling Proxy in WaveMaker Enterprise"
-last_update: { author: "Krishna Rao Chintu" }
-id: "enabling-proxy-in-wme"
-sidebar_label: "Enabling Proxy in WaveMaker Enterprise"
+title: Enabling Proxy in WaveMaker Enterprise
+last_update: { author: "WaveMaker" }
+id: enabling-proxy-in-wme
+sidebar_label: Enabling Proxy in WaveMaker Enterprise
 ---
-
 Proxy servers can be used to configure any device or software to route its traffic through a proxy server instead of connecting directly to websites or services.
 
 You can enable the Proxy settings by creating and configuring the **http-proxy.env** file in WaveMaker Enterprise (WME). This enables the integration of proxy settings, enhancing network security and facilitating communication with external resources. By following the steps outlined in this document and referencing the provided examples, you can seamlessly incorporate proxy configurations into your WaveMaker environment.

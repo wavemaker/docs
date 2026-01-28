@@ -1,10 +1,9 @@
 ---
-title: "Download and Copy Installer"
-last_update: { author: "Krishna Rao Chintu" }
-id: "download-copy-installer"
-sidebar_label: "Download and Copy Installer"
+title: Download and Copy Installer
+last_update: { author: "WaveMaker" }
+id: download-copy-installer
+sidebar_label: Download and Copy Installer
 ---
-
 ### Download the WME Installer
 
 - #### If you choose to use WaveMaker Images(OVA/VHD/AMI)

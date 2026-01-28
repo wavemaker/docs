@@ -1,10 +1,9 @@
 ---
-title: "WaveMaker Enterprise Setup on VMware ESXi using ISO"
-last_update: { author: "Krishna Rao Chintu" }
-id: "launching-instances-in-esxi-iso"
-sidebar_label: "Prepare infrastructure using ISO"
+title: WaveMaker Enterprise Setup on VMware ESXi using ISO
+last_update: { author: "WaveMaker" }
+id: launching-instances-in-esxi-iso
+sidebar_label: Prepare infrastructure using ISO
 ---
-
 ## Prerequisite
 
 - Ubuntu ISO file from internet.

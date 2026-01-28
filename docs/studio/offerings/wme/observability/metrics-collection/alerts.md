@@ -1,10 +1,9 @@
 ---
-title: "Alerts"
-last_update: { author: "Krishna Rao Chintu" }
-id: "alerts"
-sidebar_label: "Alerts"
+title: Alerts
+last_update: { author: "WaveMaker" }
+id: alerts
+sidebar_label: Alerts
 ---
-
 WaveMaker uses the **Prometheus AlertManager** to listen to the data accumulated at *Prometheus* and fire an alert based on the query included in the alert.
 
 ### Accessing Alerts

@@ -1,10 +1,9 @@
 ---
-title: "Grafana"
-last_update: { author: "Krishna Rao Chintu" }
-id: "grafana"
-sidebar_label: "Grafana"
+title: Grafana
+last_update: { author: "WaveMaker" }
+id: grafana
+sidebar_label: Grafana
 ---
-
 *Grafana* is a Dashboard creation and visualization tool. All the metrics from Prometheus can be accessed by Grafana and complex dashboards can be created from those metrics.
 
 This is very useful because you do not need to type in Prometheus queries every time. A *Dashboard* is created once and is accessed multiple times.

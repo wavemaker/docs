@@ -1,10 +1,9 @@
 ---
-title: "Fluentd Tags"
-last_update: { author: "Krishna Rao Chintu" }
-id: "fluentd"
-sidebar_label: "fluentd tags"
+title: Fluentd Tags
+last_update: { author: "WaveMaker" }
+id: fluentd
+sidebar_label: fluentd tags
 ---
-
 ## Introduction
 
 Fluentd is an open source data collector, which lets you unify the data collection and consumption for a better use and understanding of data.

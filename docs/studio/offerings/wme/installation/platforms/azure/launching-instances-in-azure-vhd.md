@@ -1,10 +1,9 @@
 ---
-title: "WaveMaker Enterprise Setup on AzureCloud using VHD"
-last_update: { author: "Krishna Rao Chintu" }
-id: "launching-instances-in-azure-vhd"
-sidebar_label: "Prepare Infrastructure using VHD"
+title: WaveMaker Enterprise Setup on AzureCloud using VHD
+last_update: { author: "WaveMaker" }
+id: launching-instances-in-azure-vhd
+sidebar_label: Prepare Infrastructure using VHD
 ---
-
 ## Prerequisites
 
 - Access to Azure to create VM and other resources. For more details, see [Azure resource documentation](https://docs.microsoft.com/en-us/azure/role-based-access-control/overview).

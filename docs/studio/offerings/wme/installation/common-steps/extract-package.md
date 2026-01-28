@@ -1,10 +1,10 @@
 ---
-title: "Extract Package"
-last_update: { author: "Krishna Rao Chintu" }
-id: "extract-package"
-sidebar_label: "Extract Package"
+title: Extract Package
+last_update: { author: "WaveMaker" }
+id: extract-package
+sidebar_label: Extract Package
 ---
- Assuming you already launched Platform Instance, downloaded required installer and kept the file in user home directory of platform machine.for launching Platform Instance visit [launch Platform Instance with this prerequisites](/docs/studio/offerings/wme/getting-started/prerequisites)
+Assuming you already launched Platform Instance, downloaded required installer and kept the file in user home directory of platform machine.for launching Platform Instance visit [launch Platform Instance with this prerequisites](/docs/studio/offerings/wme/getting-started/prerequisites)
 
 ### Extract Package for WME installer
 

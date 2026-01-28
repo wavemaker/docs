@@ -1,10 +1,9 @@
 ---
-title: "WaveMaker Enterprise Configure Pipeline"
-last_update: { author: "Krishna Rao Chintu" }
-id: "config-pipeline"
-sidebar_label: "Configure Pipeline"
+title: WaveMaker Enterprise Configure Pipeline
+last_update: { author: "WaveMaker" }
+id: config-pipeline
+sidebar_label: Configure Pipeline
 ---
-
 Increasing Deployment Capacity of Release Management feature helps ease the app life-cycle process. You can use this feature through the Apps Portal to add deployment environments to your projects and use them for a phased release of the app from QA -> Stage -> Live. To be able to push the code from one phase to another, your WME needs to be capable of handling the deployments.
 
 There are three deployment phases provided by WME – QA, Stage and Live.

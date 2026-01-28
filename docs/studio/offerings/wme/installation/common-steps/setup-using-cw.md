@@ -1,10 +1,9 @@
 ---
-title: "Setup Using ConfigPortal"
-last_update: { author: "Krishna Rao Chintu" }
-id: "setup-using-cw"
-sidebar_label: "Setup Using ConfigPortal"
+title: Setup Using ConfigPortal
+last_update: { author: "WaveMaker" }
+id: setup-using-cw
+sidebar_label: Setup Using ConfigPortal
 ---
-
 ### WME Setup on ConfigPortal
 
 - Open WaveMaker ConfigPortal by `http://Platform-Instance-IP:8080`

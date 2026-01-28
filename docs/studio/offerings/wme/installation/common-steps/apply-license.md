@@ -1,10 +1,9 @@
 ---
-title: "Apply License"
-last_update: { author: "Krishna Rao Chintu" }
-id: "apply-license"
-sidebar_label: "Apply License"
+title: Apply License
+last_update: { author: "WaveMaker" }
+id: apply-license
+sidebar_label: Apply License
 ---
-
 ### Applying license from Launchpad
 
 - Go to `http://PLATFORM_DOMAIN/launchpad.`

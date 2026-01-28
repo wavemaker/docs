@@ -1,10 +1,9 @@
 ---
-title: "WME Run Patch"
-last_update: { author: "Krishna Rao Chintu" }
-id: "run-patch"
-sidebar_label: "Run Patch"
+title: WME Run Patch
+last_update: { author: "WaveMaker" }
+id: run-patch
+sidebar_label: Run Patch
 ---
-
 ## Running the Patch
 
 - When upgrading from 10.7.x to 11.x.x user needs to download the required content for the migration process. **When the user has already upgraded to 11.x.x WME Version, in that case, there is no need to download migration tar**.

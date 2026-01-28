@@ -1,10 +1,9 @@
 ---
-title: "Non Root WME Execution"
-last_update: { author: "Krishna Rao Chintu" }
-id: "non-root-execution"
-sidebar_label: "Non Root WME Execution"
+title: Non Root WME Execution
+last_update: { author: "WaveMaker" }
+id: non-root-execution
+sidebar_label: Non Root WME Execution
 ---
-
 ### If the ssh user does not have privileges(root/sudo), Please follow below steps.
 
 

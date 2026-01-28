@@ -1,10 +1,9 @@
 ---
-title: "OS Upgrade"
-last_update: { author: "Krishna Rao Chintu" }
-id: "os-upgrade"
-sidebar_label: "OS Upgrade"
+title: OS Upgrade
+last_update: { author: "WaveMaker" }
+id: os-upgrade
+sidebar_label: OS Upgrade
 ---
-
 ## Why do we need Operating System Upgrade ?
 
 - WME is completely running inside docker containers, these docker containers are hosted on the Platform Instance's Operating System.
