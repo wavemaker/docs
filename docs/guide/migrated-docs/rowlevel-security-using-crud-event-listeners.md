@@ -1,5 +1,5 @@
 ---
-title: Row-Level Security: Display Table Contents using CRUD Listeners
+title: "Row-Level Security: Display Table Contents using CRUD Listeners"
 id: rowlevel-security-using-crud-event-listeners
 sidebar_label: Row-Level Security using DB Event Listeners
 last_update: { author: "WaveMaker" }
