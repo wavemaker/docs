@@ -2,7 +2,7 @@
 last_update: { author: "Priyanka Bhadri" }
 ---
 
-# Localization in WaveMaker
+# Localization
 
 Localization is the process of adapting an application to meet the language, cultural, and regional preferences of users. In WaveMaker, localization enables applications to be rendered in multiple languages and formats, making them more usable and relevant for a global audience. Localization support in WaveMaker is provided at two levels: **Application Localization** and **Platform Localization**. 
 
