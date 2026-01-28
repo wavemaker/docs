@@ -4,8 +4,6 @@ last_update: { author: "Sagar Vemala" }
 
 # Overview
 
-# Overview
-
 APIs enable applications to communicate with external systems over a network using standard protocols such as HTTP or TCP. They expose well-defined interfaces that allow clients to request data or trigger operations in a consistent and predictable way. Most APIs exchange data in widely used formats like JSON or XML, making them easy to integrate across different platforms.
 
 WaveMaker simplifies working with external APIs by allowing you to import them into your application and invoke them at runtime. The data returned from API calls can be easily consumed within the app and connected to UI components, enabling you to build dynamic, data-driven experiences with help of Varibles avoiding dealing with low-level networking concerns.

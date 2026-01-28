@@ -425,7 +425,7 @@ export default [
       },
       {
         type: 'category',
-        label: 'Event Handling',
+        label: 'UI Event Handling',
         collapsible: true,
         collapsed: true,
         items: [
