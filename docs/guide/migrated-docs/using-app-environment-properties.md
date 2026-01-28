@@ -1,6 +1,7 @@
 ---
-title: "Using App Environment Properties"
-id: "using-app-environment-properties"
+title: Using App Environment Properties
+id: using-app-environment-properties
+last_update: { author: "WaveMaker" }
 ---
 ---
 App environment properties are custom server side properties defined by the app developer to externalize certain properties into configuration profiles so that those property values can differ for a different environment.

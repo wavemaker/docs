@@ -1,6 +1,7 @@
 ---
-title: "Confirm Dialog"
-id: "confirm-dialog"
+title: Confirm Dialog
+id: confirm-dialog
+last_update: { author: "WaveMaker" }
 ---
 ---
 

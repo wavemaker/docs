@@ -1,7 +1,8 @@
 ---
-title: "Form - Events & Methods"
-id: "form-events-methods"
-sidebar_label: "Events & Methods"
+title: Form - Events & Methods
+id: form-events-methods
+sidebar_label: Events & Methods
+last_update: { author: "WaveMaker" }
 ---
 ---
 ## Events

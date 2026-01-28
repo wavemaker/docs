@@ -1,6 +1,7 @@
 ---
-title: "Modal Windows/ Dialogs"
-id: "modal-windows-dialogs"
+title: Modal Windows/ Dialogs
+id: modal-windows-dialogs
+last_update: { author: "WaveMaker" }
 ---
 ---
 

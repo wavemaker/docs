@@ -1,6 +1,7 @@
 ---
-title: "Integrating Sample Jasper Report in WaveMaker Application"
-id: "integrating-sample-jasper-report-wavemaker-application"
+title: Integrating Sample Jasper Report in WaveMaker Application
+id: integrating-sample-jasper-report-wavemaker-application
+last_update: { author: "WaveMaker" }
 ---
 ---
 

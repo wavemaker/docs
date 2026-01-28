@@ -1,6 +1,7 @@
 ---
-title: "Color Picker"
-id: "color-picker"
+title: Color Picker
+id: color-picker
+last_update: { author: "WaveMaker" }
 ---
 ---
   

@@ -1,8 +1,8 @@
 ---
-title: "Wizard"
-id: "wizard"
+title: Wizard
+id: wizard
+last_update: { author: "WaveMaker" }
 ---
-
 **Wizards UI** are suitable for tasks that have **multiple independent steps,** wherein the user is taken through each step to comprehend the task in a structured manner. Wizards have steps with a specific UI style that facilitates easy navigation. Wizards provide **previous and next step buttons** for the user to confirm their selections/actions in each of these steps. Users can also **cancel** the task at any step. Wizards also provide Done or Finish button at the end of the final step, to indicate that all the steps are finished.
 
 There can be many **use case scenarios** where a wizard can be used. Examples of some common use cases are as follows:

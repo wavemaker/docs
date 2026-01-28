@@ -1,7 +1,8 @@
 ---
-title: "Live Filter Widget"
-id: "live-filter"
-sidebar_label: "Overview"
+title: Live Filter Widget
+id: live-filter
+sidebar_label: Overview
+last_update: { author: "WaveMaker" }
 ---
 ---
 

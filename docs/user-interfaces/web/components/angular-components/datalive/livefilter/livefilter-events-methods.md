@@ -1,7 +1,8 @@
 ---
-title: "Live Filter - Events & Methods"
-id: "livefilter-events-methods"
-sidebar_label: "Events & Methods"
+title: Live Filter - Events & Methods
+id: livefilter-events-methods
+sidebar_label: Events & Methods
+last_update: { author: "WaveMaker" }
 ---
 ---
 

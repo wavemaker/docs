@@ -1,7 +1,8 @@
 ---
-title: "Cards - Use  Cases"
-id: "card-use-cases"
-sidebar_label: "Use Cases"
+title: Cards - Use  Cases
+id: card-use-cases
+sidebar_label: Use Cases
+last_update: { author: "WaveMaker" }
 ---
 ---
 

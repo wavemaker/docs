@@ -1,7 +1,8 @@
 ---
-title: "Audio Widget"
-id: "audio"
-sidebar_label: "Audio"
+title: Audio Widget
+id: audio
+sidebar_label: Audio
+last_update: { author: "WaveMaker" }
 ---
 ---
 

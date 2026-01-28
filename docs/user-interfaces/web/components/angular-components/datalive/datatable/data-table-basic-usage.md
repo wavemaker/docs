@@ -1,7 +1,8 @@
 ---
-title: "Creating Data Table"
-id: "data-table-basic-usage"
-sidebar_label: "Creating a Data Table"
+title: Creating Data Table
+id: data-table-basic-usage
+sidebar_label: Creating a Data Table
+last_update: { author: "WaveMaker" }
 ---
 ---
 ### Overview

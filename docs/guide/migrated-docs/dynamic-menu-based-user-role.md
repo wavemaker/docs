@@ -1,7 +1,8 @@
 ---
-title: "Dynamic Menu based on the User Role"
-id: "dynamic-menu-based-user-role"
-sidebar_label: "Dynamic Menu based on User Role"
+title: Dynamic Menu based on the User Role
+id: dynamic-menu-based-user-role
+sidebar_label: Dynamic Menu based on User Role
+last_update: { author: "WaveMaker" }
 ---
 ---
 

@@ -1,7 +1,8 @@
 ---
-title: "Cards - Templates"
-id: "cards-templates"
-sidebar_label: "Templates"
+title: Cards - Templates
+id: cards-templates
+sidebar_label: Templates
+last_update: { author: "WaveMaker" }
 ---
 ---
 Cards elements can be displayed using various templates:

@@ -1,6 +1,7 @@
 ---
-title: "Micro frontend using iframes"
-id: "microfrontends-iframe"
+title: Micro frontend using iframes
+id: microfrontends-iframe
+last_update: { author: "WaveMaker" }
 ---
 ---
 

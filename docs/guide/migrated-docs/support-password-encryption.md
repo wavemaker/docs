@@ -1,6 +1,7 @@
 ---
-title: "Support for Password Encryption"
-id: "support-password-encryption"
+title: Support for Password Encryption
+id: support-password-encryption
+last_update: { author: "WaveMaker" }
 ---
 ---
 

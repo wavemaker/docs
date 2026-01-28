@@ -1,7 +1,8 @@
 ---
-title: "How to apply custom formatter on default toDate pipe"
-id: "using-custom-formatter-for-todate"
-sidebar_label: "Apply Custom Data Formatter on default toDate pipe"
+title: How to apply custom formatter on default toDate pipe
+id: using-custom-formatter-for-todate
+sidebar_label: Apply Custom Data Formatter on default toDate pipe
+last_update: { author: "WaveMaker" }
 ---
 ---
 

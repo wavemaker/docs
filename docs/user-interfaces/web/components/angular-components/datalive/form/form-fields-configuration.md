@@ -1,7 +1,8 @@
 ---
-title: "Form Fields Configuration"
-id: "form-fields-configuration"
-sidebar_label: "Fields Configuration"
+title: Form Fields Configuration
+id: form-fields-configuration
+sidebar_label: Fields Configuration
+last_update: { author: "WaveMaker" }
 ---
 ---
 

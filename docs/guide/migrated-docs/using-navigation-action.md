@@ -1,6 +1,7 @@
 ---
-title: "Using Navigation Action"
-id: "using-navigation-action"
+title: Using Navigation Action
+id: using-navigation-action
+last_update: { author: "WaveMaker" }
 ---
 ---
 

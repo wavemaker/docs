@@ -1,6 +1,7 @@
 ---
-title: "Checkbox"
-id: "checkbox"
+title: Checkbox
+id: checkbox
+last_update: { author: "WaveMaker" }
 ---
 ---
 A checkbox is a specific type of two-states button that can be either checked or unchecked. Checkboxes let a user select an option. Examples: "_I agree to terms and conditions"_ etc. checked and unchecked options.

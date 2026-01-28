@@ -1,6 +1,7 @@
 ---
-title: "How to use Conditional Class Property"
-id: "use-conditional-class-property"
+title: How to use Conditional Class Property
+id: use-conditional-class-property
+last_update: { author: "WaveMaker" }
 ---
 ---
 **Conditional Class** property allows you to bind an expression which will be evaluated and appended as classes to a widget.

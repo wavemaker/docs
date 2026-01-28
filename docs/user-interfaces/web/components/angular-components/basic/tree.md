@@ -1,6 +1,7 @@
 ---
-title: "Tree"
-id: "tree"
+title: Tree
+id: tree
+last_update: { author: "WaveMaker" }
 ---
 ---
 

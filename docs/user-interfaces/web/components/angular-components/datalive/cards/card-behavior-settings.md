@@ -1,7 +1,8 @@
 ---
-title: "Cards - Behavior Settings"
-id: "card-behavior-settings"
-sidebar_label: "Behavior Settings"
+title: Cards - Behavior Settings
+id: card-behavior-settings
+sidebar_label: Behavior Settings
+last_update: { author: "WaveMaker" }
 ---
 ---
 

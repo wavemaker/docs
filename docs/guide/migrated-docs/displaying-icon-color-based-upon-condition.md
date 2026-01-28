@@ -1,6 +1,7 @@
 ---
-title: "Change Icon Color on Condition"
-id: "displaying-icon-color-based-upon-condition"
+title: Change Icon Color on Condition
+id: displaying-icon-color-based-upon-condition
+last_update: { author: "WaveMaker" }
 ---
 ---
 

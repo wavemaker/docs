@@ -1,10 +1,9 @@
 ---
-title: "Docker Upgrade"
-last_update: { author: "Krishna Rao Chintu" }
-id: "docker-upgrade"
-sidebar_label: "Docker Upgrade"
+title: Docker Upgrade
+last_update: { author: "WaveMaker" }
+id: docker-upgrade
+sidebar_label: Docker Upgrade
 ---
-
 ## Docker Upgrade
 
 

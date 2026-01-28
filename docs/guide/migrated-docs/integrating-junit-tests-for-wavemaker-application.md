@@ -1,6 +1,7 @@
 ---
-title: "Integrating JUnit Tests for WaveMaker Application"
-id: "integrating-junit-tests-for-wavemaker-application"
+title: Integrating JUnit Tests for WaveMaker Application
+id: integrating-junit-tests-for-wavemaker-application
+last_update: { author: "WaveMaker" }
 ---
 ---
 

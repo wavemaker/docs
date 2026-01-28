@@ -1,7 +1,8 @@
 ---
-title: "Inserting data from Excel into the database"
-id: "insert-data-from-excel"
-sidebar_label: "Insert Data from Excel into Database"
+title: Inserting data from Excel into the database
+id: insert-data-from-excel
+sidebar_label: Insert Data from Excel into Database
+last_update: { author: "WaveMaker" }
 ---
 ---
 

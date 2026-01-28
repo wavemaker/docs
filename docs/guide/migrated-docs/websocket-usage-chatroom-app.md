@@ -1,6 +1,7 @@
 ---
-title: "WebSocket Usage - Chatroom App"
-id: "websocket-usage-chatroom-app"
+title: WebSocket Usage - Chatroom App
+id: websocket-usage-chatroom-app
+last_update: { author: "WaveMaker" }
 ---
 ---
 

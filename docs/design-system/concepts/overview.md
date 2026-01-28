@@ -1,8 +1,8 @@
 ---
-title: "Design System Overview"
-sidebar_label: "Overview"
+title: Design System Overview
+sidebar_label: Overview
+last_update: { author: "WaveMaker" }
 ---
-
 import DesignSystemArchitecture from './assets/img/design-system-architecture.png';
 
 ### What is Design System?

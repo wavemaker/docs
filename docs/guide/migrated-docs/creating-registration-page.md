@@ -1,6 +1,7 @@
 ---
-title: "Creating a Registration Page"
-id: "creating-registration-page"
+title: Creating a Registration Page
+id: creating-registration-page
+last_update: { author: "WaveMaker" }
 ---
 ---
 

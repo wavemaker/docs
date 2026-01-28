@@ -1,7 +1,8 @@
 ---
-title: "Live Form - Configurations"
-id: "liveform-configurations"
-sidebar_label: "Configuration"
+title: Live Form - Configurations
+id: liveform-configurations
+sidebar_label: Configuration
+last_update: { author: "WaveMaker" }
 ---
 ---
 ## Live Form Properties

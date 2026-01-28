@@ -1,10 +1,9 @@
 ---
-title: "WME Add Developer Capacity"
-last_update: { author: "Krishna Rao Chintu" }
-id: "add-dev-capacity"
-sidebar_label: "Add Developer Capacity"
+title: WME Add Developer Capacity
+last_update: { author: "WaveMaker" }
+id: add-dev-capacity
+sidebar_label: Add Developer Capacity
 ---
-
 Once you have Launched Instances, Initialized, Set up and configured the WME, it is time for the developers to log in and build apps. For this, you need to add developer and deployment infrastructure capacity by adding instances.
 If not setup StudioWorkspace Instance / AppDeployment Instance ,[launch Instance with the required prerequisites](/docs/studio/offerings/wme/getting-started/prerequisites)
 

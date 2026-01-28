@@ -1,7 +1,8 @@
 ---
-title: "Data Table - Field Configuration"
-id: "field-configuration"
-sidebar_label: "Field Configuration" 
+title: Data Table - Field Configuration
+id: field-configuration
+sidebar_label: Field Configuration
+last_update: { author: "WaveMaker" }
 ---
 ---
 :::note

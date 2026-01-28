@@ -1,10 +1,9 @@
 ---
-title: "WaveMaker Enterprise Setup on VMWare ESXi using OVA"
-last_update: { author: "Krishna Rao Chintu" }
-id: "launching-instances-in-esxi-ova"
-sidebar_label: "Prepare Infrastructure using OVA"
+title: WaveMaker Enterprise Setup on VMWare ESXi using OVA
+last_update: { author: "WaveMaker" }
+id: launching-instances-in-esxi-ova
+sidebar_label: Prepare Infrastructure using OVA
 ---
-
 ## Prerequisites
 
 - Platform OVA file shared by WaveMaker team.

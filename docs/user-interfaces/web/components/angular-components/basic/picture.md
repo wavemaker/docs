@@ -1,7 +1,8 @@
 ---
-title: "Picture Widget"
-id: "picture"
-sidebar_label: "Picture"
+title: Picture Widget
+id: picture
+sidebar_label: Picture
+last_update: { author: "WaveMaker" }
 ---
 ---
 

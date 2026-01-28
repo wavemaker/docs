@@ -1,8 +1,8 @@
 ---
-title: "Grid Layout"
-id: "grid-layout"
+title: Grid Layout
+id: grid-layout
+last_update: { author: "WaveMaker" }
 ---
-
 **Grid Layout** is the basic content layout, that caters to multiple layout needs. Using the grid layout, you can divide your page content into cells or grids and place your widgets accordingly. It gives you a flexibility of widget placement without having to get into the intricate design details. The major advantage of using grid layout is its rendering capability. WaveMaker renders the screen depending upon the device being used for viewing the app like mobile, tablet, etc..
 
 WaveMaker implements the [Bootstrap Grid](http://www.w3schools.com/bootstrap/bootstrap_grid_system.asp) system which is the 12-column system:

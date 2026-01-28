@@ -1,8 +1,8 @@
 ---
-title: "Component Variants"
-sidebar_label: "Component Variants"
+title: Component Variants
+sidebar_label: Component Variants
+last_update: { author: "WaveMaker" }
 ---
-
 import StyleWorkspaceComponentVariants from './assets/img/style-workspace-component-variants.png';
 import StateComponentVariants from './assets/img/state-component-variants.png';
 

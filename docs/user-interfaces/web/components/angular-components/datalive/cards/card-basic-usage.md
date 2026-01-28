@@ -1,7 +1,8 @@
 ---
-title: "Creating Cards"
-id: "card-basic-usage"
-sidebar_label: "Creating a Card"
+title: Creating Cards
+id: card-basic-usage
+sidebar_label: Creating a Card
+last_update: { author: "WaveMaker" }
 ---
 ---
 ### Creating Employee Cards

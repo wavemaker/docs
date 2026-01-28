@@ -1,7 +1,8 @@
 ---
-title: "How to apply Custom Formatter for widgets"
-id: "using-custom-formatter"
-sidebar_label: "Apply Custom Data Formatter"
+title: How to apply Custom Formatter for widgets
+id: using-custom-formatter
+sidebar_label: Apply Custom Data Formatter
+last_update: { author: "WaveMaker" }
 ---
 ---
 

@@ -1,6 +1,7 @@
 ---
-title: "Synchronizing Java Services Controller"
-id: "synchronizing-java-services-controller"
+title: Synchronizing Java Services Controller
+id: synchronizing-java-services-controller
+last_update: { author: "WaveMaker" }
 ---
 ---
 

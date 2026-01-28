@@ -1,7 +1,8 @@
 ---
-title: "Enabling PWA - Beta"
-id: "building-pwa-app"
-sidebar_label: "Enabling PWA"
+title: Enabling PWA - Beta
+id: building-pwa-app
+sidebar_label: Enabling PWA
+last_update: { author: "WaveMaker" }
 ---
 ---
 

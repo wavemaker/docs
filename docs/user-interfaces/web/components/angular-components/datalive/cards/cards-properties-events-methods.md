@@ -1,7 +1,8 @@
 ---
-title: "Cards - Properties, Events & Methods"
-id: "cards-properties-events-methods"
-sidebar_label: "Properties, Events & Methods"
+title: Cards - Properties, Events & Methods
+id: cards-properties-events-methods
+sidebar_label: Properties, Events & Methods
+last_update: { author: "WaveMaker" }
 ---
 ---
 ## Properties

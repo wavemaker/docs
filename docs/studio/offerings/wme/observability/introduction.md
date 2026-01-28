@@ -1,10 +1,9 @@
 ---
-title: "Observability"
-last_update: { author: "Krishna Rao Chintu" }
-id: "introduction"
-sidebar_label: "Introduction"
+title: Observability
+last_update: { author: "WaveMaker" }
+id: introduction
+sidebar_label: Introduction
 ---
-
 Did you ever wonder how a Human body automatically responds to any negative inconvenience?
 
 The body fixes itself with a *Negative Feedback Loop*, which detects the anomalies and performs the required actions to maintain a stable, relatively constant internal environment.

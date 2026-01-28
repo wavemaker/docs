@@ -1,9 +1,9 @@
 ---
-title: "Configuring Open ID using Okta Provider"
-id: "implement-openid-okta-provider"
-sidebar_label: "Open ID Integration - Okta"
+title: Configuring Open ID using Okta Provider
+id: implement-openid-okta-provider
+sidebar_label: Open ID Integration - Okta
+last_update: { author: "WaveMaker" }
 ---
-
 Okta's identity and access management system helps manage access control and user identity. Okta provides services to manage what resources each user can access and what functions each user can perform. In this document, we discuss the steps to configure Open ID using Okta.
 
 ## Okta as Open ID Provider

@@ -1,7 +1,8 @@
 ---
-title: "Live Filter - Field Configuration"
-id: "livefilter-field-configuration"
-sidebar_label: "Field Configuration"
+title: Live Filter - Field Configuration
+id: livefilter-field-configuration
+sidebar_label: Field Configuration
+last_update: { author: "WaveMaker" }
 ---
 ---
 

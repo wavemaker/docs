@@ -1,7 +1,8 @@
 ---
-title: "Row Expansion in Data Table"
-id: "row-expansion-data-table"
-sidebar_label: "Row Expansion" 
+title: Row Expansion in Data Table
+id: row-expansion-data-table
+sidebar_label: Row Expansion
+last_update: { author: "WaveMaker" }
 ---
 ---
 :::note

@@ -355,16 +355,16 @@ export default [
             type: 'doc',
             id: 'user-interfaces/web/develop/page/overview',
           },
-          {
-            type: 'doc',
-            id: 'user-interfaces/web/develop/page/types',
-            label: 'Types',
-          },
-          {
+          { 
             type: 'doc',
             id: 'user-interfaces/web/develop/page/properties',
             label: 'Properties & Behaviour',
           },
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/page/types',
+            label: 'Types',
+          }
         ],
       },
       {
@@ -497,18 +497,26 @@ export default [
         items: [
           {
             type: 'doc',
-            id: 'user-interfaces/web/enterprise-capabilities/prefabs/wmx-components-mobile',
+            id: 'user-interfaces/web/enterprise-capabilities/prefabs/overview',
+          },
+                    {
+            type: 'doc',
+            id: 'user-interfaces/web/enterprise-capabilities/prefabs/create-prefab',
+          },
+                    {
+            type: 'doc',
+            id: 'user-interfaces/web/enterprise-capabilities/prefabs/publishing',
           },
         ],
       },
-      {
-        type: 'doc',
-        id: 'user-interfaces/web/enterprise-capabilities/prefabs',
-      },
-      {
-        type: 'doc',
-        id: 'user-interfaces/web/enterprise-capabilities/role-based-access-control',
-      },
+      // {
+      //   type: 'doc',
+      //   id: 'user-interfaces/web/enterprise-capabilities/prefabs',
+      // },
+      // {
+      //   type: 'doc',
+      //   id: 'user-interfaces/web/enterprise-capabilities/role-based-access-control',
+      // },
     ],
   },
   {

@@ -1,7 +1,8 @@
 ---
-title: "Data Table Configuration"
-id: "table-configuration"
-sidebar_label: "Configuration" 
+title: Data Table Configuration
+id: table-configuration
+sidebar_label: Configuration
+last_update: { author: "WaveMaker" }
 ---
 ---
 

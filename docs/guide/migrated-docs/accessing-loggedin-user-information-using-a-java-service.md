@@ -1,6 +1,7 @@
 ---
-title: "Accessing Logged-in User Details using Java Service"
-id: "accessing-loggedin-user-information-using-a-java-service"
+title: Accessing Logged-in User Details using Java Service
+id: accessing-loggedin-user-information-using-a-java-service
+last_update: { author: "WaveMaker" }
 ---
 ---
 

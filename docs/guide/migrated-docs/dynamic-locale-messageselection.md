@@ -1,6 +1,7 @@
 ---
-title: "Passing i18n Messages Dynamically"
-id: "dynamic-locale-messageselection"
+title: Passing i18n Messages Dynamically
+id: dynamic-locale-messageselection
+last_update: { author: "WaveMaker" }
 ---
 i18N Localized Messages enable multilingual support, improve user experience, expand the application's reach, and provide a more personalized user interface across the globe.
 

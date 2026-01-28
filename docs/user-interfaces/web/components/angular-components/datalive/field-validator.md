@@ -1,7 +1,8 @@
 ---
-title: "Form & DataTable Field Validator Function"
-id: "field-validator"
-sidebar_label: "Field Validations"
+title: Form & DataTable Field Validator Function
+id: field-validator
+sidebar_label: Field Validations
+last_update: { author: "WaveMaker" }
 ---
 ---
 

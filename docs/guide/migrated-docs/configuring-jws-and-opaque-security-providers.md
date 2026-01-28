@@ -1,8 +1,8 @@
 ---
-title: "Configure JWS and Opaque providers"
-id: "configuring-jws-and-opaque-security-providers"
+title: Configure JWS and Opaque providers
+id: configuring-jws-and-opaque-security-providers
+last_update: { author: "WaveMaker" }
 ---
-
 WaveMaker offers many security providers to enable authentication to the WaveMaker applications from the security dialog. The security providers like DEMO, Database, LDAP, Active Directory, SAML, OpenID, and Custom Security are the primary security providers. Additionally along with the primary provider a secondary provider can also be enabled like JWS or Opaque Token provider.
 
 ## Enabling JWS Provider

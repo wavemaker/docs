@@ -1,10 +1,9 @@
 ---
-title: "Kibana"
-last_update: { author: "Krishna Rao Chintu" }
-id: "kibana"
-sidebar_label: "Kibana"
+title: Kibana
+last_update: { author: "WaveMaker" }
+id: kibana
+sidebar_label: Kibana
 ---
-
 ### Introduction
 
 As WaveMaker is a distributed application, each microservice generates its logs in its own container. These logs are very important to analyze or fix any issue in the Platform.

@@ -1,8 +1,8 @@
 ---
-title: "Working with Temporals"
-id: "working-with-temporals"
+title: Working with Temporals
+id: working-with-temporals
+last_update: { author: "WaveMaker" }
 ---
-
 ## Use Case
 
 How to use DB2 Temporal in WaveMaker apps.

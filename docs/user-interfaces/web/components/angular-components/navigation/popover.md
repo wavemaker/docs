@@ -1,7 +1,8 @@
 ---
-title: "Popover Overview and Properties"
-id: "popover"
-sidebar_label: "Popover Overview"
+title: Popover Overview and Properties
+id: popover
+sidebar_label: Popover Overview
+last_update: { author: "WaveMaker" }
 ---
 ---
 

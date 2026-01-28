@@ -1,7 +1,8 @@
 ---
-title: "List - Behavior Settings"
-id: "behavior-settings"
-sidebar_label: "Behavior Settings"
+title: List - Behavior Settings
+id: behavior-settings
+sidebar_label: Behavior Settings
+last_update: { author: "WaveMaker" }
 ---
 ---
 

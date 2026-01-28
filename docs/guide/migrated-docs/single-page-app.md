@@ -1,7 +1,8 @@
 ---
-title: "Single Page App" 
-id: "single-page-app"
-sidebar_label: "Enable SPA"
+title: Single Page App
+id: single-page-app
+sidebar_label: Enable SPA
+last_update: { author: "WaveMaker" }
 ---
 ---
 

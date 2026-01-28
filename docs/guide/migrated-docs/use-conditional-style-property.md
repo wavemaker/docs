@@ -1,6 +1,7 @@
 ---
-title: "How to use Conditional Style Property"
-id: "use-conditional-style-property"
+title: How to use Conditional Style Property
+id: use-conditional-style-property
+last_update: { author: "WaveMaker" }
 ---
 ---
 The conditional style settings allow you to bind expressions to the style property. The conditional property applies to the widgets specified below, and it is similar to the Conditional Class property.

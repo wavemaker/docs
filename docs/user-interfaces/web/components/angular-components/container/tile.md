@@ -1,8 +1,8 @@
 ---
-title: "Tile"
-id: "tile"
+title: Tile
+id: tile
+last_update: { author: "WaveMaker" }
 ---
-
 **Tile** is a container for other widgets used to present a set of objects. Tile widget lets you to directly add an image, text box, video, or web code to user dashboard. Functions _similar to the container_ but it comes with some default styling which makes it different from a container. Users cannot create partials using tile.
 
 Tiles can be used while creating Dashboard like UI where you need to show analytics data.

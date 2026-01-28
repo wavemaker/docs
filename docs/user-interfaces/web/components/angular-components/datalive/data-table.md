@@ -1,7 +1,8 @@
 ---
-title: "Data Table Widget"
-id: "data-table"
-sidebar_label: "Overview"
+title: Data Table Widget
+id: data-table
+sidebar_label: Overview
+last_update: { author: "WaveMaker" }
 ---
 ---
 :::note

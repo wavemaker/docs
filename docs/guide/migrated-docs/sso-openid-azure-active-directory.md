@@ -1,7 +1,8 @@
 ---
-title: "SSO Azure Active Directory Open ID Integration"
-id: "sso-openid-azure-active-directory"
-sidebar_label: "OpenID Integration - Azure AD"
+title: SSO Azure Active Directory Open ID Integration
+id: sso-openid-azure-active-directory
+sidebar_label: OpenID Integration - Azure AD
+last_update: { author: "WaveMaker" }
 ---
 ---
 

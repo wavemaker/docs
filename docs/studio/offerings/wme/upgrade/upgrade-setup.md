@@ -1,10 +1,9 @@
 ---
-title: "WaveMaker Enterprise Upgrade"
-last_update: { author: "Krishna Rao Chintu" }
-id: "upgrade-setup"
-sidebar_label: "Upgrade Overview"
+title: WaveMaker Enterprise Upgrade
+last_update: { author: "WaveMaker" }
+id: upgrade-setup
+sidebar_label: Upgrade Overview
 ---
-
 This document provides the instructions install a patch to upgrade the current WaveMaker Enterprise version for enhancing features or optimizing the performance of the installed WME.
 
 The following table is the compatibility matrix for upgrading the WME:

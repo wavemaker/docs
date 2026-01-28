@@ -1,8 +1,8 @@
 ---
-title: "Design Dialog"
-id: "design-dialog"
+title: Design Dialog
+id: design-dialog
+last_update: { author: "WaveMaker" }
 ---
-
 ---
 
 [![design_struct](./assets/img/design_struct.jpg)](./assets/img/design_struct.jpg)

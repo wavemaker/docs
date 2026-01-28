@@ -1,6 +1,7 @@
 ---
-title: "Using Variables for Queries and Procedure"
-id: "using-variables-queries-procedure"
+title: Using Variables for Queries and Procedure
+id: using-variables-queries-procedure
+last_update: { author: "WaveMaker" }
 ---
 ---
 

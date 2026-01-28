@@ -1,6 +1,7 @@
 ---
-title: "Nav Bar Overview"
-id: "nav-bar"
+title: Nav Bar Overview
+id: nav-bar
+last_update: { author: "WaveMaker" }
 ---
 ---
 

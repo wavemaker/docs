@@ -1,7 +1,8 @@
 ---
-title: "Live Filter - Use Cases"
-id: "livefilter-use-cases"
-sidebar_label: "Use Cases"
+title: Live Filter - Use Cases
+id: livefilter-use-cases
+sidebar_label: Use Cases
+last_update: { author: "WaveMaker" }
 ---
 ---
 

@@ -1,6 +1,7 @@
 ---
-title: "Using Search Widget within the Navbar"
-id: "using-search-widget-within-navbar"
+title: Using Search Widget within the Navbar
+id: using-search-widget-within-navbar
+last_update: { author: "WaveMaker" }
 ---
 ---
 

@@ -1,7 +1,8 @@
 ---
-title: "Restricting Menu Items based on the User Role"
-id: "restricting-menu-item-display-based-user-role"
-sidebar_label: "Restricting Menu Items based on the User Role"
+title: Restricting Menu Items based on the User Role
+id: restricting-menu-item-display-based-user-role
+sidebar_label: Restricting Menu Items based on the User Role
+last_update: { author: "WaveMaker" }
 ---
 ---
 

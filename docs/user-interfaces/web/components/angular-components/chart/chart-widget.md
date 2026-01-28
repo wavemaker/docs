@@ -1,6 +1,7 @@
 ---
-title: "Chart Widgets"
-id: "chart-widget"
+title: Chart Widgets
+id: chart-widget
+last_update: { author: "WaveMaker" }
 ---
 ---
 

@@ -1,6 +1,7 @@
 ---
-title: "Changing Default Favicon"
-id: "changing-default-favicon"
+title: Changing Default Favicon
+id: changing-default-favicon
+last_update: { author: "WaveMaker" }
 ---
 ---
 

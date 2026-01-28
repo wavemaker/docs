@@ -1,7 +1,8 @@
 ---
-title: "Using Popover Widget"
-id: "popover-basic-usage"
-sidebar_label: "Creating a Popover"
+title: Using Popover Widget
+id: popover-basic-usage
+sidebar_label: Creating a Popover
+last_update: { author: "WaveMaker" }
 ---
 ---
 

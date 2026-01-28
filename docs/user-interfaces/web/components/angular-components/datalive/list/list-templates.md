@@ -1,7 +1,8 @@
 ---
-title: "List - Templates"
-id: "list-templates"
-sidebar_label: "Templates"
+title: List - Templates
+id: list-templates
+sidebar_label: Templates
+last_update: { author: "WaveMaker" }
 ---
 ---
 List _items _can be displayed using various templates:

@@ -1,8 +1,8 @@
 ---
-title: "How to Intercept Request and Response of all API Calls in One Place"
-id: "intercept-requests-responses-api-calls-one-place"
+title: How to Intercept Request and Response of all API Calls in One Place
+id: intercept-requests-responses-api-calls-one-place
+last_update: { author: "WaveMaker" }
 ---
-
 In this article, you will learn how to intercept request and responses of all the API calls of the app at one place. The following three functions explain the application service and usage examples.
 
 ## onBeforeServiceCall

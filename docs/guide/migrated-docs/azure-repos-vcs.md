@@ -1,8 +1,8 @@
 ---
-title: "Configure Azure Repos In CodeRepository"
-id: "azure-repos-vcs"
+title: Configure Azure Repos In CodeRepository
+id: azure-repos-vcs
+last_update: { author: "WaveMaker" }
 ---
-
 WaveMaker Team offering allows Team admins to configure Version Control System (VCS), which stores the project source code. 
 
 From WaveMaker 11 GA, Team admins can configure **Azure Repos** under the **Add Code Repository** page. Although Azure supports Git and TFVC (Team Foundation Version Control) repositories, currently, WaveMaker supports only Git repositories. Thus, all WaveMaker projects created in Azure Repos will be Git repositories.

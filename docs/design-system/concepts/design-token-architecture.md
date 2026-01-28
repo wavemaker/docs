@@ -1,8 +1,8 @@
 ---
-title: "Design Token Architecture"
-sidebar_label: "Design Tokens"
+title: Design Token Architecture
+sidebar_label: Design Tokens
+last_update: { author: "WaveMaker" }
 ---
-
 This section explains how design tokens are structured and related inside WaveMaker. It helps you understand where tokens live, what each type of token does, and how they connect from global definitions to component-level overrides to make your app look consistent, scalable, and theme-ready.
 
 

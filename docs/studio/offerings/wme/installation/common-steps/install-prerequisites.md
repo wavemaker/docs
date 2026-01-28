@@ -1,10 +1,9 @@
 ---
-title: "Install Prerequisites Softwares"
-last_update: { author: "Krishna Rao Chintu" }
-id: "install-prerequisites"
-sidebar_label: "Install Prerequisites Softwares"
+title: Install Prerequisites Softwares
+last_update: { author: "WaveMaker" }
+id: install-prerequisites
+sidebar_label: Install Prerequisites Softwares
 ---
-
 :::note
  Before Proceeding with installing the softwares, Check the [Requirements here](/docs/studio/offerings/wme/getting-started/prerequisites).
 :::

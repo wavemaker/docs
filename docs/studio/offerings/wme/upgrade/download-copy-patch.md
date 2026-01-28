@@ -1,10 +1,9 @@
 ---
-title: "Download and Copy Patch"
-last_update: { author: "Krishna Rao Chintu" }
-id: "download-copy-patch"
-sidebar_label: "Download and Copy Patch"
+title: Download and Copy Patch
+last_update: { author: "WaveMaker" }
+id: download-copy-patch
+sidebar_label: Download and Copy Patch
 ---
-
 ## Download Patch
 
 ### Ubuntu & RHEL

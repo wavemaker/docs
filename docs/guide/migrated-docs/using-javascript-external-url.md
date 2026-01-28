@@ -1,6 +1,7 @@
 ---
-title: "Using JavaScript from External URL"
-id: "using-javascript-external-url"
+title: Using JavaScript from External URL
+id: using-javascript-external-url
+last_update: { author: "WaveMaker" }
 ---
 ---
 

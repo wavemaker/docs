@@ -1,6 +1,7 @@
 ---
-title: "IFrame Dialog"
-id: "iframe-dialog"
+title: IFrame Dialog
+id: iframe-dialog
+last_update: { author: "WaveMaker" }
 ---
 ---
 

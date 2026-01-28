@@ -1,7 +1,8 @@
 ---
-title: "Form - Layouts"
-id: "form-layouts"
-sidebar_label: "Layouts"
+title: Form - Layouts
+id: form-layouts
+sidebar_label: Layouts
+last_update: { author: "WaveMaker" }
 ---
 ---
 

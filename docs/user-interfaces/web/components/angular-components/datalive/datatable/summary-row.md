@@ -1,7 +1,8 @@
 ---
-title: "Data Table - Summary Row Function"
-id: "summary-row"
-sidebar_label: "Summary Row" 
+title: Data Table - Summary Row Function
+id: summary-row
+sidebar_label: Summary Row
+last_update: { author: "WaveMaker" }
 ---
 ---
 

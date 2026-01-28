@@ -1,6 +1,7 @@
 ---
-title: "Use Static Variable to pass data between pages"
-id: "use-static-variable-pass-data-pages"
+title: Use Static Variable to pass data between pages
+id: use-static-variable-pass-data-pages
+last_update: { author: "WaveMaker" }
 ---
 ---
 

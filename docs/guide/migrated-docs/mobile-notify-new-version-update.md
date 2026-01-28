@@ -1,7 +1,8 @@
 ---
-title: "How to notify users about the availability of a new update"
-id: "mobile-notify-new-version-update"
-sidebar_label: "Notify users about new update"
+title: How to notify users about the availability of a new update
+id: mobile-notify-new-version-update
+sidebar_label: Notify users about new update
+last_update: { author: "WaveMaker" }
 ---
 ---
 

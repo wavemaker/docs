@@ -1,10 +1,9 @@
 ---
-title: "WaveMaker Enterprise Architecture"
-last_update: { author: "Krishna Rao Chintu" }
-id: "architecture"
-sidebar_label: "Architecture"
+title: WaveMaker Enterprise Architecture
+last_update: { author: "WaveMaker" }
+id: architecture
+sidebar_label: Architecture
 ---
-
 ## Instances
 
 Instances are like host computers where you can do so much more than just storing and managing data to run the WaveMaker Enterprise (WME) infrastructure. There are three types of instances in WME.

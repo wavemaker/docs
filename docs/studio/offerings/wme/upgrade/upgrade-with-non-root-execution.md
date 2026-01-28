@@ -1,10 +1,9 @@
 ---
-title: "Upgrade with Non Root WME Execution"
-last_update: { author: "Krishna Rao Chintu" }
-id: "upgrade-non-root-execution"
-sidebar_label: "Upgrade Non Root WME Execution"
+title: Upgrade with Non Root WME Execution
+last_update: { author: "WaveMaker" }
+id: upgrade-non-root-execution
+sidebar_label: Upgrade Non Root WME Execution
 ---
-
 ### If the ssh user does not have privileges(root/sudo), Please follow below steps.
 
  

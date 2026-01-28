@@ -1,6 +1,7 @@
 ---
-title: "Integrate OTP (One-Time Passcode) Verification with WaveMaker App"
-id: "twilio-otp-integration"
+title: Integrate OTP (One-Time Passcode) Verification with WaveMaker App
+id: twilio-otp-integration
+last_update: { author: "WaveMaker" }
 ---
 ---
 

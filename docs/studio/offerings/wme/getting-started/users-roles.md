@@ -1,10 +1,9 @@
 ---
-title: "Users and Roles"
-last_update: { author: "Krishna Rao Chintu" }
-id: "users-roles"
-sidebar_label: "WME User Roles"
+title: Users and Roles
+last_update: { author: "WaveMaker" }
+id: users-roles
+sidebar_label: WME User Roles
 ---
-
 Learn how roles and activities are defined in WME.
 
 |User | Activities |

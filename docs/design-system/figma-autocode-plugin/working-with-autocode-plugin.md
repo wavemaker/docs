@@ -1,7 +1,8 @@
 ---
-id: "working-with-autocode-plugin"
-title: "WaveMaker AutoCode - Design to Code Figma Plugin"
-sidebar_label: "Figma Autocode"
+id: working-with-autocode-plugin
+title: WaveMaker AutoCode - Design to Code Figma Plugin
+sidebar_label: Figma Autocode
+last_update: { author: "WaveMaker" }
 ---
 ---
 

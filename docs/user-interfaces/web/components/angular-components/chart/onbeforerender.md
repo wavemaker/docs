@@ -1,7 +1,8 @@
 ---
-title: "Callback Event for Charts Widget"
-id: "onbeforerender"
-sidebar_label: "Callback Event"
+title: Callback Event for Charts Widget
+id: onbeforerender
+sidebar_label: Callback Event
+last_update: { author: "WaveMaker" }
 ---
 ---
 

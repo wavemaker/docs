@@ -1,9 +1,9 @@
 ---
-title: "Configuring Open ID using Google Provider"
-id: "implement-openid-google-provider"
-sidebar_label: "Open ID Integration - Google"
+title: Configuring Open ID using Google Provider
+id: implement-openid-google-provider
+sidebar_label: Open ID Integration - Google
+last_update: { author: "WaveMaker" }
 ---
-
 Google Identity Platform allows you to manage application access by providing authentication and authorization services. With this, you can add user identity, restrict application access, and protect user accounts. Below are the steps to configure Open ID using Google.
 
 ## Google as Open ID Provider

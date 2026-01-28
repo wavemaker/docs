@@ -1,9 +1,8 @@
 ---
-title : "Adding Custom Filters in WaveMaker app"
-id : "add-custom-filters"
+title: Adding Custom Filters in WaveMaker app
+id: add-custom-filters
+last_update: { author: "WaveMaker" }
 ---
-
-
 In Spring Security, a filter is a fundamental component that plays a crucial role in controlling and securing access to resources within a Spring-based web application. Filters in Spring Security are responsible for performing various security-related tasks, such as authentication, authorization, and request processing, before or after a request reaches the application's endpoints.
 
 

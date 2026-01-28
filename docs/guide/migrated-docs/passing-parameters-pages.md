@@ -1,6 +1,7 @@
 ---
-title: "Passing Parameters to Pages"
-id: "passing-parameters-pages"
+title: Passing Parameters to Pages
+id: passing-parameters-pages
+last_update: { author: "WaveMaker" }
 ---
 ---
 

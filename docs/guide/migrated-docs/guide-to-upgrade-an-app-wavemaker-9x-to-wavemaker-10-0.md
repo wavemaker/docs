@@ -1,6 +1,7 @@
 ---
-title: "Upgrading an App from WaveMaker 9.x to WaveMaker 10.0"
-id: "guide-to-upgrade-an-app-wavemaker-9x-to-wavemaker-10-0"
+title: Upgrading an App from WaveMaker 9.x to WaveMaker 10.0
+id: guide-to-upgrade-an-app-wavemaker-9x-to-wavemaker-10-0
+last_update: { author: "WaveMaker" }
 ---
 ---
 

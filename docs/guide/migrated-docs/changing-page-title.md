@@ -1,6 +1,7 @@
 ---
-title: "Changing Page Title"
-id: "changing-page-title"
+title: Changing Page Title
+id: changing-page-title
+last_update: { author: "WaveMaker" }
 ---
 ---
 

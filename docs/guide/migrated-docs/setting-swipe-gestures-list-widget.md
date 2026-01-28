@@ -1,6 +1,7 @@
 ---
-title: "Setting Swipe Gestures on a List Widget"
-id: "setting-swipe-gestures-list-widget"
+title: Setting Swipe Gestures on a List Widget
+id: setting-swipe-gestures-list-widget
+last_update: { author: "WaveMaker" }
 ---
 ---
 

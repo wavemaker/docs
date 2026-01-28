@@ -1,6 +1,7 @@
 ---
-title: "Select Locale"
-id: "select-locale"
+title: Select Locale
+id: select-locale
+last_update: { author: "WaveMaker" }
 ---
 ---
 

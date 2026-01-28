@@ -1,10 +1,9 @@
 ---
-title: "WME Add Users and Authentication Provider"
-last_update: { author: "Krishna Rao Chintu" }
-id: "config-users-auth-providers"
-sidebar_label: "Users Onboarding"
+title: WME Add Users and Authentication Provider
+last_update: { author: "WaveMaker" }
+id: config-users-auth-providers
+sidebar_label: Users Onboarding
 ---
-
 Configure Users and Authentication Providers.
 
 ## Add User from the Launchpad

@@ -1,8 +1,8 @@
 ---
-title: "Panel"
-id: "panel"
+title: Panel
+id: panel
+last_update: { author: "WaveMaker" }
 ---
-
 **A panel** can be used to group a set of widgets together. It has a collapsible title bar and you can add multiple panels and any number of multiple panes can be open at any given point of time.
 
 A panel has designated sections such as header, body, and footer. [![](./assets/img/panel_run1.png)](./assets/img/panel_run1.png)

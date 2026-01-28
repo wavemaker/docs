@@ -1,6 +1,7 @@
 ---
-title: "Scheduling a Java Service"
-id: "scheduling-java-service"
+title: Scheduling a Java Service
+id: scheduling-java-service
+last_update: { author: "WaveMaker" }
 ---
 ---
 

@@ -1,6 +1,7 @@
 ---
-title: "Change Icon for the Global Spinner"
-id: "change-icon-global-spinner"
+title: Change Icon for the Global Spinner
+id: change-icon-global-spinner
+last_update: { author: "WaveMaker" }
 ---
 ---
 

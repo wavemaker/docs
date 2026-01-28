@@ -1,6 +1,7 @@
 ---
-title: "Customizing Theme"
-id: "customizing-theme"
+title: Customizing Theme
+id: customizing-theme
+last_update: { author: "WaveMaker" }
 ---
 ---
 

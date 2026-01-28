@@ -1,10 +1,9 @@
 ---
-title: "WaveMaker Enterprise Setup Overview"
-last_update: { author: "Krishna Rao Chintu" }
-id: "wavemaker-enterprise-setup-overview"
-sidebar_label: "Overview"
+title: WaveMaker Enterprise Setup Overview
+last_update: { author: "WaveMaker" }
+id: wavemaker-enterprise-setup-overview
+sidebar_label: Overview
 ---
-
 This guide provides an overview of the process for setting up **WaveMaker Enterprise (WME)** across supported deployment platforms, including public cloud providers and private infrastructure environments.
 
 Before starting the setup, ensure that you have access to the target platform.

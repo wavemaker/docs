@@ -1,9 +1,8 @@
 ---
-title: "Designing Best Practices"
-sidebar_label: "Designing Best Practices"
+title: Designing Best Practices
+sidebar_label: Designing Best Practices
+last_update: { author: "WaveMaker" }
 ---
-
-
 ### Use Consistent, Semantic Naming Conventions
 
 - Follow a structured hierarchy such as: `category.component.role.state`

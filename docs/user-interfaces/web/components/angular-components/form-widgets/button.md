@@ -1,6 +1,7 @@
 ---
-title: "Button"
-id: "button"
+title: Button
+id: button
+last_update: { author: "WaveMaker" }
 ---
 ---
 A **button** indicates a possible user action. The button provides a styled clickable UI functionality with arbitrary content to indicate the different states.

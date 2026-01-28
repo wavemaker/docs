@@ -1,7 +1,8 @@
 ---
-title: "Video Widget"
-id: "video"
-sidebar_label: "Video"
+title: Video Widget
+id: video
+sidebar_label: Video
+last_update: { author: "WaveMaker" }
 ---
 ---
 

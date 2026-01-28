@@ -1,7 +1,8 @@
 ---
-title: "Live Form - Layouts"
-id: "liveform-layouts"
-sidebar_label: "Layouts"
+title: Live Form - Layouts
+id: liveform-layouts
+sidebar_label: Layouts
+last_update: { author: "WaveMaker" }
 ---
 ---
 ## Layout Configuration

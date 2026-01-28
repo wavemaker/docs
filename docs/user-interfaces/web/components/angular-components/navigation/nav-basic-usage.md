@@ -1,7 +1,8 @@
 ---
-title: "Navigation - Basic Usage"
-id: "nav-basic-usage"
-sidebar_label: "Creating navigation"
+title: Navigation - Basic Usage
+id: nav-basic-usage
+sidebar_label: Creating navigation
+last_update: { author: "WaveMaker" }
 ---
 ---
 

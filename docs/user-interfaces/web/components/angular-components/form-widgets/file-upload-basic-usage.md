@@ -1,8 +1,8 @@
 ---
-title: "FileUpload - Basic Usage"
-id: "file-upload-basic-usage"
+title: FileUpload - Basic Usage
+id: file-upload-basic-usage
+last_update: { author: "WaveMaker" }
 ---
-
 1. Drag and drop a **FileUpload** widget onto the canvas.
 2. You will be prompted to create a _FileServiceUploadFile_ Variable. For this demo purpose, retain the default selections of _Update data on input change_. **NOTE**: You can create and use any service, but keep in mind that the operation selected should be able to accept file data. The default file service _uploadFile_ operation fulfills this requirement. [![](./assets/img/fu_servicevar.png)](./assets/img/fu_servicevar.png)
 3. From the Properties panel, set the **Multiple** property to true, this will enable us to upload multiple files, else you can upload a single file at a time. [![fu_props](./assets/img/fu_props.png)](./assets/img/fu_props.png)

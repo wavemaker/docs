@@ -1,7 +1,8 @@
 ---
-title: "Live Filter - Configurations"
-id: "filter-configurations"
-sidebar_label: "Configuration"
+title: Live Filter - Configurations
+id: filter-configurations
+sidebar_label: Configuration
+last_update: { author: "WaveMaker" }
 ---
 ---
 

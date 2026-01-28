@@ -1,6 +1,7 @@
 ---
-title: "Button Group"
-id: "button-group"
+title: Button Group
+id: button-group
+last_update: { author: "WaveMaker" }
 ---
 ---
 

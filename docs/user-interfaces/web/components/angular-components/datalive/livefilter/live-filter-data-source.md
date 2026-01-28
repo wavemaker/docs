@@ -1,7 +1,8 @@
 ---
-title: "Live Filter - Data Source"
-id: "live-filter-data-source"
-sidebar_label: "Data Source"
+title: Live Filter - Data Source
+id: live-filter-data-source
+sidebar_label: Data Source
+last_update: { author: "WaveMaker" }
 ---
 ---
 

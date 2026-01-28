@@ -1,11 +1,9 @@
 ---
-title: "Upgrade Prerequisites"
-last_update: { author: "Krishna Rao Chintu" }
-id: "upgrade-prerequisites"
-sidebar_label: "Upgrade Prerequisites"
+title: Upgrade Prerequisites
+last_update: { author: "WaveMaker" }
+id: upgrade-prerequisites
+sidebar_label: Upgrade Prerequisites
 ---
-
-
 ## Prerequisites
 
 Following are the prerequisites for applying the patch on WME:

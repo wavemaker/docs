@@ -1,7 +1,8 @@
 ---
-title: "Configure MTLS in WaveMaker Application"
-id: "configure-mtls-in-wmapp"
-sidebar_label: "Configuring MTLS"
+title: Configure MTLS in WaveMaker Application
+id: configure-mtls-in-wmapp
+sidebar_label: Configuring MTLS
+last_update: { author: "WaveMaker" }
 ---
 ---
 

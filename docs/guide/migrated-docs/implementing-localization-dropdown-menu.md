@@ -1,7 +1,8 @@
 ---
-title: "Implementing Localization for Dropdown Menu"
-id: "implementing-localization-dropdown-menu"
-sidebar_label: "Localization for Dropdown Menu"
+title: Implementing Localization for Dropdown Menu
+id: implementing-localization-dropdown-menu
+sidebar_label: Localization for Dropdown Menu
+last_update: { author: "WaveMaker" }
 ---
 ---
 

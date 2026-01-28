@@ -1,6 +1,7 @@
 ---
-title: "Error Handling in WaveMaker App"
-id: "error-handling-wavemaker-app"
+title: Error Handling in WaveMaker App
+id: error-handling-wavemaker-app
+last_update: { author: "WaveMaker" }
 ---
 ---
 

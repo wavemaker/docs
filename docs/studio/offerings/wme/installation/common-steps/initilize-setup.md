@@ -1,10 +1,9 @@
 ---
-title: "Initialize Setup"
-last_update: { author: "Krishna Rao Chintu" }
-id: "initilize-setup"
-sidebar_label: "Initialize Setup"
+title: Initialize Setup
+last_update: { author: "WaveMaker" }
+id: initilize-setup
+sidebar_label: Initialize Setup
 ---
-
 ## Setup Initialization Process
 
 - WaveMaker platform requires a user; the user should have access to SSH to communicate between Platform, Studioworkspace, and AppDeployment instances, and for creating Docker containers.

@@ -1,6 +1,7 @@
 ---
-title: "Chips"
-id: "chips"
+title: Chips
+id: chips
+last_update: { author: "WaveMaker" }
 ---
 ---
 

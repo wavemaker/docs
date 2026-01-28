@@ -1,7 +1,8 @@
 ---
-title: "Lottie Widget (Beta)"
-id: "lottie"
-sidebar_label: "Lottie (Beta)"
+title: Lottie Widget (Beta)
+id: lottie
+sidebar_label: Lottie (Beta)
+last_update: { author: "WaveMaker" }
 ---
 ---
 

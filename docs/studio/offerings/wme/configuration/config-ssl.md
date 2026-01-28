@@ -1,10 +1,9 @@
 ---
-title: "WaveMaker Enterprise Configure SSL for Platform"
-last_update: { author: "Krishna Rao Chintu" }
-id: "config-ssl"
-sidebar_label: "Configure SSL"
+title: WaveMaker Enterprise Configure SSL for Platform
+last_update: { author: "WaveMaker" }
+id: config-ssl
+sidebar_label: Configure SSL
 ---
-
 Follow below steps to Configure SSL for Platform to access Studio with https.
 
 To start this process you need 3 files.

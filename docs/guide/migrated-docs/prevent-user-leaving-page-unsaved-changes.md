@@ -1,7 +1,8 @@
 ---
-title: "Prevent Leaving Page with Unsaved Changes"
-id: "prevent-user-leaving-page-unsaved-changes"
-sidebar_label: "Leaving Page with Unsaved Changes"
+title: Prevent Leaving Page with Unsaved Changes
+id: prevent-user-leaving-page-unsaved-changes
+sidebar_label: Leaving Page with Unsaved Changes
+last_update: { author: "WaveMaker" }
 ---
 ---
 In a WaveMaker app, pages have specific life cycle events. An `onBeforePageLeave` is an event that allows you to perform certain checks before you navigate out of a page. 

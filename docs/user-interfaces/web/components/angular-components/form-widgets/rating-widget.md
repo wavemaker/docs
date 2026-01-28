@@ -1,6 +1,7 @@
 ---
-title: "Rating Widget"
-id: "rating-widget"
+title: Rating Widget
+id: rating-widget
+last_update: { author: "WaveMaker" }
 ---
 ---
 
