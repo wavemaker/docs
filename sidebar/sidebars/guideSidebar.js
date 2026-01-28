@@ -2,11 +2,6 @@
 export default [
       {
         type: 'category',
-        label: 'App Development',
-        items: ['guide/app-development/creating-registration-page'],
-      },
-      {
-        type: 'category',
         label: 'Deployment',
         items: [
           'guide/deployment/app-integration-with-azure-cdn',
@@ -266,35 +261,6 @@ export default [
   //   items: [
   //     {
   //       docs: [
-          {
-            type: 'category',
-            label: 'Deployment',
-            items: [
-              {
-                type: 'category',
-                label: 'Integrate with your CI/CD Providers',
-                items: [
-                  {
-                    type: 'category',
-                    label: 'Deploy WaveMaker Application',
-                    items: [
-                      {
-                        type: 'category',
-                        label: 'Deploy using WAR File',
-                        items: [
-                          'guide/migrated-docs/wavemaker-application-deployment-tomcat',
-                          'guide/migrated-docs/wavemaker-application-deployment-websphere-liberty-profile',
-                          'guide/migrated-docs/wavemaker-application-deployment-jboss',
-                          'guide/migrated-docs/wavemaker-application-deployment-weblogic-application-server',
-                        ],
-                      },
-                      'guide/migrated-docs/deployment-to-heroku',
-                    ],
-                  },
-                ],
-              },
-            ],
-          },
           {
             type: 'category',
             label: 'App solution',
