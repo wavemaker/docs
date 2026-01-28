@@ -1,7 +1,8 @@
 ---
-title: "List - Properties, Events & Methods"
-id: "list-properties-events-methods"
-sidebar_label: "Properties, Events & Methods"
+title: List - Properties, Events & Methods
+id: list-properties-events-methods
+sidebar_label: Properties, Events & Methods
+last_update: { author: "WaveMaker" }
 ---
 ---
 ## Properties

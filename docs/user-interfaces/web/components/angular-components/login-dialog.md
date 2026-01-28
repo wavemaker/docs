@@ -1,6 +1,7 @@
 ---
-title: "Login Dialog"
-id: "login-dialog"
+title: Login Dialog
+id: login-dialog
+last_update: { author: "WaveMaker" }
 ---
 ---
 

@@ -1,7 +1,8 @@
 ---
-title: "Live Filter - Basic Usage"
-id: "live-filter-basic-usage"
-sidebar_label: "Creating a Live Filter"
+title: Live Filter - Basic Usage
+id: live-filter-basic-usage
+sidebar_label: Creating a Live Filter
+last_update: { author: "WaveMaker" }
 ---
 ---
 To add filter capabilities to your app, drag-and-drop the **Live Filter** widget and bind the result from the Live Filter to the desired widget like Data Table or List. 

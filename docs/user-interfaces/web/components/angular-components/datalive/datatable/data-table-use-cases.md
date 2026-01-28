@@ -1,7 +1,8 @@
 ---
-title: "Data Table - Use Cases"
-id: "data-table-use-cases"
-sidebar_label: "Use Cases"
+title: Data Table - Use Cases
+id: data-table-use-cases
+sidebar_label: Use Cases
+last_update: { author: "WaveMaker" }
 ---
 ---
 

@@ -1,7 +1,8 @@
 ---
-title: "Data Table - Layouts"
-id: "layouts"
-sidebar_label: "Layouts"
+title: Data Table - Layouts
+id: layouts
+sidebar_label: Layouts
+last_update: { author: "WaveMaker" }
 ---
 ---
 Data Table can be editable or read-only with editable options being inline or dialog-based. These options are available as **Layout options**. 

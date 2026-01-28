@@ -1,8 +1,8 @@
 ---
-title: "Flex Layout"
-id: "flex-layout"
+title: Flex Layout
+id: flex-layout
+last_update: { author: "WaveMaker" }
 ---
-
 Flex Layout is just a [Layout](./layout) only with 3 children. Middle child has **flex grow** is set to 1. Other children have **flex grow** set to 0. 
 
 ![](./assets/img/flex-layout.png)

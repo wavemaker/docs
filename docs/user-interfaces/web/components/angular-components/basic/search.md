@@ -1,6 +1,7 @@
 ---
-title: "Search"
-id: "search"
+title: Search
+id: search
+last_update: { author: "WaveMaker" }
 ---
 ---
 

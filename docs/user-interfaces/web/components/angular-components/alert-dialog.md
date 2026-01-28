@@ -1,6 +1,7 @@
 ---
-title: "Alert Dialog"
-id: "alert-dialog"
+title: Alert Dialog
+id: alert-dialog
+last_update: { author: "WaveMaker" }
 ---
 ---
 

@@ -1,6 +1,7 @@
 ---
-title: "Page Dialog"
-id: "page-dialog"
+title: Page Dialog
+id: page-dialog
+last_update: { author: "WaveMaker" }
 ---
 ---
 

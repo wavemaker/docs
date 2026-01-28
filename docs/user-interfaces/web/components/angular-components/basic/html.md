@@ -1,8 +1,8 @@
 ---
-title: "HTML"
-id: "html"
+title: HTML
+id: html
+last_update: { author: "WaveMaker" }
 ---
-
 **HTML** widget can be used to display HTML content.
 
 ## Properties

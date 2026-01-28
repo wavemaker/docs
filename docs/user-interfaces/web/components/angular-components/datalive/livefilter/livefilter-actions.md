@@ -1,7 +1,8 @@
 ---
-title: "Live Filter - Actions"
-id: "livefilter-actions"
-sidebar_label: "Actions"
+title: Live Filter - Actions
+id: livefilter-actions
+sidebar_label: Actions
+last_update: { author: "WaveMaker" }
 ---
 ---
 

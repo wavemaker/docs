@@ -1,8 +1,8 @@
 ---
-title: "Message"
-id: "message"
+title: Message
+id: message
+last_update: { author: "WaveMaker" }
 ---
-
 **Message** widget helps to display a custom message on the page. Based on the message type - _error_, _warning_, _success_, _info_, _loading_- the message look and feel changes. For instance, setting the message type to _error_ shows an error icon alongside the message text, which is displayed in red.
 
 ## Features

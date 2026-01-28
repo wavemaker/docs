@@ -1,7 +1,8 @@
 ---
-title: "Live Form - Actions"
-id: "liveform-actions"
-sidebar_label: "Actions"
+title: Live Form - Actions
+id: liveform-actions
+sidebar_label: Actions
+last_update: { author: "WaveMaker" }
 ---
 ---
 

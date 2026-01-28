@@ -1,7 +1,8 @@
 ---
-title: "Creating Live Form"
-id: "live-form-basic-usage"
-sidebar_label: "Creating a Live Form"
+title: Creating Live Form
+id: live-form-basic-usage
+sidebar_label: Creating a Live Form
+last_update: { author: "WaveMaker" }
 ---
 ---
 

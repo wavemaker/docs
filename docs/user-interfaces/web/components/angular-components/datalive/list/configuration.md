@@ -1,7 +1,8 @@
 ---
-title: "List - Configuration"
-id: "configuration"
-sidebar_label: "Configuration"
+title: List - Configuration
+id: configuration
+sidebar_label: Configuration
+last_update: { author: "WaveMaker" }
 ---
 ---
 

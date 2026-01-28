@@ -1,8 +1,8 @@
 ---
-title: "Accordion"
-id: "accordion"
+title: Accordion
+id: accordion
+last_update: { author: "WaveMaker" }
 ---
-
 An **accordion** is a stacked list of UI components, with only one focused component expanded at any point of time and the rest collapsed.
 
 WaveMaker **Accordion Widget** is a collection of accordion panes where users can either place the content or include the partial pages. [![](./assets/img/accordion_run.png)](./assets/img/accordion_run.png)

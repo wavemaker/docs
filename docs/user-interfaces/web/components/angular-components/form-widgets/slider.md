@@ -1,6 +1,7 @@
 ---
-title: "Slider"
-id: "slider"
+title: Slider
+id: slider
+last_update: { author: "WaveMaker" }
 ---
 ---
 

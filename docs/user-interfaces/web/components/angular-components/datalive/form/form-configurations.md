@@ -1,7 +1,8 @@
 ---
-title: "Form Configurations"
-id: "form-configurations"
-sidebar_label: "Configuration"
+title: Form Configurations
+id: form-configurations
+sidebar_label: Configuration
+last_update: { author: "WaveMaker" }
 ---
 ---
 

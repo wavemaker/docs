@@ -1,7 +1,8 @@
 ---
-title: "Live Form Widget"
-id: "live-form"
-sidebar_label: "Overview"
+title: Live Form Widget
+id: live-form
+sidebar_label: Overview
+last_update: { author: "WaveMaker" }
 ---
 ---
 

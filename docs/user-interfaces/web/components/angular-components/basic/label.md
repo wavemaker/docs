@@ -1,8 +1,8 @@
 ---
-title: "Label"
-id: "label"
+title: Label
+id: label
+last_update: { author: "WaveMaker" }
 ---
-
 The **label** represents a caption in a user interface. The label displays text on the page. Common use cases include
 
 - a page header

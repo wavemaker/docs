@@ -1,6 +1,7 @@
 ---
-title: "CheckboxSet"
-id: "checkboxset"
+title: CheckboxSet
+id: checkboxset
+last_update: { author: "WaveMaker" }
 ---
 ---
 CheckboxSet allows you to group a set of checkboxes under a common heading. You need to bind to a dataset to display a checkbox for each value.

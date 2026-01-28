@@ -1,6 +1,7 @@
 ---
-title: "Radioset"
-id: "radioset"
+title: Radioset
+id: radioset
+last_update: { author: "WaveMaker" }
 ---
 ---
 Radioset allows you to group a set of radio buttons under a common heading. You need to bind to a dataset to display a radio button for each value.

@@ -1,7 +1,8 @@
 ---
-title: "Cards - Configuration"
-id: "card-configuration"
-sidebar_label: "Configuration"
+title: Cards - Configuration
+id: card-configuration
+sidebar_label: Configuration
+last_update: { author: "WaveMaker" }
 ---
 ---
 #### Items per Row

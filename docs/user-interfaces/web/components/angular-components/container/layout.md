@@ -1,8 +1,8 @@
 ---
-title: "Layout"
-id: "layout"
+title: Layout
+id: layout
+last_update: { author: "WaveMaker" }
 ---
-
 As the name suggests, **Layout** widget is used to build scaffold to hold widgets. Underlyingly, this widget uses wm-linearlayout and wm-linearlayoutitem components. Let us understand these components first.
 
 :::warning

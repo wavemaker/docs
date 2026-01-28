@@ -1,6 +1,7 @@
 ---
-title: "Toggle"
-id: "toggle"
+title: Toggle
+id: toggle
+last_update: { author: "WaveMaker" }
 ---
 --- 
 **Toggle widget** represents a physical switch that allows users to turn things on or off. Use Toggle controls to present users with exactly two mutually exclusive options (like on/off), where choosing option results in an immediate action.

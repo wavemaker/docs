@@ -1,7 +1,8 @@
 ---
-title: "Data Table - Events & Methods"
-id: "datatable-events-methods"
-sidebar_label: "Events & Methods"
+title: Data Table - Events & Methods
+id: datatable-events-methods
+sidebar_label: Events & Methods
+last_update: { author: "WaveMaker" }
 ---
 ---
 ## Events

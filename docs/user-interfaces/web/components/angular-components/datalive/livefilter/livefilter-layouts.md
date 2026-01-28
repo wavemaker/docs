@@ -1,7 +1,8 @@
 ---
-title: "Live Filter - Layouts"
-id: "livefilter-layouts"
-sidebar_label: "Layouts"
+title: Live Filter - Layouts
+id: livefilter-layouts
+sidebar_label: Layouts
+last_update: { author: "WaveMaker" }
 ---
 ---
 

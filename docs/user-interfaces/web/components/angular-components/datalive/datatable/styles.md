@@ -1,7 +1,8 @@
 ---
-title: "Data Table Styles"
-id: "styles"
-sidebar_label: "Styles"
+title: Data Table Styles
+id: styles
+sidebar_label: Styles
+last_update: { author: "WaveMaker" }
 ---
 ---
 

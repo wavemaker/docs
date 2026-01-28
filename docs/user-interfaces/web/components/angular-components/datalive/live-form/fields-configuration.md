@@ -1,7 +1,8 @@
 ---
-title: "Live Form - Fields Configuration"
-id: "fields-configuration"
-sidebar_label: "Fields Configuration"
+title: Live Form - Fields Configuration
+id: fields-configuration
+sidebar_label: Fields Configuration
+last_update: { author: "WaveMaker" }
 ---
 ---
 ## Configure form fields display options

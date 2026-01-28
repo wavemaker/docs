@@ -1,8 +1,8 @@
 ---
-title: "Marquee"
-id: "marquee"
+title: Marquee
+id: marquee
+last_update: { author: "WaveMaker" }
 ---
-
 **Marquee** widget is used to display the content in marquee styles, any widget can be dropped into it.
 
 ## Properties

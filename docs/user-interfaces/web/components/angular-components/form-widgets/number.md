@@ -1,6 +1,7 @@
 ---
-title: "Number"
-id: "number"
+title: Number
+id: number
+last_update: { author: "WaveMaker" }
 ---
 ---
 

@@ -1,8 +1,8 @@
 ---
-title: "Spinner"
-id: "spinner"
+title: Spinner
+id: spinner
+last_update: { author: "WaveMaker" }
 ---
-
 **Spinner** widget controls the user interaction while the browser is performing some work in the background. It gives a feedback if the page is processing or, frozen, or just not working. This widget displays a loading icon with text.
 
 You can drop a spinner widget on the required page and set the spinner to false at _onPageReady_ which is part of the Script of the current page by using the following code snippet: Page.Widgets.spinner1.show = false;. If you would like to set the spinner till the variable loads, you can set the "_Track Variable_" property of the spinner to that particular variable. Then, the spinner would be shown until the variable gets loaded. You can track multiple variables by selecting the same.

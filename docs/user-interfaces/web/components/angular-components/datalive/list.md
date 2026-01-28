@@ -1,7 +1,8 @@
 ---
-title: "List Widget"
-id: "list"
-sidebar_label: "Overview"
+title: List Widget
+id: list
+sidebar_label: Overview
+last_update: { author: "WaveMaker" }
 ---
 ---
 
