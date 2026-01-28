@@ -185,6 +185,48 @@ export default [
       },
       {
         type: 'category',
+        label: 'WaveMaker Internal CI/CD Pipeline',
+        items: [
+          'build-and-deploy/pipeline/wavemaker-internal-ci-cd-pipeline/release-management',
+          'build-and-deploy/pipeline/wavemaker-internal-ci-cd-pipeline/configuration-profiles',
+          'build-and-deploy/pipeline/wavemaker-internal-ci-cd-pipeline/configuration-management',
+          'build-and-deploy/pipeline/wavemaker-internal-ci-cd-pipeline/pipelines-phases',
+          {
+            type: 'category',
+            label: 'Pipeline Configuration',
+            items: [
+              'build-and-deploy/pipeline/wavemaker-internal-ci-cd-pipeline/pipeline-configuration/default-pipelines',
+              'build-and-deploy/pipeline/wavemaker-internal-ci-cd-pipeline/pipeline-configuration/configure-pipelines',
+            ],
+          },
+          {
+            type: 'category',
+            label: 'Deploy to Cloud Providers',
+            items: [
+              'build-and-deploy/pipeline/wavemaker-internal-ci-cd-pipeline/deploy-to-cloud-providers/deployment-to-aws',
+              'build-and-deploy/pipeline/wavemaker-internal-ci-cd-pipeline/deploy-to-cloud-providers/deployment-to-azure',
+              'build-and-deploy/pipeline/wavemaker-internal-ci-cd-pipeline/deploy-to-cloud-providers/deployment-google-cloud',
+              'build-and-deploy/pipeline/wavemaker-internal-ci-cd-pipeline/deploy-to-cloud-providers/deployment-to-digital-ocean',
+            ],
+          },
+          {
+            type: 'category',
+            label: 'Pipeline Configuration cont.',
+            items: [
+              'build-and-deploy/pipeline/wavemaker-internal-ci-cd-pipeline/pipeline-configuration-cont/phase-configuration',
+              'build-and-deploy/pipeline/wavemaker-internal-ci-cd-pipeline/pipeline-configuration-cont/webhooks-integration',
+              'build-and-deploy/pipeline/wavemaker-internal-ci-cd-pipeline/pipeline-configuration-cont/tests-integration',
+            ],
+          },
+          {
+            type: 'category',
+            label: 'Manage Deployed Apps',
+            items: ['build-and-deploy/pipeline/wavemaker-internal-ci-cd-pipeline/manage-deployed-apps'],
+          },
+        ],
+      },
+      {
+        type: 'category',
         label: 'Continuous Integration',
         collapsible: true,
         collapsed: true,
