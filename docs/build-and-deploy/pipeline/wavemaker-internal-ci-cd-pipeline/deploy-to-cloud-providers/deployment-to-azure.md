@@ -1,7 +1,8 @@
 ---
-title: "Configuring for Azure Deployment"
-id: "deployment-to-azure"
+title: Configuring for Azure Deployment
+id: deployment-to-azure
 sidebar_label: Azure
+last_update: { author: "WaveMaker" }
 ---
 Learn how to deploy your app to Azure server.
 

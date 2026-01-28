@@ -1,7 +1,8 @@
 ---
-title: "Configuring for Google Cloud Deployment"
-id: "deployment-google-cloud"
-sidebar_label: "Google Cloud"
+title: Configuring for Google Cloud Deployment
+id: deployment-google-cloud
+sidebar_label: Google Cloud
+last_update: { author: "WaveMaker" }
 ---
 ---
 WaveMaker allows you to deploy your app to your Google Cloud account for Live (and Stage for WME users) phase. [Know more about App Phases from here](../release-management).

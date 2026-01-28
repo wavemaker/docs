@@ -1,7 +1,8 @@
 ---
-title: "Configuring for AWS Deployment"
-id: "deployment-to-aws"
-sidebar_label: "AWS"
+title: Configuring for AWS Deployment
+id: deployment-to-aws
+sidebar_label: AWS
+last_update: { author: "WaveMaker" }
 ---
 ---
 

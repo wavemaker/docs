@@ -1,6 +1,7 @@
 ---
-title: "Tests Integration"
-id: "tests-integration"
+title: Tests Integration
+id: tests-integration
+last_update: { author: "WaveMaker" }
 ---
 ---
 

@@ -1,6 +1,7 @@
 ---
-title: "Configuration Management"
-id: "configuration-management"
+title: Configuration Management
+id: configuration-management
+last_update: { author: "WaveMaker" }
 ---
 ---
 

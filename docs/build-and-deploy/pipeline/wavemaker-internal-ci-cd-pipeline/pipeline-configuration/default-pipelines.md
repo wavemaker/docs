@@ -1,6 +1,7 @@
 ---
-title: "Default Pipelines in WMO"
-id: "default-pipelines"
+title: Default Pipelines in WMO
+id: default-pipelines
+last_update: { author: "WaveMaker" }
 ---
 ---
 

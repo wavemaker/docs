@@ -1,6 +1,7 @@
 ---
-title: "Phase configurations"
-id: "phase-configuration"
+title: Phase configurations
+id: phase-configuration
+last_update: { author: "WaveMaker" }
 ---
 ---
 

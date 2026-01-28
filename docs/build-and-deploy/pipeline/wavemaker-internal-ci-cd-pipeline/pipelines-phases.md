@@ -1,7 +1,8 @@
 ---
-title: "Pipelines and Phases"
-id: "pipelines-phases"
-sidebar_label: "Pipelines and Phases"
+title: Pipelines and Phases
+id: pipelines-phases
+sidebar_label: Pipelines and Phases
+last_update: { author: "WaveMaker" }
 ---
 ---
 

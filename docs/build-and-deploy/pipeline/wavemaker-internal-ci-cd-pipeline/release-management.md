@@ -1,7 +1,8 @@
 ---
-title: "Release Management"
-id: "release-management"
-sidebar_label: "Overview"
+title: Release Management
+id: release-management
+sidebar_label: Overview
+last_update: { author: "WaveMaker" }
 ---
 ---
 

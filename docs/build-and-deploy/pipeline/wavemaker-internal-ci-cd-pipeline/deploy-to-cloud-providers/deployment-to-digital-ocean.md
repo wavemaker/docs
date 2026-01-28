@@ -1,7 +1,8 @@
 ---
-title: "Configuring DigitalOcean Deployment"
-id: "deployment-to-digital-ocean"
-sidebar_label: "DigitalOcean"
+title: Configuring DigitalOcean Deployment
+id: deployment-to-digital-ocean
+sidebar_label: DigitalOcean
+last_update: { author: "WaveMaker" }
 ---
 ---
 

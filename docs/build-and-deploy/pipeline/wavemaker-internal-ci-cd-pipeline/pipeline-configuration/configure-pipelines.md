@@ -1,6 +1,7 @@
 ---
-title: "Configure Pipeline in WME"
-id: "configure-pipelines"
+title: Configure Pipeline in WME
+id: configure-pipelines
+last_update: { author: "WaveMaker" }
 ---
 ---
 

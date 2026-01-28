@@ -1,6 +1,7 @@
 ---
-title: "Configuration Profiles"
-id: "configuration-profiles"
+title: Configuration Profiles
+id: configuration-profiles
+last_update: { author: "WaveMaker" }
 ---
 ---
 

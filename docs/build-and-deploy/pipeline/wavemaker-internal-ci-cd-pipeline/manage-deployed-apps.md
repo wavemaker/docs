@@ -1,6 +1,7 @@
 ---
-title: "Manage Deployed Apps"
-id: "manage-deployed-apps"
+title: Manage Deployed Apps
+id: manage-deployed-apps
+last_update: { author: "WaveMaker" }
 ---
 ---
 
