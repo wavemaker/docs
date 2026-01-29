@@ -1,8 +1,8 @@
 ---
 title: "Building an Editable List"
 id: "building-editable-list"
+last_update: { author: "WaveMaker" }
 ---
-
 **Scenario**: To make List editable.
 
 We will see how a Live Form can be added to a List to make it editable.

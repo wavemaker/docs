@@ -2,6 +2,7 @@
 title: "Charts - Custom Data"
 id: "charts-custom-data"
 sidebar_label: "Custom Data"
+last_update: { author: "WaveMaker" }
 ---
 ---
 

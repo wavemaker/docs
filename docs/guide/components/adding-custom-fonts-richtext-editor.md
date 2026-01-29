@@ -1,6 +1,7 @@
 ---
 title: "Adding Custom Fonts to Richtext Editor"
 id: "adding-custom-fonts-richtext-editor"
+last_update: { author: "WaveMaker" }
 ---
 ---
 

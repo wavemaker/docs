@@ -1,8 +1,8 @@
 ---
 title: "Radioset to Filter a List"
 id: "radioset-filter-list"
+last_update: { author: "WaveMaker" }
 ---
-
 WaveMaker offers three ways of allowing user to choose from given options:
 
 - **Select** : Select widget lets the user to select values from an available list of options. The options are given in the form of a drop-down list from which the user can choose one option.

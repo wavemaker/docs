@@ -1,8 +1,8 @@
 ---
 title: "Add Master-Detail records using Data Table"
 id: "add-master-detail-records-using-data-table"
+last_update: { author: "WaveMaker" }
 ---
-
 **Scenario**: To implement CRUD operations on an Master-Detail database schema. We will be adding records in a  Master-Detail scenario using Data Table bound to Live Variable.
 
 1. For a Customer you will be able create Order rows.

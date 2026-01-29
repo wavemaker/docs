@@ -1,6 +1,7 @@
 ---
 title: "Building Rating Widget using Static Variable"
 id: "rating-widget-using-static-variable"
+last_update: { author: "WaveMaker" }
 ---
 ---
 

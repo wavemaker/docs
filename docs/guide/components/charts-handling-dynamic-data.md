@@ -2,6 +2,7 @@
 title: "Charts - Handling Dynamic Data"
 id: "charts-handling-dynamic-data"
 sidebar_label: "Handling Dynamic Data"
+last_update: { author: "WaveMaker" }
 ---
 ---
 

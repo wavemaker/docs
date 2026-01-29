@@ -1,8 +1,8 @@
 ---
 title: "Creating an Employee List grouped by Birth Month and City"
 id: "list-multi-grouped"
+last_update: { author: "WaveMaker" }
 ---
-
 **Scenario:** To display list grouped by multiple fields like City and State they reside in
 
 We will see how List items can be grouped by multiple fields. We will

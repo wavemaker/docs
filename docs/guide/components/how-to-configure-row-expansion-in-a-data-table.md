@@ -1,8 +1,8 @@
 ---
 title: "How to Configure Row Expansion in a Data Table"
 id: "how-to-configure-row-expansion-in-a-data-table"
+last_update: { author: "WaveMaker" }
 ---
-
 In this article, you will learn how to configure row expansion on a data table. To use the [row expansion](../../user-interfaces/web/components/angular-components/datalive/datatable/row-expansion-data-table.md) feature, you create a [data table](../../user-interfaces/web/components/angular-components/datalive/data-table.md) and a <!-- <!-- [partial](/learn/app-development/ui-design/page-concepts/partial-pages/) --> -->; you configure the partial to contain related information of the table item. A partial is a semi page which is a reusable object, and a data table is a data widget configured as a variable. You add page params in the partial page and bind it through the data table settings.
 
 ### _Use Case_

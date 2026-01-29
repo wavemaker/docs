@@ -1,8 +1,8 @@
 ---
 title: "File Upload & Blob Data"
 id: "file-upload-blob-data"
+last_update: { author: "WaveMaker" }
 ---
-
 This section showcases the usage of Fileupload Widget and Java Service to save blob data into the database.
 
 - When the database table has a field of blob type, the data table automatically uses a Fileupload widget to upload files into the database

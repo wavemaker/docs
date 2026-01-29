@@ -2,8 +2,8 @@
 title: "Export Data from Data Table"
 id: "export-data-data-table-2"
 sidebar_label: "Export Data from Data Table - 2"
+last_update: { author: "WaveMaker" }
 ---
-
 ##### 9.4 release
 
 **Scenario**: To export data from a Data Table to excel or CSV format. We will be using the Export option of Data Table to export data from a Database CRUD Variable.

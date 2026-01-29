@@ -1,8 +1,8 @@
 ---
 title: "Using Widgets to represent Data Table Columns"
 id: "data-table-widget-representations"
+last_update: { author: "WaveMaker" }
 ---
-
 **Scenario:** How to represent Data Table data using appropriate widgets. We will customise the Data Table to display:
 
 - Firstname field as a primary button

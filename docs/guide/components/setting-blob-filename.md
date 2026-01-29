@@ -2,6 +2,7 @@
 title: "How to Set Name of Blob Type Downloaded from Data Table"
 id: "setting-blob-filename"
 sidebar_label: "Setting Blob Filename"
+last_update: { author: "WaveMaker" }
 ---
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "Dynamic Data Tables"
 id: "dynamic-data-tables"
+last_update: { author: "WaveMaker" }
 ---
-
 Dynamic Data Tables can be created in the following ways:
 
 1. A **single service** output bound to a Data Table where the columns' metadata i.e., number of columns, its types and names etc. change depending on a specific condition

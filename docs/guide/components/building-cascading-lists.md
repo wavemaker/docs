@@ -1,8 +1,8 @@
 ---
 title: "Building Cascading Lists"
 id: "building-cascading-lists"
+last_update: { author: "WaveMaker" }
 ---
-
 **Scenario:** To show Master-Detail records using List
 
 We will see how a List can be populated from the selected item of another List

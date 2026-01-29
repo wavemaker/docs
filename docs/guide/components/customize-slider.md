@@ -2,6 +2,7 @@
 title: "Customizing Slider Widget"
 id: "customize-slider"
 sidebar_label: "Customizing Slider Widget"
+last_update: { author: "WaveMaker" }
 ---
 ---
 

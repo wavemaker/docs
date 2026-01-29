@@ -2,6 +2,7 @@
 title: "Using Dynamic Tabs and Accordions"
 id: "dynamic-tabs-accordions"
 sidebar_label: "Dynamic Tabs and Accordions"
+last_update: { author: "WaveMaker" }
 ---
 ---
 

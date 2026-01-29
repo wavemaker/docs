@@ -1,8 +1,8 @@
 ---
 title: "Custom Styling Data Table Columns & Rows"
 id: "data-table-styling"
+last_update: { author: "WaveMaker" }
 ---
-
 **Scenario**: Set the display style of the entire column or row in a Data Table and based upon the value of a particular field. We will customise the Data Table for the following:
 
 - Department Budget column to be displayed in pink color

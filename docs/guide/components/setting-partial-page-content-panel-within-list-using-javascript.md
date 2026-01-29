@@ -1,6 +1,7 @@
 ---
 title: "Setting partial page content for Panel within a List using JavaScript"
 id: "setting-partial-page-content-panel-within-list-using-javascript"
+last_update: { author: "WaveMaker" }
 ---
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "Localization of Data Table Column Headings"
 id: "localization-data-table-column-headings"
+last_update: { author: "WaveMaker" }
 ---
-
 App Localization is the process of rendering your app in multiple languages. WaveMaker allows you to create a dictionary of localized messages so that users can change the language of the application to experience the application in their language.
 
 This capability can be extended to localize the column headings of a Data Table.**Prerequisite**

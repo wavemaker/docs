@@ -1,8 +1,8 @@
 ---
 title: "Building Rating Widget using Static Data"
 id: "rating-widget-using-static-data"
+last_update: { author: "WaveMaker" }
 ---
-
 1. Drag and drop a **rating** widget on the canvas.
 2. Following **Properties** can be set:
     

@@ -2,6 +2,7 @@
 title: "Tree Use Case - from Static Variable"
 id: "tree-use-case-static-variable"
 sidebar_label: "Tree using Static Variable"
+last_update: { author: "WaveMaker" }
 ---
 ---
 

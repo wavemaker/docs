@@ -1,8 +1,8 @@
 ---
 title: "Using Wizard for Master-Detail Live Form"
 id: "using-wizard-master-detail-live-form"
+last_update: { author: "WaveMaker" }
 ---
-
 We will be adding master/detail records using Live Forms in a Wizard.
 
 <iframe width="708" height="560" src="https://docs.google.com/presentation/d/e/2PACX-1vQhb3MAWzY8yQoRRbiu77IfA3ipyw3kgmxScKcFiETfyR2GmcT1dkva79Cl8Sq4E_ZE0LF6wC9nUAo_/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>

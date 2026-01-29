@@ -2,6 +2,7 @@
 title: "Using the Progress Circle Widget"
 id: "using-progress-circle-widget"
 sidebar_label: "Using Progress Circle Widget"
+last_update: { author: "WaveMaker" }
 ---
 ---
 

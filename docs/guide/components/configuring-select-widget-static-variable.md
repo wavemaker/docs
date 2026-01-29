@@ -1,6 +1,7 @@
 ---
 title: "Configuring Select Widget from a Static Variable"
 id: "configuring-select-widget-static-variable"
+last_update: { author: "WaveMaker" }
 ---
 ---
 

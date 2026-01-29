@@ -1,8 +1,8 @@
 ---
 title: "Customising Data Table Row Action"
 id: "data-table-actions"
+last_update: { author: "WaveMaker" }
 ---
-
 **Scenario**: Click of a button in a Data Table row should display a message
 
 - We will add a Row Action in a Data Table to display an alert message on click.

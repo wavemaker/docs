@@ -2,6 +2,7 @@
 title: "Customize Dynamic Data Table"
 id: "customize-dynamic-datatable"
 sidebar_label: "Customize Dynamic Datatable" 
+last_update: { author: "WaveMaker" }
 ---
 ---
 

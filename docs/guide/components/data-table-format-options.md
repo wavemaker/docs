@@ -1,8 +1,8 @@
 ---
 title: "Formatting Data Table Columns"
 id: "data-table-format-options"
+last_update: { author: "WaveMaker" }
 ---
-
 **Scenario**: To change the display format of columns in a Data Table. We will customise the Data Table to display:
 
 1. Zip with a prefix of ‘US-‘

@@ -1,8 +1,8 @@
 ---
 title: "Including a Data Table within a List"
 id: "list-data-table"
+last_update: { author: "WaveMaker" }
 ---
-
 In this section we will build a **custom list** with a **Data Table.**
 
 Going with the example of sample database, we will see how to list the department details and on click of a department to display the employees of that department in a table format.

@@ -1,6 +1,7 @@
 ---
 title: "Building an Interactive Rating Widget"
 id: "rating-widget-interactive"
+last_update: { author: "WaveMaker" }
 ---
 ---
 You can change the Rating widget style at the runtime, using the **Change** event. Using the example from the [previous section with Variable data](./building-rating-widget-using-variable.md), here we will see how.

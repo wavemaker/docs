@@ -1,6 +1,7 @@
 ---
 title: "How Tos: Wizard"
 id: "how-tos-wizard"
+last_update: { author: "WaveMaker" }
 ---
 ---
 

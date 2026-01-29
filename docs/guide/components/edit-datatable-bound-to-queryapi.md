@@ -2,6 +2,7 @@
 title: "Edit DataTable records bound to Query API"
 id: "edit-datatable-bound-to-queryapi"
 sidebar_label: "Edit DataTable records bound to Query API"
+last_update: { author: "WaveMaker" }
 ---
 ---
 

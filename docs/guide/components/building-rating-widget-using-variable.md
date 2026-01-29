@@ -1,6 +1,7 @@
 ---
 title: "Build Rating Widget using Model Variable"
 id: "building-rating-widget-using-variable"
+last_update: { author: "WaveMaker" }
 ---
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Accessing File Upload from Java Code"
 id: "accessing-file-upload-java-code"
+last_update: { author: "WaveMaker" }
 ---
 ---
 File upload service can be accessed via Java code. For example, if you have a fileupload widget in your app, the file can be accessed using the following code:

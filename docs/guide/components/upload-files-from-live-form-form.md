@@ -1,8 +1,8 @@
 ---
 title: "Upload Files from Live Form & Form"
 id: "upload-files-from-live-form-form"
+last_update: { author: "WaveMaker" }
 ---
-
 This section showcases using FileUpload widget to :
 
 1. in a Live Form

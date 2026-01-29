@@ -1,8 +1,8 @@
 ---
 title: "Building a Range Live Filter"
 id: "live-filter-range-filter"
+last_update: { author: "WaveMaker" }
 ---
-
 To filter data between given two values, **Show Range Selector** property from the Advanced Settings can be used. For example, we will how to filter the vacation details of employees between to Start Dates. We are using the hrdb Vacation table for this example.
 
 1. Drag and drop a Live Filter onto the canvas.

@@ -1,8 +1,8 @@
 ---
 title: "Adding CRUD functionalities to dynamic data table"
 id: "dynamic-data-table-edit"
+last_update: { author: "WaveMaker" }
 ---
-
 When we bind a data table to a web service variable associated with a GET API, editing, inserting, and deleting the entries become unfeasible due to the read-only nature of the GET API. This can be handled by creating dedicated variables.
 
 ## Variables to add CRUD functionalities

@@ -2,6 +2,7 @@
 title: "Charts - Displaying User Selection in another Widget"
 id: "charts-displaying-user-selection-another-widget"
 sidebar_label: "Display User Selection in another Widget"
+last_update: { author: "WaveMaker" }
 ---
 ---
 

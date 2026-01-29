@@ -1,6 +1,7 @@
 ---
 title: "Copy to Clipboard"
 id: "copy-to-clipboard"
+last_update: { author: "WaveMaker" }
 ---
 ---
 Learn how to implement the copy text to clipboard in WaveMaker by following the steps below. You can use copying text to clipboard functionality for text, number, and textarea widgets.

@@ -1,8 +1,8 @@
 ---
 title: "CheckboxSet to Filter List data"
 id: "checkboxset-filter-list-data"
+last_update: { author: "WaveMaker" }
 ---
-
 WaveMaker offers three ways of allowing user to choose from given options:
 
 - Select: Select widget lets the user to select values from an available list of options. The options are given in the form of a drop-down list from which the user can choose one option.

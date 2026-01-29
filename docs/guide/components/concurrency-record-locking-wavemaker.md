@@ -1,6 +1,7 @@
 ---
 title: "Concurrency and Record Locking in WaveMaker"
 id: "concurrency-record-locking-wavemaker"
+last_update: { author: "WaveMaker" }
 ---
 ---
 

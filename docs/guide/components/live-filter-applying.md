@@ -1,8 +1,8 @@
 ---
 title: "Applying Live Filter to a Data Table or a Chart"
 id: "live-filter-applying"
+last_update: { author: "WaveMaker" }
 ---
-
 1. Drag and drop a filter onto the canvas, setting the Service Type to Database CRUD, using hrdb Service and Department entity. Select Name for the Filter Fields. [![](./assets/img/lftr_apply_1.png)](./assets/img/lftr_apply_1.png)
 2. Drag and drop _Data Table or Chart_ widget on the page.
 3. Bind the widget to the filter created by clicking on the _bind icon_ next to the _Value_ Property in the _Dataset_ section of the Chart widget. In case of Data Table, select Filter Widget as source and the result as the data node.

@@ -1,6 +1,7 @@
 ---
 title: "Combining Columns in Data Table"
 id: "combining-columns-data-table"
+last_update: { author: "WaveMaker" }
 ---
 ---
 

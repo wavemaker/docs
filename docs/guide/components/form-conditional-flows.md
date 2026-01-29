@@ -1,8 +1,8 @@
 ---
 title: "Smart Forms: Conditional Flows for form Widget"
 id: "form-conditional-flows"
+last_update: { author: "WaveMaker" }
 ---
-
 ## What's a Smart Form?
 
 Whenever using long forms, chances are higher that users drop off. Use conditional logic in long forms to keep engagement high and improve conversion rates.

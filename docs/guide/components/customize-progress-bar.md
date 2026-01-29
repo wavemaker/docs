@@ -2,6 +2,7 @@
 title: "Customize Progress Bar"
 id: "customize-progress-bar"
 sidebar_label: "Customize Progress Bar"
+last_update: { author: "WaveMaker" }
 ---
 ---
 

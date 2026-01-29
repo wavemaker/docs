@@ -1,8 +1,8 @@
 ---
 title: "Linking Live Form with another Widget for Input"
 id: "live-form-linking-another-widget"
+last_update: { author: "WaveMaker" }
 ---
-
 To use form for updating the table, it needs to be bound to a **Data Table** or a **List** widget's **Selected row** property. Here we will see linking Data Table to a Live Form, the same can be replicated for a List. Another easy way to achieve this would be to use the Editable Data Table with Live Form layout.
 
 - Drag and drop a Data Table for the _Employee_ Variable.

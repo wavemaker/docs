@@ -2,6 +2,7 @@
 title: "OnRender Event for List widget"
 id: "onrender-event-list-widget"
 sidebar_label: "OnRender Event"
+last_update: { author: "WaveMaker" }
 ---
 ---
 

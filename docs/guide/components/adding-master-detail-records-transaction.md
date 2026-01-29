@@ -1,8 +1,8 @@
 ---
 title: "Adding Master-Detail records in the same transaction"
 id: "adding-master-detail-records-transaction"
+last_update: { author: "WaveMaker" }
 ---
-
 In this use case, you will be:
 
 1. adding parent/child or master/detail records in the same transaction

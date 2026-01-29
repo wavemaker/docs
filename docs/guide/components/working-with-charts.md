@@ -1,6 +1,7 @@
 ---
 title: "Working with Charts"
 id: "working-with-charts"
+last_update: { author: "WaveMaker" }
 ---
 ---
 
