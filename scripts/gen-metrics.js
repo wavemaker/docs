@@ -4,7 +4,7 @@ const path = require('path');
 const matter = require('gray-matter');
 
 const docsDir = path.join(__dirname, '../docs');
-const stats = { total: 0, md: 0, mdx: 0, noAuthor: 0, authors: {}, noAuthorDocs: [], authorDocs: {}, noAuthorIds: [] };
+const stats = { total: 0, md: 0, mdx: 0, noAuthor: 0, authors: {}, noAuthorDocs: [], authorDocs: {}, authorNameIds: [], noAuthorIds: [] };
 
 function walk(dir) {
   // 1. Safety check: does the directory even exist?
@@ -41,7 +41,7 @@ function walk(dir) {
             if (!stats.authorDocs[author]) stats.authorDocs[author] = [];
             stats.authorDocs[author].push(docInfo);
             if(author === "Author Name") {
-              stats.noAuthorIds.push(docId);
+              stats.authorNameIds.push(docId);
             }
           } else {
             stats.noAuthor++;

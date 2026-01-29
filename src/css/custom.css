@@ -427,10 +427,17 @@ body {
   max-height: calc(100vh - 64px);
 }
 
-.sidebar-missing-author .menu__link {
+.sidebar-default-author .menu__link {
   color: #e67e22 !important;
   font-style: italic;
   background-color: rgba(230, 126, 34, 0.05);
+  border-radius: 4px;
+}
+
+.sidebar-missing-author .menu__link {
+  color: #e65622 !important;
+  font-style: italic;
+  background-color: rgba(230, 34, 34, 0.1);
   border-radius: 4px;
 }
 
