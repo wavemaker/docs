@@ -467,14 +467,8 @@ export default [
           {
             type: 'doc',
             id: 'user-interfaces/web/develop/component-behaviour-and-methods/javascript-access',
-            label: 'JavaScript access',
-          },
-
-          {
-            type: 'doc',
-            id: 'user-interfaces/web/develop/component-behaviour-and-methods/overview',
-            label: 'Component behaviour and  methods',
-          },
+            label: 'JavaScript access methods',
+          }
         ],
       },
 
