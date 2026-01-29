@@ -15,10 +15,7 @@ which enable web app developers to build applications using simple and abstracte
 
 Platform uses component-based architecture and a meta markup known as WaveMaker Markup Language (WML) to represent components within a page similar to HTML, which is used by code generators to generate Angular or React code.
 
-UI concepts are AI-ready enabling agents to generate application artifacts from the intent, spec or designs provided by app developers. Developers are provided with a hybrid approach for building apps
-- Visually through Studio
-- Using prompts through Agents and 
-- manually editing code in editor.
+UI concepts are AI-ready enabling agents to generate application artifacts from the intent, spec or designs provided by app developers.
 
 ## UI Concepts
 
@@ -26,25 +23,27 @@ Web App UI is very well separated into layers to define styling, layouts, compon
 
 WaveMaker provides a technology agnostic UI development methodology without requiring app developers to learn the underlying javascript frameworks i.e., Angular, React or React Native. Both web and mobile app developers embrace a unified development model with the same UI concepts for building apps.
 
-
 ![UI architecture](../assets/ui-architecture.png)
 
 ### Design Tokens
-Styling is made easy through design tokens that can be customized to any Design System. Components built as part of the library enable built-in style customization through design tokens, completely avoiding CSS for most styling needs.
+Styling is made easy through design tokens that can be customized to any Design System. Components built as part of the library enable built-in style customization through design tokens, completely eliminating CSS for most styling needs.
 
-```
+```json
    btn.background=color.primary
    btn.height=space.10
-   btn.font-size=label.large.font-size
 
    header.padding=space.0
    header.border.radius=radius.none
+
+   search.dropdown.menu.item.color=color.secondary
+   wizard.step.title.color=color.on-surface
+   breadcrumb.item.letter-spacing=body.medium.letter-spacing
 ```
 
 ### Auto Layout
-Layouts can be created within a Page or components using container Auto Layout, which provides the most advanced and fully customized layouting capability built on top of flex.
+Layouts can be created within a page or components using container Auto Layout, which provides the most advanced and fully customized layouting capability built on top of flex.
 
-```
+```html
     <wm-container direction="column" alignment="top-left" gap="8" width="fill" 
             name="container6" class="app-container-default" variant="default" 
             wrap="false" clipcontent="false" padding="4px">
@@ -53,9 +52,9 @@ Layouts can be created within a Page or components using container Auto Layout, 
 ```
 
 ### Components
-Components provide behaviour customization through properties, they expose specific events for UI event handling and Variants to enable look-n-feel customization combined with design tokens.
+Components provide behaviour customization through properties, they expose specific events for UI event handling and variants to enable look-n-feel customization combined with design tokens.
 
-```
+```html
     <wm-button class="btn-filled btn-default" caption="Button" type="button" 
             margin="unset" name="button1" variant="filled:default"
             on-click="button1Click($event, widget)">
@@ -71,7 +70,7 @@ Components provide behaviour customization through properties, they expose speci
 ### Variables
 Variables provide integration capabilities enabling components to be bound to REST APIs or other supported data sources. Variables also inherently support managing state within the page context or across the application
 
-```
+```json
     sv_serviceVariableHireReq: {
         owner: "Page",
         category: "wm.ServiceVariable",
@@ -92,11 +91,23 @@ Variables provide integration capabilities enabling components to be bound to RE
 ```
 
 ### Actions
-Actions provide routing capability to transition between pages, dialogs or messages.
+Actions provide routing capability to transition between pages, dialogs or message toaster.
+```json
+    goToPage_FormComponents : {
+        name : "goToPage_FormComponents",
+        owner : "App",
+        category : "wm.NavigationVariable",
+        dataBinding : [ ],
+        operation : "gotoPage",
+        pageName : "FormComponents",
+        dataSet : [ ],
+        pageTransitions : "none"
+    }
+```
 
 ### UI Events
-UI Events are provided across Components, Variables, Actions and Page or Application context enabling developers to write client-side logic to fully customize and take control of the user behaviour.
-```
+UI Events are available across components, variables, actions and page or application context, enabling developers to write client-side logic using JavaScript to fully customize and take control of the user behaviour.
+```javascript
     Page.button1Click = function ($event, widget) {
         Page.Widgets.select1.dataset = ["min", "max", "same"]
         Page.Widgets.switch1.datavalue = "max"
@@ -105,4 +116,17 @@ UI Events are provided across Components, Variables, Actions and Page or Applica
 
 ## Single Page Application
 
-Application code generated in Angular or React adheres to Single Page Application construct and uses architectural principles such as components, routing, state management, virtual-DOM or 2-way binding etc. Platform generated code is readable, maintainable and secure for enterprise deployments.
+Application code generated in Angular or React adheres to Single Page Application construct and uses architectural principles from the underlying javascript framework such as components, routing, state management, virtual-DOM or 2-way binding etc. Platform generated code is readable, maintainable and secure for enterprise deployments.
+
+## Hybrid development model
+Developers are provided with a hybrid approach for building apps
+#### 1. Visually using Studio 
+- Drag-n-drop canvas makes it easy to create layouts, components and their properties discoverable without requiring developers to go through a lot of documentation.
+- Properties panel for each component and UI element enhances learnability and Studio automatically generates the corresponding page markup i.e. WML with the right syntax.
+- Different workspaces are available for building Pages, importing REST APIs, working with Databases & creating microservices for backend
+#### 2. Using prompts through AI Agents
+- Swith to agentic mode to instruct the underlying AI model to generate pages, components and javascript code with simple natural language prompts
+- Agents are available for specific functionality such as design to code conversion, binding to REST APIs, configuring accessibility, language support etc. 
+#### 3. Editing and Authoring code in editor.
+- UI Constructs in WaveMaker are developer-friendly and provides complete control to developers to edit manually within Studio.
+- Generated Angular or React code can be exported and is readable, modifiable and maintainable outside Studio environment. But, any modifications made outside cannot be brought back into Studio.
