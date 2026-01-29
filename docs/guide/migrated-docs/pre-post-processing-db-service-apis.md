@@ -94,7 +94,7 @@ You can Override only those methods which need extra processing in one of the fo
 - Or throw exceptions it appropriate
 - You can also inject multiple other services into this new class & perform multiple actions in it, say inject SecurityService & perform additional security checks etc.
 
-In this example we have implemented the first way, i.e. delegate to superclass. A service is written to check if the login user is an admin and if the user is admin then the user details are fetched. Find below the code for both PreProcessService and PostProcessService classes Note : Please create these classes in an IDE and copy it in path specified in the following screenshot, [see here to know how to work with IDE](/docs/guide/howtos/synchronizing-wavemaker-apps-ides). 
+In this example we have implemented the first way, i.e. delegate to superclass. A service is written to check if the login user is an admin and if the user is admin then the user details are fetched. Find below the code for both PreProcessService and PostProcessService classes Note : Please create these classes in an IDE and copy it in path specified in the following screenshot, [see here to know how to work with IDE](#). 
 
 [![](/learn/assets/word-image-162a.png)](/learn/assets/word-image-162a.png) 
 

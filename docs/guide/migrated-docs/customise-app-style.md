@@ -7,7 +7,7 @@ last_update: { author: "WaveMaker" }
 The theme applied to an app defines the styling attributes of various Page Components. You can
 
 1. You can select from a wide range of Themes provided by WaveMaker. For more information, see [WM themes](#).
-2. Use your own theme and apply them to the Project. For more information, see [creating themes](/docs/guide/howtos/customizing-theme).
+2. Use your own theme and apply them to the Project. For more information, see [creating themes](/docs/guide/migrated-docs/customizing-theme).
 
 ## Steps to apply styles
 You can also use the _app.css_ file to set styling changes for a specific page component. 

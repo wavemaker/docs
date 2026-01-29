@@ -28,7 +28,7 @@ Creating an app involves the following steps:
 
 - **package prefix** – Package prefix defines the default package for the generated code across all services. This can be modified as per your requirements.
 - **copyright** information – created by default, which can be modified.
-- set the **default language** for the project, this can be used in conjunction with [Localization](/docs/guide/howtos/select-locale-usage) to set the language for the application.
+- set the **default language** for the project, this can be used in conjunction with [Localization](#) to set the language for the application.
 - Click **SAVE**.
 - The **Main Page** is created by default, with a _Two Column layout with top navbar and tabbar_.
 

@@ -20,7 +20,7 @@ For more information to add files in a project, see [including resource files](/
 ## Step 2: Implementing Success Handler
 
 :::note
-Create these classes in an IDE and copy it in the path specified in the above screenshot in the `CustomAuthenticationSuccessHandler.java` file. For more information, see [working with IDE](/docs/guide/howtos/synchronizing-wavemaker-apps-ides).
+Create these classes in an IDE and copy it in the path specified in the above screenshot in the `CustomAuthenticationSuccessHandler.java` file. For more information, see [working with IDE](#).
 :::
 
 - Implement `WMAuthenticationSuccessHandler` interface and override the method `onAuthenticationSuccess`. This method invokes on successful login.

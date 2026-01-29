@@ -6,7 +6,7 @@ last_update: { author: "WaveMaker" }
 ---
 
 :::note
-Before trying to customize the app Theme, it is recommended that you familiarise with the [Theme Implementation Process](/docs/guide/howtos/customizing-theme) regarding the build and [How to Import and Apply](#) theme in a WaveMaker app.
+Before trying to customize the app Theme, it is recommended that you familiarise with the [Theme Implementation Process](/docs/guide/migrated-docs/customizing-theme) regarding the build and [How to Import and Apply](#) theme in a WaveMaker app.
 :::
 
 ## Changing the background of an application
@@ -458,6 +458,6 @@ This is the widget used to display the [Notification messages](/docs/user-interf
 
 ## See Also
 
-[Creating Themes using the Manual Setup](/docs/guide/howtos/customizing-theme)  
+[Creating Themes using the Manual Setup](/docs/guide/migrated-docs/customizing-theme)  
 [How to customize existing theme](/docs/guide/migrated-docs/customize-existing-theme)  
 [How to customize leftnav width](#)

@@ -57,7 +57,7 @@ Here, we have parameterized the _mylabel_ values as KEY_1, KEY_2, KEY_3, KEY_4, 
         - the Action Label to the following value: _App.appLocale[mylabel],_ (you have to use the Use Expression option from the Bind Dialog)
         - the Action Icon to icon, and
         - the Action link to link.
-5. Open the I18N dialog from the Project Configurations of the [Project Workspace](#) ([more on localization](/docs/guide/howtos/select-locale-usage)). [![](/learn/assets/loc_create.png)](/learn/assets/loc_create.png)
+5. Open the I18N dialog from the Project Configurations of the [Project Workspace](#) ([more on localization](#)). [![](/learn/assets/loc_create.png)](/learn/assets/loc_create.png)
     1. Use **Manage Languages** to add languages to your app. By default, English is already added.
 
     [![](/learn/assets/loc_new_locale.png)](/learn/assets/loc_new_locale.png)

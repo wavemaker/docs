@@ -11,7 +11,7 @@ In this post, we will introduce a Maven plugin - wavemaker-workspace Plugin, whi
 
 ## WaveMaker WorkSpace Sync Plugin
 
-When working on a project using an IDE, earlier you had to export the project from WaveMaker, import into IDE, make changes, build and re-import the project into WaveMaker ([see here for details](/docs/guide/howtos/synchronizing-wavemaker-apps-ides)). This was a time-taking and tedious process.
+When working on a project using an IDE, earlier you had to export the project from WaveMaker, import into IDE, make changes, build and re-import the project into WaveMaker ([see here for details](#)). This was a time-taking and tedious process.
 
 **WaveMaker WorkSpace Sync Plugin** provides a communication channel between the IDE and Studio Workspace. You can directly push the changes made to the project from IDE to Studio Workspace without any overhead of copying and pasting the code. It solves the problem of synchronization between IDE and Studio Workspace without re-exporting the project. It also helps in getting the latest changes from Studio Workspace to IDE directly.
 

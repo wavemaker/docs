@@ -15,7 +15,7 @@ As the name suggests, by using **Default Language** field, you can set the defau
 2. In General settings page, select the default language from the drop down in the Default language field.
 
 :::note
-Ensure that the language selected as default is already added in Localization. To know how to add a new language in Localization, see [Localization Using Select Locale](/docs/guide/howtos/select-locale-usage#step-1-app-messages).
+Ensure that the language selected as default is already added in Localization. To know how to add a new language in Localization, see [Localization Using Select Locale](#).
 :::
 
 Similarly, you can set the date and time using the **Display Format** field.
