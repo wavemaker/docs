@@ -188,17 +188,17 @@ export default [
 
      {
         type: 'category',
-        label: 'Configurations',
+        label: 'Settings',
         collapsible: true,
         collapsed: true,
         items: [
           {
             type: 'doc',
-            id: 'apis-and-services/security/configurations/remember-me',
+            id: 'apis-and-services/security/settings/remember-me',
           },
           {
             type: 'doc',
-            id: 'apis-and-services/security/configurations/concurrent-sessions',
+            id: 'apis-and-services/security/settings/concurrent-sessions',
           },
         //   {
         //     type: 'doc',
@@ -206,11 +206,11 @@ export default [
         //   },
           {
             type: 'doc',
-            id: 'apis-and-services/security/configurations/security-variables',
+            id: 'apis-and-services/security/settings/security-variables',
           },
           {
             type: 'doc',
-            id: 'apis-and-services/security/configurations/session-persistence',
+            id: 'apis-and-services/security/settings/session-persistence',
           },
         ],
       },

@@ -5,9 +5,9 @@ last_update: { author: "Priyanka Bhadri" }
 # MockingBird – Mock REST APIs
 
 
-**MockingBird** is WaveMaker’s API mocking solution that allows you to simulate REST APIs with realistic, live-like responses. It enables frontend development and testing to continue independently while backend APIs are still under development or temporarily unavailable.
+In real-world development, the backend is not always ready when frontend work begins. Waiting for APIs to be fully implemented can cause delays and slow down the development process.  
 
-By using MockingBird, you can avoid development delays caused by incomplete or unstable backend services and maintain a continuous development workflow.
+This is where **MockingBird**, WaveMaker’s API mocking solution, comes in. It allows you to create and simulate REST APIs with realistic, live-like responses, enabling frontend development and testing to continue smoothly, even if the actual backend is still under development or temporarily unavailable. 
 
 ---
 
@@ -58,20 +58,13 @@ Before using MockingBird, ensure that:
 
 ---
 
-## Creating a Mock Server for an Imported API
+## Mocking Imported APIs in WaveMaker
 
-### Step 1: Import the API
-1. Navigate to **APIs → Import APIs** in WaveMaker Studio.
-2. Import the REST API using a valid Swagger/OpenAPI specification.
-3. Ensure the API import is successful.
+To get started with MockingBird, begin by importing your REST API into WaveMaker Studio. Navigate to **APIs → Import APIs** and provide a valid Swagger/OpenAPI specification. Once the API is successfully imported, you can enable mocking to simulate API responses.  
 
----
+Next, go to **APIs → API Resources** and select the imported API you want to mock. 
 
-### Step 2: Enable API Mocking
-1. Go to **APIs → API Resources**.
-2. Select the **Imported API** that you want to mock.
-3. Navigate to the **Settings** tab.
-4. Click **Create Mock Server** to enable mocking for the first time.
+In the **Settings** tab, you’ll find the option to **Create Mock Server**. Clicking this will enable API mocking for the first time, allowing MockingBird to generate realistic responses. With the mock server in place, your frontend can interact with the API as if it were live, ensuring development and testing continue without waiting for the backend. Disabling it will disable your mock APIs
 
 Once the mock server is created:
 
@@ -91,7 +84,7 @@ After enabling MockingBird:
 
 ---
 
-## Disabling API Mocking
+<!-- ## Disabling API Mocking
 You can switch back to the original API at any time.
 
 ### Steps to Disable Mocking
@@ -107,7 +100,7 @@ After disabling:
 - Requests are routed to the original backend service
 - Mocking can be re-enabled with a single click if needed
 
----
+--- -->
 
 ## Best Practices
 - Enable MockingBird early during UI development
