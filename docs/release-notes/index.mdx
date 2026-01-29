@@ -1,9 +1,157 @@
 ---
-last_update: { author: 'Author Name' }
+last_update: { author: 'Sagar Vemala' }
 ---
 
-# Welcome to WaveMaker Release Home
 
-## Our Release schedule
+## WaveMaker Releases
 
-## Archive Version Docs
+WaveMaker follows a predictable, transparent, and standard release strategy that balances rapid innovation with enterprise-grade stability.  
+Our release model enables teams to confidently adopt new capabilities while ensuring long-term reliability for production applications.
+
+This page provides a high-level overview of how WaveMaker releases work, how versions are managed, and how release policies differ between **WaveMaker Online (WMO)** and **WaveMaker Enterprise (WME)**.
+
+---
+
+## Versioning Philosophy
+
+WaveMaker follows a versioning approach that is closely aligned with **[Semantic Versioning](https://semver.org/)**.
+Each WaveMaker release follows the format:
+
+
+### Version Components
+
+- **MAJOR**  
+  Introduced for significant platform-level changes, architectural upgrades, or foundational enhancements.
+
+- **MINOR**  
+  Introduced for new features, functional enhancements, and meaningful improvements that remain backward compatible.
+
+- **PATCH**  
+  Introduced for bug fixes, performance optimizations, and security updates with no breaking changes.
+
+This structure helps teams clearly understand the **scope, impact, and upgrade expectations** of every release.
+
+---
+
+## Release Cadence
+
+WaveMaker follows a steady and predictable release cadence, with flexibility based on quality and platform readiness.
+
+### Patch Releases
+- **Frequency:** Approximately every 2 weeks  
+- **Focus:**  
+  - Bug fixes  
+  - Security patches  
+  - Minor enhancements  
+
+### Major & Minor Releases
+- **Frequency:** Approximately every 3 months  
+- **Focus:**  
+  - New features  
+  - Platform enhancements  
+  - Developer experience improvements  
+
+Wherever possible, **backward compatibility is preserved**, and platform-managed migrations ensure smooth upgrades.
+
+---
+
+## Deployment Models and Release Behavior
+
+WaveMaker release behavior differs based on the deployment model.
+
+### WaveMaker Online (WMO)
+
+WaveMaker Online always runs on the latest available version.
+
+- Updates are **automatically applied**
+- No manual upgrades required
+- Immediate access to new features and improvements
+- Best suited for teams that prefer:
+  - Zero maintenance
+  - Continuous innovation
+  - Always-current platform capabilities
+
+---
+
+### WaveMaker Enterprise (WME)
+
+WaveMaker Enterprise provides **controlled and predictable upgrade cycles**.
+
+- Customers choose **when to upgrade**
+- Clearly defined **support lifecycle**
+- Includes:
+  - Active Support
+  - End-of-Life (EOL) notifications
+  - Optional Long-Term Support (LTS) releases
+- Ideal for:
+  - Enterprise governance
+  - Regulated environments
+  - Structured change management processes
+
+> **Note:**  
+> Support lifecycle policies, EOL notifications, and LTS releases apply **only to WaveMaker Enterprise (WME)**.
+
+---
+
+## Support Lifecycle (WME)
+
+WaveMaker Enterprise supports a rolling window of **recent major and minor releases** to ensure security and platform stability.
+
+- Typically supports the **latest three major/minor releases**
+- Versions beyond this window are marked **End of Life (EOL)**
+- Advance notifications are provided to help plan upgrades
+- Selected releases may be designated as **Long-Term Support (LTS)**, focusing on critical fixes and security updates
+
+---
+
+## Technology Stack Alignment
+
+WaveMaker continuously modernizes its underlying technology stack to align with evolving industry standards.
+
+This includes updates to:
+- Frameworks
+- Libraries
+- Runtimes
+- Platform dependencies
+
+All technology stack updates are explicitly tied to WaveMaker releases and documented transparently.
+
+**Refer to the Tech Stack documentation:**  
+https://next-docs.wavemaker.com/tech-stack
+
+This ensures:
+- Clear visibility into platform dependencies
+- Predictable upgrade planning
+- Confidence for enterprise compliance and audits
+
+---
+
+## What to Expect in Release Notes
+
+WaveMaker Release Notes provide detailed, version-specific information including:
+
+- New features
+- Enhancements
+- Bug fixes
+- Security updates
+- Known limitations (where applicable)
+
+Each release is documented to help teams assess impact, plan upgrades, and adopt new capabilities with confidence.
+
+---
+
+## Summary
+
+WaveMaker’s release strategy is designed to deliver:
+
+- Predictability and transparency  
+- Continuous innovation  
+- Enterprise-grade stability  
+- Clear upgrade paths  
+
+Whether you are using **WaveMaker Online** for rapid development or **WaveMaker Enterprise** for controlled deployments, WaveMaker ensures you always know **what’s changing, why it matters, and how to move forward safely**.
+
+---
+
+👉 Explore individual release notes to learn what’s new in each version.
+
