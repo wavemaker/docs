@@ -3,16 +3,39 @@ last_update: { author: "Raj Kumar Reddy Abbadi" }
 ---
 # Overview
 
-### What are Events?
+### What are UI Events? 
 
 Events are actions or occurrences in the browser that your code can respond to. They allow applications to react dynamically to changes without requiring components to constantly monitor for updates.
 
 #### Event Types
 Events can be grouped by the type of user interaction or browser action that triggers them:
-- **Mouse Events:** click, dblclick, mousedown, mouseup, mousemove, mouseover, mouseout.
-- **Keyboard Events:** keydown, keyup (the keypress event is deprecated).
+- **Mouse Events:** click, double click, mouse enter, mouse leave.
+
+```javascript
+Page.UserButtonDblclick = function ($event, widget) {
+    alert('The User button double click event has been triggered');
+};
+```
+
+- **Keyboard Events:** keypress, keydown, keyup.
+```javascript
+Page.UserButtonKeypress = function ($event, widget, item, currentItemWidgets) {
+    alert('The User button key press event has been triggered');
+};
+```
 - **Form Events:** submit, change, focus, blur, input.
+```javascript
+Page.employeeFormSubmit = function ($event, widget, $formData) {
+    alert('The employeeForm submit event has been triggered');
+};
+```
+
 - **Window/Document Events:** load, unload, resize, scroll, DOMContentLoaded. 
+```javascript
+window.onload = function () {
+    alert('Window loaded successfully');
+};
+```
 
 #### Event Object
 Every event handler function, a parameter is often defined with names such as ```event``` , ```evt``` , or ```e```. This parameter is referred to as the event object. It is automatically passed to event handlers and provides additional information and functionality related to the event that was triggered. This object contains useful properties and methods related to the event
@@ -20,9 +43,11 @@ Every event handler function, a parameter is often defined with names such as ``
 - **event.target:** Refers to the element that triggered the event.
 - **event.preventDefault():** A method to stop the browser's default action for that event (e.g., preventing a form from submitting). 
 
-## Event Handling in WaveMaker
+## UI Event Handling in WaveMaker
 
-WaveMaker provides a robust event driven architecture that allows developers to execute custom logic at different stages of the application lifecycle. Events are broadly categorized into 
+WaveMaker provides a robust event driven architecture that allows developers to execute custom logic at different stages of the application lifecycle. 
+
+**Events are broadly categorized into**
 - App-level
 - Page-level
 - Component-level.

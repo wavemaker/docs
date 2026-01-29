@@ -540,11 +540,6 @@ export default [
           },
           {
             type: 'doc',
-            id: 'user-interfaces/web/develop/events/javascriptaccess',
-            label: 'JavaScript Access',
-          },
-          {
-            type: 'doc',
             id: 'user-interfaces/web/develop/events/event-lifecycle',
             label: 'Event lifecycle',
           },
@@ -552,7 +547,12 @@ export default [
             type: 'doc',
             id: 'user-interfaces/web/develop/events/common-events-for-components',
             label: 'Common events for Components',
-          }
+          },
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/events/javascriptaccess',
+            label: 'JavaScript Access',
+          },
         ],
       },
       {
