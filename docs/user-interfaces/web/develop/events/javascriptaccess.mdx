@@ -4,11 +4,11 @@ last_update: { author: "Raj Kumar Reddy Abbadi" }
 
 # Accessing Elements via JavaScript
 
-## Application-Level Events in WaveMaker
+## App Level Events
 
-WaveMaker provides application-level events that allow developers to define behavior that applies across the entire application, rather than being limited to a specific page or component. These events are exposed through the global ```App``` object and are triggered at key points in the application lifecycle.
+WaveMaker provides application level events that allow developers to define behavior that applies across the entire application, rather than being limited to a specific page or component. These events are exposed through the global ```App``` object and are triggered at key points in the application lifecycle.
 
-WaveMaker exposes a set of application-level callback functions through the global App object. These events are triggered at predefined stages of the application lifecycle and are used to implement logic that applies across the entire application.
+WaveMaker exposes a set of application level callback functions through the global App object. These events are triggered at predefined stages of the application lifecycle and are used to implement logic that applies across the entire application.
 
 The following application-level events are supported: 
 - **onAppVariablesReady**
@@ -16,13 +16,14 @@ The following application-level events are supported:
 - **onPageReady**
 - **onServiceError**
 
+![App Events](../../assets/appEvents.png)
+
 ### onAppVariablesReady
-The ```onAppVariablesReady``` callback is invoked after all application-level variables are initialized and available for use. This callback should be used to perform actions that depend on application variables.
+The ```onAppVariablesReady``` callback is invoked after all application level variables are initialized and available for use. This callback should be used to perform actions that depend on application variables.
 
 Use Cases
-- Accessing application variables using App.Variables
-- Initializing variable data
-- Triggering application-level service calls
+- Accessing application variables using ```App.Variables```
+- Triggering application level service calls
 - Setting default application state
 
 ### onSessionTimeout
@@ -32,30 +33,24 @@ Use Cases
 - Clearing application or user-specific data
 - Resetting application state
 - Displaying session timeout notifications
-- Performing cleanup operations
 
 ### onPageReady
-The onPageReady callback is invoked after the execution of the page-level onPageReady function. This callback is intended for implementing logic that must execute across all pages.
+The ```onPageReady``` callback is invoked after the execution of the page level onPageReady function. This callback is intended for implementing logic that must execute across all pages.
 
 Use Cases
 - Applying common UI behavior
 - Tracking page navigation events
-- Initializing page-level access control
-- Attaching global page listeners
+- Initializing page level access control
 
 ### onServiceError
-The onServiceError callback is invoked when a service or variable invocation results in an error. This callback enables centralized handling of service errors across the application.
+The ```onServiceError``` callback is invoked when a service or variable invocation results in an error. This callback enables centralized handling of service errors across the application.
 
 Use Cases
 - Displaying custom error messages
 - Logging error details
-- Handling authorization and session-related errors
-- Modifying default notification behavior using the appNotification variable
+- Handling authorization and session related errors
 
-Application-level events in WaveMaker provide a centralized mechanism to handle application-wide logic at predefined lifecycle stages. These callbacks complement page-level and variable-level events by enabling consistent behavior, improved maintainability, and reduced duplication across the application.
-
-
-## Page-Level Events in WaveMaker
+## Page level Events
 
 In a WaveMaker application, each page is composed of Markup, Script, and CSS files. Page-level events are defined and managed within the page script file, which allows developers to implement logic specific to an individual page.
 
@@ -84,4 +79,17 @@ Page level resources can be accessed within **```Page.onReady```** as follows:
 - Variables: Accessed using **```Page.Variables```**, include reading datasets, invoking service variables, or setting default values.
 - Widgets: Accessed using **```Page.Widgets```**, Widgets can be read or modified to control UI behavior and display values.
 
-## Widget Level Events in WaveMaker
+## Widget Level Events
+
+For every Component, there are a set of lifecycle methods and event callbacks that can be accessed from the JavaScript.
+
+The events can be accessed from the properties panel for the specific Component and assigned to a JavaScript or any other actions. JavaScript can be written from the Script tab, as per the app requirements. 
+
+For example, to display an alert message on click of a button, the following would be the code:
+```
+Page.button1Click = function($event, widget) {
+    alert("Hello")
+};
+``` 
+
+For Component Life Cycle Events and Methods refer to the specific [Component Documentation](https://react-components.wavemaker.com).

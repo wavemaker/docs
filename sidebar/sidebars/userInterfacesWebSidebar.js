@@ -421,17 +421,7 @@ export default [
             type: 'doc',
             id: 'user-interfaces/web/develop/working-with-layouts/types',
             label: 'Supporting Components',
-          },
-          {
-            type: 'doc',
-            id: 'user-interfaces/web/develop/working-with-layouts/auto-layout',
-            label: 'Auto Layout',
-          },
-          {
-            type: 'doc',
-            id: 'user-interfaces/web/develop/working-with-layouts/styling-with-design-tokens',
-            label: 'Styling with Design Tokens',
-          },
+          }
         ],
       },
       {
