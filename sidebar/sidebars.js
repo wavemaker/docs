@@ -10,6 +10,7 @@ import studioSidebar from './sidebars/studioSidebar';
 import userInterfacesWebSidebar from './sidebars/userInterfacesWebSidebar';
 import userInterfacesMobileSidebar from './sidebars/userInterfacesMobileSidebar';
 import metrics from '../scripts/metrics.json';
+import releaseNotesSidebar from './sidebars/releaseNotesSidebar';
 
 // utility fn to insert style for docs without Author
 const authorNameIds = new Set(metrics.authorNameIds);
@@ -70,6 +71,7 @@ let sidebars = {
   studioSidebar,
   userInterfacesWebSidebar,
   userInterfacesMobileSidebar,
+  releaseNotesSidebar,
 };
 
 for (const key in sidebars) {

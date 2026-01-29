@@ -102,7 +102,7 @@ const config = {
             position: 'left',
             items: [
               {
-                to: '/whatsnew',
+                to: '/docs/release-notes/',
                 label: "Release Notes",
               },
               {
@@ -216,27 +216,6 @@ const config = {
       },
     }),
   plugins: [
-    [
-      "@docusaurus/plugin-content-blog",
-      {
-        /**
-         * Required for any multi-instance plugin
-         */
-        id: "whatsnew",
-        /**
-         * URL route for the blog section of your site.
-         * *DO NOT* include a trailing slash.
-         */
-        routeBasePath: "whatsnew",
-        /**
-         * Path to data on filesystem relative to site dir.
-         */
-        path: "blogs/whatsnew",
-        authorsMapPath: "../blogs/authors.yml",
-        blogSidebarTitle: 'Release Notes',
-        blogSidebarCount: 'ALL',
-      },
-    ],
     [
       "@docusaurus/plugin-content-blog",
       {
