@@ -21,14 +21,19 @@ In WaveMaker, WebSocket services are imported like any other web service. After 
 
 ## Importing a WebSocket Service
 
-WebSocket services are handled similarly to other web services in WaveMaker:
+<!-- WebSocket services are handled similarly to other web services in WaveMaker:
 
 1. Go to the **Web Service import** flow in WaveMaker Studio.  
 2. Enter the **WebSocket service URL (WSS)** and test the connection.  
 3. Provide sample request and response bodies — this allows WaveMaker to generate accurate metadata for message structures, making it easier to bind data to widgets later.  
 4. Include any **Query, Path, or Body parameters** required by the WebSocket service.  
 5. Complete the import; the new WebSocket service will appear under **Web Services**.  
-6. Select the service name to access its settings and metadata. 
+6. Select the service name to access its settings and metadata.  -->
+
+WebSocket services in WaveMaker are imported by defining the WebSocket (WSS) endpoint and validating the connection to ensure the service is reachable. During this process, sample request and response payloads are provided so WaveMaker can generate accurate metadata for message structures, making it easier to bind data to UI components.
+
+Any required query, path, or body parameters are captured as part of the service definition. Once the import is complete, the WebSocket service becomes available under **Imported APIs**, where its configuration, parameters, and generated metadata can be viewed and managed.
+
 
 ![WebSocket Configuration](assets/add-new-rest-service.png)
 
@@ -82,9 +87,11 @@ WebSocket Variables also include properties and event hooks that control behavio
 
 ## Generated Code
 
-WaveMaker enables developers to import **third-party APIs** and automatically generate a fully functional backend, including Java classes, service logic, and design-time configurations. It follows proven enterprise patterns built on Java, Spring, and Hibernate/JPA. This makes it easy to quickly integrate and customize APIs.
+<!-- WaveMaker enables developers to import **third-party APIs** and automatically generate a fully functional backend, including Java classes, service logic, and design-time configurations. It follows proven enterprise patterns built on Java, Spring, and Hibernate/JPA. This makes it easy to quickly integrate and customize APIs.
 
-Developers have complete access to the generated source code and can confidently extend or customize it without affecting future platform upgrades.
+Developers have complete access to the generated source code and can confidently extend or customize it without affecting future platform upgrades. -->
+
+WaveMaker allows developers to import third-party APIs and automatically generate a complete backend, including Java classes, service logic, and design-time configurations. Built on proven enterprise frameworks, this approach simplifies API integration and customization. 
  
 This section describes the structure of a WaveMaker-generated service, using the **[Web Socket](wss://echo.websocket.org/)** as an example.
 
@@ -174,7 +181,7 @@ WebSockets enable real-time communication between the client and server in WaveM
 
 - You can handle live data streams in your apps. 
 - Choose how incoming data updates the dataset (refresh, append, prepend).  
-- Configure and bind data to UI widgets for immediate feedback. 
+- Configure and bind data to UI components for immediate feedback. 
 - Use secure `wss://` endpoints to avoid browser security issues. 
 
 WebSocket support in WaveMaker makes it easier to build responsive, real-time applications without custom networking code.

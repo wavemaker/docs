@@ -62,6 +62,13 @@ By enabling the proxy:
 - If App Environment Properties are not listed under Header or Query parameter selections, ensure they are added correctly to your configuration profile.  
 - You **must enable Use Proxy** before you can assign Server-Side or App Environment Properties to REST parameters.  
 - If you modify the REST service URL or other configurations, re-test the service before saving to ensure proper behavior. 
+- Using **App Environment Properties** for reusable configuration values across environments.  
+- Leveraging **Server-Side Properties** for dynamic runtime values.  
+- Enabling **Use Proxy** so that API keys, passwords, and other sensitive data are never sent directly from the client.  
+- Ensuring that confidential parameters are handled server-side and remain hidden from UI and network traffic. 
+
+These practices help you maintain secure integration with third-party services and safeguard critical application data.
+
 ---
 
 ## Summary

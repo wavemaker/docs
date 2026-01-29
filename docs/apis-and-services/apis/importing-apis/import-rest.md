@@ -4,45 +4,24 @@ last_update: { author: "Priyanka Bhadri" }
 
 # Individual REST Endpoints
 
-REST Services (Representational State Transfer) are web services designed to provide lightweight, scalable, and maintainable APIs that communicate over standard HTTP protocols. In a RESTful service, resources are exposed via URLs and clients interact with them using standard HTTP methods such as GET, POST, PUT, PATCH, and DELETE. These services typically return responses in JSON or XML formats. WaveMaker makes it easy to integrate external REST services into your application and consume them using variables that can be bound to widgets for data display. 
+A WaveMaker provides a way to integrate REST API hosted separately, outside of a Swagger/OpenAPI definition as an **individual REST endpoint**. These REST services are lightweight, scalable services that expose resources over HTTP, allowing clients to interact using standard methods such as GET, POST, PUT, PATCH, and DELETE. These services typically return responses in JSON or XML formats. 
+
+WaveMaker enables developers to import such endpoints, configure request parameters and authorization, and consume them using **[variables](../../../user-interfaces/web/develop/integrating-with-apis/variables.mdx)**, which can then be bound directly to UI components for seamless data display and interaction. This approach makes it easy to work with standalone APIs without requiring a formal API specification.
+
 
 ---
 
-## What is a REST Service?
-
-A **REST Service** is a type of web service that exposes resources over HTTP. Instead of relying on complex messaging protocols, REST services use standard HTTP methods meaning:
-
-- **GET** requests retrieve data  
-- **POST** requests create resources or perform operations  
-- **PUT/PATCH** requests update data  
-- **DELETE** requests remove resources 
-
-WaveMaker treats REST services as first-class data sources that can be imported, configured, and invoked from within your application. 
-
----
 
 ## Importing a REST Service
 
-To integrate a third-party REST API into your WaveMaker app:
+To integrate a third-party REST API into a WaveMaker application, developers start by creating a new REST service under **Resources → Web Services** in WaveMaker Studio. The service URL is specified along with the HTTP method (GET, POST, PUT, PATCH, DELETE, etc.), and any necessary proxy settings are configured to handle CORS or firewall restrictions for web apps. Mobile app calls are made directly, with proxy applied behind the scenes if needed during testing.
 
-1. Go to **Resources → Web Services** in WaveMaker Studio.  
-2. Click the **+** button and choose the **REST** service option.  
-3. In the REST service dialog:
-   - Enter the full service URL.
-   - Choose the HTTP method (GET, POST, PUT, PATCH, DELETE, etc.).
-   - Optionally configure **Use Proxy** (for web apps) if you need to route calls through a proxy server due to CORS or firewall restrictions.  
-     - For web apps, proxy is optional and enables bypassing CORS restrictions during testing.
-     - For mobile apps, calls are made directly to the service (if CORS issues occur during import testing, proxy may be applied behind the scenes).  
-4. Configure **Authorization** if required:
-   - **None** (default)
-   - **Basic** (username/password)
-   - **OAuth 2.0** – select or define an OAuth Provider and provide client details.  
-5. Define any required **query parameters**, **path parameters**, or **header parameters** to match the API signature.  
-6. Click **Test** to verify the service returns a valid response.  
-7. Once verified, click **Import** to bring the service into your project. 
- The **Import** option becomes active only after a successful test. 
+Authorization settings can be defined as required, including None, Basic (username/password), or OAuth 2.0, with the option to select or configure an OAuth provider. Developers can also define query, path, or header parameters to match the API signature. After configuring these details, the service can be tested to ensure it returns valid responses. 
+
+Once the test succeeds, the **Import** option becomes available, bringing the REST service into the project for use with variables and UI components.
+
  
-![alt text](individual-rest-endpoints/assets/oauth2-configuration.png)
+![alt text](assets/oauth2-configuration.png)
 <!-- ![alt text](image.png) -->
 
 ---
@@ -66,38 +45,17 @@ WaveMaker supports different authentication models when configuring REST service
 
 - **No Authentication** — Default option when the service does not require credentials.  
 - **Basic Authentication** — Uses username and password.  
-- **OAuth 2.0** — Allows integration with OAuth providers. You can select from pre-configured providers or define new ones during REST service configuration. 
+- **OAuth 2.0** — Allows integration with OAuth providers. You can select from pre-configured providers or define new ones during REST service configuration.
+For more details on [OAuth 2.0](../../../guide/migrated-docs/rest-services-using-oauth20.md)
 
-When securing REST calls, consider using **App Environment Properties** or **Server Side Properties** to store sensitive information such as API keys, tokens, or passwords. This ensures that sensitive values are not exposed in the UI or network calls. For more details refer [Secure Server Side Properties](individual-rest-endpoints/secure-server-side-properties.md).
-
----
-
- ## REST Request Timeouts 
-
-WaveMaker allows you to **customize timeout and connection settings** for REST service calls. These configuration properties control how long the platform waits for connections to be established, data to be received, and how many connections can be maintained. You can override these defaults by specifying system environment variables, Java system properties, or including them in the application’s configuration file (`app.properties`). 
-
-
-### Timeout and Connection Properties
-
-The following properties can be configured to fine-tune REST behavior:
-
-| Property | Default Value | Description |
-|----------|---------------|-------------|
-| `app.rest.useSystemProperties` | `false` | When set to `true`, WaveMaker uses standard Java system properties (`http.proxyHost`, `http.proxyPort`, `http.nonProxyHosts`) for REST connections.  |
-| `app.rest.connectionSocketTimeout` | `360` | Maximum time in **seconds** to wait for the first byte of data after a connection is established. A timeout exception is thrown if the limit is exceeded. 
-| `app.rest.connectionTimeout` | `30` | Maximum time in **seconds** to wait for a TCP connection to be established with the REST endpoint. A timeout occurs if the connection cannot be established in this period. 
-| `app.rest.connectionRequestTimeout` | `5` | Maximum time in **seconds** to wait for a connection from the HTTP connection pool. A timeout exception will be thrown if the connection cannot be acquired within the specified period.  |
-| `app.rest.maxTotalConnections` | `100` | Maximum number of total simultaneous connections that the connection manager can maintain. |
-| `app.rest.maxConnectionsPerRoute` | `50` | Maximum number of connections per route (per REST endpoint) in the connection pool.  |
-| `app.rest.tlsVersions` | `TLSv1.3,TLSv1.2` | List of TLS protocols enabled for secure connections when invoking HTTPS services.  |
-| `app.multipartconfig.maxFileSize` | `300 MB` | Maximum file size allowed for multipart upload requests. |
-| `app.multipartconfig.maxRequestSize` | `-1` | Maximum total size of multipart request content. A value of `-1` means no limit. 
-
----
+When securing REST calls, consider using **App Environment Properties** or **Server Side Properties** to store sensitive information such as API keys, tokens, or passwords. This ensures that sensitive values are not exposed in the UI or network calls. For more details refer [Secure Server Side Properties](../../../guide/migrated-docs/secure-server-side-properties).
 
 
 
-## Overview of Properties
+ 
+
+
+<!-- ## Overview of Properties
 
 WaveMaker supports two primary property types for securing sensitive data:
 
@@ -116,9 +74,9 @@ WaveMaker supports two primary property types for securing sensitive data:
 
 > Both property types help ensure sensitive values are not exposed on the UI or transmitted directly from the client.
 
----
+--- -->
 
-## Configuring REST Services to Use a Proxy
+<!-- ## Configuring REST Services to Use a Proxy
 
 To prevent sensitive values from being exposed in requests made directly from the client, you can enable the **Use Proxy** option when setting up REST services:
 
@@ -131,9 +89,9 @@ WaveMaker enforces the use of the proxy server whenever Server-Side or App Envir
 ![alt text](../importing-apis/individual-rest-endpoints/assets/rest-service-import-dialog.png)
 ![alt text](../importing-apis/individual-rest-endpoints/assets/rest-endpoint-creation.png)
 
----
+--- -->
 
-## How This Affects UI and Network Calls
+<!-- ## How This Affects UI and Network Calls
 
 When sensitive values (such as keys or credentials) are bound to REST service **Header** or **Query parameters**, they may appear in the Variables dialog input fields at design time. Without protection, these values could leak through UI bindings or client-side scripts. 
 
@@ -143,9 +101,9 @@ By enabling the proxy:
 - The client cannot see or intercept these values in the UI or network traffic.  
 - This ensures that confidential information stays on the server side and is not exposed to end users. 
 
----
+--- -->
 
-## Best Practices and Considerations
+<!-- ## Best Practices and Considerations
 
 - If App Environment Properties are not listed under Header or Query parameter selections, ensure they are added correctly to your configuration profile.  
 - You **must enable Use Proxy** before you can assign Server-Side or App Environment Properties to REST parameters.  
@@ -155,11 +113,11 @@ By enabling the proxy:
 - Enabling **Use Proxy** so that API keys, passwords, and other sensitive data are never sent directly from the client.  
 - Ensuring that confidential parameters are handled server-side and remain hidden from UI and network traffic. 
 
-These practices help you maintain secure integration with third-party services and safeguard critical application data.
+These practices help you maintain secure integration with third-party services and safeguard critical application data. -->
 
 ---
 
-## Testing a REST API
+<!-- ## Testing a REST API
 
 WaveMaker provides in-built testing as part of the import flow:
 
@@ -167,9 +125,9 @@ WaveMaker provides in-built testing as part of the import flow:
 - You can verify response formats (JSON or XML) and adjust configuration like headers and parameters if needed.  
 - Testing before import ensures that the service definition matches the expected input/output contract. 
 
----
+--- -->
 
-## REST Services with Input Data
+<!-- ## REST Services with Input Data
 
 Some REST endpoints require data input (e.g., text or file uploads):
 
@@ -177,15 +135,13 @@ Some REST endpoints require data input (e.g., text or file uploads):
 - You can specify input types as **File** or **Text**, allowing upload of files (e.g., images) or submission of textual data.  
 - For internal WaveMaker REST APIs, `application/json` or `text/plain` types are also supported. 
 <!-- ![alt text](image.png)# Import REST Services -->
-![alt text](individual-rest-endpoints/assets/server-timeout-configuration.png)
+<!-- ![alt text](individual-rest-endpoints/assets/server-timeout-configuration.png) -->
 
----
+
 
 ## Generated Backend Code
 
-WaveMaker enables developers to import **third-party APIs** and automatically generate a fully functional backend, including Java classes, service logic, and design-time configurations. It follows proven enterprise patterns built on Java, Spring, and Hibernate/JPA. This makes it easy to quickly integrate and customize APIs.
-
-Developers have complete access to the generated source code and can confidently extend or customize it without affecting future platform upgrades.
+WaveMaker allows developers to import third-party APIs and automatically generate a complete backend, including Java classes, service logic, and design-time configurations. Built on proven enterprise frameworks, this approach simplifies API integration and customization. 
  
 This section describes the structure of a WaveMaker-generated service, using the **[Random User](https://randomuser.me/api/?results=5)** as an example.
 
@@ -301,10 +257,10 @@ rest.randomuser.scheme=https
 
 REST Services in WaveMaker allow seamless integration of external HTTP APIs into your low-code application:
 
-- Import REST web services via the Web Services panel.  
+- Import REST services via the imported APIs.  
 - Configure URL, HTTP method, parameters, and authentication.  
 - Test endpoints before importing.  
-- Create service variables to invoke the API and bind responses to UI widgets.  
+- Create service variables to invoke the API and bind responses to UI components.  
 - Use proxy configuration and environment properties to handle CORS and secure credentials.
 
 ---
@@ -320,6 +276,10 @@ Learn more about working with REST services and web APIs through these practical
 - [Intercept Requests and Responses for API Calls](/docs/guide/migrated-docs/intercept-requests-responses-api-calls-one-place) - Add middleware logic to API calls
 - [Working with APIs with Different Pagination Formats](/docs/guide/migrated-docs/working-api-with-different-pagination-formats) - Handle various pagination strategies
 - [Adding UI for API with Server-Side Pagination](/docs/guide/migrated-docs/adding-ui-for-api-server-side-pagination) - Implement paginated data displays
+
+-[Rest request timeouts](/docs/guide/migrated-docs/rest-request-timeouts.md) - Rest request timeouts
+
+
 
 ---
 

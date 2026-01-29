@@ -4,15 +4,9 @@ last_update: { author: "Priyanka Bhadri" }
 
 # Open API - Swagger
 
-WaveMaker provides built-in support for importing REST APIs defined using **Swagger/OpenAPI specifications** (JSON or YAML). This feature allows developers to quickly integrate external services into their applications without manual coding.
+WaveMaker provides built-in support for importing REST APIs defined using Swagger/OpenAPI specifications (JSON or YAML), allowing developers to quickly integrate external services into their applications. When an API is imported, WaveMaker automatically generates the required backend service definitions and data models.
 
-When a Swagger/OpenAPI file is imported, WaveMaker automatically generates:
-
-- **Service metadata** – Endpoints, request/response models, and parameters.  
-- **Data models** – Classes representing API payloads.  
-- **UI bindings** – Ready-to-use structures for building forms, tables, and other components.
-
-This approach simplifies API integration, ensures consistency with the external service, and accelerates application development. Many modern backend frameworks, such as **Spring Boot**, automatically generate Swagger/OpenAPI documentation, making their APIs immediately consumable within WaveMaker.
+In WaveMaker, variables act as an abstraction over these generated services, handling request execution and response processing. This enables developers to bind API data directly to UI components without dealing with low-level service calls or backend implementation details. Learn more about [Variables](../../../user-interfaces/web/develop/integrating-with-apis/overview.mdx) 
 
 <!-- --- -->
 
@@ -39,13 +33,13 @@ From the API Workspace, you can:
 
 A short video in this section walks through the API Workspace UI and demonstrates how developers can visually explore and integrate APIs.
 
-**Learn more:** [API Workspace](#)
+**Learn more:** [API Explorer](../../../studio/workspaces/api-explorer.mdx)
 
 ---
 
 ## Importing a Swagger/OpenAPI Definition
 
-To bring an external REST API into your WaveMaker project:
+<!-- To bring an external REST API into your WaveMaker project:
 
 1. Go to the **APIs** section in WaveMaker Studio.  
 2. Select **Imported APIs**.  
@@ -53,7 +47,16 @@ To bring an external REST API into your WaveMaker project:
    - **From File** – Upload a local `.json` or `.yaml` OpenAPI/Swagger file.  
    - **From URL** – Provide the URL where the API definition is hosted.
 
-Both JSON and YAML formats are supported. 
+Both JSON and YAML formats are supported.  -->
+
+External REST APIs can be integrated into a WaveMaker project using the **Imported APIs** feature in WaveMaker Studio.
+
+- Supports importing APIs defined using **Swagger/OpenAPI specifications**
+- API definitions can be sourced from a **local file** or a **hosted URL**
+- Both **JSON** and **YAML** formats are supported
+- Imported APIs are processed and made available for use within the application
+
+
 
 For example, to import the public Petstore API:
 
@@ -68,7 +71,7 @@ https://petstore.swagger.io/v2/swagger.json
 
 
 
-## Entities and Endpoints
+<!-- ## Entities and Endpoints
 
 After importing the Swagger definition:
 
@@ -83,11 +86,43 @@ After importing the Swagger definition:
 | PUT | Update | UPDATE |
 | DELETE | Delete | DELETE |
 
-Once imported, you can view all identified entities on the left side navigation. Clicking an entity displays its endpoints — organized as CRUD operations and other custom endpoints. You can modify these groupings if needed before finalizing the import.
+Once imported, you can view all identified entities on the left side navigation. Clicking an entity displays its endpoints — organized as CRUD operations and other custom endpoints. You can modify these groupings if needed before finalizing the import. -->
+
+## Entities and Endpoints
+
+After importing the OpenAPI (Swagger) definition, WaveMaker analyzes the API structure and organizes endpoints into **Entities**. This entity-based representation helps map backend resources in a way that can be directly consumed by WaveMaker components.
+
+- **Entities** represent logical business resources exposed by the API (for example, Users, Orders, or Products).
+- Each entity groups all related endpoints belonging to the same resource.
+- This structured grouping simplifies API discovery and improves reusability across the application.
+
+### Endpoint to Operation Mapping
+
+WaveMaker automatically detects common CRUD-style endpoints and maps them to standardized operations. This enables seamless binding with UI components such as Live Forms, Data Tables, and Lists.
+
+| HTTP Method | Operation | Swagger Mapping |
+|------------|-----------|-----------------|
+| POST       | Create    | CREATE          |
+| GET        | Read/List | LIST            |
+| PUT        | Update    | UPDATE          |
+| DELETE    | Delete    | DELETE          |
+
+- Endpoints that do not follow standard CRUD conventions are categorized as **custom operations** within the same entity.
+- This entity mapping enables seamless consumption of API data by WaveMaker UI components using standardized operations.
+<!-- - Reduces manual configuration of API calls. -->
+<!-- - Maintains a consistent data model across database and API-based services. -->
+<!-- - Improves maintainability by logically grouping related operations. -->
+
+<!-- ### Navigation and Configuration
+
+- All identified entities appear in the **left-side navigation** after import.
+- Selecting an entity displays its endpoints, organized into CRUD and custom operations.
+- Entity and endpoint groupings can be modified before finalizing the import to align with application requirements. -->
+
 
 ![alt text](assets/swagger-import-config.png)
 
-**Note:** If a particular path doesn't map to an entity, it will appear under an **Others** category. These endpoints can still be used via service variables, but CRUD operations aren't automatically generated.
+<!-- **Note:** If a particular path doesn't map to an entity, it will appear under an **Others** category. These endpoints can still be used via service variables, but CRUD operations aren't automatically generated. -->
 
 ---
 
@@ -96,13 +131,13 @@ Once imported, you can view all identified entities on the left side navigation.
 Once the Swagger API is selected and its metadata is verified:
 
 - You can configure authentication for the API.
-- Swagger definitions may include support for **[OAuth 2.0](individual-rest-endpoints/rest-services-using-oauth20.md)**.
+- Swagger definitions may include support for **[OAuth 2.0](../../security/providers/openid-authentication.mdx)**.
 - If OAuth is required, click **OAuth Provider** in the import dialog and enter the relevant values such as:
   - Access Token URL
   - Client ID
   - Client Secret
 
-Authentication settings allow WaveMaker to communicate securely with protected APIs. For more detailed steps on configuring OAuth providers, refer to the [OAuth Provider Configuration](individual-rest-endpoints/rest-services-using-oauth20.md).
+Authentication settings allow WaveMaker to communicate securely with protected APIs. For more detailed steps on configuring OAuth providers, refer to the [OAuth Provider Configuration](../../security/providers/openid-authentication.mdx)
 
 ![alt text](assets/test-imported-api.png)
 <!-- ![alt text](assets/websocket-configuration.png) -->
@@ -111,9 +146,7 @@ Authentication settings allow WaveMaker to communicate securely with protected A
 
 ## Generated Code
 
-WaveMaker enables developers to import **third-party APIs** and automatically generate a fully functional backend, including Java classes, service logic, and design-time configurations. It follows proven enterprise patterns built on Java, Spring, and Hibernate/JPA. This makes it easy to quickly integrate and customize APIs.
-
-Developers have complete access to the generated source code and can confidently extend or customize it without affecting future platform upgrades.
+WaveMaker allows developers to import third-party APIs and automatically generate a complete backend, including Java classes, service logic, and design-time configurations. Built on proven enterprise frameworks, this approach simplifies API integration and customization. 
 
 This section describes the structure of a WaveMaker-generated service, using the **[Pet Store](https://petstore.swagger.io/v2/swagger.json)** as an example.
 
@@ -262,9 +295,8 @@ rest.swagger.scheme=https
 Importing Swagger/OpenAPI definitions in WaveMaker allows you to:
 
 - Bring external REST APIs into your application with minimal effort.
-- Automatically generate UI components and service metadata from the API spec.
 - Configure authentication and secure API access.
-- Use CRUD and service variables to integrate REST operations into your pages and widgets.
+- Use CRUD and service variables to integrate REST operations into your pages and components.
 - Accelerate development by leveraging standardized API descriptions.
 
 This feature lets you combine the power of external services with WaveMaker's low-code UI and binding framework, enabling rapid development of data-driven applications.

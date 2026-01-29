@@ -379,6 +379,9 @@ export default [
               'guide/migrated-docs/websocket-usage-chatroom-app',
               'guide/migrated-docs/working-api-with-different-pagination-formats',
               'guide/migrated-docs/adding-ui-for-api-server-side-pagination',
+              'guide/migrated-docs/secure-server-side-properties',
+              'guide/migrated-docs/rest-services-using-oauth20',
+              'guide/migrated-docs/rest-request-timeouts',
             ],
           },
           {
