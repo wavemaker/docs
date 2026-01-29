@@ -421,7 +421,7 @@ export default [
             type: 'doc',
             id: 'user-interfaces/web/develop/working-with-layouts/types',
             label: 'Supporting Components',
-          }
+          },
         ],
       },
       {
@@ -430,6 +430,22 @@ export default [
         collapsible: true,
         collapsed: true,
         items: [
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/styling-with-design-tokens/global-tokens-for-theming',
+            label: 'Global Tokens for Theming',
+          },
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/styling-with-design-tokens/component-level-tokens',
+            label: 'Component level tokens',
+          },
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/styling-with-design-tokens/variants-for-components',
+            label: 'Variants for Components',
+          },
+
           {
             type: 'doc',
             id: 'user-interfaces/web/develop/styling-with-design-tokens/overview',
