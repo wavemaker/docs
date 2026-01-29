@@ -347,6 +347,19 @@ export default [
     items: [
       {
         type: 'category',
+        label: 'Create Web App Project',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/create-web-app-project/project-structure',
+            label: 'Project structure',
+          },
+        ],
+      },
+      {
+        type: 'category',
         label: 'Create a page',
         collapsible: true,
         collapsed: true,
@@ -355,7 +368,12 @@ export default [
             type: 'doc',
             id: 'user-interfaces/web/develop/page/overview',
           },
-          { 
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/page/page-elements',
+            label: 'Page elements',
+          },
+          {
             type: 'doc',
             id: 'user-interfaces/web/develop/page/properties',
             label: 'Properties & Behaviour',
@@ -364,39 +382,97 @@ export default [
             type: 'doc',
             id: 'user-interfaces/web/develop/page/types',
             label: 'Types',
-          }
+          },
         ],
       },
       {
         type: 'category',
-        label: 'layout-and-style',
+        label: 'Working with Layouts',
         collapsible: true,
         collapsed: true,
         items: [
           {
             type: 'doc',
-            id: 'user-interfaces/web/develop/layout-and-style/overview',
-            label: 'Overview',
+            id: 'user-interfaces/web/develop/working-with-layouts/container-auto-layout',
+            label: 'Container Auto Layout',
+          },
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/working-with-layouts/nesting-layouts',
+            label: 'Nesting Layouts',
+          },
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/working-with-layouts/component-with-layouting-features',
+            label: 'Component with Layouting features',
+          },
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/working-with-layouts/responsive-design-with-layouts',
+            label: 'Responsive Design with Layouts',
           },
 
           {
             type: 'doc',
-            id: 'user-interfaces/web/develop/layout-and-style/types',
+            id: 'user-interfaces/web/develop/working-with-layouts/overview',
+            label: 'Overview',
+          },
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/working-with-layouts/types',
             label: 'Supporting Components',
           },
           {
             type: 'doc',
-            id: 'user-interfaces/web/develop/layout-and-style/auto-layout',
+            id: 'user-interfaces/web/develop/working-with-layouts/auto-layout',
             label: 'Auto Layout',
           },
           {
             type: 'doc',
-            id: 'user-interfaces/web/develop/layout-and-style/styling-with-design-tokens',
+            id: 'user-interfaces/web/develop/working-with-layouts/styling-with-design-tokens',
             label: 'Styling with Design Tokens',
           },
         ],
       },
-       {
+      {
+        type: 'category',
+        label: 'Styling with Design Tokens',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/styling-with-design-tokens/overview',
+            label: 'Styling with Design Tokens',
+          },
+        ],
+      },
+      {
+        type: 'category',
+        label: 'Component behaviour & methods',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/component-behaviour-and-methods/common-properties',
+            label: 'Common properties',
+          },
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/component-behaviour-and-methods/javascript-access',
+            label: 'JavaScript access',
+          },
+
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/component-behaviour-and-methods/overview',
+            label: 'Component behaviour and  methods',
+          },
+        ],
+      },
+
+      {
         type: 'category',
         label: 'Integrating with APIs',
         collapsible: true,
@@ -406,7 +482,7 @@ export default [
             type: 'doc',
             id: 'user-interfaces/web/develop/integrating-with-apis/overview',
           },
-           {
+          {
             type: 'doc',
             id: 'user-interfaces/web/develop/integrating-with-apis/variables',
             label: 'Variables',
@@ -420,15 +496,55 @@ export default [
             id: 'user-interfaces/web/develop/integrating-with-apis/types',
             label: 'Variable Types',
           },
-         
         ],
       },
+      {
+        type: 'category',
+        label: 'Form Input validations',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/form-input-validations/bind-expressions',
+            label: 'Bind expressions',
+          },
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/form-input-validations/validation-messages',
+            label: 'Validation messages',
+          },
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/form-input-validations/custom-validators-in-javascript',
+            label: 'Custom validators in JavaScript',
+          },
+
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/form-input-validations/overview',
+            label: 'Form Input validations',
+          },
+        ],
+      },
+
       {
         type: 'category',
         label: 'UI Event Handling',
         collapsible: true,
         collapsed: true,
         items: [
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/events/event-lifecycle',
+            label: 'Event lifecycle',
+          },
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/events/common-events-for-components',
+            label: 'Common events for Components',
+          },
+
           {
             type: 'doc',
             id: 'user-interfaces/web/develop/events/overview',
@@ -461,10 +577,10 @@ export default [
             type: 'doc',
             id: 'user-interfaces/web/develop/actions/types',
             label: 'Types',
-          }
+          },
         ],
       },
-     
+
       {
         type: 'doc',
         id: 'user-interfaces/web/develop/input-validations',
@@ -472,7 +588,21 @@ export default [
       {
         type: 'doc',
         id: 'user-interfaces/web/develop/state-management',
-      }
+      },
+
+      {
+        type: 'category',
+        label: 'State Management',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/state-management/overview',
+            label: 'State Management',
+          },
+        ],
+      },
     ],
   },
   {
@@ -499,11 +629,11 @@ export default [
             type: 'doc',
             id: 'user-interfaces/web/enterprise-capabilities/prefabs/overview',
           },
-                    {
+          {
             type: 'doc',
             id: 'user-interfaces/web/enterprise-capabilities/prefabs/create-prefab',
           },
-                    {
+          {
             type: 'doc',
             id: 'user-interfaces/web/enterprise-capabilities/prefabs/publishing',
           },
