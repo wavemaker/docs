@@ -455,25 +455,6 @@ export default [
       },
       {
         type: 'category',
-        label: 'Component behaviour & methods',
-        collapsible: true,
-        collapsed: true,
-        items: [
-          {
-            type: 'doc',
-            id: 'user-interfaces/web/develop/component-behaviour-and-methods/common-properties',
-            label: 'Common properties',
-          },
-          {
-            type: 'doc',
-            id: 'user-interfaces/web/develop/component-behaviour-and-methods/javascript-access',
-            label: 'JavaScript access methods',
-          }
-        ],
-      },
-
-      {
-        type: 'category',
         label: 'Integrating with APIs',
         collapsible: true,
         collapsed: true,
@@ -496,6 +477,24 @@ export default [
             id: 'user-interfaces/web/develop/integrating-with-apis/types',
             label: 'Variable Types',
           },
+        ],
+      },
+      {
+        type: 'category',
+        label: 'Component behaviour & methods',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/component-behaviour-and-methods/common-properties',
+            label: 'Common properties',
+          },
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/component-behaviour-and-methods/javascript-access',
+            label: 'JavaScript access methods',
+          }
         ],
       },
       {
