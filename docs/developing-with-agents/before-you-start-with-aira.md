@@ -1,9 +1,8 @@
 ---
 title: Before you Start with Aira
 sidebar_position: 2
+last_update: { author: "Author Name" }
 ---
-
-
 AIRA follows a controlled, step-by-step execution flow. Each step limits scope to prevent unintended changes.
 
 ### User Request
