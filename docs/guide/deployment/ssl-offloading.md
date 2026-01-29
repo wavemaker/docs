@@ -1,6 +1,7 @@
 ---
 title: "SSL Termination in LoadBalancer"
 id: "ssl-offloading"
+last_update: { author: "WaveMaker" }
 ---
 ---
 

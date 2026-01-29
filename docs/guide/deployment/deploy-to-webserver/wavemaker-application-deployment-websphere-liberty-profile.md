@@ -2,6 +2,7 @@
 title: "App Deployment to WebSphere (Liberty Profile)"
 id: "wavemaker-application-deployment-websphere-liberty-profile"
 sidebar_label: "WebSphere"
+last_update: { author: "WaveMaker" }
 ---
 ---
 

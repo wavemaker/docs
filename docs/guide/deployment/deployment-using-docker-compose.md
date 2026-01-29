@@ -1,6 +1,7 @@
 ---
 title: "Deploy using Docker Compose"
 id: "deployment-using-docker-compose"
+last_update: { author: "WaveMaker" }
 ---
 ---
 

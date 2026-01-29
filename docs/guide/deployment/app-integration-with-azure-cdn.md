@@ -2,6 +2,7 @@
 title: "Deploy static content to Azure CDN Profile for WaveMaker Apps"
 id: "app-integration-with-azure-cdn"
 sidebar_label: "App Integration with Azure CDN"
+last_update: { author: "WaveMaker" }
 ---
 ---
 

@@ -2,6 +2,7 @@
 title: "Deployment to WebLogic Application Server"
 id: "wavemaker-application-deployment-weblogic-application-server"
 sidebar_label: "WebLogic Server"
+last_update: { author: "WaveMaker" }
 ---
 ---
 
