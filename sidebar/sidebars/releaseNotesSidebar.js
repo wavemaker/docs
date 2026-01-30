@@ -13,13 +13,8 @@ export default [
     items: [
       {
         type: 'doc',
-        id: 'release-notes/release-12/index',
-        label: 'Overview',
-      },
-      {
-        type: 'doc',
         id: 'release-notes/release-12/the-announcement',
-        label: 'Announcement',
+        label: '📣 The Announcement ',
       },
       {
         type: 'category',
@@ -29,8 +24,8 @@ export default [
         items: [
           {
             type: 'doc',
-            id: 'release-notes/release-12/version-1x/overview',
-            label: '12.1.x Overview',
+            id: 'release-notes/release-12/version-1x/12.1.0-beta',
+            label: '12.1.0 Beta',
           },
         ],
       },
