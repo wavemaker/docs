@@ -4,19 +4,24 @@ last_update: { author: 'Raj Kumar Reddy Abbadi' }
 
 # UI Event Lifecycle 
 
-WaveMaker follows a layered, event-driven architecture where Pages, Variables, and UI Components communicate through events, state changes, and programmable methods. 
+WaveMaker uses a layered, event-driven architecture where Pages, Variables, and UI Components talk to each other using events, state changes, and methods. Events can flow top-down or bottom-up, depending on what triggered them—whether it’s the system, an API call, or a user action.
 
-Event lifecycle can flow either top-down or bottom-up, depending on what triggered the eventwhether it was the system, an API, or a user action.
+This setup lets developers plug in custom logic at different points in the app lifecycle.
+
+**Events in WaveMaker are broadly categorized into the following types:**
+- **App-level events:** These events are tied to the overall application lifecycle. They run when the app starts, initializes, or shuts down, and are typically used for global setup, configuration, or cleanup logic.
+- **Page-level events:** These events are associated with individual pages. They trigger during page load, render, or navigation, and are commonly used to handle page-specific logic like fetching data or initializing variables.
+- **Component-level events:** These events are triggered by user interactions with UI components, such as clicks, double-clicks, mouse enter/leave, or input changes. They’re used to handle interactive behavior within a page.
 
 ![Event Lifecycle](../../assets/eventLifeCycle.png)
 
 ## App Level Events
 
-WaveMaker provides application level events that allow developers to define behavior that applies across the entire application, rather than being limited to a specific page or component. These events are exposed through the global ```App``` object and are triggered at key points in the application lifecycle.
+WaveMaker provides application level events that allow developers to run logic at the app scope rather than at a specific page or component. These events are triggered at predefined stages of the application lifecycle and are used to implement logic that applies across the entire application.
 
-WaveMaker exposes a set of application level callback functions through the global App object. These events are triggered at predefined stages of the application lifecycle and are used to implement logic that applies across the entire application.
+Application level events are typically used for tasks like global configuration, initializing shared variables, setting up services, handling authentication, or performing app wide cleanup. This ensures common logic is centralized and reused across the entire application instead of being duplicated across pages.
 
-The following application level events are supported: 
+WaveMaker Studio defines application level event functions in **```App.js```**. The application supports the following app level events:
 - **onAppVariablesReady**
 - **onSessionTimeout**
 - **onPageReady**
@@ -32,6 +37,7 @@ The ```onAppVariablesReady``` callback is invoked after all application level va
                     * variables can be accessed through 'App.Variables' property here
                     * e.g. App.Variables.staticVariable1.getData()
                 */
+
                 // ex-1: Load user profile data after login
                 App.Variables.GetUserProfile.invoke();
 
@@ -39,11 +45,6 @@ The ```onAppVariablesReady``` callback is invoked after all application level va
                 App.appConfig = App.Variables.AppConfigVariable.getData();
             };
         ```
-
-Use Cases
-- Accessing application variables using ```App.Variables```
-- Triggering application level service calls
-- Setting default application state
 
 #### onSessionTimeout
 The ```onSessionTimeout``` callback is invoked when the user session expires due to timeout. This callback allows the application to handle session expiration events.
@@ -56,7 +57,7 @@ The ```onSessionTimeout``` callback is invoked when the user session expires due
                     * On re-login after session timeout:
                     * if the same user logs in(through login dialog), app will retain its state
                     * if a different user logs in, app will be reloaded and user is redirected to respective landing page configured in Security.
-                    */
+                */
                     
                 // ex-1: Clear sensitive application data
                 App.Variables.UserProfile.setData(null);
@@ -68,11 +69,6 @@ The ```onSessionTimeout``` callback is invoked when the user session expires due
                 );
             };
         ```
-
-Use Cases
-- Clearing application or user-specific data
-- Resetting application state
-- Displaying session timeout notifications
 
 #### onPageReady
 The ```onPageReady``` callback is invoked after the execution of the page level onPageReady function. This callback is intended for implementing logic that must execute across all pages.
@@ -93,11 +89,6 @@ The ```onPageReady``` callback is invoked after the execution of the page level 
                 activePageScope.showHeader = true;
             };
         ```
-
-Use Cases
-- Applying common UI behavior
-- Tracking page navigation events
-- Initializing page level access control
 
 #### onServiceError
 The ```onServiceError``` callback is invoked when a service or variable invocation results in an error. This callback enables centralized handling of service errors across the application.
@@ -128,15 +119,10 @@ The ```onServiceError``` callback is invoked when a service or variable invocati
             };
         ```
 
-Use Cases
-- Displaying custom error messages
-- Logging error details
-- Handling authorization and session related errors
-
 ---
 ## Page level Events
 
-In a WaveMaker application, each page is composed of Markup, Script, and CSS files. Page-level events are defined and managed within the page script file, which allows developers to implement logic specific to an individual page.
+In a WaveMaker application, each page is composed of Markup, Script, and CSS files. Page level events are defined and managed within the page script file, which allows developers to implement logic specific to an individual page.
 
 #### Page.onReady
 The Page.onReady lifecycle method is invoked after the page has been fully rendered and initialized. This method is used to write initialization logic that must execute when the page is ready for interaction.
@@ -157,20 +143,20 @@ Invocation Timing:
                     * 'Page.Widgets.username.datavalue'
                 */
                 
-                // ex-1: Track page navigation (analytics/logging)
+                // ex-1: Track page navigation
                 console.log("Page loaded:", activePageName);
 
-                // ex-2: Apply common UI behavior across pages
-                activePageScope.showHeader = true;
+                // ex-2: Invoke cardData variable
+                Page.Variables.CardData.invoke();
             };
         ```
 
 Page level resources can be accessed within **```Page.onReady```** as follows:
-- Variables: Accessed using **```Page.Variables```**, include reading datasets, invoking service variables, or setting default values.
+- **Variables:** Accessed using **```Page.Variables```**, include reading datasets, invoking service variables, or setting default values.
     ```javascript
     Page.Variables.getEmployeeDataset.invoke();
     ```
-- Widgets: Accessed using **```Page.Widgets```**, Widgets can be read or modified to control UI behavior and display values.
+- **Components:** Accessed using **```Page.Widgets```**, Components can be read or modified to control UI behavior and display values.
     ```javascript
     Page.Widgets.UserButton.Caption = "Lucas";
     ```
@@ -182,7 +168,7 @@ The page lifecycle event onDestroy event that is triggered when a page is about 
             Page.mainpageDestroy = function ($event, widget) {
                 // ex-1: Reset Page-Level Variables
                 Page.Variables.tempData.setData(null);
-                Page.Variables.selectedItem.setData({});
+                Page.Variables.cartData.setData({});
 
                 // ex-2: Clear Timers / Intervals
                 if (Page.autoRefreshInterval) {
@@ -194,9 +180,9 @@ The page lifecycle event onDestroy event that is triggered when a page is about 
 ---
 ## Component Level Events
 
-For every Component, there are a set of lifecycle methods and event callbacks that can be accessed from the JavaScript.
+For every component, there are a set of lifecycle methods and event callbacks that can be accessed from the JavaScript.
 
-The events can be accessed from the properties panel for the specific Component and assigned to a JavaScript or any other actions. JavaScript can be written from the Script tab, as per the app requirements. 
+The events can be accessed from the properties panel for the specific component and assigned to a JavaScript or any other actions. JavaScript can be written from the Script tab, as per the page requirements. 
 
 For example, to display an alert message on click of a button, the following would be the code:
 ```javascript
@@ -205,7 +191,7 @@ Page.UserButtonClick = function ($event, widget) {
 };
 ``` 
 
-For Component Life Cycle Events and Methods refer to the specific [Component Documentation](https://react-components.wavemaker.com).
+For Component Life Cycle Events and Methods refer to the specific [Component Documentation](https://react-components.wavemaker.com/?path=/story/basic-anchor--docs#tab-events).
 
 
 
