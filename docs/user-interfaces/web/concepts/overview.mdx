@@ -11,8 +11,6 @@ WaveMaker Platform provides
 
 which enable web app developers to build applications using simple and abstracted set of UI concepts. App developers with essential skills in HTML, CSS & JavaScript are empowered to build complex, scalable and enterprise-grade web applications using WaveMaker.
 
-WaveMaker provides a technology agnostic UI development methodology without requiring app developers to learn the underlying javascript frameworks i.e., Angular, React or React Native. Both web and mobile app developers embrace a unified development model with the same UI concepts for building apps.
-
 Platform uses component-based architecture and a meta markup known as WaveMaker Markup Language (WML) to represent components within a page similar to HTML, which is used by code generators to generate Angular or React code.
 
 ## UI Concepts
@@ -87,7 +85,7 @@ Variables provide integration capabilities enabling components to be bound to RE
 ```
 
 ### Actions
-Actions provide routing capability to transition between pages, dialogs or message toaster.
+Actions provide routing capability to transition between pages, dialogs, notifications or messages.
 ```json
     goToPage_FormComponents : {
         name : "goToPage_FormComponents",
@@ -103,7 +101,7 @@ Actions provide routing capability to transition between pages, dialogs or messa
 
 ### Events
 There are 2 types of events:
-- UI Events - initiated by end user interactions such as mouse click, keystroke, tap or touch events
+- UI Events - initiated by end user interactions such as mouse click, key press, tap or touch events
 - Lifecycle and State change events such as onChange, onLoad, onSuccess etc., for components, variables, actions, page and application
 
 With events, developers can write client-side logic using JavaScript to fully customize application behaviour and take control of the user interactions.
@@ -112,23 +110,17 @@ With events, developers can write client-side logic using JavaScript to fully cu
         Page.Widgets.select1.dataset = ["min", "max", "same"]
         Page.Widgets.switch1.datavalue = "max"
     };
+
+    Page.switch1Change = function ($event, widget, newVal, oldVal) {
+        console.log('switch change')
+        Page.Variables.MyService.invoke({
+            value: newVal
+        })
+    };
 ```
 
 ## Single Page Application
 
-Application code generated in Angular or React adheres to Single Page Application construct and uses architectural principles from the underlying javascript framework such as components, routing, state management, virtual-DOM or 2-way binding etc. Platform generated code is readable, maintainable and secure for enterprise deployments.
+Application code generated in Angular or React adheres to Single Page Application construct and uses architectural principles from the underlying javascript framework such as components, routing, state management, dependency injection, virtual-DOM or 2-way binding etc. Platform generated code is readable, maintainable and secure for enterprise deployments.
 
 UI concepts are AI-ready enabling agents to generate application artifacts from the intent, spec or designs provided by app developers.
-
-## Hybrid development model
-Developers are provided with a hybrid approach for building apps
-#### 1. Visually using Studio 
-- Drag-n-drop canvas makes it easy to create layouts, components and their properties discoverable without requiring developers to go through a lot of documentation.
-- Properties panel for each component and UI element enhances learnability and Studio automatically generates the corresponding page markup i.e. WML with the right syntax.
-- Different workspaces are available for building Pages, importing REST APIs, working with Databases & creating microservices for backend
-#### 2. Using prompts through AI Agents
-- Swith to agentic mode to instruct the underlying AI model to generate pages, components and javascript code with simple natural language prompts
-- Agents are available for specific functionality such as design to code conversion, binding to REST APIs, configuring accessibility, language support etc. 
-#### 3. Editing and Authoring code in editor.
-- UI Constructs in WaveMaker are developer-friendly and provides complete control to developers to edit manually within Studio.
-- Generated Angular or React code can be exported and is readable, modifiable and maintainable outside Studio environment. But, any modifications made outside cannot be brought back into Studio.

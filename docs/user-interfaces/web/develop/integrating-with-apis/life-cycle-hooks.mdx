@@ -36,8 +36,26 @@ A variable moves through the following lifecycle stages during its execution in 
    - Success or error events are raised
    - Variable execution ends
 
+```mermaid
+stateDiagram
+   direction LR
+   [*] --> PreExecute
+   PreExecute --> APICall
+   state PreExecute {
+      direction LR
+      onCanUpdate --> onBeforeUpdate
+      onBeforeUpdate --> InitParams: initiatize inputs
+   }
 
-
+   APICall --> PostProcess
+   PostProcess --> [*]
+   state PostProcess {
+      direction LR
+      onResult --> onBeforeDataSetReady
+      onBeforeDataSetReady --> onSuccess
+      onResult --> onError
+   }
+```
 ---
 
 ## Variable Properties
