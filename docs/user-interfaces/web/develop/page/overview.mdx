@@ -3,11 +3,7 @@ last_update: { author: "Raj Kumar Reddy Abbadi" }
 ---
 # Overview
 
-In **WaveMaker App**, a page represents a complete UI view within an application. You can create any number of pages in an app, and each page follows a defined layout structure that ensures consistency.
-
-### What is Page in Wavemaker?
-
-Every **WaveMaker page** is built using a well defined layout structure that helps maintain consistency, responsiveness, and ease of development across the application. 
+In **WaveMaker App**, a page represents a complete UI view within an application. You can create any number of pages in an app, and each page follows a defined layout structure that ensures consistency, responsiveness and ease of development across the application.
 
 The page layout is divided into three main sections (**header, content, footer**) each serving a specific purpose.
 
@@ -24,19 +20,29 @@ By default, WaveMaker generates a standard page markup that follows below struct
     </wm-content>
     <wm-footer content="footer" name="footer"></wm-footer>
 </wm-page>
-
 ```
 ---
 
 ### Header
 
-The **Header** section appears at the top of the page and is typically used for global or page-level information. It commonly contains:
-
-- Top navigation menus
-- User profile actions (login, logout, settings)
+The **Header** section appears at the top of the page and is typically used for global or page-level information. It commonly contains: Top navigation menus, User profile actions (login, logout, settings)
 
 The header can be defined directly within a page or implemented as a **reusable partial**, allowing it to be shared across multiple pages for a consistent user experience.
 
+#### Header Partial Markup
+    ```html
+    <wm-partial name="header" type="header">
+        <wm-container direction="column" alignment="top-left" gap="4" width="fill" name="containerlayout">
+            <wm-container direction="row" alignment="top-left" gap="4" width="fill" name="containerrow" variant="default" height="fill">
+                <wm-container direction="row" alignment="top-right" gap="4" width="100%" name="containerright" variant="default" wrap="false">
+                    <wm-container direction="row" alignment="top-right" gap="4" width="320px" name="containersearch" variant="default" wrap="false">
+                        <wm-search dataset="Home, Services, Products, About US, Contact" name="search1"></wm-search>
+                    </wm-container>
+                </wm-container>
+            </wm-container>
+        </wm-container>
+    </wm-partial>
+    ```
 ### Content
 
 The **Content** section forms the main body of the page where most user interactions occur. This section is designed to be flexible and supports complex layouts.

@@ -4,7 +4,6 @@ last_update: { author: 'Raj Kumar Reddy Abbadi' }
 
 # UI Event Lifecycle 
 
-## Overview
 WaveMaker follows a layered, event-driven architecture where Pages, Variables, and UI Components communicate through events, state changes, and programmable methods. 
 
 Event lifecycle can flow either top-down or bottom-up, depending on what triggered the eventwhether it was the system, an API, or a user action.
@@ -17,7 +16,7 @@ WaveMaker provides application level events that allow developers to define beha
 
 WaveMaker exposes a set of application level callback functions through the global App object. These events are triggered at predefined stages of the application lifecycle and are used to implement logic that applies across the entire application.
 
-The following application-level events are supported: 
+The following application level events are supported: 
 - **onAppVariablesReady**
 - **onSessionTimeout**
 - **onPageReady**
@@ -50,23 +49,24 @@ Use Cases
 The ```onSessionTimeout``` callback is invoked when the user session expires due to timeout. This callback allows the application to handle session expiration events.
 
         ```javascript
-                /* perform any action on session timeout here, e.g clearing some data, etc */
-                App.onSessionTimeout = function () {
-                    /*
-                        * NOTE:
-                        * On re-login after session timeout:
-                        * if the same user logs in(through login dialog), app will retain its state
-                        * if a different user logs in, app will be reloaded and user is redirected to respective landing page configured in Security.
+            /* perform any action on session timeout here, e.g clearing some data, etc */
+            App.onSessionTimeout = function () {
+                /*
+                    * NOTE:
+                    * On re-login after session timeout:
+                    * if the same user logs in(through login dialog), app will retain its state
+                    * if a different user logs in, app will be reloaded and user is redirected to respective landing page configured in Security.
                     */
-                    // ex-1: Clear sensitive application data
-                    App.Variables.UserProfile.setData(null);
-                    App.Variables.CartData.setData([]);
+                    
+                // ex-1: Clear sensitive application data
+                App.Variables.UserProfile.setData(null);
+                App.Variables.CartData.setData([]);
 
-                    // ex-2: Show session timeout notification
-                    App.Variables.appNotification.setMessage(
-                        "Your session has expired. Please login again."
-                    );
-                };
+                // ex-2: Show session timeout notification
+                App.Variables.appNotification.setMessage(
+                    "Your session has expired. Please login again."
+                );
+            };
         ```
 
 Use Cases
@@ -156,6 +156,7 @@ Invocation Timing:
                     * e.g. to get value of text widget named 'username' use following script
                     * 'Page.Widgets.username.datavalue'
                 */
+                
                 // ex-1: Track page navigation (analytics/logging)
                 console.log("Page loaded:", activePageName);
 
@@ -177,19 +178,19 @@ Page level resources can be accessed within **```Page.onReady```** as follows:
 #### onDestroy
 The page lifecycle event onDestroy event that is triggered when a page is about to be destroyed, typically when the user navigates to another page, app unloads the current page or page component is removed from memory.
 
-```javascript
-Page.mainpageDestroy = function ($event, widget) {
-    // ex-1: Reset Page-Level Variables
-    Page.Variables.tempData.setData(null);
-    Page.Variables.selectedItem.setData({});
+        ```javascript
+            Page.mainpageDestroy = function ($event, widget) {
+                // ex-1: Reset Page-Level Variables
+                Page.Variables.tempData.setData(null);
+                Page.Variables.selectedItem.setData({});
 
-    // ex-2: Clear Timers / Intervals
-    if (Page.autoRefreshInterval) {
-        clearInterval(Page.autoRefreshInterval);
-        Page.autoRefreshInterval = null;
-    }
-};
-```
+                // ex-2: Clear Timers / Intervals
+                if (Page.autoRefreshInterval) {
+                    clearInterval(Page.autoRefreshInterval);
+                    Page.autoRefreshInterval = null;
+                }
+            };
+        ```
 ---
 ## Component Level Events
 

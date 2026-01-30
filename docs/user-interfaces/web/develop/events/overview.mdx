@@ -12,22 +12,17 @@ Events can be grouped by the type of user interaction or browser action that tri
 - **Mouse Events:** click, double click, mouse enter, mouse leave.
 
         ```javascript
+            // Script for button double click:
             Page.UserButtonDblclick = function ($event, widget) {
-                // Navigate to Main Page
-                Page.Actions.goToPage_Main.invoke();
+                // Showing alert on button double click
+                alert("Triggred button double click")
             };
         ```
 
 - **Keyboard Events:** keypress, keydown, keyup.
         ```javascript   
             Page.UserButtonKeypress = function ($event, widget, item, currentItemWidgets) {
-                // ex-1: Perform action only when Enter key is pressed
-                if ($event.key === 'Enter') {
-                    console.log('Enter key pressed');
-                    Page.Variables.searchUsers.invoke();
-                }
-
-                // ex-2: Prevent action for restricted keys
+                // Prevent action for restricted keys
                 if ($event.key === 'Tab') {
                     $event.preventDefault();
                 }
@@ -36,21 +31,15 @@ Events can be grouped by the type of user interaction or browser action that tri
 - **Form Events:** submit, change, focus, blur, input.
         ```javascript
             Page.employeeFormSubmit = function ($event, widget, $formData) {
-                // ex-1: Disable submit button to avoid duplicate submits
+                // Disable submit button to avoid duplicate submits
                 widget.disable = true;
-
-                // ex-2: Show loader indicator
-                Page.isSubmitting = true;
             };
         ```
 
 - **Window/Document Events:** load, unload, resize, scroll, DOMContentLoaded. 
         ```javascript
             window.onload = function () {
-                // ex-1: Initialize global variables
-                window.appLoadedTime = new Date();
-
-                // ex-2: Register global event listeners
+                //  Register global event listeners
                 window.addEventListener('resize', function () {
                     console.log('Window resized');
                 });

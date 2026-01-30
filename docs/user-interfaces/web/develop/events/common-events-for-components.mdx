@@ -4,7 +4,14 @@ last_update: { author: 'Raj Kumar Reddy Abbadi' }
 
 # Common Events for Components
 
-- Form Events
+WaveMaker components provide a rich set of events to handle user interactions, data changes, and UI state transitions.
+While each component (Form, DataTable, List, Card, Button, etc.) exposes component-specific events, many components also share a set of common events that are used frequently across applications.
+
+This section focuses on the most commonly used events, explains when they are triggered, and highlights typical use cases where these events are applied in real applications.
+
+If you want to explore all available events for a specific component, refer to the individual [Component documentation](https://react-components.wavemaker.com).
+
+- **Form Component Events**
     - **onBeforeSubmit:** Fires just before the form data is submitted to a variable or API.
             ```javascript
                 Page.userFormBeforeSubmit = function ($event, widget) {
