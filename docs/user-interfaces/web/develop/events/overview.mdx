@@ -11,31 +11,51 @@ Events are actions or occurrences in the browser that your code can respond to. 
 Events can be grouped by the type of user interaction or browser action that triggers them:
 - **Mouse Events:** click, double click, mouse enter, mouse leave.
 
-```javascript
-Page.UserButtonDblclick = function ($event, widget) {
-    alert('The User button double click event has been triggered');
-};
-```
+        ```javascript
+            Page.UserButtonDblclick = function ($event, widget) {
+                // Navigate to Main Page
+                Page.Actions.goToPage_Main.invoke();
+            };
+        ```
 
 - **Keyboard Events:** keypress, keydown, keyup.
-```javascript
-Page.UserButtonKeypress = function ($event, widget, item, currentItemWidgets) {
-    alert('The User button key press event has been triggered');
-};
-```
+        ```javascript   
+            Page.UserButtonKeypress = function ($event, widget, item, currentItemWidgets) {
+                // ex-1: Perform action only when Enter key is pressed
+                if ($event.key === 'Enter') {
+                    console.log('Enter key pressed');
+                    Page.Variables.searchUsers.invoke();
+                }
+
+                // ex-2: Prevent action for restricted keys
+                if ($event.key === 'Tab') {
+                    $event.preventDefault();
+                }
+            };
+        ```
 - **Form Events:** submit, change, focus, blur, input.
-```javascript
-Page.employeeFormSubmit = function ($event, widget, $formData) {
-    alert('The employeeForm submit event has been triggered');
-};
-```
+        ```javascript
+            Page.employeeFormSubmit = function ($event, widget, $formData) {
+                // ex-1: Disable submit button to avoid duplicate submits
+                widget.disable = true;
+
+                // ex-2: Show loader indicator
+                Page.isSubmitting = true;
+            };
+        ```
 
 - **Window/Document Events:** load, unload, resize, scroll, DOMContentLoaded. 
-```javascript
-window.onload = function () {
-    alert('Window loaded successfully');
-};
-```
+        ```javascript
+            window.onload = function () {
+                // ex-1: Initialize global variables
+                window.appLoadedTime = new Date();
+
+                // ex-2: Register global event listeners
+                window.addEventListener('resize', function () {
+                    console.log('Window resized');
+                });
+            };
+        ```
 
 ### Event Object
 Every event handler function, a parameter is often defined with names such as ```event``` , ```evt``` , or ```e```. This parameter is referred to as the event object. It is automatically passed to event handlers and provides additional information and functionality related to the event that was triggered. This object contains useful properties and methods related to the event
