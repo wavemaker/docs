@@ -372,10 +372,6 @@ export default [
         items: [
           {
             type: 'doc',
-            id: 'user-interfaces/web/develop/page/overview',
-          },
-          {
-            type: 'doc',
             id: 'user-interfaces/web/develop/page/page-elements',
             label: 'Page elements',
           },
