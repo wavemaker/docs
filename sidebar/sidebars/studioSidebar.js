@@ -29,6 +29,11 @@ export default [
       },
       {
         type: 'doc',
+        id: 'studio/governance/team_settings',
+        label: 'Team Settings'
+      },
+      {
+        type: 'doc',
         id: 'studio/governance/application-deployments-demo',
         label: 'Application Deployments - Demo'
       },

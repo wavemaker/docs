@@ -2,12 +2,12 @@
 last_update: { author: 'Raj Kumar Reddy Abbadi' }
 ---
 
-# WaveMaker Event Lifecycle 
+# UI Event Lifecycle 
 
 ## Overview
 WaveMaker follows a layered, event-driven architecture where Pages, Variables, and UI Components communicate through events, state changes, and programmable methods. 
 
-The lifecycle flows top-down and bottom-up, depending on whether the trigger is system-driven, API-driven, or user-driven.
+Event lifecycle can flow either top-down or bottom-up, depending on what triggered the eventwhether it was the system, an API, or a user action.
 
 ![Event Lifecycle](../../assets/eventLifeCycle.png)
 
@@ -26,15 +26,20 @@ The following application-level events are supported:
 #### onAppVariablesReady
 The ```onAppVariablesReady``` callback is invoked after all application level variables are initialized and available for use. This callback should be used to perform actions that depend on application variables.
 
-```javascript
-/* perform any action on the variables within this block(on-page-load) */
-App.onAppVariablesReady = function () {
-/*
-    * variables can be accessed through 'App.Variables' property here
-    * e.g. App.Variables.staticVariable1.getData()
-*/
-};
-```
+        ```javascript
+            /* perform any action on the variables within this block(on-page-load) */
+            App.onAppVariablesReady = function () {
+                /*
+                    * variables can be accessed through 'App.Variables' property here
+                    * e.g. App.Variables.staticVariable1.getData()
+                */
+                // ex-1: Load user profile data after login
+                App.Variables.GetUserProfile.invoke();
+
+                // ex-2: Initialize global configuration values
+                App.appConfig = App.Variables.AppConfigVariable.getData();
+            };
+        ```
 
 Use Cases
 - Accessing application variables using ```App.Variables```
@@ -44,18 +49,25 @@ Use Cases
 #### onSessionTimeout
 The ```onSessionTimeout``` callback is invoked when the user session expires due to timeout. This callback allows the application to handle session expiration events.
 
-```javascript
-/* perform any action on session timeout here, e.g clearing some data, etc */
-App.onSessionTimeout = function () {
-    /*
-     * NOTE:
-     * On re-login after session timeout:
-     * if the same user logs in(through login dialog), app will retain its state
-     * if a different user logs in, app will be reloaded and user is redirected to respective landing page configured in Security.
-     */
-};
+        ```javascript
+                /* perform any action on session timeout here, e.g clearing some data, etc */
+                App.onSessionTimeout = function () {
+                    /*
+                        * NOTE:
+                        * On re-login after session timeout:
+                        * if the same user logs in(through login dialog), app will retain its state
+                        * if a different user logs in, app will be reloaded and user is redirected to respective landing page configured in Security.
+                    */
+                    // ex-1: Clear sensitive application data
+                    App.Variables.UserProfile.setData(null);
+                    App.Variables.CartData.setData([]);
 
-```
+                    // ex-2: Show session timeout notification
+                    App.Variables.appNotification.setMessage(
+                        "Your session has expired. Please login again."
+                    );
+                };
+        ```
 
 Use Cases
 - Clearing application or user-specific data
@@ -65,17 +77,22 @@ Use Cases
 #### onPageReady
 The ```onPageReady``` callback is invoked after the execution of the page level onPageReady function. This callback is intended for implementing logic that must execute across all pages.
 
-```javascript
-App.onPageReady = function (activePageName, activePageScope, $activePageEl) {
-/*
- * This application level callback function will be invoked after the invocation of PAGE level onPageReady function.
- * Use this function to write common logic across the pages in the application.
- * activePageName : name of the page
- * activePageScope: scope of the page
- * $activePageEl  : page jQuery element
- */
-};
-```
+        ```javascript
+            App.onPageReady = function (activePageName, activePageScope, $activePageEl) {
+                /*
+                    * This application level callback function will be invoked after the invocation of PAGE level onPageReady function.
+                    * Use this function to write common logic across the pages in the application.
+                    * activePageName : name of the page
+                    * activePageScope: scope of the page
+                    * $activePageEl  : page jQuery element
+                */
+                // ex-1: Track page navigation (analytics/logging)
+                console.log("Page loaded:", activePageName);
+
+                // ex-2: Apply common UI behavior across pages
+                activePageScope.showHeader = true;
+            };
+        ```
 
 Use Cases
 - Applying common UI behavior
@@ -85,18 +102,31 @@ Use Cases
 #### onServiceError
 The ```onServiceError``` callback is invoked when a service or variable invocation results in an error. This callback enables centralized handling of service errors across the application.
 
-```javascript
-App.onServiceError = function (errorMsg, xhrObj) {
-/*
- * This application level callback function will be invoked after a Variable receives an error from the target service.
- * Use this function to write common error handling logic across the application.
- * errorMsg:    The error message returned by the target service. This message will be displayed through appNotification variable
- *              You can change this though App.Variables.appNotification.setMessage(YOUR_CUSTOM_MESSAGE)
- * xhrObj:      The xhrObject used to make the service call
- *              This object contains useful information like statusCode, url, request/response body.
- */
-};
-```
+        ```javascript
+            App.onServiceError = function (errorMsg, xhrObj) {
+                /*
+                    * This application level callback function will be invoked after a Variable receives an error from the target service.
+                    * Use this function to write common error handling logic across the application.
+                    * errorMsg: The error message returned by the target service. This message will be displayed through appNotification variable
+                    * You can change this though App.Variables.appNotification.setMessage(YOUR_CUSTOM_MESSAGE)
+                    * xhrObj: The xhrObject used to make the service call
+                    * This object contains useful information like statusCode, url, request/response body.
+                */
+                // ex-1: Handle unauthorized access (401)
+                if (xhrObj.status === 401) {
+                    App.Variables.appNotification.setMessage(
+                        "Session expired. Please login again."
+                    );
+                }
+
+                // ex-2: Log error details for debugging
+                console.error("Service Error:", {
+                    message: errorMsg,
+                    status: xhrObj.status,
+                    url: xhrObj.responseURL
+                });
+            };
+        ```
 
 Use Cases
 - Displaying custom error messages
@@ -115,19 +145,24 @@ Invocation Timing:
 - Triggered once each time the page is loaded
 - Invoked after all widgets and variables on the page are available
 
-```javascript
-Page.onReady = function () {
-    /*
-     * variables can be accessed through 'Page.Variables' property here
-     * e.g. to get dataSet in a staticVariable named 'loggedInUser' use following script
-     * Page.Variables.loggedInUser.getData()
-     *
-     * widgets can be accessed through 'Page.Widgets' property here
-     * e.g. to get value of text widget named 'username' use following script
-     * 'Page.Widgets.username.datavalue'
-     */
-};
-```
+        ```javascript
+            Page.onReady = function () {
+                /*
+                    * variables can be accessed through 'Page.Variables' property here
+                    * e.g. to get dataSet in a staticVariable named 'loggedInUser' use following script
+                    * Page.Variables.loggedInUser.getData()
+                    
+                    * widgets can be accessed through 'Page.Widgets' property here
+                    * e.g. to get value of text widget named 'username' use following script
+                    * 'Page.Widgets.username.datavalue'
+                */
+                // ex-1: Track page navigation (analytics/logging)
+                console.log("Page loaded:", activePageName);
+
+                // ex-2: Apply common UI behavior across pages
+                activePageScope.showHeader = true;
+            };
+        ```
 
 Page level resources can be accessed within **```Page.onReady```** as follows:
 - Variables: Accessed using **```Page.Variables```**, include reading datasets, invoking service variables, or setting default values.
@@ -138,6 +173,23 @@ Page level resources can be accessed within **```Page.onReady```** as follows:
     ```javascript
     Page.Widgets.UserButton.Caption = "Lucas";
     ```
+
+#### onDestroy
+The page lifecycle event onDestroy event that is triggered when a page is about to be destroyed, typically when the user navigates to another page, app unloads the current page or page component is removed from memory.
+
+```javascript
+Page.mainpageDestroy = function ($event, widget) {
+    // ex-1: Reset Page-Level Variables
+    Page.Variables.tempData.setData(null);
+    Page.Variables.selectedItem.setData({});
+
+    // ex-2: Clear Timers / Intervals
+    if (Page.autoRefreshInterval) {
+        clearInterval(Page.autoRefreshInterval);
+        Page.autoRefreshInterval = null;
+    }
+};
+```
 ---
 ## Component Level Events
 
@@ -154,94 +206,6 @@ Page.UserButtonClick = function ($event, widget) {
 
 For Component Life Cycle Events and Methods refer to the specific [Component Documentation](https://react-components.wavemaker.com).
 
-## Common events for Components
-
-- Form Events
-    - **onBeforeSubmit:** Fires just before the form data is submitted to a variable or API.
-            ```javascript
-                Page.UserButtonClick = function ($event, widget) {
-                    // Commonly used for Validation, data transformation, blocking submission.
-                    alert('The User button click event has been triggered');
-                };
-            ``` 
-
-    - **onSubmit:** When the submit action starts (request is triggered).
-            ```javascript
-                Page.UserButtonClick = function ($event, widget) {
-                    // UI changes or tracking submission start.
-                    alert('The User button click event has been triggered');
-                };
-            ``` 
-
-    - **onSuccess:** After successful form submission and server response.
-            ```javascript
-                Page.UserButtonClick = function ($event, widget) {
-                    // Post-submit actions.
-                    alert('The User button click event has been triggered');
-                };
-            ``` 
-
-- DataTable Events
-    - **onRowSelect:** When a user selects a row in table.
-            ```javascript
-                Page.UserButtonClick = function ($event, widget) {
-                    // Context-specific actions based on selected data.
-                    alert('The User button click event has been triggered');
-                };
-            ``` 
-
-    - **onDataSort:** When sorting is applied on a column.
-            ```javascript
-                Page.UserButtonClick = function ($event, widget) {
-                    // Custom sorting behavior or backend calls.
-                    alert('The User button click event has been triggered');
-                };
-            ``` 
-    - **onHeaderClick:** When any column header is clicked.
-            ```javascript
-                Page.UserButtonClick = function ($event, widget) {
-                    // Header-specific actions beyond sorting.
-                    alert('The User button click event has been triggered');
-                };
-            ``` 
-
-- List Events
-    - **onRender:** Fires each time the list is rendered/refreshed.
-            ```javascript
-                Page.UserButtonClick = function ($event, widget) {
-                    // UI adjustments after data loads.
-                    alert('The User button click event has been triggered');
-                };
-            ``` 
-    - **onSelect:** When a list item is selected.
-            ```javascript
-                Page.UserButtonClick = function ($event, widget) {
-                    // Header-specific actions beyond sorting.
-                    alert('The User button click event has been triggered');
-                };
-            ``` 
-    - **onReorder:** When list items are rearranged (drag & drop).
-            ```javascript
-                Page.UserButtonClick = function ($event, widget) {
-                    // Header-specific actions beyond sorting.
-                    alert('The User button click event has been triggered');
-                };
-            ``` 
-- Card Events
-    - **onClick:** When the card is clicked.
-            ```javascript
-                Page.UserButtonClick = function ($event, widget) {
-                    // Header-specific actions beyond sorting.
-                    alert('The User button click event has been triggered');
-                };
-            ``` 
-    - **onMouseOver:** When cursor hovers over card.
-            ```javascript
-                Page.UserButtonClick = function ($event, widget) {
-                    // Header-specific actions beyond sorting.
-                    alert('The User button click event has been triggered');
-                };
-            ``` 
 
 
 
