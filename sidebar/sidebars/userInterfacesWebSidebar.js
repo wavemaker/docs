@@ -543,11 +543,11 @@ export default [
             id: 'user-interfaces/web/develop/events/event-lifecycle',
             label: 'Event lifecycle',
           },
-          {
-            type: 'doc',
-            id: 'user-interfaces/web/develop/events/common-events-for-components',
-            label: 'Common events for Components',
-          },
+          // {
+          //   type: 'doc',
+          //   id: 'user-interfaces/web/develop/events/common-events-for-components',
+          //   label: 'Common events for Components',
+          // },
           {
             type: 'doc',
             id: 'user-interfaces/web/develop/events/javascriptaccess',

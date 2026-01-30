@@ -2,7 +2,7 @@
 last_update: { author: "Priyanka Bhadri" }
 ---
 
-# Java Integration Services
+# Building Experience APIs
 
 WaveMaker's **Java Integration Services** let you leverage existing backend services within your custom Java code. Using dependency injection, you can access database services, security services, feed services directly from Java Services. This enables stronger integration, reuse of generated services, and more advanced backend logic.
 

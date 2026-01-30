@@ -1,80 +1,162 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import metricsData from '@site/scripts/metrics.json';
+import styles from './docs-metrics.module.css';
 
 export default function MetricsPage() {
-
-  return (
-    <Layout title="Documentation Audit">
-      <main style={{padding: '2rem', maxWidth: '1000px'}}>
-        <h1>Docs Metrics</h1>
-        
-        <div style={{display: 'flex', gap: '10px', marginBottom: '2rem'}}>
-          <StatBox label="Total" value={metricsData.total} />
-          <StatBox label="Completed" value={metricsData.total- (metricsData.noAuthorDocs.length + metricsData.authorDocs['Author Name'].length)} color="#c6fac1ff" />
-          <StatBox label="Unassigned" value={metricsData.noAuthorDocs.length} color="#faef97ff" />
-          <StatBox label="Pending" value={metricsData.authorDocs['Author Name'].length} color="#f8aeaeff" />
-        </div>
-
-        {/* SECTION: UNASSIGNED DOCS */}
-        <section style={{marginBottom: '1rem'}}>
-          <details style={{border: '1px solid #ff4444', borderRadius: '8px', padding: '1rem'}}>
-            <summary style={{fontWeight: 'bold', cursor: 'pointer', color: '#ff4444'}}>
-              Unassigned Docs ({metricsData.noAuthorDocs.length})
-            </summary>
-            <DocTable docs={metricsData.noAuthorDocs} />
-          </details>
-        </section>
-        <section style={{marginBottom: '1rem'}}>
-          <details style={{border: '1px solid #ff4444', borderRadius: '8px', padding: '1rem'}}>
-            <summary style={{fontWeight: 'bold', cursor: 'pointer', color: '#ff4444'}}>
-              Pending Docs ({metricsData.authorDocs['Author Name'].length})
-            </summary>
-            <DocTable docs={metricsData.authorDocs['Author Name']} />
-          </details>
-        </section>
-
-        {/* SECTION: PER AUTHOR */}
-        <h3>Docs by Author</h3>
-        {Object.entries(metricsData.authorDocs).map(([author, docs]) => (
-          author == "Author Name" ? <></> : <details key={author} style={{border: '1px solid #ddd', borderRadius: '8px', padding: '1rem', marginBottom: '10px'}}>
-            <summary style={{fontWeight: 'bold', cursor: 'pointer'}}>
-              {author} — ({docs.length} docs)
-            </summary>
-            <DocTable docs={docs} />
-          </details>
-        ))}
-      </main>
-    </Layout>
+  const allPendingDocs = metricsData.noAuthorDocs || [];
+  const allMigratedDocs = metricsData.authorDocs['WaveMaker'] || [];
+  const allInProgressDocs = metricsData.authorDocs['Author Name'] || [];
+  const completedAuthors = Object.keys(metricsData.authorDocs).filter(
+    author => author !== 'WaveMaker' && author !== 'Author Name',
   );
-}
+  const allCompletedDocs = completedAuthors.flatMap(author => metricsData.authorDocs[author]);
 
-function DocTable({ docs }) {
-  return (
-    <table style={{width: '100%', marginTop: '1rem', fontSize: '0.85rem'}}>
+  // Helper to split docs into Core and Guide
+  const filterByPath = (docs, isGuide) => docs.filter(doc => doc.path.startsWith('guide/') === isGuide);
+
+  const coreMetrics = {
+    pending: filterByPath(allPendingDocs, false),
+    migrated: filterByPath(allMigratedDocs, false),
+    inProgress: filterByPath(allInProgressDocs, false),
+    completed: filterByPath(allCompletedDocs, false),
+  };
+
+  const guideMetrics = {
+    pending: filterByPath(allPendingDocs, true),
+    migrated: filterByPath(allMigratedDocs, true),
+    inProgress: filterByPath(allInProgressDocs, true),
+    completed: filterByPath(allCompletedDocs, true),
+  };
+
+  const coreNewDocsCount = coreMetrics.inProgress.length + coreMetrics.completed.length;
+  const guideNewDocsCount = guideMetrics.inProgress.length + guideMetrics.completed.length;
+
+
+  const DocTable = ({ docs }) => (
+    <table className={styles.table}>
       <thead>
-        <tr style={{textAlign: 'left', borderBottom: '1px solid #eee'}}>
-          <th>File Name</th>
+        <tr>
+          <th>Filename</th>
           <th>Relative Path</th>
         </tr>
       </thead>
       <tbody>
-        {docs.map((doc, i) => (
-          <tr key={i} style={{borderBottom: '1px solid #f9f9f9'}}>
-            <td style={{padding: '5px', fontWeight: '500'}}>{doc.name}</td>
-            <td style={{padding: '5px', color: '#666'}}><code>{doc.path}</code></td>
+        {docs.map((doc, index) => (
+          <tr key={index}>
+            <td>{doc.name}</td>
+            <td>
+              <code>{doc.path}</code>
+            </td>
           </tr>
         ))}
       </tbody>
     </table>
   );
-}
 
-function StatBox({label, value, color="#f4f4f4"}) {
+  const Accordion = ({ title, docs, count }) => (
+    <details className={styles.accordion}>
+      <summary className={styles.accordionSummary}>
+        <span>
+          {title} ({count || docs.length})
+        </span>
+        <span className={styles.arrow}>▼</span>
+      </summary>
+      <div className={styles.accordionContent}>
+        <DocTable docs={docs} />
+      </div>
+    </details>
+  );
+
   return (
-    <div style={{background: color, padding: '1rem', borderRadius: '8px', flex: 1, textAlign: 'center', border: '1px solid #ddd'}}>
-      <div style={{fontSize: '0.8rem', textTransform: 'uppercase'}}>{label}</div>
-      <div style={{fontSize: '1.5rem', fontWeight: 'bold'}}>{value}</div>
-    </div>
+    <Layout
+      title="Documentation Metrics"
+      description="Overview of documentation migration and author contributions"
+    >
+      <div className={styles.metricsContainer}>
+        <header className={styles.header}>
+          <h1>Documentation Metrics</h1>
+          <p>Real-time audit of our documentation status</p>
+        </header>
+        <h2 className={styles.sectionTitle}>Core Docs</h2>
+        <section className={styles.topRow}>
+          <div className={`${styles.card} ${styles.newDocsCard}`}>
+            <div className={styles.cardTitle}>New Docs</div>
+            <div className={styles.cardValue}>{coreNewDocsCount}</div>
+            <div className={styles.internalGrid}>
+              <div className={styles.internalBox}>
+                <div className={styles.internalTitle}>In Progress</div>
+                <div className={styles.internalValue}>{coreMetrics.inProgress.length}</div>
+              </div>
+              <div className={styles.internalBox}>
+                <div className={styles.internalTitle}>Completed</div>
+                <div className={styles.internalValue}>{coreMetrics.completed.length}</div>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.card}>
+            <div className={styles.cardTitle}>Migrated</div>
+            <div className={styles.cardValue}>{coreMetrics.migrated.length}</div>
+          </div>
+          <div className={styles.card}>
+            <div className={styles.cardTitle}>Pending</div>
+            <div className={styles.cardValue}>{coreMetrics.pending.length}</div>
+          </div>
+        </section>
+        <h2 className={styles.sectionTitle}>Other Migrated Docs</h2>
+        <section className={styles.secondRow}>
+          <div className={styles.card}>
+            <div className={styles.cardTitle}>Feature Announcements</div>
+            <div className={styles.cardValue}>{metricsData.featureAnnouncementCount || 0}</div>
+          </div>
+          <div className={styles.card}>
+            <div className={styles.cardTitle}>Blogs</div>
+            <div className={styles.cardValue}>{metricsData.blogCount || 0}</div>
+          </div>
+        </section>
+        <h2 className={`${styles.sectionTitle} ${styles.guideSectionTitle}`}>Guides</h2>
+        <section className={styles.topRow}>
+          <div className={`${styles.card} ${styles.guideCard} ${styles.guideNewDocsCard}`}>
+            <div className={styles.cardTitle}>New Docs</div>
+            <div className={styles.cardValue}>{guideNewDocsCount}</div>
+            <div className={styles.internalGrid}>
+              <div className={styles.internalBox}>
+                <div className={styles.internalTitle}>In Progress</div>
+                <div className={styles.internalValue}>{guideMetrics.inProgress.length}</div>
+              </div>
+              <div className={styles.internalBox}>
+                <div className={styles.internalTitle}>Completed</div>
+                <div className={styles.internalValue}>{guideMetrics.completed.length}</div>
+              </div>
+            </div>
+          </div>
+          <div className={`${styles.card} ${styles.guideCard}`}>
+            <div className={styles.cardTitle}>Migrated</div>
+            <div className={styles.cardValue}>{guideMetrics.migrated.length}</div>
+          </div>
+          <div className={`${styles.card} ${styles.guideCard}`}>
+            <div className={styles.cardTitle}>Pending</div>
+            <div className={styles.cardValue}>{guideMetrics.pending.length}</div>
+          </div>
+        </section>
+        <h2 className={styles.sectionTitle}>Detailed Breakdown</h2>
+        <div className={styles.accordionSection}>
+          <Accordion title="Pending Docs" docs={allPendingDocs} />
+          <Accordion title="Migrated Docs" docs={allMigratedDocs} />
+          <Accordion title="In Progress Docs" docs={allInProgressDocs} />
+          <Accordion title="Completed Docs" docs={allCompletedDocs} />
+        </div>
+
+        <h2 className={styles.sectionTitle}>Docs by Authors</h2>
+        <div className={styles.accordionSection}>
+          {Object.keys(metricsData.authorDocs)
+            .sort()
+            .map(author => (
+              <Accordion key={author} title={author} docs={metricsData.authorDocs[author]} />
+            ))}
+        </div>
+      </div>
+    </Layout>
   );
 }

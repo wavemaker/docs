@@ -146,3 +146,93 @@ Page.UserButtonClick = function ($event, widget) {
 ``` 
 
 For Component Life Cycle Events and Methods refer to the specific [Component Documentation](https://react-components.wavemaker.com).
+
+## Common events for Components
+
+- Form Events
+    - **onBeforeSubmit:** Fires just before the form data is submitted to a variable or API.
+            ```javascript
+                Page.UserButtonClick = function ($event, widget) {
+                    // Commonly used for Validation, data transformation, blocking submission.
+                    alert('The User button click event has been triggered');
+                };
+            ``` 
+
+    - **onSubmit:** When the submit action starts (request is triggered).
+            ```javascript
+                Page.UserButtonClick = function ($event, widget) {
+                    // UI changes or tracking submission start.
+                    alert('The User button click event has been triggered');
+                };
+            ``` 
+
+    - **onSuccess:** After successful form submission and server response.
+            ```javascript
+                Page.UserButtonClick = function ($event, widget) {
+                    // Post-submit actions.
+                    alert('The User button click event has been triggered');
+                };
+            ``` 
+
+- DataTable Events
+    - **onRowSelect:** When a user selects a row in table.
+            ```javascript
+                Page.UserButtonClick = function ($event, widget) {
+                    // Context-specific actions based on selected data.
+                    alert('The User button click event has been triggered');
+                };
+            ``` 
+
+    - **onDataSort:** When sorting is applied on a column.
+            ```javascript
+                Page.UserButtonClick = function ($event, widget) {
+                    // Custom sorting behavior or backend calls.
+                    alert('The User button click event has been triggered');
+                };
+            ``` 
+    - **onHeaderClick:** When any column header is clicked.
+            ```javascript
+                Page.UserButtonClick = function ($event, widget) {
+                    // Header-specific actions beyond sorting.
+                    alert('The User button click event has been triggered');
+                };
+            ``` 
+
+- List Events
+    - **onRender:** Fires each time the list is rendered/refreshed.
+            ```javascript
+                Page.UserButtonClick = function ($event, widget) {
+                    // UI adjustments after data loads.
+                    alert('The User button click event has been triggered');
+                };
+            ``` 
+    - **onSelect:** When a list item is selected.
+            ```javascript
+                Page.UserButtonClick = function ($event, widget) {
+                    // Header-specific actions beyond sorting.
+                    alert('The User button click event has been triggered');
+                };
+            ``` 
+    - **onReorder:** When list items are rearranged (drag & drop).
+            ```javascript
+                Page.UserButtonClick = function ($event, widget) {
+                    // Header-specific actions beyond sorting.
+                    alert('The User button click event has been triggered');
+                };
+            ``` 
+- Card Events
+    - **onClick:** When the card is clicked.
+            ```javascript
+                Page.UserButtonClick = function ($event, widget) {
+                    // Header-specific actions beyond sorting.
+                    alert('The User button click event has been triggered');
+                };
+            ``` 
+    - **onMouseOver:** When cursor hovers over card.
+            ```javascript
+                Page.UserButtonClick = function ($event, widget) {
+                    // Header-specific actions beyond sorting.
+                    alert('The User button click event has been triggered');
+                };
+            ``` 
+
