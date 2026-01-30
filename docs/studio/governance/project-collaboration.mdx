@@ -4,321 +4,157 @@ last_update: { author: "Author Name" }
 
 # Projects Collaboration
 
-Centralized hub for managing all projects, monitoring status, and organizing development work.
+ProjectHub is the **central workspace in WaveMaker** where developers build, manage, reuse, deploy, and monitor applications. It provides a unified experience to handle the entire application lifecycle—from development to production—across web and mobile platforms.
+
 
 ## Overview
 
-The Projects Hub serves as the central location for viewing, managing, and organizing all projects within your organization. It provides a comprehensive overview of project status, resource allocation, and development progress.
-
-## Projects Dashboard
-
-### Overview
-
-#### Dashboard Components
-
-- **Active Projects** - Currently in development
-- **Deployed Projects** - Production applications
-- **Archived Projects** - Completed/inactive projects
-- **Project Templates** - Reusable templates
-- **Shared Resources** - Common components
-
-### Project List
-
-#### Project Card Information
-
-```javascript
-{
-  "projectName": "E-Commerce Platform",
-  "status": "Active",
-  "progress": 75,
-  "owner": "lead-dev@company.com",
-  "team": 5,
-  "lastUpdate": "2 hours ago",
-  "deployment": "Staging",
-  "health": "Good"
-}
-```
-
-## Project Management
-
-### Creating Projects
-
-#### New Project
-
-1. Click "Create Project"
-2. Choose template or start blank
-3. Configure project:
-   - Name
-   - Description
-   - Technology stack
-   - Team members
-4. Set up repository
-5. Initialize project
-
-#### Project Templates
-
-- **Responsive Web App** - Mobile-first template
-- **Dashboard Application** - Admin dashboard
-- **E-Commerce** - Shopping platform
-- **CRM System** - Customer management
-- **Custom** - Start from scratch
-
-### Project Organization
-
-#### Folder Structure
-
-```
-Projects
-├── Active
-│   ├── CustomerPortal
-│   ├── EmployeeManagement
-│   └── InventorySystem
-├── Staging
-│   ├── MobileApp
-│   └── ReportingDashboard
-└── Archived
-    ├── LegacySystem
-    └── OldWebsite
-```
-
-#### Tags and Labels
-
-- Environment (Dev, Test, Prod)
-- Technology (React, Angular, Vue)
-- Status (Active, Paused, Complete)
-- Priority (High, Medium, Low)
-- Department (Sales, HR, Finance)
-
-## Project Monitoring
-
-### Status Tracking
-
-#### Project Health Metrics
-
-```javascript
-{
-  "buildStatus": "Passing",
-  "testCoverage": 85,
-  "codeQuality": "A",
-  "vulnerabilities": 0,
-  "deploymentStatus": "Success",
-  "lastDeployment": "2024-12-10 14:30:00"
-}
-```
-
-#### Performance Metrics
-
-- Build time
-- Deployment frequency
-- Mean time to recovery
-- Change failure rate
-- Lead time for changes
-
-### Activity Timeline
-
-- Recent commits
-- Pull requests
-- Deployments
-- Team activities
-- System events
-
-## Resource Management
-
-### Team Assignment
-
-#### Assign Team Members
-
-```javascript
-{
-  "project": "CustomerPortal",
-  "team": [
-    {
-      "member": "john.doe@company.com",
-      "role": "Lead Developer",
-      "allocation": "100%"
-    },
-    {
-      "member": "jane.smith@company.com",
-      "role": "UI/UX Designer",
-      "allocation": "50%"
-    }
-  ]
-}
-```
-
-### Resource Allocation
-
-- Developer hours
-- Infrastructure costs
-- Cloud resources
-- Third-party services
-- License usage
-
-## Project Settings
-
-### General Settings
-
-- Project name and description
-- Visibility (Public/Private)
-- Owner and maintainers
-- Tags and categories
-- Archive/Delete options
-
-### Technical Settings
-
-- Technology stack
-- Database configuration
-- API integrations
-- Build settings
-- Deployment configuration
-
-### Access Control
-
-- Team member roles
-- Permission levels
-- External access
-- API access
-- Security policies
-
-## Deployment Management
-
-### Deployment History
-
-```javascript
-{
-  "deployments": [
-    {
-      "environment": "Production",
-      "version": "v2.1.0",
-      "timestamp": "2024-12-10 14:30:00",
-      "deployedBy": "admin@company.com",
-      "status": "Success",
-      "duration": "3m 45s"
-    }
-  ]
-}
-```
-
-### Environment Management
-
-- Development
-- Staging
-- UAT
-- Production
-- Custom environments
-
-## Collaboration
-
-### Project Comments
-
-- Discussion threads
-- Task comments
-- Code reviews
-- Announcements
-- @mentions
-
-### Documentation
-
-- Project README
-- Technical docs
-- API documentation
-- User guides
-- Change logs
-
-## Analytics
-
-### Project Analytics
-
-#### Development Metrics
-
-- Commit frequency
-- Lines of code
-- Developer contribution
-- Code churn
-- Merge frequency
-
-#### Quality Metrics
-
-- Code coverage
-- Bug count
-- Technical debt
-- Code smells
-- Duplication
-
-### Reporting
-
-- Weekly/Monthly reports
-- Executive summaries
-- Team performance
-- Resource utilization
-- Cost analysis
-
-## Project Templates
-
-### Creating Templates
-
-#### Template Definition
-
-```javascript
-{
-  "name": "E-Commerce Template",
-  "description": "Complete e-commerce solution",
-  "includes": [
-    "Product catalog",
-    "Shopping cart",
-    "Checkout process",
-    "Payment integration",
-    "Order management"
-  ],
-  "techStack": {
-    "frontend": "React",
-    "backend": "Spring Boot",
-    "database": "PostgreSQL"
-  }
-}
-```
-
-### Using Templates
-
-1. Select template
-2. Configure options
-3. Customize settings
-4. Create project
-5. Start development
-
-## Best Practices
-
-### Project Organization
-
-1. **Clear naming conventions**
-2. **Consistent structure**
-3. **Regular updates**
-4. **Documentation**
-5. **Version control**
-
-### Team Management
-
-1. **Define roles** clearly
-2. **Regular communication**
-3. **Code reviews**
-4. **Knowledge sharing**
-5. **Performance tracking**
-
-### Deployment
-
-1. **Automated pipelines**
-2. **Testing before deploy**
-3. **Staged rollouts**
-4. **Monitoring**
-5. **Rollback plans**
-
-## Troubleshooting
-
-### Common Issues
-
-- Project access problems
-- Build failures
-- Deployment errors
-- Team synchronization
-- Resource conflicts
+ProjectHub is built to support everyday development and collaboration needs. Developers typically use it to:
 
+- Create and manage applications in one place
+- Reuse shared assets such as prefabs and templates
+- Control access through team-based permissions
+- Track deployed applications and their status
+- Diagnose issues using centralized logs
+- Move between tools quickly using the App Launcher
+
+It is commonly used by developers, team leads, and administrators working on enterprise applications.
+
+
+## Core Modules in ProjectHub
+
+ProjectHub is organized into a small set of focused modules. Each module addresses a specific part of the application lifecycle and team collaboration flow.
+
+### Modules Overview
+
+- **Apps** – Create and manage web and mobile applications  
+- **Prefabs** – Reusable components shared across applications  
+- **Team Portal** – Manage teams, users, and access  
+- **Logs** – View application and system logs  
+- **Deployed Apps** – Monitor applications running in environments  
+- **App Launcher** – Entry point to platform tools and resources  
+
+![alt text](assets/project_collaboration.png)
+
+
+## Apps
+
+The **Apps** module is where most development work starts in ProjectHub. It provides a consolidated view of all applications you have access to, making it easy to create new apps, import existing ones, and manage ongoing development. From this view, you can search, filter, and organize applications, as well as work with multiple branches for parallel development and releases.
+
+Applications in ProjectHub are grouped into the following categories:
+
+- **Core Projects** – Foundational or platform-level applications used as a base for development
+- **Archived Apps** – Applications that are no longer actively worked on but are retained for reference
+- **Deployed Apps** – Applications that have already been deployed to one or more environments
+
+ProjectHub supports both major application types:
+
+- **Web Applications** – Applications designed for browser-based usage
+- **Mobile Applications** – Native or hybrid applications built for mobile devices
+
+
+Each app card shows basic details such as the application name, branch information, last update time, and app type.
+
+
+
+## Prefabs
+
+Prefabs are reusable UI and functional components that help reduce repetitive development work.
+
+Developers typically use prefabs to standardize common features and maintain consistency across applications.
+
+### Why Use Prefabs
+- Save time by reusing existing functionality
+- Keep UI and behavior consistent
+- Reduce long-term maintenance effort
+
+### What You Can Do
+- Browse available prefabs
+- Add prefabs to your applications
+- Configure prefab properties as needed
+- Create and publish custom prefabs for reuse
+
+
+
+## Team Portal
+
+The **Team Portal** is used to manage collaboration across projects.
+
+### What You Can Do
+- Create and manage teams
+- Add or remove team members
+- Assign roles and permissions
+- Control access to applications and shared assets
+
+This helps ensure that the right people have the right level of access.
+
+Learn more: [Team Settings](team_settings)
+
+
+## Logs
+
+The **Logs** module provides visibility into application and system activity.
+
+It is commonly used during development, testing, and production support to understand what is happening inside an application.
+
+### Types of Logs
+- Application runtime logs
+- Build logs
+- Deployment logs
+
+### Benefits
+- Faster issue investigation
+- Better understanding of failures
+- Improved operational awareness
+
+
+
+## Deployed Apps
+
+The **Deployed Apps** module focuses on applications that are already running in environments.
+
+### What You Can Do
+- View all deployed applications
+- Check application status and availability
+- Monitor environment health
+- Redeploy or roll back applications when required
+
+This module is especially useful for tracking production and staging deployments.
+
+
+
+## App Launcher
+
+The **App Launcher** is the global navigation menu in WaveMaker.
+
+It allows users to quickly switch between ProjectHub modules and other platform tools without leaving the current context.
+
+### Accessible From App Launcher
+- Academy
+- Docs
+- Marketplace
+- Web
+- Mobile
+- UI Kit
+
+The App Launcher helps reduce navigation overhead and keeps workflows smooth.
+
+
+
+## How ProjectHub Fits Together
+
+| Stage | Module |
+|------|--------|
+| Build | Apps |
+| Reuse | Prefabs |
+| Collaborate | Team Portal |
+| Deploy | Deployed Apps |
+| Monitor | Logs |
+| Navigate | App Launcher |
+
+
+## Summary
+
+ProjectHub acts as the **single source of truth** for application development and operations in WaveMaker. By combining development, reuse, deployment, monitoring, and collaboration into one workspace, it helps developers work more efficiently and maintain better visibility across projects.
+
+---
