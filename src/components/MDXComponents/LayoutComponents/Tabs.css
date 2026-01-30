@@ -1,0 +1,65 @@
+.tabs-wrapper {
+  margin: 1.5rem 0;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--ifm-background-color);
+}
+
+.tabs-nav {
+  display: flex;
+  overflow-x: auto;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  background-color: var(--ifm-color-emphasis-100);
+  scrollbar-width: thin;
+  -ms-overflow-style: none;
+}
+
+.tabs-nav::-webkit-scrollbar {
+  height: 4px;
+}
+
+.tabs-nav::-webkit-scrollbar-thumb {
+  background: var(--ifm-color-emphasis-300);
+  border-radius: 4px;
+}
+
+.tab-btn {
+  padding: 0.75rem 1.25rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-600);
+  border-bottom: 3px solid transparent;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+}
+
+.tab-btn:hover {
+  color: var(--ifm-color-primary);
+  background-color: var(--ifm-color-emphasis-200);
+}
+
+.tab-btn.active {
+  color: var(--ifm-color-primary);
+  border-bottom-color: var(--ifm-color-primary);
+  background-color: var(--ifm-background-color);
+}
+
+.tab-content {
+  padding: 1.5rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .tabs-nav {
+    padding: 0 4px;
+  }
+  
+  .tab-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+}

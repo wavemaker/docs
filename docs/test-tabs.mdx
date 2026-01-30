@@ -1,0 +1,27 @@
+---
+hide_table_of_contents: true
+---
+
+# Tab Component Test
+
+<TabsWrapper>
+  <TabItem name="Overview">
+    ## Overview Content
+    This is the overview of the feature. It contains some **markdown** text.
+  </TabItem>
+  <TabItem name="Installation">
+    ## Installation Steps
+    1. Run `npm install`
+    2. Enjoy the tabs!
+  </TabItem>
+  <TabItem name="Usage">
+    ```javascript
+    import { TabsWrapper, TabItem } from '...';
+    ```
+  </TabItem>
+  <TabItem name="Extremely Long Tab Name for Testing Overflow">
+    This tab has a very long name to test if the tab navigation handles overflow correctly.
+  </TabItem>
+  <TabItem name="Tab 5">More content.</TabItem>
+  <TabItem name="Tab 6">Even more content.</TabItem>
+</TabsWrapper>

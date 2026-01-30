@@ -14,6 +14,7 @@ import VideoCard from '@site/src/components/MDXComponents/VideoCard/VideoCard';
 import WMComponents from '@site/src/components/MDXComponents/WMComponents/WMComponents';
 import Link from '@docusaurus/Link';
 import AcademyCard from '@site/src/components/MDXComponents/AcademyCard/AcademyCard';
+import { TabsWrapper, TabItem } from '@site/src/components/MDXComponents/LayoutComponents/Tabs';
 const MDXComponents = {
   Head,
   details: MDXDetails, // For MD mode support, see https://github.com/facebook/docusaurus/issues/9092#issuecomment-1602902274
@@ -35,6 +36,8 @@ const MDXComponents = {
   VideoCard,
   WMComponents,
   Link,
-  AcademyCard
+  AcademyCard,
+  TabsWrapper,
+  TabItem
 };
 export default MDXComponents;
