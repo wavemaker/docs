@@ -1,0 +1,214 @@
+
+.metricsContainer {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  color: var(--ifm-color-emphasis-900);
+}
+
+.header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.topRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: var(--ifm-card-background-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.cardTitle {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  color: var(--ifm-color-emphasis-600);
+  margin-bottom: 0.5rem;
+}
+
+.cardValue {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+}
+
+.newDocsCard {
+  grid-column: span 1;
+  background: linear-gradient(135deg, var(--ifm-color-primary-darker), var(--ifm-color-primary));
+  color: white;
+}
+
+.newDocsCard .cardTitle {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.newDocsCard .cardValue {
+  color: white;
+}
+
+.internalGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.internalBox {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.internalTitle {
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+.internalValue {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.secondRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.accordionSection {
+  margin-bottom: 3rem;
+}
+
+.accordion {
+  margin-bottom: 1rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.accordionSummary {
+  padding: 1rem 1.5rem;
+  background: var(--ifm-color-emphasis-100);
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+
+.accordionSummary::-webkit-details-marker {
+  display: none;
+}
+
+.arrow {
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+  color: var(--ifm-color-emphasis-500);
+}
+
+details[open] .arrow {
+  transform: rotate(180deg);
+}
+
+.accordionContent {
+  padding: 1rem;
+  background: var(--ifm-background-color);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+
+.table th, .table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.table th {
+  background: var(--ifm-color-emphasis-100);
+  font-size: 0.85rem;
+}
+
+.table tr:hover {
+  background: var(--ifm-color-emphasis-50);
+}
+
+.sectionTitle {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  border-bottom: 2px solid var(--ifm-color-primary);
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.guideSectionTitle {
+  font-size: 1.2rem;
+  border-bottom: 2px solid var(--ifm-color-primary);
+}
+
+.guideCard {
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.guideCard .cardValue {
+  font-size: 1.8rem;
+}
+
+.guideCard .cardTitle {
+  font-size: 0.75rem;
+}
+
+.guideNewDocsCard {
+  background: linear-gradient(135deg, var(--ifm-color-primary-darker), var(--ifm-color-primary));
+  color: white;
+}
+
+.guideNewDocsCard .cardTitle {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.guideNewDocsCard .cardValue {
+  color: white;
+}
+
+.guideNewDocsCard .internalBox {
+  padding: 0.6rem;
+}
+
+.guideNewDocsCard .internalValue {
+  font-size: 1.1rem;
+}
+
+.guideNewDocsCard .internalTitle {
+  font-size: 0.7rem;
+}
+
+@media (max-width: 768px) {
+  .topRow, .secondRow {
+    grid-template-columns: 1fr;
+  }
+}
