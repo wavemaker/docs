@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import metricsData from '@site/scripts/metrics.json';
-import styles from './docs-metrics.module.css';
+import styles from './styles.module.css';
 
 export default function MetricsPage() {
   const allPendingDocs = metricsData.noAuthorDocs || [];
