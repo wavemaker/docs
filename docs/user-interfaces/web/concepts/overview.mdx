@@ -4,8 +4,6 @@ last_update: { author: "Deepak A" }
 
 # Overview
 
-## Building Web Apps
-
 WaveMaker Platform provides 
 - well-architected UI framework
 - a comprehensive component library and
@@ -13,15 +11,13 @@ WaveMaker Platform provides
 
 which enable web app developers to build applications using simple and abstracted set of UI concepts. App developers with essential skills in HTML, CSS & JavaScript are empowered to build complex, scalable and enterprise-grade web applications using WaveMaker.
 
-Platform uses component-based architecture and a meta markup known as WaveMaker Markup Language (WML) to represent components within a page similar to HTML, which is used by code generators to generate Angular or React code.
+WaveMaker provides a technology agnostic UI development methodology without requiring app developers to learn the underlying javascript frameworks i.e., Angular, React or React Native. Both web and mobile app developers embrace a unified development model with the same UI concepts for building apps.
 
-UI concepts are AI-ready enabling agents to generate application artifacts from the intent, spec or designs provided by app developers.
+Platform uses component-based architecture and a meta markup known as WaveMaker Markup Language (WML) to represent components within a page similar to HTML, which is used by code generators to generate Angular or React code.
 
 ## UI Concepts
 
 Web App UI is very well separated into layers to define styling, layouts, components and client-side logic. WaveMaker open source component library provides a comprehensive set of components for building enterprise-grade forms, dashboards, portals etc. with scalable, secure and modern experience needs.
-
-WaveMaker provides a technology agnostic UI development methodology without requiring app developers to learn the underlying javascript frameworks i.e., Angular, React or React Native. Both web and mobile app developers embrace a unified development model with the same UI concepts for building apps.
 
 ![UI architecture](../assets/ui-architecture.png)
 
@@ -105,8 +101,12 @@ Actions provide routing capability to transition between pages, dialogs or messa
     }
 ```
 
-### UI Events
-UI Events are available across components, variables, actions and page or application context, enabling developers to write client-side logic using JavaScript to fully customize and take control of the user behaviour.
+### Events
+There are 2 types of events:
+- UI Events - initiated by end user interactions such as mouse click, keystroke, tap or touch events
+- Lifecycle and State change events such as onChange, onLoad, onSuccess etc., for components, variables, actions, page and application
+
+With events, developers can write client-side logic using JavaScript to fully customize application behaviour and take control of the user interactions.
 ```javascript
     Page.button1Click = function ($event, widget) {
         Page.Widgets.select1.dataset = ["min", "max", "same"]
@@ -117,6 +117,8 @@ UI Events are available across components, variables, actions and page or applic
 ## Single Page Application
 
 Application code generated in Angular or React adheres to Single Page Application construct and uses architectural principles from the underlying javascript framework such as components, routing, state management, virtual-DOM or 2-way binding etc. Platform generated code is readable, maintainable and secure for enterprise deployments.
+
+UI concepts are AI-ready enabling agents to generate application artifacts from the intent, spec or designs provided by app developers.
 
 ## Hybrid development model
 Developers are provided with a hybrid approach for building apps
