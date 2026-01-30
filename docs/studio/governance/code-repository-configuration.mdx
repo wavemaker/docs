@@ -1,5 +1,111 @@
 ---
-last_update: { author: "Author Name" }
+last_update: { author: "Gayathri Kalanadhabatla" }
 ---
 
-# Code Repository Configuration
+# Integration with Custom Version Control System (VCS)
+
+WaveMaker allows teams to integrate their applications with an external Version Control System (VCS). This enables teams to connect WaveMaker projects to their own Git repositories instead of using the default WaveMaker-managed Git repository.
+
+This feature is useful for organizations that want full control over their source code, follow existing Git workflows, or integrate with external CI/CD pipelines.
+
+
+## Overview
+
+By default, WaveMaker Studio uses an internal Git-based repository to manage application source code.  
+With Custom VCS integration, teams can configure WaveMaker to connect to an external repository.
+
+Once configured, WaveMaker applications can push and pull code directly from the configured external repository.
+
+## Availability
+
+Custom VCS integration is available only for:
+
+- **WaveMaker Online Teams (WMOT)**
+- **WaveMaker Enterprise (WME)**
+
+ This feature is **not available** for individual WaveMaker Online users.
+
+
+## Supported VCS Providers
+
+WaveMaker supports the following external Git providers:
+
+- GitLab
+- Bitbucket
+- GitHub
+- Azure Repos
+
+
+## Configuration Steps
+
+To configure a custom VCS repository, follow these steps:
+
+
+#### 1. Open Team Portal
+
+Log in to WaveMaker Studio and navigate to the Team Portal, which is used to manage team-level configurations.
+
+
+#### 2. Go to  Code Repository
+
+Locate and click on **Code Repository**.  
+This section is used to manage Git repository integrations.
+
+
+#### 3. Add Code Repository
+
+Click **Add Code Repository** to configure a new external VCS connection.
+
+
+#### 4. Configure Repository Details
+
+Provide the required details based on the selected VCS provider:
+
+- Repository provider (GitHub, GitLab, Bitbucket, or Azure)
+- Repository URL
+- Authentication details (username and access token)
+- Default branch
+- Any provider-specific configuration fields
+
+
+
+#### 5. Save Configuration
+
+Click on **Save** to complete the setup.  
+The external repository is now available for use with WaveMaker applications.
+
+
+
+### Usage After Integration
+
+After a custom VCS is configured:
+
+- Application source code can be pushed to the external repository
+- Developers can clone, manage branches, and raise pull requests externally
+- Teams can integrate the repository with their own CI/CD tools
+- Standard Git workflows (branching, merging, PR reviews) can be followed
+
+WaveMaker’s built-in VCS features continue to work with the configured external repository.
+
+
+### Super Admin Setup Flow
+
+Super Admins first set up the team from the **Launchpad → Team Portal → Setup Team**. As part of the initial setup, they configure the team profile and select the external **Code Repository (VCS)**
+Subsequent configuration steps remain the same for all users.
+
+
+
+## For Enterprise Users
+
+For **WaveMaker Enterprise (WME)** deployments, custom VCS configuration follows the same process through the Team Portal or Admin configuration.
+
+The same supported providers and authentication methods apply.
+
+
+:::note
+To learn how to configure an external code repository, watch the video below:
+
+▶️ [Custom Repository Configuration](https://next-academy.wavemaker.com/Walkthrough?wm=F10915CB96)
+:::
+
+
