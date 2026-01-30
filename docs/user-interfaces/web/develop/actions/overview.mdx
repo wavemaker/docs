@@ -16,10 +16,24 @@ Actions represent operations performed by the application when an event occurs. 
 - System-driven events (such as successful completion of a service call)
 Actions enable developers to implement business logic, rules, and navigation flows without tightly coupling them to UI components.
 
-### Types of Actions
-- **Navigation**
-- **Login**
-- **Logout**
-- **Timer**
-- **Notification**
+## Action Creation
+There are two ways of creating a Action
+- Select the Action option from Variables on the Workspace Toolbar
+![Action](../../assets/actionStep1.png)
+
+- Click New Action from the Actions dialog.
+![Action](../../assets/actionStep2.png)
+
+- or as a New Action event on any component
+![Action](../../assets/actionStep2.1.png)
+
+- In both the cases, a New Action dialog will open.
+![Action](../../assets/actionStep3.png)
+
+### Action Types
+- **Navigation:** action provides navigation capabilities to help in navigating from one page or view to another
+- **Login:** action is to authenticate a user at the server. A Login Action is created automatically when you enable Security in your application
+- **Logout** action
+- **Timer:** action can be used to trigger events repeatedly at timed intervals.
+- **Notification:** is an action to show UI notifications in the app in the form of a toaster, alert or a confirmation box
 

@@ -2,75 +2,43 @@
 last_update: { author: "Priyanka Bhadri" }
 ---
 
-# Building Custom APIs Using Java Services
+# Overview
 
-WaveMaker allows developers to extend their applications beyond the default CRUD operations by building **custom APIs** using Java Services. This approach leverages the full flexibility of Java, Spring, and Hibernate while maintaining the low-code productivity of WaveMaker.  
+WaveMaker allows developers to go beyond default CRUD operations by building **custom APIs using Java Services**. This approach is ideal for a **backend-for-frontend (BFF)** pattern, where multiple backend APIs, database services, or integrations need to be orchestrated and exposed as a **single API** tailored for frontend requirements. 
 
----
-
-## What is a Java Service?
-
-A **Java Service** in WaveMaker is a Java class that exposes business logic or integration functionality as a reusable service. These services can:  
-
-- Encapsulate custom business logic.  
-- Interact with databases, external APIs, or third-party services.  
-- Be invoked from WaveMaker pages, widgets, or other backend services.  
-- Be exposed as REST endpoints for external applications.
-
-Java Services provide full control over the backend while remaining fully compatible with WaveMaker's generated code.
+With Java Services, you can implement custom business logic, aggregate data from multiple sources, and return a unified response, reducing frontend complexity while still leveraging the power of Java, Spring, and Hibernate within WaveMaker’s low-code environment.
 
 ---
 
 
 
-##  Steps to Build a Custom API
+## Building a Custom API
 
-###  Create a Java Service
-In WaveMaker Studio, navigate to **Services → Java Services → New Service**.  
-Provide a meaningful service name and define the appropriate Java package structure.  
-WaveMaker generates the initial service artifacts, including the Java class, Spring configuration, and API metadata.
+This section explains how to build a custom API using Java Services in WaveMaker. By following these steps, you can implement backend-for-frontend (BFF) patterns, combine data from multiple sources, and expose a unified REST API tailored to your application’s requirements.
 
-This service acts as the foundation for implementing custom business logic.
 
----
+### Creating a Java Service
 
-###  Implement Business Methods
-Add one or more methods to the Java service to implement your application logic.  
-These methods can:
+To begin building a custom API, start by creating a Java Service in WaveMaker Studio. Navigate to **Services → Java Services → New Service**, provide a meaningful service name. 
 
-- Perform calculations or validations  
-- Orchestrate multiple service or database calls  
-- Integrate with external systems or SDKs  
+WaveMaker automatically generates the required service artifacts. This Java Service serves as the foundation for implementing your custom business logic and API orchestration.
 
-Input parameters can be of the type:
+### Implementing Business Methods
 
-- primitive objects,
-- POJO classes,
-- a collection of POJO classes and primitives,page
-- Http servlet response/request which can be passed as URL-based header params or in the form of cookies
-- a pageable object with values pertaining to the page to be retrieved, the size of each page and sort field name
+Once the service is created, you can add one or more methods to define your application logic. These methods can be used to perform validations or calculations, orchestrate multiple service or database calls, or integrate with external systems and SDKs.  
 
-Supported return types include:
-- Primitive types  
-- Java objects (POJOs)  
-- Collections  
-- Paginated responses  
+Java Service methods support a wide range of input parameters, including primitive types, POJO classes, collections of objects, HTTP servlet request and response objects (for handling headers or cookies), and pageable objects for managing pagination, sorting, and result size.  
 
-WaveMaker automatically handles request and response conversion between Java objects and JSON.
+Similarly, methods can return primitive values, Java objects, collections, or paginated responses. WaveMaker automatically takes care of converting Java objects to JSON and vice versa, simplifying API implementation.
+
+### Injecting Dependencies
+
+Java Services fully support Spring-based dependency injection, allowing you to autowire database services, DAOs, other Java services, connectors for third-party integrations, and utility components. 
+
+This enables you to build modular, reusable, and maintainable service logic while seamlessly leveraging the broader WaveMaker application ecosystem.
 
 ---
 
-###  Inject Dependencies
-Java Services support Spring-based dependency injection. You can autowire:
-
-- Database services and DAOs  
-- Other Java services  
-- Connectors (for third-party integrations)  
-- Utility or helper components  
-
-This allows you to build modular, reusable, and maintainable service logic while leveraging the existing application ecosystem.
-
----
 
 <!-- ### 4. Expose the Service as a REST API
 By default, public methods can be exposed as REST endpoints.  
@@ -91,24 +59,17 @@ Once a Java Service is saved, it becomes available as a **REST API** in the  **[
 - The **type of API** (GET, POST, etc.) is auto-assigned based on the method name.  
 - If a method accepts input parameters, it is automatically converted to a **POST** method. This can be modified later in the API Designer.  
 
----
-
-###  Test the Service
 Once the Java Service is saved, it becomes available in the **API Designer** under **Core APIs**.  
-From here, you can:
-
-- Test API endpoints with sample input  
-- Validate request and response payloads  
-- Verify error handling and edge cases  
-
-You can also test the APIs using external tools such as Postman or curl.
+From here, you can test API endpoints with sample input or using external tools such as Postman or curl
 
 ---
+
+
 
 ### Consume the API
 The exposed Java Service APIs can be consumed in multiple ways:
 
-- Bind them to WaveMaker Variables for use in pages and widgets  
+- Bind them to WaveMaker Variables for use in pages and components  
 - Invoke them from client-side scripts  
 - Call them from external applications as standard REST endpoints  
 

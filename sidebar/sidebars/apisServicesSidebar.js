@@ -100,10 +100,10 @@ export default [
             type: 'doc',
             id: 'apis-and-services/apis/importing-apis/websockets',
           },
-        //   {
-        //     type: 'doc',
-        //     id: 'apis-and-services/apis/importing-apis/generated-code',
-        //   },
+          {
+            type: 'doc',
+            id: 'apis-and-services/apis/importing-apis/proxy',
+          },
         ],
       },
       {
@@ -116,22 +116,26 @@ export default [
             type: 'doc',
             id: 'apis-and-services/apis/building-custom-apis/overview',
           },
+           {
+            type: 'doc',
+            id: 'apis-and-services/apis/building-custom-apis/generated-code',
+          },
+
+             {
+            type: 'doc',
+            id: 'apis-and-services/apis/building-custom-apis/api-orchestration',
+          },
+
           {
             type: 'doc',
             id: 'apis-and-services/apis/building-custom-apis/java-integration-services',
           },
-          {
-            type: 'doc',
-            id: 'apis-and-services/apis/building-custom-apis/db-service-integration',
-          },
-          {
-            type: 'doc',
-            id: 'apis-and-services/apis/building-custom-apis/api-orchestration',
-          },
-          {
-            type: 'doc',
-            id: 'apis-and-services/apis/building-custom-apis/generated-code',
-          },
+        //   {
+        //     type: 'doc',
+        //     id: 'apis-and-services/apis/building-custom-apis/db-service-integration',
+        //   },
+       
+         
         ],
       },
       {

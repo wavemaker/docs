@@ -353,7 +353,7 @@ export default [
     items: [
       {
         type: 'category',
-        label: 'Create Web App Project',
+        label: 'Create Web App',
         collapsible: true,
         collapsed: true,
         items: [
@@ -554,11 +554,11 @@ export default [
             id: 'user-interfaces/web/develop/events/common-events-for-components',
             label: 'Common events for Components',
           },
-          {
-            type: 'doc',
-            id: 'user-interfaces/web/develop/events/javascriptaccess',
-            label: 'JavaScript Access',
-          },
+          // {
+          //   type: 'doc',
+          //   id: 'user-interfaces/web/develop/events/javascriptaccess',
+          //   label: 'JavaScript Access',
+          // },
         ],
       },
       {
@@ -579,29 +579,27 @@ export default [
           },
         ],
       },
-
-      {
-        type: 'doc',
-        id: 'user-interfaces/web/develop/input-validations',
-      },
+      // {
+      //   type: 'doc',
+      //   id: 'user-interfaces/web/develop/input-validations',
+      // },
       {
         type: 'doc',
         id: 'user-interfaces/web/develop/state-management',
       },
-
-      {
-        type: 'category',
-        label: 'State Management',
-        collapsible: true,
-        collapsed: true,
-        items: [
-          {
-            type: 'doc',
-            id: 'user-interfaces/web/develop/state-management/overview',
-            label: 'State Management',
-          },
-        ],
-      },
+      // {
+      //   type: 'category',
+      //   label: 'State Management',
+      //   collapsible: true,
+      //   collapsed: true,
+      //   items: [
+      //     {
+      //       type: 'doc',
+      //       id: 'user-interfaces/web/develop/state-management/overview',
+      //       label: 'State Management',
+      //     },
+      //   ],
+      // },
     ],
   },
   {

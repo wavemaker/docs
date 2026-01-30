@@ -139,6 +139,9 @@ Once the Swagger API is selected and its metadata is verified:
 
 Authentication settings allow WaveMaker to communicate securely with protected APIs. For more detailed steps on configuring OAuth providers, refer to the [OAuth Provider Configuration](../../security/providers/openid-authentication.mdx)
 
+For more understanding on configuring proxy, refer [Proxy](proxy.md)
+
+
 ![alt text](assets/test-imported-api.png)
 <!-- ![alt text](assets/websocket-configuration.png) -->
 
