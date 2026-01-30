@@ -2,22 +2,22 @@
 last_update: { author: "Priyanka Bhadri" }
 ---
 
-# API Orchestration using API Composition Toolkit
+# API Composition Toolkit
 
 The **API Composer Toolkit** in WaveMaker provides a way to orchestrate and compose APIs by combining multiple service endpoints into a single, unified backend API. It simplifies the creation of composite APIs and enables you to write custom business logic that aggregates responses from multiple services, which can then be bound to UI components or used elsewhere in your application. 
 
 ---
 
-## What API Composer Toolkit Does
+## What the API Composer Toolkit Does
+
+The **API Composer Toolkit** allows you to create APIs that are optimized for frontend consumption. Instead of making multiple backend calls from the UI, you can design a single API that delivers exactly the data your application needs.
 
 ### Backend-for-Frontend API Composition
 
-With the API Composer Toolkit, you can:
+With the API Composer Toolkit, you can combine multiple backend services—such as **REST services, imported APIs, database services, and Java Services**—into a single composed API. You can also add custom business logic within a Java Service to orchestrate, transform, and aggregate responses from different services.
 
-- Combine multiple service endpoints (REST services, imported APIs, database services, Java Services) into a single API.  
-- Write custom business logic in a Java Service that orchestrates responses from different services.  
-- Use the composed API as a variable in WaveMaker pages and bind it directly to widgets or client logic. 
-This approach supports a **backend-for-frontend** pattern where a tailored API aggregates and shapes data specifically for UI requirements. 
+Once created, the composed API can be used as a variable in WaveMaker pages, enabling direct binding to widgets or client-side logic. This approach follows the **backend-for-frontend (BFF) pattern**, where APIs are tailored specifically to UI requirements, reducing complexity, improving performance, and simplifying frontend development.
+
 
 ---
 
@@ -49,25 +49,12 @@ Once injected, you can invoke the service method from within your Java Service t
 
 ## Controlling API Composition
 
-API Composition is enabled by default in WaveMaker. It can be controlled as follows:
+API Composition is enabled by default in WaveMaker. For existing projects, you can control this behavior through the Project Settings in WaveMaker Studio. Open Settings, navigate to Project Settings, and update the API Composition option as needed—either enabling or disabling it based on your requirements.
 
-<!-- ### For New Projects
-
-When creating a new project, you can choose whether to enable or disable API Composition.
-
-![alt text](assets/project-settings-api-composition.png) -->
-
-### For Existing Projects
-
-You can update the API Composition setting via the **Project Settings** dialog:
-
-1. Open **Settings** in WaveMaker Studio.  
-2. Select **Project Settings**.  
-3. Enable or disable API Composition as required.
+After changing this setting, make sure to reload the project and apply the update for the changes to take effect.
 
 ![alt text](assets/orchestration.png)
 
-Once the setting is changed, you will need to reload the project and apply the update.  
 > **Warning:** Disabling API Composition when your code depends on generated service classes may cause compilation errors.
 
 ---
