@@ -36,6 +36,7 @@ When setting up a REST service, you can configure several types of parameters:
 - **Body Parameters** – Used for methods that accept input (e.g., POST or PUT). For file uploads or mixed content, set the content type to `multipart/form-data`, and specify parameter types such as File or Text. 
 
 These parameters automatically appear as **input fields** in the service variable definition and can be bound to UI elements or variables. 
+For more understanding on configuring proxy, refer [Proxy](proxy.md)
 
 ---
 

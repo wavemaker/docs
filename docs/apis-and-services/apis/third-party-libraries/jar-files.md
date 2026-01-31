@@ -2,19 +2,19 @@
 last_update: { author: "Priyanka Bhadri" }
 ---
 
-# Using Third-Party JAR Files
+# Integrating Third-Party JAR Files
 
-WaveMaker allows you to extend your backend capabilities by integrating external Java libraries (JAR files) into your application. Once a JAR is added, its classes become part of the application’s classpath and can be used seamlessly within Java Services or other backend components.
+<!-- WaveMaker allows you to extend your backend capabilities by integrating external Java libraries (JAR files) into your application. Once a JAR is added, its classes become part of the application’s classpath and can be used seamlessly within Java Services or other backend components.
 
 ---
 
-## Using Third-Party JARs in Java Services
+ -->
 
-WaveMaker allows you to extend your backend capabilities by bringing in external Java libraries and using them seamlessly within Java Services.
+WaveMaker allows you to extend your backend capabilities by bringing in external Java libraries and using them seamlessly within Java Services. Once a JAR is added, its classes become part of the application’s classpath and can be used seamlessly within Java Services or other backend components
 
-The flow is simple and natural:
+## Importing Third-Party JARs
 
-You first import the required **third-party JAR** into the application’s **Lib** folder using **Developer Utilities → File Explorer**. Once the JAR is part of the project, it becomes available on the application’s classpath.
+Import the required **third-party JAR** into the application’s **Lib** folder using **Developer Utilities → File Explorer**. Once the JAR is part of the project, it becomes available on the application’s classpath.
 
 From there, your Java Service can directly import the required classes from the JAR, just like any standard Java dependency. These classes can then be used inside your service methods to implement custom logic.
 
@@ -47,7 +47,7 @@ For example, if you import a mail library JAR, you could write code in a Java Se
 
 --- -->
 
-## Example: Using a Mail Library
+## Using Third-Party JARs in Java Services
 
 Below is an example snippet showing how you might use an imported mail JAR in a Java Service. This code sets up email properties, creates a message, and sends it using SMTP.
 Once your Java Service code is ready, you can invoke it from the frontend

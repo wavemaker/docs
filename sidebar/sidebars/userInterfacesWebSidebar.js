@@ -12,6 +12,12 @@ export default [
       },
       {
         type: 'doc',
+        id: 'user-interfaces/web/concepts/development-model',
+        label: 'Development Model',
+      },
+
+      {
+        type: 'doc',
         id: 'user-interfaces/web/concepts/tech-stack',
       },
     ],
@@ -366,10 +372,6 @@ export default [
         items: [
           {
             type: 'doc',
-            id: 'user-interfaces/web/develop/page/overview',
-          },
-          {
-            type: 'doc',
             id: 'user-interfaces/web/develop/page/page-elements',
             label: 'Page elements',
           },
@@ -494,7 +496,7 @@ export default [
             type: 'doc',
             id: 'user-interfaces/web/develop/component-behaviour-and-methods/javascript-access',
             label: 'JavaScript access methods',
-          }
+          },
         ],
       },
       {
