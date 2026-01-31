@@ -49,9 +49,54 @@ test_page needs an id to render the data and it has to be invoked from Main Page
 WaveMaker provides lifecycle and system events at the page level, allowing you to execute custom logic when specific actions occur.
 
 - **On Attach**: This event handler is called when the page instance from cache is attached to dom.
+    ```JavaScript
+        Page.onAttach = function ($event, widget) { 
+            // Reset filters or UI state
+            Page.Widgets.orderFilter.reset();
+
+            // Re-fetch latest data when user navigates back
+            Page.Variables.GetOrders.invoke();
+        };
+    ```
 - **On Detach**: This event handler is called when the page instance is detached from dom and saved in cache.
+    ```JavaScript
+        Page.onDetach = function ($event, widget) {
+            // Save current UI state to session
+            sessionStorage.setItem("currentPageScroll", window.scrollY);
+            
+            // Stop any running timers
+            Page.Variables.OrderTimer.cancel();
+        };
+    ```
 - **On Destroy**: This event handler is called when the page is destroyed.
+    ```JavaScript
+        Page.onDestroy = function ($event, widget) {
+            // Remove custom event listeners
+            window.removeEventListener("customEvent", Page.handleCustomEvent);
+            
+            // Clear local storage for page-specific entries
+            localStorage.removeItem("tempOrderData");
+        };
+    ```
 - **On Orientation Change**: This event handler is called when the screen orientation is changed (mobile/tablet).
+    ```JavaScript
+        Page.onOrientationChange = function ($event, widget, data) {
+            if (event.matches) {
+                Page.Widgets.sideMenu.show(); // Portrait layout
+            } else {
+                Page.Widgets.sideMenu.hide();  // Landscape layout
+            }
+        };
+    ```
 - **On Resize**: This event handler is called when the window is resized. 
+    ```JavaScript
+        Page.onResize = function (event, widget, data) {
+            if (data.width < 768) {
+                Page.Widgets.orderGrid.setProperty("columnMode", "stack"); // Smaller screen adjustments
+            } else {
+                Page.Widgets.orderGrid.setProperty("columnMode", "grid");  // Larger screen layout
+            }
+        };
+    ```
 
 
