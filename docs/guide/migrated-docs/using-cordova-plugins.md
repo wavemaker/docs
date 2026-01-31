@@ -44,7 +44,7 @@ An application has to be built to list the phone numbers of employees in an orga
 
 ### Solution
 
-1. [Import the sample hrdb](/docs/apis-and-services/apis/database-and-crud-apis/overview) and [create a page](#).
+1. [Import the sample hrdb](/docs/apis-and-services/apis/database-and-crud-apis/) and [create a page](#).
 2. Drag and drop a [list widget](/docs/user-interfaces/web/components/angular-components/datalive/list)
     - select Database CRUD service type, hrdb service and employees entity
     - choose a template of your choice, here we are using Action List with basic pagination

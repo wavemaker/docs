@@ -12,7 +12,7 @@ Learn how to create a registration page in WaveMaker Studio. In this section, se
 1. How to design a registration page.
 2. How to link the registration page to the inbuilt security and login page.
 3. Add security encryption to password field using a [Java Service](/docs/apis-and-services/apis/building-custom-apis/java-integration-services).
-4. [Add user database](/docs/apis-and-services/apis/database-and-crud-apis/overview) - this should contain the details of the users, their usernames, password, and more. 
+4. [Add user database](/docs/apis-and-services/apis/database-and-crud-apis/) - this should contain the details of the users, their usernames, password, and more. 
 
 [![](/learn/assets/registration_database.png)](/learn/assets/registration_database.png)
 

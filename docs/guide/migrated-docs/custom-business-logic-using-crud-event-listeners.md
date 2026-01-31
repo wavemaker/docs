@@ -8,7 +8,7 @@ last_update: { author: "WaveMaker" }
 
 ### Overview
 
-In this document,we learn how to use [DB CRUD Listeners](/docs/apis-and-services/apis/database-and-crud-apis/overview) for applying custom business logic to DB table. The WaveMaker runtime framework publishes pre and post-events for each CRUD operation (Create, Read, Update and Delete) performed on the table. Here, in the following example, we use the pre-create event to determine the age of the employee using the birthdate provided. For this, we use the HRDB EMPLOYEE table('Age' column is newly added to the table) to demonstrate.
+In this document,we learn how to use [DB CRUD Listeners](/docs/apis-and-services/apis/database-and-crud-apis/) for applying custom business logic to DB table. The WaveMaker runtime framework publishes pre and post-events for each CRUD operation (Create, Read, Update and Delete) performed on the table. Here, in the following example, we use the pre-create event to determine the age of the employee using the birthdate provided. For this, we use the HRDB EMPLOYEE table('Age' column is newly added to the table) to demonstrate.
 
 ![DB table](/learn/assets/db-table.png)
 
@@ -96,6 +96,6 @@ To test the application, insert a new record by selecting a birth date that is l
 
 ## See Also
 
-[Database CRUD Operations Event Listeners](/docs/apis-and-services/apis/database-and-crud-apis/overview)  
+[Database CRUD Operations Event Listeners](/docs/apis-and-services/apis/database-and-crud-apis/)  
 [Record Transactional History of an Entity](/docs/guide/migrated-docs/audit-history-using-crud-listeners)  
 [Dynamic Validations using CRUD Listeners](/docs/guide/migrated-docs/validations-using-crudListeners)   

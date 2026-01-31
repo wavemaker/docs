@@ -8,7 +8,7 @@ last_update: { author: "WaveMaker" }
 
 ## Introduction
 
-In this document, learn how we can use [DB CRUD listeners](/docs/apis-and-services/apis/database-and-crud-apis/overview) to perform dynamic validations. The WaveMaker runtime framework publishes pre and post-events for each CRUD operation (Create, Read, Update and Delete) performed on the table. Here, in the following example, we use the pre-create event to check if the username already exists in the table. For this, we use the HRDB USER table to demonstrate. 
+In this document, learn how we can use [DB CRUD listeners](/docs/apis-and-services/apis/database-and-crud-apis/) to perform dynamic validations. The WaveMaker runtime framework publishes pre and post-events for each CRUD operation (Create, Read, Update and Delete) performed on the table. Here, in the following example, we use the pre-create event to check if the username already exists in the table. For this, we use the HRDB USER table to demonstrate. 
 
 ![/learn/assets/validations-crudlisteners/userSchema.png](/learn/assets/validations-crudlisteners/userSchema.png)
 
@@ -69,6 +69,6 @@ public class MyJavaService {
 
 ## See Also
 
-[Database CRUD Operations Event Listeners](/docs/apis-and-services/apis/database-and-crud-apis/overview)  
+[Database CRUD Operations Event Listeners](/docs/apis-and-services/apis/database-and-crud-apis/)  
 [Record Transactional History of an Entity](/docs/guide/migrated-docs/audit-history-using-crud-listeners)  
 [Custom Business Logic using DB CRUD Event Listeners](/docs/guide/migrated-docs/custom-business-logic-using-crud-event-listeners)  

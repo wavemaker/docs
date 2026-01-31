@@ -16,4 +16,4 @@ last_update: { author: "Author Name" }
 
 - [Overview](./overview.md) - Concepts overview
 - [TechStack](./techstack.md) - Technology stack
-- [Security](../security/overview.mdx) - Security best practices
+- [Security](../security) - Security best practices

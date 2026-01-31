@@ -8,7 +8,7 @@ last_update: { author: "WaveMaker" }
 
 ### Overview
 
-In this document, learn how to use [DB CRUD Listeners](/docs/apis-and-services/apis/database-and-crud-apis/overview) for applying Row-Level Security checks to DB table. 
+In this document, learn how to use [DB CRUD Listeners](/docs/apis-and-services/apis/database-and-crud-apis/) for applying Row-Level Security checks to DB table. 
 
 As the name suggests, Row-Level Security is a security mechanism that restricts the records from a table based on the authorization context of the current user that is logged in. Therefore, the records are displayed based on the user, allowing only those records that the user has access to. It is usually done to allow specific users to access only their data and restrict them from viewing other users’ data.
 

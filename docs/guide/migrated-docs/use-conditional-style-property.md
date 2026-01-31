@@ -36,7 +36,7 @@ The editable options being inline or dialog-based. Data Table provides a tabula
 
 Database Enhancements **Working with databases**:
 
-- Database Import has been renamed to **Connect to Database,** to clearly indicate that the database schema is imported into WaveMaker applications by directly connecting to the database. [#docs](/docs/apis-and-services/apis/database-and-crud-apis/overview)
+- Database Import has been renamed to **Connect to Database,** to clearly indicate that the database schema is imported into WaveMaker applications by directly connecting to the database. [#docs](/docs/apis-and-services/apis/database-and-crud-apis/)
 - **Create Database** dialog now includes option to import of a script file.
 - Database columns can be configured to be User defined, Server defined and DB defined types
     - User defined properties are passed on from the frontend layer to the backend services through API.

@@ -6,7 +6,7 @@ last_update: { author: "WaveMaker" }
 ---
 
 :::note
-The following procedure specified in this document will no longer work. We recommend you follow [Database CRUD Operations Event Listeners](/docs/apis-and-services/apis/database-and-crud-apis/overview) instead.
+The following procedure specified in this document will no longer work. We recommend you follow [Database CRUD Operations Event Listeners](/docs/apis-and-services/apis/database-and-crud-apis/) instead.
 :::
 
 
@@ -17,7 +17,7 @@ This document will go through the steps in adding pre and post-processing for ge
 ## Pre-requisites
 
 - Create a WaveMaker Project (UserManagementApp)
-- [Import a database service](/docs/apis-and-services/apis/database-and-crud-apis/overview): (we are using the sample HRDB) 
+- [Import a database service](/docs/apis-and-services/apis/database-and-crud-apis/): (we are using the sample HRDB) 
 
 [![](/learn/assets/hrdb.png)](/learn/assets/hrdb.png)
 

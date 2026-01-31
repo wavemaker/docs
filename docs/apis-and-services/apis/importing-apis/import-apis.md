@@ -6,7 +6,7 @@ last_update: { author: "Priyanka Bhadri" }
 
 WaveMaker provides built-in support for importing REST APIs defined using Swagger/OpenAPI specifications (JSON or YAML), allowing developers to quickly integrate external services into their applications. When an API is imported, WaveMaker automatically generates the required backend service definitions and data models.
 
-In WaveMaker, variables act as an abstraction over these generated services, handling request execution and response processing. This enables developers to bind API data directly to UI components without dealing with low-level service calls or backend implementation details. Learn more about [Variables](../../../user-interfaces/web/develop/integrating-with-apis/overview.mdx) 
+In WaveMaker, variables act as an abstraction over these generated services, handling request execution and response processing. This enables developers to bind API data directly to UI components without dealing with low-level service calls or backend implementation details. Learn more about [Variables](../../../user-interfaces/web/develop/integrating-with-apis/) 
 
 <!-- --- -->
 

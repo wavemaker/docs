@@ -194,7 +194,7 @@ last_update: { author: "WaveMaker" }
   3. Place the _.jrxml_ file in the java service src folder as shown below: 
   [![](/learn/assets/Jasper_jrxml_location.png)](/learn/assets/Jasper_jrxml_location.png) 
 
-  4. [Import Sample HRDB](/docs/apis-and-services/apis/database-and-crud-apis/overview) database into the project 
+  4. [Import Sample HRDB](/docs/apis-and-services/apis/database-and-crud-apis/) database into the project 
   5. Autowire the imported DataBase dataSource bean in to the created java serice
     
       ```java

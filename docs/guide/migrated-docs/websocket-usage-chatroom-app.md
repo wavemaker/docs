@@ -60,7 +60,7 @@ This variable is an interface between the client and the server. Follow the belo
 **Step 5:** Secure the app
 
 1. We will be using a Database for login details
-    - [Import the Database](/docs/apis-and-services/apis/database-and-crud-apis/overview) with the login details (here we will be using the sample hrdb Employee table
+    - [Import the Database](/docs/apis-and-services/apis/database-and-crud-apis/) with the login details (here we will be using the sample hrdb Employee table
 2. [Enable Security](/docs/apis-and-services/security/app-security) and use Database as Service Provider
 3. Configure the Security as follows:
 

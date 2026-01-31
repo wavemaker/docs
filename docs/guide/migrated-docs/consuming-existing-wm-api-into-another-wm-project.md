@@ -11,7 +11,7 @@ You can Import REST API endpoints via Open API/Swagger import feature.
 In this document, see how you can use an API of an existing WaveMaker app into another WaveMaker app in just a few simple steps.
 
 :::note
-This document assumes that you have a sample HRDB imported in your project. For more information, see [Connect to a sample DB](/docs/apis-and-services/apis/database-and-crud-apis/overview#connect-to-a-db).
+This document assumes that you have a sample HRDB imported in your project. For more information, see [Connect to a sample DB](/docs/apis-and-services/apis/database-and-crud-apis/#connect-to-a-db).
 :::
 
 ## Download Swagger from a WaveMaker Project

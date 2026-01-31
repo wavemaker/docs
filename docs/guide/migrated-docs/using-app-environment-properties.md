@@ -26,7 +26,7 @@ To change the property value in deployment profile
 ## How to use
 There are three ways to use the app environment values:
 
-1.  set them as data type values for the Database entities ([for more](/docs/apis-and-services/apis/database-and-crud-apis/overview#column-metadata-configuration))  
+1.  set them as data type values for the Database entities ([for more](/docs/apis-and-services/apis/database-and-crud-apis/#column-metadata-configuration))  
 
 [![](/learn/assets/config_howto_appenv3a.png)](/learn/assets/config_howto_appenv3a.png)
 

@@ -14,7 +14,7 @@ We will see how to configure the Search widget within the Navbar. We will create
 
 [![](/learn/assets/navbar_search_props.png)](/learn/assets/navbar_search_props.png)
 
-3. [Database Integration](/docs/apis-and-services/apis/database-and-crud-apis/overview) - add the sample HRDB into your project.
+3. [Database Integration](/docs/apis-and-services/apis/database-and-crud-apis/) - add the sample HRDB into your project.
 4. [Create a Database CRUD Variable](/learn/assets/var_sel.png) with `hrdb` `Database`, `Employee`, `Table` and `read` Operation. (name it say, `employeeList`) 
 
 [![](/learn/assets/navbar_search_var.png)](/learn/assets/navbar_search_var.png)

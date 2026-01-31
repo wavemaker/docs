@@ -6,7 +6,7 @@ last_update: { author: "WaveMaker" }
 ---
 ---
 
-In this document, learn how you can use [Database CRUD Listeners](/docs/apis-and-services/apis/database-and-crud-apis/overview) to record the history, including the details related to data change of a specific entity/table in a logger table.
+In this document, learn how you can use [Database CRUD Listeners](/docs/apis-and-services/apis/database-and-crud-apis/) to record the history, including the details related to data change of a specific entity/table in a logger table.
 
 In the following example, we use three Event Listeners, including:
 
@@ -108,6 +108,6 @@ In preview, perform some CRUD operations in the Employee table and notice the tr
 
 ## See Also
 
-[Database CRUD Operations Event Listeners](/docs/apis-and-services/apis/database-and-crud-apis/overview)  
+[Database CRUD Operations Event Listeners](/docs/apis-and-services/apis/database-and-crud-apis/)  
 [Dynamic Validations using CRUD Listeners](/docs/guide/migrated-docs/validations-using-crudListeners)  
 [Custom Business Logic using DB CRUD Event Listeners](/docs/guide/migrated-docs/custom-business-logic-using-crud-event-listeners)  

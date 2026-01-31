@@ -45,7 +45,7 @@ This method uses **offset** and **limit** query parameters, most suitable for us
 
 The following code snippet describes how to configure Offset pagination.
 
-- Create a [Service Variable](/docs/apis-and-services/apis/importing-apis/overview#how-to-create-a-service-variable).
+- Create a [Service Variable](/docs/apis-and-services/apis/importing-apis#how-to-create-a-service-variable).
 - Drag-n-drop a data widget, for example, Data table.
 - Bind the Data Table to Service Variable.
 - Go to the Script tab, and configure Offset pagination as described below. 
@@ -95,7 +95,7 @@ Page divides set into pages. The API accepts a page parameter of an integer type
 
 The following code snippet describes how to configure Cursor pagination.
 
-- Create a [Service Variable](/docs/apis-and-services/apis/importing-apis/overview#how-to-create-a-service-variable).
+- Create a [Service Variable](/docs/apis-and-services/apis/importing-apis#how-to-create-a-service-variable).
 - Drag-n-drop a data widget, for example, Data table.
 - Bind the Data Table to Service Variable.
 - Go to the Script tab, and configure Cursor pagination as described below. 
@@ -134,7 +134,7 @@ Cursor works by returning a pointer to a specific item in the set of data. On su
 
 The following the code snippet describes how to configure the Cursor pagination.
 
-- Create a [Service Variable](/docs/apis-and-services/apis/importing-apis/overview#how-to-create-a-service-variable).
+- Create a [Service Variable](/docs/apis-and-services/apis/importing-apis#how-to-create-a-service-variable).
 - Drag-n-drop a data widget; for example, Data table.
 - Bind the Data Table to Service Variable.
 - Go to Script tab, configure Cursor pagination as described below. 

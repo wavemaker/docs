@@ -17,7 +17,7 @@ Learn how to Insert data from Excel into the database using excel connector.
 ## Step 2: Import a databaseService
 
 1. In this example using excel connector we will be inserting data to HRDB User table
-1. [Import Sample HRDB](/docs/apis-and-services/apis/database-and-crud-apis/overview)
+1. [Import Sample HRDB](/docs/apis-and-services/apis/database-and-crud-apis/)
 
 ## Step 3: Creating Java Service
 

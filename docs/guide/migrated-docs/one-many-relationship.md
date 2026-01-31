@@ -9,9 +9,9 @@ last_update: { author: "WaveMaker" }
 
 Handling one-to-many relation scenarios is very easy within WaveMaker. Going with the example of sample database, we will see how to display Employee details for a selected Department. 
 
-1. [Import the Sample HRDB](/docs/apis-and-services/apis/database-and-crud-apis/overview)
+1. [Import the Sample HRDB](/docs/apis-and-services/apis/database-and-crud-apis/)
 
-2. Drag and drop a [Data Table](/docs/apis-and-services/apis/database-and-crud-apis/overview)
+2. Drag and drop a [Data Table](/docs/apis-and-services/apis/database-and-crud-apis/)
     1. CREATE NEW Variable with **hrdb** as service and **Department** as the **Operation/Type** 
     
 
@@ -34,9 +34,9 @@ Handling one-to-many relation scenarios is very easy within WaveMaker. Going wit
 
 We will extend the [previous related tables use-case](/docs/guide/migrated-docs/one-many-relationship#datatable), to have an editable employee details. Going with the example of sample database, we will see how to display Employee details for a selected Department and add/update the Employee details.
 
-1. [Import the Sample HRDB](/docs/apis-and-services/apis/database-and-crud-apis/overview)
+1. [Import the Sample HRDB](/docs/apis-and-services/apis/database-and-crud-apis/)
 
-2. Drag and drop a [Data Table](/docs/apis-and-services/apis/database-and-crud-apis/overview)
+2. Drag and drop a [Data Table](/docs/apis-and-services/apis/database-and-crud-apis/)
     1. CREATE NEW Variable with **hrdb** as _service_ and **Department** as the _Operation/Type_.
     2. Select any **layout** of your choice, here we have selected _Read-only_.
     3. Select the **Name**, **Deptid** and **Budget**.
