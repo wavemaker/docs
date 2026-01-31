@@ -178,11 +178,11 @@ export default [
     label: 'Pipeline',
     collapsible: true,
     collapsed: true,
+    link: {
+      type: 'doc',
+      id: 'build-and-deploy/pipeline/index',
+    },
     items: [
-      {
-        type: 'doc',
-        id: 'build-and-deploy/pipeline/overview',
-      },
       {
         type: 'category',
         label: 'WaveMaker Internal CI/CD Pipeline',

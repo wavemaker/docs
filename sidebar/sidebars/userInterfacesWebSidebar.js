@@ -369,12 +369,11 @@ export default [
         label: 'Create a page',
         collapsible: true,
         collapsed: true,
+        link: {
+          type: 'doc',
+          id: 'user-interfaces/web/develop/page/index',
+        },
         items: [
-          {
-            type: 'doc',
-            id: 'user-interfaces/web/develop/page/page-elements',
-            label: 'Page elements',
-          },
           {
             type: 'doc',
             id: 'user-interfaces/web/develop/page/properties',
@@ -460,11 +459,11 @@ export default [
         label: 'Integrating with APIs',
         collapsible: true,
         collapsed: true,
+        link: {
+          type: 'doc',
+          id: 'user-interfaces/web/develop/integrating-with-apis/index',
+        },
         items: [
-          {
-            type: 'doc',
-            id: 'user-interfaces/web/develop/integrating-with-apis/overview',
-          },
           {
             type: 'doc',
             id: 'user-interfaces/web/develop/integrating-with-apis/variables',
@@ -534,12 +533,11 @@ export default [
         label: 'UI Event Handling',
         collapsible: true,
         collapsed: true,
+        link: {
+          type: 'doc',
+          id: 'user-interfaces/web/develop/events/index',
+        },
         items: [
-          {
-            type: 'doc',
-            id: 'user-interfaces/web/develop/events/overview',
-            label: 'Overview',
-          },
           {
             type: 'doc',
             id: 'user-interfaces/web/develop/events/event-lifecycle',

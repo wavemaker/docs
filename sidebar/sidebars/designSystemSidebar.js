@@ -3,8 +3,11 @@ export default [
 				{
 		"type": "category",
 		"label": "Concepts",
+		link: {
+			type: 'doc',
+			id: 'design-system/concepts/index',
+		},
 		"items": [
-		"design-system/concepts/overview",
 		"design-system/concepts/design-token-architecture",
 		"design-system/concepts/working-with-style-workspace",
 		"design-system/concepts/component-variants",

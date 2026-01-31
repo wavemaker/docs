@@ -31,11 +31,11 @@ export default [
         label: 'Database & CRUD APIs',
         collapsible: true,
         collapsed: true,
+        link: {
+          type: 'doc',
+          id: 'apis-and-services/apis/database-and-crud-apis/index',
+        },
         items: [
-          {
-            type: 'doc',
-            id: 'apis-and-services/apis/database-and-crud-apis/overview',
-          },
           {
             type: 'doc',
             id: 'apis-and-services/apis/database-and-crud-apis/generated-API-code',
@@ -59,11 +59,11 @@ export default [
         label: 'Import APIs',
         collapsible: true,
         collapsed: true,
+        link: {
+          type: 'doc',
+          id: 'apis-and-services/apis/importing-apis/index',
+        },
         items: [
-          {
-            type: 'doc',
-            id: 'apis-and-services/apis/importing-apis/overview',
-          },
           // {
           //     "type": "category",
           //     "label": "Import Individual REST Endpoints",
@@ -111,11 +111,11 @@ export default [
         label: 'Building Custom APIs',
         collapsible: true,
         collapsed: true,
+        link: {
+          type: 'doc',
+          id: 'apis-and-services/apis/building-custom-apis/index',
+        },
         items: [
-          {
-            type: 'doc',
-            id: 'apis-and-services/apis/building-custom-apis/overview',
-          },
            {
             type: 'doc',
             id: 'apis-and-services/apis/building-custom-apis/generated-code',
@@ -172,11 +172,11 @@ export default [
     label: 'Security',
     collapsible: true,
     collapsed: true,
+    link: {
+      type: 'doc',
+      id: 'apis-and-services/security/index',
+    },
     items: [
-      {
-        type: 'doc',
-        id: 'apis-and-services/security/overview',
-      },
     //   {
     //     type: 'doc',
     //     id: 'apis-and-services/security/app-security',
