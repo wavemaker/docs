@@ -35,7 +35,7 @@ const envData = [
     icon: '/img/icon/ds-icon.svg',
     title: 'Design System',
     desc: 'Scalable foundations for consistent design ',
-    link: '/docs/design-system/concepts/overview',
+    link: '/docs/design-system/concepts/',
   },
   {
     id: 3,
