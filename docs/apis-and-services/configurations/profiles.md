@@ -57,14 +57,11 @@ MyApp
 
 ## Creating Configuration Profiles
 
-1. In WaveMaker Studio, navigate to **Settings → Profile Configuration**.
-2. Click **New Profile** to create a new environment profile.
-3. Provide a **Name** and configure properties such as:
-   - Database connection strings
-   - API URLs
-   - Authentication credentials
-   - Any other environment-specific parameters
-4. Save the profile. You can create multiple profiles for different environments (e.g., Development, QA, Production).
+In WaveMaker Studio, environment-specific configurations are managed through **Profile Configuration** available under **Settings**. An environment profile represents a logical grouping of configuration values required for a specific runtime environment.
+
+Each profile contains properties such as database connection strings, API endpoint URLs, authentication credentials, and other environment-dependent parameters. These values are defined once and reused across the application, ensuring consistency and easier management.
+
+Once a profile is created and saved, it becomes available within the project configuration. Multiple profiles can coexist in a single project, enabling seamless switching between environments such as Development, QA, and Production without requiring code changes.
 
 To learn more about the configuration settings and their usage, refer to the [Profile Settings](profile-settings.md)
 

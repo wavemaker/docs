@@ -3,7 +3,13 @@ last_update: { author: "Priyanka Bhadri" }
 ---
 # Profile Settings
 
-A **Configuration Profile** brings together configuration values from various services and provides flexibility to customize application behavior based on the target environment, such as development, QA, or production.
+
+
+A Configuration Profile acts as a centralized mechanism to aggregate configuration values from multiple services and system components within a WaveMaker application. It brings together settings related to the application, databases, REST APIs, security, and other integrations into a single, logical profile.
+
+Configuration Profiles enable environment-specific customization of application behavior. By defining separate profiles for environments such as Development, QA, and Production, the same application codebase can be deployed across different environments with varying configurations, without requiring code changes.
+
+Each profile resolves its values from the base application properties and environment-specific deployment properties, ensuring consistency while allowing overrides where necessary. This approach simplifies configuration management, reduces deployment errors, and provides greater control over how the application behaves in different runtime environments.
 
 ---
 
@@ -163,10 +169,14 @@ These options affect application bundling, optimization, and performance. For mo
 
 ## Application Configuration
 
-This provides the properties file, illustrating how it is generated and containing all application, database, REST API, security, and WebSocket configurations based on the provided settings. It serves as a complete reference to understand how various configurations are applied during deployment and how they affect the behavior of the application across different environments.
+All common configuration values are defined in `app.properties`. This file acts as the central source of truth for the application and includes configurations related to the application setup, database connections, REST API integrations, security settings, and WebSocket configurations.
+
+Environment-specific values are defined separately under the deployment directory, for example in `deployment/development.properties`. These files override or extend the base properties defined in `app.properties` to tailor the application behavior for a specific environment such as Development, QA, or Production.
+
+The generated properties file serves as a complete reference that reflects all configured settings. It provides visibility into how application-level and environment-specific configurations are applied during deployment and how they influence the runtime behavior of the application across different environments.
 
 <details>
-<summary>View Full Deployment Properties</summary>
+<summary>View Full App Properties</summary>
 
 ```properties
 # Application URLs
