@@ -6,11 +6,12 @@ last_update: { author: 'Vivek Raj' }
 
 # Marketplace Agent
 
-The **Marketplace Agent** discovers and installs reusable artifacts from the WaveMaker Marketplace into application projects. It serves as the controlled gateway between the centralized artifact repository and individual project codebases, ensuring safe acquisition without compromising project integrity.
 
-Artifact reuse accelerates development, promotes consistency across teams, and leverages battle-tested components. The Marketplace Agent automates the discovery-to-installation pipeline while enforcing compatibility validation, version control, and explicit confirmation requirements. It operates exclusively at the acquisition layer—configuration, binding, and usage fall outside its scope.
+The **Marketplace Agent** enables developers to discover and install reusable artifacts from the [WaveMaker Marketplace](https://marketplace.wavemaker.com/) directly into their application projects. It functions as a controlled integration layer between the centralized artifact repository and project codebase.
 
-All installation operations flow through Studio APIs, maintaining consistency with WaveMaker platform behavior and ensuring proper audit trails.
+Reusing artifacts helps teams build faster, maintain consistency, and rely on well-tested components. The agent automates the discovery-to-installation workflow while enforcing compatibility checks, version validation, and explicit developer approval. Its scope is limited to artifact acquisition only; configuration, binding, and runtime usage are handled separately.
+
+All installation operations flow through Platform MCPs, maintaining consistency with WaveMaker platform behavior and ensuring proper audit trails.
 
 ---
 
@@ -18,7 +19,7 @@ All installation operations flow through Studio APIs, maintaining consistency wi
 
 **Marketplace artifacts** are versioned, reusable components published to the WaveMaker Marketplace. These artifacts encapsulate proven functionality that developers incorporate into projects without rebuilding from scratch.
 
-Artifacts include Prefabs (UI components), Connectors (backend integrations), WMX Components (React Native components), and Design Systems (design tokens).
+Artifacts can be Prefabs (UI components), Connectors (backend integrations), WMX Components (Light weight React Native components), and Design Systems (design tokens).
 
 Each artifact includes:
 
@@ -49,9 +50,9 @@ The Marketplace Agent never decides usage patterns or application behavior. Upon
 
 The Marketplace Agent handles four categories of artifacts, each serving distinct purposes within the WaveMaker ecosystem.
 
-**Prefabs** – Reusable UI components that encapsulate markup, styles, scripts, and data bindings. Supported in Web and Mobile projects. Prefabs abstract complex UI logic into portable, drag-and-drop components.
+**Prefabs** – Reusable UI components that encapsulate markup, styles, scripts, and data bindings. Supported in Web and Mobile projects. Prefabs abstract full UI workflow along with API integration(if needed) into portable, drag-and-drop components.
 
-**Connectors** – Spring-based Java modules for external system integration. Supported in all WaveMaker projects. Connectors expose external services (Twilio, AWS, Stripe) as injectable Spring beans, requiring configuration through externalizable properties.
+**Connectors** – Spring-based Java modules for external system integration. Supported in all WaveMaker projects. Connectors expose external services such as Twilio, AWS, Stripe.. as injectable Spring beans, requiring configuration through externalizable properties.
 
 ```java
 @Autowired
@@ -72,7 +73,7 @@ The agent uses MCP tools to:
 
 - **Discover artifacts** – Retrieve the complete marketplace catalog or filter by artifact type
 - **Fetch metadata** – Get detailed information about specific artifacts including installation URLs
-- **Trigger installations** – Execute artifact installation via Studio API endpoints
+- **Trigger installations** – Execute artifact installation via Platform APIs
 - **Query installed artifacts** – List what's already installed in the current project
 
 The MCP server handles API authentication, response normalization, and error translation, allowing the agent to focus on validation and orchestration logic.
@@ -96,12 +97,12 @@ If multiple artifacts match the request, the agent surfaces options. No installa
 
 ### Artifact Installation
 
-Installation occurs only after explicit confirmation. The agent installs the selected artifact through Studio APIs. The agent never installs artifacts automatically or speculatively.
+Installation occurs only after explicit confirmation. The agent installs the selected artifact through Platform APIs. The agent never installs artifacts automatically or speculatively.
 
 **Installation flow:**
 
-1. Agent queries Marketplace API for artifact details
-2. Marketplace returns metadata including ZIP download URL
+1. Agent connects to Marketplace MCP for artifact details
+2. Marketplace MCP returns metadata including artifact distribution download URL
 3. Agent downloads the artifact package
 4. Agent uploads package to appropriate Studio import endpoint
 5. Studio processes and integrates artifact into project structure
@@ -109,13 +110,6 @@ Installation occurs only after explicit confirmation. The agent installs the sel
 ### Compatibility Validation
 
 Before installation, the agent validates compatibility. Validation checks include project type, platform, and supported environment. If compatibility cannot be confirmed, installation stops.
-
-**Project type validation:**
-
-- **Prefabs** – Supported in Web and Mobile projects
-- **Connectors** – Supported in all WaveMaker projects
-- **WMX Components** – Supported only in React Native projects (validated via presence of `wm_rn_config.json`)
-- **Design Systems** – Supported in all WaveMaker projects
 
 **Validation failure handling:**
 
@@ -171,29 +165,6 @@ If the agent cannot determine intent or compatibility with confidence, it pauses
 
 ---
 
-## Authority and Constraints
-
-The Marketplace Agent operates under strict, non-negotiable constraints.
-
-**Enforced invariants:**
-
-- Only supported artifact types are installed
-- Every installation requires explicit user confirmation
-- Compatibility validation is mandatory and cannot be bypassed
-- Discovery operations never cause side effects
-- Installation is isolated from configuration and usage phases
-
-**Prohibited actions:**
-
-- Inferring artifact suitability without validation
-- Bypassing compatibility checks under any circumstances
-- Performing speculative or preemptive installs
-- Modifying project state during discovery operations
-
-These constraints are intentional design decisions, not implementation limitations.
-
----
-
 ## Execution Flow
 
 At a high level, the flow is linear and controlled.
@@ -206,21 +177,6 @@ At a high level, the flow is linear and controlled.
 6. Control returns to the `wm_agent`
 
 The agent does not participate after installation completes.
-
----
-
-## Summary
-
-Key points about the Marketplace Agent:
-
-- **Purpose** – Safely discover and install versioned artifacts from WaveMaker Marketplace
-- **Supported Types** – Prefabs (Web/Mobile), Connectors (Backend), WMX Components (React Native), Design Systems (All)
-- **Source of Truth** – GitHub repositories with immutable, semantically versioned releases
-- **Integration** – MCP tools communicate with Marketplace API; installations flow through Studio APIs
-- **Validation** – Project type compatibility checks prevent installation failures
-- **Orchestration** – Runs under `wm_agent` coordination; returns control after installation
-- **Scope** – Acquisition only; configuration and usage handled by other agents
-- **Safety** – Explicit confirmation required; no speculative installs; fail-fast validation
 
 ---
 

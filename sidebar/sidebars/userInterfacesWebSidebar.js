@@ -473,11 +473,6 @@ export default [
             type: 'doc',
             id: 'user-interfaces/web/develop/integrating-with-apis/life-cycle-hooks',
           },
-          {
-            type: 'doc',
-            id: 'user-interfaces/web/develop/integrating-with-apis/types',
-            label: 'Variable Types',
-          },
         ],
       },
       {
