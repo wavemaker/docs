@@ -303,3 +303,10 @@ Importing Swagger/OpenAPI definitions in WaveMaker allows you to:
 - Accelerate development by leveraging standardized API descriptions.
 
 This feature lets you combine the power of external services with WaveMaker's low-code UI and binding framework, enabling rapid development of data-driven applications.
+
+<VideoCard
+  videoUrl="https://next-academy.wavemaker.com/Watch?wm=8B1B895200"
+  title="Import APIs"
+  description="Watch for a step-by-step guide on Importing Swagger APIs in WaveMaker App"
+  thumbnailText="Import APIs"
+/>

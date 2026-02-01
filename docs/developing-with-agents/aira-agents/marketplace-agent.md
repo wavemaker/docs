@@ -34,11 +34,11 @@ The Marketplace API provides discovery and installation metadata. GitHub hosts t
 
 ## Role in AIRA Architecture
 
-The Marketplace Agent operates as a **specialized execution agent** within the AIRA orchestration framework. It runs under the coordination of the `wm_agent`, which handles high-level intent resolution and agent delegation.
+The Marketplace Agent operates as a **specialized execution agent** within the AIRA orchestration framework. It runs under the coordination of the WaveMaker Agent (`wm_agent`), which handles high-level intent resolution and agent delegation.
 
 **Responsibility boundaries:**
 
-- **`wm_agent`** – Determines _when_ a marketplace artifact is needed based on user intent and project context
+- **WaveMaker Agent** – Determines _when_ a marketplace artifact is needed based on user intent and project context
 - **Marketplace Agent** – Handles _how_ that artifact is safely acquired and installed
 - **Other agents** – Configure, bind, and utilize the installed artifact post-installation
 
