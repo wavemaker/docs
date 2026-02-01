@@ -2,18 +2,7 @@
 last_update: { author: 'Raj Kumar Reddy Abbadi' }
 ---
 
-# UI Event Lifecycle 
-
-WaveMaker uses a layered, event-driven architecture where Pages, Variables, and UI Components talk to each other using events, state changes, and methods. Events can flow top-down or bottom-up, depending on what triggered them—whether it’s the system, an API call, or a user action.
-
-This setup lets developers plug in custom logic at different points in the app lifecycle.
-
-**Events in WaveMaker are broadly categorized into the following types:**
-- **App-level events:** These events are tied to the overall application lifecycle. They run when the app starts, initializes, or shuts down, and are typically used for global setup, configuration, or cleanup logic.
-- **Page-level events:** These events are associated with individual pages. They trigger during page load, render, or navigation, and are commonly used to handle page-specific logic like fetching data or initializing variables.
-- **Component-level events:** These events are triggered by user interactions with UI components, such as clicks, double-clicks, mouse enter/leave, or input changes. They’re used to handle interactive behavior within a page.
-
-![Event Lifecycle](../../assets/eventLifeCycle.png)
+# Lifecycle Events
 
 ## App Level Events
 
