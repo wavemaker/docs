@@ -37,24 +37,16 @@ A variable moves through the following lifecycle stages during its execution in 
    - Variable execution ends
 
 ```mermaid
-stateDiagram
-   direction LR
-   [*] --> PreExecute
-   PreExecute --> APICall
-   state PreExecute {
-      direction LR
-      onCanUpdate --> onBeforeUpdate
-      onBeforeUpdate --> InitParams: initiatize inputs
-   }
-
-   APICall --> PostProcess
-   PostProcess --> [*]
-   state PostProcess {
-      direction LR
-      onResult --> onBeforeDataSetReady
-      onBeforeDataSetReady --> onSuccess
-      onResult --> onError
-   }
+sequenceDiagram
+    Page->>Variable: Invoke REST API
+    Variable->>Page: onBeforeUpdate()
+    create participant API
+    Variable->>API: request(params)
+    destroy API
+    API->>Variable: response
+    Variable->>Page: onResult()
+    Variable->>Page: onBeforeDatasetReady()
+    Page->>Component: onLoad()
 ```
 ---
 
