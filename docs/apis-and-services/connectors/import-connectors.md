@@ -14,12 +14,9 @@ To import a Connector into your WaveMaker application, you need the Connector ZI
 
 - Or, if you built the Connector yourself, use the ZIP artifact located in the `dist/` directory of your Connector project (e.g., `Connector-name-version.zip`).
 
-Once you have the ZIP:
 
-1. Open WaveMaker Studio.
-2. Go to the **Import Resource** dialog.
-3. Select the Connector ZIP file.
-4. Import it into your application.
+
+Once the zip is available, connectors can be added to an application through the **Import Resource** capability. The Connector ZIP file is selected from the local system and imported into the application, making the connector available for use across the project. Once imported, the connector can be configured and consumed like any other integrated service within the application.
 
 After import, the Connector becomes available as a reusable backend component.
 

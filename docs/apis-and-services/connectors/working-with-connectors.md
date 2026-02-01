@@ -35,10 +35,10 @@ This document explains how to integrate and use the **Twilio Connector** in a Wa
 
 ## Importing the Twilio Connector
 
-1. Download the latest **[Twilio Connector ZIP](https://github.com/wavemaker/twilio-connector/releases)** from the provided repository link.
-2. Open your project in **WaveMaker Studio**.
-3. Use the **[Import Resource](../apis/third-party-libraries/jar-files.md)** option and upload the ZIP file.
-4. The connector will be added under the **Connectors** section of the project.
+
+
+The Twilio Connector is obtained by downloading the latest Connector ZIP from the [Twilio Connector ZIP](https://github.com/wavemaker/twilio-connector/releases). The ZIP file is then imported into an existing WaveMaker project using the [Import Resource](../apis/third-party-libraries/jar-files.md) option in WaveMaker Studio. Once the import is completed, the Twilio Connector becomes available under the **Connectors** section of the project and can be configured for use within the application.
+
 
 ---
 
