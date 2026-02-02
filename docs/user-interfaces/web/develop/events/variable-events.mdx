@@ -1,0 +1,147 @@
+---
+last_update: { author: 'Raj Kumar Reddy Abbadi' }
+---
+
+# Variable Events
+
+WaveMaker exposes events at different points in the variable lifecycle. These events allow developers to intercept execution, modify inputs or results, and respond to success or failure scenarios. Event handlers provide fine grained control over variable behavior without altering core logic.
+
+Types of Variable Events:
+    - On Before Update
+    - On Result
+    - On Before Dataset Ready
+    - On Success
+    - On Error
+    - On Can Update
+    
+
+### On Before Update
+The On Before Update event is invoked just before the variable triggers the service call. It provides access to the input data and allows you to: Validate inputs, Modify request payload.
+
+    ```javascript
+        Page.createEmployeeonBeforeUpdate = function (variable, inputData, options) {
+            // Validate mandatory input
+            if (!inputData.employeeName) {
+                App.Actions.notify({
+                    message: "Employee name is required",
+                    severity: "error"
+                });
+                return false; // Cancel the service call
+            }
+
+            // Add additional input before sending to service
+            inputData.createdDate = new Date();
+
+            return true; // Allow service call to proceed
+        };
+    ```
+
+:::info
+The `onBeforeUpdate` event behaves differently based on the variable type:
+
+- **Database CRUD Variable (READ)** → `onBeforeListRecords`
+- **Database CRUD Variable (UPDATE)** → `onBeforeUpdateRecord`
+- **Database CRUD Variable (INSERT)** → `onBeforeInsertRecord`
+- **Database CRUD Variable (DELETE)** → `onBeforeDeleteRecord`
+- **All other variable types** → `onBeforeUpdate`
+:::
+
+
+### On Before Dataset Ready
+This event is triggered after the service response is received but before the variable’s dataSet is updated.
+
+    ```javascript
+        // Triggered before the dataSet is assigned to the variable
+        Page.createEmployeeonBeforeDatasetReady = function (variable, data) {
+            // Get selected device IDs from a widget
+            let selectedDeviceIds = Page.Widgets.DevicePicker.selecteddevices
+                .map(device => device.id);
+
+            // Filter response data based on selected devices
+            let filteredData = data.filter(emp =>
+                selectedDeviceIds.includes(emp.devicesMappedId)
+            );
+
+            // Return modified data to update the variable's dataSet
+            return filteredData;
+        };
+    ```
+
+### On Result
+The On Result event is triggered immediately after receiving a response from the service—regardless of success or failure.
+   
+   ```javascript
+        // Triggered when the service returns a response
+        Page.createEmployeeonResult = function (variable, data, operation) {
+            // If response contains a single object, convert it to array
+            // This helps when binding to components like List etc
+            if (data && !Array.isArray(data)) {
+                variable.dataSet = [data];
+            }
+
+            // Store last operation performed for UI display
+            Page.Variables.svEmployee.lastOperation.dataSet = operation;
+        };
+    ```
+
+### On Success
+The On Success event is triggered after the variable completes successfully and after the dataSet has been updated.
+    
+    ```javascript
+        // Triggered after successful execution
+        Page.createEmployeeonSuccess = function (variable, data, operation) {
+            // Show success notification
+            App.Actions.notify({
+                message: "Employee created successfully",
+                severity: "success"
+            });
+
+            // Navigate to Employee Details page using returned ID
+            App.navigate({
+                pageName: "EmployeeDetails",
+                params: {
+                    employeeId: data.id
+                }
+            });
+            
+            Page.Variables.getEmployees.invoke(); // Refresh employee list after update
+            Page.Widgets.editEmployeeDialog.close();  // Close edit dialog
+        };
+    ```
+
+### On Error
+The On Error event is triggered only when the service call fails.
+
+    ```javascript
+        // Triggered when the service call fails
+        Page.createEmployeeonError = function (variable, error, operation) {
+            // Display error message
+            App.Actions.notify({
+                message: error.message || "Unable to create employee",
+                severity: "error"
+            });
+
+            // Highlight form fields if validation errors exist
+            if (error.details && error.details.validationErrors) {
+                Page.Widgets.employeeForm.setErrors(error.details.validationErrors)
+            }
+
+            Page.Widgets.retryUploadBtn.enable(); // Enable retry button after failure
+        };
+    ```
+
+### On Can Update
+The On Can Update event is triggered right before execution, after all validations and just before hitting the service. This event determines whether the variable is allowed to execute.
+
+    ```javascript
+        // Triggered to decide whether the variable should execute
+        Page.createEmployeeonCanUpdate = function (variable, data) {
+            // Prevent execution if another request is in progress
+            if (variable.isExecuting) {
+                return false;
+            }
+
+            // Allow execution
+            return true;
+        };
+    ```

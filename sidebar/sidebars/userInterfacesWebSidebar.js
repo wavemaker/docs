@@ -356,6 +356,10 @@ export default [
         label: 'Create Web App',
         collapsible: true,
         collapsed: true,
+        link: {
+          type: 'doc',
+          id: 'user-interfaces/web/develop/create-web-app-project/index',
+        },
         items: [
           {
             type: 'doc',
@@ -525,7 +529,7 @@ export default [
 
       {
         type: 'category',
-        label: 'UI Event Handling',
+        label: 'Event Handling',
         collapsible: true,
         collapsed: true,
         link: {
@@ -535,19 +539,19 @@ export default [
         items: [
           {
             type: 'doc',
-            id: 'user-interfaces/web/develop/events/event-lifecycle',
-            label: 'Event lifecycle',
+            id: 'user-interfaces/web/develop/events/app-page-events',
+            label: 'App and Page Events',
           },
           {
             type: 'doc',
-            id: 'user-interfaces/web/develop/events/common-events-for-components',
-            label: 'Common events for Components',
+            id: 'user-interfaces/web/develop/events/variable-events',
+            label: 'Variable Events',
           },
-          // {
-          //   type: 'doc',
-          //   id: 'user-interfaces/web/develop/events/javascriptaccess',
-          //   label: 'JavaScript Access',
-          // },
+          {
+            type: 'doc',
+            id: 'user-interfaces/web/develop/events/ui-events',
+            label: 'UI Events',
+          }
         ],
       },
       {

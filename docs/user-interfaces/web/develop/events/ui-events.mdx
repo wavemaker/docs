@@ -2,28 +2,54 @@
 last_update: { author: 'Raj Kumar Reddy Abbadi' }
 ---
 
-# Common Events for Components
+# UI Component Events
 
-WaveMaker components provide a rich set of events to handle user interactions, data changes, and UI state transitions.
-While each component (Form, DataTable, List, Card, Button, etc.) exposes component-specific events, many components also share a set of common events that are used frequently across applications.
+In WaveMaker, every UI component (such as Buttons, Forms, Dialogs, etc.) exposes a set of lifecycle methods and event callbacks. These events allow developers to respond to user interactions and component state changes by executing custom logic.
+UI component events provide a way to extend component behavior without modifying the component itself.
 
-This section focuses on the most commonly used events, explains when they are triggered, and highlights typical use cases where these events are applied in real applications.
+For example, Handling Button Click to Trigger Login Action, the following would be the code:
+    ```javascript
+        Page.submitButtonClick = function ($event, widget) {
+            // Display a loading spinner to indicate processing
+            Page.Widgets.spinner.show = true; 
 
-If you want to explore all available events for a specific component, refer to the individual [Component documentation](https://react-components.wavemaker.com).
+            // Retrieve the submitted data from the User Credentials form
+            var output = Page.Widgets.UserCredentialsForm.dataoutput;
+
+            // Bind form values to the login action parameters
+            App.Actions.loginAction.dataBinding = {
+                "j_username": output.email,
+                "j_password": output.password.value,
+                "j_rememberme": false
+            };
+
+            // Invoke the login action to authenticate the user
+            App.Actions.loginAction.invoke();
+        };
+    ``` 
+
+:::info
+For Component Life Cycle Events and Methods refer to the specific [Component Documentation](https://react-components.wavemaker.com/?path=/story/basic-anchor--docs#tab-events).
+:::
+
+
+
+### Commonly Used Component Specific Events
+
+Below are some commonly used component-specific events that are frequently applied in WaveMaker application development. These events are tied to particular UI components and are triggered in response to user interactions, data operations, or component lifecycle changes.
 
 - **Form Component Events**
     - **onBeforeSubmit:** Fires just before the form data is submitted to a variable or API.
             ```javascript
                 Page.userFormBeforeSubmit = function ($event, widget) {
                     // ex-1: Basic validation
-                    if (!Page.Variables.UserForm.data.email) {
+                    if (!Page.Widgets.UserForm.data.email) {
                         alert("Email is required");
                         return false; // blocks form submission
                     }
 
                     // ex-2: Trim input data
-                    Page.Variables.UserForm.data.username =
-                    Page.Variables.UserForm.data.username.trim();
+                    Page.Widgets.UserForm.data.username = Page.Variables.UserForm.data.username.trim();
                 };
             ``` 
 
@@ -33,19 +59,21 @@ If you want to explore all available events for a specific component, refer to t
                     // ex-1: Disable submit button
                     widget.disable = true;
 
-                    // ex-2: Show loading indicator
-                    Page.isSubmitting = true;
+                    // Invoke backend variable to create user
+                    Page.Variables.CreateUser.invoke();
                 };
             ``` 
 
     - **onSuccess:** After successful form submission and server response.
             ```javascript
                 Page.userFormSuccess = function ($event, widget, response) {
-                    // ex-1: Refresh DataTable
-                    Page.Variables.UserList.invoke();
-
-                    // ex-2: Reset form
-                    Page.Widgets.userForm.reset();
+                    // Navigate to the User Department page after successful form submission
+                    App.Actions.goToPage_UserDepartment.invoke({
+                        // Pass required data to the target page as navigation parameters
+                        data: {
+                            identityId: App.Variables.AddedConsumerInfo.dataSet.endUserId
+                        }
+                    });
                 };
             ``` 
 

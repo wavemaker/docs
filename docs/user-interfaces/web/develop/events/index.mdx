@@ -25,7 +25,8 @@ There are 4 broad categories of events:
     - onReady
     - onDestroy
     - onResize
-    - onAttach etc.
+    - onAttach
+    - onOrientation.
 
 ### Variable invocation callback events
 Variables are associated with underlying REST API and provide events to handle pre and post-processing for the API call invocations. This enables customizing the raw response data returned by the API, before passing on to the Component to render.
@@ -54,16 +55,17 @@ Not all components have state change events, for example a Button component alre
 
 Refer to https://www.w3.org/TR/uievents/#events-uievents
 
-## UI Events
-
 Events can be grouped by the type of user interaction or browser action that triggers them:
 - **Mouse Events:** click, double click, mouse enter, mouse leave, and so on.
 
         ```javascript
             // WM Script for button double click
             Page.UserButtonDblclick = function ($event, widget) {
-                // Showing alert on button double click
-                alert("Triggred button double click")
+                // Enable edit mode
+                Page.Widgets.employeeForm.isEditMode = true;
+
+                // Set focus to the first input field
+                Page.Widgets.firstNameInput.setFocus();
             };
         ```
 
