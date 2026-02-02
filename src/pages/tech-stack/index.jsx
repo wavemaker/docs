@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import Layout from '@theme/Layout';
 import { versions, versionDataMap } from '../../../data/tech-stack-data/versionDataMap';
 import styles from './styles.module.css';
 import Link from '@docusaurus/Link';
 import { useLocation, useHistory } from '@docusaurus/router';
+import { TabsWrapper, TabItem } from '../../components/MDXComponents/LayoutComponents/Tabs';
 
 function formatVersion(v) {
   return 'v' + v.replace(/-/g, '.');
@@ -17,12 +18,11 @@ export default function TechStackPage() {
   
   const [selectedVersion, setSelectedVersion] = useState(initialVersion);
   const [sections, setSections] = useState(null);
-  const [previousVersion, setPreviousVersion] = useState(null);
   const [prevSections, setPrevSections] = useState(null);
+  const [previousVersion, setPreviousVersion] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Sync state with URL if it changes externally
     const v = new URLSearchParams(location.search).get('v') || versions[0];
     if (v !== selectedVersion) {
       setSelectedVersion(v);
@@ -33,14 +33,12 @@ export default function TechStackPage() {
     function loadData() {
       setLoading(true);
       try {
-        // Load current version from the map
         const currentData = versionDataMap[selectedVersion];
         if (!currentData) {
           throw new Error(`Version ${selectedVersion} not found`);
         }
         setSections(currentData);
 
-        // Determine previous version
         const currentIndex = versions.indexOf(selectedVersion);
         const prevV = currentIndex < versions.length - 1 ? versions[currentIndex + 1] : null;
         setPreviousVersion(prevV);
@@ -70,21 +68,24 @@ export default function TechStackPage() {
   };
 
   // Create a lookup map for previous version libraries
-  const prevLibMap = {};
-  if (prevSections) {
-    prevSections.forEach(section => {
-      section.groups.forEach(group => {
-        group.items.forEach(item => {
-          const key = `${section.title}|${group.title}|${item.library}`;
-          prevLibMap[key] = item.version;
+  const prevLibMap = useMemo(() => {
+    const map = {};
+    if (prevSections) {
+      Object.entries(prevSections).forEach(([category, subCats]) => {
+        Object.entries(subCats).forEach(([subCat, items]) => {
+          items.forEach(item => {
+            const key = `${category}|${subCat}|${item.name}`;
+            map[key] = item.version;
+          });
         });
       });
-    });
-  }
+    }
+    return map;
+  }, [prevSections]);
 
-  const hasVersionChanged = (sectionTitle, groupTitle, library, currentVersion) => {
+  const hasVersionChanged = (category, subCat, name, currentVersion) => {
     if (!previousVersion) return false;
-    const key = `${sectionTitle}|${groupTitle}|${library}`;
+    const key = `${category}|${subCat}|${name}`;
     const prevVersion = prevLibMap[key];
     return prevVersion && prevVersion !== currentVersion;
   };
@@ -110,6 +111,12 @@ export default function TechStackPage() {
       </Layout>
     );
   }
+
+  // Filter categories and subcategories based on visibility rules
+  const visibleCategories = Object.entries(sections).filter(([category, subCats]) => {
+    // Check if there's at least one non-empty subcategory
+    return Object.values(subCats).some(items => items && items.length > 0);
+  });
 
   return (
     <Layout title="Tech Stack" description="WaveMaker Tech Stack versions and libraries">
@@ -142,38 +149,51 @@ export default function TechStackPage() {
         </div>
 
         <div className={styles.content}>
-          {sections.map((section, sIdx) => (
-            <section key={sIdx} className={styles.section}>
-              <h2 className={styles.sectionTitle}>{section.title}</h2>
-              <div className={styles.nestedGrid}>
-                {section.groups.map((group, gIdx) => (
-                  <div key={gIdx} className={styles.subSection}>
-                    <h3>{group.title}</h3>
-                    <ul className={styles.list}>
-                      {group.items.map((item, iIdx) => {
-                        const isChanged = hasVersionChanged(section.title, group.title, item.library, item.version);
-                        return (
-                          <li key={iIdx} className={isChanged ? styles.itemChanged : ''}>
-                            <div className={styles.libraryInfo}>
-                              <Link
-                                to={item.url}
-                                className={styles.libraryLink}
-                              >
-                                {item.library}
-                                {isChanged && <span className={styles.updateBadge}>Updated</span>}
-                              </Link>
-                              {item.description && <span className={styles.libraryDesc}>{item.description}</span>}
-                            </div>
-                            <span className={styles.libraryVersion}>{item.version || 'N/A'}</span>
-                          </li>
-                        );
-                      })}
-                    </ul>
-                  </div>
-                ))}
-              </div>
-            </section>
-          ))}
+          <TabsWrapper>
+            {visibleCategories.map(([category, subCats], cIdx) => (
+              <TabItem key={cIdx} name={category}>
+                <div className={styles.section}>
+                  {Object.entries(subCats).map(([subCat, items], sIdx) => {
+                    if (!items || items.length === 0) return null;
+                    
+                    return (
+                      <details key={sIdx} className={styles.accordion}>
+                        <summary className={styles.accordionSummary}>
+                          {subCat}
+                        </summary>
+                        <div className={styles.accordionContent}>
+                          <ul className={styles.list}>
+                            {items.map((item, iIdx) => {
+                              const isChanged = hasVersionChanged(category, subCat, item.name, item.version);
+                              return (
+                                <li key={iIdx} className={isChanged ? styles.itemChanged : ''}>
+                                  <div className={styles.libraryInfo}>
+                                    {item.link && item.link !== '#' ? (
+                                      <Link to={item.link} className={styles.libraryLink}>
+                                        {item.name}
+                                        {isChanged && <span className={styles.updateBadge}>Updated</span>}
+                                      </Link>
+                                    ) : (
+                                      <span className={styles.libraryName}>
+                                        {item.name}
+                                        {isChanged && <span className={styles.updateBadge}>Updated</span>}
+                                      </span>
+                                    )}
+                                    {item.description && <span className={styles.libraryDesc}>{item.description}</span>}
+                                  </div>
+                                  <span className={styles.libraryVersion}>{item.version || 'N/A'}</span>
+                                </li>
+                              );
+                            })}
+                          </ul>
+                        </div>
+                      </details>
+                    );
+                  })}
+                </div>
+              </TabItem>
+            ))}
+          </TabsWrapper>
         </div>
       </main>
     </Layout>
