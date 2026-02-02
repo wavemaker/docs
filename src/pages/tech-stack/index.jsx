@@ -21,6 +21,7 @@ export default function TechStackPage() {
   const [prevSections, setPrevSections] = useState(null);
   const [previousVersion, setPreviousVersion] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [openAccordion, setOpenAccordion] = useState({}); // Track open accordion per category
 
   useEffect(() => {
     const v = new URLSearchParams(location.search).get('v') || versions[0];
@@ -67,25 +68,45 @@ export default function TechStackPage() {
     history.push({ search: newParams.toString() });
   };
 
+  // Helper to check if a content (array or object) is non-empty
+  const isNonEmpty = (content) => {
+    if (!content) return false;
+    if (Array.isArray(content)) return content.length > 0;
+    if (typeof content === 'object') {
+      return Object.values(content).some(isNonEmpty);
+    }
+    return false;
+  };
+
   // Create a lookup map for previous version libraries
   const prevLibMap = useMemo(() => {
     const map = {};
     if (prevSections) {
-      Object.entries(prevSections).forEach(([category, subCats]) => {
-        Object.entries(subCats).forEach(([subCat, items]) => {
-          items.forEach(item => {
-            const key = `${category}|${subCat}|${item.name}`;
+      const traverse = (category, content, path = []) => {
+        if (Array.isArray(content)) {
+          content.forEach(item => {
+            // Use category, the immediate parent key, and item name for comparison
+            const parentKey = path.length > 0 ? path[path.length - 1] : '';
+            const key = `${category}|${parentKey}|${item.name}`;
             map[key] = item.version;
           });
-        });
+        } else if (content && typeof content === 'object') {
+          Object.entries(content).forEach(([key, value]) => {
+            traverse(category, value, [...path, key]);
+          });
+        }
+      };
+
+      Object.entries(prevSections).forEach(([category, subCats]) => {
+        traverse(category, subCats);
       });
     }
     return map;
   }, [prevSections]);
 
-  const hasVersionChanged = (category, subCat, name, currentVersion) => {
+  const hasVersionChanged = (category, parentKey, name, currentVersion) => {
     if (!previousVersion) return false;
-    const key = `${category}|${subCat}|${name}`;
+    const key = `${category}|${parentKey}|${name}`;
     const prevVersion = prevLibMap[key];
     return prevVersion && prevVersion !== currentVersion;
   };
@@ -114,8 +135,7 @@ export default function TechStackPage() {
 
   // Filter categories and subcategories based on visibility rules
   const visibleCategories = Object.entries(sections).filter(([category, subCats]) => {
-    // Check if there's at least one non-empty subcategory
-    return Object.values(subCats).some(items => items && items.length > 0);
+    return isNonEmpty(subCats);
   });
 
   return (
@@ -150,49 +170,99 @@ export default function TechStackPage() {
 
         <div className={styles.content}>
           <TabsWrapper>
-            {visibleCategories.map(([category, subCats], cIdx) => (
-              <TabItem key={cIdx} name={category}>
-                <div className={styles.section}>
-                  {Object.entries(subCats).map(([subCat, items], sIdx) => {
-                    if (!items || items.length === 0) return null;
-                    
-                    return (
-                      <details key={sIdx} className={styles.accordion}>
-                        <summary className={styles.accordionSummary}>
-                          {subCat}
-                        </summary>
-                        <div className={styles.accordionContent}>
-                          <ul className={styles.list}>
-                            {items.map((item, iIdx) => {
-                              const isChanged = hasVersionChanged(category, subCat, item.name, item.version);
+            {visibleCategories.map(([category, subCats], cIdx) => {
+              const handleAccordionToggle = (accordionId) => {
+                setOpenAccordion(prev => ({
+                  ...prev,
+                  [category]: prev[category] === accordionId ? null : accordionId
+                }));
+              };
+
+              return (
+                <TabItem key={cIdx} name={category}>
+                  <div className={styles.section}>
+                    {(() => {
+                      const renderContent = (content, path = []) => {
+                        const entries = Object.entries(content);
+                        // Check if any sibling at this level is an object (representing a subsection)
+                        const hasSubsectionsAtThisLevel = entries.some(([_, v]) => v && typeof v === 'object' && !Array.isArray(v));
+
+                        return entries.map(([name, value], idx) => {
+                          if (!isNonEmpty(value)) return null;
+
+                          if (Array.isArray(value)) {
+                            const accordionId = `${category}-${path.join('-')}-${name}`;
+                            const isOpen = openAccordion[category] === accordionId;
+
+                            const accordion = (
+                              <details 
+                                key={idx} 
+                                className={styles.accordion}
+                                open={isOpen}
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  handleAccordionToggle(accordionId);
+                                }}
+                              >
+                                <summary className={styles.accordionSummary}>
+                                  {name}
+                                </summary>
+                                <div className={styles.accordionContent}>
+                                  <ul className={styles.list}>
+                                    {value.map((item, iIdx) => {
+                                      const isChanged = hasVersionChanged(category, name, item.name, item.version);
+                                      return (
+                                        <li key={iIdx} className={isChanged ? styles.itemChanged : ''}>
+                                          <div className={styles.libraryInfo}>
+                                            {item.link && item.link !== '#' ? (
+                                              <Link to={item.link} className={styles.libraryLink}>
+                                                {item.name}
+                                                {isChanged && <span className={styles.updateBadge}>Updated</span>}
+                                              </Link>
+                                            ) : (
+                                              <span className={styles.libraryName}>
+                                                {item.name}
+                                                {isChanged && <span className={styles.updateBadge}>Updated</span>}
+                                              </span>
+                                            )}
+                                            {item.description && <span className={styles.libraryDesc}>{item.description}</span>}
+                                          </div>
+                                          <span className={styles.libraryVersion}>{item.version || 'N/A'}</span>
+                                        </li>
+                                      );
+                                    })}
+                                  </ul>
+                                </div>
+                              </details>
+                            );
+
+                            // If this level has subsections, wrap even arrays in a subsection header
+                            if (hasSubsectionsAtThisLevel) {
                               return (
-                                <li key={iIdx} className={isChanged ? styles.itemChanged : ''}>
-                                  <div className={styles.libraryInfo}>
-                                    {item.link && item.link !== '#' ? (
-                                      <Link to={item.link} className={styles.libraryLink}>
-                                        {item.name}
-                                        {isChanged && <span className={styles.updateBadge}>Updated</span>}
-                                      </Link>
-                                    ) : (
-                                      <span className={styles.libraryName}>
-                                        {item.name}
-                                        {isChanged && <span className={styles.updateBadge}>Updated</span>}
-                                      </span>
-                                    )}
-                                    {item.description && <span className={styles.libraryDesc}>{item.description}</span>}
-                                  </div>
-                                  <span className={styles.libraryVersion}>{item.version || 'N/A'}</span>
-                                </li>
+                                <div key={idx} className={styles.subsection}>
+                                  <h3 className={styles.subsectionTitle}>{name}</h3>
+                                  {accordion}
+                                </div>
                               );
-                            })}
-                          </ul>
-                        </div>
-                      </details>
-                    );
-                  })}
-                </div>
-              </TabItem>
-            ))}
+                            }
+                            return accordion;
+                          } else {
+                            // Render Subsection header and recurse
+                            return (
+                              <div key={idx} className={styles.subsection}>
+                                <h3 className={styles.subsectionTitle}>{name}</h3>
+                                {renderContent(value, [...path, name])}
+                              </div>
+                            );
+                          }
+                        });
+                      };
+                      return renderContent(subCats);
+                    })()}
+                  </div>
+                </TabItem>
+              );
+            })}
           </TabsWrapper>
         </div>
       </main>

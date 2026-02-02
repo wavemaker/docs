@@ -1,95 +1,114 @@
 {
   "Application Stack": {
-    "Angular": [
-      {
-        "name": "Angular",
-        "description": "Platform for building mobile and desktop web applications.",
-        "link": "https://angular.io/",
-        "version": "18.2.13"
-      },
-      {
-        "name": "jQuery",
-        "description": "Fast, small, and feature-rich JavaScript library.",
-        "link": "https://jquery.com/",
-        "version": "3.7.1"
-      },
-      {
-        "name": "jQuery UI",
-        "description": "Set of user interface interactions, effects, widgets, and themes built on top of jQuery.",
-        "link": "https://jqueryui.com/",
-        "version": "1.13.3"
-      },
-      {
-        "name": "ngx-bootstrap",
-        "description": "Native Angular directives for Bootstrap.",
-        "link": "https://valor-software.com/ngx-bootstrap/",
-        "version": "9.0.0"
-      },
-      {
-        "name": "Bootstrap",
-        "description": "The most popular HTML, CSS, and JS library for developing responsive, mobile-first projects.",
-        "link": "https://getbootstrap.com/docs/3.3/",
-        "version": "3.3.7"
-      },
-      {
-        "name": "D3.js",
-        "description": "JavaScript library for manipulating documents based on data.",
-        "link": "https://d3js.org/",
-        "version": "7.8.5"
-      },
-      {
-        "name": "NVD3",
-        "description": "Re-usable charts for D3.js.",
-        "link": "https://nvd3.org/",
-        "version": "1.8.11"
-      },
-      {
-        "name": "FullCalendar",
-        "description": "Full-sized drag & drop event calendar.",
-        "link": "https://fullcalendar.io/",
-        "version": "6.1.15"
-      },
-      {
-        "name": "Lodash (lodash-es)",
-        "description": "A modern JavaScript utility library delivering modularity, performance, & extras.",
-        "link": "https://lodash.com/",
-        "version": "4.17.21"
-      },
-      {
-        "name": "Hammer.js",
-        "description": "A javascript library for multi-touch gestures.",
-        "link": "https://hammerjs.github.io/",
-        "version": "2.0.8"
-      },
+    "UI": {
+      "Angular": [
+        {
+          "name": "Angular",
+          "description": "Platform for building mobile and desktop web applications.",
+          "link": "https://angular.io/",
+          "version": "18.2.13"
+        },
+        {
+          "name": "jQuery",
+          "description": "Fast, small, and feature-rich JavaScript library.",
+          "link": "https://jquery.com/",
+          "version": "3.7.1"
+        },
+        {
+          "name": "jQuery UI",
+          "description": "Set of user interface interactions, effects, widgets, and themes built on top of jQuery.",
+          "link": "https://jqueryui.com/",
+          "version": "1.13.3"
+        },
+        {
+          "name": "ngx-bootstrap",
+          "description": "Native Angular directives for Bootstrap.",
+          "link": "https://valor-software.com/ngx-bootstrap/",
+          "version": "9.0.0"
+        },
+        {
+          "name": "Bootstrap",
+          "description": "The most popular HTML, CSS, and JS library for developing responsive, mobile-first projects.",
+          "link": "https://getbootstrap.com/docs/3.3/",
+          "version": "3.3.7"
+        },
+        {
+          "name": "D3.js",
+          "description": "JavaScript library for manipulating documents based on data.",
+          "link": "https://d3js.org/",
+          "version": "7.8.5"
+        },
+        {
+          "name": "NVD3",
+          "description": "Re-usable charts for D3.js.",
+          "link": "https://nvd3.org/",
+          "version": "1.8.11"
+        },
+        {
+          "name": "FullCalendar",
+          "description": "Full-sized drag & drop event calendar.",
+          "link": "https://fullcalendar.io/",
+          "version": "6.1.15"
+        },
+        {
+          "name": "Lodash (lodash-es)",
+          "description": "A modern JavaScript utility library delivering modularity, performance, & extras.",
+          "link": "https://lodash.com/",
+          "version": "4.17.21"
+        },
+        {
+          "name": "Hammer.js",
+          "description": "A javascript library for multi-touch gestures.",
+          "link": "https://hammerjs.github.io/",
+          "version": "2.0.8"
+        }
+      ],
+      "React": [],
+      "React Native": [
+        {
+          "name": "React Native",
+          "description": "Framework for building native apps using React.",
+          "link": "https://reactnative.dev/",
+          "version": "0.81.4"
+        },
+        {
+          "name": "Expo",
+          "description": "Platform for universal React applications.",
+          "link": "https://expo.dev/",
+          "version": "54.0.12"
+        }
+      ]
+    },
+    "Backend": [
       {
         "name": "Spring Framework",
         "description": "Comprehensive programming and configuration model for modern Java-based enterprise applications.",
         "link": "https://spring.io/projects/spring-framework",
-        "version": "6.2.11"
+        "version": "6.2.12"
       },
       {
         "name": "Spring Security",
         "description": "Authentication and access-control framework.",
         "link": "https://spring.io/projects/spring-security",
-        "version": "6.4.11"
+        "version": "6.5.6"
       },
       {
         "name": "Spring Data",
         "description": "Simplifies data access for relational and non-relational databases.",
         "link": "https://spring.io/projects/spring-data",
-        "version": "2024.1.10"
+        "version": "2025.0.5"
       },
       {
         "name": "Spring Boot",
         "description": "Framework to create stand-alone, production-grade Spring based Applications.",
         "link": "https://spring.io/projects/spring-boot",
-        "version": "3.4.10"
+        "version": "3.5.6"
       },
       {
         "name": "Spring Session",
         "description": "Provides an API and implementations for managing a user's session information.",
         "link": "https://spring.io/projects/spring-session",
-        "version": "3.4.3"
+        "version": "3.5.2"
       },
       {
         "name": "Hibernate (Jakarta)",
@@ -125,7 +144,7 @@
         "name": "HttpComponents HttpClient",
         "description": "Client-side HTTP standards implementation.",
         "link": "https://hc.apache.org/httpcomponents-client-5.x/",
-        "version": "5.4.4"
+        "version": "5.5.1"
       },
       {
         "name": "Jakarta Servlet",
@@ -137,13 +156,13 @@
         "name": "HikariCP",
         "description": "High-performance JDBC connection pool.",
         "link": "https://github.com/brettwooldridge/HikariCP",
-        "version": "6.3.3"
+        "version": "7.0.2"
       },
       {
         "name": "Apache Commons Lang3",
         "description": "Extra methods for manipulation of standard Java classes.",
         "link": "https://commons.apache.org/proper/commons-lang/",
-        "version": "3.18.0"
+        "version": "3.19.0"
       },
       {
         "name": "Guava",
@@ -155,7 +174,7 @@
         "name": "PostgreSQL Driver",
         "description": "JDBC driver for PostgreSQL.",
         "link": "https://jdbc.postgresql.org/",
-        "version": "42.7.4"
+        "version": "42.7.8"
       },
       {
         "name": "Hibernate Validator",
@@ -167,7 +186,7 @@
         "name": "JGit",
         "description": "Java implementation of the Git version control system.",
         "link": "https://www.eclipse.org/jgit/",
-        "version": "7.3.0"
+        "version": "7.4.0"
       },
       {
         "name": "Apache Commons Codec",
@@ -215,7 +234,7 @@
         "name": "MongoDB Driver",
         "description": "Java driver for MongoDB.",
         "link": "https://www.mongodb.com/docs/drivers/java/sync/current/",
-        "version": "5.4.0"
+        "version": "5.6.1"
       },
       {
         "name": "Jakarta Validation API",
@@ -241,21 +260,6 @@
         "link": "http://hsqldb.org/",
         "version": "2.7.4"
       }
-    ],
-    "React": [],
-    "React Native": [
-      {
-        "name": "React Native",
-        "description": "Framework for building native apps using React.",
-        "link": "https://reactnative.dev/",
-        "version": "0.76.3"
-      },
-      {
-        "name": "Expo",
-        "description": "Platform for universal React applications.",
-        "link": "https://expo.dev/",
-        "version": "52.0.17"
-      }
     ]
   },
   "Build Time": {
@@ -264,7 +268,7 @@
         "name": "Apache Maven",
         "description": "Software project management and comprehension tool.",
         "link": "https://maven.apache.org/",
-        "version": "3.9.9"
+        "version": "3.9.11"
       },
       {
         "name": "Apache Ant",
@@ -285,19 +289,19 @@
         "name": "Android Gradle Plugin (AGP)",
         "description": "Build system for Android applications.",
         "link": "https://developer.android.com/build",
-        "version": "8.10.2"
+        "version": "8.14.3"
       },
       {
         "name": "SDK Build Tools",
         "description": "Tools required to build Android applications.",
         "link": "https://developer.android.com/studio/releases/build-tools",
-        "version": "34.0.0"
+        "version": "36.0.0"
       },
       {
         "name": "wm-reactnative-cli",
         "description": "WaveMaker CLI for React Native projects.",
         "link": "https://www.npmjs.com/package/@wavemaker/wm-reactnative-cli",
-        "version": "1.8.8"
+        "version": "1.9.3"
       },
       {
         "name": "Maven",
@@ -370,13 +374,13 @@
         "name": "Android Studio",
         "description": "Integrated Development Environment (IDE) for Android app development.",
         "link": "https://developer.android.com/studio",
-        "version": "Ladybug 2024.2.2"
+        "version": "Narwhal 4 2025.1.4"
       },
       {
         "name": "Xcode",
         "description": "Integrated Development Environment (IDE) for macOS/iOS.",
         "link": "https://developer.apple.com/xcode/",
-        "version": "15.4"
+        "version": "26"
       }
     ]
   }
