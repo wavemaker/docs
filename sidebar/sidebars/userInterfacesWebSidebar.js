@@ -576,10 +576,10 @@ export default [
       //   type: 'doc',
       //   id: 'user-interfaces/web/develop/input-validations',
       // },
-      {
-        type: 'doc',
-        id: 'user-interfaces/web/develop/state-management',
-      },
+      // {
+      //   type: 'doc',
+      //   id: 'user-interfaces/web/develop/state-management',
+      // },
       // {
       //   type: 'category',
       //   label: 'State Management',
