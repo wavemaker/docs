@@ -394,7 +394,7 @@ export default [
         items: [
           {
             type: 'doc',
-            id: 'user-interfaces/web/develop/working-with-layouts/container-auto-layout',
+            id: 'user-interfaces/web/develop/working-with-layouts/auto-layout',
             label: 'Container Auto Layout',
           },
           {
