@@ -3,6 +3,8 @@ title: JavaScript Agent
 last_update: { author: "Swetha Kundaram" }
 ---
 
+import myimg from './assets/images/img.svg';
+
 - [When JavaScript Is Used in WaveMaker](#when-javascript-is-used-in-wavemaker)
 - [How Aira Handles JavaScript Logic](#how-aira-handles-javascript-logic)
 
@@ -16,6 +18,10 @@ WaveMaker builds application structure through visual design and configuration. 
 Visual configuration executes first. JavaScript runs after UI and data bindings are executed. JavaScript complements WaveMaker features and it does not replace them.
 
 ![JS WaveMaker](../../../static/learn/assets/js-wavemaker.png)
+
+<!-- ![JS WaveMaker](./assets/images/img.svg) -->
+
+<img src={myimg} />
 
 #### **UI (Visual) → Data (Configured) → JavaScript (Behavior)**
 
@@ -58,7 +64,7 @@ The agent never creates or modifies components. It attaches behavior only.
 ![alt text](../../../static/learn/assets/ui-js-agent.png)
 
 
-### Data and Backend Interaction Logic
+### Data Modification and Interaction Logic
 
 JavaScript coordinates data flow between the UI and backend services.
 
@@ -70,13 +76,16 @@ The agent works with:
 
 It can transform responses, chain calls conditionally, and execute logic on variable lifecycle events such as `onSuccess` or `onError`.
 
+:::note
+When variables execute, WaveMaker emits events before and after the backend call. The JavaScript agent attaches logic to the appropriate point in this lifecycle—such as validation before execution or UI updates after success—without requiring the user to manage these events manually.
+
 When interacting with APIs or backend services, the JavaScript agent follows WaveMaker-supported callback and event-based patterns.
 Promise-based or framework-agnostic async patterns are intentionally avoided to remain compliant with the platform runtime.
 
 ![alt text](../../../static/learn/assets/backend-js-agent.png)
 
 JavaScript coordinates and responds to backend interactions, but it does not implement backend logic or replace server-side services.
-
+:::
 
 ### Validation Logic
 
@@ -87,8 +96,6 @@ Optional fields are skipped when context indicates they are not required.
 
 Validation logic runs before submission or variable execution. No UI structure is modified during validation.
 
-
-
 ## How the JavaScript Agent Identifies Targets
 
 Before generating code, the agent analyzes the existing application state.
@@ -96,24 +103,36 @@ Before generating code, the agent analyzes the existing application state.
 It reads page metadata and DOM structure to identify components, forms, and variables already present.
 It then locates relevant events or determines where new handlers must be created.
 
-Logic is attached only after this analysis completes.
-No unrelated elements are touched.
+Logic is attached only after this analysis completes. No unrelated elements are touched.
 
-
-
-## Importance of Naming and Prompt Precision
+### Importance of Naming and Prompt Precision
 
 Accurate targeting depends heavily on naming.
 
-Descriptive widget and variable names allow the agent to locate elements reliably and efficiently.
-Poor naming increases ambiguity and slows execution.
+Descriptive component and variable names allow the agent to locate elements reliably and efficiently. Poor naming increases ambiguity and slows execution.
 
-Prompts should clearly specify the page, target elements, and expected behavior.
-Generic prompts expand the search scope and reduce predictability.
+### UI Analysis and Targeting
+
+Before generating code, the agent analyzes the page DOM and WaveMaker metadata to locate targets. Accurate targeting depends on widget naming.
+
+#### Good naming
+
+- `showHidePasswordButton`
+- `shippingForm`
+- `submitRequestBtn`
+
+#### Bad naming (avoid using)
+
+- `button1`
+- `formField2`
+- `ABCbutton`
+
 
 If the required context is missing or ambiguous, the agent does not infer intent and requests clarification before generating or attaching JavaScript logic.
 
+Prompts should clearly specify the page, target elements, and expected behavior. Generic prompts expand the search scope and reduce predictability.
 
+The agent never injects UI elements. It only binds logic to widgets that already exist.
 
 ## End-to-End Execution Flow
 
@@ -130,7 +149,7 @@ Event Detection or Creation
    ↓
 JavaScript Logic Attachment
    ↓
-Runtime Execution
+Execution
 ```
 
 Each step is required.
@@ -147,5 +166,3 @@ The **wm_js_agent** identifies the relevant fields, applies contextual validatio
 
 The UI remains unchanged.
 Only behavior is added.
-
-
