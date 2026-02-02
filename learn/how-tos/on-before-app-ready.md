@@ -21,7 +21,7 @@ This makes it an ideal place to perform **pre-initialization logic**, such as:
 
 ### Execution Timing
 
-This hook is executed before the application UI is initialized, equivalent to **Angular’s `APP_INITIALIZER`** phase.
+This hook is executed before the application UI is initialized, equivalent to **[Angular’s `APP_INITIALIZER`](https://angular.dev/api/core/APP_INITIALIZER)** phase.
 
 As a result:
 - The application **waits for this hook to complete** before continuing startup.
@@ -61,6 +61,7 @@ App.onBeforeAppReady = function () {
 - If the Promise is rejected or an error is thrown, application initialization stops. This can be used to enforce controlled startup failures (for example, invalid sessions or maintenance mode).
 - Keep logic minimal and efficient to avoid delaying application startup.
 - You can use any available App variables safely inside this hook.
+
 
 
 
