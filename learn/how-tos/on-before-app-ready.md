@@ -1,36 +1,39 @@
 ---
 title: "Initialize data before app is loaded"
-id: "on-before-app-ready-hook"
+id: "on-before-app-ready"
 ---
 ---
 
-### **Overview**
+The `App.onBeforeAppReady` hook allows you to execute custom logic before the application User Interface (UI) is initialized and rendered.
 
-The `App.onBeforeAppReady` hook allows you to execute custom logic **right before the application is initialized**.
+When this hook executes, only platform-initialized data is available, including:
 
-At this point in the app life cycle, the following data is already available for use:
-
-* App Variables
-* Metadata such as
-  * Security configuration
-  * Logged-in user information
+- Application-level variables
+- Platform metadata, such as:
+  - Security configuration
+  - Logged-in user context (if authentication is enabled)
 
 This makes it an ideal place to perform **pre-initialization logic**, such as:
-* Setting the application UI mode based on user preferences
-* Loading organization-specific configurations
-* Redirecting users based on roles or permissions
-* Blocking app load with a custom error or maintenance screen if a check fails
+- Setting the application UI mode based on user preferences
+- Loading organization-specific configurations
+- Redirecting users based on roles or permissions
+- Blocking app load with a custom error or maintenance screen if a check fails
 
-### **Execution Timing**
-This hook is invoked before the app UI is initialized (equivalent to the **Angular `APP_INITIALIZER`** phase), which implies:
-* The app **waits for this method to complete** before bootstrapping.
-* If this method **returns a Promise**, the application will:
-    * **Wait** for the promise to resolve before proceeding.
-    * **Halt loading** if the promise rejects or throws an error.
+### Execution Timing
 
-### **Example**
-Use case: Setting UI color mode Based on the Logged-in User preferences
-```
+This hook is executed before the application UI is initialized, equivalent to **Angular’s `APP_INITIALIZER`** phase.
+
+As a result:
+- The application **waits for this hook to complete** before continuing startup.
+- If the hook returns a Promise:
+  - The application waits for the Promise to resolve before proceeding.
+  - Application initialization stops if the Promise rejects or an error is thrown.
+
+### Example
+
+Use case: Setting UI color mode based on the Logged-in User preferences.
+
+```js
 // add the hook in app.js
 App.onBeforeAppReady = function () {
     // Check if the user is authenticated
@@ -51,11 +54,14 @@ App.onBeforeAppReady = function () {
     }
 };
 ```
-### **Points to Remember**
-* **Return a Promise** if your logic involves asynchronous operations (API calls, DB queries, etc.).
-* If the promise is rejected, the app initialization will **stop** — this is useful for controlled failures (e.g., session invalidation, maintenance mode).
-* Keep your logic **lightweight** — heavy computations here can slow down app startup.
-* You can use any available **App variables** safely inside this hook.
+
+### Points to Remember
+
+- Return a Promise when performing asynchronous operations (such as API calls or database queries).
+- If the Promise is rejected or an error is thrown, application initialization stops. This can be used to enforce controlled startup failures (for example, invalid sessions or maintenance mode).
+- Keep logic minimal and efficient to avoid delaying application startup.
+- You can use any available App variables safely inside this hook.
+
 
 
 
