@@ -488,7 +488,7 @@
 					"how-tos/using-custom-formatter",
 					"how-tos/using-custom-formatter-for-todate",
 					"how-tos/customize-breakpoints-for-widths-of-show-in-devices",
-					"how-tos/on-before-app-ready-hook",
+					"how-tos/on-before-app-ready",
 					{
 						"type": "category",
 						"label": "Nav & Dropdown",
