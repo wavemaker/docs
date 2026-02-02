@@ -18,14 +18,14 @@ export default [
       },
       {
         type: 'category',
-        label: '12.1.x',
+        label: '12.0.x',
         collapsible: true,
         collapsed: true,
         items: [
           {
             type: 'doc',
-            id: 'release-notes/release-12/version-1x/12.1.0-beta',
-            label: '12.1.0 Beta',
+            id: 'release-notes/release-12/version-12-0-x/12.0.1-beta',
+            label: '12.0.1 Beta',
           },
         ],
       },
