@@ -413,7 +413,7 @@ export default [
           {
             type: 'doc',
             id: 'user-interfaces/web/develop/working-with-layouts/auto-layout',
-            label: 'Container Auto Layout',
+            label: 'Auto Layout',
           },
           {
             type: 'doc',
