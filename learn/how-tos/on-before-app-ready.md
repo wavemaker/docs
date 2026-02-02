@@ -21,7 +21,7 @@ This makes it an ideal place to perform **pre-initialization logic**, such as:
 
 ### Execution Timing
 
-This hook is executed before the application UI is initialized, equivalent to **[Angular’s `APP_INITIALIZER`](https://angular.dev/api/core/APP_INITIALIZER)** phase.
+This hook is executed before the application UI is initialized, equivalent to [Angular’s appInitialization provider](https://angular.dev/api/core/APP_INITIALIZER).
 
 As a result:
 - The application **waits for this hook to complete** before continuing startup.
