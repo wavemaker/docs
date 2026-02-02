@@ -6,7 +6,7 @@ last_update: { author: "Priyanka Bhadri" }
 
 Application security in WaveMaker provides a structured framework to safeguard application resources. It controls who can access the application, verifies user identities using supported authentication mechanisms, and enforces authorization rules to ensure users can perform only permitted actions.
 
-This overview introduces the WaveMaker security model and explains how authentication, user onboarding, and authorization work together to secure application pages, services, and APIs.
+This overview introduces the WaveMaker security model and explains how authentication, user onboarding, and authorization work together to secure the application.
 
 
 ---
@@ -25,7 +25,7 @@ These components work together to provide a secure and scalable access control m
 
 ---
 
-### Security Workspace
+## Security Workspace
 
 WaveMaker provides a dedicated **Security Workspace** that serves as the central hub for configuring and managing application security.
 
@@ -43,6 +43,7 @@ A short video in this section walks through the Security Workspace UI and demons
 **Learn more:** [Security Configurator](../../studio/workspaces/security-configurator.mdx)
 
 
+---
 
 
 
@@ -61,7 +62,7 @@ This unified approach ensures **consistent security across the entire applicatio
 
 ![SecurityOverview](assets/overview2.png)
 
-
+---
 
 
 
@@ -82,7 +83,7 @@ WaveMaker supports multiple authentication mechanisms, including:
 
 If a user fails authentication, access is denied, returning an HTTP 401 response or redirecting to a login flow.
 
----
+
 
 ### User Onboarding – Mapping Users to Roles
 After authentication, WaveMaker retrieves additional user details during **onboarding**:
@@ -93,7 +94,7 @@ After authentication, WaveMaker retrieves additional user details during **onboa
 
 This information is mapped to application roles, forming the foundation for **role-based access control (RBAC)** and ensuring that users can only perform authorized actions.
 
----
+
 
 ### Authorization – Enforcing Access Control
 Authorization determines **what an authenticated user can do** within the application. WaveMaker uses a **role-based access control (RBAC) model**, where permissions are assigned to roles rather than individual users. This ensures scalable and maintainable access management.
@@ -106,13 +107,17 @@ Authorization is applied consistently across:
 
 All checks are enforced **server-side**, ensuring security even if client-side code is modified or bypassed.
 
----
+To Learn More [Authentication and Authorization](authentication-and-authorization)
+
+
 
 ### Server-Side Enforcement
 
 All authentication and authorization checks are enforced on the server. While the UI can conditionally show or hide features, server-side validation ensures that application resources remain protected even if client-side logic is modified or bypassed.
 
----
+To Learn more [Secure Server Side Properties](../../guide/migrated-docs/secure-server-side-properties)
+
+
 
 ### Built-In Protections
 
@@ -123,6 +128,8 @@ WaveMaker includes several **pre-configured security mechanisms** to protect app
 - **HTTP 401 / 403 Enforcement** – Ensures proper responses for unauthorized or forbidden access.  
 - **Secure Default Settings** – Sensible defaults reduce risk even for applications with minimal security customization.  
 - **Role-Based Access Controls (RBAC)** – Fine-grained access control based on roles, ensuring users can perform only authorized operations.
+
+To Learn More [Built-In Protections](hardening-app/xss-antisamy-policy-configuration)
 
 ---
 
