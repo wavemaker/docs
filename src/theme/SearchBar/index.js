@@ -542,6 +542,10 @@ function SearchTabsPortal({ activeTab, setActiveTab }) {
                 className={`DocSearch-Tab ${activeTab === 'ask-ai' ? 'DocSearch-Tab--active' : ''}`}
                 onClick={() => setActiveTab('ask-ai')}
             >
+                <svg className="DocSearch-Tab-Icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 2L11.5 7.5L17 9L11.5 10.5L10 16L8.5 10.5L3 9L8.5 7.5L10 2Z" />
+                    <path d="M18 12L19 15L22 16L19 17L18 20L17 17L14 16L17 15L18 12Z" />
+                </svg>
                 Ask AI
             </button>
         </div>,
@@ -620,7 +624,7 @@ function AskAIPortal({ query, apiUrl, onClose, activeTab, triggerSearch }) {
 
     // unless we want persistence. Let's keep it mounted but hidden for persistence.
     return createPortal(
-        <div style={{ display: activeTab === 'ask-ai' ? 'flex' : 'none', flex: 1, flexDirection: 'column', height: '100%' }}>
+        <div style={{ display: activeTab === 'ask-ai' ? 'flex' : 'none', flex: 1, flexDirection: 'column', height: '100%', minHeight: 0, overflow: 'hidden' }}>
             <AskAIPanel
                 query={query}
                 apiUrl={apiUrl}
