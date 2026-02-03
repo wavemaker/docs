@@ -40,61 +40,41 @@ WaveMaker automatically generates backend security services to manage authentica
 
 ---
 
+ 
 ## Configuring Database Authentication in WaveMaker
 
-### Step 1: Enable Security
+- Database authentication allows WaveMaker applications to verify users and control access using database tables.
 
-1. Open the application in WaveMaker Studio.
-2. Navigate to **Security** settings.
-3. Enable application security if it is not already enabled.
+- Security must be enabled in the application to ensure that protected pages, services, and APIs are accessible only to authenticated users.
 
+- The database can be configured as the authentication provider by assigning a unique provider name and optionally setting it as the primary authentication mechanism.
 
-### Step 2: Select Database as the Authentication Provider
+- Authentication relies on database tables to manage user credentials and roles:
 
-1. Choose **Database** as the authentication provider.
-2. Provide a unique **Provider Name**.
-3. Specify whether this provider is the primary authentication mechanism.
+  - **User Table**
+    - Stores username and password details.
+    - Can include an account status or enable/disable flag to control user access.
 
+  - **Role Table**
+    - Defines application roles using role names and identifiers.
 
-### Step 3: Configure User and Role Tables
+  - **User–Role Mapping Table**
+    - Associates users with one or more roles when multiple role assignments are required.
 
-Configure the database schema used for authentication:
+- WaveMaker supports secure password management:
+  - Passwords can be stored in encrypted or hashed formats.
+  - Password verification is handled securely on the server side.
+  - Configurable password encoders are supported.
+  - Plain-text password storage is not recommended for production environments.
 
-#### User Table
-- Username column  
-- Password column  
-- Account status / enabled flag (optional)
+- After successful authentication, WaveMaker automatically enforces authorization rules:
+  - Access to pages, services, and APIs is controlled based on user roles.
+  - Unauthorized users are prevented from accessing restricted resources.
 
-#### Role Table
-- Role name  
-- Role identifier
-
-#### User–Role Mapping Table (if applicable)
-- Maps users to one or more roles
-
-WaveMaker uses these tables to authenticate users and resolve authorization roles.
-
-
-### Step 4: Password Handling
-
-WaveMaker supports secure password handling, including:
-
-- Encrypted or hashed password storage
-- Server-side password comparison
-- Configurable password encoders
-
-> Note:  
-> Plain-text password storage is not recommended for production environments.
-
-
-### Step 5: Configure Authorization
-
-After authentication:
-- Access levels and permissions are enforced
-- Pages, services, and APIs are protected based on roles
-- Unauthorized users are blocked automatically
 
 ---
+
+
 
 <!-- ## Runtime Behavior
 

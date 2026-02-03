@@ -51,75 +51,48 @@ WaveMaker SAML integration works with any SAML 2.0-compliant provider, including
 - Custom enterprise IdPs
 
 ---
+## Configuring SAML Authentication in WaveMaker
 
-## Configuring SAML in WaveMaker
+- SAML authentication enables Single Sign-On (SSO) by allowing users to log in through an external Identity Provider (IdP) such as Azure AD, Okta, or other SAML-compliant providers.
 
-### Step 1: Enable Security
+- Security must be enabled in the application to ensure that protected pages, services, and APIs are accessible only to authenticated users.
 
-1. Open the application in WaveMaker Studio.
-2. Navigate to **Security** settings.
-3. Enable application security if it is not already enabled.
+- The **SAML** option can be configured as the authentication provider by assigning a unique provider name and optionally setting it as the primary authentication mechanism.
 
+- Identity Provider (IdP) details are required to establish authentication trust. These details can be configured using either:
+  
+  - **Metadata URL**
+    - A URL provided by the IdP that exposes SAML metadata.
+    - The URL must be publicly accessible from the WaveMaker runtime.
+    - Metadata URLs typically do not require alias or password.
+    - Proper HTTPS access, valid certificates, and correct tenant configuration are required for successful validation.
 
-### Step 2: Select SAML as the Authentication Provider
+    Below is sample Metadata URL exposed by the Identity Provider (Azure AD) that returns SAML metadata.        
+    `https://login.microsoftonline.com/common/federationmetadata/2007-06/federationmetadata.xml`
 
-1. Choose **SAML** as the authentication provider.
-2. Provide a unique **Provider Name**.
-3. Specify whether SAML is the primary authentication mechanism.
-
-
-### Step 3: Configure Identity Provider (IdP) Details
-
-You can configure the IdP using **Metadata URL** or **Metadata XML**.
-
-#### Metadata URL
-Provide the URL exposed by the Identity Provider that returns SAML metadata.
-
-**Example (Azure AD):**
-
-`https://login.microsoftonline.com/common/federationmetadata/2007-06/federationmetadata.xml`
+  - **Metadata XML**
+    - Full metadata XML content provided by the IdP can be manually uploaded if the metadata URL is unavailable.
 
 
-> Note:  
-> - Metadata URLs do **not** require alias or password  
-> - The URL must be publicly accessible from the WaveMaker runtime  
-> - If validation fails, ensure HTTPS access, valid certificates, and correct tenant configuration
+- WaveMaker automatically generates Service Provider (SP) metadata required to complete the trust configuration with the IdP:
+  - Entity ID
+  - Assertion Consumer Service (ACS) URL
+  - Single Logout (SLO) URL  
+  This SP metadata must be registered or uploaded in the Identity Provider configuration.
 
-#### Metadata XML
-Alternatively, paste the full metadata XML content provided by the IdP.
+- Attribute mapping is used to map IdP user attributes to WaveMaker user fields:
+  - Username or User ID
+  - Email
+  - Display Name
+  - Roles or Groups (optional)
 
+- Role assignment can be handled in two ways:
+  - Roles can be directly received from SAML assertions.
+  - Roles can be retrieved from a database using the authenticated username.
 
-### Step 4: Configure Service Provider (SP) Settings
-
-WaveMaker automatically generates SP metadata, including:
-
-- Entity ID  
-- Assertion Consumer Service (ACS) URL  
-- Single Logout (SLO) URL  
-
-This metadata must be uploaded or registered with the Identity Provider to establish trust.
-
-
-### Step 5: Attribute Mapping
-
-Map IdP attributes to WaveMaker user fields:
-
-- **Username / User ID**
-- **Email**
-- **Display Name**
-- **Roles or Groups (optional)**
-
-Role mapping can be:
-- Derived directly from SAML assertions, or
-- Looked up from a database using the authenticated username
-
-
-### Step 6: Configure Authorization
-
-After authentication:
-- Access levels and permissions are applied
-- Pages, services, and APIs are protected based on roles
-- Unauthorized users are blocked automatically
+- After successful authentication, WaveMaker enforces authorization rules across the application:
+  - Access to pages, services, and APIs is controlled based on assigned roles.
+  - Unauthorized users are prevented from accessing restricted resources.
 
 ---
 
