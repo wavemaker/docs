@@ -46,8 +46,11 @@ The export process generates:
 - A single `.war` file
 
 
-:::note
-To learn how to generate a WAR file in WaveMaker, watch the video below:
+<VideoCard
+  videoUrl="https://next-academy.wavemaker.com/Watch?wm=F1B323D0D3"
+  title="Generate a WAR from studio"
+  description="Understand how to generate a deployable WAR file from WaveMaker Studio."
+  thumbnailText="Generate a WAR from studio"
+/>
 
-▶️ [Generate a WAR from studio](https://next-academy.wavemaker.com/Watch?wm=F1B323D0D3)
-:::
+
