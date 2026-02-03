@@ -21,7 +21,7 @@ AIRA is designed to accelerate development when the desired outcome is clear.
 
 It works especially well for tasks that span multiple areas of an application and would otherwise require repetitive setup or careful coordination.
 
-AIRA is particularly effective at:
+AIRA is effective at:
 
 - Creating application structure from intent rather than manual steps
 - Generating UI pages and partials using WaveMaker’s declarative model
@@ -38,7 +38,7 @@ In these scenarios, AIRA reduces manual effort while preserving correctness and 
 
 AIRA is powerful, but it is deliberately constrained. These constraints are intentional and critical to maintaining predictable behavior in enterprise applications.
 
-AIRA is not a free-form AI assistant that can invent arbitrary solutions or bypass platform rules.
+AIRA is not a free-form AI assistant that invents unconstrained solutions or bypasses platform rules.
 
 Specifically:
 
