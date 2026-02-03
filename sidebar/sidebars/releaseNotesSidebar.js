@@ -24,7 +24,7 @@ export default [
         items: [
           {
             type: 'doc',
-            id: 'release-notes/release-12/version-12-0-x/12.0.1-beta',
+            id: 'release-notes/release-12/version-12-0-x/12.0.1',
             label: '12.0.1 Beta',
           },
         ],
