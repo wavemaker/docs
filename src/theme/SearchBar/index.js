@@ -283,7 +283,7 @@ function AskAIPanel({ query, apiUrl, onClose, isVisible, triggerSearch }) {
 
                 {!submittedQuery && !isLoading && (
                     <div className="DocSearch-AskAI-EmptyState">
-                        <p>Ask a question to get started.</p>
+                        <span>Ask the question above and then press Enter <kbd class="mx-0.5">↵</kbd> to send it.</span>
                     </div>
                 )}
 

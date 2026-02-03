@@ -17,7 +17,7 @@
   flex-direction: column;
   height: var(--docsearch-modal-variable-height);
   max-height: calc(var(--docsearch-modal-height) - var(--docsearch-spacing) - var(--docsearch-footer-height));
-  min-height: 0;
+  min-height: var(--docsearch-spacing);
   /* Required for flex child overflow scrolling */
   overflow: auto;
 }
@@ -319,7 +319,7 @@
   display: flex;
   flex-direction: column;
   /* Fixed height to match default search panel */
-  height: 100%;
+  height: calc(var(--docsearch-modal-variable-height) + var(--docsearch-footer-height) + var(--docsearch-spacing));
   min-height: 0;
   /* Required for flex child overflow scrolling */
   background: var(--docsearch-modal-background);
@@ -397,6 +397,14 @@
   /* Required for flex child overflow */
   scrollbar-color: var(--docsearch-muted-color) var(--docsearch-modal-background);
   scrollbar-width: thin;
+}
+
+.DocSearch-AskAI-EmptyState {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
 }
 
 .DocSearch-AskAI-QueryTitle {
