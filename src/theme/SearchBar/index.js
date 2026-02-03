@@ -23,6 +23,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import translations from '@theme/SearchTranslations';
 
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import CodeBlock from '@theme/CodeBlock';
 
 // Default API URL for docs-agent
@@ -308,6 +309,7 @@ function AskAIPanel({ query, apiUrl, onClose, isVisible, triggerSearch }) {
                 {response && (
                     <div className="DocSearch-AskAI-Content">
                         <ReactMarkdown
+                            remarkPlugins={[remarkGfm]}
                             children={response.replace(/\[(\d+)\]/g, (match, id) => {
                                 const index = parseInt(id, 10) - 1;
                                 if (sources[index]) {

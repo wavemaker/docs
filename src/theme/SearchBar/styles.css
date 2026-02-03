@@ -216,6 +216,41 @@
   margin: 4px 0;
 }
 
+/* Table styles */
+.DocSearch-AskAI-Content table,
+.DocSearch-AskAI-Content .md-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0;
+  font-size: 13px;
+  overflow-x: auto;
+  display: block;
+}
+
+.DocSearch-AskAI-Content table thead,
+.DocSearch-AskAI-Content .md-table thead {
+  background: var(--docsearch-searchbox-background);
+}
+
+.DocSearch-AskAI-Content table th,
+.DocSearch-AskAI-Content .md-table th {
+  font-weight: 600;
+  text-align: left;
+  padding: 8px 12px;
+  border: 1px solid var(--docsearch-muted-color);
+}
+
+.DocSearch-AskAI-Content table td,
+.DocSearch-AskAI-Content .md-table td {
+  padding: 8px 12px;
+  border: 1px solid var(--docsearch-muted-color);
+}
+
+.DocSearch-AskAI-Content table tr:nth-child(even),
+.DocSearch-AskAI-Content .md-table tr:nth-child(even) {
+  background: rgba(128, 128, 128, 0.05);
+}
+
 .DocSearch-AskAI-Content a {
   color: var(--docsearch-primary-color);
   text-decoration: underline;
