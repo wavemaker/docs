@@ -50,58 +50,57 @@ WaveMaker CAS integration works with standard CAS implementations, including:
 
 ---
 
-## Configuring CAS in WaveMaker
+## Configuring CAS Authentication in WaveMaker
 
-### Step 1: Enable Security
+- CAS authentication enables Single Sign-On (SSO) by allowing users to authenticate through a centralized CAS server, ensuring seamless access across multiple applications.
 
-1. Open the application in WaveMaker Studio.
-2. Navigate to **Security** settings.
-3. Enable application security if not already enabled.
+- Security must be enabled in the application to ensure that protected pages, services, and APIs are accessible only to authenticated users.
 
----
+- The **CAS** option can be configured as the authentication provider by assigning a unique provider name and optionally setting it as the primary authentication mechanism.
 
-### Step 2: Select CAS as the Authentication Provider
+- CAS server configuration requires specifying the required endpoints used during the authentication flow:
 
-1. Choose **CAS** as the authentication provider.
-2. Provide a unique **Provider Name**.
-3. Specify whether CAS is the primary authentication mechanism.
+  - **Server URL**
+    - Defines the base URL of the CAS server.
+    - Example: `https://mydomain.com:8080/cas`
 
----
+  - **Login URL**
+    - Specifies the CAS endpoint used for user authentication.
+    - Example: `https://mydomain.com:8080/cas/login`
 
-### Step 3: Configure CAS Server Details
+  - **Logout URL**
+    - Defines the endpoint used to log users out from the CAS server.
+    - Example: `https://mydomain.com:8080/cas/logout`
 
-Provide the following CAS endpoints:
+  - **Validation URL**
+    - Used to validate the service ticket returned by the CAS server.
+    - Example: `https://mydomain.com:8080/cas/serviceValidate`
+    - The validation URL must match the CAS protocol version used.
 
-| Configuration | Description | Example |
-|---------------|------------|---------|
-| **Server URL** | Base URL of the CAS server | `https://mydomain.com:8080/cas` |
-| **Login URL** | CAS login endpoint | `https://mydomain.com:8080/cas/login` |
-| **Logout URL** | CAS logout endpoint | `https://mydomain.com:8080/cas/logout` |
-| **Validation URL** | Service ticket validation endpoint | `https://mydomain.com:8080/cas/serviceValidate` |
-| **Service Parameter Name** | Parameter used to send service URL | `service` |
-| **Ticket Parameter Name** | Parameter used to receive ticket | `ticket` |
+  - **Service Parameter Name**
+    - Specifies the parameter used to pass the service URL during authentication.
+    - Common value: `service`
 
-> Note:  
-> - URLs must be reachable from the WaveMaker runtime  
-> - HTTPS is strongly recommended in production  
-> - Validation URL must match the CAS protocol version used
+  - **Ticket Parameter Name**
+    - Specifies the parameter used to receive the authentication ticket from the CAS server.
+    - Common value: `ticket`
 
----
+- CAS endpoints must be reachable from the WaveMaker runtime environment, and HTTPS is strongly recommended for production deployments to ensure secure communication.
 
-### Step 4: Attribute Mapping
+- Attribute mapping allows WaveMaker to extract user details from the CAS validation response, including:
+  - Username or Principal
+  - Email (if provided by CAS)
+  - Display Name (optional)
+  - Roles or Groups (optional)
 
-WaveMaker extracts user attributes from the CAS validation response.
+- Role resolution can be handled in two ways:
+  - Roles can be directly derived from CAS attributes.
+  - Roles can be retrieved from a database using the authenticated username.
 
-Common mappings include:
+- After successful authentication, WaveMaker enforces authorization rules across the application:
+  - Access to pages, services, and APIs is controlled based on assigned roles.
+  - Unauthorized users are prevented from accessing restricted resources.
 
-- **Username / Principal**
-- **Email** (if provided by CAS)
-- **Display Name** (optional)
-- **Roles / Groups** (optional)
-
-Role resolution can be:
-- Derived from CAS attributes, or
-- Looked up from a database using the authenticated username
 
 ---
 

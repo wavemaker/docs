@@ -53,41 +53,21 @@ Avoid using it when:
 
 ## Configuring Demo Authentication in WaveMaker
 
-### Step 1: Enable Security
+- Demo authentication allows WaveMaker applications to quickly simulate user login and role-based access without requiring database or external identity provider configuration.
 
-1. Open your application in **WaveMaker Studio**
-2. Navigate to **Security**
-3. Enable application security
+- Security must be enabled in the application to ensure that protected pages, services, and APIs are accessible only to authenticated users.
 
+- The **Demo** option can be selected as the authentication provider and set as the active provider. Once configured, WaveMaker automatically provisions demo users and predefined roles for testing purposes.
 
+- Application roles can be defined and managed using the **Roles** section:
+  - Roles such as `ADMIN` and `USER` can be created.
+  - These roles can be assigned to demo users.
+  - Roles are used to enforce role-based access control (RBAC) across the application.
 
-### Step 2: Select Demo as Authentication Provider
-
-1. Choose **Demo** as the authentication provider
-2. Set it as the active provider
-3. Save the configuration
-
-WaveMaker automatically provisions demo users and roles.
-
-
-
-### Step 3: Define Roles
-
-Use the **Roles** section to define application roles such as:
-
-- `ADMIN`
-- `USER`
-
-
-These roles can be assigned to demo users and used for RBAC.
-
-
-
-### Step 4: Secure Pages and Services
-
-- Protect pages using role-based access
-- Secure APIs via URL interception rules
-- Enforce authorization consistently across UI and backend
+- WaveMaker allows securing application resources using role-based authorization:
+  - Pages can be restricted based on assigned roles.
+  - APIs and services can be secured using URL interception rules.
+  - Authorization rules are enforced consistently across both UI and backend components.
 
 ---
 

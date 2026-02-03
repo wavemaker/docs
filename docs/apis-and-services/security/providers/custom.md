@@ -43,53 +43,49 @@ Use Custom Security when:
 
 ---
 
-## Configuring Custom Security in WaveMaker
 
-### Step 1: Enable Security
+## Configuring Custom Authentication in WaveMaker
 
-1. Open the application in WaveMaker Studio.  
-2. Navigate to **Security** settings.  
-3. Enable application security.
+- Custom authentication allows applications to implement user authentication using custom business logic, external services, or proprietary identity systems that are not supported by standard authentication providers.
 
+- Security must be enabled in the application to ensure that protected pages, services, and APIs are accessible only to authenticated users.
 
-### Step 2: Select Custom as the Authentication Provider
+- The **Custom** option can be configured as the authentication provider by assigning a unique provider name and saving the configuration.
 
-1. In the **Security Providers** section, choose **Custom**.
-2. Provide a unique **Provider Name**.
-3. Save the configuration.
+- Custom authentication requires providing a fully qualified Java class name that implements the WaveMaker authentication interface:
 
+  - **Required Interface:** `WMCustomAuthenticationManager`
+  - If the implementation class does not exist, WaveMaker Studio can generate a sample implementation template.
 
-### Step 3: Provide Custom Java Class
+- The custom authentication class must implement the following method:
 
-When Custom is selected, WaveMaker expects a **fully qualified Java class name** that implements the required interface:
-
-- **Class Interface:** `WMCustomAuthenticationManager`
-- If the class doesn't exist, Studio can generate a sample implementation for you.
-
-This custom class must implement:
-
-```java
-public interface WMCustomAuthenticationManager {
-    WMUser authenticate(AuthRequestContext authRequestContext) throws AuthenticationException;
-}
-```
-
-WaveMaker passes credentials and request context via `AuthRequestContext`. Your implementation should return a `WMUser` object representing the authenticated user or `null` if authentication fails.
+  ```java
+  public interface WMCustomAuthenticationManager {
+      WMUser authenticate(AuthRequestContext authRequestContext) throws AuthenticationException;
+  }
 
 
-### Step 4: Implement Custom Logic
 
-In your custom class you can:
+WaveMaker passes user credentials and request context using the AuthRequestContext object. The custom implementation must validate credentials and return a `WMUser` object representing the authenticated user. If authentication fails, the method should return `null`.
 
-- Validate credentials against your own data store or service
-- Call external REST APIs or microservices
-- Apply business rules or multi-factor logic
-- Return user roles based on custom logic
+ 
+### Supported Authentication Strategies
 
-Example snippet:
+The custom implementation can include various authentication approaches such as:
 
-```java
-@Override
+ - Validating credentials against a custom database or data store
+
+ - Calling external REST APIs or microservices
+
+ - Applying business-specific authentication rules
+
+ - Implementing multi-factor or conditional authentication logic
+
+ - Assigning user roles dynamically based on validation results
+
+ ### Example Implementation
+ ``` 
+ @Override
 public WMUser authenticate(AuthRequestContext authRequestContext) {
     String username = authRequestContext.getUsername();
     String password = authRequestContext.getPassword();
@@ -104,12 +100,23 @@ public WMUser authenticate(AuthRequestContext authRequestContext) {
     return null;
 }
 ```
+The custom authentication logic returns a `WMUser` object containing authenticated user details and assigned roles based on validation results or external service responses.
 
-This returns a `WMUser` with roles based on custom logic or external service outcomes.
+### Authorization Enforcement
+
+After successful authentication, WaveMaker enforces authorization rules across the application:
+
+ - Access to pages, services, and APIs is controlled based on assigned roles
+
+ - Role-based access restrictions are applied consistently across UI and backend components
+
+ - Unauthorized users are prevented from accessing restricted resources
 
 ---
 
+
 ## Runtime Behavior
+
 
 At runtime:
 

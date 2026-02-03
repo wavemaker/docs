@@ -56,3 +56,12 @@ To learn how to generate a WAR file using Maven in WaveMaker, watch the video be
 
 ▶️ [Generate a WAR using MAVEN](https://next-academy.wavemaker.com/Watch?wm=07E5BE8F68)
 :::
+
+
+<VideoCard
+  videoUrl="https://next-academy.wavemaker.com/Watch?wm=07E5BE8F68"
+  title="Generate a WAR using MAVEN"
+  description="Watch for deeper understanding on how to generate WAR file using MAVENin WaveMaker"
+  thumbnailText="Generate a WAR using MAVEN"
+/>
+

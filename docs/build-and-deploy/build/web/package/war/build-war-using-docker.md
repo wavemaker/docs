@@ -119,11 +119,14 @@ The wavemakerapp/app-builder Docker image is packed with required software packa
 
 - Using the app-builder Docker image, users can generate war files for WaveMaker applications.
 - Find WaveMaker app-builder Docker image at [app-builder Docker Image in Docker Hub](https://hub.docker.com/r/wavemakerapp/app-builder).
-
-
-To visualise, refer 
-▶️ [Generate war using docker](https://next-academy.wavemaker.com/Watch?wm=49BD97DDB1)
 :::
 
+
+<VideoCard
+  videoUrl="https://next-academy.wavemaker.com/Watch?wm=49BD97DDB1"
+  title="Generate war using docke"
+  description="Learn how to generate a deployable WAR file using Docker in WaveMaker.."
+  thumbnailText="Generate war using docker"
+/>
 
 

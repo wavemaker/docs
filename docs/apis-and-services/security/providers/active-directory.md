@@ -60,72 +60,56 @@ WaveMaker LDAP integration works with any LDAP v3-compliant directory, including
 
 ---
 
-## Configuring LDAP in WaveMaker
+## Configuring LDAP Authentication in WaveMaker
 
-### Step 1: Enable Security
+- LDAP authentication enables applications to authenticate users using a centralized directory service such as Active Directory or other LDAP-compliant directory servers.
 
-1. Open the application in WaveMaker Studio.
-2. Navigate to **Security** settings.
-3. Enable application security if it is not already enabled.
+- Security must be enabled in the application to ensure that protected pages, services, and APIs are accessible only to authenticated users.
 
+- The **LDAP** option can be configured as the authentication provider by assigning a unique provider name and optionally setting it as the primary authentication mechanism.
 
+- LDAP server configuration requires defining connection and search parameters used to locate and authenticate users:
 
-### Step 2: Select LDAP as the Authentication Provider
+  - **LDAP URL**
+    - Specifies the LDAP server connection endpoint.
+    - Example: `ldap://ldap.company.com:389`
 
-1. Choose **LDAP** as the authentication provider.
-2. Provide a unique **Provider Name**.
-3. Specify whether LDAP is the primary authentication mechanism.
+  - **Base DN**
+    - Defines the root location for user and group searches.
+    - Example: `dc=company,dc=com`
 
+  - **User DN Pattern**
+    - Specifies the template used to bind users during authentication.
+    - Example: `uid={0},ou=users`
 
+  - **Manager DN (optional)**
+    - Service account used to search users and groups within LDAP.
+    - Example: `cn=admin,dc=company,dc=com`
 
-### Step 3: Configure LDAP Server Details
+  - **Manager Password**
+    - Password associated with the Manager DN used for LDAP queries.
 
-Key LDAP configuration parameters include:
+  - **Group Search Base (optional)**
+    - Defines the location used to resolve group membership and role associations.
 
-- **LDAP URL**  
-  Example: `ldap://ldap.company.com:389`
+- Attribute mapping allows WaveMaker to map LDAP attributes to application-level user identities:
+  - Username or User ID
+  - Display Name
+  - Email (optional)
+  - Roles or Groups (optional)
 
-- **Base DN**  
-  Root location for user and group searches  
-  Example: `dc=company,dc=com`
+- Role resolution can be handled in multiple ways:
+  - Roles can be derived directly from LDAP group memberships.
+  - Roles can be mapped using role prefixes such as `ROLE_`.
+  - Roles can be resolved through database lookup after successful authentication.
 
-- **User DN Pattern**  
-  Template used to bind users  
-  Example: `uid={0},ou=users`
+- After successful authentication, WaveMaker enforces authorization rules across the application:
+  - Access to pages, services, and APIs is controlled based on assigned roles.
+  - Access rules are enforced consistently across UI and backend components.
+  - Unauthorized users are prevented from accessing restricted resources.
 
-- **Manager DN (optional)**  
-  Used for searching users/groups  
-  Example: `cn=admin,dc=company,dc=com`
+---
 
-- **Manager Password**
-
-- **Group Search Base (optional)**  
-  Location to resolve group memberships
-
-
-
-### Step 4: Attribute and Role Mapping
-
-WaveMaker maps LDAP attributes to application-level identities:
-
-- **Username / User ID**
-- **Display Name**
-- **Email (optional)**
-- **Roles / Groups (optional)**
-
-Role mapping can be:
-- Derived directly from LDAP group membership
-- Mapped using role prefixes (for example: `ROLE_`)
-- Resolved via database lookup post-authentication
-
-
-
-### Step 5: Configure Authorization
-
-After successful authentication:
-- Pages, services, and APIs are protected using roles
-- Access rules are enforced consistently
-- Unauthorized access is automatically blocked
 
 
 
