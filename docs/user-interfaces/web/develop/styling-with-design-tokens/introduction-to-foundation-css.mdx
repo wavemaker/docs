@@ -1,0 +1,120 @@
+---
+last_update: { author: 'Sandeep Chezhian A' }
+---
+
+# Introduction to Foundation CSS
+
+Foundation CSS is the core styling layer of the application and establishes the baseline visual and structural configuration upon which the entire user interface is built. It provides a centralized, standardized system of tokens, base rules, and component definitions that ensure consistent design, predictable behavior, and scalable styling across the product.
+
+---
+
+## At a Glance
+
+- Establishes the base styling architecture for the entire application  
+- Defines global and component-level design tokens  
+- Provides default component structures and reusable variants  
+- Ensures visual consistency and predictable behavior  
+- Reduces duplication and specificity conflicts  
+- Serves as the single source of truth for theming and customization  
+
+---
+
+## Purpose
+
+Foundation CSS acts as the starting point for all styling within the application. It standardizes how components look, behave, and interact by defining shared rules and design primitives that every feature and module builds upon. Rather than allowing independent or ad-hoc styling, it enforces a consistent system that improves maintainability and long-term scalability.
+
+---
+
+
+## Alignment with WaveMaker UI Kit
+
+Foundation CSS is intentionally aligned with the design standards and styling conventions defined in the WaveMaker UI Kit. The base styles, tokens, component structures, and variants implemented within the foundation layer closely mirror the visual language and behavioral patterns established by the UI Kit to ensure consistency between design and implementation.
+
+By matching the UI Kit specifications, Foundation CSS enables a direct mapping between design artifacts and production code. Components built in the application reflect the same spacing, typography, color usage, and interaction patterns defined at the design level, reducing discrepancies between mockups and the final UI.
+
+This alignment provides several key benefits:
+
+- Visual and behavioral consistency with the official design system  
+- Faster development through predictable, pre-aligned styles  
+- Reduced design–development gaps and fewer manual adjustments  
+- Easier collaboration between designers and engineers  
+- Simplified maintenance when the UI Kit evolves or updates  
+- Greater reusability of components across projects and modules  
+
+As a result, Foundation CSS acts as the technical implementation layer of the WaveMaker UI Kit, ensuring that the application remains cohesive, standardized, and easier to scale over time.
+
+## Design Tokens
+
+Foundation CSS defines reusable design tokens that abstract common visual values into a centralized and platform-agnostic system. These tokens represent the fundamental building blocks of the design language and ensure that styling decisions remain consistent, maintainable, and scalable across the application.
+
+To manage and generate these tokens, the system leverages **Amazon Style Dictionary**. Global and component tokens are authored in a structured token format and processed through Style Dictionary to produce standardized CSS variables and other consumable outputs. These generated tokens are then referenced throughout Foundation CSS, allowing components and variants to inherit consistent values without hardcoding styles.
+
+Using Style Dictionary provides several advantages:
+
+- Centralized source of truth for all design values  
+- Automated token transformation into CSS variables and platform-specific formats  
+- Consistent naming conventions and structure  
+- Easier theming and brand customization  
+- Reduced duplication and manual maintenance  
+- Scalable token management as the design system grows  
+
+This approach ensures that changes to core design values (such as colors, typography, or spacing) propagate automatically across the entire system, improving reliability and significantly reducing the risk of inconsistencies.
+
+### Global Tokens
+
+Global tokens capture shared values used throughout the interface, such as:
+
+- Colors and palettes  
+- Typography scales  
+- Spacing and sizing units  
+- Border radii  
+- Shadows and elevation  
+- Breakpoints and layout constraints  
+
+Because these tokens are generated and distributed through Style Dictionary, they remain consistent, versioned, and easily extensible across the application.
+
+### Component Tokens
+
+Component tokens scope styling variables to individual components. This enables fine-grained customization while still adhering to system-wide standards and preventing style drift between similar components. Component tokens typically reference global tokens, ensuring that localized changes remain aligned with the overall design language.
+
+---
+
+## Component Foundations
+
+Beyond tokens, Foundation CSS provides base implementations for components, including their structural layout, default styles, and interaction behavior. These definitions establish consistent patterns that can be reused across the application without reimplementation.
+
+---
+
+## Variants
+
+Predefined variants represent alternative visual states or configurations of components (for example, size, emphasis, or semantic intent). Variants allow flexibility and extensibility while avoiding redundant or duplicated CSS, ensuring that stylistic differences remain systematic rather than custom-built.
+
+---
+
+## Architecture and Maintainability
+
+By consolidating styling primitives into a centralized layer, Foundation CSS:
+
+- Acts as a single source of truth for the design system  
+- Reduces duplication and unnecessary overrides  
+- Minimizes specificity conflicts  
+- Encourages predictable inheritance and composition  
+- Improves scalability as the codebase grows  
+
+All higher-level styles, themes, and extensions are designed to build upon or override this foundation rather than redefine core behaviors.
+
+
+| Layer | Responsibility |
+|-------|---------------|
+| WaveMaker UI Kit | Defines visual standards and design guidelines |
+| Design Tokens | Encodes design decisions as reusable values |
+| Style Dictionary | Transforms tokens into CSS variables and outputs |
+| Foundation CSS | Provides base styles, components, and variants |
+| Application Components | Consume foundation styles |
+| Feature Implementations | Compose components into product features |
+
+---
+
+## Summary
+
+Foundation CSS forms the backbone of the application's styling architecture. It standardizes UI construction through tokens, base components, and variants, enabling consistency, reusability, and efficient development while providing a stable platform for building complex and customizable interfaces.
