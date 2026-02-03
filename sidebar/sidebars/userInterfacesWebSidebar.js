@@ -663,10 +663,10 @@ export default [
         collapsible: true,
         collapsed: true,
         items: [
-          {
-            type: 'doc',
-            id: 'user-interfaces/web/testing-and-debugging/testing-strategies/ui-testing-mobile',
-          },
+          // {
+          //   type: 'doc',
+          //   id: 'user-interfaces/web/testing-and-debugging/testing-strategies/ui-testing-mobile',
+          // },
           {
             type: 'doc',
             id: 'user-interfaces/web/testing-and-debugging/testing-strategies/ui-testing-web',
