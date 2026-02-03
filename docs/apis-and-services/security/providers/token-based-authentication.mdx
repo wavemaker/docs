@@ -79,51 +79,51 @@ This flow ensures secure authentication without exposing credentials to the appl
 
 ## Configuring Token-Based Authentication in WaveMaker
 
-### Step 1: Enable Security
+- Token-based authentication allows applications to authenticate users using security tokens such as JWS (JWT) or OPAQUE tokens, enabling secure and stateless authentication mechanisms.
 
-- Open the application in WaveMaker Studio.  
-- Navigate to **Security** settings.  
-- Enable application security.
+- Security must be enabled in the application to ensure that protected pages, services, and APIs are accessible only to authenticated users.
 
-### Step 2: Select Token-Based Authentication
+- Token-based authentication can be configured by selecting either **JWS (JWT)** or **OPAQUE** as the authentication provider, assigning a unique provider name, and optionally setting it as the primary authentication mechanism.
 
-- Choose **JWS (JWT)** or **OPAQUE** as the authentication provider.  
-- Provide a unique **Provider Name**.  
-- Specify if it is the primary authentication mechanism.
+- Provider configuration depends on the selected token type:
 
-### Step 3: Configure Provider Details
+  - **JWS (JWT) Token Configuration**
+    - **Issuer URL**
+      - Identifies the trusted token issuer.
+    - **JWKS URL**
+      - Provides public keys used to verify token signatures.
+    - **Audience**
+      - Specifies the intended recipient of the token.
+    - **Scopes**
+      - Defines access permissions included within the token.
+    - **Principal Claim Name**
+      - Identifies the claim used to determine the authenticated user.
 
-#### For JWS Tokens:
+  - **OPAQUE Token Configuration**
+    - **Introspection URL**
+      - Endpoint used to validate tokens and retrieve token details.
+    - **Client ID**
+      - Identifies the WaveMaker application to the token provider.
+    - **Client Secret**
+      - Used along with the Client ID to authenticate introspection requests.
+    - **Principal Claim Name**
+      - Identifies the claim used to determine the authenticated user.
 
-- Issuer URL  
-- JWKS URL  
-- Audience  
-- Scopes  
-- Principal Claim Name
+- Attribute mapping allows WaveMaker to map token claims to application-level user fields:
+  - Username or Subject
+  - Email (if available)
+  - Display Name (optional)
+  - Roles or Groups (optional)
 
-#### For OPAQUE Tokens:
+- Role resolution can be handled in multiple ways:
+  - Roles can be directly extracted from token claims.
+  - Roles can be resolved from a database using the authenticated principal identifier.
 
-- Introspection URL  
-- Client ID  
-- Client Secret  
-- Principal Claim Name
+- After successful authentication, WaveMaker enforces authorization rules across the application:
+  - Access to pages, services, and APIs is controlled based on assigned roles.
+  - Access permissions and role-based restrictions are applied consistently.
+  - Unauthorized users are prevented from accessing restricted resources.
 
-### Step 4: Attribute Mapping
-
-Map token claims to WaveMaker user fields:
-
-- Username / Subject  
-- Email (if available)  
-- Display Name (optional)  
-- Roles / Groups (optional)  
-
-> WaveMaker can extract roles from the token or resolve them from a database using the principal identifier.
-
-### Step 5: Configure Authorization
-
-- Apply access levels and permissions based on roles.  
-- Protect pages, services, and APIs.  
-- Unauthorized users are blocked automatically.
 
 
 ---

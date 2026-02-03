@@ -1,694 +1,185 @@
 ---
-last_update: { author: 'Author Name' }
+last_update: { author: "Priyanka Bhadri" }
 ---
 
-# UI Testing Web
+#  Testing Strategies
 
-Comprehensive strategies for testing web user interfaces to ensure quality and reliability.
+Testing is a critical part of the software development lifecycle in WaveMaker applications. It ensures that the application meets functional requirements, performs reliably under load, provides a user-friendly interface, and complies with accessibility standards. 
+Testing strategies focus on:
 
-## Overview
+- **Functionality Validation:** Ensuring features work as designed  
+- **Stability:** Ensuring the application works across environments and devices  
+- **Usability:** Providing a smooth and accessible user interface  
+- **Integration:** Verifying communication between frontend, backend, and APIs  
+- **Performance:** Identifying and resolving bottlenecks under load  
+- **Traceability:** Maintaining documented test cases, results, and defect history  
 
-UI testing for web applications verifies that the user interface works correctly and provides a good user experience. This includes functional testing, visual regression testing, accessibility testing, and performance testing.
 
-## Types of UI Testing
+---
 
-### 1. Unit Testing
+## Writing Test Cases
 
-Testing individual components in isolation.
+Writing test cases helps ensure that features and functionalities are validated and work as expected. Before creating test cases, clarify requirements with developers or stakeholders to avoid ambiguities and ensure comprehensive coverage.
 
-```javascript
-import { render, screen } from '@testing-library/react';
-import Button from './Button';
+### Test Case Structure
 
-test('button renders with correct text', () => {
-  render(<Button>Click me</Button>);
-  expect(screen.getByText('Click me')).toBeInTheDocument();
-});
-```
+- **Test Scenario:** A brief description of what is being tested.  
+- **Test Description:** Detailed explanation of the objective of the test.  
+- **Test Case Steps:** Step-by-step actions to perform the test.  
+- **Test Data:** Inputs or conditions required for testing.  
+- **Expected Result:** The result anticipated if the application works correctly.  
+- **Actual Result:** The observed outcome during test execution.  
+- **Status:** Pass or Fail based on comparison with expected results.  
+- **Assignee:** The person responsible for executing the test.  
+- **Execution Date:** The date when the test was executed.  
 
-### 2. Integration Testing
+Clear and well-documented test cases make it easier to track defects, support regression testing, and maintain application quality.
 
-Testing how components work together.
+> To learn more about writing automated test cases and best practices, refer [Unit Testing](#).
 
-```javascript
-import { render, screen, fireEvent } from '@testing-library/react';
-import LoginForm from './LoginForm';
 
-test('login form submission', async () => {
-  const handleSubmit = jest.fn();
-  render(<LoginForm onSubmit={handleSubmit} />);
+---
 
-  fireEvent.change(screen.getByLabelText(/email/i), {
-    target: { value: 'user@example.com' },
-  });
+##  Types of Testing
+Testing ensures that an application meets its requirements, performs reliably, and provides a good user experience. Different testing types focus on specific aspects of quality, from functionality and user interface to performance and accessibility.
 
-  fireEvent.change(screen.getByLabelText(/password/i), {
-    target: { value: 'password123' },
-  });
 
-  fireEvent.click(screen.getByRole('button', { name: /sign in/i }));
+### Functional Testing
 
-  await waitFor(() => {
-    expect(handleSubmit).toHaveBeenCalledWith({
-      email: 'user@example.com',
-      password: 'password123',
-    });
-  });
-});
-```
+Functional testing focuses on validating the core functionality of an application. It ensures that each feature operates as expected, all user interactions work correctly, and the application meets its specified requirements.
 
-### 3. End-to-End Testing
 
-Testing complete user flows through the application.
+### Regression Testing
 
-## E2E Testing Tools
+Regression testing is performed on every new build to ensure that recent changes, including defect fixes and enhancements, do not introduce new issues. It covers the entire application, not just the updated features, to maintain stability and consistency.
 
-### Cypress
+**Key Points:**
+- Conducted for each new build containing fixes or enhancements  
+- Applied across all modules, not limited to changed functionality  
+- New test cases are added to the existing suite to ensure comprehensive coverage  
+- Helps identify unintended side effects of code changes  
 
-Modern end-to-end testing framework.
 
-**Installation:**
+### UI Testing
+- Validates the user interface elements.
+- Includes buttons, textboxes, headings, icons, images, selection fields, checkboxes, and dropdowns.
 
-```bash
-npm install --save-dev cypress
-```
+**UI Testing Checklist:**
+- Buttons and links perform the intended actions  
+- Input fields accept and validate data correctly  
+- Dropdowns and checkboxes operate as expected  
+- Layout, alignment, and visual elements match the design  
+- Icons, images, and other visual components display correctly  
 
-**Basic Test:**
 
-```javascript
-describe('Login Flow', () => {
-  beforeEach(() => {
-    cy.visit('/login');
-  });
+### Accessibility Testing
 
-  it('should login successfully with valid credentials', () => {
-    cy.get('input[name="email"]').type('user@example.com');
-    cy.get('input[name="password"]').type('password123');
-    cy.get('button[type="submit"]').click();
+Accessibility testing ensures that the web application is usable by people with disabilities, including vision, hearing, or motor impairments. The goal is to provide an inclusive user experience and comply with accessibility standards.
 
-    cy.url().should('include', '/dashboard');
-    cy.contains('Welcome back').should('be.visible');
-  });
+#### Accessibility Checklist for Web
 
-  it('should show error with invalid credentials', () => {
-    cy.get('input[name="email"]').type('wrong@example.com');
-    cy.get('input[name="password"]').type('wrongpass');
-    cy.get('button[type="submit"]').click();
+- Users can navigate the application easily using keyboard or assistive technologies  
+- Text inputs and interactive elements can be added, edited, and interacted with  
+- Screen readers convey content and element purpose accurately  
+- All interactive elements have proper labels (ARIA attributes)  
+- Notifications, alerts, and popups are announced correctly  
+- Users can explore all elements using keyboard navigation  
+- Focus order and tab navigation are logical and consistent  
+- Double-tap or click-to-select functionality works for interactive elements  
 
-    cy.contains('Invalid credentials').should('be.visible');
-    cy.url().should('include', '/login');
-  });
+#### Keyboard Accessibility
 
-  it('should validate required fields', () => {
-    cy.get('button[type="submit"]').click();
+- **Tab:** Move focus forward through links, buttons, and form controls  
+- **Shift + Tab:** Move focus backward  
+- **Enter:** Activate links or buttons  
+- **Space:** Interact with checkboxes, radio buttons, or dropdowns  
+- **Arrow Keys (↑ ↓ ← →):** Navigate lists or scroll content  
+- **Escape:** Close dialogs, popups, or modals  
 
-    cy.contains('Email is required').should('be.visible');
-    cy.contains('Password is required').should('be.visible');
-  });
-});
-```
+> **Tip:** Test accessibility using browser-based screen readers (e.g., NVDA, VoiceOver) and keyboard-only navigation to ensure compliance with WCAG standards.
 
-**Custom Commands:**
+To Learn more  [Accessiblity](../../enterprise-capabilities/accessibility.md)
 
-```javascript
-// cypress/support/commands.js
-Cypress.Commands.add('login', (email, password) => {
-  cy.visit('/login');
-  cy.get('input[name="email"]').type(email);
-  cy.get('input[name="password"]').type(password);
-  cy.get('button[type="submit"]').click();
-});
 
-// Usage
-cy.login('user@example.com', 'password123');
-```
+### API Testing
 
-### Playwright
+API testing validates the communication between different layers of the application, including UI, business logic, and database layers. It ensures that data is exchanged accurately, securely, and efficiently.
 
-Cross-browser automation framework.
+**Key API Testing Checks:**
+- Verify the accuracy and correctness of data returned by APIs  
+- Measure response times and performance under expected loads  
+- Ensure no missing or duplicate functionality  
+- Validate authorization and authentication mechanisms  
+- Test multi-threaded or concurrent API requests  
+- Check for security vulnerabilities and proper error handling  
+- Confirm correct error codes and messages are returned  
+- Assess reliability and consistency across repeated calls  
 
-**Installation:**
 
-```bash
-npm install --save-dev @playwright/test
-```
 
-**Basic Test:**
+### Performance Testing
 
-```javascript
-import { test, expect } from '@playwright/test';
+Performance testing measures how the application behaves under various load and stress conditions. It helps ensure that the system remains stable, responsive, and scalable when handling expected or peak usage.
 
-test.describe('Shopping Cart', () => {
-  test('add item to cart', async ({ page }) => {
-    await page.goto('/products');
+**Key Focus Areas:**
+- Response times under normal and peak load conditions  
+- Application stability and ability to scale  
+- Resource utilization, including CPU, memory, and network  
+- Behavior during high-traffic or stress scenarios  
 
-    await page.click('text=Add to Cart');
+---
 
-    await page.click('[aria-label="View cart"]');
 
-    await expect(page.locator('.cart-item')).toHaveCount(1);
-    await expect(page.locator('.cart-total')).toContainText('$29.99');
-  });
 
-  test('remove item from cart', async ({ page }) => {
-    await page.goto('/cart');
+## Server-Side Logs
 
-    await page.click('[aria-label="Remove item"]');
+WaveMaker records log files that provide insight into what is happening in both the design and runtime layers of your application. These logs help track the behavior of the platform and the application, making debugging and issue resolution easier.
 
-    await expect(page.locator('.cart-empty')).toBeVisible();
-    await expect(page.locator('.cart-item')).toHaveCount(0);
-  });
-});
-```
+**Server Logs** contain backend messages generated by the WaveMaker platform during development. They are particularly useful when errors occur, such as failures in importing or updating database schemas, or when backend services fail. For instance, if a database import fails, the stack trace and root cause are captured in the server logs.
 
-**Multiple Browser Testing:**
+**Application Logs** capture output generated by your application during runtime. They help trace execution, monitor backend behavior, and review how the application is performing during usage.
 
-```javascript
-import { test, devices } from '@playwright/test';
+Both types of logs can be accessed from the footer area of the project workspace. The logs panel includes a **download icon**, allowing you to save logs locally for offline review, share with teammates, or submit to support for deeper analysis.
 
-test.use({
-  ...devices['iPhone 12'],
-});
+> **Tip:** Ensure that the log level is set to `debug` during development to capture detailed diagnostic information.
 
-test('mobile responsive layout', async ({ page }) => {
-  await page.goto('/');
-  await expect(page.locator('.mobile-menu')).toBeVisible();
-});
-```
 
-### Puppeteer
 
-Headless Chrome automation.
 
-**Installation:**
 
-```bash
-npm install --save-dev puppeteer
-```
+---
 
-**Basic Test:**
+### Bug Reporting
 
-```javascript
-const puppeteer = require('puppeteer');
+To ensure consistent tracking and resolution of issues, it is recommended to use collaborative tools such as **Jira** or **Asana**. These platforms allow testers, developers, and stakeholders to interact directly, track progress, and manage defects efficiently.
 
-describe('Search functionality', () => {
-  let browser;
-  let page;
+**Bug Reporting Process:**
+- Report issues as they are discovered during testing, providing a clear description and steps to reproduce.  
+- Include relevant details such as expected vs. actual behavior, severity, priority, and environment.  
+- Assign the bug to the responsible developer and track its status until resolution.  
+- QA verifies the fix and updates the ticket with the outcome.  
+- Use comments and attachments (screenshots, logs) to facilitate clear communication.  
 
-  beforeAll(async () => {
-    browser = await puppeteer.launch();
-    page = await browser.newPage();
-  });
 
-  afterAll(async () => {
-    await browser.close();
-  });
+---
 
-  test('performs search', async () => {
-    await page.goto('http://localhost:3000');
+## Summary
 
-    await page.type('#search-input', 'test query');
-    await page.click('#search-button');
+This guide outlines a structured approach to ensure application quality through testing, logging, and bug management.
 
-    await page.waitForSelector('.search-results');
+- **Test Cases:** Written after clarifying requirements, using a consistent template for scenarios, steps, test data, results, and responsibilities.  
+- **Testing Types:**  
+  - **Functional:** Verifies features work as expected  
+  - **Regression:** Ensures new changes do not break existing functionality  
+  - **UI:** Checks interface elements and visual consistency  
+  - **Accessibility:** Ensures usability for all users, including those with disabilities  
+  - **API:** Validates data accuracy, security, and performance  
+  - **Performance:** Measures responsiveness, stability, and scalability  
 
-    const results = await page.$$('.result-item');
-    expect(results.length).toBeGreaterThan(0);
-  });
-});
-```
+- **Logs:** Capture device and server-side logs to troubleshoot issues effectively.  
+- **Bug Reporting:** Use a standardized template to report issues clearly with reproduction steps, severity, and assigned responsibility.  
 
-## Visual Regression Testing
+> Following these strategies helps maintain high-quality, reliable applications.
 
-### Percy
 
-Visual testing and review platform.
 
-**Installation:**
-
-```bash
-npm install --save-dev @percy/cli @percy/cypress
-```
-
-**Cypress Integration:**
-
-```javascript
-import '@percy/cypress';
-
-describe('Visual Tests', () => {
-  it('homepage looks correct', () => {
-    cy.visit('/');
-    cy.percySnapshot('Homepage');
-  });
-
-  it('product page looks correct', () => {
-    cy.visit('/products/1');
-    cy.percySnapshot('Product Page');
-  });
-});
-```
-
-### Chromatic
-
-Visual testing for Storybook.
-
-**Installation:**
-
-```bash
-npm install --save-dev chromatic
-```
-
-**Usage:**
-
-```bash
-npx chromatic --project-token=<token>
-```
-
-### BackstopJS
-
-Visual regression testing tool.
-
-**Installation:**
-
-```bash
-npm install --save-dev backstopjs
-```
-
-**Configuration:**
-
-```javascript
-// backstop.json
-{
-  "id": "my_app_test",
-  "viewports": [
-    {
-      "label": "phone",
-      "width": 320,
-      "height": 480
-    },
-    {
-      "label": "tablet",
-      "width": 1024,
-      "height": 768
-    }
-  ],
-  "scenarios": [
-    {
-      "label": "Homepage",
-      "url": "http://localhost:3000",
-      "selectors": ["document"],
-      "delay": 500
-    }
-  ]
-}
-```
-
-## Accessibility Testing
-
-### axe-core
-
-Automated accessibility testing.
-
-**Installation:**
-
-```bash
-npm install --save-dev @axe-core/react
-```
-
-**Integration:**
-
-```javascript
-import React from 'react';
-
-if (process.env.NODE_ENV !== 'production') {
-  const axe = require('@axe-core/react');
-  axe(React, ReactDOM, 1000);
-}
-```
-
-**Cypress Plugin:**
-
-```javascript
-import 'cypress-axe';
-
-describe('Accessibility tests', () => {
-  it('has no accessibility violations', () => {
-    cy.visit('/');
-    cy.injectAxe();
-    cy.checkA11y();
-  });
-
-  it('checks specific component', () => {
-    cy.visit('/form');
-    cy.injectAxe();
-    cy.checkA11y('.contact-form');
-  });
-});
-```
-
-### Pa11y
-
-Automated accessibility testing tool.
-
-**Installation:**
-
-```bash
-npm install --save-dev pa11y
-```
-
-**Usage:**
-
-```javascript
-const pa11y = require('pa11y');
-
-test('page is accessible', async () => {
-  const results = await pa11y('http://localhost:3000');
-
-  expect(results.issues).toHaveLength(0);
-});
-```
-
-## Performance Testing
-
-### Lighthouse CI
-
-Automated performance testing.
-
-**Installation:**
-
-```bash
-npm install --save-dev @lhci/cli
-```
-
-**Configuration:**
-
-```javascript
-// lighthouserc.js
-module.exports = {
-  ci: {
-    collect: {
-      startServerCommand: 'npm run serve',
-      url: ['http://localhost:3000'],
-      numberOfRuns: 3,
-    },
-    assert: {
-      assertions: {
-        'categories:performance': ['error', { minScore: 0.9 }],
-        'categories:accessibility': ['error', { minScore: 0.9 }],
-        'categories:best-practices': ['error', { minScore: 0.9 }],
-        'categories:seo': ['error', { minScore: 0.9 }],
-      },
-    },
-  },
-};
-```
-
-### Web Vitals Testing
-
-```javascript
-import { getCLS, getFID, getFCP, getLCP, getTTFB } from 'web-vitals';
-
-describe('Performance metrics', () => {
-  test('LCP is under 2.5s', async () => {
-    const lcp = await new Promise(resolve => {
-      getLCP(resolve);
-    });
-
-    expect(lcp.value).toBeLessThan(2500);
-  });
-
-  test('FID is under 100ms', async () => {
-    const fid = await new Promise(resolve => {
-      getFID(resolve);
-    });
-
-    expect(fid.value).toBeLessThan(100);
-  });
-});
-```
-
-## Testing Best Practices
-
-### 1. Use Page Object Model
-
-```javascript
-// pages/LoginPage.js
-class LoginPage {
-  constructor(page) {
-    this.page = page;
-    this.emailInput = page.locator('input[name="email"]');
-    this.passwordInput = page.locator('input[name="password"]');
-    this.submitButton = page.locator('button[type="submit"]');
-    this.errorMessage = page.locator('.error-message');
-  }
-
-  async goto() {
-    await this.page.goto('/login');
-  }
-
-  async login(email, password) {
-    await this.emailInput.fill(email);
-    await this.passwordInput.fill(password);
-    await this.submitButton.click();
-  }
-
-  async getErrorMessage() {
-    return await this.errorMessage.textContent();
-  }
-}
-
-// Usage in test
-import { LoginPage } from './pages/LoginPage';
-
-test('login with invalid credentials', async ({ page }) => {
-  const loginPage = new LoginPage(page);
-
-  await loginPage.goto();
-  await loginPage.login('invalid@example.com', 'wrongpass');
-
-  const error = await loginPage.getErrorMessage();
-  expect(error).toContain('Invalid credentials');
-});
-```
-
-### 2. Use Test Data Factories
-
-```javascript
-// factories/userFactory.js
-export const createUser = (overrides = {}) => ({
-  id: Math.random().toString(36).substr(2, 9),
-  name: 'Test User',
-  email: 'test@example.com',
-  role: 'user',
-  ...overrides,
-});
-
-// Usage
-test('displays user profile', () => {
-  const user = createUser({ name: 'John Doe' });
-  render(<UserProfile user={user} />);
-  expect(screen.getByText('John Doe')).toBeInTheDocument();
-});
-```
-
-### 3. Clean Up Between Tests
-
-```javascript
-beforeEach(() => {
-  cy.clearCookies();
-  cy.clearLocalStorage();
-  cy.visit('/');
-});
-
-afterEach(() => {
-  // Clean up any test data
-  cy.task('cleanDatabase');
-});
-```
-
-### 4. Use Data Attributes for Testing
-
-```jsx
-// Component
-<button data-testid="submit-button" onClick={handleSubmit}>
-  Submit
-</button>;
-
-// Test
-cy.get('[data-testid="submit-button"]').click();
-```
-
-### 5. Test User Journeys
-
-```javascript
-describe('Complete purchase flow', () => {
-  it('user can complete a purchase', () => {
-    // Browse products
-    cy.visit('/products');
-    cy.contains('Running Shoes').click();
-
-    // Add to cart
-    cy.get('[data-testid="add-to-cart"]').click();
-    cy.contains('Added to cart').should('be.visible');
-
-    // Go to cart
-    cy.get('[aria-label="Cart"]').click();
-    cy.url().should('include', '/cart');
-
-    // Proceed to checkout
-    cy.contains('Proceed to Checkout').click();
-
-    // Fill shipping info
-    cy.get('input[name="name"]').type('John Doe');
-    cy.get('input[name="address"]').type('123 Main St');
-    cy.contains('Continue').click();
-
-    // Fill payment info
-    cy.get('input[name="cardNumber"]').type('4242424242424242');
-    cy.get('input[name="expiry"]').type('12/25');
-    cy.get('input[name="cvc"]').type('123');
-
-    // Complete order
-    cy.contains('Place Order').click();
-
-    // Verify success
-    cy.contains('Order confirmed').should('be.visible');
-    cy.url().should('include', '/order-confirmation');
-  });
-});
-```
-
-## Cross-Browser Testing
-
-### BrowserStack
-
-Cloud-based testing platform.
-
-```javascript
-// wdio.conf.js
-exports.config = {
-  user: process.env.BROWSERSTACK_USERNAME,
-  key: process.env.BROWSERSTACK_ACCESS_KEY,
-  services: ['browserstack'],
-  capabilities: [
-    {
-      browserName: 'Chrome',
-      'bstack:options': {
-        os: 'Windows',
-        osVersion: '10',
-      },
-    },
-    {
-      browserName: 'Safari',
-      'bstack:options': {
-        os: 'OS X',
-        osVersion: 'Big Sur',
-      },
-    },
-  ],
-};
-```
-
-### Sauce Labs
-
-```javascript
-// playwright.config.js
-module.exports = {
-  use: {
-    connectOptions: {
-      wsEndpoint: `wss://ondemand.saucelabs.com:443/wd/hub`,
-    },
-  },
-  projects: [
-    {
-      name: 'chrome',
-      use: { browserName: 'chromium' },
-    },
-    {
-      name: 'firefox',
-      use: { browserName: 'firefox' },
-    },
-    {
-      name: 'safari',
-      use: { browserName: 'webkit' },
-    },
-  ],
-};
-```
-
-## Continuous Integration
-
-```yaml
-# .github/workflows/test.yml
-name: E2E Tests
-
-on: [push, pull_request]
-
-jobs:
-  cypress:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Cypress run
-        uses: cypress-io/github-action@v4
-        with:
-          start: npm start
-          wait-on: 'http://localhost:3000'
-          browser: chrome
-
-      - name: Upload screenshots
-        uses: actions/upload-artifact@v2
-        if: failure()
-        with:
-          name: cypress-screenshots
-          path: cypress/screenshots
-
-  playwright:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Install Playwright
-        run: npx playwright install --with-deps
-
-      - name: Run tests
-        run: npx playwright test
-
-      - name: Upload report
-        uses: actions/upload-artifact@v2
-        if: always()
-        with:
-          name: playwright-report
-          path: playwright-report/
-```
-
-## Test Reporting
-
-### Mochawesome
-
-HTML test reporter for Mocha.
-
-```javascript
-// cypress.json
-{
-  "reporter": "mochawesome",
-  "reporterOptions": {
-    "reportDir": "cypress/results",
-    "overwrite": false,
-    "html": true,
-    "json": true
-  }
-}
-```
-
-### Allure
-
-Test reporting framework.
-
-```bash
-npm install --save-dev @wdio/allure-reporter
-```

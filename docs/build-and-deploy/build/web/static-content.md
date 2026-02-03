@@ -87,11 +87,14 @@ WaveMaker supports multiple ways to configure the CDN URL.
    Define the `app.cdnUrl` directly in the WaveMaker profile configuration.
 
 
-:::note
-To learn how to build static content file in WaveMaker, watch the video below:
+<VideoCard
+  videoUrl="https://next-academy.wavemaker.com/Watch?wm=49E878DE75"
+  title="Build and Deploy Static Content"
+  description="Watch for deeper understanding of Static Content in WaveMaker"
+  thumbnailText="Build and Deploy Static Content"
+/>
 
-▶️ [Build static content ](https://next-academy.wavemaker.com/Watch?wm=49E878DE75)
-:::
+
 
 ## Related Documentation
 

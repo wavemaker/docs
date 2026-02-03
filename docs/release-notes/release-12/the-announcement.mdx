@@ -2,19 +2,53 @@
 last_update: { author: 'Sagar Vemala' }
 title: WaveMaker 12 — A New Era of AI-Accelerated Application Development
 description: WaveMaker 12 introduces agent-driven development, design systems, and multi-mode workflows for modern application teams.
+hide_title: true
 ---
 
-import ThreePillars from './assets/images/ThreePillars.png'
-import DesignSystem from './assets/images/DesignSystem.png'
-import Autocode from './assets/images/Autocode.png'
-import AIRA from './assets/images/AIRA.png'
-import ReactSupport from './assets/images/ReactSupport.png'
-import AutoLayoutContainers from './assets/images/AutoLayout_Containers.png'
-import ProductEcosystem from './assets/images/ProductEcosystem.png'
+import ThreePillars from './assets/images/1-ThreePillar.png'
+import DesignSystem from './assets/images/2-DesignSystemApp.png'
+import Autocode from './assets/images/5-Autocode.png'
+import AIRA from './assets/images/3-AIRA.png'
+import ReactSupport from './assets/images/4-ReactApp.png'
+import AutoLayoutContainers from './assets/images/6-Autolayout.png'
+import ProductEcosystem from './assets/images/7-Ecosystem.png'
 
 
-# WaveMaker 12  
+<div
+  style={{
+    fontSize: "calc(var(--ifm-h1-font-size) * 2)",
+    fontWeight: 800,
+    letterSpacing: "0.02em",
+    background:
+      "linear-gradient(120deg, #4fd1ff, #3b82f6, #1d4ed8, #4fd1ff)",
+    backgroundSize: "300% 300%",
+    WebkitBackgroundClip: "text",
+    backgroundClip: "text",
+    color: "transparent",
+    animation: "waveGradient 4s ease-in-out infinite",
+    textShadow: "0 0 25px rgba(59,130,246,0.25)",
+	marginTop: "calc(var(--ifm-spacing-vertical) * -1)",
+	marginBottom: "calc(var(--ifm-spacing-vertical) * -2)",
+  }}
+>
+  WaveMaker <span style={{ fontWeight: 900 }}>12</span>
+
+  <style>{`
+    @keyframes waveGradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  `}</style>
+</div>
 ## A New Era of AI-Accelerated Application Development
+
 
 
 
@@ -28,9 +62,7 @@ With this release, WaveMaker brings together AI agents, design systems, and visu
 
 WaveMaker 12 supports three complementary modes of development, designed to work together rather than compete.
 
-<div className="announcement-image-wrapper">
-	<img src={ThreePillars} alt="ThreePillars" className="announcement-image" />
-</div>
+![Three Pillars](./assets/images/1-ThreePillar.png)
 
 ### Visual Development  
 Developers can continue to use the visual canvas to design pages, configure components, and fine-tune application behaviour. Studio improvements make it easier to focus on layout, navigation, and structure while maintaining control over generated code.
@@ -56,9 +88,7 @@ Key capabilities :
 
 This approach significantly reduces styling overhead while improving consistency and scalability.
 
-<div className="announcement-image-wrapper">
-	<img src={DesignSystem} alt="DesignSystem" className="announcement-image" />
-</div>
+![](./assets/images/2-DesignSystemApp.png)
 
 
 ---
@@ -74,9 +104,7 @@ Generated output includes:
 
 Autocode currently supports designs built using the WaveMaker UI Kit and Material 3, with plans to expand support to additional design systems. Generated projects can also be imported into WaveMaker Enterprise environments.
 
-<div className="announcement-image-wrapper">
-	<img src={Autocode} alt="Autocode" className="announcement-image" />
-</div>
+![Autocode](./assets/images/5-Autocode.png)
 
 
 ---
@@ -95,9 +123,7 @@ Aira agents can help with tasks such as:
 
 The agent experience is fully integrated into WaveMaker Studio, offering prompt-based interaction, chat history, and execution control. Agents are designed to accelerate development while keeping developers in control of decisions and outputs.
 
-<div className="announcement-image-wrapper">
-	<img src={AIRA} alt="AIRA" className="announcement-image" />
-</div>
+![AIRA](./assets/images/3-AIRA.png)
 
 ---
 
@@ -107,9 +133,7 @@ WaveMaker 12 adds **React code generation** alongside Angular support for web ap
 
 Applications are built using the same WaveMaker markup, visual tools, and AI-assisted workflows, and can now be exported as **React application code** without any change to the developer experience.
 
-<div className="announcement-image-wrapper">
-	<img src={ReactSupport} alt="ReactSupport" className="announcement-image" />
-</div>
+![ReactApps](./assets/images/4-ReactApp.png)
 ---
 
 ## Auto Layout
@@ -122,9 +146,7 @@ WaveMaker 12 introduces [Auto Layout](../../user-interfaces/web/develop/working-
 - Consistent layout behavior across pages and sections  
 - Responsive layouts using configurable width, height, gap, and padding controls  
 
-<div className="announcement-image-wrapper">
-	<img src={AutoLayoutContainers} alt="AutoLayout" className="announcement-image" />
-</div>
+![AutoLayout](./assets/images/6-Autolayout.png)
 
 
 ---
@@ -145,9 +167,7 @@ Detailed component documentation is now available through Storybook, enabling in
 ### Marketplace  
 A new [Product Marketplace](https://marketplace.wavemaker.com) being introduced to support reusable components, connectors, prefabs, design systems and industry-specific solutions.
 
-<div className="announcement-image-wrapper">
-	<img src={ProductEcosystem} alt="ProductEcosystem" className="announcement-image" />
-</div>
+![ProductEcosystem](./assets/images/7-Ecosystem.png)
 
 
 ---
