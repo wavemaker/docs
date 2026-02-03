@@ -3,101 +3,76 @@ title: Security Agent
 last_update: { author: "Swetha Kundaram" }
 ---
 
+The **Security Agent** helps developers configure and manage application security in WaveMaker using simple, natural language requests. It enables authentication, authorization, and access control across pages, APIs, and databases without requiring deep platform-specific knowledge.
 
-## Overview
+The agent works by applying predefined security configurations through WaveMaker’s backend. It does not invent security mechanisms or write custom security logic. Its role is to correctly apply available security options based on your requirements.
 
-The **wm_security_agent** is responsible for configuring application security within the AIRA system. Its scope includes authentication setup, role-based access control, endpoint protection, and security hardening at the application level.
+## What the Security Agent Is Used For
 
-This agent does not implement business logic and does not execute runtime behavior. Its role is to define, validate, and apply security configuration in a controlled and auditable manner.
+The Security Agent is designed to simplify common security setup tasks that developers typically find complex or error-prone. It allows you to enable authentication providers, control access to pages and APIs, configure CORS, and manage role-based access using conversational input instead of manual configuration.
 
-Security changes made by this agent are intentional, explicit, and conservative by design.
+Developers use the Security Agent to quickly secure applications while relying on WaveMaker’s built-in security framework rather than implementing security from scratch.
 
+## Security Providers Supported
 
-## Role in AIRA Architecture
+The Security Agent supports multiple authentication providers available in WaveMaker. You can enable any supported provider based on your application’s needs, including database-based authentication, Active Directory, OpenID, CAS, JWT, custom providers, and demo authentication. All standard providers are supported except SAML.
 
-The Security Agent operates as a specialized execution agent under the orchestration of the **wm_agent**.
+When configuring a provider, the agent asks for required details such as client IDs or secrets if they are missing. If some information is not provided, the agent may apply default values where appropriate and confirm assumptions with you.
 
-It is invoked when a workflow requires changes to authentication, authorization, or security enforcement. While the Architect Agent may guide security design and the wm_agent coordinates execution, the Security Agent performs the concrete configuration of security controls.
+## When to Use the Security Agent
 
-This agent does not infer security intent. It applies only what has been explicitly requested and confirmed.
+Use the Security Agent when you want to enable or modify security settings in your application without manually navigating security configuration screens. It is especially useful when setting up authentication, securing pages or APIs, or applying role-based access rules.
 
+You do not need detailed WaveMaker-specific knowledge to use this agent. However, a basic understanding of common security concepts such as authentication, authorization, CORS, XSS, and CSRF is helpful.
 
-## Core Responsibilities
+## How the Security Agent Works
 
-### Authentication Configuration
+When you describe a security requirement, the Security Agent interprets your request and applies the appropriate security configuration using WaveMaker’s existing security APIs. The actual enforcement of security happens in the backend through predefined mechanisms. The agent’s responsibility is limited to invoking the correct configuration actions.
 
-The Security Agent configures supported authentication providers, including database-based authentication, LDAP, and custom authentication mechanisms. It ensures that provider configuration is valid, consistent, and aligned with WaveMaker’s security model.
-
-Authentication setup is performed cautiously and validated before being applied.
-
-### Role and Access Management
-
-The agent manages roles, landing pages, and role-based access control rules. It defines which users can access which parts of the application and under what conditions.
-
-Role changes are scoped and deliberate to avoid accidental privilege escalation or access loss.
-
-### Security Hardening and Protection
-
-The Security Agent configures application-level security protections such as CSRF, CORS, XSS prevention, SSL enforcement, content security policies, mutual TLS, and custom security filters where supported.
-
-These protections are applied as configuration, not code, and are validated before activation.
-
-### Endpoint Access Control
-
-The agent modifies endpoint-level access permissions to enforce authentication and authorization rules. Endpoint protection is applied consistently across services and validated against existing roles and providers.
+The agent works best with clear and explicit inputs. For example, when securing pages, exact page names must be provided. The agent understands page names but does not analyze page content.
 
 
+## Common Use Cases
 
-## Execution Scope
+The Security Agent can be used to configure single sign-on providers such as Google authentication by collecting required credentials like client ID and client secret. If details are missing, the agent follows up with clarifying questions before proceeding.
 
-The Security Agent operates strictly within the application security configuration layer.
+It can control page-level access by making specific pages publicly accessible or restricting them to authenticated users. Page names must be explicitly specified.
 
-It works with design-time security files located under `services/securityService/designtime`. Its authority includes configuring authentication providers, managing roles, defining landing behavior, and enforcing access control policies.
+The agent can also configure CORS by enabling access for external domains when you describe the requirement in plain language, such as allowing another application to access your APIs, without requiring technical terminology.
 
-It does not modify application logic, UI behavior, or backend service implementation.
-
-
-## Context Handling and Data Flow
-
-The Security Agent receives explicit security instructions from the wm_agent, including the desired authentication model, role definitions, and protection requirements.
-
-It validates the requested configuration against platform capabilities and existing security state before applying changes. Outputs consist of updated security configuration artifacts, which are returned to the wm_agent for coordination.
-
-If intent is unclear or confirmation is missing, the agent stops and requests clarification.
+For role-based access control, the Security Agent can apply roles to services, APIs, and prefabs. It works with existing roles or creates new roles after confirming with you. When securing APIs, descriptive API names can be used instead of full URL paths.
 
 
+## What You’ll Get Back
 
-## Authority and Constraints
+After applying a security configuration, the Security Agent confirms the changes it has made. For ambiguous requests, it asks for clarification before proceeding. For actions that affect roles or access levels, it seeks explicit confirmation.
 
-The Security Agent operates under strict security constraints.
-
-It cannot configure SAML-based authentication. All changes require explicit user confirmation before application. The agent follows a validation-first approach, ensuring that configurations are internally consistent and supported before they are persisted.
-
-All operations are confined to design-time security configuration files. Runtime behavior is not altered directly.
-
-These constraints exist to prevent accidental lockouts, broken authentication flows, or insecure configurations.
+The agent relies on conversation history to maintain context, which can also be referenced later for documentation or review purposes.
 
 
+## What the Security Agent Does Not Do
 
-## Execution Flow (High-Level)
+To set clear expectations, the Security Agent does not:
 
-At a high level, the Security Agent is invoked to apply or modify security configuration. It validates the requested changes, applies them to design-time security artifacts, and returns control to the wm_agent once configuration is complete.
+* Implement custom security logic outside supported providers
+* Analyze page content or application behavior
+* Replace WaveMaker’s built-in security mechanisms
+* Eliminate the need for understanding basic security concepts
 
-The agent does not deploy, execute, or test runtime authentication flows.
-
-
-
-## Design Invariants
-
-The following conditions are always true for the Security Agent.
-
-* Security changes require explicit confirmation.
-* Configuration is validated before being applied.
-* Unsupported authentication methods are never configured.
-* Security logic is defined through configuration, not code.
-* All changes are confined to design-time security artifacts.
-
-Violation of these invariants results in an unsafe or invalid security state.
+It configures security; it does not redesign it.
 
 
+## How It Helps You as a Developer
 
+By using the Security Agent, developers can secure applications faster and with fewer configuration errors. It reduces the need to understand platform-specific security setup while still giving control over authentication methods, access rules, and role management.
+
+The agent allows you to focus on application functionality while ensuring that security is applied consistently and correctly.
+
+
+## Summary
+
+The Security Agent exists to answer one core question:
+
+**“Can you help me configure security for my WaveMaker application?”**
+
+If your goal is to enable authentication, control access, or apply security rules using simple, conversational input, the Security Agent is the right tool.
