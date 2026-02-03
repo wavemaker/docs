@@ -598,49 +598,54 @@ function AskAIPortal({ query, apiUrl, onClose, activeTab, triggerSearch }) {
     const [container, setContainer] = useState(null);
     const containerRef = useRef(null);
 
-    // Handle visibility of Search Dropdown vs AI Panel
+    // Handle visibility of Search Dropdown vs AI Panel using class-based approach
     useEffect(() => {
+        const modal = document.querySelector('.DocSearch-Modal');
         const dropdown = document.querySelector('.DocSearch-Dropdown');
-        if (dropdown) {
+        const footer = document.querySelector('.DocSearch-Footer');
+        const askAiContainer = document.querySelector('.DocSearch-AskAI-Container');
+
+        if (modal) {
             if (activeTab === 'ask-ai') {
-                dropdown.style.display = 'none';
+                modal.classList.add('DocSearch-AskAI-Active');
             } else {
-                dropdown.style.display = '';
+                modal.classList.remove('DocSearch-AskAI-Active');
             }
         }
 
-        // Also handle footer visibility
-        const footer = document.querySelector('.DocSearch-Footer');
+        if (dropdown) {
+            dropdown.style.display = activeTab === 'ask-ai' ? 'none' : '';
+        }
+
         if (footer) {
-            if (activeTab === 'ask-ai') {
-                footer.style.display = 'none';
-            } else {
-                footer.style.display = '';
-            }
+            footer.style.display = activeTab === 'ask-ai' ? 'none' : '';
+        }
+
+        if (askAiContainer) {
+            askAiContainer.style.display = activeTab === 'ask-ai' ? 'flex' : 'none';
         }
     }, [activeTab]);
 
     useEffect(() => {
         // Function to find or create the Ask AI container
         const ensureContainer = () => {
-            // We inject into the .DocSearch-Modal to be a sibling of the dropdown
-            // This allows us to use flexbox to position it correctly below the header
-            const modalContent = document.querySelector('.DocSearch-Modal');
-            if (!modalContent) return;
+            // Find the modal - container must be INSIDE this
+            const modal = document.querySelector('.DocSearch-Modal');
+            if (!modal) return;
 
             let askAiContainer = document.querySelector('.DocSearch-AskAI-Container');
 
             if (!askAiContainer) {
                 askAiContainer = document.createElement('div');
                 askAiContainer.className = 'DocSearch-AskAI-Container';
+                askAiContainer.style.display = 'none'; // Hidden by default
 
-                // Find where to insert - ideally after the dropdown (or where it would be)
-                const dropdown = document.querySelector('.DocSearch-Dropdown');
-
-                if (dropdown && dropdown.nextSibling) {
-                    modalContent.insertBefore(askAiContainer, dropdown.nextSibling);
+                // Insert after the dropdown (or at end of modal)
+                const dropdown = modal.querySelector('.DocSearch-Dropdown');
+                if (dropdown) {
+                    dropdown.after(askAiContainer);
                 } else {
-                    modalContent.appendChild(askAiContainer);
+                    modal.appendChild(askAiContainer);
                 }
             }
 

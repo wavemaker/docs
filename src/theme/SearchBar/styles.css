@@ -13,13 +13,33 @@
 .DocSearch-AskAI-Container {
   /* Ensure it takes available space in the modal flex column */
   flex: 1;
-  display: flex;
+  display: none;
+  /* Hidden by default, shown via JS */
   flex-direction: column;
   height: var(--docsearch-modal-variable-height);
   max-height: calc(var(--docsearch-modal-height) - var(--docsearch-spacing) - var(--docsearch-footer-height));
   min-height: var(--docsearch-spacing);
   /* Required for flex child overflow scrolling */
   overflow: auto;
+}
+
+/* When AI mode is active, hide dropdown and footer via CSS as backup */
+.DocSearch-Modal.DocSearch-AskAI-Active .DocSearch-Dropdown {
+  display: none !important;
+}
+
+.DocSearch-Modal.DocSearch-AskAI-Active .DocSearch-Footer {
+  display: none !important;
+}
+
+.DocSearch-Modal.DocSearch-AskAI-Active .DocSearch-AskAI-Container {
+  display: flex !important;
+}
+
+/* Ensure dropdown has proper height in normal search mode */
+.DocSearch-Modal:not(.DocSearch-AskAI-Active) .DocSearch-Dropdown {
+  display: block !important;
+  min-height: 400px;
 }
 
 .DocSearch-AskAI {
