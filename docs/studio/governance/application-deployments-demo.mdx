@@ -1,239 +1,65 @@
 ---
-last_update: { author: "Author Name" }
+last_update: { author: "Venkateswarlu Kakani" }
 ---
 
-# Application Deployments Demo
+# One-Click Deployment
 
-Centralized portal for team management, collaboration, and project oversight.
+WaveMaker **One-Click Deployment** allows deploy applications from Studio to the Demo (QA) Cloud. With a single click, WaveMaker builds the application, provisions infrastructure, configures services using the selected deployment profile, and hosts the app automatically.
 
-## Overview
+---
 
-The Team Portal provides a comprehensive interface for managing team members, assigning roles, tracking activities, and facilitating collaboration across projects within the WaveMaker platform.
+## Key Capabilities
 
-## Team Management
+- Deploy applications to the WaveMaker Demo (QA) Cloud directly from Studio
+- Automatically validate and build the application during deployment
+- Configure databases, APIs, and security using Deployment Profiles
+- Provision infrastructure for the Demo phase without manual configuration
+- Run deployments in the background without blocking Studio
+- Generate a secure Demo URL for testing and sharing
+- Redeploy applications quickly during development
+- Assign unique URLs for Demo, Stage, and Live environments
+- Update environment configurations without rebuilding the application
 
-### Team Structure
+---
 
-#### Organization Hierarchy
+## Deployment Status
 
-```
-Organization
-├── Teams
-│   ├── Development Team
-│   ├── Design Team
-│   └── QA Team
-└── Projects
-    ├── Project A
-    ├── Project B
-    └── Project C
-```
+- **In Progress:** Deployment runs in the background with real-time updates via Studio toaster notifications and email alerts.
+- **Status Access:** The Deploy icon in the header reflects the current state and can be used to reopen the deployment status dialog.
+- **Success:** The application is deployed to WaveMaker Demo Cloud and a secure Demo URL is generated for launch or management.
+- **Failure:** Errors are available in the Inspection Framework and can be fixed before redeploying to the Demo phase.
 
-### Team Members
+---
 
-#### Adding Members
+## Post-Deployment Actions
 
-1. Navigate to Team Portal
-2. Click "Add Member"
-3. Enter email address
-4. Assign role:
-   - **Admin** - Full access
-   - **Developer** - Development access
-   - **Designer** - Design access
-   - **Viewer** - Read-only access
-5. Set project access
-6. Send invitation
+After deployment to the Demo phase, the following actions are available:
 
-#### Member Roles
+- **Redeploy** – Replaces the existing Demo deployment with the latest code
+- **Launch App** – Opens the deployed application in a browser
+- **Manage App** – Opens the Apps Portal for advanced management
 
-**Administrator**
+---
 
-- Manage team members
-- Create/delete projects
-- Configure settings
-- Access all projects
-- Manage billing
+## Configuration Phases (Stage and Live)
 
-**Developer**
+- **Pipeline Configuration** -WaveMaker supports multi-phase deployment pipelines that enable controlled promotion of applications across environments without code changes.
+- **Phase Configuration** - WaveMaker supports two phases for **WMO** and three phases for **WME** customers. Deployment phase has its own environment-specific configuration such as databases, services, and security settings per phase.
+- **Webhooks** -ntegrated to notify external systems on deployment events such as success or failure, enabling automation with CI/CD tools, monitoring platforms, and notification services.
+- **Tests Integration** - Automated tests can be integrated into the deployment workflow to validate application functionality and prevent promotion when critical tests fail.
 
-- Create/edit code
-- Deploy applications
-- Access assigned projects
-- Collaborate with team
-- Cannot manage members
 
-**Designer**
+Beyond the Demo phase, Stage and Live phases must be configured from the **Launchpad** in the App Deployment section.
 
-- Design UI/UX
-- Create layouts
-- Style components
-- Cannot deploy
-- Cannot access code
+WaveMaker supported cloud providers :
 
-**Viewer**
+- AWS
+- Azure
+- Google Cloud Platform
+- DigitalOcean
 
-- View projects
-- Read documentation
-- No edit access
-- No deployment access
-- View-only mode
+---
 
-## Project Management
+## Summary
 
-### Project Overview
-
-#### Project Dashboard
-
-- Active projects
-- Project status
-- Team assignments
-- Recent activity
-- Resource usage
-
-#### Project Information
-
-```javascript
-{
-  "projectName": "Customer Portal",
-  "status": "Active",
-  "owner": "john.doe@company.com",
-  "team": [
-    "jane.smith@company.com",
-    "bob.wilson@company.com"
-  ],
-  "createdDate": "2024-01-15",
-  "lastModified": "2024-12-10",
-  "deploymentStatus": "Production"
-}
-```
-
-### Project Access Control
-
-#### Access Levels
-
-- **Owner** - Full project control
-- **Editor** - Edit and deploy
-- **Contributor** - Edit only
-- **Viewer** - Read-only
-
-#### Setting Permissions
-
-```javascript
-// Assign project access
-{
-  "project": "CustomerPortal",
-  "user": "developer@company.com",
-  "role": "Editor",
-  "permissions": {
-    "read": true,
-    "write": true,
-    "deploy": true,
-    "delete": false
-  }
-}
-```
-
-## Collaboration Features
-
-### Activity Feed
-
-- Recent commits
-- Deployments
-- Member activities
-- Comments
-- Notifications
-
-### Team Chat
-
-- Project-specific channels
-- Direct messaging
-- File sharing
-- @mentions
-- Integrations (Slack, Teams)
-
-### Code Reviews
-
-- Pull request reviews
-- Inline comments
-- Approval workflow
-- Merge management
-- Review history
-
-## Reporting
-
-### Team Reports
-
-#### Activity Report
-
-- Developer productivity
-- Commit frequency
-- Project progress
-- Time tracking
-- Resource utilization
-
-#### Project Health
-
-- Build status
-- Deployment success rate
-- Error frequency
-- Performance metrics
-- Code quality
-
-### Analytics Dashboard
-
-```javascript
-{
-  "metrics": {
-    "activeProjects": 12,
-    "totalCommits": 450,
-    "deployments": 28,
-    "teamMembers": 15,
-    "averageBuildTime": "4.2 minutes"
-  }
-}
-```
-
-## Administration
-
-### Team Settings
-
-#### General Settings
-
-- Team name
-- Organization details
-- Default roles
-- Access policies
-- Notification preferences
-
-#### Integration Settings
-
-- Git repository
-- CI/CD pipeline
-- Cloud providers
-- Third-party tools
-- SSO configuration
-
-### Billing Management
-
-- View usage
-- Manage subscriptions
-- Payment methods
-- Invoice history
-- License management
-
-## Best Practices
-
-### Team Management
-
-1. **Define clear roles** and responsibilities
-2. **Regular team meetings** and standups
-3. **Code review process**
-4. **Documentation standards**
-5. **Communication protocols**
-
-### Project Organization
-
-1. **Consistent naming** conventions
-2. **Project templates**
-3. **Shared resources**
-4. **Version control** strategy
-5. **Deployment procedures**
+One-Click Deployment enables fast and seamless application deployment from Studio to the Demo (QA) Cloud by automating build, validation, service configuration, and infrastructure provisioning, with support for promotion across Stage and Live environments.
