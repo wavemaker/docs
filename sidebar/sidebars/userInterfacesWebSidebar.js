@@ -498,30 +498,28 @@ export default [
       },
       {
         type: 'category',
-        label: 'Form Input validations',
+        label: 'Validations',
         collapsible: true,
         collapsed: true,
+        link: {
+          type: 'doc',
+          id: 'user-interfaces/web/develop/form-input-validations/index',
+        },
         items: [
-          {
-            type: 'doc',
-            id: 'user-interfaces/web/develop/form-input-validations/bind-expressions',
-            label: 'Bind expressions',
-          },
-          {
-            type: 'doc',
-            id: 'user-interfaces/web/develop/form-input-validations/validation-messages',
-            label: 'Validation messages',
-          },
+          // {
+          //   type: 'doc',
+          //   id: 'user-interfaces/web/develop/form-input-validations/validation-messages',
+          //   label: 'Validation messages',
+          // },
           {
             type: 'doc',
             id: 'user-interfaces/web/develop/form-input-validations/custom-validators-in-javascript',
             label: 'Custom validators in JavaScript',
           },
-
           {
             type: 'doc',
-            id: 'user-interfaces/web/develop/form-input-validations/overview',
-            label: 'Form Input validations',
+            id: 'user-interfaces/web/develop/form-input-validations/bind-expressions',
+            label: 'Bind expressions',
           },
         ],
       },

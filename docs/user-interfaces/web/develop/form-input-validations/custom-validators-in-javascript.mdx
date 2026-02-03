@@ -1,7 +1,93 @@
 ---
-last_update: { author: 'Author Name' }
+last_update: { author: 'Raj Kumar Reddy Abbadi' }
 ---
 
-# Overview
+# Custom Validators Using JavaScript
+While WaveMaker provides many built-in validators, there are scenarios where application-specific rules are required. For such cases, WaveMaker allows you to define custom validators using JavaScript functions.
 
-Welcome to Custom validators in JavaScript doc.
+Custom validators give you complete control over how a field is validated and allow you to implement business rules or dynamic validations that go beyond basic constraints.
+
+## How Custom Validators Work
+A custom validator is a JavaScript function that is executed whenever validation is triggered for a field. The function:
+- Receives the field object and the form context
+- Evaluates the value based on custom logic
+- Returns an error object if validation fails
+- Returns nothing (or undefined) if validation passes
+
+If an error object is returned, the field is marked invalid and the provided error message is displayed on the UI.
+
+Custom validators can be applied to **Form fields** & **DataTable**
+
+    ```javascript
+        // Form
+        Page.Widgets.userForm.formfields.lastName.setValidators([lastNameValidator]);
+
+        // DataTable
+        Page.Widgets.userTable.columns.lastName.setValidators([lastNameValidator]);
+
+        function lastNameValidator(field, form) {
+            // Check if value exists and is at least 2 characters long
+            if (field.value && field.value.length < 2) {
+                return {
+                    errorMessage: "Please enter a valid last name."
+                };
+            }
+        }
+    ```
+
+## Common Use Cases for Custom Validators
+
+#### Cross-Field Validation (Password Match)
+    ```javascript
+        function confirmPasswordValidator(field, form) {
+            var password = form.formfields.password.value;
+            var confirmPassword = field.value;
+
+            if (password && confirmPassword && password !== confirmPassword) {
+                return {
+                    errorMessage: "Passwords do not match."
+                };
+            }
+        }
+    ```
+
+#### Conditional Validation Based on Another Field
+    ```javascript
+        function stateRequiredValidator(field, form) {
+            var country = form.formfields.country.value;
+
+            if (country === "USA" && !field.value) {
+                return {
+                    errorMessage: "State is required when country is USA."
+                };
+            }
+        }
+    ```
+
+#### Disallow Special Characters in Username
+    ```javascript
+        function usernameValidator(field, form) {
+            var value = field.value;
+
+            if (value && !/^[a-zA-Z0-9]+$/.test(value)) {
+                return {
+                    errorMessage: "Username can contain only letters and numbers."
+                };
+            }
+        }
+    ```
+
+#### Age Validation Based on Date of Birth
+    ```javascript
+        function ageValidator(field, form) {
+            var dob = new Date(field.value);
+            var today = new Date();
+            var age = today.getFullYear() - dob.getFullYear();
+
+            if (age < 18) {
+                return {
+                    errorMessage: "You must be at least 18 years old."
+                };
+            }
+        }
+    ```
