@@ -1,7 +1,13 @@
 /*
-Workaround to avoid rendering empty search container
-See https://github.com/facebook/docusaurus/pull/9385
+NavbarSearch styles
 */
+
+.navbarSearchContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .navbarSearchContainer:empty {
   display: none;
 }
