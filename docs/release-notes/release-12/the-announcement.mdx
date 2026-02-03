@@ -4,8 +4,19 @@ title: WaveMaker 12 — A New Era of AI-Accelerated Application Development
 description: WaveMaker 12 introduces agent-driven development, design systems, and multi-mode workflows for modern application teams.
 ---
 
+import ThreePillars from './assets/images/ThreePillars.png'
+import DesignSystem from './assets/images/DesignSystem.png'
+import Autocode from './assets/images/Autocode.png'
+import AIRA from './assets/images/AIRA.png'
+import ReactSupport from './assets/images/ReactSupport.png'
+import AutoLayoutContainers from './assets/images/AutoLayout_Containers.png'
+import ProductEcosystem from './assets/images/ProductEcosystem.png'
+
+
 # WaveMaker 12  
 ## A New Era of AI-Accelerated Application Development
+
+
 
 WaveMaker 12 represents a significant evolution of the platform. It marks a shift from traditional low-code development toward a modern, AI-accelerated approach to building applications.
 
@@ -17,53 +28,62 @@ With this release, WaveMaker brings together AI agents, design systems, and visu
 
 WaveMaker 12 supports three complementary modes of development, designed to work together rather than compete.
 
-![ThreePillars](assets/images/ThreePillars.png)
+<div className="announcement-image-wrapper">
+	<img src={ThreePillars} alt="ThreePillars" className="announcement-image" />
+</div>
 
 ### Visual Development  
 Developers can continue to use the visual canvas to design pages, configure components, and fine-tune application behaviour. Studio improvements make it easier to focus on layout, navigation, and structure while maintaining control over generated code.
 
-### Agent-Based Development (AIRA)  
+### Agent-Based Development ([AIRA](../../developing-with-agents/concepts))  
 AI agents assist developers with common and repetitive development tasks using natural language prompts. These agents operate within the platform, helping accelerate development while keeping developers fully in control of outcomes.
 
-### Design to Code (Autocode)  
+### Design to Code ([Autocode](../../design-system/figma-autocode-plugin/working-with-autocode-plugin.md))  
 Autocode enables direct conversion of supported design systems into working applications. Layout, styling, and components are generated automatically, allowing teams to move from design to implementation with minimal manual effort.
 
 ---
 
-## Design System Projects for Web and Mobile
+## Design System projects
 
-WaveMaker 12 introduces Design System Projects as the default approach for building applications.
+WaveMaker 12 introduces [Design System](../../design-system/concepts/index.mdx) based approach for building UI applications.
 
-All WaveMaker components now align with the WaveMaker UI Kit, ensuring consistency across projects and teams. Styling is driven by design tokens rather than custom CSS, enabling predictable theming and easier maintenance.
+With this all WaveMaker components now align with the WaveMaker UI Kit, ensuring consistency across projects and teams. Styling is driven by design tokens rather than custom CSS, enabling predictable theming and easier maintenance.
 
 Key capabilities :
-- Design System–based projects for both web and mobile
+- Design System–based project creation for both web and mobile apps
 - Design Tokens for global and component-level styling
-- A dedicated Style Workspace for managing tokens
-- Auto Layout containers enabled by default for responsive design
-- Updated component naming aligned with the design system
+- A dedicated Style Workspace for managing tokens and creating component variants
 
 This approach significantly reduces styling overhead while improving consistency and scalability.
 
+<div className="announcement-image-wrapper">
+	<img src={DesignSystem} alt="DesignSystem" className="announcement-image" />
+</div>
+
+
 ---
 
-## Autocode: From Design to Production-Ready Applications
+## Autocode: Converts designs into production ready Code
 
-Autocode converts supported designs into WaveMaker applications using a design-first approach.
+[Autocode](../../design-system/figma-autocode-plugin/working-with-autocode-plugin.md) is a figma plugin that converts supported designs into WaveMaker applications using a design-first approach.
 
 Generated output includes:
-- UI components aligned with the design system
-- Auto Layout–based responsive containers
+- WaveMaker UI components aligned with the design system
 - Design Tokens for theming and customization
-- Page structure, configuration, and layout
+- Auto Layout–based responsive containers
 
 Autocode currently supports designs built using the WaveMaker UI Kit and Material 3, with plans to expand support to additional design systems. Generated projects can also be imported into WaveMaker Enterprise environments.
+
+<div className="announcement-image-wrapper">
+	<img src={Autocode} alt="Autocode" className="announcement-image" />
+</div>
+
 
 ---
 
 ## Aira: AI Agents for Application Development
 
-WaveMaker 12 introduces Aira, an AI agent framework designed to assist across the application development lifecycle.
+WaveMaker 12 introduces [Aira](../../developing-with-agents/concepts), an AI agent framework designed to assist across the application development lifecycle.
 
 Aira agents can help with tasks such as:
 - API binding and integration
@@ -75,9 +95,64 @@ Aira agents can help with tasks such as:
 
 The agent experience is fully integrated into WaveMaker Studio, offering prompt-based interaction, chat history, and execution control. Agents are designed to accelerate development while keeping developers in control of decisions and outputs.
 
+<div className="announcement-image-wrapper">
+	<img src={AIRA} alt="AIRA" className="announcement-image" />
+</div>
+
 ---
 
-## Studio Experience Improvements
+## React Code Generation for Web Apps (Beta)
+
+WaveMaker 12 adds **React code generation** alongside Angular support for web applications.
+
+Applications are built using the same WaveMaker markup, visual tools, and AI-assisted workflows, and can now be exported as **React application code** without any change to the developer experience.
+
+<div className="announcement-image-wrapper">
+	<img src={ReactSupport} alt="ReactSupport" className="announcement-image" />
+</div>
+---
+
+## Auto Layout
+
+WaveMaker 12 introduces [Auto Layout](../../user-interfaces/web/develop/working-with-layouts/auto-layout), a visual layout system for building structured and responsive UIs without writing CSS. It aligns with design-first thinking while giving developers precise control over layout behavior.
+
+**Key capabilities**
+- Visual configuration for direction, alignment, spacing, wrapping, and sizing  
+- Support for both component-first and layout-first design workflows  
+- Consistent layout behavior across pages and sections  
+- Responsive layouts using configurable width, height, gap, and padding controls  
+
+<div className="announcement-image-wrapper">
+	<img src={AutoLayoutContainers} alt="AutoLayout" className="announcement-image" />
+</div>
+
+
+---
+
+## A Connected Developer Ecosystem
+
+With WM12, we are consciously bringing all of these together and deeply integrating them into a single, cohesive Product Ecosystem. This ecosystem aligns with our product strategy and is closely tied to the current WaveMaker platform, as we recreate and develop relevant content and features that directly support the product experience.
+
+### Documentation  
+The documentation experience has been restructured with new information architecture around developer personas and workflows. Deeplinking with Academy and Storybook ensures relevant content is easily discoverable.
+
+### Academy  
+Now [WaveMaker Academy](https://academy.wavemaker.com) evolves into a developer onboarding platform with mentor-led learning paths, and certification-oriented programs backed by latest videos explaining the development concepts.
+
+### Component Storybook  
+Detailed component documentation is now available through Storybook, enabling interactive exploration and live property manipulation for both web ([React](https://react-components.wavemaker.com)) and mobile ([React Native](https://reactnative-components.wavemaker.com)) components.
+
+### Marketplace  
+A new [Product Marketplace](https://marketplace.wavemaker.com) being introduced to support reusable components, connectors, prefabs, design systems and industry-specific solutions.
+
+<div className="announcement-image-wrapper">
+	<img src={ProductEcosystem} alt="ProductEcosystem" className="announcement-image" />
+</div>
+
+
+---
+
+## Enhancements for Studio Developer Experience
 
 WaveMaker Studio has been refined to support modern workflows and reduce friction during development.
 
@@ -89,26 +164,16 @@ Enhancements include:
 
 ---
 
-## A Connected Developer Ecosystem
-
-WaveMaker 12 brings together all supporting assets into a single, integrated ecosystem that complements the core platform.
-
-### Documentation  
-The documentation experience has been restructured with new information architecture around developer personas and workflows. Deeplinking with Academy and Storybook ensures relevant content is easily discoverable.
-
-### Academy  
-WaveMaker Academy evolves into a developer onboarding platform with mentor-led learning paths, and certification-oriented programs backed by latest videos explaining the development concepts.
-
-### Component Storybook  
-Detailed component documentation is now available through Storybook, enabling interactive exploration and live property manipulation for both web (React) and mobile (React Native) components.
-
-### Marketplace  
-A new product marketplace being introduced to support reusable components, connectors, prefabs, design systems and industry-specific solutions.
-
----
-
 ## One Platform, One Ecosystem
 
 WaveMaker 12 is not just an incremental update. It reflects a clear direction toward AI-assisted development, design system–driven consistency, and a unified developer experience.
 
 By combining visual tools, AI agents, and design-led workflows, WaveMaker 12 enables teams to build applications faster, maintain consistency at scale, and adapt to modern development needs with confidence.
+
+
+
+<style>{`
+.announcement-image-wrapper { text-align: center; margin: 0.5rem 0; }
+.announcement-image { display: inline-block; width: 600px; height: 400px; object-fit: contain; max-width: 100%; border-radius: 6px; }
+@media (max-width: 768px) { .announcement-image { width: 100%; height: auto; } }
+`}</style>

@@ -1,112 +1,387 @@
-[
-    {
-      "title": "WaveMaker Studio UI Frameworks",
-      "groups": [
+{
+  "Application Stack": {
+    "UI": {
+      "Angular": [
         {
-          "title": "UI Frameworks",
-          "items": [
-            { "library": "jquery", "version": "3.7.1", "description": "JS Binding", "url": "https://jquery.com/" },
-            { "library": "jquery-ui*", "version": "1.13.3", "description": "", "url": "https://jqueryui.com/" },
-            { "library": "Angular", "version": "18.2.13", "description": "MVC Framework", "url": "https://angular.io/" },
-            { "library": "ngx-bootstrap", "version": "9.0.0", "description": "", "url": "https://valor-software.com/ngx-bootstrap/" },
-            { "library": "bootstrap", "version": "3.3.7", "description": "Styles", "url": "https://getbootstrap.com/" },
-            { "library": "d3", "version": "7.8.5", "description": "Charting", "url": "https://d3js.org/" },
-            { "library": "nvd3", "version": "1.8.11", "description": "", "url": "http://nvd3.org/" },
-            { "library": "Fullcalendar", "version": "6.1.15", "description": "", "url": "https://fullcalendar.io/" },
-            { "library": "lodash-es", "version": "4.17.21", "description": "Built-in functions", "url": "https://lodash.com/" },
-            { "library": "hammerjs", "version": "2.0.8", "description": "Device support, gestures", "url": "https://hammerjs.github.io/" }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Backend Frameworks",
-      "groups": [
-        {
-          "title": "Frameworks & Libraries",
-          "items": [
-            { "library": "Spring Framework", "version": "6.2.11", "description": "Application framework", "url": "https://spring.io/projects/spring-framework" },
-            { "library": "Spring Security", "version": "6.4.11", "description": "Security framework", "url": "https://spring.io/projects/spring-security" },
-            { "library": "Spring Data", "version": "2024.1.10", "description": "Data access", "url": "https://spring.io/projects/spring-data" },
-            { "library": "Spring Boot", "version": "3.4.10", "description": "Auto-configuration", "url": "https://spring.io/projects/spring-boot" },
-            { "library": "Spring Session", "version": "3.4.3", "description": "Session management", "url": "https://spring.io/projects/spring-session" },
-            { "library": "Gson", "version": "2.13.2", "description": "Java JSON utilities", "url": "https://github.com/google/gson" },
-            { "library": "Hibernate (Jakarta)", "version": "5.6.15.Final", "description": "DB Persistence library", "url": "https://hibernate.org/" },
-            { "library": "HSQL", "version": "2.7.4", "description": "Sample database", "url": "http://hsqldb.org/" },
-            { "library": "Jackson", "version": "2.19.0", "description": "JSON library", "url": "https://github.com/FasterXML/jackson" },
-            { "library": "SLF4j", "version": "2.0.17", "description": "Logging framework", "url": "https://www.slf4j.org/" },
-            { "library": "Log4j2", "version": "2.25.2", "description": "Logging Implementation", "url": "https://logging.apache.org/log4j/2.x/" },
-            { "library": "HttpComponents - httpclient", "version": "5.4.4", "description": "Http client library", "url": "https://hc.apache.org/" },
-            { "library": "Servlet Framework", "version": "6.0.0", "description": "", "url": "#" },
-            { "library": "HikariCP", "version": "6.3.3", "description": "Database Connection Pooling", "url": "https://github.com/brettwooldridge/HikariCP" },
-            { "library": "Commons Lang3", "version": "3.18.0", "description": "", "url": "https://commons.apache.org/proper/commons-lang/" },
-            { "library": "Guava", "version": "33.5.0-jre", "description": "", "url": "https://github.com/google/guava" },
-            { "library": "Postgresql Driver", "version": "42.7.4", "description": "", "url": "https://jdbc.postgresql.org/" },
-            { "library": "Hibernate Validator", "version": "8.0.2.Final", "description": "", "url": "https://hibernate.org/validator/" },
-            { "library": "Jgit", "version": "7.3.0.202506031305-r", "description": "", "url": "https://www.eclipse.org/jgit/" },
-            { "library": "Commons Codec", "version": "1.18.0", "description": "", "url": "https://commons.apache.org/proper/commons-codec/" },
-            { "library": "Commons IO", "version": "2.19.0", "description": "", "url": "https://commons.apache.org/proper/commons-io/" },
-            { "library": "Commons Text", "version": "1.13.1", "description": "", "url": "https://commons.apache.org/proper/commons-text/" },
-            { "library": "Antisamy", "version": "1.7.7", "description": "", "url": "https://owasp.org/www-project-antisamy/" },
-            { "library": "Freemarker", "version": "2.3.34", "description": "", "url": "https://freemarker.apache.org/" },
-            { "library": "Apache Tika", "version": "3.2.3", "description": "", "url": "https://tika.apache.org/" },
-            { "library": "Mariadb JDBC Driver", "version": "3.5.2", "description": "", "url": "https://mariadb.com/kb/en/about-mariadb-connector-j/" },
-            { "library": "Mongodb Driver", "version": "5.4.0", "description": "", "url": "https://www.mongodb.com/docs/drivers/java/" },
-            { "library": "Jakarta Validation Api", "version": "3.1.1", "description": "", "url": "https://jakarta.ee/specifications/bean-validation/" },
-            { "library": "commons-validator", "version": "1.10.0", "description": "", "url": "https://commons.apache.org/proper/commons-validator/" },
-            { "library": "json-smart", "version": "2.5.2", "description": "", "url": "https://netplex.github.io/json-smart/" }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Web Environment",
-      "groups": [
-        {
-          "title": "Runtime Environment",
-          "items": [
-            { "library": "JDK", "version": "21.0.6", "url": "https://openjdk.org/" },
-            { "library": "WebSphere Liberty", "version": "23.0.0.9+", "url": "https://www.ibm.com/products/websphere-liberty" },
-            { "library": "JBoss Wildfly", "version": "27+", "url": "https://www.wildfly.org/" },
-            { "library": "Tomcat", "version": "10.1.39", "url": "https://tomcat.apache.org/" }
-          ]
+          "name": "Angular",
+          "description": "Platform for building mobile and desktop web applications.",
+          "link": "https://angular.io/",
+          "version": "18.2.13"
         },
         {
-          "title": "Angular Web",
-          "items": [
-            { "library": "Java", "version": "21.0.6", "url": "https://openjdk.org/" },
-            { "library": "Node", "version": "22.11.0", "url": "https://nodejs.org/" },
-            { "library": "Maven", "version": "3.9.9", "url": "https://maven.apache.org/" },
-            { "library": "npm", "version": "10.9.0", "url": "https://www.npmjs.com/" },
-            { "library": "Ant", "version": "1.10.11", "url": "https://ant.apache.org/" }
-          ]
+          "name": "jQuery",
+          "description": "Fast, small, and feature-rich JavaScript library.",
+          "link": "https://jquery.com/",
+          "version": "3.7.1"
+        },
+        {
+          "name": "jQuery UI",
+          "description": "Set of user interface interactions, effects, widgets, and themes built on top of jQuery.",
+          "link": "https://jqueryui.com/",
+          "version": "1.13.3"
+        },
+        {
+          "name": "ngx-bootstrap",
+          "description": "Native Angular directives for Bootstrap.",
+          "link": "https://valor-software.com/ngx-bootstrap/",
+          "version": "9.0.0"
+        },
+        {
+          "name": "Bootstrap",
+          "description": "The most popular HTML, CSS, and JS library for developing responsive, mobile-first projects.",
+          "link": "https://getbootstrap.com/docs/3.3/",
+          "version": "3.3.7"
+        },
+        {
+          "name": "D3.js",
+          "description": "JavaScript library for manipulating documents based on data.",
+          "link": "https://d3js.org/",
+          "version": "7.8.5"
+        },
+        {
+          "name": "NVD3",
+          "description": "Re-usable charts for D3.js.",
+          "link": "https://nvd3.org/",
+          "version": "1.8.11"
+        },
+        {
+          "name": "FullCalendar",
+          "description": "Full-sized drag & drop event calendar.",
+          "link": "https://fullcalendar.io/",
+          "version": "6.1.15"
+        },
+        {
+          "name": "Lodash (lodash-es)",
+          "description": "A modern JavaScript utility library delivering modularity, performance, & extras.",
+          "link": "https://lodash.com/",
+          "version": "4.17.21"
+        },
+        {
+          "name": "Hammer.js",
+          "description": "A javascript library for multi-touch gestures.",
+          "link": "https://hammerjs.github.io/",
+          "version": "2.0.8"
+        }
+      ],
+      "React": [],
+      "React Native": [
+        {
+          "name": "React Native",
+          "description": "Framework for building native apps using React.",
+          "link": "https://reactnative.dev/",
+          "version": "0.76.3"
+        },
+        {
+          "name": "Expo",
+          "description": "Platform for universal React applications.",
+          "link": "https://expo.dev/",
+          "version": "52.0.17"
         }
       ]
     },
-    {
-      "title": "Mobile React Native",
-      "groups": [
-        {
-          "title": "Environment Setup",
-          "items": [
-            { "library": "Java", "version": "17", "url": "https://openjdk.org/" },
-            { "library": "Node", "version": "22.11.0", "url": "https://nodejs.org/" },
-            { "library": "Maven", "version": "3.9.9", "url": "https://maven.apache.org/" },
-            { "library": "npm", "version": "10.9.0", "url": "https://www.npmjs.com/" },
-            { "library": "Android Studio", "version": "Ladybug 2024.2.2 to Meerkat 2024.3.1", "url": "https://developer.android.com/studio" },
-            { "library": "Xcode", "version": "15.4 to 16.2", "url": "https://developer.apple.com/xcode/" },
-            { "library": "SDK Build Tools", "version": "34.0.0", "url": "#" },
-            { "library": "wm-reactnative-cli", "version": "1.8.8", "url": "#" },
-            { "library": "Android Gradle Plugin (AGP)", "version": "8.10.2", "url": "https://developer.android.com/studio/releases/gradle-plugin" }
-          ]
-        },
-        {
-          "title": "SDK Update",
-          "items": [
-            { "library": "Expo", "version": "52.0.17", "url": "https://expo.dev/" },
-            { "library": "React Native", "version": "0.76.3", "url": "https://reactnative.dev/" }
-          ]
-        }
-      ]
-    }
-  ]
+    "Backend": [
+      {
+        "name": "Spring Framework",
+        "description": "Comprehensive programming and configuration model for modern Java-based enterprise applications.",
+        "link": "https://spring.io/projects/spring-framework",
+        "version": "6.2.11"
+      },
+      {
+        "name": "Spring Security",
+        "description": "Authentication and access-control framework.",
+        "link": "https://spring.io/projects/spring-security",
+        "version": "6.4.11"
+      },
+      {
+        "name": "Spring Data",
+        "description": "Simplifies data access for relational and non-relational databases.",
+        "link": "https://spring.io/projects/spring-data",
+        "version": "2024.1.10"
+      },
+      {
+        "name": "Spring Boot",
+        "description": "Framework to create stand-alone, production-grade Spring based Applications.",
+        "link": "https://spring.io/projects/spring-boot",
+        "version": "3.4.10"
+      },
+      {
+        "name": "Spring Session",
+        "description": "Provides an API and implementations for managing a user's session information.",
+        "link": "https://spring.io/projects/spring-session",
+        "version": "3.4.3"
+      },
+      {
+        "name": "Hibernate (Jakarta)",
+        "description": "Object/Relational Mapping (ORM) library for Java.",
+        "link": "https://hibernate.org/",
+        "version": "5.6.15.Final"
+      },
+      {
+        "name": "Gson",
+        "description": "Java library to convert Java Objects into JSON and back.",
+        "link": "https://github.com/google/gson",
+        "version": "2.13.2"
+      },
+      {
+        "name": "Jackson",
+        "description": "Standard JSON library for Java (streaming, DOM, binding).",
+        "link": "https://github.com/FasterXML/jackson",
+        "version": "2.19.0"
+      },
+      {
+        "name": "SLF4J",
+        "description": "Simple Logging Facade for Java.",
+        "link": "https://www.slf4j.org/",
+        "version": "2.0.17"
+      },
+      {
+        "name": "Log4j2",
+        "description": "Java-based logging utility.",
+        "link": "https://logging.apache.org/log4j/2.x/",
+        "version": "2.25.2"
+      },
+      {
+        "name": "HttpComponents HttpClient",
+        "description": "Client-side HTTP standards implementation.",
+        "link": "https://hc.apache.org/httpcomponents-client-5.x/",
+        "version": "5.4.4"
+      },
+      {
+        "name": "Jakarta Servlet",
+        "description": "Server-side API for handling HTTP requests.",
+        "link": "https://jakarta.ee/specifications/servlet/",
+        "version": "6.0.0"
+      },
+      {
+        "name": "HikariCP",
+        "description": "High-performance JDBC connection pool.",
+        "link": "https://github.com/brettwooldridge/HikariCP",
+        "version": "6.3.3"
+      },
+      {
+        "name": "Apache Commons Lang3",
+        "description": "Extra methods for manipulation of standard Java classes.",
+        "link": "https://commons.apache.org/proper/commons-lang/",
+        "version": "3.18.0"
+      },
+      {
+        "name": "Guava",
+        "description": "Google core libraries for Java.",
+        "link": "https://github.com/google/guava",
+        "version": "33.5.0-jre"
+      },
+      {
+        "name": "PostgreSQL Driver",
+        "description": "JDBC driver for PostgreSQL.",
+        "link": "https://jdbc.postgresql.org/",
+        "version": "42.7.4"
+      },
+      {
+        "name": "Hibernate Validator",
+        "description": "Reference implementation of the Bean Validation specification.",
+        "link": "https://hibernate.org/validator/",
+        "version": "8.0.2.Final"
+      },
+      {
+        "name": "JGit",
+        "description": "Java implementation of the Git version control system.",
+        "link": "https://www.eclipse.org/jgit/",
+        "version": "7.3.0"
+      },
+      {
+        "name": "Apache Commons Codec",
+        "description": "Implementations of common encoders and decoders (Base64, Hex, etc).",
+        "link": "https://commons.apache.org/proper/commons-codec/",
+        "version": "1.18.0"
+      },
+      {
+        "name": "Apache Commons IO",
+        "description": "Library of utilities to assist with developing IO functionality.",
+        "link": "https://commons.apache.org/proper/commons-io/",
+        "version": "2.19.0"
+      },
+      {
+        "name": "Apache Commons Text",
+        "description": "Library focused on algorithms working on strings.",
+        "link": "https://commons.apache.org/proper/commons-text/",
+        "version": "1.13.1"
+      },
+      {
+        "name": "OWASP AntiSamy",
+        "description": "Library for performing fast, configurable cleansing of HTML coming from untrusted sources.",
+        "link": "https://owasp.org/www-project-antisamy/",
+        "version": "1.7.7"
+      },
+      {
+        "name": "Apache FreeMarker",
+        "description": "Java template engine to generate text output.",
+        "link": "https://freemarker.apache.org/",
+        "version": "2.3.34"
+      },
+      {
+        "name": "Apache Tika",
+        "description": "Content analysis toolkit to detect and extract metadata and text.",
+        "link": "https://tika.apache.org/",
+        "version": "3.2.3"
+      },
+      {
+        "name": "MariaDB JDBC Driver",
+        "description": "JDBC driver for MariaDB.",
+        "link": "https://mariadb.com/kb/en/about-mariadb-connector-j/",
+        "version": "3.5.2"
+      },
+      {
+        "name": "MongoDB Driver",
+        "description": "Java driver for MongoDB.",
+        "link": "https://www.mongodb.com/docs/drivers/java/sync/current/",
+        "version": "5.4.0"
+      },
+      {
+        "name": "Jakarta Validation API",
+        "description": "Standard API for bean validation.",
+        "link": "https://jakarta.ee/specifications/bean-validation/",
+        "version": "3.1.1"
+      },
+      {
+        "name": "Apache Commons Validator",
+        "description": "Client-side validation and server-side validation support.",
+        "link": "https://commons.apache.org/proper/commons-validator/",
+        "version": "1.10.0"
+      },
+      {
+        "name": "JSON-Smart",
+        "description": "Performance focused JSON processor.",
+        "link": "https://netplex.github.io/json-smart/",
+        "version": "2.5.2"
+      },
+      {
+        "name": "HSQLDB",
+        "description": "Leading SQL relational database engine written in Java (Sample DB).",
+        "link": "http://hsqldb.org/",
+        "version": "2.7.4"
+      }
+    ]
+  },
+  "Build Time": {
+    "Angular": [
+      {
+        "name": "Apache Maven",
+        "description": "Software project management and comprehension tool.",
+        "link": "https://maven.apache.org/",
+        "version": "3.9.9"
+      },
+      {
+        "name": "Apache Ant",
+        "description": "Java library and command-line tool for driving build processes.",
+        "link": "https://ant.apache.org/",
+        "version": "1.10.11"
+      },
+      {
+        "name": "npm",
+        "description": "Package manager for the JavaScript programming language.",
+        "link": "https://www.npmjs.com/",
+        "version": "10.9.0"
+      }
+    ],
+    "React": [],
+    "React Native": [
+      {
+        "name": "Android Gradle Plugin (AGP)",
+        "description": "Build system for Android applications.",
+        "link": "https://developer.android.com/build",
+        "version": "8.10.2"
+      },
+      {
+        "name": "SDK Build Tools",
+        "description": "Tools required to build Android applications.",
+        "link": "https://developer.android.com/studio/releases/build-tools",
+        "version": "34.0.0"
+      },
+      {
+        "name": "wm-reactnative-cli",
+        "description": "WaveMaker CLI for React Native projects.",
+        "link": "https://www.npmjs.com/package/@wavemaker/wm-reactnative-cli",
+        "version": "1.8.8"
+      },
+      {
+        "name": "Maven",
+        "description": "Used for managing Java dependencies in React Native builds.",
+        "link": "https://maven.apache.org/",
+        "version": "3.9.9"
+      },
+      {
+        "name": "npm",
+        "description": "Package manager used for React Native dependencies.",
+        "link": "https://www.npmjs.com/",
+        "version": "10.9.0"
+      }
+    ]
+  },
+  "Run Time": {
+    "Angular": [
+      {
+        "name": "Java (JDK)",
+        "description": "Java Development Kit for running the backend and build tools.",
+        "link": "https://openjdk.org/",
+        "version": "21.0.6"
+      },
+      {
+        "name": "Node.js",
+        "description": "JavaScript runtime environment.",
+        "link": "https://nodejs.org/",
+        "version": "22.11.0"
+      },
+      {
+        "name": "Apache Tomcat",
+        "description": "Open source implementation of the Jakarta Servlet, Jakarta Server Pages, etc.",
+        "link": "https://tomcat.apache.org/",
+        "version": "10.1.39"
+      },
+      {
+        "name": "WebSphere Liberty",
+        "description": "Flexible and dynamic Java EE application server.",
+        "link": "https://www.ibm.com/products/websphere-liberty",
+        "version": "23.0.0.9+"
+      },
+      {
+        "name": "JBoss WildFly",
+        "description": "Flexible, lightweight, managed application runtime.",
+        "link": "https://www.wildfly.org/",
+        "version": "27+"
+      }
+    ],
+    "React": [],
+    "React Native": [
+      {
+        "name": "Java (JDK)",
+        "description": "Required for Android builds and runtime environment.",
+        "link": "https://openjdk.org/",
+        "version": "17"
+      },
+      {
+        "name": "Node.js",
+        "description": "JavaScript runtime for the Metro bundler.",
+        "link": "https://nodejs.org/",
+        "version": "22.11.0"
+      }
+    ]
+  },
+  "Developer Setup (Recommended)": {
+    "Angular": [],
+    "React": [],
+    "React Native": [
+      {
+        "name": "Android Studio",
+        "description": "Integrated Development Environment (IDE) for Android app development.",
+        "link": "https://developer.android.com/studio",
+        "version": "Ladybug 2024.2.2"
+      },
+      {
+        "name": "Xcode",
+        "description": "Integrated Development Environment (IDE) for macOS/iOS.",
+        "link": "https://developer.apple.com/xcode/",
+        "version": "15.4"
+      }
+    ]
+  }
+}

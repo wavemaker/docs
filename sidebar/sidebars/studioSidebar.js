@@ -29,8 +29,8 @@ export default [
       },
       {
         type: 'doc',
-        id: 'studio/governance/team_settings',
-        label: 'Team Settings'
+        id: 'studio/governance/team_management',
+        label: 'Team Management'
       },
       {
         type: 'doc',

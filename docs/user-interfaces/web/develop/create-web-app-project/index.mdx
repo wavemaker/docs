@@ -1,0 +1,175 @@
+---
+last_update: { author: 'Author Name' }
+---
+
+# Walkthrough
+
+## WaveMaker Project Structure
+When you create a new application or open an existing one in WaveMaker Studio, you are taken to the Project Workspace.
+The Project Workspace is the central area where you design UI, configure services, manage resources, and control project settings.
+
+### Project Workspace Overview
+The Project Workspace is divided into the following major sections:
+
+#### Left Navigation (Left Nav)
+The Left Nav provides access to all application resources and developer utilities.
+
+Resources
+Each resource opens its own Resource Explorer.
+Pages
+Lists all application pages
+Default Main Page is created automatically
+New pages can be added using the + button
+Databases
+Database connections and imported tables
+API Services
+REST / SOAP services
+Java Services
+Custom backend logic
+Security
+Roles, permissions, and access control
+
+ Developer Utilities
+File Explorer – View project files
+Logs – Application and server logs
+App Resources
+Update Sources
+App.css
+App.js
+Issues
+
+#### Header Bar
+The Header provides quick access to frequently used actions and global project operations.
+  Recently Accessed Items
+Quick links to:
+Pages
+Databases
+API Services
+Java Services
+Files
+ Workspace Toolbar
+Page elements
+Page variables
+Data variables
+ Development Mode Switch
+Design Mode – Visual development
+AIRA – AI-assisted development
+ Project Configuration
+Previewer
+Sync Project Changes
+Pull
+Push
+View Changes
+Commit History
+Push to external VCS
+Open in VCS
+Export Project
+Export
+Publish
+Deploy
+Project Notifications
+Updates
+Jobs
+User Profile
+User details
+About Studio
+Logout
+
+
+#### Top Navigation (Page Toolbar)
+The Top Nav appears when a page is selected and provides page-specific actions.
+ WaveMaker Generated Pages
+Duplicate
+Change Layout
+ User-Created Pages
+Rename
+Duplicate
+Delete
+Change Layout
+
+#### Canvas (Design Area)
+The Canvas occupies the majority of the workspace and is used to design and edit pages visually.
+Displays the selected page UI
+Allows drag-and-drop of widgets
+Shows real-time layout and styling changes
+
+#### Component Breadcrumb (Bottom of Canvas)
+The Component Breadcrumb shows:
+The hierarchy of the currently selected widget
+The active component context
+Quick navigation to parent containers
+
+#### Properties Panel (Right Side)
+The Properties Panel allows configuration of the selected page or widget.
+Tabs Available:
+Properties – Data binding, behavior
+Styles – Layout and appearance
+Events – Client-side logic
+Device – Responsive behavior
+Security – Role-based access
+
+---
+## Project Canvas Details
+Once a project is created, WaveMaker generates a Main Page by default.
+Working with Pages on the Canvas
+Select a page from Resources → Pages
+The selected page renders on the Canvas
+Page-level properties appear in the Properties Panel
+Page Structure section shows:
+All widgets on the page
+Widget hierarchy
+Selecting a widget:
+Highlights it on the canvas
+Displays widget properties in the Properties Panel
+Widget hierarchy helps:
+Navigate parent containers
+Understand page layout structure
+
+---
+Project Settings
+Project-level configuration is managed via the Project Settings dialog.
+Accessing Project Settings
+Open Secondary Actions
+Select Settings
+ Project Settings Fields
+Basic Information
+Type
+Web App
+Mobile App
+Prefab
+(Prefabs include an additional Prefab Settings tab)
+Project Name
+Non-editable
+Description
+Editable project description
+Version
+Custom format as per organization standards
+Code & Packaging
+Package Prefix
+Default: 
+Used across generated services
+Copyright
+Editable legal information
+Branding
+Project Avatar (Provatar)
+Selectable icon representing the project
+Localization
+Default Language
+Works with App Messages
+English used if language bundle is missing
+Browser language preference is honored if supported
+Navigation
+Home Page
+Default: Main Page
+Behavior depends on app and page security:
+Non-secure app → Home Page
+Secure app + non-secure Home Page → Home Page
+Secure app + secure Home Page → Login Page (role-based)
+Formatting
+Display Format
+Global date/time format
+Configured via Localization dialog
+System Information (Read-only)
+Project Shell
+Created Date
+Last Accessed Date

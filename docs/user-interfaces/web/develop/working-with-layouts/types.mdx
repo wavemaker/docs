@@ -3,43 +3,6 @@ last_update: { author: 'Raj Kumar Reddy Abbadi' }
 ---
 # Layout Types
 
-## Grid Layout
-  
-The Grid Layout is the most basic and commonly used content layout in WaveMaker. It lets you divide the page content into rows and columns and place widgets inside these grid cells with ease.
-
-A key advantage of the Grid Layout is its responsive behavior. WaveMaker automatically adjusts the layout based on the device being used, such as desktop, tablet, or mobile, ensuring a consistent user experience across screen sizes.
-
-WaveMaker implements the [Bootstrap Grid system](https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp) which is the 12-column system:
-
-<img
-  src="https://docs.wavemaker.com/learn/assets/files/gridlayout_bootstrap-10bad713245a05838d4e263722ee360a.png"
-  alt="Grid Layout Bootstrap"
-  style={{ maxWidth: "100%", borderRadius: "8px" }}
-/>
-
-
-**Markup:**
-```html
-<wm-layoutgrid name="layoutgrid1">
-    <wm-gridrow name="gridrow1">
-        <wm-gridcolumn columnwidth="6" name="gridcolumn1"></wm-gridcolumn>
-        <wm-gridcolumn columnwidth="6" name="gridcolumn2"></wm-gridcolumn>
-    </wm-gridrow>
-    <wm-gridrow name="gridrow2">
-        <wm-gridcolumn columnwidth="6" name="gridcolumn3"></wm-gridcolumn>
-        <wm-gridcolumn columnwidth="6" name="gridcolumn4"></wm-gridcolumn>
-    </wm-gridrow>
-</wm-layoutgrid>
-```
-
-- ```<wm-layoutgrid>``` is the main container that defines a grid-based layout for the page content.
-- ```<wm-gridrow>``` represents a horizontal row in the grid layout.
-- ```<wm-gridcolumn>``` defines a vertical column within a grid row.
-- A columnwidth value 6 means each column occupies half the available width.
-- Since each row contains two columns with equal width, the layout is evenly split into two sections.
-
----
-
 ## Accordion
 
 An Accordion is a layout component that displays content in stacked sections, where only one section is expanded at a time and the others remain collapsed. This helps conserve screen space while keeping related information organized.

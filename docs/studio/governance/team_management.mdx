@@ -1,0 +1,110 @@
+---
+last_update: { author: "Venkateswarlu Kakani" }
+---
+
+# Team Settings
+
+Team Settings provides centralized controls for managing users, projects, artifacts, access permissions, and subscriptions within a team. It helps administrators monitor activity, govern approvals, and configure team-level integrations.
+
+## Overview
+
+Team Settings is organized into multiple sections, each focusing on a specific aspect of team administration and governance.
+
+- **Dashboard** – Provides team-wide metrics and insights, including usage, activity, deployments, and approval status.
+- **Project Membership** – Manages project-level access and visibility across applications, prefabs, and template bundles.
+- **Users** – Controls team membership, user activity, and access assignments.
+- **Core Apps** – Manages shared foundational applications used across multiple projects.
+- **Code Repository** – Configures source control integrations and repository access for the team.
+- **Roles** – Defines and manages role-based access control and permissions.
+- **Team Profile** – Maintains team identity, ownership, and metadata.
+- **Subscription** – Displays subscription details, usage limits, and feature availability.
+
+Each section is designed to give administrators clear visibility and control over team operations.
+
+---
+
+## Dashboard
+
+The Dashboard provides a consolidated view of key metrics across the team, including usage, activity, deployments, and approval status for projects, prefabs, and artifacts.
+
+### Team Overview
+
+- **Total Users** – Displays the total number of users in the team  
+- **Total Projects** – Displays the total number of projects created within the team  
+- **Deployments** – Shows the total deployment across projects  
+
+### Prefabs Summary
+
+Provides a snapshot of [prefab](/docs/studio/governance/artifact-management#prefab-artifacts) approval status within the team.
+
+- **Pending** – Number of prefabs awaiting admin approval  
+- **Approved** – Number of prefabs approved and available for use  
+- **Rejected** – Number of prefabs rejected and returned for correction  
+
+### Artifacts Summary
+
+Displays approval status for non-prefab [artifacts](/docs/studio/governance/artifact-management#other-artifacts) such as Project Shells, Themes, and Template Bundles.
+
+- **Pending** – Artifacts awaiting approval  
+- **Approved** – Artifacts approved and available for use  
+- **Rejected** – Artifacts rejected due to validation or policy issues  
+
+---
+
+## Project Membership
+
+The **Project Membership** manages project-level access, visibility, and onboarding within the team. It allows administrators to control user access to different project types—**Applications**, **Prefabs**, and **Template Bundles**—and to import projects from both **[default](/docs/studio/governance/code-repository-configuration#supported-vcs-providers)** and **[external code repositories](/docs/studio/governance/code-repository-configuration#supported-vcs-providers)** for team use.
+
+---
+
+## Users
+
+The **Users** section is used to manage team members by allowing administrators to view users, add or remove members, assign roles and permissions, and monitor user activity across the team.
+
+---
+
+## Core Apps
+
+The **Core Apps** section manages shared foundational applications within the team and tracks their lifecycle through approval states.
+
+- **Pending** – Awaiting admin approval  
+- **Approved** – Available for use  
+- **Rejected** – Returned for corrections  
+- **Deprecated** – No longer be used 
+
+---
+
+## Code Repository
+
+This **[Code Repository](/docs/studio/governance/code-repository-configuration)** section manages source control integration for the team.
+
+- Linking repositories
+- Managing repository access
+- Configuring enterprise integrations where applicable
+
+---
+
+## Roles
+
+The **Roles** section is used to define and manage access control policies by allowing administrators to create custom roles in addition to default roles such as **Project Admin** and **Contributor**, and to configure role-based project access. Only custom project roles can be created and tailored to specific responsibilities.
+
+
+:::tip
+For example, a custom role such as **UI Developer** can be created with permissions like creating pages, modifying themes, and editing UI components.  
+This role can then be assigned to project members. If a user is invited to a project with the **UI Developer** role, they can perform only the actions permitted by that role.
+:::
+
+---
+## Team Profile
+
+The Team Profile section allows administrators to view and manage basic team information, including the team name, allowed email domains for user access, default package prefix for generated code across projects, and copyright details that apply at the team level.
+
+---
+
+## Subscription
+
+You can delegate subscription administration to manage members, view the current subscription, members, and your subscription expiration date. Team admin can delegate ownership of the subscription to a different member.
+
+
+>**Note:** Most WaveMaker platform features are available across WMO and WME editions. Enterprise editions provide additional capabilities such as Git Enterprise integration, behind-the-firewall services, and single sign-on.
+
