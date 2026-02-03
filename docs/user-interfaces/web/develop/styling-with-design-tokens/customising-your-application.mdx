@@ -1,0 +1,103 @@
+---
+last_update: { author: 'Sandeep Chezhian A' }
+---
+
+# Customising your application
+
+## Style Workspace
+
+While Foundation CSS provides a comprehensive and highly configurable styling architecture, it operates at a low level and is primarily intended to serve as the underlying implementation layer of the design system. Directly modifying Foundation CSS typically requires working with design tokens, CSS variables, component rules, and variant definitions, which can be complex and time-consuming, especially for large-scale or iterative styling changes. As the foundation grows in scope, making manual updates directly within the CSS layer may introduce risks such as unintended overrides, specificity conflicts, or inconsistencies across components.
+
+To address this, the platform provides the **Style Workspace**, a higher-level configuration interface designed to simplify and streamline the process of customizing the visual system. The Style Workspace acts as an abstraction layer on top of Foundation CSS, enabling users to modify design tokens, component styles, and variant behavior through a structured and guided workflow rather than editing raw CSS. Instead of directly changing styles at the implementation level, users interact with controlled configuration inputs that map to the underlying tokens and style definitions.
+
+From a technical perspective, changes made within the Style Workspace are translated into token updates or scoped overrides that integrate seamlessly with the Foundation CSS architecture. This ensures that customizations remain consistent with the design system, follow established inheritance patterns, and avoid breaking core styling contracts. By operating through tokens and standardized configuration points, the workspace preserves the integrity of the foundation while still allowing flexible theming and component-level adjustments.
+
+This approach provides several key benefits:
+
+- Reduces the need to directly modify or fork Foundation CSS  
+- Minimizes the risk of cascading or specificity-related issues  
+- Ensures changes remain aligned with the design system structure  
+- Enables faster iteration and experimentation  
+- Improves accessibility for non-CSS-heavy users  
+- Supports scalable theming and customization without duplication  
+
+In effect, the Style Workspace functions as the primary interface for extending and customizing the design system, while Foundation CSS remains the stable, low-level implementation layer that guarantees consistency and reliability across the application.
+
+--- 
+
+## Variant Management
+
+The Style Workspace provides dedicated support for creating new variants and modifying existing ones, enabling controlled customization of component appearance and behavior without directly altering Foundation CSS source code.
+
+Within Foundation CSS, variants represent predefined stylistic or behavioral configurations of a component. These variations typically capture differences such as visual emphasis, size, density, state, or semantic intent (for example: primary, secondary, compact, outlined, success, or error). Variants allow multiple use cases to be supported by a single base component while maintaining structural consistency and minimizing redundant style definitions.
+
+Traditionally, introducing or updating a variant at the CSS level would require manually defining new selectors, managing overrides, and ensuring correct inheritance and specificity. As the number of components and variations grows, this approach becomes increasingly difficult to maintain and prone to conflicts.
+
+The Style Workspace abstracts this complexity by exposing variants as structured, configurable entities. Users can:
+
+- Create new variants for existing components  
+- Modify styling properties of existing variants  
+- Adjust token values associated with a variant  
+- Extend base styles without duplicating component definitions  
+- Preview and validate changes in real time  
+
+From a technical standpoint, variant updates made through the workspace are translated into token adjustments or scoped style configurations that integrate directly with Foundation CSS. Rather than generating isolated or ad-hoc styles, the system composes changes on top of the established foundation, ensuring that variants inherit correctly from base component definitions and remain consistent with global design rules.
+
+This model provides several advantages:
+
+- Significantly the need for manual CSS overrides  
+- Preserves predictable inheritance and cascade behavior  
+- Encourages reuse of base component logic  
+- Prevents style duplication and drift  
+- Enables scalable expansion of component states  
+- Simplifies long-term maintenance as the design system evolves  
+
+By treating variants as first-class configuration units, the Style Workspace makes it easier to adapt components to new requirements while maintaining alignment with the underlying Foundation CSS architecture.
+
+## Under the hood 
+
+All styling changes made through the Style Workspace are persisted as design token updates within the `design-tokens` directory. These tokens are stored in structured JSON files that capture both global and component-level modifications. Rather than directly altering Foundation CSS, the system treats these files as declarative configuration inputs that describe how the design system should be extended or customized.
+
+During the build process, Amazon Style Dictionary consumes these token definitions and compiles them into a generated CSS artifact named `app.override.css`. This file contains the concrete CSS variables and rules derived from the updated tokens and serves as the application’s customization layer.
+
+From an architectural perspective, `app.override.css` is loaded after Foundation CSS in the cascade. This ensures that:
+
+- Foundation CSS provides the base styling contract  
+- `app.override.css` selectively overrides or extends those defaults  
+- The core foundation remains unchanged and upgrade-safe  
+
+This layered approach allows the application to adapt the design system without modifying or forking the underlying Foundation CSS implementation.
+
+### Override Behavior
+
+When existing tokens are modified through the Style Workspace (for example, changing a primary color or adjusting component spacing), the compiled styles in `app.override.css` override the corresponding values defined in Foundation CSS. Because these overrides are generated from tokens rather than handwritten CSS, they remain consistent, predictable, and aligned with the system’s structure.
+
+This guarantees that:
+
+- Customizations remain scoped and intentional  
+- The cascade is controlled and conflict-free  
+- Foundation updates can be adopted without losing changes  
+
+### Variant Additions
+
+When new variants are created, the generated styles in `app.override.css` behave differently. Instead of replacing existing rules, these styles introduce new selectors and definitions that extend the component’s capabilities.
+
+In this case, the output should be viewed as an addition to Foundation CSS rather than an override. The base component styles continue to function as defined, while the new variant definitions augment the system with additional behavior or appearance options.
+
+This distinction is important:
+
+- Existing variant token edits → override existing foundation values  
+- New variants → extend the foundation with new styles as these will not be present in foundation styles. 
+
+### Benefits of the Layered Model
+
+This compilation strategy provides several advantages:
+
+- Preserves the integrity of Foundation CSS  
+- Avoids direct modification of shared base styles  
+- Enables safe upgrades and maintenance  
+- Keeps all customizations declarative and token-driven  
+- Ensures predictable cascade order  
+- Clean separation between base system and application-specific styling  
+
+By separating Foundation CSS from the generated `app.override.css` layer, the system maintains a clear boundary between the stable design foundation and application-level customization, resulting in a scalable and maintainable styling architecture.

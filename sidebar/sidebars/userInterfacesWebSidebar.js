@@ -437,20 +437,19 @@ export default [
         items: [
           {
             type: 'doc',
-            id: 'user-interfaces/web/develop/styling-with-design-tokens/global-tokens-for-theming',
-            label: 'Global Tokens for Theming',
+            id: 'user-interfaces/web/develop/styling-with-design-tokens/introduction-to-foundation-css',
+            label: 'Introduction to Foundation CSS',
           },
           {
             type: 'doc',
-            id: 'user-interfaces/web/develop/styling-with-design-tokens/component-level-tokens',
-            label: 'Component level tokens',
+            id: 'user-interfaces/web/develop/styling-with-design-tokens/customising-your-application',
+            label: 'Customising your Application',
           },
           {
             type: 'doc',
-            id: 'user-interfaces/web/develop/styling-with-design-tokens/variants-for-components',
-            label: 'Variants for Components',
+            id: 'user-interfaces/web/develop/styling-with-design-tokens/editing-foundation-css',
+            label: 'Editing Foundation CSS',
           },
-
           {
             type: 'doc',
             id: 'user-interfaces/web/develop/styling-with-design-tokens/overview',
