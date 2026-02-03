@@ -157,6 +157,7 @@ function AskAIPanel({ query, apiUrl, onClose, isVisible, triggerSearch }) {
     const [response, setResponse] = useState('');
     const [isLoading, setIsLoading] = useState(false);
     const [sources, setSources] = useState([]);
+    const [videos, setVideos] = useState([]);
     const [submittedQuery, setSubmittedQuery] = useState('');
     const [queryId, setQueryId] = useState(null);
     const [feedbackState, setFeedbackState] = useState(null); // 'helpful', 'unhelpful', null
@@ -180,6 +181,7 @@ function AskAIPanel({ query, apiUrl, onClose, isVisible, triggerSearch }) {
         setIsLoading(true);
         setResponse('');
         setSources([]);
+        setVideos([]);
         setQueryId(null);
         setFeedbackState(null);
         setComment('');
@@ -219,6 +221,8 @@ function AskAIPanel({ query, apiUrl, onClose, isVisible, triggerSearch }) {
                                 setResponse(fullResponse);
                             } else if (data.type === 'sources') {
                                 setSources(data.sources || []);
+                            } else if (data.type === 'videos') {
+                                setVideos(data.videos || []);
                             } else if (data.type === 'done') {
                                 setQueryId(data.query_id);
                             }
@@ -360,11 +364,45 @@ function AskAIPanel({ query, apiUrl, onClose, isVisible, triggerSearch }) {
                 {sources.length > 0 && (
                     <div className="DocSearch-AskAI-Sources">
                         <strong>Sources:</strong>
-                        {sources.map((s, i) => (
-                            <a key={i} href={s.url} onClick={(e) => { e.preventDefault(); onClose(); window.location.href = s.url; }}>
-                                [{i + 1}] {s.title}
-                            </a>
-                        ))}
+                        <div className="DocSearch-AskAI-SourceCards">
+                            {sources.map((s, i) => (
+                                <a
+                                    key={i}
+                                    href={s.url}
+                                    className="DocSearch-AskAI-SourceCard"
+                                    title={s.title}
+                                    onClick={(e) => { e.preventDefault(); onClose(); window.location.href = s.url; }}
+                                >
+                                    <span className="DocSearch-AskAI-SourceCard-Number">[{i + 1}]</span>
+                                    <span className="DocSearch-AskAI-SourceCard-Title">{s.title}</span>
+                                    <span className="DocSearch-AskAI-SourceCard-Arrow">→</span>
+                                </a>
+                            ))}
+                        </div>
+                    </div>
+                )}
+
+                {videos.length > 0 && (
+                    <div className="DocSearch-AskAI-Videos">
+                        <strong>Related Videos:</strong>
+                        <div className="DocSearch-AskAI-VideoCards">
+                            {videos.map((v, i) => (
+                                <a
+                                    key={i}
+                                    href={v.url}
+                                    className="DocSearch-AskAI-VideoCard"
+                                    title={v.title}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <svg className="DocSearch-AskAI-VideoCard-Icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4 4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H16C17.1 20 18 19.1 18 18V15L22 19V5L18 9V6C18 4.9 17.1 4 16 4H4ZM4 6H16V18H4V6Z" />
+                                    </svg>
+                                    <span className="DocSearch-AskAI-VideoCard-Title">{v.title}</span>
+                                    <span className="DocSearch-AskAI-VideoCard-Play">▶</span>
+                                </a>
+                            ))}
+                        </div>
                     </div>
                 )}
 
