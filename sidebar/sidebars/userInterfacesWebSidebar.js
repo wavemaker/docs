@@ -540,7 +540,7 @@ export default [
           {
             type: 'doc',
             id: 'user-interfaces/web/develop/events/ui-events',
-            label: 'UI Events',
+            label: 'UI Component Events',
           }
         ],
       },

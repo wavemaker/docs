@@ -32,9 +32,10 @@ There are 4 broad categories of events:
 Variables are associated with underlying REST API and provide events to handle pre and post-processing for the API call invocations. This enables customizing the raw response data returned by the API, before passing on to the Component to render.
     - onBeforeUpdate
     - onResult
-    - onError
-    - onBeforeDataReady
-    - onCanUpdate etc.
+    - onBeforeDatasetReady
+    - OnSuccess
+    - OnError
+    - OnCanUpdate
 
 ### Component state change & callback events
 Each Component provides various state change or callback events specific to the component's behaviour such as Form submit, List reorder, Chips add or remove etc. These events are deeply integrated with the functionality exposed by individual components and are different from UI Events.
@@ -54,77 +55,5 @@ Not all components have state change events, for example a Button component alre
     - onKeyPress, onKeyUp etc.
 
 Refer to https://www.w3.org/TR/uievents/#events-uievents
-
-Events can be grouped by the type of user interaction or browser action that triggers them:
-- **Mouse Events:** click, double click, mouse enter, mouse leave, and so on.
-
-        ```javascript
-            // WM Script for button double click
-            Page.UserButtonDblclick = function ($event, widget) {
-                // Enable edit mode
-                Page.Widgets.employeeForm.isEditMode = true;
-
-                // Set focus to the first input field
-                Page.Widgets.firstNameInput.setFocus();
-            };
-        ```
-
-- **Keyboard Events:** keypress, keydown, keyup, etc.
-        ```javascript   
-            // WM Script for button key press
-            Page.UserButtonKeypress = function ($event, widget, item, currentItemWidgets) {
-                // Prevent action for restricted keys
-                if ($event.key === 'Tab') {
-                    $event.preventDefault();
-                }
-            };
-        ```
-- **Form Events:** submit, change, focus, blur, input, etc.
-        ```javascript
-            // WM Script for form submit
-            Page.employeeFormSubmit = function ($event, widget, $formData) {
-                // Disable submit button to avoid duplicate submits
-                widget.disable = true;
-            };
-        ```
-
-- **Window/Document Events:** load, unload, resize, scroll, DOMContentLoaded, etc. 
-        ```javascript
-            window.onload = function () {
-                //  Register global event listeners
-                window.addEventListener('resize', function () {
-                    console.log('Window resized');
-                });
-            };
-        ```
-
-### Event Object
-For every event handler function, a parameter is often defined with names such as **```$event```** , **```event```** , or **```e```**. This parameter is referred as event object. It is automatically passed to event handlers and provides additional information and functionality related to the event that was triggered. This object contains useful properties and methods related to the event
-- **event.type:** Returns the type of the event as a string (e.g., 'click', 'keydown').
-- **event.target:** Refers to the element that triggered the event.
-- **event.preventDefault():** A method to stop the browser's default action for that event (e.g., preventing a form from submitting). 
-
-        ```javascript
-            Page.UserButtonclick = function ($event, widget) {
-                
-                // $event.type: Identify the event type
-                if ($event.type === 'click') {
-                    console.log('Button clicked');
-                } else if ($event.type === 'keydown') {
-                    console.log('Key pressed');
-                }
-
-                // $event.target: Access the element and apply UI change to the triggering element
-                var sourceElement = $event.target;
-                console.log("Triggered by element:", sourceElement);
-                sourceElement.style.border = "2px solid #4CAF50";
-
-                // $event.preventDefault(): Prevent default browser behavior
-                if ($event.type === 'click') {
-                    $event.preventDefault();
-                    console.log("Default click behavior prevented");
-                }
-            };
-        ```
 
 
