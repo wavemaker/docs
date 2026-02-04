@@ -131,7 +131,7 @@ Performance testing measures how the application behaves under various load and 
 
 
 
-## Server-Side Logs
+<!-- ## Server-Side Logs
 
 WaveMaker records log files that provide insight into what is happening in both the design and runtime layers of your application. These logs help track the behavior of the platform and the application, making debugging and issue resolution easier.
 
@@ -147,7 +147,7 @@ Both types of logs can be accessed from the footer area of the project workspace
 
 
 
----
+--- -->
 
 ### Bug Reporting
 
@@ -175,8 +175,7 @@ This guide outlines a structured approach to ensure application quality through 
   - **Accessibility:** Ensures usability for all users, including those with disabilities  
   - **API:** Validates data accuracy, security, and performance  
   - **Performance:** Measures responsiveness, stability, and scalability  
-
-- **Logs:** Capture device and server-side logs to troubleshoot issues effectively.  
+ 
 - **Bug Reporting:** Use a standardized template to report issues clearly with reproduction steps, severity, and assigned responsibility.  
 
 > Following these strategies helps maintain high-quality, reliable applications.
