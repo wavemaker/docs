@@ -3,8 +3,6 @@ last_update: { author: "Priyanka Bhadri" }
 ---
 # Profile Settings
 
-
-
 A Configuration Profile acts as a centralized mechanism to aggregate configuration values from multiple services and system components within a WaveMaker application. It brings together settings related to the application, databases, REST APIs, security, and other integrations into a single, logical profile.
 
 Configuration Profiles enable environment-specific customization of application behavior. By defining separate profiles for environments such as Development, QA, and Production, the same application codebase can be deployed across different environments with varying configurations, without requiring code changes.
@@ -71,7 +69,6 @@ Define WebSocket behavior, including connection parameters and runtime character
 
 Secure your application with configurable settings to protect data, manage access, and enforce safe communication across environments.
 
----
 
 ### SSL/TLS Encryption
 
@@ -80,7 +77,7 @@ Ensure all client-server communication is secure:
 - **HTTPS**: Encrypt data in transit.
 - **SSL Enforcement**: Serve all requests over secure connections only.
 
----
+
 
 ### X-Frame-Options
 
@@ -90,7 +87,7 @@ Control how your app can be embedded in `<iframe>` elements:
 - **Same Origin** – Allow embedding only from the same origin.
 - **Allow From** – Permit embedding from specific sources (converted automatically to CSP for browser compatibility).
 
----
+
 
 <!-- ### Session and Token Management -->
 
@@ -106,7 +103,6 @@ Control how your app can be embedded in `<iframe>` elements:
 
 > **Note:** Only token validity can be modified; the token name is fixed.
 
----
 
 ### CORS (Cross-Origin Resource Sharing)
 
@@ -118,7 +114,6 @@ Control access to resources from different origins:
 - Configure **preflight cache duration (Max Age)**.  
 - Restrict rules to specific **paths**.
 
----
 
 ### Truststore and Mutual TLS (mTLS)
 
@@ -127,6 +122,8 @@ Secure SSL connections and enable client authentication:
 - **Truststore Type** – System (default Java truststore) or custom.  
 - **Mutual TLS (mTLS)** – Enable client certificate-based authentication.  
 - **Hostname Verification** – Verify the server’s hostname for trusted connections.
+
+
 
 
 ## App Environment Properties
@@ -138,7 +135,7 @@ App Environment Properties allow you to externalize custom application settings 
 |-----|-------|
 | *Property Key* | *Property Value* |
 
----
+
 
 ## OAuth 2.0 Provider Settings
 
