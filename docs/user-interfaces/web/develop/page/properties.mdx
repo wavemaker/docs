@@ -60,27 +60,32 @@ UserDetails Page needs an id to render the data and it has to be invoked from Ma
 
 ![Calling Page](../../assets/pageuserparam.png)
 
+---
+
 #### High-Level Flow
 
-```text
-[ Main Page ]
-   |
-   | User selects a record (id = 101)
-   |
-   v
-goToPage_UserDetails(id=101)
-   |
-   v
-URL becomes:
-#UserDetails?id=101
-   |
-   v
-UserDetails reads Page.pageParams.id
-   |
-   v
-API invoked → Data rendered
+<div style={{ display: 'flex', justifyContent: 'center', margin: '2rem 0' }}>
+
+```mermaid
+%%{init: {'theme': 'default', 'flowchart': {'nodeSpacing': 20, 'rankSpacing': 25}}}%%
+flowchart TD
+    A[Main Page]
+    B[goToPage_UserDetails]
+    C[#UserDetails?id=101]
+    D[UserDetails Page]
+    E[API Call]
+    F[Data Rendered]
+
+    A -->|id=101| B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
 ```
----
+
+</div>
+
+
 ### Events
 WaveMaker provides lifecycle and system events at the page level, allowing you to execute custom logic when specific actions occur.
 
