@@ -13,7 +13,19 @@ Each profile resolves its values from the base application properties and enviro
 
 ## Database Configuration
 
-This section allows you to configure the database datasource and manage connection behavior for the selected  profile. For demonstration purposes, we are using the sample HRDB database as a reference
+This section provides an overview on configuring the database datasource and control connection behavior for a selected configuration profile. It defines how the application connects to the database, manages connection pooling, and limits the amount of data returned per request.
+
+For demonstration purposes, the sample HRDB database is used as a reference. The same configuration approach applies to any other supported database.
+
+The settings below allow you to:
+
+
+
+ - Specify database connection details such as the JDBC URL and credentials.
+
+ - Control connection pooling to optimize performance and resource usage.
+
+ - Limit the number of records returned per database query or REST API response.
 
 <!-- - **Records per request** – Defines the maximum number of rows returned by any database variable. This limit also applies to REST API responses.
 - **Connection pool size** – Specifies the minimum and maximum number of database connections maintained by the application. -->
@@ -37,8 +49,9 @@ This section allows you to configure the database datasource and manage connecti
 
 ## REST Service and WebSocket Configuration
 
-This section allows you to configure how the application connects to REST endpoints and WebSockets by specifying the protocol, host, and application path. These settings define the base URLs used for all REST service and WebSocket calls within the selected deployment profile, ensuring consistent communication between the application and external services. 
+This section provides an overview of how the application connects to REST services and WebSocket endpoints for a selected deployment profile. It defines the base URL components—such as protocol, host, and application path—that are used to construct all REST API and WebSocket requests.
 
+By centralizing these settings, you can ensure consistent communication with backend services and easily switch between different environments ( development, staging, or production) without changing application code.
 
 | Setting | Value |
 |--------|-------|
@@ -67,62 +80,82 @@ Define WebSocket behavior, including connection parameters and runtime character
 
 ## Security and Access Control
 
-Secure your application with configurable settings to protect data, manage access, and enforce safe communication across environments.
+This section allows you to secure your application by configuring settings that protect sensitive data, control user access, and enforce safe communication across environments. These controls help ensure that application interactions remain authenticated, encrypted, and compliant with security best practices.
 
 
 ### SSL/TLS Encryption
 
-Ensure all client-server communication is secure:
+Use SSL/TLS settings to secure communication between the client and server.
 
-- **HTTPS**: Encrypt data in transit.
-- **SSL Enforcement**: Serve all requests over secure connections only.
+- **HTTPS**  
+  Encrypts all data transmitted between users and the application, preventing interception and tampering.
 
+- **SSL Enforcement**  
+  Ensures that all incoming requests are served only over secure HTTPS connections.
 
 
 ### X-Frame-Options
 
-Control how your app can be embedded in `<iframe>` elements:
+Controls whether the application can be embedded inside `<iframe>` elements, helping protect against clickjacking attacks.
 
-- **Deny** – Block all iframe embedding.
-- **Same Origin** – Allow embedding only from the same origin.
-- **Allow From** – Permit embedding from specific sources (converted automatically to CSP for browser compatibility).
+- **Deny**  
+  Prevents the application from being embedded in any iframe.
+
+- **Same Origin**  
+  Allows embedding only when the request originates from the same domain.
+
+- **Allow From**  
+  Allows embedding from specified sources. For browser compatibility, this is automatically converted into Content Security Policy (CSP) rules.
 
 
-
-<!-- ### Session and Token Management -->
 
 ### Session Management
-- Configure **session timeout** (e.g., 30 minutes).  
-- Enable **persistent login** (“Remember Me”) and set duration (e.g., 15 days).  
-- Choose **session persistence type** (e.g., in-memory).
+
+Configure how user sessions are created, maintained, and expired.
+
+- Define **Session Timeout** to automatically log users out after inactivity (for example, 30 minutes).
+- Enable **Persistent Login ("Remember Me")** to allow users to remain logged in for a configured duration (for example, 15 days).
+- Select **Session Persistence Type**, such as in-memory storage, to determine how session data is maintained.
+
+
 
 ### Token-Based Authentication
-- Enable **API tokens** for secure requests.  
-- Token parameter name: **WM_AUTH_TOKEN**.  
-- Configure **token validity** (default: 30 minutes).  
 
-> **Note:** Only token validity can be modified; the token name is fixed.
+Enable token-based authentication for secure API access.
+
+- Supports **API Tokens** for validating client requests.
+- The token parameter name is fixed as **WM_AUTH_TOKEN**.
+- Configure **Token Validity** to control how long a token remains active (default: 30 minutes).
+
+> **Note:** Only the token validity duration can be modified. The token parameter name remains constant.
+
 
 
 ### CORS (Cross-Origin Resource Sharing)
 
-Control access to resources from different origins:
+Controls how resources are accessed from different domains or origins.
 
-- Enable or disable CORS.  
-- Specify **allowed hosts/origins**.  
-- Enable **credentials** (cookies or authorization headers).  
-- Configure **preflight cache duration (Max Age)**.  
-- Restrict rules to specific **paths**.
+- Enable or disable CORS support.
+- Specify **Allowed Origins/Hosts** to restrict access.
+- Enable **Credentials Support** to allow cookies and authorization headers.
+- Configure **Preflight Cache Duration (Max Age)** to reduce repeated validation requests.
+- Restrict CORS rules to specific application paths if required.
 
 
 ### Truststore and Mutual TLS (mTLS)
 
-Secure SSL connections and enable client authentication:
+Configure trust and certificate-based authentication for secure SSL communication.
 
-- **Truststore Type** – System (default Java truststore) or custom.  
-- **Mutual TLS (mTLS)** – Enable client certificate-based authentication.  
-- **Hostname Verification** – Verify the server’s hostname for trusted connections.
+- **Truststore Type**  
+  Choose between the default system (Java truststore) or a custom truststore.
 
+- **Mutual TLS (mTLS)**  
+  Enables two-way SSL authentication where both client and server verify each other using certificates.
+
+- **Hostname Verification**  
+  Validates the server hostname to prevent spoofing and ensure trusted connections.
+
+---
 
 
 
@@ -134,6 +167,8 @@ App Environment Properties allow you to externalize custom application settings 
 | Key | Value |
 |-----|-------|
 | *Property Key* | *Property Value* |
+
+---
 
 
 
@@ -149,7 +184,7 @@ OAuth 2.0 provider details can be configured to secure API requests.
 - **Redirect URI**: URL where the provider sends the authorization code.
 
 These settings can be configured per environment (development, staging, production) to ensure secure authentication.
-For more information, see [Providers](#).
+
 
 ---
 
@@ -166,9 +201,9 @@ These options affect application bundling, optimization, and performance. For mo
 
 ## Application Configuration
 
-All common configuration values are defined in `app.properties`. This file acts as the central source of truth for the application and includes configurations related to the application setup, database connections, REST API integrations, security settings, and WebSocket configurations.
+All common configuration values are defined in `configurable.properties`. This file acts as the central source of truth for the application and includes configurations related to the application setup, database connections, REST API integrations, security settings, and WebSocket configurations.
 
-Environment-specific values are defined separately under the deployment directory, for example in `deployment/development.properties`. These files override or extend the base properties defined in `app.properties` to tailor the application behavior for a specific environment such as Development, QA, or Production.
+Environment-specific values are defined separately under the deployment directory, for example in `deployment/development.properties`. These files override or extend the base properties defined in `configurable.properties` to tailor the application behavior for a specific environment such as Development, QA, or Production.
 
 The generated properties file serves as a complete reference that reflects all configured settings. It provides visibility into how application-level and environment-specific configurations are applied during deployment and how they influence the runtime behavior of the application across different environments.
 
