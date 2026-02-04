@@ -27,7 +27,7 @@ import remarkGfm from 'remark-gfm';
 import CodeBlock from '@theme/CodeBlock';
 
 // Default API URL for docs-agent
-const DEFAULT_API_URL = 'https://0fa5d0748468.ngrok-free.app';
+const DEFAULT_API_URL = 'https://ecosystem-services.wavemaker.com';
 
 // Global flag to prevent multiple DocSearch modals from opening
 let globalModalOpen = false;
