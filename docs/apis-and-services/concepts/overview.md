@@ -10,7 +10,7 @@ WaveMaker application backend is decoupled from the UI layer using well-defined 
 3. Generate database CRUD APIs by importing Schema (RDBMS)
 4. Create Spring or Java microservices
 
-WaveMaker app backend is built on Spring and Java technology stack enabling Java developers to fully customize the backend services, allowing them to integrate with Spring developer ecosystem and libraries.
+App backend is built on Spring and Java technology stack enabling Java developers to fully customize the backend services, allowing them to integrate with Spring developer ecosystem and libraries.
 
 ![Backend Layer](./assets/backend-layer.png)
 
@@ -36,7 +36,7 @@ Studio provides a workspace for working with Databases, for visualing the schema
 ### Create Microservices
 Build custom microservices in Java and generate corresponding APIs for
 - additional business logic
-- integrating with connectors for 3rd party systems like kafka, cassandra, EFK etc.
+- integrating with connectors for 3rd party systems like kafka, mongodb, EFK etc.
 - integrating with 3rd party libraries for authentication, logging, observability etc.
 
 
