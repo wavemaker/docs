@@ -395,6 +395,10 @@ export default [
         label: 'Working with Layouts',
         collapsible: true,
         collapsed: true,
+        link: {
+          type: 'doc',
+          id: 'user-interfaces/web/develop/working-with-layouts/index',
+        },
         items: [
           {
             type: 'doc',
@@ -416,17 +420,6 @@ export default [
             id: 'user-interfaces/web/develop/working-with-layouts/responsive-design-with-layouts',
             label: 'Responsive Design with Layouts',
           },
-
-          {
-            type: 'doc',
-            id: 'user-interfaces/web/develop/working-with-layouts/overview',
-            label: 'Overview',
-          },
-          {
-            type: 'doc',
-            id: 'user-interfaces/web/develop/working-with-layouts/types',
-            label: 'Supporting Components',
-          },
         ],
       },
       {
@@ -437,20 +430,19 @@ export default [
         items: [
           {
             type: 'doc',
-            id: 'user-interfaces/web/develop/styling-with-design-tokens/global-tokens-for-theming',
-            label: 'Global Tokens for Theming',
+            id: 'user-interfaces/web/develop/styling-with-design-tokens/introduction-to-foundation-css',
+            label: 'Introduction to Foundation CSS',
           },
           {
             type: 'doc',
-            id: 'user-interfaces/web/develop/styling-with-design-tokens/component-level-tokens',
-            label: 'Component level tokens',
+            id: 'user-interfaces/web/develop/styling-with-design-tokens/customising-your-application',
+            label: 'Customising your Application',
           },
           {
             type: 'doc',
-            id: 'user-interfaces/web/develop/styling-with-design-tokens/variants-for-components',
-            label: 'Variants for Components',
+            id: 'user-interfaces/web/develop/styling-with-design-tokens/editing-foundation-css',
+            label: 'Editing Foundation CSS',
           },
-
           {
             type: 'doc',
             id: 'user-interfaces/web/develop/styling-with-design-tokens/overview',
@@ -499,30 +491,28 @@ export default [
       },
       {
         type: 'category',
-        label: 'Form Input validations',
+        label: 'Validations',
         collapsible: true,
         collapsed: true,
+        link: {
+          type: 'doc',
+          id: 'user-interfaces/web/develop/form-input-validations/index',
+        },
         items: [
-          {
-            type: 'doc',
-            id: 'user-interfaces/web/develop/form-input-validations/bind-expressions',
-            label: 'Bind expressions',
-          },
-          {
-            type: 'doc',
-            id: 'user-interfaces/web/develop/form-input-validations/validation-messages',
-            label: 'Validation messages',
-          },
+          // {
+          //   type: 'doc',
+          //   id: 'user-interfaces/web/develop/form-input-validations/validation-messages',
+          //   label: 'Validation messages',
+          // },
           {
             type: 'doc',
             id: 'user-interfaces/web/develop/form-input-validations/custom-validators-in-javascript',
             label: 'Custom validators in JavaScript',
           },
-
           {
             type: 'doc',
-            id: 'user-interfaces/web/develop/form-input-validations/overview',
-            label: 'Form Input validations',
+            id: 'user-interfaces/web/develop/form-input-validations/bind-expressions',
+            label: 'Bind expressions',
           },
         ],
       },

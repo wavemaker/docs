@@ -1,0 +1,38 @@
+---
+last_update: { author: 'Sandeep Chezhian A' }
+---
+
+# Overriding Foundation CSS
+
+## Advanced Customization and Overrides
+
+The Style Workspace exposes a broad set of design tokens, component configurations, and variant controls that cover the majority of common styling and theming requirements. By operating through structured tokens and predefined extension points, most visual changes can be implemented in a consistent, system-aligned manner without directly modifying CSS.
+
+However, user interface design is inherently flexible and context-dependent. Certain use cases may require highly specific layouts, experimental interactions, or edge-case styling that falls outside the scope of the tokens and configuration options provided by the Style Workspace. Because the workspace intentionally enforces guardrails to preserve consistency and maintainability, it may not expose every possible styling surface or low-level behavior.
+
+In such scenarios, the platform supports direct customization through application-level stylesheets, the `app.css` file. This file serves as an escape hatch that allows developers to implement bespoke or highly targeted overrides that cannot be expressed through tokens or variants alone.
+
+From an architectural standpoint, these styles sit above Foundation CSS in the cascade, enabling selective overrides while leaving the underlying design system intact. This ensures that customizations remain localized to the application layer rather than altering the shared foundation.
+
+### When to Use Custom CSS
+
+Direct CSS overrides should typically be used only when:
+
+- A required style is not exposed through tokens or the Style Workspace  
+- Layout or behavior is highly contextual to a specific screen or feature  
+- Experimental or one-off designs are needed  
+- Temporary adjustments are required during rapid iteration  
+
+### Best Practices
+
+To maintain stability and avoid conflicts with Foundation CSS, it is recommended to:
+
+- Prefer Style Workspace or token-based changes whenever possible  
+- Scope selectors to specific components or pages  
+- Avoid overriding global foundation rules unnecessarily  
+- Minimize specificity to reduce cascade issues  
+- Document custom overrides for future maintainability  
+
+By following this layered approach—Foundation CSS as the base, Style Workspace for structured customization, and `app.css` for exceptional cases—teams can balance consistency with flexibility while keeping the styling architecture predictable and scalable.
+
+

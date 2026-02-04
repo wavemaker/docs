@@ -1,100 +1,61 @@
 ---
 title: Architect Agent
-last_update: { author: "Author Name" }
+last_update: { author: "Swetha Kundaram" }
 ---
 
+The **Architect Agent** is a guidance-focused agent that helps developers make **architectural decisions** when building applications on WaveMaker. Its role is to provide clarity on design approaches, platform constraints, and recommended patterns before any implementation work begins.
 
-## Overview
+The Architect Agent does not create code, configure projects, or execute tasks. It exists to help you understand *how something should be designed* so that development starts with the right direction.
 
-The **wm_architect** is a guidance-focused agent within the AIRA system. Its primary responsibility is to provide architectural clarity across domains by interpreting official documentation, understanding system structure, and advising on how things should be built.
+## What the Architect Agent Is Used For
 
-The Architect Agent does not execute tasks and does not modify project state. It exists to prevent architectural mistakes before execution begins and to reduce ambiguity during complex or cross-domain workflows.
+The Architect Agent is designed to support early-stage thinking and decision-making. Developers typically use it when they want to validate an approach, understand how different parts of a system should fit together, or confirm that a design aligns with WaveMaker’s capabilities.
 
-Its role is to think, explain, and guide—never to build.
+It is especially useful for questions involving structure, integration, or cross-domain design, such as how UI, backend services, data, and security should interact in a WaveMaker application. The agent focuses on reasoning and explanation rather than implementation.
 
+## When to Use the Architect Agent
 
-## Role in AIRA Architecture
+Use the Architect Agent when you are planning a feature, workflow, or integration and want architectural clarity before building. It is helpful when you are unsure about platform constraints, recommended design patterns, or the trade-offs between different approaches.
 
-The Architect Agent operates as an advisory layer within AIRA.
+If your requirement is already clear and you want backend or UI changes to be created automatically, this agent is not the right choice. In those cases, execution-focused agents should be used instead.
 
-It works alongside the **wm_agent**, supporting planning and decision-making by providing architectural insight, documentation-backed explanations, and system-level context. While the wm_agent coordinates execution, the Architect Agent ensures that the execution plan is architecturally sound and aligned with WaveMaker best practices.
+## How the Architect Agent Helps
 
-The Architect Agent does not replace specialized agents. Instead, it informs when and how those agents should be used.
+When you ask a question, the Architect Agent analyzes it in the context of WaveMaker’s documented behavior and known architectural patterns. It explains relevant concepts, highlights constraints, and outlines possible approaches along with their trade-offs.
 
-
-## Core Responsibilities
-
-### Architectural Guidance
-
-The Architect Agent provides guidance on how features, flows, and integrations should be designed within the WaveMaker ecosystem. It explains recommended patterns, constraints, and trade-offs based on official documentation and established platform behavior.
-
-Its guidance is descriptive and prescriptive at a conceptual level, not instructional at an implementation level.
-
-### Documentation Discovery and Interpretation
-
-The Architect Agent performs semantic search across official WaveMaker documentation and internal knowledge sources. It interprets documentation in context and explains how it applies to the user’s current problem or system design.
-
-This responsibility focuses on understanding and explanation rather than extraction or summarization alone.
-
-### Cross-Domain Coordination
-
-When a request spans multiple domains such as UI, APIs, security, or data, the Architect Agent helps clarify how those domains interact. It identifies boundaries, dependencies, and ordering concerns that should be considered before execution begins.
-
-This prevents fragmented or conflicting implementations across agents.
-
-### Task Delegation Support
-
-The Architect Agent can recommend which specialized agents should be involved in a task and in what sequence. It does not invoke agents directly unless operating under the wm_agent’s orchestration.
-
-Its role is to inform delegation decisions, not to control execution.
+For scenarios that span multiple areas—such as UI, APIs, data access, or security—the agent helps clarify boundaries and dependencies so that the overall design remains consistent. Its guidance helps reduce rework by identifying architectural issues early.
 
 
-## Execution Scope
+## What You’ll Get Back
 
-The Architect Agent operates strictly within a read-only and advisory scope.
+The Architect Agent responds with explanations and recommendations that support decision-making. These responses are descriptive and advisory, not step-by-step instructions or code.
 
-It may inspect documentation, reason about architecture, and analyze workspace structure only when explicit user permission is provided. Its access is observational and contextual, never mutative.
-
-The agent does not create artifacts, update configurations, or influence runtime behavior directly.
+The goal of each response is to help you confidently decide **what should be built and how it should be structured**, before implementation begins.
 
 
-## Context Handling and Data Flow
+## What the Architect Agent Does Not Do
 
-The Architect Agent consumes high-level requests, architectural questions, and contextual signals provided by the wm_agent or the user. It may also receive references to documentation sources, repositories, or workspace components when permission is explicitly granted.
+To set clear expectations, the Architect Agent does not:
 
-Its output consists of explanations, architectural recommendations, and clarified assumptions. These outputs are passed back to the wm_agent or the user as guidance, not as executable instructions.
+* Write or modify code
+* Configure applications or services
+* Execute tasks or workflows
+* Replace agents that build or change applications
 
-The Architect Agent never assumes missing context. If required information is unavailable or access is unclear, it pauses and requests clarification.
-
-
-## Authority and Constraints
-
-The Architect Agent operates under intentionally strict boundaries.
-
-It is authorized to perform semantic searches across official WaveMaker documentation, analyze workspace structure in read-only mode when permission is explicitly granted, integrate deeply with repository-level technical documentation, and provide architectural guidance that informs planning and delegation.
-
-It is not permitted to modify code, configurations, or project files. It cannot perform domain-specific inspection that belongs to specialized agents, and it never assumes permission to view files or repositories without confirmation. The Architect Agent focuses exclusively on guidance and understanding, not execution.
-
-These constraints ensure that architectural reasoning remains separate from implementation.
+It is an architectural advisor, not a builder.
 
 
-## Execution Flow (High-Level)
+## How It Fits into a Development Workflow
 
-At a high level, the Architect Agent is engaged when architectural clarity is required. It receives a question or context, consults relevant documentation and system knowledge, and produces guidance that informs planning or execution decisions.
+The Architect Agent is most effective when used early in the development process. By clarifying design decisions upfront, it makes later implementation smoother and more predictable. Once architectural direction is clear, execution can be handed off to other agents or development tools with confidence.
 
-Once guidance is delivered, execution responsibility remains with the wm_agent and specialized agents.
+## Summary
+
+The Architect Agent exists to answer one core question:
+
+**“How should this be designed in WaveMaker?”**
+
+If you are looking for architectural clarity before building, this is the agent to use.
 
 
-
-## Design Invariants
-
-The following conditions are always true for the Architect Agent.
-
-* The Architect Agent provides guidance but never executes tasks.
-* It operates in read-only mode and only with explicit permission.
-* It defers all domain-specific inspection to specialized agents.
-* It never assumes access to files, repositories, or configurations.
-* Its outputs influence planning, not implementation.
-
-Violation of these invariants represents a breakdown in agent responsibility boundaries.
 

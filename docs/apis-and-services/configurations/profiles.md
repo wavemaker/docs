@@ -36,6 +36,8 @@ All application configuration values are defined in a single base file, `configu
 
 When a specific profile (Development, Deployment, or any custom profile) requires different values, only those overridden properties are defined in that profile. At runtime or during deployment, WaveMaker first loads the base properties from `configurable.properties` and then applies the profile-specific overrides, ensuring the correct configuration is used for the active environment.
 
+---
+
 ## Generated Project Structure
 
 
@@ -51,6 +53,8 @@ MyApp
                 └── configurable.properties
 
 ```
+
+---
 
 
 <!-- To edit deployment profiles, open **Settings → Config Profiles** in WaveMaker Studio. -->

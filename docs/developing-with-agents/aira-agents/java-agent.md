@@ -1,98 +1,62 @@
 ---
 title: Java Agent
-last_update: { author: "Author Name" }
+last_update: { author: "Swetha Kundaram" }
 ---
 
+The **Java Agent** is an execution-focused agent that helps developers create and modify backend Java services in a WaveMaker project. Unlike advisory agents, the Java Agent actively works on your project by generating, updating, and organizing Java services based on your request.
 
-## Overview
-
-The **wm_java_agent** is the backend execution agent responsible for custom Java development within the AIRA system. It implements business logic using WaveMaker’s supported backend stack, including Spring 6, Servlet 6, and XML-based configuration.
-
-This agent works only with user-defined Java sources. It does not alter platform-generated services or framework-managed files. Its purpose is to extend backend behavior safely without violating WaveMaker’s code generation boundaries.
+Its scope is limited to backend development. It does not modify UI components or frontend logic. The Java Agent is intended for situations where the backend requirements are already clear and need to be implemented efficiently.
 
 
+## What the Java Agent Is Used For
 
-## Role in AIRA Architecture
+The Java Agent is designed to automate backend development tasks that would otherwise require manual coding. It works within the existing structure of a WaveMaker project and builds on top of current services instead of duplicating them.
 
-The Java Agent operates as a specialized execution agent under the orchestration of the **wm_agent**.
-
-It is invoked when a workflow requires backend logic that cannot be expressed through declarative configuration or existing services. While the Architect Agent explains how backend components should be designed and the wm_agent coordinates execution, the Java Agent is responsible for implementing approved backend logic in code.
-
-This agent does not make architectural decisions and does not refactor existing system-generated services.
+Developers typically use the Java Agent to create new APIs, extend existing backend services, combine data from multiple sources, or add custom Java logic when configuration-based services are not sufficient. The agent focuses on implementation, not architectural decision-making.
 
 
+## When to Use the Java Agent
 
-## Core Responsibilities
+Use the Java Agent when the backend design is already decided and you want the implementation done. It is especially useful when working with existing Java, REST, database, or Swagger services that need to be extended or composed into new APIs.
 
-### Custom Business Logic Implementation
-
-The Java Agent creates and updates custom Java services that encapsulate application-specific business logic. These services are authored using standard Spring patterns and follow WaveMaker’s conventions for service exposure and lifecycle management.
-
-Public methods defined in these services are exposed as REST endpoints, while private methods are used strictly for internal logic and composition.
-
-### Model Class Management
-
-The agent creates and maintains Java model classes required by custom services. These models represent request payloads, response structures, and internal domain objects used by backend logic.
-
-Model classes are designed to be explicit, stable, and compatible with WaveMaker’s serialization and binding mechanisms.
-
-### Controlled Source File Access
-
-The Java Agent works exclusively within user-defined source files located under `src/main/java`. All changes are scoped, intentional, and limited to files that are explicitly owned by the user.
-
-Generated files and framework-managed directories are never modified.
+If you are still deciding how something should be designed, or whether an approach fits WaveMaker’s capabilities, it is better to use the Architect Agent first.
 
 
+## How the Java Agent Works
 
-## Execution Scope
+When you submit a request, the Java Agent first scans the project to understand what services already exist. This includes REST services, database services, Swagger-based services, and other Java services. Based on this analysis, the agent determines whether existing functionality can be reused or extended.
 
-The Java Agent operates strictly within the custom backend layer of a WaveMaker application.
+If new functionality is required, the agent creates or updates Java services accordingly. Custom Java code is written only when necessary. After making changes, the agent compiles the project and resolves compilation errors before presenting the results.
 
-It is authorized to create and update custom Java services, define model classes, and implement backend logic using Spring dependency injection and WaveMaker-supported conventions. Its scope does not extend to auto-generated services, platform internals, or runtime-managed artifacts.
-
-All backend changes are additive and isolated from generated code.
-
+The agent does not make any UI changes. All work is limited to the backend.
 
 
-## Context Handling and Data Flow
+## Example Workflow
 
-The Java Agent receives scoped backend instructions from the wm_agent, including required functionality, data models, and integration expectations.
+Consider the request: “Create an API that returns complete card details along with balances.”
 
-It produces Java source files and service definitions that can be consumed by other agents, such as API binding or UI agents. Outputs are explicit and structured so that downstream agents can rely on them without inference.
-
-If required context is missing or unclear, the agent does not assume intent and requests clarification before proceeding.
+In this case, the Java Agent searches the project and identifies separate services for card details and card balances. Instead of duplicating logic, it creates a new Java service that combines responses from both sources into a single API. Once the service is created, the project is compiled to ensure there are no build errors.
 
 
+## Review and Verification
 
-## Authority and Constraints
+After the Java Agent completes its work, all changes are shown in a changeset for review. Newly created or updated services appear under the Java Services section, and a code preview is available.
 
-The Java Agent operates under strict backend safety constraints.
-
-It is not permitted to modify auto-generated service files, including `RestService`, `SoapService`, `OpenAPIService`, or `DataService`. It cannot touch files located within the `services/` directory or any other framework-managed location.
-
-The agent follows a strict “create new, do not modify generated” principle. All backend logic must be implemented through new or explicitly user-owned classes. Spring dependency injection must be used consistently, and all code must align with WaveMaker’s supported conventions.
-
-These constraints exist to protect regeneration safety and long-term maintainability.
+The agent ensures that the project compiles successfully, but it does not test business logic or validate functional correctness. Developers are responsible for reviewing the generated code and verifying that the APIs behave as expected.
 
 
+## What the Java Agent Does Not Do
 
-## Execution Flow (High-Level)
+To avoid confusion, the Java Agent does not:
 
-At a high level, the Java Agent is invoked after backend requirements have been clarified. It implements custom services and models within user-owned source locations and returns control to the wm_agent once code generation is complete.
+* Modify UI components or frontend logic
+* Make architectural decisions on your behalf
+* Validate business rules or application behavior
+* Deploy or run the application
 
-The agent does not trigger deployment, regeneration, or runtime configuration changes.
+## Summary
 
+The Java Agent exists to implement backend Java functionality once requirements are clear. It automates service creation and modification, reduces repetitive coding, and works within the structure of your existing WaveMaker project.
 
-
-## Design Invariants
-
-The following conditions are always true for the Java Agent.
-
-* All backend logic resides in user-defined Java files.
-* Auto-generated services are never modified.
-* New code is added without breaking regeneration safety.
-* Spring dependency injection is used consistently.
-* Backend changes remain isolated from UI and platform internals.
-
-Violation of these invariants results in an invalid backend state.
+If your question is “Can you build or update this backend service for me?”, the Java Agent is the right tool.
 
