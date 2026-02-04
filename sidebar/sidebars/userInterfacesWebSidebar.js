@@ -395,6 +395,10 @@ export default [
         label: 'Working with Layouts',
         collapsible: true,
         collapsed: true,
+        link: {
+          type: 'doc',
+          id: 'user-interfaces/web/develop/working-with-layouts/index',
+        },
         items: [
           {
             type: 'doc',
@@ -415,17 +419,6 @@ export default [
             type: 'doc',
             id: 'user-interfaces/web/develop/working-with-layouts/responsive-design-with-layouts',
             label: 'Responsive Design with Layouts',
-          },
-
-          {
-            type: 'doc',
-            id: 'user-interfaces/web/develop/working-with-layouts/overview',
-            label: 'Overview',
-          },
-          {
-            type: 'doc',
-            id: 'user-interfaces/web/develop/working-with-layouts/types',
-            label: 'Supporting Components',
           },
         ],
       },
