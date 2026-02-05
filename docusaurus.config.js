@@ -63,7 +63,7 @@ const config = {
           onInlineTags: "warn",
           onInlineAuthors: "ignore",
           onUntruncatedBlogPosts: "warn",
-          authorsMapPath: "../authors.yml",
+          authorsMapPath: "../../data/author/authors.yml",
           blogSidebarTitle: 'All Blogs',
           blogSidebarCount: 'ALL',
           path: "blogs/blog",
@@ -232,7 +232,7 @@ const config = {
          * Path to data on filesystem relative to site dir.
          */
         path: "blogs/feature-announcements",
-        authorsMapPath: "../blogs/authors.yml",
+        authorsMapPath: "../../data/author/authors.yml",
         blogSidebarTitle: 'Feature Announcements',
         blogSidebarCount: 'ALL',
       },
