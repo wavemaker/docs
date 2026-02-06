@@ -66,6 +66,7 @@ From an architectural perspective, `app.override.css` is loaded after Foundation
 - `app.override.css` selectively overrides or extends those defaults  
 - The core foundation remains unchanged and upgrade-safe  
 
+
 This layered approach allows the application to adapt the design system without modifying or forking the underlying Foundation CSS implementation.
 
 ### Override Behavior
@@ -78,9 +79,32 @@ This guarantees that:
 - The cascade is controlled and conflict-free  
 - Foundation updates can be adopted without losing changes  
 
+For example, when a user modifies a value in the Style Workspace (for example, changing the primary color), the change is persisted as a token:
+
+```json
+// src/main/webapp/design-tokens/overrides/global/color.json
+{
+  "color": {
+    "primary": {
+      "value": "#0052CC"
+    }
+  }
+}
+```
+
+The generated `app.override.css` will host these changes in CSS format. 
+
+```css
+// src/main/webapp/design-tokens/app.override.css 
+
+:root {
+--wm-color-primary: #0052CC;
+}
+``` 
+
 ### Variant Additions
 
-When new variants are created, the generated styles in `app.override.css` behave differently. Instead of replacing existing rules, these styles introduce new selectors and definitions that extend the component’s capabilities.
+When new variants are created, the generated styles in `app.override.css` behave differently. Instead of overriding existing rules, these styles introduce new selectors and definitions that extend the component’s capabilities.
 
 In this case, the output should be viewed as an addition to Foundation CSS rather than an override. The base component styles continue to function as defined, while the new variant definitions augment the system with additional behavior or appearance options.
 
