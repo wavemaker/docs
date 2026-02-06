@@ -427,6 +427,10 @@ export default [
         label: 'Styling with Design Tokens',
         collapsible: true,
         collapsed: true,
+         link: {
+          type: 'doc',
+          id: 'user-interfaces/web/develop/styling-with-design-tokens/index',
+        },
         items: [
           {
             type: 'doc',

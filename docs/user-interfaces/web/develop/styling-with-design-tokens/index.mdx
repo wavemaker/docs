@@ -1,0 +1,131 @@
+---
+last_update: { author: 'Sagar Vemala' }
+---
+
+# Styling Architecture 
+
+In a [Design System project](../../../../design-system/design-system-project), styling in WaveMaker follows a structured, token-driven architecture.
+
+The system ensures consistency, controlled customization, and safe extensibility.
+
+---
+
+## Styling Flow Overview
+
+
+---
+
+## 1. Design Token Mapping
+
+This layer connects external or predefined design tokens to WaveMaker's internal styling system.
+
+It ensures:
+
+- Tokens are recognized by the platform
+- Naming conventions are aligned
+- Tokens can be consumed through CSS variables
+- Styling remains system-driven, not hard-coded
+
+This is the entry point of styling into the application runtime.
+
+---
+
+## 2. Foundation CSS
+
+Foundation CSS is the core styling engine of the project.
+
+It is built entirely on **CSS variables** and defines:
+
+- Color system
+- Typography scale
+- Spacing system
+- Border radius
+- Elevation and shadows
+- Surface and background layers
+
+All component styles resolve through these variables.
+
+This enables:
+
+- Runtime theming
+- Centralized visual control
+- Scalable styling across the entire application
+
+---
+
+## 3. WaveMaker Components
+
+WaveMaker components are designed to:
+
+- Consume Foundation CSS variables
+- Avoid hard-coded styling values
+- Support system-based variants
+- Maintain consistent visual behavior
+
+Components inherit their look and feel from the token layer.
+
+This ensures:
+
+- Uniform UI across screens
+- Predictable styling behavior
+- Easy global updates through token changes
+
+---
+
+## 4. Style Workspace
+
+Style Workspace is the management layer for styling customization.
+
+It allows developers to:
+
+- Modify token values
+- Create component variants
+- Extend design definitions safely
+- Preview changes in real-time
+
+All customizations are structured and system-aware.
+
+No direct CSS fragmentation.
+
+---
+
+## 5. Generated Overrides
+
+When tokens or component variants are modified:
+
+- Overridden tokens are tracked
+- Structured override files are generated (`override.css`)
+- Base Foundation CSS remains untouched
+
+This ensures:
+
+- Upgrade safety
+- Clear separation between system and customization
+- Controlled extensibility
+
+---
+
+## Runtime Behavior
+
+At runtime:
+
+- Foundation CSS injects token values as CSS variables
+- Components resolve styles using those variables
+- Overrides apply only where defined
+- The final WM application renders consistently
+
+The system separates structure from styling, enabling applications to scale without visual inconsistency.
+
+---
+
+## Summary
+
+Styling in a Design System project is:
+
+- Token-driven
+- CSS variable based
+- Component-governed
+- Workspace-managed
+- Override-controlled
+
+This architecture ensures scalable, maintainable, and enterprise-ready UI development in WaveMaker.

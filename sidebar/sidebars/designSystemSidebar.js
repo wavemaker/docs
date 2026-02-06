@@ -35,7 +35,7 @@ export default [
       id: 'design-system/design-system-project/index',
     },
     items: [
-      'design-system/figma-autocode-plugin/working-with-autocode-plugin'
+      'design-system/design-system-project/features'
     ],
   },
 ];
