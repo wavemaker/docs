@@ -168,7 +168,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [WaveMaker 11.14.0](/learn/wavemaker-release-notes/v11-14-0)
+Last updated: [WaveMaker 11.15.0](/learn/wavemaker-release-notes/v11-15-0)
 
 ---
 
@@ -193,25 +193,25 @@ Last updated: [WaveMaker 11.14.0](/learn/wavemaker-release-notes/v11-14-0)
 
 | Description | Java Library | Version |
 | --- | --- |--------------------|
-|  | Spring Framework | <td className="versiontdbgcolor"> 6.2.11 -> 6.2.12</td> |
-| Security framework | Spring Security | <td className="versiontdbgcolor"> 6.4.11 -> 6.5.6</td> |
-|  | Spring Data | <td className="versiontdbgcolor"> 2024.1.10 -> 2025.0.5</td> |
-|  | Spring Boot | <td className="versiontdbgcolor"> 3.4.10 -> 3.5.6</td> |
-|  | Spring Session | <td className="versiontdbgcolor"> 3.4.3 -> 3.5.2</td> |
+|  | Spring Framework | <td className="versiontdbgcolor">6.2.12 -> 6.2.15</td> |
+| Security framework | Spring Security | <td className="versiontdbgcolor">6.5.6 -> 6.5.7</td> |
+|  | Spring Data | <td className="versiontdbgcolor">2025.0.5 -> 2025.0.7</td> |
+|  | Spring Boot | <td className="versiontdbgcolor">3.5.6 -> 3.5.9</td> |
+|  | Spring Session | <td className="versiontdbgcolor">3.5.2 -> 3.5.4</td> |
 | Java JSON utilities | Gson  | 2.13.2  |
 | DB Persistence library | Hibernate(Jakarta) | 5.6.15. Final   |
 | Sample database | HSQL | 2.7.4 |
-| JSON library | Jackson | 2.19.0 |
+| JSON library | Jackson | <td className="versiontdbgcolor">2.20.0 -> 2.20.1</td> |
 | Logging framework | SLF4j | 2.0.17 |
-| Logging Implementation | Log4j2 | 2.25.2 |
-| Http client library  | HttpComponents -  httpclient | <td className="versiontdbgcolor"> 5.4.4 -> 5.5.1</td> |
+| Logging Implementation | Log4j2 | <td className="versiontdbgcolor">2.25.2 -> 2.25.3</td> |
+| Http client library  | HttpComponents -  httpclient | 5.5.1 |
 | Servlet Framework |  | 6.0.0 |
-| Database Connection Pooling | HikariCP | <td className="versiontdbgcolor"> 6.3.3 -> 7.0.2</td> |
-|  | Commons Lang3 | <td className="versiontdbgcolor"> 3.18.0 -> 3.19.0</td> |
+| Database Connection Pooling | HikariCP | 7.0.2 |
+|  | Commons Lang3 | 3.19.0 |
 |  | Guava | 33.5.0-jre |
-|  | Postgresql Driver  | <td className="versiontdbgcolor"> 42.7.4 -> 42.7.8</td>  |
+|  | Postgresql Driver  | 42.7.8  |
 |  | Hibernate Validator | 8.0.2.Final |
-|  | Jgit | <td className="versiontdbgcolor"> 7.3.0.202506031305-r -> 7.4.0.202509020913-r</td> |
+|  | Jgit | 7.4.0.202509020913-r |
 |  | Commons Codec | 1.18.0 |
 |  | Commons IO | 2.19.0 |
 |  | Commons Text |  1.13.1 |
@@ -219,7 +219,7 @@ Last updated: [WaveMaker 11.14.0](/learn/wavemaker-release-notes/v11-14-0)
 |  | Freemarker | 2.3.34 |
 |  | Apache Tika | 3.2.3 |
 |  | Mariadb JDBC Driver | 3.5.2 |
-|  | Mongodb Driver | <td className="versiontdbgcolor"> 5.4.0 -> 5.6.1</td> |
+|  | Mongodb Driver | <td className="versiontdbgcolor">5.6.1 -> 5.6.2</td> |
 |  | Jakarta Validation Api | 3.1.1 |
 |  | commons-validator | 1.10.0 |
 |  | json-smart | 2.5.2 |
@@ -243,9 +243,9 @@ This is the default Tomcat runtime support. Apps can be deployed to any standard
 |Description|	Version|
 |---|---|
 |Java | 21.0.6 |
-|Node| <td className="versiontdbgcolor"> 22.11.0 -> 22.18.0 </td>  |
-|Maven| <td className="versiontdbgcolor"> 3.9.9 -> 3.9.11 </td> |
-|npm | <td className="versiontdbgcolor"> 10.9.0 -> 10.9.3 </td>  |
+|Node| 22.18.0  |
+|Maven| <td className="versiontdbgcolor">3.9.11 -> 3.9.12</td> |
+|npm | 10.9.3  |
 |Ant| 1.10.11|
 
 For more information about building projects with Maven, see [here](/learn/app-development/deployment/building-with-maven).
@@ -261,18 +261,18 @@ For more information about building projects with Maven, see [here](/learn/app-d
 |Node|  22.11.0 |
 |Maven| 3.9.9 |
 |npm | 10.9.0 |
-| Android Studio | <td className="versiontdbgcolor"> Ladybug 2024.2.2 to Meerkat 2024.3.1 -> Meerkat 2024.3.1 to Narwhal 4 Feature Drop 2025.1.4 </td> |
-| Xcode | <td className="versiontdbgcolor"> 15.4 to 16.2 -> 16.2 to 26 </td>|
-| SDK Build Tools | <td className="versiontdbgcolor"> 34.0.0 -> 36.0.0 </td>|
-| [wm-reactnative-cli](https://www.npmjs.com/package/@wavemaker/wm-reactnative-cli) | <td className="versiontdbgcolor"> 1.8.8 -> 1.9.3 </td> |
-| Android Gradle Plugin (AGP) | <td className="versiontdbgcolor"> 8.10.2 -> 8.14.3 </td> |
+| Android Studio | Meerkat 2024.3.1 to Narwhal 4 Feature Drop 2025.1.4 |
+| Xcode | 16.2 to 26 |
+| SDK Build Tools | 36.0.0|
+| [wm-reactnative-cli](https://www.npmjs.com/package/@wavemaker/wm-reactnative-cli) | <td className="versiontdbgcolor">1.9.3 -> 1.9.5</td> |
+| Android Gradle Plugin (AGP) | 8.14.3 |
 
 ### SDK Update
 
 |Description|	Version|
 |---|---|
-| Expo | <td className="versiontdbgcolor"> 52.0.17 -> 54.0.12 </td> |
-| React Native | <td className="versiontdbgcolor"> 0.76.3 -> 0.81.4 </td> |
+| Expo | 54.0.12 |
+| React Native | 0.81.4 |
 
 ## Older Releases
 
