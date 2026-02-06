@@ -1,3 +1,22 @@
+SagarV:
+  name: Sagar Vemala
+  title: Engineering Manager at WaveMaker
+  url: https://github.com/wm-sagarvemala
+  image_url: https://github.com/wm-sagarvemala.png
+  page: true
+  socials:
+    github: wm-sagarvemala 
+    linkedin: sagar-vemala-2b3b6214 
+    
+mayankPrakashWavemaker:
+  name: Mayank Prakash
+  title: WaveMaker Developer
+  url: https://github.com/mayankPrakashWavemaker
+  image_url: https://github.com/mayankPrakashWavemaker.png
+  page: true
+  socials:
+    github: mayankPrakashWavemaker
+
 yangshun:
   name: Yangshun Tay
   title: Ex-Meta Staff Engineer, Co-founder GreatFrontEnd
@@ -24,11 +43,4 @@ slorber:
     github: slorber
     newsletter: https://thisweekinreact.com
 
-mayankPrakashWavemaker:
-  name: Mayank Prakash
-  title: WaveMaker Developer
-  url: https://github.com/mayankPrakashWavemaker
-  image_url: https://github.com/mayankPrakashWavemaker.png
-  page: true
-  socials:
-    github: mayankPrakashWavemaker
+
