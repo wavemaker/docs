@@ -42,7 +42,6 @@ Before creating WMX widgets, set up the project locally.
 2. Navigate to **Settings → Export → Export Project as Sources (ZIP)**.
 3. Extract the ZIP file and open it in your preferred IDE.
 
----
 
 ### Initialize Workspace
 

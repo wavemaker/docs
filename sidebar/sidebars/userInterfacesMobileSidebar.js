@@ -109,6 +109,18 @@ export default [
           },
         ],
       },
+       {
+        type: 'category',
+        label: 'WMX Components',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          {
+            type: 'doc',
+            id: 'user-interfaces/mobile/enterprise-capabilities/wmx/wmx-components',
+          },
+        ],
+      },
       {
         type: 'doc',
         id: 'user-interfaces/mobile/enterprise-capabilities/prefabs',
@@ -118,7 +130,9 @@ export default [
         id: 'user-interfaces/mobile/enterprise-capabilities/role-based-access-control',
       },
     ],
+    
   },
+  
   {
     type: 'category',
     label: 'Testing & Debugging',
