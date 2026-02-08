@@ -1,7 +1,94 @@
 ---
-last_update: { author: 'Author Name' }
+last_update: { author: 'Raj Kumar Reddy Abbadi' }
 ---
 
 # Overview
 
-Welcome to Project structure doc.
+WaveMaker projects follow a standard Maven structure with added directories for Angular web apps and mobile apps. The project is Maven-compliant, inherits from a parent POM, and can generate separate frontend/backend artifacts or a combined WAR. For mobile, React Native projects are generated with a standard Expo-based structure.
+
+### Core Structure
+    - Maven-based with parent POM inheritance: wavemaker-app-parent → wavemaker-app-dependencies → your app’s pom.xml 
+    - Default profiles: development and deployment; custom profiles supported
+    - Build outputs:
+        - Combined WAR (frontend + backend) by default
+        - Separate ui-artifacts.zip (Angular) + project.war when build.ui.mode=angular
+        - Separate Project as Angular zip 
+        - Separate Project as React zip
+
+
+```text 
+project/
+├── src/main/
+│   ├── java/          # Java service classes
+│   ├── resources/     # Configuration files, queries
+│   └── webapp/        # Web application root
+│       ├── pages/     # Page markup, scripts, styles
+│       ├── services/  # Backend service metadata
+│       ├── app.css    # Application-level styles
+│       ├── app.js     # Application-level scripts
+│       └── app.variables.json  # Application variables
+├── pom.xml            # Maven build configuration
+├── package.json       # NPM dependencies
+└── profiles/          # Environment-specific configurations
+```
+
+### Three-Layer Application Architecture
+
+WaveMaker applications follow a strict three-layer architecture that separates concerns between presentation, data binding, and business logic.
+
+```mermaid
+flowchart TB
+
+  %% UI Layer
+  subgraph UI["UI Layer"]
+    WebUI["Web UI<br/>Angular<br/> React"]
+    MobileUI["Mobile UI<br/>React Native<br/>Expo 54"]
+  end
+
+  %% Binding Layer
+  subgraph Binding["Binding Layer"]
+    VariablesSystem["Variables System"]
+
+    DBVars["Database Variables<br/>DatabaseCRUDVariable<br/>DatabaseAPIVariable"]
+    ServiceVars["Service Variables<br/>ServiceVariable<br/>WebSocketVariable"]
+    ModelVars["Model Variables<br/>ModelVariable<br/>DeviceVariable"]
+    Actions["Actions<br/>NavigationAction<br/>LoginAction<br/>NotificationAction"]
+  end
+
+  %% Backend Layer
+  subgraph Backend["Backend Layer"]
+    Spring["Spring Framework<br/>Spring Boot<br/>Spring Security"]
+
+    ORM["Hibernate<br/>HikariCP"]
+    BackendServices["Backend Services"]
+
+    DBServices["Database Services<br/>MySQL, PostgreSQL,<br/>MongoDB,<br/>SAP HANA, Redshift"]
+    REST["REST APIs<br/>OpenAPI / Swagger Import"]
+    SOAP["SOAP Services<br/>WSDL Import"]
+    JavaServices["Java Services<br/>Custom Business Logic"]
+  end
+
+  %% Connections
+  WebUI --> VariablesSystem
+  MobileUI --> VariablesSystem
+  
+  VariablesSystem --> DBVars
+  VariablesSystem --> ServiceVars
+  VariablesSystem --> ModelVars
+  VariablesSystem --> Actions
+
+  DBVars --> Spring
+  ServiceVars --> Spring
+  Actions --> Spring
+
+  Spring --> ORM
+  Spring --> BackendServices
+
+  ORM --> DBServices
+  BackendServices --> DBServices
+  BackendServices --> REST
+  BackendServices --> SOAP
+  BackendServices --> JavaServices
+
+```
+

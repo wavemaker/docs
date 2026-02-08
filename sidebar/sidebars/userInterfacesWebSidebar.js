@@ -417,11 +417,6 @@ export default [
           },
           {
             type: 'doc',
-            id: 'user-interfaces/web/develop/working-with-layouts/nesting-layouts',
-            label: 'Nesting Layouts',
-          },
-          {
-            type: 'doc',
             id: 'user-interfaces/web/develop/working-with-layouts/component-with-layouting-features',
             label: 'Component with Layouting features',
           },

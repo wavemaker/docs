@@ -1,10 +1,10 @@
 ---
-last_update: { author: 'Author Name' }
+last_update: { author: 'Raj Kumar Reddy Abbadi' }
 ---
 
-# Overview
+# Responsive Design
 
-In WaveMaker, responsive design with layouts means building apps that automatically adapt their UI to different screen sizes—mobile, tablet, and desktop—without creating separate apps.
+In WaveMaker, responsive design with layouts means building apps that automatically adapt their UI to different screen sizes like mobile, tablet, and desktop without creating separate apps.
 
 What is Responsive Design in WaveMaker?
 
@@ -13,6 +13,30 @@ Responsive design ensures that:
 - The UI adjusts smoothly based on screen size
 - Content rearranges, resizes, or hides/shows depending on the device
 - Users get a consistent experience on phone, tablet, or web
-- WaveMaker handles this using responsive layouts + CSS grid system.
 
+## Device Visibility per Component
 
+WaveMaker provides a simple way to manage responsiveness using device-based visibility.
+For every Component, the Device tab allows you to:
+    - Show the Component only on specific screen sizes
+    - Hide the Component for certain devices
+    - Build separate UI patterns for mobile vs desktop (without duplicating pages)
+
+This is useful when:
+    - A sidebar should appear only on large screens
+    - A compact menu should appear only on mobile
+    - A large table should be hidden on smaller devices and replaced with a card/list view
+
+## Auto Layout for Responsive Alignment
+
+WaveMaker also supports Auto Layout, which acts like a built-in responsive layout system. Instead of relying heavily on manual margins, paddings, and custom CSS, you can control responsiveness using container properties.
+
+With Auto Layout, containers can be configured using properties such as:
+    - Direction (row or column)
+    - Wrap (allow items to move to next line)
+    - Fill / Hug (dynamic sizing based on available space)
+    - Alignment (start, center, end)
+    - Gap (consistent spacing between widgets)
+    - Padding (container spacing)
+    
+These settings allow widgets to automatically resize and realign as the screen changes, giving you a clean responsive UI with minimal effort.
