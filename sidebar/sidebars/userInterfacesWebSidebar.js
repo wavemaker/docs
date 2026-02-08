@@ -553,12 +553,11 @@ export default [
         label: 'Actions',
         collapsible: true,
         collapsed: true,
+        link: {
+          type: 'doc',
+          id: 'user-interfaces/web/develop/actions/index',
+        },
         items: [
-          {
-            type: 'doc',
-            id: 'user-interfaces/web/develop/actions/overview',
-            label: 'Overview',
-          },
           {
             type: 'doc',
             id: 'user-interfaces/web/develop/actions/types',

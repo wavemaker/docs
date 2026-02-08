@@ -3,9 +3,24 @@ last_update: { author: "Raj Kumar Reddy Abbadi" }
 ---
 # Types of Actions
 
+- **Navigation:** action provides navigation capabilities to help in navigating from one page or view to another
+- **Login:** action is to authenticate a user at the server. A Login Action is created automatically when you enable Security in your application
+- **Logout** action
+- **Timer:** action can be used to trigger events repeatedly at timed intervals.
+- **Notification:** is an action to show UI notifications in the app in the form of a toaster, alert or a confirmation box
+
+
 ## Navigation Action
-The Navigation Action in WaveMaker provides built-in navigation capabilities that enable movement between pages or views within an application. Navigation actions define how and when page transitions occur in response to events.
-```
+The Navigation Action in WaveMaker provides built in navigation capabilities that enable movement between pages or views within an application. Navigation actions define how and when page transitions occur in response to events.
+
+#### Properties
+
+| Property | Description |
+| -------- | ----------- |
+| Navigation Target | Sets Navigation Target (Previous Page, Page, Tab or Accordion)|
+| Page Name | The page name to navigate to |
+
+```javascript
 // Example 1: Navigate to TestPage
 Page.Actions.goToPage_TestPage.invoke();
 
@@ -35,6 +50,16 @@ The Login Action exposes standard action lifecycle events, These events can be u
 - onError
 - onBeforeInvoke
 
+#### Properties
+
+| Property | Description |
+| -------- | ----------- |
+| Use default success handler | If checked, on successful login, the logged in user will be redirected to the Landing Page configured against the user role (refer to Login Configuration under Security for more info). If a custom logic is required, uncheck this property and implement the logic under the onSuccess event of the Action.|
+| Update data on input change | If checked, the component will be triggered automatically on the change of input data (as mentioned in the data tab) for the Action. |
+| Request data on page load | If checked, 'Page' scoped will be triggered on page load while 'Application' scoped will be triggered on application load. |
+| In Flight Behavior | This property determines the behavior when a call is fired through the action with the previous call still pending. Action queues all these calls, waits for the previous call completion and then based on the value of the inFlightBehavior property, decides what to do with all the queued calls: - doNotExecute - all the queued calls will be discarded, - executeAll - all the calls will be triggered one by one, or - executeLast - only the last call is triggered and the rest are discarded, this is the default behavior |
+| Spinner Context | This property specifies on which UI widget the spinner should show. Leave empty if no spinner required. |
+| Spinner Message | The message to be displayed below the spinner. Leave empty if no message is required below the spinner. Note: If multiple actions are fired then the spinner messages will be displayed as a list below a single spinner. |
 ---
 ## Logout Action
 A Logout Action is automatically created when you implement Security in your application. You can edit the Properties and Events of the Logout Action from the Actions dialog.
