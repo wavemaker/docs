@@ -4,6 +4,10 @@ author: "Prashanth Mangali"
 ---
 ---
 
+:::note
+This change takes effect starting with [release 11.15](/learn/wavemaker-release-notes/v11-15-0).
+:::
+
 For configuration management and externalization, WaveMaker applications use __profile.properties__ to store configuration as key–value pairs. This allows the same WAR (build artifact) to move across environments without rebuilding, with values supplied via environment variables, bundled files, or by building __profile-specific WARs__ (QA, production etc.) using a selected build profile (for example, mvn clean install -Pproduction).
 
 However, over time configuration values became **scattered and duplicated across multiple locations**, making it difficult to understand:
@@ -12,7 +16,7 @@ However, over time configuration values became **scattered and duplicated across
 2. whether the value is system-generated or user-modified
 3. whether a change should apply to one profile or all profiles
 
-## REST Service Property Management (Old Behavior)
+## Old Behavior: REST Service Property Management
 
 A REST service defines the same property in multiple places:
 - **In Service JSON**
@@ -46,7 +50,7 @@ The solution introduces a **Single Source of Truth (SSOT)** and a strict separat
 - Defaults are never copied into profiles automatically
 - The effective value of a property is always easy to locate
 
-## REST Service Property Management  (New Behavior)
+## New Behavior: REST Service Property Management
 
 Using the same REST service example:
 - The default value
