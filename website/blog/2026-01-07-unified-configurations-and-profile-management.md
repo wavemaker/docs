@@ -1,5 +1,5 @@
 ---
-title: "Unified Configuration and Profile Management"
+title: "Configuration Refactoring: Defaults vs Profile Overrides"
 author: "Prashanth Mangali"
 ---
 ---
