@@ -44,6 +44,9 @@ This makes it difficult to understand the actual value of each property and wher
 
 The solution introduces a **Single Source of Truth (SSOT)** and a strict separation between defaults and overrides.
 
+**Operational note:** This change introduces a new precedence model and a one-time migration. Existing projects are migrated automatically, but we strongly recommend validating the result in a staging environment and keeping a snapshot of `<profileName>.properties` for rollback. The migration removes only duplicated, system-generated entries and preserves explicit user overrides.
+
+
 **Core Principles**
 - Each property has one authoritative default location
 - Profiles contain only explicit user overrides
@@ -89,37 +92,44 @@ This allows the same build artifact to be deployed across dev, QA, and prod with
 - If set, the application loads `application-<profile>`.yaml.
 - If not set, `application.yaml` is loaded by default.
 
-## Where Properties and Defaults Live Now
+## Configuration Default Values and Override Methods: Where They Live
 
-The same above model applies consistently across all configuration types.
-Each property category has one clear default location, and profiles are used only for  overrides.
+The [same REST model](#new-behavior-rest-service-property-management) applies consistently across all configuration types.
+Each property category has one clear default location, and profiles are used only for overrides.
 
-**Application Properties**
+### Application Properties
+
 - Default values are defined in `app.properties`.
+    ![](/learn/assets/profile-application-properties.png)
 
-**Security Configuration**
+### Security Configuration
+
 - Defaults live within their own service JSONs:
   - `auth-info.json, general-options.json, roles.json, intercept-urls.json`
 
-**Service Properties**
+### Service Properties
+
 - Service defaults are defined in service-specific configuration JSON files based on the type of service:
   - REST / OpenAPI / WebSocket: `<serviceName>_apiTarget.json`
   - Database Services: `db-connection-settings.json`
   - Auth Services: `oauth-providers.json`
   - SOAP Services: `<serviceName>.settings.json`
 
-**Prefab Configuration**
+### Prefab Configuration
+
 - Defaults are defined within their owning component (for example, `prefab-properties.yaml`)
 
-**Connector Properties**
+### Connector Properties
+
 - Defaults are defined in connector-externizable.properties
 
-**Profiles**
+### Profiles
+
 - profile.properties contains overrides only when a user explicitly changes a value.
 If a value is not present in profile.properties, it always comes from the owning component’s default file.
 
 
-## Summary
+## Final Thoughts
 
 This refactoring establishes a clear Single Source of Truth for all configuration types, strictly separates defaults from overrides, and eliminates duplication across profiles.
 
