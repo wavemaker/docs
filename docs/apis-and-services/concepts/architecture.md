@@ -16,7 +16,7 @@ WaveMaker application backend architecture is composed of the following:
 3. Security provider integrations for authentication & SSO support
 4. Extensions provided by Platform for DB, API callbacks, observability etc.
     - Leverage existing developer ecosystem with Spring Data and Spring REST for event listeners
-    - Other Spring integrations with EFK, GraphQL, AI etc.
+    - Other Spring integrations such as EFK, GraphQL, AI etc.
 5. Connectors for 3rd party systems such as kafka, mongodb, camunda, jasper etc.
 6. Generated code artifacts for ORM, REST controller and microservices
 
