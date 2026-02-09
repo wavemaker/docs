@@ -103,9 +103,21 @@ export default [
         collapsible: true,
         collapsed: true,
         items: [
+          // {
+          //   type: 'doc',
+          //   id: 'user-interfaces/mobile/enterprise-capabilities/prefabs/wmx-components-mobile',
+          // },
+           {
+            type: 'doc',
+            id: 'user-interfaces/mobile/enterprise-capabilities/prefabs/overview',
+          },
           {
             type: 'doc',
-            id: 'user-interfaces/mobile/enterprise-capabilities/prefabs/wmx-components-mobile',
+            id: 'user-interfaces/mobile/enterprise-capabilities/prefabs/create-prefab',
+          },
+          {
+            type: 'doc',
+            id: 'user-interfaces/mobile/enterprise-capabilities/prefabs/publishing',
           },
         ],
       },
