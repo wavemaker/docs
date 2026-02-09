@@ -70,7 +70,7 @@ This will generate this File structure for that component. Refer [WMX Component]
 
 
 
-## Creating WMX Widgets Using AI Tools
+## Creating WMX Components Using AI Tools
 
 AI-powered development tools such as Cursor and GitHub Copilot can also accelerate WMX widget creation.
 
@@ -118,12 +118,12 @@ Once generated, the  component becomes available in the components. Developers c
 - If unsupported libraries are suggested, request alternative or native implementations.
 - Ensure generated components follow WMX standards by referring to:
   `src/main/webapp/extensions/components/src/readme.md`
-- Validate structure by comparing with existing WMX widgets.
+- Validate structure by comparing with existing WMX Components.
 
 ---
 ## Summary
 
-WMX components enable developers to extend WaveMaker mobile applications by creating custom React Native widgets that integrate seamlessly with the platform. These components are built by defining UI and logic, configuring metadata, and organizing them within the WaveMaker extensions framework.
+WMX components enable developers to extend WaveMaker mobile applications by creating custom React Native Components that integrate seamlessly with the platform. These components are built by defining UI and logic, configuring metadata, and organizing them within the WaveMaker extensions framework.
 
 AI tools such as AIRA, Cursor, and GitHub Copilot help accelerate WMX component development by automating file generation, metadata configuration, and error resolution. After generation, developers should review, test, and validate the components before deploying them for use in WaveMaker Studio.
 

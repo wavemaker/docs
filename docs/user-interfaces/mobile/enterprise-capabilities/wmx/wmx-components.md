@@ -5,7 +5,7 @@ last_update: { author: "Priyanka Bhadri" }
 # WMX Components
 
 
-**WMX Widgets (WaveMaker Extension Widgets)** allow developers to integrate custom React Native components into WaveMaker mobile applications. These widgets extend the default WaveMaker component library while maintaining support for property binding, event handling, scripting, and theme styling.
+**WMX Components (WaveMaker Extension Components)** allow developers to integrate custom React Native components into WaveMaker mobile applications. These widgets extend the default WaveMaker component library while maintaining support for property binding, event handling, scripting, and theme styling.
 
 WMX components enable developers to build custom UI components that behave like native WaveMaker components.
 
@@ -103,6 +103,8 @@ src/main/webapp/extensions/components/src/
 - Use a **transparent background**
 - Prefer **#737373** as the stroke color
 - Keep the design minimal and clearly recognizable at small sizes
+
+To Know more [WMX Schema](wmx-schema-reference)
 
 ---
 
