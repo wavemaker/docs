@@ -8,17 +8,17 @@ author: "Prashanth Mangali"
 This change takes effect starting with [release 11.15](/learn/wavemaker-release-notes/v11-15-0).
 :::
 
+:::caution
+This change introduces a new precedence model and a one-time migration. Existing projects are migrated automatically, but we strongly recommend validating the result in a CI/CD-managed environment before promotion. The migration removes only duplicated, system-generated entries and preserves explicit user overrides.
+:::
+
 For configuration management and externalization, WaveMaker applications use __profile.properties__ to store configuration as key–value pairs. This allows the same WAR (build artifact) to move across environments without rebuilding, with values supplied via environment variables, bundled files, or by building __profile-specific WARs__ (QA, production etc.) using a selected build profile (for example, mvn clean install -Pproduction).
 
-However, over time configuration values became **scattered and duplicated across multiple locations**, making it difficult to understand:
-
-1. where a property value comes from
-2. whether the value is system-generated or user-modified
-3. whether a change should apply to one profile or all profiles
+As projects grow, it’s normal for configuration to end up in a few different places (service configs, profile files, etc.). That flexibility has helped teams move fast, but it also meant that the same value could appear in more than one place. Over time, it became harder to tell which values were defaults and which were intentional environment-specific changes.
 
 ## Old Behavior: REST Service Property Management
 
-A REST service defines the same property in multiple places:
+Previously, REST service properties could be defined in multiple places to support flexibility across environments.
 - **In Service JSON**
   - host = maps.googleapis.com 
   ![](//learn/assets/properties-refactoring/wmo-serviceJson.png)
@@ -29,23 +29,19 @@ A REST service defines the same property in multiple places:
   - rest.googleapis.host=maps.googleapis.com
   - ![](//learn/assets/properties-refactoring/wmo-ProfilesProperties.png)
 
-**Because defaults and overrides are mixed:**
-- profileName.properties contains all service properties, even when unchanged
-there is no clear indicator of what is a default vs a user override
+
+This approach made it easy to run the same service across different environments. As a result, profile files typically contained a full set of service properties, even when most values matched the defaults.
 
 If a user updates `rest.googleapis.host` in one profile using the design canvas:
 - the system cannot tell if this is an intentional override
 - or if the service default itself has changed
 - or if the change should apply to other profiles
 
-This makes it difficult to understand the actual value of each property and where it is defined.
+Understanding the effective value of a property therefore required checking multiple locations.
 
 **Solution Overview**
 
 The solution introduces a **Single Source of Truth (SSOT)** and a strict separation between defaults and overrides.
-
-**Operational note:** This change introduces a new precedence model and a one-time migration. Existing projects are migrated automatically, but we strongly recommend validating the result in a staging environment and keeping a snapshot of `<profileName>.properties` for rollback. The migration removes only duplicated, system-generated entries and preserves explicit user overrides.
-
 
 **Core Principles**
 - Each property has one authoritative default location
@@ -55,9 +51,10 @@ The solution introduces a **Single Source of Truth (SSOT)** and a strict separat
 
 ## New Behavior: REST Service Property Management
 
+With the updated model, REST service properties follow a much simpler and clearer approach.
 Using the same REST service example:
 - The default value
-  - rest.googleapis.host=maps.googleapis.com
+  - host=maps.googleapis.com
   - exists only in the Service JSON
     ![](//learn/assets/properties-refactoring/stage-ServiceJson.png)
   
