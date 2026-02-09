@@ -438,13 +438,14 @@ export default [
             items: [
               'guide/migrated-docs/synchronizing-wavemaker-apps-ides-beta',
               'guide/migrated-docs/debug-monitor-performance-issues-using-fusion-reactor',
+              'guide/migrated-docs/local-setup',
             ],
           },
-          {
-            type: 'category',
-            label: 'Deployment',
-            items: ['guide/migrated-docs/ssl-offloading'],
-          },
+          // {
+          //   type: 'category',
+          //   label: 'Deployment',
+          //   items: ['guide/migrated-docs/ssl-offloading'],
+          // },
           // {
           //   type: 'category',
           //   label: 'Upgrading Project',

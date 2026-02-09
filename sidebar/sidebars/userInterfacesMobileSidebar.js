@@ -119,16 +119,24 @@ export default [
             type: 'doc',
             id: 'user-interfaces/mobile/enterprise-capabilities/wmx/wmx-components',
           },
+          {
+            type: 'doc',
+            id: 'user-interfaces/mobile/enterprise-capabilities/wmx/wmx-schema-reference',
+          },
+           {
+            type: 'doc',
+            id: 'user-interfaces/mobile/enterprise-capabilities/wmx/wmx-with-aira',
+          },
         ],
       },
-      {
-        type: 'doc',
-        id: 'user-interfaces/mobile/enterprise-capabilities/prefabs',
-      },
-      {
-        type: 'doc',
-        id: 'user-interfaces/mobile/enterprise-capabilities/role-based-access-control',
-      },
+    //   {
+    //     type: 'doc',
+    //     id: 'user-interfaces/mobile/enterprise-capabilities/prefabs',
+    //   },
+    //   {
+    //     type: 'doc',
+    //     id: 'user-interfaces/mobile/enterprise-capabilities/role-based-access-control',
+    //   },
     ],
     
   },
