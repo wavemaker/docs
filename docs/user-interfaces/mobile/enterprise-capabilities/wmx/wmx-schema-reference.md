@@ -68,7 +68,7 @@ events       | Defines component events      | No
 styles       | Defines styling options       | No
 
 
-## Property Schema
+### Property Schema
 
 Defines configurable component inputs.
 
@@ -81,7 +81,7 @@ isList        | Supports array values
 isRequired    | Marks property mandatory
 
 
-## Event Schema
+### Event Schema
 
 Defines events triggered by user interaction or state change.
 
@@ -92,7 +92,7 @@ displayName  | Studio label
 description  | Event usage details
 
 
-## Style Schema
+### Style Schema
 
 Defines styling options exposed to Studio.
 
