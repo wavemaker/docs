@@ -445,45 +445,45 @@ export default [
             label: 'Deployment',
             items: ['guide/migrated-docs/ssl-offloading'],
           },
-          {
-            type: 'category',
-            label: 'Upgrading Project',
-            items: [
-              'guide/migrated-docs/guide-to-upgrade-an-app-wavemaker-9x-to-wavemaker-10-0',
-              'guide/migrated-docs/app-migration-wavemaker-9x-10x',
-            ],
-          },
+          // {
+          //   type: 'category',
+          //   label: 'Upgrading Project',
+          //   items: [
+          //     'guide/migrated-docs/guide-to-upgrade-an-app-wavemaker-9x-to-wavemaker-10-0',
+          //     'guide/migrated-docs/app-migration-wavemaker-9x-10x',
+          //   ],
+          // },
         // ],
         // Teams: ['guide/migrated-docs/azure-repos-vcs'],
         // Mobile: [
-          {
-            type: 'category',
-            label: 'Cordova (Hybrid Mobile)',
-            items: [
-              {
-                type: 'category',
-                label: 'Cordova How-tos',
-                items: [
-                  'guide/migrated-docs/mobile-notify-new-version-update',
-                  'guide/migrated-docs/setting-swipe-gestures-list-widget',
-                  'guide/migrated-docs/working-pull-refresh',
-                  'guide/migrated-docs/using-search-widget-within-navbar',
-                  {
-                    type: 'category',
-                    label: 'Mobile UI Design',
-                    items: [
-                      'guide/migrated-docs/splashscreens-icons',
-                      'guide/migrated-docs/using-cordova-plugins',
-                      'guide/migrated-docs/support-for-tablet-view-in-mobile',
-                      'guide/migrated-docs/sliding-leftnav-mobile-app',
-                      'guide/migrated-docs/mobile-app-using-bar-code',
-                      'guide/migrated-docs/custom-date-picker',
-                    ],
-                  },
-                ],
-              },
-            ],
-          },
+          // {
+          //   type: 'category',
+          //   label: 'Cordova (Hybrid Mobile)',
+          //   items: [
+          //     {
+          //       type: 'category',
+          //       label: 'Cordova How-tos',
+          //       items: [
+          //         'guide/migrated-docs/mobile-notify-new-version-update',
+          //         'guide/migrated-docs/setting-swipe-gestures-list-widget',
+          //         'guide/migrated-docs/working-pull-refresh',
+          //         'guide/migrated-docs/using-search-widget-within-navbar',
+          //         {
+          //           type: 'category',
+          //           label: 'Mobile UI Design',
+          //           items: [
+          //             'guide/migrated-docs/splashscreens-icons',
+          //             'guide/migrated-docs/using-cordova-plugins',
+          //             'guide/migrated-docs/support-for-tablet-view-in-mobile',
+          //             'guide/migrated-docs/sliding-leftnav-mobile-app',
+          //             'guide/migrated-docs/mobile-app-using-bar-code',
+          //             'guide/migrated-docs/custom-date-picker',
+          //           ],
+          //         },
+          //       ],
+          //     },
+          //   ],
+          // },
         // ],
   //    },
    // ],
