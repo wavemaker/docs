@@ -21,7 +21,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
-|[WaveMaker 11.15.0](/learn/wavemaker-release-notes/v11-15-0) <p style={{color:"red"}}>*latest*</p> | WaveMaker 11.15.0 includes profile management, enhances Wizard widget in React Native and delivers several Studio and React Native bug fixes. | 8 Feburary 2026 |
+|[WaveMaker 11.15.0](/learn/wavemaker-release-notes/v11-15-0) <p style={{color:"red"}}>*latest*</p> | WaveMaker 11.15.0 includes refactoring of profile management, enhancements related to several Studio space and React Native bug fixes. | 8 Feburary 2026 |
 |[WaveMaker 11.14.2](/learn/wavemaker-release-notes/v11-14-2) | WaveMaker 11.14.2 enhances Wizard widget in React Native and delivers several Studio and React Native bug fixes. | 1 December 2025 |
 |[WaveMaker 11.14.1](/learn/wavemaker-release-notes/v11-14-1) | WaveMaker 11.14.1 introduces enhanced commit message control and support for hyphenated page & partial names in Studio, giving developers more flexibility. It also includes a bug fix for stacked charts in web projects. | 3 November 2025 |
 |[WaveMaker 11.14.0](/learn/wavemaker-release-notes/v11-14-0) | WaveMaker 11.14.0 comes with major upgrade for React Native platform SDK. It is now upgraded to Expo 54 & React Native 0.81.4, delivering newer APIs, better build reliability, improved security, and runtime performance. This release also includes several tech-stack updates, Studio & React Native enhancements, and several bug fixes across Web and React Native. | 27 October 2025 |
