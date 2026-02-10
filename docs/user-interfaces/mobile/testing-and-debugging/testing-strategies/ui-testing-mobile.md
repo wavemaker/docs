@@ -1,724 +1,166 @@
 ---
-last_update: { author: "Author Name" }
+last_update: { author: "Priyanka Bhadri" }
 ---
 
-# UI Testing Mobile
+# React Native Testing in WaveMaker
 
-Comprehensive strategies for testing mobile user interfaces on iOS and Android platforms.
+Testing is a critical part of building high-quality mobile applications using WaveMaker’s React Native platform. A strong testing strategy ensures applications function correctly, perform efficiently, and provide consistent user experiences across devices and platforms.
 
-## Overview
-
-Mobile UI testing ensures your application works correctly across different devices, screen sizes, and operating systems. This includes functional testing, UI automation, performance testing, and device-specific testing.
-
-## Types of Mobile Testing
-
-### 1. Unit Testing
-### 2. Integration Testing
-### 3. UI Automation Testing
-### 4. Manual Testing
-### 5. Device Testing
-
-## Mobile Testing Frameworks
-
-### Detox (React Native)
-
-End-to-end testing framework for React Native.
-
-**Installation:**
-```bash
-npm install --save-dev detox
-npm install --save-dev detox-cli
-```
-
-**Configuration:**
-```json
-// .detoxrc.json
-{
-  "testRunner": "jest",
-  "runnerConfig": "e2e/config.json",
-  "configurations": {
-    "ios.sim.debug": {
-      "device": {
-        "type": "iPhone 14"
-      },
-      "app": "ios.debug"
-    },
-    "android.emu.debug": {
-      "device": {
-        "avdName": "Pixel_4_API_30"
-      },
-      "app": "android.debug"
-    }
-  },
-  "apps": {
-    "ios.debug": {
-      "type": "ios.app",
-      "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/YourApp.app",
-      "build": "xcodebuild -workspace ios/YourApp.xcworkspace -scheme YourApp -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build"
-    },
-    "android.debug": {
-      "type": "android.apk",
-      "binaryPath": "android/app/build/outputs/apk/debug/app-debug.apk",
-      "build": "cd android && ./gradlew assembleDebug assembleAndroidTest -DtestBuildType=debug"
-    }
-  }
-}
-```
-
-**Basic Test:**
-```javascript
-describe('Login Screen', () => {
-  beforeAll(async () => {
-    await device.launchApp();
-  });
-
-  beforeEach(async () => {
-    await device.reloadReactNative();
-  });
-
-  it('should show login screen', async () => {
-    await expect(element(by.id('login-screen'))).toBeVisible();
-  });
-
-  it('should login with valid credentials', async () => {
-    await element(by.id('email-input')).typeText('user@example.com');
-    await element(by.id('password-input')).typeText('password123');
-    await element(by.id('login-button')).tap();
-
-    await expect(element(by.text('Welcome back'))).toBeVisible();
-  });
-
-  it('should show error with invalid credentials', async () => {
-    await element(by.id('email-input')).typeText('wrong@example.com');
-    await element(by.id('password-input')).typeText('wrongpass');
-    await element(by.id('login-button')).tap();
-
-    await expect(element(by.text('Invalid credentials'))).toBeVisible();
-  });
-});
-```
-
-**Gesture Testing:**
-```javascript
-describe('Gestures', () => {
-  it('should swipe to delete item', async () => {
-    await element(by.id('item-1')).swipe('left', 'fast', 0.8);
-    await expect(element(by.id('delete-button'))).toBeVisible();
-    await element(by.id('delete-button')).tap();
-
-    await expect(element(by.id('item-1'))).not.toBeVisible();
-  });
-
-  it('should scroll to bottom', async () => {
-    await element(by.id('list')).scrollTo('bottom');
-    await expect(element(by.text('End of list'))).toBeVisible();
-  });
-
-  it('should pinch to zoom', async () => {
-    await element(by.id('image')).pinchWithAngle('outward', 'slow', 0);
-    await expect(element(by.id('image'))).toHaveScale(2.0);
-  });
-});
-```
-
-### Appium
-
-Cross-platform mobile automation framework.
-
-**Installation:**
-```bash
-npm install --save-dev appium
-npm install --save-dev webdriverio
-```
-
-**Configuration:**
-```javascript
-// wdio.conf.js
-exports.config = {
-  runner: 'local',
-  port: 4723,
-  specs: ['./test/specs/**/*.js'],
-  capabilities: [
-    {
-      platformName: 'iOS',
-      'appium:deviceName': 'iPhone 14',
-      'appium:platformVersion': '16.0',
-      'appium:app': '/path/to/YourApp.app',
-      'appium:automationName': 'XCUITest',
-    },
-    {
-      platformName: 'Android',
-      'appium:deviceName': 'Pixel 4',
-      'appium:platformVersion': '11.0',
-      'appium:app': '/path/to/app-debug.apk',
-      'appium:automationName': 'UiAutomator2',
-    },
-  ],
-  framework: 'mocha',
-  mochaOpts: {
-    timeout: 60000,
-  },
-};
-```
-
-**iOS Test:**
-```javascript
-describe('iOS App', () => {
-  it('should find element by accessibility id', async () => {
-    const button = await $('~login-button');
-    await button.click();
-  });
-
-  it('should type text', async () => {
-    const input = await $('~email-input');
-    await input.setValue('user@example.com');
-    expect(await input.getText()).toBe('user@example.com');
-  });
-
-  it('should navigate between screens', async () => {
-    await $('~products-tab').click();
-    await expect($('~product-list')).toBeDisplayed();
-  });
-});
-```
-
-**Android Test:**
-```javascript
-describe('Android App', () => {
-  it('should find element by resource id', async () => {
-    const button = await $('android=new UiSelector().resourceId("com.app:id/login")');
-    await button.click();
-  });
-
-  it('should scroll to element', async () => {
-    await $('android=new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(text("Terms"))');
-    await expect($('~terms-checkbox')).toBeDisplayed();
-  });
-
-  it('should handle native alerts', async () => {
-    await driver.acceptAlert();
-  });
-});
-```
-
-### Maestro
-
-Declarative mobile UI testing framework.
-
-**Installation:**
-```bash
-curl -Ls "https://get.maestro.mobile.dev" | bash
-```
-
-**Test Flow:**
-```yaml
-# login-flow.yaml
-appId: com.example.app
 ---
-- launchApp
-- tapOn: "Login"
-- inputText: "user@example.com"
-- tapOn: "Password"
-- inputText: "password123"
-- tapOn: "Sign In"
-- assertVisible: "Welcome back"
-```
 
-**Running Tests:**
-```bash
-maestro test login-flow.yaml
-```
+## Testing Overview
 
-## XCUITest (iOS Native)
+WaveMaker supports multiple testing approaches to validate application quality, functionality, usability, and performance.
 
-**Swift Test:**
-```swift
-import XCTest
+### Types of Testing
 
-class LoginTests: XCTestCase {
-    var app: XCUIApplication!
+- **Manual Testing**
+  - Validates workflows, UI behavior, and real user interactions.
+  - Helps identify usability issues and edge cases.
 
-    override func setUp() {
-        super.setUp()
-        continueAfterFailure = false
-        app = XCUIApplication()
-        app.launch()
-    }
+- **Automation Testing**
+  - Enables repeatable UI and functional testing.
+  - Uses tools like WebDriverIO, Appium, Mocha, and TypeScript.
 
-    func testLoginSuccess() {
-        let emailField = app.textFields["email-input"]
-        emailField.tap()
-        emailField.typeText("user@example.com")
+- **Visual Testing**
+  - Detects UI layout or styling regressions.
+  - Compares screenshots with baseline images.
 
-        let passwordField = app.secureTextFields["password-input"]
-        passwordField.tap()
-        passwordField.typeText("password123")
+- **Accessibility Testing**
+  - Ensures applications are usable by people with disabilities.
+  - Validates screen reader compatibility and navigation support.
 
-        app.buttons["login-button"].tap()
+- **Performance Testing**
+  - Measures responsiveness, resource utilization, and load handling.
 
-        XCTAssertTrue(app.staticTexts["Welcome back"].exists)
-    }
+- **Device Compatibility Testing**
+  - Ensures application stability across multiple devices, screen sizes, and OS versions.
 
-    func testLoginFailure() {
-        let emailField = app.textFields["email-input"]
-        emailField.tap()
-        emailField.typeText("wrong@example.com")
+### Tools and Infrastructure
 
-        let passwordField = app.secureTextFields["password-input"]
-        passwordField.tap()
-        passwordField.typeText("wrongpass")
+- Physical devices and emulators
+- BrowserStack for cloud device testing
+- Appium and WebDriverIO for automation
+- Jenkins for CI/CD integration
+- Allure Reports for test reporting
+- Apptim for performance profiling
 
-        app.buttons["login-button"].tap()
+---
 
-        XCTAssertTrue(app.staticTexts["Invalid credentials"].exists)
-    }
-}
-```
+## Manual Testing
 
-## Espresso (Android Native)
+Manual testing helps validate real-world usability and ensures application workflows function correctly.
 
-**Kotlin Test:**
-```kotlin
-import androidx.test.espresso.Espresso.onView
-import androidx.test.espresso.action.ViewActions.*
-import androidx.test.espresso.assertion.ViewAssertions.matches
-import androidx.test.espresso.matcher.ViewMatchers.*
-import androidx.test.ext.junit.rules.ActivityScenarioRule
-import androidx.test.ext.junit.runners.AndroidJUnit4
-import org.junit.Rule
-import org.junit.Test
-import org.junit.runner.RunWith
+### Key Validation Areas
 
-@RunWith(AndroidJUnit4::class)
-class LoginActivityTest {
+- Functional workflows and feature validation
+- UI consistency and visual validation
+- Cross-device and cross-platform behavior
+- Early bug identification
 
-    @get:Rule
-    val activityRule = ActivityScenarioRule(LoginActivity::class.java)
+Manual testing should be performed on both simulators and real devices to detect device-specific issues.
 
-    @Test
-    fun testLoginSuccess() {
-        onView(withId(R.id.email_input))
-            .perform(typeText("user@example.com"), closeSoftKeyboard())
+---
 
-        onView(withId(R.id.password_input))
-            .perform(typeText("password123"), closeSoftKeyboard())
+## Automation Testing
 
-        onView(withId(R.id.login_button))
-            .perform(click())
+WaveMaker supports automation testing using industry-standard frameworks.
 
-        onView(withText("Welcome back"))
-            .check(matches(isDisplayed()))
-    }
+### Supported Tools
 
-    @Test
-    fun testLoginFailure() {
-        onView(withId(R.id.email_input))
-            .perform(typeText("wrong@example.com"), closeSoftKeyboard())
+- Appium
+- WebDriverIO
+- Mocha
+- TypeScript
+- Allure Reports
 
-        onView(withId(R.id.password_input))
-            .perform(typeText("wrongpass"), closeSoftKeyboard())
+### Automation Workflow
 
-        onView(withId(R.id.login_button))
-            .perform(click())
+1. Create test scripts using JavaScript or TypeScript.
+2. Execute tests locally or using cloud testing platforms.
+3. Integrate automated tests into CI/CD pipelines.
+4. Generate detailed reports with logs and screenshots.
 
-        onView(withText("Invalid credentials"))
-            .check(matches(isDisplayed()))
-    }
-}
-```
+### Visual Regression Testing
 
-## Visual Testing
+- Uses screenshot comparison tools such as Pixel Match.
+- Helps identify unexpected UI changes.
 
-### Screenshotting
-
-**Detox Screenshots:**
-```javascript
-describe('Visual Tests', () => {
-  it('should match homepage screenshot', async () => {
-    await device.takeScreenshot('homepage');
-    await expect(element(by.id('home-screen'))).toBeVisible();
-  });
-});
-```
-
-**Appium Screenshots:**
-```javascript
-it('captures screenshot on failure', async () => {
-  await driver.saveScreenshot('./screenshots/error.png');
-});
-```
-
-### Percy for Mobile
-
-```javascript
-import { percyScreenshot } from '@percy/appium-app';
-
-describe('Visual regression', () => {
-  it('captures product screen', async () => {
-    await percyScreenshot(driver, 'Product Screen');
-  });
-});
-```
-
-## Device Testing
-
-### Real Device Testing
-
-**BrowserStack:**
-```javascript
-// wdio.conf.js
-exports.config = {
-  user: process.env.BROWSERSTACK_USERNAME,
-  key: process.env.BROWSERSTACK_ACCESS_KEY,
-  hostname: 'hub-cloud.browserstack.com',
-  capabilities: [
-    {
-      'bstack:options': {
-        deviceName: 'iPhone 14',
-        osVersion: '16',
-        realMobile: true,
-      },
-    },
-    {
-      'bstack:options': {
-        deviceName: 'Samsung Galaxy S21',
-        osVersion: '11.0',
-        realMobile: true,
-      },
-    },
-  ],
-};
-```
-
-**Sauce Labs:**
-```javascript
-capabilities: [
-  {
-    platformName: 'iOS',
-    'appium:deviceName': 'iPhone 14 Simulator',
-    'appium:platformVersion': '16.0',
-    'sauce:options': {
-      username: process.env.SAUCE_USERNAME,
-      accessKey: process.env.SAUCE_ACCESS_KEY,
-    },
-  },
-];
-```
-
-### Firebase Test Lab
-
-```bash
-# Upload and run tests on Firebase
-gcloud firebase test android run \
-  --type instrumentation \
-  --app app-debug.apk \
-  --test app-debug-test.apk \
-  --device model=Pixel4,version=30,locale=en,orientation=portrait
-```
+---
 
 ## Performance Testing
 
-### React Native Performance Monitor
+Performance testing ensures applications provide smooth user experiences under various conditions.
 
-```javascript
-import { PerformanceObserver, performance } from 'react-native-performance';
+### Key Performance Areas
 
-const observer = new PerformanceObserver((list) => {
-  list.getEntries().forEach((entry) => {
-    console.log('Performance:', entry.name, entry.duration);
-  });
-});
+- Application launch time
+- Screen load and transition performance
+- CPU and memory usage
+- Network request performance
+- Frame rendering stability
+- Detection of memory leaks and dropped frames
 
-observer.observe({ entryTypes: ['measure'] });
+### Performance Tools
 
-// Measure screen render time
-performance.mark('screen-start');
-// ... render screen
-performance.mark('screen-end');
-performance.measure('screen-render', 'screen-start', 'screen-end');
-```
+- BrowserStack performance testing
+- Apptim for CPU, memory, and resource analysis
 
-### Detox Performance Testing
+### Important Metrics
 
-```javascript
-describe('Performance', () => {
-  it('measures screen transition time', async () => {
-    const start = Date.now();
+- Time to Interactive (TTI)
+- Screen rendering time
+- Frame rate stability
+- Resource utilization
 
-    await element(by.id('products-tab')).tap();
-    await waitFor(element(by.id('product-list'))).toBeVisible().withTimeout(5000);
-
-    const duration = Date.now() - start;
-    expect(duration).toBeLessThan(1000); // Should load in under 1 second
-  });
-});
-```
+---
 
 ## Accessibility Testing
 
-### iOS Accessibility Inspector
+Accessibility testing ensures applications are usable by all users, including those using assistive technologies.
 
-```swift
-func testAccessibility() {
-    let button = app.buttons["login-button"]
+### Accessibility Goals
 
-    XCTAssertTrue(button.isAccessibilityElement)
-    XCTAssertEqual(button.accessibilityLabel, "Sign in")
-    XCTAssertEqual(button.accessibilityHint, "Tap to sign in to your account")
-}
-```
+- WCAG compliance validation
+- Screen reader compatibility
+- Logical navigation and focus order
+- Keyboard accessibility support
 
-### Android Accessibility Scanner
+### Accessibility Features in WaveMaker
 
-```kotlin
-@Test
-fun testAccessibility() {
-    val button = onView(withId(R.id.login_button))
+Developers can configure accessibility hints in WaveMaker Studio. These hints provide descriptive guidance for screen readers and improve user experience for visually impaired users.
 
-    button.check(matches(isClickable()))
-    button.check(matches(hasContentDescription()))
-}
-```
+---
 
-## Testing Best Practices
+## Device Compatibility Testing
 
-### 1. Use Page Object Pattern
+Device compatibility testing ensures applications function consistently across different hardware and software environments.
 
-```javascript
-// pages/LoginScreen.js
-class LoginScreen {
-  get emailInput() {
-    return element(by.id('email-input'));
-  }
+### Testing Objectives
 
-  get passwordInput() {
-    return element(by.id('password-input'));
-  }
+- Validate UI layout across various screen sizes
+- Verify behavior on phones and tablets
+- Test across multiple Android and iOS versions
+- Detect platform-specific functionality issues
 
-  get loginButton() {
-    return element(by.id('login-button'));
-  }
+### Testing Methods
 
-  get errorMessage() {
-    return element(by.id('error-message'));
-  }
+- Testing on real devices
+- Using cloud platforms like BrowserStack
+- Testing across different OS versions and resolutions
 
-  async login(email, password) {
-    await this.emailInput.typeText(email);
-    await this.passwordInput.typeText(password);
-    await this.loginButton.tap();
-  }
+---
 
-  async isVisible() {
-    await expect(this.emailInput).toBeVisible();
-  }
-}
+## Summary
 
-export default new LoginScreen();
+WaveMaker’s React Native testing framework provides comprehensive support for:
 
-// Usage in test
-import LoginScreen from './pages/LoginScreen';
+- Manual and automated testing
+- Visual regression validation
+- Performance optimization
+- Accessibility compliance
+- Cross-device compatibility
 
-describe('Login', () => {
-  it('should login successfully', async () => {
-    await LoginScreen.isVisible();
-    await LoginScreen.login('user@example.com', 'password123');
-    await expect(element(by.text('Welcome'))).toBeVisible();
-  });
-});
-```
+By combining these testing strategies and tools, developers can build reliable, scalable, and user-friendly mobile applications.
 
-### 2. Handle Platform Differences
-
-```javascript
-const isIOS = device.getPlatform() === 'ios';
-const isAndroid = device.getPlatform() === 'android';
-
-describe('Platform-specific tests', () => {
-  it('handles back button', async () => {
-    if (isAndroid) {
-      await device.pressBack();
-    } else {
-      await element(by.id('back-button')).tap();
-    }
-  });
-});
-```
-
-### 3. Wait for Elements
-
-```javascript
-// ✅ Good - Wait for element
-await waitFor(element(by.id('loading-spinner')))
-  .not.toBeVisible()
-  .withTimeout(5000);
-
-await waitFor(element(by.id('product-list')))
-  .toBeVisible()
-  .withTimeout(10000);
-
-// ❌ Bad - Hardcoded delays
-await new Promise(resolve => setTimeout(resolve, 3000));
-```
-
-### 4. Clean State Between Tests
-
-```javascript
-beforeEach(async () => {
-  await device.reloadReactNative();
-  // or
-  await device.launchApp({ newInstance: true });
-});
-
-afterEach(async () => {
-  await device.clearKeychain(); // iOS
-  await device.uninstallApp(); // Clean install for next test
-});
-```
-
-### 5. Test on Multiple Devices
-
-```javascript
-const devices = [
-  { name: 'iPhone 14', type: 'iPhone 14' },
-  { name: 'iPhone SE', type: 'iPhone SE (3rd generation)' },
-  { name: 'iPad Pro', type: 'iPad Pro (12.9-inch)' },
-];
-
-devices.forEach(({ name, type }) => {
-  describe(`Tests on ${name}`, () => {
-    beforeAll(async () => {
-      await device.selectDevice(type);
-    });
-
-    it('should display correctly', async () => {
-      // Test implementation
-    });
-  });
-});
-```
-
-## Debugging Mobile Tests
-
-### Detox Debugging
-
-```bash
-# Run with debug logs
-detox test --loglevel trace
-
-# Take screenshot on failure
-detox test --take-screenshots failing
-
-# Record video
-detox test --record-videos failing
-```
-
-### Appium Inspector
-
-```bash
-# Launch Appium Inspector
-appium-inspector
-```
-
-### React Native Debugger
-
-```javascript
-// Enable debugging
-import { NativeModules } from 'react-native';
-
-if (__DEV__) {
-  NativeModules.DevSettings.setIsDebuggingRemotely(true);
-}
-```
-
-## Continuous Integration
-
-```yaml
-# .github/workflows/mobile-tests.yml
-name: Mobile Tests
-
-on: [push, pull_request]
-
-jobs:
-  ios:
-    runs-on: macos-latest
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Install dependencies
-        run: |
-          npm install
-          cd ios && pod install
-
-      - name: Build app
-        run: detox build --configuration ios.sim.release
-
-      - name: Run tests
-        run: detox test --configuration ios.sim.release --cleanup
-
-      - name: Upload screenshots
-        if: failure()
-        uses: actions/upload-artifact@v2
-        with:
-          name: ios-screenshots
-          path: artifacts/
-
-  android:
-    runs-on: macos-latest
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Setup Java
-        uses: actions/setup-java@v2
-        with:
-          distribution: 'zulu'
-          java-version: '11'
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build app
-        run: detox build --configuration android.emu.release
-
-      - name: Run tests
-        uses: reactivecircus/android-emulator-runner@v2
-        with:
-          api-level: 30
-          script: detox test --configuration android.emu.release
-
-      - name: Upload artifacts
-        if: failure()
-        uses: actions/upload-artifact@v2
-        with:
-          name: android-artifacts
-          path: artifacts/
-```
-
-## Test Organization
-
-```
-e2e/
-├── specs/
-│   ├── login.spec.js
-│   ├── products.spec.js
-│   └── checkout.spec.js
-├── pages/
-│   ├── LoginScreen.js
-│   ├── ProductsScreen.js
-│   └── CheckoutScreen.js
-├── helpers/
-│   ├── gestures.js
-│   ├── navigation.js
-│   └── data.js
-└── config/
-    ├── detox.config.js
-    └── jest.config.js
-```
-
-## Related Documentation
-
-- [UI Testing Web](./ui-testing-web.md)
-- [Web & Mobile](../unit-testing/web-and-mobile.md)
-- [Debugging Overview](../debugging-overview.md) – All debugging tools and methods
-- [React Native DevTools](../community-debugging-tools/react-native-devtools.md) – Official debugging for Expo 52+
-- [Expo Dev Tools](../community-debugging-tools/expo-dev-tools.md) – Built-in Expo CLI tools
+---
