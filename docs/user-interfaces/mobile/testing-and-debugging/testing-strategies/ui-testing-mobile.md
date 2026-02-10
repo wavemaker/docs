@@ -2,17 +2,14 @@
 last_update: { author: "Priyanka Bhadri" }
 ---
 
-# React Native Testing in WaveMaker
+# React Native Testing
 
 Testing is a critical part of building high-quality mobile applications using WaveMaker’s React Native platform. A strong testing strategy ensures applications function correctly, perform efficiently, and provide consistent user experiences across devices and platforms.
 
----
-
-## Testing Overview
 
 WaveMaker supports multiple testing approaches to validate application quality, functionality, usability, and performance.
 
-### Types of Testing
+## Types of Testing
 
 - **Manual Testing**
   - Validates workflows, UI behavior, and real user interactions.

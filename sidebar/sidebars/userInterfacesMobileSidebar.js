@@ -227,7 +227,7 @@ export default [
           },
           {
             type: 'doc',
-            id: 'user-interfaces/mobile/testing-and-debugging/testing-strategies/ui-testing-web',
+            id: 'user-interfaces/mobile/testing-and-debugging/testing-strategies/automate-testing',
           },
         ],
       },
