@@ -30,7 +30,7 @@ BFF or Experience APIs solves the following problems:
 - Security risks or token exposure
 
 ### Create Mock APIs from Open API
-Create Mock APIs from Open API Spec to de-couple frontend development from backend instability challenges, especially during early development phase. Frontend developers can build mock APIs, if the Open API spec is available. They can also generate mock data automatically as part of the mock API creation process.
+Create Mock APIs from Open API Spec to de-couple frontend development from backend instability challenges, especially during early development phase. Frontend developers can build mock APIs, if the Open API spec is available and generate mock data automatically.
 
 ### Auto generate Database APIs
 Generate Database CRUD APIs by importing Schema (RDBMS) and WaveMaker generates the ORM persistence layer automatically. Developers can write SQL or HQL (Hibernate Query Language) queries and get their corresponding APIs generated. Platform provides additional APIs for search, filtering and exporting data.

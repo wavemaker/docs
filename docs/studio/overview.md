@@ -2,7 +2,7 @@
 last_update: { author: "Author Name" }
 ---
 
-# Overview
+# Platform Overview
 
 WaveMaker platform offers acceleration for web and mobile application development teams focused in building highly customized, scalable and secure app solutions.
 
@@ -31,13 +31,13 @@ WaveMaker uses a highly sophisticated 2-pass generation technique to make AI con
 
 ## 2. Developer Agents for App Generation
 AI Agents provide accelerated developer workflows with significant skill reduction, without needing developers to deal with nuances of the underlying UI framework, architecture or LLMs. Using simple textual prompts, developers build web and mobile app capabilities:
-- Generate pages, designs from screenshot, Figma design file & text
+- Generate pages by converting designs from Figma design file, screenshot and text prompt
 - Generate layouts, components, pages, backend-for-frontend APIs
 - Bind UI components to APIs, & generate UI event handling logic
-- Add form, wizard validations
-- Configure security, RBAC
-- Implement i18n, message bundles
-- Implement custom APIs
+- Add Wizard & Form field-level validations
+- Configure Single sign-on, API tokens & RBAC support
+- Implement i18n, message bundles & translation
+- Implement BFF APIs and microservices
 - Javascript & Java code completion
 
 WaveMaker platform provides a flexible agent framework, to create custom agents for specialized dev tasks which are specific to organization, use cases and business scenarios.
