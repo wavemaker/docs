@@ -1,651 +1,251 @@
 ---
-last_update: { author: "Author Name" }
+last_update: { author: "Shahnawaz" }
 ---
 
 # Style Workspace
+Modern applications rely heavily on consistency in design. Colors, typography, spacing, and component behavior must work together to deliver a cohesive user experience. WaveMaker addresses this need through the Style Workspace, a centralized environment for configuring and managing application styling.
 
-Centralized workspace for managing application themes, styles, and CSS customization.
+The Style Workspace acts as a visual control panel for customizing and managing an application's design, allowing developers to preview changes in real time and maintain brand consistency across UI components.The Style Workspace in WaveMaker is designed around the principles of design systems, which provide a modern, reusable, and scalable foundation for building user interfaces. These systems ensure that application's look and feel remains consistent and easy to maintain.
 
-## Overview
+In WaveMaker, the Style Workspace brings together key styling aspects such as:
 
-The Style Workspace provides a comprehensive environment for customizing the visual appearance of your application. It allows you to create themes, manage CSS, configure variables, and ensure consistent styling across your entire application.
+    - Colors and themes
 
-## Style Workspace Interface
+    - Typography and text styles
+
+    - Spacing and sizing
+
+    - Component appearance and variants
+
+    These elements work together to define the visual language of an application.
+
+
+
+## Global and Component Tokens
+
+**Global tokens** define application-wide styles such as primary colors, fonts, borders, and shadows, while **Component tokens** control styling for specific UI elements like buttons, data tables, and panels and so on.
+
+1. **Token Groups**
+
+    Styling options are categorized into four main token groups:
+
+        - Color
+
+        - Size
+
+        - Text
+
+        - Style
+
+        Each group contains configurable values called token key value pairs.
+
+
+
+2. **Real-Time Preview**
+
+    A preview panel displays a sample page with common UI components, allowing users to see the effect of style changes immediately. 
+
+3. Component Token groups UI provides a Variant properties panel where Variants can be modified for each Components with a real time preview of the changes in the preview panal.
+
+For a detailed understanding of the workspace, including navigation, token configuration, and the creation of component variants, watch the **full walkthrough video** below.
+
+<AcademyCard
+  title="Style Workspace"
+  
+  academyLink="https://academy.wavemaker.ai/Walkthrough?wm=35C3B44F67"
+>
+
+
+  <>
+  <div style={{ position: "relative", paddingBottom: "56.25%" }}>
+    <iframe
+      style={{
+        width: "100%",
+        height: "100%",
+        position: "absolute",
+        left: 0,
+        top: 0,
+        borderRadius: 10
+      }}
+      src="https://embed.app.guidde.com/playbooks/k2CwS9zWzZx4eUediRG8TL?mode=videoOnly"
+      title="Style Workspace"
+      frameBorder={0}
+      referrerPolicy="unsafe-url"
+      allowFullScreen="true"
+      allow="clipboard-write"
+      sandbox="allow-popups allow-popups-to-escape-sandbox allow-scripts allow-forms allow-same-origin allow-presentation"
+    />
+  </div>
+  <div style={{ display: "none" }}>
+    <p>00:00: Welcome to the WaveMaker Style Workspace.</p>
+ <p>00:02: In this video, we walk through the Style workspace and show how applications achieve a consistent look and feel using an easy-to-use style configurator.</p>
+ <p>00:13: You may already be familiar with design systems,a modern, reusable, and scalable UI foundation that ensures applications remain consistent, accessible, and quick to build. WaveMaker’s design philosophy is built on the same principles</p>
+ <p>00:29: Let's see where text styles spacing colors, and themes are defined and how they come together in the overall styling workflow.</p>
+ <p>00:38: Let us go straight to the style workspace of wave maker.</p>
+ <p>00:42: The style workspace can be accessed by clicking on this dial icon in the left navigation strip.</p>
+ <p>00:48: The style workspace in wavemaker, studio is your visual control panel for customizing and managing your applications design?</p>
+ <p>00:56: It helps maintain brand consistency across all UI components while allowing you to preview changes in real time and modified design tokens.</p>
+ <p>01:05: So, let's quickly see what this UI has to offer.</p>
+ <p>01:08: On the left, we have the settings and configurators and on the main Central section we have a demo preview.</p>
+ <p>01:15: We will gradually go to towards more intricate details.</p>
+ <p>01:18: At the top we have Global and components panel tabs.</p>
+ <p>01:22: At launch Global is pre-selected and besides these two tabs is another set of tabs for chosen between light and dark modes.</p>
+ <p>01:30: By default light mode is selected.</p>
+ <p>01:33: In global token Styles that are in general part of the application like primary secondary Colors of links and button.</p>
+ <p>01:40: default font size of paragraphs headings subheadings typography related styles</p>
+ <p>01:47: like borders shadow type border radius, etc.</p>
+ <p>01:51: We will go into more details about what these two sets of tokens are for.</p>
+ <p>01:56: In the center Stage is the preview area that provides a real-time preview of all style configurations done on the global and component level styles.</p>
+ <p>02:05: To help with the preview a typical page is chosen with components like left nav menu button data table, etc. This demo page gives a fair idea of what your page would look like with your modifications.</p>
+ <p>02:19: Just below the Panel Tabs is the Token Groups, tab area.</p>
+ <p>02:22: There are 4 token groups for each Global and Component tokens. And they are Color, size, Text, and Style.</p>
+ <p>02:30: Let us go one by one.</p>
+ <p>02:32: You must be familiar with design systems in design systems. We have Colors defined as primary secondary tertiary, etc.</p>
+ <p>02:40: In wave makers color token groups for global tokens. We have 10 Colors defined in tokens and under each of these tokens are also a couple of derived tokens defined.</p>
+ <p>02:52: A user can choose the defined color or any of the derived tokens or even edit one of these tokens to choose their own colors.</p>
+ <p>03:00: Let us see how to edit a token. We go to any of the tokens, like primary, secondary etc. or we can also choose any of the derived token.</p>
+ <p>03:09: Once decided click on the value.</p>
+ <p>03:12: Since this is a color token I see a color picker. I can give my own hex code, or choose any color from the color picker or preset colors.</p>
+ <p>03:21: I am choosing a color from the preset color of the color picker. Click outside to accept the color.</p>
+ <p>03:27: What we get to see here is that, the primary color got changed to the teal color I chose.</p>
+ <p>03:33: And the orange button on the preview area got changed to this new primary color.</p>
+ <p>03:37: And the derived color tokens under primary color got changed to different hues derived from the primary color.</p>
+ <p>03:43: "Before saving the change, you can preview it.</p>
+ <p>03:46: As shown here, the fixed token Primary in the Colors token group is now assigned this new color.</p>
+ <p>03:52: You can now save this change.</p>
+ <p>03:54: Once saved, this defined color will be applied wherever the primary class is used across the application.</p>
+ <p>04:01: Now let us move on to the next token group called size.</p>
+ <p>04:05: We see by default the spacing tokens are selected.</p>
+ <p>04:08: There is a base token and bunch of derived tokens.</p>
+ <p>04:12: The derived tokens and named as numbers from 0 to 12 and each has a sending order of values in pixel unit.</p>
+ <p>04:18: Let us see what other tokens are contained in this token group.</p>
+ <p>04:22: So, there are two others, Icons and Border</p>
+ <p>04:37: We edit the icon size by sliding the provided slider.</p>
+ <p>04:43: Notice the icons at the right side of the header and the plus icon of the primary button.</p>
+ <p>04:49: On setting the slider to 52px for the base size, the icons grew bigger to that size. And also worth noting are the derived tokens, they also adjusted proportionally to the base size.</p>
+ <p>05:01: Now let's go to the border size tokens. These also have a base size slider. And couple of derived sizes.</p>
+ <p>05:08: As we slide the slider, keep your eyes on the preview Area.</p>
+ <p>05:15: The vertical line separating the left navigation from the rest of the page, and also the lines under the rows of the table are changing based on the value set by the slider.</p>
+ <p>05:26: The derived token values have also changed accordingly</p>
+ <p>05:29: Now let us move to the next token group, Text.</p>
+ <p>05:32: The first token is font-weight, and as expected it has the various numbers as token, like the lower numbers like 100, 200 for lighter font weight, 400, 500 for medium font weight and so on.</p>
+ <p>05:45: Now let's look at all the other tokens provided in the Text Group. The top to are related to font. Font-weight and Font-Family.</p>
+ <p>05:53: The next three are for Body text styling. And they are named as Body.large, body.medium and body.small.</p>
+ <p>06:00: The next 6 are for Heading text. From H1 to H6.</p>
+ <p>06:05: The next one is for Paragraph text.</p>
+ <p>06:08: This one is for various sized labels like, large, medium, and small.</p>
+ <p>06:12: And at last we have something called Display.</p>
+ <p>06:15: These three sized display texts tokens are to be used for very large size text that are often seen in banners or poster</p>
+ <p>06:23: Let's see how we configure font family.</p>
+ <p>06:27: There are three options that we can set. Brand, this is where we define the main Font-family, the other two are plain, and back-up.</p>
+ <p>06:35: We get five derived tokens to set up the three sizes of body text. The three sizes are categorized as large medium and small.</p>
+ <p>06:44: And the set of derived tokens provided in each category are font family font weight font size line height letter spacing.</p>
+ <p>06:53: Similarly for all other text token categories like paragraph the six types of headings labels and display text we get the same set of five derived tokens.</p>
+ <p>07:04: The values of these derived tokens are set according to the usage mostly the font size is the defining token.</p>
+ <p>07:13: Now let us explore the style token group here properties like shadow radius of curvature of corner of rectangular components opacity on colors in various. States and border styles are configured.</p>
+ <p>07:25: By default the selected property is border radius.</p>
+ <p>07:29: Adjusting the bass border radius is with the help of a slider.</p>
+ <p>07:33: And there are various sized names created for various sizes presented as derived token.</p>
+ <p>07:39: After border-radius is elevation.</p>
+ <p>07:42: In elevation there are certain border-shadow provions to address the 3 dimensional aspect of a rectangular area.</p>
+ <p>07:48: The options are None, and five variations of shadows.</p>
+ <p>07:52: Opacity decides the opacity of the color in various states like, active, hover, and focus.</p>
+ <p>07:58: and last of all is border Style</p>
+ <p>08:00: these are around 10 possible values for CSS border style like solid hidden dotted and none.</p>
+ <p>08:07: This desires if an area or components has border then what should be the style of the border.</p>
+ <p>08:14: So that was all about Global token groups.</p>
+ <p>08:17: Now it's time to move on to the next token group. That is component token groups.</p>
+ <p>08:21: Component Tokens group is about the styling of 50 plus tokens, available in the WaveMaker Library of components.</p>
+ <p>08:28: To name a few, are, Buttons, anchors, containers, Data tables, Lists, Cards and so on.</p>
+ <p>08:37: In this section we shall pick three components to explore the styling options</p>
+ <p>08:42: We accessed this Token group by selecting the Components tab</p>
+ <p>08:46: On the left hand side we see the entire list of Components, more than 50 of them.</p>
+ <p>08:51: At the center of the UI is the preview of the selected component</p>
+ <p>08:55: At the right of the workspace is the Properties panel.</p>
+ <p>08:58: Where we start of by selecting a variant and it's state.</p>
+ <p>09:27: Next let us check on Accordion. This also has four variants but only one appearance, that is, defau.</p>
+ <p>09:39: After accordion, let's move to breadcrumb this provides a trail of navigation.</p>
+ <p>09:45: Breadcrumbs have three variants and three types. It's variants are classic attribute-based and path-based and the three types are arrow classic one and Classic 2.</p>
+ <p>09:58: next let us check out a very important data component called data table</p>
+ <p>10:03: This is wave makers, tabular grid display.</p>
+ <p>10:06: This has four appearances default condensed striped even and striped odd.</p>
+ <p>10:12: And each of this appearances are provided with one variant called standard.</p>
+ <p>10:20: Ok, one last component that we are checking out is Panel.</p>
+ <p>10:25: This is a display frame with a title, content section and a footer.</p>
+ <p>10:29: This has four variants of only one appearance, called default.</p>
+ <p>10:34: The 4 variants are, default, Primary, Secondary, and tertiary.</p>
+ <p>10:38: let us go back to buttons and get the experience of exploring the variants and how to edit them.</p>
+ <p>10:44: After selecting buttons in the component list in the left we shift our focus to the right of the screen. And expand the Variant dropdown.</p>
+ <p>10:53: we see a grouped list of appearance and their variants.</p>
+ <p>10:56: You can see their are four appearances, namely, Filled, Outlined, Text, and Transparent.</p>
+ <p>11:03: Each of these have four variants each except transparent which has only one called standard. Let us select any one variant.</p>
+ <p>11:10: I am selecting default variant of Filled appearance.</p>
+ <p>11:14: The preview of only that variant shows up in the preview area along with the Appearance name and Variant name</p>
+ <p>11:20: Based on the selected variant all the associated tokens. Key value is shown up.</p>
+ <p>11:25: In this case, there is a select drop-down for state that is default hover Focus active and disabled.</p>
+ <p>11:33: Whenever we select a state the respective tokens key value pairs shown.</p>
+ <p>11:38: The tokens are in four groups color size text and style.</p>
+ <p>11:43: In color, tokens like background color text and icon color border color is seen.</p>
+ <p>11:50: In size tokens we see Gap sizes that is sized between icon and text button height icon size min-width and padding in text tokens font family font size font weight line height and let a space in a provided.</p>
+ <p>12:07: And under style tokens border style border with cursor radius shadow opacity for states and text transform a listed.</p>
+ <p>12:17: Let's try to edit an existing variant. I am selecting the filled default variant. It shows me tokens available for edit.</p>
+ <p>12:24: I can select one of the state of the Variant, that I want to edit. I am choosing default here.</p>
+ <p>12:28: Let me choose a couple of tokens and show how they can be modified.</p>
+ <p>12:32: At first, I am trying to choose a background color for the button.</p>
+ <p>12:36: I selected the error color from Global color tokens.</p>
+ <p>12:40: Choosing a border color for the button from the color picker.</p>
+ <p>12:50: I am choosing a color for the label of the bu</p>
+ <p>12:53: In the style group of tokens, I am setting the border size to 2 pixels</p>
+ <p>13:00: And when I am done with all the changes, it is time to save the variant changes.</p>
+ <p>13:05: And so, now, the filled default variant has this new look and feel.</p>
+ <p>13:11: And in my application whenever I choose to use this Button variant, it will look like this everytime</p>
+ <p>13:16: Sometimes, we might find ourselves in a situation where we want a component styled in such a way that it is not possible with the all the tokens provided for that component.</p>
+ <p>13:26: In such cases we have the option to design our own variant.</p>
+ <p>13:30: For that we use the Add Variant feature provided in the Style workspace.</p>
+ <p>13:35: Name your variant in the field provided</p>
+ <p>13:39: Choose the variant to base your custom variant on.</p>
+ <p>13:41: Your custom variable gets created. And it's now ready to be modified and designed</p>
+ <p>13:46: Select the state for which you are doing the modifications</p>
+ <p>13:49: Let's start modifying the token values. To start with I am modifying the value of the Background color token.</p>
+ <p>13:56: Changing border color.</p>
+ <p>13:58: triggering the color pick</p>
+ <p>14:00: locking on the color.</p>
+ <p>14:02: And now lets save the modifications to our custom button variant, that we named "My Custom Button".</p>
+ <p>14:11: So now, in the variant select dropdown we can see the newly created variant as an option</p>
+ <p>14:17: and also when we choose the modified variant, that is the, "filled default", button variant, the preview reflects the new variants look and feel</p>
+ <p>14:26: Ok, so let's explore what are the posibilities with a data table.</p>
+ <p>14:30: We will create a variant to experience the designing.</p>
+ <p>14:36: Naming my Data table variant, Compact Table.</p>
+ <p>14:42: Let's choose a base Variant.</p>
+ <p>14:43: Selecting Condensed standard as the foundation.</p>
+ <p>14:46: Compact Table variant created successfully.</p>
+ <p>14:49: Selecting a cell border color from the available tokens.</p>
+ <p>14:53: I want the even rows to be shaded, so selecting row background even color.</p>
+ <p>14:59: Selecting a more prominent header border color.</p>
+ <p>15:05: I want my rows to be a bit more spacious than the condense table.</p>
+ <p>15:08: So increasing the cell padding.</p>
+ <p>15:10: Let's save the changes to our custom table variant called Compact table.</p>
+ <p>15:14: Now if we expand the Variant selector we see our new custom Data Table variant, called Compact tab</p>
+ <p>15:21: The base variant looked like this.</p>
+ <p>15:23: We chose this variant because we wanted a condensed table but not to condensed.</p>
+ <p>15:28: So this new custom variant is bit more spacious than the condensed table but not too spacious as the default standard table.</p>
+ <p>15:35: Before we end this video on style workspace one last component, Panel.</p>
+ <p>15:40: This is a framing UI component, with a heading title a subheading, A content area, and a footer.</p>
+ <p>15:47: Let's see what variants and tokens are available for design.</p>
+ <p>15:50: let's start with creating a new Variant.</p>
+ <p>15:53: Naming my custom Panel variant</p>
+ <p>15:57: Selecting a base variant.</p>
+ <p>16:05: New variant is created.</p>
+ <p>16:07: Now let's proceed to token modification.</p>
+ <p>16:10: Want to change the header background color to a light teal color.</p>
+ <p>16:14: Choosing an existing token value.</p>
+ <p>16:16: And the new color is showing up instead of the previous Mauve color</p>
+ <p>16:20: Wanted a bolder heading title, hence choosing the Error color to</p>
+ <p>16:24: The heading font-size is too big, choosing a smaller font-size token</p>
+ <p>16:33: I wanted the footer and content seperator line to be dashed. So changing the border style of footer to dashed. And now at last I'll save these modifications.</p>
+</div>
+</>
+
+
+  </AcademyCard>
 
-### Main Components
-
-#### Theme Manager
-
-- Theme selection
-- Theme customization
-- Theme export/import
-- Theme versioning
-
-#### CSS Editor
-
-- Custom CSS editor
-- Syntax highlighting
-- Auto-completion
-- CSS validation
-
-#### Color Palette
-
-- Primary colors
-- Secondary colors
-- Accent colors
-- Semantic colors
-
-#### Typography
-
-- Font families
-- Font sizes
-- Font weights
-- Line heights
-
-#### Component Styles
-
-- Widget-specific styles
-- Global component themes
-- State-based styles
-
-## Themes
-
-### Built-in Themes
-
-#### Available Themes
-
-- **Material Design** - Google's Material Design
-- **Bootstrap** - Twitter Bootstrap styles
-- **Flat** - Minimalist flat design
-- **Corporate** - Professional business theme
-- **Modern** - Contemporary design
-- **Classic** - Traditional layouts
-
-### Theme Selection
-
-1. Navigate to Style Workspace
-2. Click "Theme" dropdown
-3. Select desired theme
-4. Preview changes in real-time
-5. Apply to application
-
-### Theme Customization
-
-#### Color Scheme
-
-```css
-/* Primary Colors */
---primary-color: #007bff;
---primary-dark: #0056b3;
---primary-light: #4da3ff;
-
-/* Secondary Colors */
---secondary-color: #6c757d;
---secondary-dark: #545b62;
---secondary-light: #a8aeb4;
-
-/* Accent Colors */
---accent-color: #28a745;
---warning-color: #ffc107;
---danger-color: #dc3545;
---info-color: #17a2b8;
-```
-
-#### Typography Settings
-
-```css
-/* Font Families */
---font-family-base: 'Roboto', sans-serif;
---font-family-heading: 'Montserrat', sans-serif;
---font-family-code: 'Courier New', monospace;
-
-/* Font Sizes */
---font-size-base: 14px;
---font-size-sm: 12px;
---font-size-lg: 16px;
---font-size-xl: 20px;
-
-/* Font Weights */
---font-weight-light: 300;
---font-weight-normal: 400;
---font-weight-bold: 700;
-```
-
-#### Spacing
-
-```css
-/* Spacing Scale */
---spacing-xs: 4px;
---spacing-sm: 8px;
---spacing-md: 16px;
---spacing-lg: 24px;
---spacing-xl: 32px;
-```
-
-## CSS Variables
-
-### Defining Variables
-
-#### Global Variables
-
-```css
-:root {
-  /* Brand Colors */
-  --brand-primary: #2c3e50;
-  --brand-secondary: #3498db;
-
-  /* Layout */
-  --content-width: 1200px;
-  --sidebar-width: 250px;
-
-  /* Borders */
-  --border-radius: 4px;
-  --border-width: 1px;
-  --border-color: #dee2e6;
-
-  /* Shadows */
-  --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
-  --shadow-md: 0 4px 8px rgba(0,0,0,0.15);
-  --shadow-lg: 0 8px 16px rgba(0,0,0,0.2);
-}
-```
-
-#### Using Variables
-
-```css
-.custom-button {
-  background-color: var(--brand-primary);
-  color: white;
-  padding: var(--spacing-md);
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow-sm);
-}
-
-.custom-button:hover {
-  background-color: var(--brand-secondary);
-  box-shadow: var(--shadow-md);
-}
-```
-
-## Custom CSS
-
-### Application-Level CSS
-
-#### app.css
-
-```css
-/* Global Styles */
-body {
-  font-family: var(--font-family-base);
-  font-size: var(--font-size-base);
-  color: #333;
-  line-height: 1.5;
-}
-
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-family-heading);
-  font-weight: var(--font-weight-bold);
-  margin-bottom: var(--spacing-md);
-}
-
-/* Links */
-a {
-  color: var(--brand-primary);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: var(--brand-secondary);
-  text-decoration: underline;
-}
-
-/* Containers */
-.app-container {
-  max-width: var(--content-width);
-  margin: 0 auto;
-  padding: var(--spacing-lg);
-}
-```
-
-### Page-Level CSS
-
-#### page.css
-
-```css
-/* Login Page Styles */
-.login-page {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.login-card {
-  background: white;
-  border-radius: 8px;
-  padding: 40px;
-  box-shadow: var(--shadow-lg);
-  width: 100%;
-  max-width: 400px;
-}
-
-/* Dashboard Styles */
-.dashboard-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: var(--spacing-lg);
-  padding: var(--spacing-lg);
-}
-
-.dashboard-card {
-  background: white;
-  border-radius: var(--border-radius);
-  padding: var(--spacing-lg);
-  box-shadow: var(--shadow-sm);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.dashboard-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
-}
-```
-
-### Widget-Level CSS
-
-#### Custom Widget Styles
-
-```css
-/* Custom Button */
-.custom-btn {
-  padding: 12px 24px;
-  border: none;
-  border-radius: var(--border-radius);
-  font-weight: var(--font-weight-bold);
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.custom-btn-primary {
-  background-color: var(--brand-primary);
-  color: white;
-}
-
-.custom-btn-primary:hover {
-  background-color: var(--brand-secondary);
-  transform: scale(1.05);
-}
-
-/* Custom Table */
-.custom-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: var(--spacing-lg) 0;
-}
-
-.custom-table th {
-  background-color: var(--brand-primary);
-  color: white;
-  padding: var(--spacing-md);
-  text-align: left;
-  font-weight: var(--font-weight-bold);
-}
-
-.custom-table td {
-  padding: var(--spacing-md);
-  border-bottom: 1px solid var(--border-color);
-}
-
-.custom-table tr:hover {
-  background-color: #f8f9fa;
-}
-```
-
-## Responsive Styles
-
-### Media Queries
-
-#### Mobile-First Approach
-
-```css
-/* Mobile (default) */
-.content-grid {
-  grid-template-columns: 1fr;
-  gap: var(--spacing-md);
-}
-
-/* Tablet */
-@media (min-width: 768px) {
-  .content-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-lg);
-  }
-}
-
-/* Desktop */
-@media (min-width: 1200px) {
-  .content-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing-xl);
-  }
-}
-```
-
-#### Responsive Typography
-
-```css
-/* Base size */
-body {
-  font-size: 14px;
-}
-
-/* Tablet */
-@media (min-width: 768px) {
-  body {
-    font-size: 15px;
-  }
-}
-
-/* Desktop */
-@media (min-width: 1200px) {
-  body {
-    font-size: 16px;
-  }
-}
-```
-
-## Component Styling
-
-### Button Styles
-
-```css
-/* Base Button */
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: var(--font-size-base);
-  font-weight: var(--font-weight-normal);
-  text-align: center;
-  border: 1px solid transparent;
-  border-radius: var(--border-radius);
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-/* Button Variants */
-.btn-primary {
-  background-color: var(--brand-primary);
-  color: white;
-}
-
-.btn-secondary {
-  background-color: var(--brand-secondary);
-  color: white;
-}
-
-.btn-outline {
-  background-color: transparent;
-  border-color: var(--brand-primary);
-  color: var(--brand-primary);
-}
-
-/* Button Sizes */
-.btn-sm {
-  padding: 6px 12px;
-  font-size: var(--font-size-sm);
-}
-
-.btn-lg {
-  padding: 14px 28px;
-  font-size: var(--font-size-lg);
-}
-
-/* Button States */
-.btn:hover {
-  opacity: 0.9;
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
-}
-
-.btn:active {
-  transform: translateY(0);
-}
-
-.btn:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-```
-
-### Form Styles
-
-```css
-/* Form Controls */
-.form-control {
-  width: 100%;
-  padding: var(--spacing-sm) var(--spacing-md);
-  font-size: var(--font-size-base);
-  border: var(--border-width) solid var(--border-color);
-  border-radius: var(--border-radius);
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.form-control:focus {
-  outline: none;
-  border-color: var(--brand-primary);
-  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
-}
-
-.form-control.error {
-  border-color: var(--danger-color);
-}
-
-/* Labels */
-.form-label {
-  display: block;
-  margin-bottom: var(--spacing-xs);
-  font-weight: var(--font-weight-bold);
-  color: #555;
-}
-
-/* Error Messages */
-.form-error {
-  color: var(--danger-color);
-  font-size: var(--font-size-sm);
-  margin-top: var(--spacing-xs);
-}
-```
-
-### Card Styles
-
-```css
-/* Card Container */
-.card {
-  background: white;
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow-sm);
-  overflow: hidden;
-  transition: box-shadow 0.3s ease;
-}
-
-.card:hover {
-  box-shadow: var(--shadow-md);
-}
-
-/* Card Header */
-.card-header {
-  padding: var(--spacing-md) var(--spacing-lg);
-  background-color: #f8f9fa;
-  border-bottom: var(--border-width) solid var(--border-color);
-  font-weight: var(--font-weight-bold);
-}
-
-/* Card Body */
-.card-body {
-  padding: var(--spacing-lg);
-}
-
-/* Card Footer */
-.card-footer {
-  padding: var(--spacing-md) var(--spacing-lg);
-  background-color: #f8f9fa;
-  border-top: var(--border-width) solid var(--border-color);
-}
-```
-
-## Animations and Transitions
-
-### CSS Animations
-
-```css
-/* Fade In */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.fade-in {
-  animation: fadeIn 0.5s ease-in;
-}
-
-/* Slide In */
-@keyframes slideIn {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-.slide-in {
-  animation: slideIn 0.3s ease-out;
-}
-
-/* Pulse */
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-}
-
-.pulse {
-  animation: pulse 2s infinite;
-}
-```
-
-### Transitions
-
-```css
-/* Smooth Transitions */
-.smooth-transition {
-  transition: all 0.3s ease;
-}
-
-/* Hover Effects */
-.hover-scale:hover {
-  transform: scale(1.1);
-}
-
-.hover-shadow:hover {
-  box-shadow: var(--shadow-lg);
-}
-
-.hover-bright:hover {
-  filter: brightness(1.1);
-}
-```
-
-## Dark Mode
-
-### Dark Mode Variables
-
-```css
-:root {
-  --bg-primary: #ffffff;
-  --bg-secondary: #f8f9fa;
-  --text-primary: #212529;
-  --text-secondary: #6c757d;
-}
-
-[data-theme="dark"] {
-  --bg-primary: #1a1a1a;
-  --bg-secondary: #2d2d2d;
-  --text-primary: #ffffff;
-  --text-secondary: #b0b0b0;
-}
-
-body {
-  background-color: var(--bg-primary);
-  color: var(--text-primary);
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-```
-
-## Best Practices
-
-### CSS Organization
-
-1. **Use consistent naming** conventions (BEM, SMACSS)
-2. **Group related styles** together
-3. **Comment complex styles**
-4. **Avoid !important** when possible
-5. **Use CSS variables** for consistency
-
-### Performance
-
-1. **Minimize CSS file size**
-2. **Combine selectors** when possible
-3. **Avoid complex selectors**
-4. **Use CSS containment**
-5. **Optimize animations**
-
-### Maintainability
-
-1. **Follow style guide**
-2. **Document custom styles**
-3. **Version control themes**
-4. **Test across browsers**
-5. **Keep specificity low**
-
-## Troubleshooting
-
-### Common Issues
-
-**Styles Not Applying**
-
-- Check CSS selector specificity
-- Verify class names
-- Check for typos
-- Clear browser cache
-- Inspect element in DevTools
-
-**Inconsistent Appearance**
-
-- Verify theme is applied
-- Check browser compatibility
-- Test responsive breakpoints
-- Validate CSS syntax
-
-**Performance Issues**
-
-- Reduce CSS file size
-- Optimize selectors
-- Minimize repaints/reflows
-- Use CSS containment
-
-## Related Documentation
-
-- [Design Canvas](./design-canvas.mdx)
-- [WME Variant](../offerings/wme/welcome.md)
-- [WMO Variant](../offerings/wmo.md)
