@@ -1,96 +1,63 @@
 ---
 title: Database Agent
-last_update: { author: "Author Name" }
+last_update: { author: "Swetha Kundaram" }
 ---
 
+The **DB Agent** is a specialized agent designed to help developers explore and manage databases within a project. It provides visibility into database structure and assists with creating and executing database queries without requiring manual navigation of database configurations.
 
-## Overview
+The DB Agent focuses on database discovery, structure understanding, and data operations. It acts as an intelligent assistant for working with databases more efficiently.
 
-The **wm_database_agent** is responsible for database exploration and Query Service lifecycle management within the AIRA system. Its role is to safely inspect database structures, validate queries, and manage Query Services without altering underlying database schemas.
+## What the DB Agent Is Used For
 
-This agent does not perform schema changes or make assumptions about database intent. It exists to enable informed and validated data access while protecting the integrity of the database.
+The DB Agent is used when you need to understand or interact with your database structure. It helps identify how many databases are available, what tables exist within each database, and how columns are structured inside those tables.
 
+It is especially useful during development when you need quick insights into database schemas or when building features that rely on database queries.
 
+## Database Exploration Capabilities
 
-## Role in AIRA Architecture
+The DB Agent can provide structured information about your databases, including:
 
-The Database Agent operates as a specialized execution agent under the orchestration of the **wm_agent**.
+* Identifying available databases in the project
+* Listing tables within a selected database
+* Mapping columns for specific tables
 
-It is invoked when workflows require understanding existing databases, inspecting tables or columns, or creating and managing Query Services. While the wm_agent coordinates execution and the Architect Agent provides design guidance, the Database Agent performs controlled, read-focused and query-level operations against the database layer.
+This allows developers to quickly understand schema structure without manually inspecting configurations.
 
-This agent does not design schemas or perform migrations.
+## Query Creation and Data Operations
 
+In addition to exploration, the DB Agent supports database operations by helping create queries for different use cases. It can assist in building queries for retrieving data as well as modifying it.
 
+The agent supports common data manipulation scenarios, including creating queries, updating records, and deleting entries. It works with database query services to perform these operations in alignment with the project’s existing structure.
 
-## Core Responsibilities
+## When to Use the DB Agent
 
-### Database and Model Inspection
+Use the DB Agent when you need to:
 
-The Database Agent lists available databases and retrieves associated data models. It inspects tables, views, and column definitions to provide accurate structural information that can be used by other agents.
+* Understand database structure before writing logic
+* Retrieve information about tables or columns
+* Create or modify database queries
+* Perform controlled data updates or deletions
 
-All inspection is observational and does not modify database state.
+If your requirement involves broader backend business logic beyond database interaction, a backend-focused agent may be more appropriate.
 
-### Query Service Lifecycle Management
+## What the DB Agent Does Not Do
 
-The agent creates, reads, updates, and deletes Query Services as explicitly instructed. It builds and maintains `DesignTimeQuery` structures that represent validated and executable queries within WaveMaker.
+To set clear expectations, the DB Agent does not:
 
-Query Services are treated as managed artifacts with clear ownership and scope.
+* Redesign database schemas
+* Automatically optimize data models
+* Replace architectural decisions about database design
 
-### Query Validation and Testing
+Its role is to help you explore and operate on existing database structures.
 
-Before a Query Service is finalized, the Database Agent validates SQL syntax, checks placeholder definitions, detects return columns, and performs test executions. This validation-first approach ensures that queries behave as expected before they are consumed by other layers.
+## How It Helps You as a Developer
 
-No query is assumed to be correct without verification.
+By using the DB Agent, developers can quickly access database insights and generate queries without manually inspecting every table or column. This reduces development time and minimizes errors when working with data.
 
+It provides a structured and guided way to explore and manipulate database content while keeping operations aligned with the existing project setup.
 
-## Execution Scope
+The DB Agent exists to answer one core question:
 
-The Database Agent operates strictly within the database inspection and Query Service layer of a WaveMaker application.
+**“Can you help me explore or operate on my database?”**
 
-It is authorized to list databases, inspect tables and columns, validate SQL, execute test queries, and manage Query Services. Its scope does not include modifying database schemas, altering tables, or performing data migrations.
-
-All actions are bounded and reversible at the service level.
-
-
-
-## Context Handling and Data Flow
-
-The Database Agent receives explicit instructions from the wm_agent, including target databases, tables, or query requirements. It does not infer intent or guess schema meaning.
-
-The agent produces structured outputs such as table metadata, column definitions, validated SQL structures, and Query Service definitions. These outputs are returned to the wm_agent to support downstream planning and execution.
-
-If required confirmation or context is missing, the agent pauses and requests clarification before proceeding.
-
-
-## Authority and Constraints
-
-The Database Agent operates under strict safety constraints.
-
-It requires explicit user confirmation before interacting with database services. It follows a validation-first workflow that includes placeholder checks, test execution, and return column detection before a query is accepted.
-
-The agent cannot modify database schemas and cannot make assumptions about structure, relationships, or business intent. All conclusions are based solely on observable metadata and validated query behavior.
-
-These constraints ensure that database integrity and correctness are preserved at all times.
-
-
-
-## Execution Flow (High-Level)
-
-At a high level, the Database Agent is invoked to inspect database structures or manage Query Services. It validates queries through testing, builds the corresponding design-time representations, and returns verified outputs to the wm_agent.
-
-Execution responsibility remains with the coordinating agent once database artifacts are prepared.
-
-
-
-## Design Invariants
-
-The following conditions are always true for the Database Agent.
-
-* Database schemas are never modified.
-* All queries are validated before use.
-* Query Services reflect verified SQL behavior.
-* No assumptions are made about database intent or structure.
-* All operations require explicit confirmation.
-
-Violation of these invariants results in an unsafe database interaction.
-
+If you need visibility into database structure or assistance with creating and managing queries, the DB Agent is the right tool.

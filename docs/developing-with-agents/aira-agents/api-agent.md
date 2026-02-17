@@ -3,96 +3,58 @@ title: API Agent
 last_update: { author: "Swetha Kundaram" }
 ---
 
+The **API Agent** is designed to help developers import and use external APIs within a WaveMaker application. It simplifies the process of integrating web services without requiring direct UI binding or manual configuration.
 
-## Overview
+The API Agent allows you to bring APIs into your application as reusable service variables that can be used across components. It supports both individual REST endpoints and full API collections defined through Swagger.
 
-The **wm_api_agent** is responsible for managing external API services within the AIRA system. Its role is to import, configure, and maintain API integrations in a controlled and traceable manner using WaveMaker’s supported service models.
+## What the API Agent Is Used For
 
-This agent focuses on API definition and lifecycle management. It does not bind APIs to UI elements, execute API calls, or implement business logic. Its responsibility is to ensure that API services are correctly defined, versioned, and safely updated.
+The API Agent is used when you want to connect your application to external or cross-application services. Instead of manually configuring service integrations, you can import APIs and make them available throughout your project.
 
+It enables web service integration independently of the UI layer. This means APIs can be imported, configured, and reused across different parts of the application without being tied to a specific page or component.
 
+## Supported Import Types
 
-## Role in AIRA Architecture
+The API Agent supports two main types of imports:
 
-The API Agent operates as a specialized execution agent under the orchestration of the **wm_agent**.
+* Individual **REST API endpoints**
+* Complete API collections defined through **Swagger files**
 
-It is invoked when a workflow requires importing new APIs, updating existing service definitions, or managing API configuration details such as endpoints, proxies, or authentication settings. While the Architect Agent may guide API design choices and the wm_agent coordinates execution, the API Agent performs the concrete service-level operations.
+These APIs can be imported from external sources such as microservices from other applications, third-party API documentation, or Postman collections. Postman collections can be imported either via a URL or JSON file, typically after converting them to Swagger format.
 
-This agent does not consume APIs or attach them to application logic. That responsibility belongs to downstream agents.
+WebSocket-based APIs are currently not supported.
 
+## Common Use Cases
 
+One common use case is cross-application API sharing. For example, a web service defined in one application can be imported into another application and used to display results such as cards or data lists.
 
-## Core Responsibilities
+The API Agent can also be used for development and testing scenarios through mock data generation. It can return sample data, allowing developers to build and test application logic without relying on live endpoints.
 
-### API Service Import and Configuration
+Another practical use case is Postman integration. Developers can convert Postman collections into Swagger format and import them as generic API services within the application.
 
-The API Agent imports API services using supported formats such as OpenAPI, Swagger, and Postman collections. It ensures that imported services conform to WaveMaker’s service model and are correctly represented within the project.
+## How the API Agent Helps
 
-During import, the agent configures service metadata, endpoints, and supported operations without altering platform-defined defaults.
+By using the API Agent, developers can integrate external services faster and with less configuration effort. It reduces the need for manual service setup and makes APIs reusable across the application.
 
-### Service Lifecycle Management
-
-The agent manages the full lifecycle of API services, including creation, update, reimport, and deletion. It retrieves existing service definitions before applying any modification to ensure that changes are deliberate and scoped.
-
-Reimports and updates are handled cautiously to avoid unintended overwrites or breaking changes.
-
-### Authentication and Proxy Configuration
-
-The API Agent configures supported authentication mechanisms such as OAuth and manages proxy-related settings where applicable. These configurations are applied only within the boundaries of existing service definitions and platform support.
-
-The agent does not invent or redefine authentication models.
+Because APIs are imported as service variables, they can be consumed by different components without tight coupling to specific UI elements. This promotes cleaner separation between service integration and presentation logic.
 
 
+## What the API Agent Does Not Do
 
-## Execution Scope
+To set clear expectations, the API Agent does not:
 
-The API Agent operates strictly within the API service definition layer of a WaveMaker application.
+* Support WebSocket-based integrations
+* Automatically design UI components around imported APIs
+* Replace backend service development for complex business logic
 
-It is authorized to import and manage REST-based API services, configure endpoints, manage service metadata, and apply supported authentication and proxy settings. Its scope does not include websocket services, UI binding, runtime invocation, or backend business logic.
+Its role is focused on importing and enabling API consumption within the application.
 
-All actions are confined to API service configuration artifacts.
+---
 
+For developer, the API Agent exists to answer one core question:
 
+**“Can you help me import and use this API in my application?”**
 
-## Context Handling and Data Flow
+If your goal is to integrate REST or Swagger-based services quickly and reuse them across your project, the API Agent is the right tool.
 
-The API Agent receives explicit instructions from the wm_agent, including API sources, formats, update intent, and confirmation to proceed. It does not infer whether a service should be replaced, updated, or preserved.
-
-The agent produces updated API service definitions and metadata, which are returned to the wm_agent for coordination with other agents such as binding or UI layers.
-
-If existing service information is unavailable or unclear, the agent pauses and requests clarification before making any changes.
-
-
-
-## Authority and Constraints
-
-The API Agent operates under strict change-control constraints.
-
-It requires explicit user confirmation before importing, updating, reimporting, or deleting API services. Existing service definitions must always be retrieved and inspected before modification.
-
-The agent cannot import or update websocket-based services. It cannot change existing Swagger security definitions or OAuth provider identifiers. Authentication configuration is limited to supported adjustments that do not alter established provider identities.
-
-These constraints ensure that API integrations remain stable, auditable, and predictable.
-
-
-
-## Execution Flow (High-Level)
-
-At a high level, the API Agent is invoked to manage API services. It retrieves existing definitions, validates the requested operation, applies controlled changes, and returns the updated service state to the wm_agent.
-
-The agent does not trigger API consumption or execution.
-
-
-
-## Design Invariants
-
-The following conditions are always true for the API Agent.
-
-* API services are modified only with explicit confirmation.
-* Existing service definitions are retrieved before any change.
-* Unsupported service types are never imported.
-* Authentication identities are not altered.
-* API management is isolated from UI and execution logic.
-
-If any of these invariants are violated, the API service state is considered unsafe.
 
