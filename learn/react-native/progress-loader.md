@@ -23,7 +23,7 @@ In case of cloud storage application like Google Drive, the users upload files. 
 
 ### Enabling Progress Loader
 
-Skeleton Loader can be enabled when creating an application. To apply the Skeleton Loader, go to the **Project Settings** dialog and choose **Skeleton Loader** as the Application Loader.
+Progress Loader can be enabled when creating an application. To apply the Progress Loader, go to the **Project Settings** dialog and choose **Progress Loader** as the Application Loader.
 
 <iframe width="560" height="315" src="https://embed.app.guidde.com/playbooks/91V6g5TKcWZD77JPv9aAYR"   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
 
