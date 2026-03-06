@@ -92,7 +92,7 @@ _periods_ This API returns the history data for the temporal table by applying g
 5. q [optional]: query to filter the history data.
 6. Pageable [optional]: pagination information. 
 
-- _/periods/{id} (or) /periods/composite-id_ This Api returns the history data for given id and by applying given filters. 
+- _/periods/\{id} (or) /periods/composite-id_ This Api returns the history data for given id and by applying given filters. 
 
 ### Method: GET Parameters
 1. Id columns information as specified for normal findById API.

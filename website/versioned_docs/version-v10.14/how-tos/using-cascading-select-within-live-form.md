@@ -10,12 +10,12 @@ We will see how to configure cascading selects for Live Form fields using the on
 3. Update of rows in Live form with form data mapped to current item of the list.
 
 We will be using the following JavaScript function:
-
+```js
 Page.liveform1_categorytestChange = function($event, widget, item, currentItemWidgets, newVal, oldVal) {
     Page.Variables.selectsubcategory.setInput('type', newVal.category);
     Page.Variables.selectsubcategory.update();
 };
-
+```
 <iframe width="708" height="560" src="https://docs.google.com/presentation/d/e/2PACX-1vThYpK4cJfRIKcUk6TAh8lJGUC-QkBH5gAEBtWimJuT3qO5JKPCbR5QWRg7qDyfZqdshLQkupwo1Bz2/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
 
 [Live Form Use Cases](/learn/app-development/widgets/datalive/live-form/liveform-use-cases/)
