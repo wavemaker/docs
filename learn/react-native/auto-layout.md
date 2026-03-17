@@ -76,8 +76,8 @@ To configure the layout of a Container widget, several properties are available 
 
 The **Direction** property sets the main axis along which child widgets flow.
 
-*   **Row**: Children arrange horizontally.
-*   **Column**: Children stack vertically.
+-   **Row**: Children arrange horizontally.
+-   **Column**: Children stack vertically.
 
 <video 
     src={autolayoutDirection}
@@ -89,8 +89,8 @@ The **Direction** property sets the main axis along which child widgets flow.
 
 The **Wrap** property is available when [direction](#direction) is set to `Row`. It controls whether child widgets should flow onto a new line when they exceed the available space along the row.
 
-*   **Wrap Enabled**: If child widgets exceed the available width in a row, they will automatically move to the next line.
-*   **Wrap Disabled** (Default): Child widgets will remain on a single line. If their combined width exceeds the available space, they will attempt to squeeze to fit, and if it can't be squeezed enough to fit then it overflows the container.
+-   **Wrap Enabled**: If child widgets exceed the available width in a row, they will automatically move to the next line.
+-   **Wrap Disabled** (Default): Child widgets will remain on a single line. If their combined width exceeds the available space, they will attempt to squeeze to fit, and if it can't be squeezed enough to fit then it overflows the container.
 
 > When Wrap is enabled, an additional spacing control ([Row Gap](#row-gap)) is available to adjust the spacing between lines.
 
@@ -104,9 +104,9 @@ The **Wrap** property is available when [direction](#direction) is set to `Row`.
 
 **Height** and **Width** control how the Container computes its size relative to its parent or children.
 
-*   **Fill**: Expands to fill all available space in the parent Container.
-*   **Hug**: Shrinks or grows to exactly fit the combined size of children (plus any spacing like [Gap](#gap), [Padding](#padding)).
-*   **Fixed**: Sets a fixed size. Accepts numbers (defaults to `px`) or numbers with units (`px`, `%`, `vw`, `vh`).
+-   **Fill**: Expands to fill all available space in the parent Container.
+-   **Hug**: Shrinks or grows to exactly fit the combined size of children (plus any spacing like [Gap](#gap), [Padding](#padding)).
+-   **Fixed**: Sets a fixed size. Accepts numbers (defaults to `px`) or numbers with units (`px`, `%`, `vw`, `vh`).
 
 <video 
     src={width}
@@ -120,7 +120,7 @@ The **Wrap** property is available when [direction](#direction) is set to `Row`.
 
 The available alignment options are based on the [Gap](#gap) and [Row Gap](#row-gap) values:
 
-*   **Fixed Spacing**: When both [Gap](#gap) and [Row Gap](#row-gap) are set to fixed numeric values, you have full control over alignment. This allows precise positioning using a 3x3 grid of options (e.g., Top-Left, Middle-Center, Bottom-Right etc).
+-   **Fixed Spacing**: When both [Gap](#gap) and [Row Gap](#row-gap) are set to fixed numeric values, you have full control over alignment. This allows precise positioning using a 3x3 grid of options (e.g., Top-Left, Middle-Center, Bottom-Right etc).
 
 <div style={{display: 'flex', flexWrap: 'wrap', gap: '10px'}}>
     <figure style={{margin: 0}}>
@@ -133,7 +133,7 @@ The available alignment options are based on the [Gap](#gap) and [Row Gap](#row-
     </figure>
 </div>
 
-*   **[Gap](#gap) is `Auto`**: If [Gap](#gap) is set to `Auto`, the available space along the main axis is automatically distributed evenly between child widgets. This removes explicit alignment control along the main axis, but cross-axis alignment (Start, Center, End) remains available.
+-   **[Gap](#gap) is `Auto`**: If [Gap](#gap) is set to `Auto`, the available space along the main axis is automatically distributed evenly between child widgets. This removes explicit alignment control along the main axis, but cross-axis alignment (Start, Center, End) remains available.
 
 <div style={{display: 'flex', flexWrap: 'wrap', gap: '10px'}}>
     <figure style={{margin: 0}}>
@@ -146,9 +146,9 @@ The available alignment options are based on the [Gap](#gap) and [Row Gap](#row-
     </figure>
 </div>
 
-*   **[Row Gap](#row-gap) is `Auto`**: Similar to [Gap](#gap), if [Row Gap](#row-gap) is set to `Auto`, the available space along the cross axis is automatically distributed evenly between rows. This removes explicit alignment control along the cross axis.
+-   **[Row Gap](#row-gap) is `Auto`**: Similar to [Gap](#gap), if [Row Gap](#row-gap) is set to `Auto`, the available space along the cross axis is automatically distributed evenly between rows. This removes explicit alignment control along the cross axis.
 
-*   **Both [Gap](#gap) and [Row Gap](#row-gap) are `Auto`**: When both are set to `Auto`, all available space in both directions is automatically managed, and explicit alignment options are no longer available.
+-   **Both [Gap](#gap) and [Row Gap](#row-gap) are `Auto`**: When both are set to `Auto`, all available space in both directions is automatically managed, and explicit alignment options are no longer available.
 
 <video 
     src={alignment}
@@ -160,8 +160,8 @@ The available alignment options are based on the [Gap](#gap) and [Row Gap](#row-
 
 **Gap** defines the spacing between adjacent child widgets along the main axis.
 
-*   **Number**: Sets a fixed size in pixels.
-*   **Auto**: Automatically distributes available space evenly between all the child widgets.
+-   **Number**: Sets a fixed size in pixels.
+-   **Auto**: Automatically distributes available space evenly between all the child widgets.
 
 <video 
     src={gap}
@@ -173,8 +173,8 @@ The available alignment options are based on the [Gap](#gap) and [Row Gap](#row-
 
 **Row Gap** defines the spacing between rows when **Wrap** is enabled.
 
-*   **Number**: Sets a fixed value in pixels.
-*   **Auto**: Automatically distributes available space evenly between all the rows.
+-   **Number**: Sets a fixed value in pixels.
+-   **Auto**: Automatically distributes available space evenly between all the rows.
 
 <video 
     src={rowGap}
@@ -188,10 +188,10 @@ The available alignment options are based on the [Gap](#gap) and [Row Gap](#row-
 
 In the Studio, padding can be configured in two ways:
 
-*   **Two fields (default)**: One for `Horizontal` and one for `Vertical` padding.
-    *   A single value (e.g., `10`) applies to both sides (e.g., `Left:10px`, `Right:10px`).
-    *   Two comma-separated values (e.g., `10,20`) apply to each side respectively (e.g., `Left:10px`, `Right:20px`).
-*   **Four fields**: A toggle allows switching to separate `Top`, `Right`, `Bottom`, and `Left` input fields for granular control.
+-   **Two fields (default)**: One for `Horizontal` and one for `Vertical` padding.
+    -   A single value (e.g., `10`) applies to both sides (e.g., `Left:10px`, `Right:10px`).
+    -   Two comma-separated values (e.g., `10,20`) apply to each side respectively (e.g., `Left:10px`, `Right:20px`).
+-   **Four fields**: A toggle allows switching to separate `Top`, `Right`, `Bottom`, and `Left` input fields for granular control.
 
 <video 
     src={padding}
