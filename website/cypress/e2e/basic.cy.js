@@ -9,10 +9,11 @@ describe("Top Navigation in web & mobile", function () {
     hamburgerMenu: ".hamburger-menu"
   };
 
+  Cypress.on("uncaught:exception", () => false);
 
   beforeEach(function () {
-    cy.visit('http://localhost:3000/learn/')
-    Cypress.on('uncaught:exception', (err, runnable) => { return false; })
+    cy.visit("/");
+    cy.get(".navbar").should("be.visible");
   });
 
   it("Verifies top nav has 6 options in desktop browser", function () {
