@@ -21,7 +21,8 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
-| [WaveMaker 11.15.2](/learn/wavemaker-release-notes/v11-15-2) <p style={{color:"red"}}>*latest*</p> | In this release enhancements focus on improving styling flexibility, widget behavior, and developer control across forms, charts, and error handling. Bug fixes address a wide range of UI inconsistencies, token gaps, and platform-specific issues, resulting in more stable and predictable app behavior across environments. | 20 Apr 2026 |
+| [WaveMaker 11.15.3](/learn/wavemaker-release-notes/v11-15-3) <p style={{color:"red"}}>*latest*</p> | WaveMaker 11.15.3 delivers targeted runtime and tooling improvements to strengthen autosave reliability, data handling, and page layout performance. This release also includes key bug fixes and library updates that improve overall stability and developer productivity. | 18 May 2026 |
+| [WaveMaker 11.15.2](/learn/wavemaker-release-notes/v11-15-2)  | In this release enhancements focus on improving styling flexibility, widget behavior, and developer control across forms, charts, and error handling. Bug fixes address a wide range of UI inconsistencies, token gaps, and platform-specific issues, resulting in more stable and predictable app behavior across environments. | 20 Apr 2026 |
 |[WaveMaker 11.15.0](/learn/wavemaker-release-notes/v11-15-0) | WaveMaker 11.15.0 introduces profile management refactoring, a decluttered Studio experience, and autosave improvements. This release also includes enhancements and bug fixes for React Native, along with new token updates and design system features.| 8 Feburary 2026 |
 |[WaveMaker 11.14.2](/learn/wavemaker-release-notes/v11-14-2) | WaveMaker 11.14.2 enhances Wizard widget in React Native and delivers several Studio and React Native bug fixes. | 1 December 2025 |
 |[WaveMaker 11.14.1](/learn/wavemaker-release-notes/v11-14-1) | WaveMaker 11.14.1 introduces enhanced commit message control and support for hyphenated page & partial names in Studio, giving developers more flexibility. It also includes a bug fix for stacked charts in web projects. | 3 November 2025 |
@@ -170,7 +171,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [WaveMaker 11.15.2](/learn/wavemaker-release-notes/v11-15-2)
+Last updated: [WaveMaker 11.15.3](/learn/wavemaker-release-notes/v11-15-3)
 
 ---
 
@@ -188,40 +189,40 @@ Last updated: [WaveMaker 11.15.2](/learn/wavemaker-release-notes/v11-15-2)
 | Charting | d3 | 7.8.5 |
 |  | nvd3 | 1.8.11 |
 | Fullcalendar | |  6.1.15 |
-| Built-in functions | lodash-es | 4.17.21|
+| Built-in functions | lodash-es | 4.17.23|
 | Device support, gestures | hammerjs | 2.0.8 |
 
 ### Backend Frameworks (Web and Mobile)
 
 | Description | Java Library | Version |
 | --- | --- |--------------------|
-|  | Spring Framework | <td className="versiontdbgcolor">6.2.15 -> 6.2.17</td> |
-| Security framework | Spring Security | <td className="versiontdbgcolor">6.5.7 -> 6.5.9</td> |
-|  | Spring Data | <td className="versiontdbgcolor">2025.0.7 -> 2025.0.10</td> |
+|  | Spring Framework | <td className="versiontdbgcolor">6.2.15 -> 6.2.18</td> |
+| Security framework | Spring Security | <td className="versiontdbgcolor">6.5.7 -> 6.5.10</td> |
+|  | Spring Data | <td className="versiontdbgcolor">2025.0.8 -> 2025.0.11</td> |
 |  | Spring Boot | <td className="versiontdbgcolor">3.5.9 -> 3.5.13</td> |
-|  | Spring Session | <td className="versiontdbgcolor">3.5.4 -> 3.5.5</td> |
-| Java JSON utilities | Gson  | 2.13.2  |
+|  | Spring Session | <td className="versiontdbgcolor">3.5.4 -> 3.5.6</td> |
+| Java JSON utilities | Gson  | <td className="versiontdbgcolor">2.13.2 -> 2.14.0</td> |
 | DB Persistence library | Hibernate(Jakarta) | 5.6.15. Final   |
 | Sample database | HSQL | 2.7.4 |
-| JSON library | Jackson | <td className="versiontdbgcolor">2.20.1 -> 2.21.2</td> |
+| JSON library | Jackson | <td className="versiontdbgcolor">2.21.0 -> 2.21.3</td> |
 | Logging framework | SLF4j | 2.0.17 |
 | Logging Implementation | Log4j2 | <td className="versiontdbgcolor">2.25.3 -> 2.25.4</td> |
 | Http client library  | HttpComponents -  httpclient | 5.5.1 |
 | Servlet Framework |  | 6.0.0 |
 | Database Connection Pooling | HikariCP | 7.0.2 |
 |  | Commons Lang3 | 3.19.0 |
-|  | Guava | 33.5.0-jre |
-|  | Postgresql Driver  | 42.7.8  |
+|  | Guava | <td className="versiontdbgcolor">33.5.0-jre -> 33.6.0-jre</td> |
+|  | Postgresql Driver  | <td className="versiontdbgcolor">42.7.9 -> 42.7.11</td> |
 |  | Hibernate Validator | 8.0.2.Final |
-|  | Jgit | 7.4.0.202509020913-r |
-|  | Commons Codec | 1.18.0 |
-|  | Commons IO | 2.19.0 |
+|  | Jgit | <td className="versiontdbgcolor">7.5.0.202512021534-r -> 7.6.0.202603022253-r</td> |
+|  | Commons Codec | <td className="versiontdbgcolor">1.21.0 -> 1.22.0</td> |
+|  | Commons IO | <td className="versiontdbgcolor">2.21.0 -> 2.22.0</td> |
 |  | Commons Text |  1.13.1 |
 |  | Antisamy | 1.7.7 |
 |  | Freemarker | 2.3.34 |
-|  | Apache Tika | 3.2.3 |
+|  | Apache Tika | <td className="versiontdbgcolor">3.2.3 -> 3.3.0</td> |
 |  | Mariadb JDBC Driver | 3.5.2 |
-|  | Mongodb Driver | <td>5.6.2</td> |
+|  | Mongodb Driver | <td>5.6.3 -> 5.6.5</td> |
 |  | Jakarta Validation Api | 3.1.1 |
 |  | commons-validator | 1.10.0 |
 |  | json-smart | 2.5.2 |
