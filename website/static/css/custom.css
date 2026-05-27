@@ -232,6 +232,12 @@ body {
     --ifm-alert-foreground-color: rgb(66,69,73);
     --ifm-alert-border-color: #FF6121;
   }
+.alert--deprecated {
+    --ifm-alert-background-color: var(--ifm-color-danger-contrast-background);
+    --ifm-alert-background-color-highlight: rgba(250, 56, 62, 0.15);
+    --ifm-alert-foreground-color: var(--ifm-color-danger-contrast-foreground);
+    --ifm-alert-border-color: var(--ifm-color-danger-dark);
+}
 .button.button--secondary {
     color: var(--wm-secondary-text-color);
     background-color:var(--wm-secondary-bg-color);

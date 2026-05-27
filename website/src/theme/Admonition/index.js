@@ -61,6 +61,28 @@ function ImpactIcon() {
     </svg>
     )    
 }
+
+function DeprecatedIcon() {
+  return (
+  <svg
+    width="800px"
+    height="800px"
+    viewBox="0 0 16 16"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+  >
+    <path
+      fill="#444"
+      d="M4 2c0-1.1-0.9-2-2-2s-2 0.9-2 2c0 0.7 0.4 1.4 1 1.7v12.3h2v-12.3c0.6-0.3 1-1 1-1.7z"
+    />
+    <path
+      fill="#444"
+      d="M4 4c0 0 1-3 3.6-3 2.7 0 2.3 1 4.4 1 2.4 0 4-1 4-1v8c0 0-0.7 2-4 2-2.2 0-2.3-1-5-1-2.3 0-3 2-3 2v-8z"
+    />
+  </svg>
+    )    
+}
+
 // eslint-disable-next-line @typescript-eslint/consistent-indexed-object-style
 const AdmonitionConfigs = {
   note: {
@@ -126,6 +148,17 @@ const AdmonitionConfigs = {
         id="theme.admonition.impact"
         description="The default label used for the Impact admonition (:::impact)">
         Impact
+      </Translate>
+    ),
+  },
+  deprecated: {
+    infimaClassName: 'deprecated',
+    iconComponent: DeprecatedIcon,
+    label: (
+      <Translate
+        id="theme.admonition.impact"
+        description="The default label used for the Deprecated admonition (:::deprecated)">
+        Deprecated
       </Translate>
     ),
   },
