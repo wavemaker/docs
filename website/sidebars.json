@@ -729,6 +729,7 @@
 				"on-premise/aws/install/apply-license",
 				"on-premise/configure/config-users-auth-providers",
 				"on-premise/configure/config-vcs",
+				"on-premise/configure/github-app-setup",
 				"on-premise/configure/add-dev-capacity",
 				"on-premise/configure/add-apps-capacity",
 				"on-premise/configure/config-pipeline"
@@ -750,6 +751,7 @@
 				"on-premise/azure/install/apply-license",
 				"on-premise/configure/config-users-auth-providers",
 				"on-premise/configure/config-vcs",
+				"on-premise/configure/github-app-setup",
 				"on-premise/configure/add-dev-capacity",
 				"on-premise/configure/add-apps-capacity",
 				"on-premise/configure/config-pipeline"
@@ -770,6 +772,7 @@
 				"on-premise/gcp/install/apply-license",
 				"on-premise/configure/config-users-auth-providers",
 				"on-premise/configure/config-vcs",
+				"on-premise/configure/github-app-setup",
 				"on-premise/configure/add-dev-capacity",
 				"on-premise/configure/add-apps-capacity",
 				"on-premise/configure/config-pipeline"
@@ -791,6 +794,7 @@
 				"on-premise/vmware-esxi/install/apply-license",
 				"on-premise/configure/config-users-auth-providers",
 				"on-premise/configure/config-vcs",
+				"on-premise/configure/github-app-setup",
 				"on-premise/configure/add-dev-capacity",
 				"on-premise/configure/add-apps-capacity",
 				"on-premise/configure/config-pipeline"
@@ -811,6 +815,7 @@
 				"on-premise/hyper-v/install/apply-license",
 				"on-premise/configure/config-users-auth-providers",
 				"on-premise/configure/config-vcs",
+				"on-premise/configure/github-app-setup",
 				"on-premise/configure/add-dev-capacity",
 				"on-premise/configure/add-apps-capacity",
 				"on-premise/configure/config-pipeline"
@@ -822,6 +827,7 @@
 			"items": [
 				"on-premise/configure/config-users-auth-providers",
 				"on-premise/configure/config-vcs",
+				"on-premise/configure/github-app-setup",
 				"on-premise/configure/add-dev-capacity",
 				"on-premise/configure/add-apps-capacity",
 				"on-premise/configure/config-pipeline",
