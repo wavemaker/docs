@@ -663,7 +663,6 @@
 		"teams/project-branch",
 		"teams/manage-roles",
 		"teams/code-repository",
-		"teams/github-app-integration",
 		"how-tos/azure-repos-vcs",
 		"teams/import-vcs-project",
 		"teams/team-profile",

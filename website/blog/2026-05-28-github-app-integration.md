@@ -1,15 +1,12 @@
 ---
 title: "GitHub App Integration"
-id: "github-app-integration"
-sidebar_label: "GitHub App Integration"
----
+author: "Chakravarthy Batna"
 ---
 
-**Author: Chakravarthy Batna**
 
 The WaveMaker Platform supports **GitHub App-based authentication** for connecting your projects to GitHub repositories. This document explains what a GitHub App is, how the integration works in the WaveMaker Platform, and how to use it from the Team Portal.
 
----
+<!-- truncate -->
 
 ## What is a GitHub App?
 
