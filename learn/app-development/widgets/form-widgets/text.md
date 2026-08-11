@@ -47,6 +47,7 @@ Using Text widget, you can do the following:
 | Update value on | If the selected value is `blur`: data value will be updated on blur event, `default`: data value will be updated on key up. |
 | Update delay | The amount of delay in milliseconds to update the data value. |
 | Skip on change event from script | When enabled, the `Change` callback will only trigger when the user updates the value from the UI, and not when it's updated through scripts. This property is disabled by default. |
+| Auto capitalize | Controls how text is automatically capitalized in the input field. Supported values are `characters` (all characters in uppercase), `words` (first letter of each word in uppercase), `sentences` (first letter of each sentence in uppercase), and `none` (no automatic capitalization). |
 
 ## Events
 
