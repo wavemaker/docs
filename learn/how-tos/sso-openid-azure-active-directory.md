@@ -97,6 +97,9 @@ You'll need the the Endpoints from [OpenID Connect metadata document](#endpoints
 ### 2. Service Provider Information
 
 - **Redirect Url**: Go to the app [overview](#note-these-details) page in Azure AD, and enter this URL in the **Redirect URLs** section.
+- Redirect URL is pre-populated by WaveMaker and is not editable. You need to copy this link and use it to as the callback URL in Provider app settings page when you register the app.
+- If the application is deployed outside of WaveMaker then the redirect URL for the deployed applications will be in the below format. 
+  **"https://<domain_name>/<app_name>/oauth2/code/{providerid}"**.
 
 ### 3. Integration Information
 
