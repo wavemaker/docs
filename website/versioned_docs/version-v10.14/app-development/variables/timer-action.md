@@ -133,12 +133,12 @@ Page.Actions.timerAction1.cancel();
             - [○ Events](/learn/app-development/variables/model-variable/#events)
             - [○ Methods](/learn/app-development/variables/model-variable/#methods)
         - g. Device Variables
-            - [○ Overview](/learn/hybrid-mobile/device-variables/#)
-            - [○ Services](/learn/hybrid-mobile/device-variables/#services)
-            - [○ Operations](/learn/hybrid-mobile/device-variables/#operations)
-            - [○ Events](/learn/hybrid-mobile/device-variables/#events)
-            - [○ Methods](/learn/hybrid-mobile/device-variables/#methods)
-            - [○ Usage](/learn/hybrid-mobile/device-variables/#usage)
+            - [○ Overview](/learn/app-development/variables/device-variables/#)
+            - [○ Services](/learn/app-development/variables/device-variables/#services)
+            - [○ Operations](/learn/app-development/variables/device-variables/#operations)
+            - [○ Events](/learn/app-development/variables/device-variables/#events)
+            - [○ Methods](/learn/app-development/variables/device-variables/#methods)
+            - [○ Usage](/learn/app-development/variables/device-variables/#usage)
     - [iii. Actions](/learn/app-development/variables/variables-actions/#actions)
         - i. Navigation
             - [○ Overview](/learn/app-development/variables/navigation-action/#)

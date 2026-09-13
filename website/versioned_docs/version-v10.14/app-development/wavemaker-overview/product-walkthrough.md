@@ -33,7 +33,7 @@ Following are some of the terms commonly used in Studio parlance.
 |**Java Services**|Service API from Java for the service APIs exposed by the Java services.|[Java Service](/learn/app-development/variables/java-services/)|
 |**Security Services**|Service API from Security for the service APIs exposed by the Security services.|[Security Service](/learn/app-development/variables/security-service/) |
 |**Model Variable**| It can be used as storage model to store data in the client-side. |[Model Variable](/learn/app-development/variables/model-variable/) |
-|**Device Variable**|  To access device features in case of mobile applications. |[Device Variable](/learn/hybrid-mobile/device-variables/) |
+|**Device Variable**|  To access device features in case of mobile applications. |[Device Variable](/learn/app-development/variables/device-variables/) |
 | **Actions** | Implement the business logic, rules and data flow.   &lt;details&gt;<summary>Read more</summary>  Actions assist in invoking a backend API, Database operation or navigation to another page when a UI event occurs. Events can be either user-initiated, notification response or as a result of another task being performed. |[Actions](/learn/app-development/variables/variables-actions) |
 | **Binding** | Connecting variables and widgets.   &lt;details&gt;<summary>Read more</summary>  Binding of the Variables to Widgets helps in capturing the data from the user or fetching data from the backend services. |[Variable Binding](/learn/app-development/variables/variable-binding/) |
 
