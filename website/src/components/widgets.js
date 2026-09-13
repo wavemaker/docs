@@ -85,7 +85,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "darkIcon": "/learn/img/containerDark.svg",
                 "label": "Container",
                 "body": " Container is an enclosing element that wraps the widgets placed within, mostly used for embedding partial pages ",
-                "overview": "/learn/app-development/widgets/container/container/",
+                "overview": "/learn/app-development/widgets/container/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Container.html",
                 "supportedPlatforms": ["web", "mobile"],
                 "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/containers-container--docs"
