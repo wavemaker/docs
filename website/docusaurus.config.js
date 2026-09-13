@@ -84,6 +84,10 @@ module.exports = {
               "label": 'v10.15',
               "path": 'v10.15',
             },
+            "v11.8.5": {
+              "label": 'v11.8.5 (Cordova Sunset)',
+              "path": 'v11.8.5',
+            },
           },
           "admonitions": {
             "keywords": [
