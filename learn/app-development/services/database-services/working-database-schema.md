@@ -4,19 +4,17 @@ id: "working-database-schema"
 sidebar_label: "Working with DB Schema"
 ---
 ---
-The **Database Designer** workspace allows you to create tables, columns, and relationships.
+The **Database Designer** workspace allows you to view tables, columns, and relationships.
 
 [![db_designer_schema](/learn/assets/db_designer_schema.png)](/learn/assets/db_designer_schema.png)
 
 Click to enlarge
 
-## Adding Tables and Columns
+## Table and Column Properties
 
-:::note
-These actions are restricted to [Schemas in Editable mode](/learn/app-development/services/database-services/database-schema-import-modes/).
-:::
+Properties available for tables like Default Filter Expression and columns like Java Type, Hidden, Value Type, Value, and Validators can be modified from the Properties panel.
 
-### Adding Table
+### Table Properties
 
 Click the **+Table** button to add a new table to the database. You can set the name of the table from the **Properties**.
 
@@ -24,21 +22,18 @@ Click the **+Table** button to add a new table to the database. You can set the
 - For tables created, you have the option of assigning it to any Schema which has been imported into the app. This feature is not available for MySQL databases.
 
 
-### Adding Column
+### Column Properties
 
-Click **Add Column** to add columns to the table. For each column, you can specify the following:
+For each column, you can find the following properties:
 
 - **Name** - The name of the column.
-
-- **SQL and Java Types** – It is advisable to make changes to Java Types rather than SQL Types unless you want the changes to be reflected in the database, in which case you need to export the database. You can review the type conversion from Java to SQL type from this document: [Java Types vs SQL Data Types](/learn/assets/JavaTypesVsDBTypes-Sheet.pdf).
-
-- **Length** - Precision and scale for number type; length for string type;
+- **SQL and Java Types** – It is advisable to make changes to Java Types. And SQL Types is holds the data type.
 - **Hidden** - You can also choose to hide the column using **Hidden** option. These columns will not be available for user manipulation. You can set the values of these hidden columns during insert/update operations:
     - by setting the Value from the Data Value tab, or
     - by passing the value during the insert operation from a widget.
 - **Value Type** - From the Data tab, set the Value Type as ([click here for more](#column-metadata-configuration)):
     - User Defined which can take a Default Value;
-    - Server  Defined in which case the column can be further set to Server Properties and when the Value needs to be set - at Insert, Update or both;
+    - Server Defined in which case the column can be further set to Server Properties and when the Value needs to be set - at Insert, Update or both;
     - Database Defined which uses database trigger or the default values
 - Column level constraints like
     - Null
@@ -46,9 +41,9 @@ Click **Add Column** to add columns to the table. For each column, you can spe
     - Unique key
     - Foreign key
 - **Primary Key** - In case of primary key column, the value can be set to ([see here for more](#identity-generators))
-    - Assigned lets user enter the primary key values,
-    - Auto-generated will assign the primary key values  or
-    - Sequence will assign the values based on the generator name given. 
+    - Assigned: lets user enter the primary key values,
+    - Auto-generated: will assign the primary key values  or
+    - Sequence: will assign the values based on the generator name given. 
 
 :::note
 WaveMaker supports **Composite Keys** that is multiple columns can be specified as Primary Keys.
@@ -58,19 +53,9 @@ WaveMaker supports **Composite Keys** that is multiple columns can be specifie
 
 ## Database Relationships
 
-Relations are a way to establish a connection between tables within a given database. It takes care of the consistency while linking two tables. In WaveMaker, there are two ways of creating **relationships**:
+Relations are a way to establish a connection between tables within a given database. It takes care of the consistency while linking two tables. In WaveMaker, you can only view the relations by clicking the connector button.
 
-1. Select and hover over the column to build a relationship on. Select from `One to One` or `One to Many`. Click the second column of the relationship.
-2. For each column, on select and hover, a **Create Relation** icon displays. By clicking it, a dialog opens.
-3. In the dialog the source table and column are already selected and not editable.
-4. Select the **cardinality** of the relation:
-    - One-to-One Composite relation is possible between the tables which have the same number of composite keys.
-    - One-to-Many Composite relation is possible when Table 1 has the composite keys and Table 2 has at least one non-Composite key column selected.
-    - Many-to-One Composite relation is possible when Table 1 has at least one non-Composite key column selected and Table 2 has the composite keys.
-5. It is possible to add **Virtual Relations**. This feature can be used to establish relations without changing the DB Schema. This will enable one to enforce DB level constraints without having to write any scripts or queries. Clicking on CREATE will create the virtual relation. This will be indicated by a dotted line and the virtual flag is set in the relationship property.
-6. It is possible to add **Relations involving Composite Keys**. You can **add columns** to the relation by using the **Add Relationship** button. Clicking on CREATE will create the composite relation. This will be indicated by a double-pronged line between the tables in the DB Designer.
-    
-[![](/learn/assets/DB_cr_relation.png)](/learn/assets/DB_cr_relation.png)
+[![](/learn/assets/db-relations-button.png)](/learn/assets/db-relations-button.png)
 
 ## Relationship Fetch Options
 
@@ -86,7 +71,7 @@ From the relations tab, for the particular relation (one-one, many-one), you can
 - By default, all columns from the related table will be fetched.
 :::
 
-[![](/learn/assets/DB_fetch_relations.png)](/learn/assets/DB_fetch_relations.png)
+[![](/learn/assets/db-fetch-relations.png)](/learn/assets/db-fetch-relations.png)
 
 ## Identity Generators for Primary Keys
 
@@ -119,7 +104,9 @@ An identity generator of type “Assigned” will not be managed by the database
 
 Data Value Types define the value of column while performing insert/update operations in Database. This is particularly useful for adding auditing of information about the creation and modification of records.
 
-[![](/learn/assets/db_col_data.png)](/learn/assets/db_col_data.png) There are three types of Data Values:
+[![](/learn/assets/db_col_data.png)](/learn/assets/db_col_data.png)
+
+There are four types of Data Values:
 
 - User Defined
 - Server Defined
@@ -265,8 +252,4 @@ Designation of Virtual Primary Key can be done at the time of Database Import or
 ### Recommendations
 
 This feature should be used with existing databases only, we would not recommend creating a table with no or virtual primary key.
-
-### Virtual Relationships
-
-Similar to Primary Keys, there might arise a situation where you want to enforce referential integrity in your app where none exist in the database. In such cases, Virtual Relations are of help. This feature can be used to establish relations without changing the DB Schema. This will enable you to enforce database level constraints without having to write any scripts or queries.
 
