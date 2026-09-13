@@ -12,7 +12,7 @@ Ensure that the error message returned by the web service server meets the follo
 - It is mandatory that the error message contains error object, _JSON object_, with the errors object, as shown in the example below.
 - _messageKey_ is the key value that should be defined in the i18n file as shown in the steps below.
 - _id_, _message_ and _parameters_ are optional and can be sent for detailed logging of exception.
-
+```js
 {
   "errors": {
     "error": [
@@ -27,7 +27,7 @@ Ensure that the error message returned by the web service server meets the follo
     ]
   }
 }
-
+```
 **Steps**
 
 1. The _messageKey_ sent in the above error format needs to be added in the localization i.e., i18n dialog

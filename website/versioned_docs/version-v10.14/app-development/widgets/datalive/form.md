@@ -57,7 +57,7 @@ Set the alignment of the form. You can choose from the left, center, right, and 
 
 #### Position
 
-Set the position of the input field and label placement as shown in the image above: {label: field}, {field: label}, {label: field below}.
+Set the position of the input field and label placement as shown in the image above: `{label: field}`, `{field: label}`, `{label: field below}`.
 
 #### Layout Style
 

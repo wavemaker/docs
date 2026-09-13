@@ -7,11 +7,11 @@ id: "data-table-actions"
 
 - We will add a Row Action in a Data Table to display an alert message on click.
 - The Action will be a JS function as shown below. Here we have written a function to display an alert dialog. **The name of the function is the action field entry in the custom button created.**
-    
+```js    
     Page.EmployeeTable1_customRowAction = function($event, row) {
         alert('hello');
     };
-    
+```    
 
 <iframe width="708" height="560" src="https://docs.google.com/presentation/d/e/2PACX-1vSQ42MhJM2k-T1w_HxfHAyJ8ox_WrY8QOGnmq45R5L5JyI7iH0xI5jwX4HZOZJj8zZMEP0TDklz_yWY/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
 

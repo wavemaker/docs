@@ -46,13 +46,13 @@ Once a Timer Action is triggered, if it is Page scoped, then the action (and its
 
 1. Call a Variable that fetches the updates from Employee database with the latest after every 30 seconds. [![](/learn/assets/var_timer_props.png)](/learn/assets/var_timer_props.png) [![](/learn/assets/var_timer_event.png)](/learn/assets/var_timer_event.png)
 2. A Variable that gives Facebook-like feeds after a certain timestamp. Assign Javascript to the onTimerFire event and write following logic. Once the Timer Action is triggered, if repeating property is set, then the variable will be invoked after every delay milliseconds.
-    
+```js    
     Page.timerAction1onTimerFire = function(variable, data){
         // set the dynamic input on the variable
         Page.Variables.WebServiceVariabe.setInput('timestamp', Date.now());
         Page.Variables.WebServiceVariabe.invoke();
     };
-    
+```    
      
 
 # Methods
