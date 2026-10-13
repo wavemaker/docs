@@ -22,7 +22,8 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version|Releases Include|What's in it| Release Date|
 |---|---|---|---|
-|**v11.15.4** <p style={{color:"red"}}>*latest*</p> |- [11.15.4](/learn/wavemaker-release-notes/v11-15-4)| WaveMaker 11.15.4 delivers targeted runtime and tooling improvements to strengthen autosave reliability, data handling, and page layout performance. This release also includes key bug fixes and library updates that improve overall stability and developer productivity. | 18 May 2026 |
+|**v11.15.7** <p style={{color:"red"}}>*latest*</p> |- [11.15.7](/learn/wavemaker-release-notes/v11-15-7)| WaveMaker 11.15.7 delivers targeted runtime and tooling improvements to strengthen autosave reliability, data handling, and page layout performance. This release also includes key bug fixes and library updates that improve overall stability and developer productivity. | 13 October 2026 |
+|**v11.15.4** |- [11.15.4](/learn/wavemaker-release-notes/v11-15-4)| WaveMaker 11.15.4 delivers targeted runtime and tooling improvements to strengthen autosave reliability, data handling, and page layout performance. This release also includes key bug fixes and library updates that improve overall stability and developer productivity. | 18 May 2026 |
 |**v11.15.2** |- [11.15.2](/learn/wavemaker-release-notes/v11-15-2)| In this release enhancements focus on improving styling flexibility, widget behavior, and developer control across forms, charts, and error handling. Bug fixes address a wide range of UI inconsistencies, token gaps, and platform-specific issues, resulting in more stable and predictable app behavior across environments. | 20 Apr 2026 |
 |**v11.15.0** |- [11.15.0](/learn/wavemaker-release-notes/v11-15-0)| This release focuses on simplifying configuration with improved profile/property management and a cleaner, more streamlined Studio UI. It also includes autosave improvements, design system updates, and bug fixes to enhance stability and overall developer experience. | 8 Feb 2026 |
 |**v11.14.2** |- [11.14.2](/learn/wavemaker-release-notes/v11-14-2)| This release enhances Wizard widget in React Native and delivers several Studio and React Native bug fixes. | 1 December 2025 |
@@ -100,7 +101,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [WaveMaker 11.15.4](/learn/wavemaker-release-notes/v11-15-4)
+Last updated: [WaveMaker 11.15.7](/learn/wavemaker-release-notes/v11-15-7)
 
 ---
 
