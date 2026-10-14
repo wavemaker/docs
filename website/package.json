@@ -49,5 +49,8 @@
     "react-dom": "^16.8.4",
     "remark-frontmatter": "^4.0.1",
     "url-parse": "^1.5.10"
+  },
+  "overrides": {
+    "@babel/traverse": "7.23.2"
   }
 }
