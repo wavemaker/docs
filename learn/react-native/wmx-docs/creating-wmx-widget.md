@@ -161,3 +161,7 @@ Name | Description | Required |
 ---- |-------------|----------|
 **name** | Style property name (alphanumeric). | Yes|
 **style**| Default style value. | No|
+
+:::tip React Native only
+In the generated app, WaveMaker passes **`root`** and **`text`** to your component, plus any keys you add under the **`styles`** section in `wmx.json` (for example `container`). Apply **`root`** to your widget’s **outermost** view so **Show** in Studio and outer layout behave like built-in widgets. Those custom keys are in addition to `root`; they do not replace it.
+:::
