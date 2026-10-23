@@ -31,7 +31,10 @@ Add the following Script to the button to copy text.
 For text and number widgets, use the following script for button on click event.
 
 ```js
-Page.Widgets.<WidgetName>.$element.find('input').select();
+let widget = Page.Widgets.<WidgetName>;
+let id = widget['data-widget-id'] || widget.widgetId;
+let el = document.querySelector('[widget-id="' + id + '"], [data-widget-id="' + id + '"]');
+el.querySelector('input').select();
 document.execCommand("copy");
 ```
 
@@ -40,7 +43,10 @@ document.execCommand("copy");
 For textarea widget, use the following script for button on click event.
 
 ```js
-Page.Widgets.<WidgetName>.$element.find('textarea').select();
+let widget = Page.Widgets.<WidgetName>;
+let id = widget['data-widget-id'] || widget.widgetId;
+let el = document.querySelector('[widget-id="' + id + '"], [data-widget-id="' + id + '"]');
+el.querySelector('textarea').select();
 document.execCommand("copy");
 ```
 

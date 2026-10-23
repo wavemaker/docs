@@ -108,9 +108,14 @@ Page.Widgets.EmployeeList.getWidgets(widgetName, index);
 //widgetName: name of the widget which we are trying to access [Required]
 //index: zero based index of the list item. [Optional]
 ```
-The widget returned can be manipulated as any other widget using `$element` property.
+The widget returned can be manipulated as any other widget. To access its DOM element, use the `data-widget-id` (or `widgetId`) property of the widget.
 ```
- Page.Widgets.button1.$element.removeClass('btn-primary');
+let widget = Page.Widgets.button1;
+let id = widget['data-widget-id'] || widget.widgetId;
+let el = document.querySelector('[widget-id="' + id + '"], [data-widget-id="' + id + '"]');
+if (el) {
+    el.classList.remove('btn-primary');
+}
 //to remove the button primary class
 ```
 :::note
