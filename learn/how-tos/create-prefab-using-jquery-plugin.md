@@ -96,7 +96,10 @@ Prefab.onPropertyChange = function(key, newVal, oldVal) {
 
 ```js
 function initJStreeView() {
-    var treeViewELe = Prefab.Widgets.treeViewContainer.$element;
+    let widget = Prefab.Widgets.treeViewContainer;
+    let id = widget['data-widget-id'] || widget.widgetId;
+    // get the DOM element of the widget and wrap it for the jQuery plugin
+    let treeViewELe = $(document.querySelector('[widget-id="' + id + '"], [data-widget-id="' + id + '"]'));
     treeViewELe.jstree({
         core: {
             multiple: true,
@@ -106,7 +109,7 @@ function initJStreeView() {
             data: Prefab.treedata
         }
     });
-    treeMapInstance = Prefab.Widgets.treeViewContainer.$element.jstree(true);
+    treeMapInstance = treeViewELe.jstree(true);
     // treeViewELe.on("changed.jstree", function(node, action, selected, event) {
     //     console.log("The selected nodes are:");
     //     console.log(action.selected);
