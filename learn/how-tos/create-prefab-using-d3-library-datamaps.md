@@ -102,7 +102,9 @@ Prefab.onPropertyChange = function(key, newVal, oldVal) {
                     generateBubbles();
 
                 if (Prefab.legend) {
-                    $($('.datamaps-legend')).empty();
+                    document.querySelectorAll('.datamaps-legend').forEach(function(el) {
+                        el.replaceChildren();
+                    });
                     Prefab.map.legend();
                 }
             }
@@ -120,7 +122,9 @@ Prefab.onReady = function() {
 };
 
 function initDataMap() {
-    var mapCtr = Prefab.Widgets.mapContainer.$element[0];
+    let widget = Prefab.Widgets.mapContainer;
+    let id = widget['data-widget-id'] || widget.widgetId;
+    let mapCtr = document.querySelector('[widget-id="' + id + '"], [data-widget-id="' + id + '"]');
     // this method will be triggered post initialization of the prefab.
     if (Prefab.scope === 'world') {
         initWorldMap(mapCtr);
@@ -404,7 +408,9 @@ function resetLabels() {
     Prefab.map.labels({
         'customLabelText': labels
     });
-    $($('.labels')).empty();   
+    document.querySelectorAll('.labels').forEach(function(el) {
+        el.replaceChildren();
+    });
 
 //generates custom labels for countries
 function generateLabels() {

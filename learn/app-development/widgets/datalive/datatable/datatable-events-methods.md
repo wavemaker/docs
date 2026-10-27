@@ -334,19 +334,19 @@ Page.[dataTableName]Beforefilter = function($event, widget, columns) {
 
 | Event | Trigger and JavaScript Usage |
 | --- | --- |
-|**On Data Render** | This event will be called when the data is rendered in the Data Table.   **Note**: This gives access to data displayed on the current page of the Data Table Use Case: You can use this event to add a class to a particular row. |
+|**On Data Render** | This event will be called when the data is rendered in the Data Table.   **Note**: This gives access to data displayed on the current page of the Data Table Use Case: You can use this event to compute a summary of the displayed records, such as the number of admin users on the current page. |
 
 ```js
 Page.[dataTableName]Datarender = function(widget, data) {
         //data: data has the data to be rendered in the current page of data table
 
-        //widget.datagridElement has the data table jquery element
-        widget.datagridElement.find('tr.app-datagrid-row').each(function(index) {
-            //Loop through the rows. Add class admin for users having role as adminrole
-            if (data[index].role === 'adminrole') {
-                $(this).addClass('admin');
-            }
-        });
+        //Count the users having role as adminrole in the current page
+        const adminCount = data.filter(function(row) {
+            return row.role === 'adminrole';
+        }).length;
+
+        //Show the count in a label widget on the page
+        Page.Widgets.adminCountLabel.caption = 'Admin users on this page: ' + adminCount;
     };
 ```
 
