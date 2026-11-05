@@ -30,7 +30,7 @@ The API response needs to be the same as the message in the default language JSO
 
 ### Create Filter Class
 
-1. [Create a custom Java file](https://docs.wavemaker.com/learn/app-development/services/java-services/java-service)  in the **src/main/java** directory and add the below Java code. `Filter` class calls the external APIs and the response from external APIs is sent to the `Filter` class that gets printed in the UI.
+1. [Create a custom Java file](/learn/app-development/services/java-services/java-service)  in the **src/main/java** directory and add the below Java code. `Filter` class calls the external APIs and the response from external APIs is sent to the `Filter` class that gets printed in the UI.
 
 For example, create a file for the `Filter` class named **CustomLocaleFilter.java**
 

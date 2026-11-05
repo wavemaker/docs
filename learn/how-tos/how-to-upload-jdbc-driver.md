@@ -12,7 +12,7 @@ In WaveMaker, various databases like MySQL, Oracle, Microsoft SQL Server, etc., 
 
 JDBC driver is uploaded to allow WaveMaker integration with the necessary database. JDBC driver version details ensure that the driver contains the required classes and methods to maintain the compatibility of the chosen database with WaveMaker studio.
 
-To find the recommended version of the JDBC driver for your database, see [Recommended JDBC Driver Versions for Databases](https://docs.wavemaker.com/learn/app-development/services/database-services/download-jdbc-driver-jar/).
+To find the recommended version of the JDBC driver for your database, see [Recommended JDBC Driver Versions for Databases](/learn/app-development/services/database-services/download-jdbc-driver-jar/).
 
 ## How to Upload JDBC Driver
 
@@ -34,4 +34,4 @@ For example, to upload the JDBC driver for ORACLE DATABASE, find the following s
 
 [![](/learn/assets/jdbc-import-driver.png)](/learn/assets/jdbc-import-driver.png)
 
-5. Upload the Driver Jar and click **Next**. For further configuration details, see [Connect to Database](https://docs.wavemaker.com/learn/jump-start/jump-start-db-essentials/#connect-to-database).
+5. Upload the Driver Jar and click **Next**. For further configuration details, see [Connect to Database](/learn/jump-start/jump-start-db-essentials/#connect-to-database).

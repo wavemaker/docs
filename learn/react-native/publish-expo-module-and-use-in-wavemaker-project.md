@@ -141,7 +141,7 @@ In addition to publishing your module to npm, there are alternative ways to util
 ## Use the Module in WaveMaker Project:
 
 The published plugin can be installed in a few steps in WaveMaker. 
-Please refer to this [page](https://docs.wavemaker.com/learn/react-native/third-party-expo-plugins#expo) on how to install a plugin.
+Please refer to this [page](/learn/react-native/third-party-expo-plugins#expo) on how to install a plugin.
 
 `ExpoFlagSecure` can be leveraged in your WaveMaker app through the following ways:
 

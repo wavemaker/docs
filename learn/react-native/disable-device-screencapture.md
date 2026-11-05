@@ -32,7 +32,7 @@ the ScreenCapture plugin ensures a smooth implementation process.
 
 ### Adding ScreenCapture to your WaveMaker React Native App
 
-ScreenCapture plugin can be installed in few steps in WaveMaker. Please refer to this [page](https://docs.wavemaker.com/learn/react-native/third-party-expo-plugins#expo)
+ScreenCapture plugin can be installed in few steps in WaveMaker. Please refer to this [page](/learn/react-native/third-party-expo-plugins#expo)
 on how to install a plugin.
 
 ## Integrating ScreenCapture Plugin in React Native App

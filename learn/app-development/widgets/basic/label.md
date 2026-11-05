@@ -30,9 +30,9 @@ The Label widget supports simple rich text formatting in captions:
 
 1. Bold: Wrap text in double asterisks: `**Important**` → **Important**
 
-2. Link: Use Markdown-style links: `[WaveMaker Docs](https://docs.wavemaker.com/learn/)` → [WaveMakerDocs](https://docs.wavemaker.com/learn/)
+2. Link: Use Markdown-style links: `[WaveMaker Docs](/learn/)` → [WaveMakerDocs](/learn/)
 
-3. Bold with Link: You can include a link inside bold text: `**Go to [WaveMakerDocs](https://docs.wavemaker.com/learn/) now!**` → Go to [WaveMakerDocs](https://docs.wavemaker.com/learn/) now!
+3. Bold with Link: You can include a link inside bold text: `**Go to [WaveMakerDocs](/learn/) now!**` → Go to [WaveMakerDocs](/learn/) now!
 
 :::note
 - Nesting bold inside a link (e.g., `[some **bold** text](url)`) is not supported.

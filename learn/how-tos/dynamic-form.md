@@ -83,17 +83,17 @@ To configure a Dynamic Form in WaveMaker, you start by creating or importing a s
 
 A Dynamic Form requires metadata to render fields inside it. The metadata can come from an API exposed by a service. You can either create the service for this API in WaveMaker using Java Services or use an existing API that provides metadata for the Form. This API can be directly imported into the WaveMaker project.
 
-To know how to import REST Web Service, see [Import REST Services](https://docs.wavemaker.com/learn/app-development/services/web-services/rest-services#test-rest-service-api).
+To know how to import REST Web Service, see [Import REST Services](/learn/app-development/services/web-services/rest-services#test-rest-service-api).
 
 ### Creating Page
 
-To create a Page, see [Create a Page](https://docs.wavemaker.com/learn/app-development/ui-design/page-creation/). The variable introduced in the following section is defined within this Page.
+To create a Page, see [Create a Page](/learn/app-development/ui-design/page-creation/). The variable introduced in the following section is defined within this Page.
 
 ### Creating Variable
 
 The variable fetches and stores the metadata from the imported API holding the metadata.
 
-1. [Create a variable](https://docs.wavemaker.com/learn/app-development/variables/web-service#how-to-create-a-service-variable) `MetadataVariable`. 
+1. [Create a variable](/learn/app-development/variables/web-service#how-to-create-a-service-variable) `MetadataVariable`. 
 
 The created variable will be used in the **Markup** tab to [bind the metadata with the Form](#binding-variable-with-form).
 
@@ -134,4 +134,4 @@ You can preview the Dynamic Form.
 
 ## Create Business User Form
 
-The metadata can be configured by a Business User (BU) through another Static Form only in cases when BU wants to add or edit fields through WaveMaker. To create a Static Form, see [Creating Form](https://docs.wavemaker.com/learn/app-development/widgets/datalive/form/form-usage-scenarios/).
+The metadata can be configured by a Business User (BU) through another Static Form only in cases when BU wants to add or edit fields through WaveMaker. To create a Static Form, see [Creating Form](/learn/app-development/widgets/datalive/form/form-usage-scenarios/).

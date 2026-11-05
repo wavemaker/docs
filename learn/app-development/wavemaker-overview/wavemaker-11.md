@@ -44,8 +44,8 @@ Note that the Angular 12 update addresses vulnerabilities. Updating to the lates
 
 Expo version upgrade from version 45 to 48 is a major upgrade in WaveMaker Studio. To know more, see
 
-- [WaveMaker 11.2.2](https://docs.wavemaker.com/learn/wavemaker-release-notes/v11-2-2)
-- [WaveMaker 11.3.6](https://docs.wavemaker.com/learn/wavemaker-release-notes/v11-3-6)
+- [WaveMaker 11.2.2](/learn/wavemaker-release-notes/v11-2-2)
+- [WaveMaker 11.3.6](/learn/wavemaker-release-notes/v11-3-6)
 
 ## Features of WaveMaker 11.1: GA
 

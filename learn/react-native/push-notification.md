@@ -36,7 +36,7 @@ For the push notification, you need to integrate Firebase messaging into the Wav
 
 ### Adding Firebase Plugin to WaveMaker App
 
-Firebase plugins can be installed in a few steps in WaveMaker. Refer to this [page](https://docs.wavemaker.com/learn/react-native/third-party-expo-plugins#expo) on how to install a plugin. Additionally, you need to add the `react-native-app-badge` package to the app for the app icon badge count.
+Firebase plugins can be installed in a few steps in WaveMaker. Refer to this [page](/learn/react-native/third-party-expo-plugins#expo) on how to install a plugin. Additionally, you need to add the `react-native-app-badge` package to the app for the app icon badge count.
 
 1. `@react-native-firebase/app` - version: `22.2.1`
 2. `@react-native-firebase/messaging` - version: `22.2.1`

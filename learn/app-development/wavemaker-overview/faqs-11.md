@@ -36,7 +36,7 @@ Yes. WaveMaker 11 is as stable as other releases of Web and Cordova mobile app d
 ### How can we migrate our projects to the 11.x version?
 
 Follow this migration guide: 
-https://docs.wavemaker.com/learn/how-tos/upgrade-guide-wavemaker-10-to-11
+[Upgrade guide: WaveMaker 10 to 11](/learn/how-tos/upgrade-guide-wavemaker-10-to-11)
 
 ### Can multiple developers work on migration?
 

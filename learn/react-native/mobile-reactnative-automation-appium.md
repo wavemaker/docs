@@ -25,7 +25,7 @@ We can generate APK of the WM application by following the options mentioned bel
 1. Export react native zip and perform manual build.
 2. Export react native zip and use appchef
 
-Refer [documentation](https://docs.wavemaker.com/learn/react-native/build-installers) for more details.
+Refer [documentation](/learn/react-native/build-installers) for more details.
 
 ## Choosing locators for WM apps.
 

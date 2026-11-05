@@ -20,7 +20,7 @@ The following are key features of the LocalAuthentication plugin:
 
 ### Adding LocalAuthentication to React Native App
 
-The **LocalAuthentication** plugin can be installed in a few steps in WaveMaker. Please refer to this [page](https://docs.wavemaker.com/learn/react-native/third-party-expo-plugins#expo) on how to install a plugin.
+The **LocalAuthentication** plugin can be installed in a few steps in WaveMaker. Please refer to this [page](/learn/react-native/third-party-expo-plugins#expo) on how to install a plugin.
 
 Once the plugin is added, you'll be seeing something similar to this on your screen.
 

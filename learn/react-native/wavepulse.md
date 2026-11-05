@@ -72,8 +72,8 @@ WaveMaker recommends enabling and using WavePulse only for pre-release builds. *
 
 APK for Android and IPA for iOS can be generated using React Native zip file that is a package of project data. To know the process of generating APK and IPA file, you can either use
 
-- [Mobile Manual Build Process](https://docs.wavemaker.com/learn/react-native/mobile-build-manual)
-- [Build React Native app installers using AppChef](https://docs.wavemaker.com/learn/react-native/build-installers)
+- [Mobile Manual Build Process](/learn/react-native/mobile-build-manual)
+- [Build React Native app installers using AppChef](/learn/react-native/build-installers)
 
 <iframe width="560" height="315" src="https://embed.app.guidde.com/playbooks/4aZwY1FHm872fwGw7h989b"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
 

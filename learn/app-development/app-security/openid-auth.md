@@ -110,4 +110,4 @@ Role Mapping is used to assign you with security roles during login. You are giv
 
 - **Role Attribute**: This field allows you to assign the required role.
 
-**Database**: When you select **Database**, authentication is performed using Open ID and authorization content is retrieved from the database. This allows you to use username and password credentials from Open ID while retrieving role content from the database. For role configuration using database, [see here](https://docs.wavemaker.com/learn/app-development/app-security/authorization/#useronboarding).
+**Database**: When you select **Database**, authentication is performed using Open ID and authorization content is retrieved from the database. This allows you to use username and password credentials from Open ID while retrieving role content from the database. For role configuration using database, [see here](/learn/app-development/app-security/authorization/#useronboarding).
