@@ -9,7 +9,7 @@ AppChef builds app installers, including APK and IPA using a ReactNative zip or 
 
 ## Prerequisite to Build using AppChef
 
-To perform a Build using AppChef, you should have the application React Native zip. WaveMaker provides you an option to export your mobile application to React Native. For more information, see [download Cordova zip](https://docs.wavemaker.com/learn/hybrid-mobile/mobile-build-manual#how-to-export-cordova-zip).
+To perform a Build using AppChef, you should have the application React Native zip. WaveMaker provides you an option to export your mobile application to React Native. For more information, see [download Cordova zip](/learn/hybrid-mobile/mobile-build-manual#how-to-export-cordova-zip).
 
 Go to the Appchef application using the URL below:
 

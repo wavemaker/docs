@@ -18,13 +18,13 @@ Once you have created a Firebase project, you can follow the steps below to inte
 
 ### Adding Crashlytics Plugin to WaveMaker App
 
-Crashlytics plugins can be installed in a few steps in a WaveMaker application. Please refer to this [page](https://docs.wavemaker.com/learn/react-native/third-party-expo-plugins#expo)
+Crashlytics plugins can be installed in a few steps in a WaveMaker application. Please refer to this [page](/learn/react-native/third-party-expo-plugins#expo)
 on how to install the plugin. Also, install the following `npm` packages in your WaveMaker application:
 
 1. react-native-firebase/app
 2. react-native-firebase/crashlytics
 
-Please refer to this [page](https://docs.wavemaker.com/learn/react-native/third-party-expo-plugins#npm) on how to install npm packages to your WaveMaker application.
+Please refer to this [page](/learn/react-native/third-party-expo-plugins#npm) on how to install npm packages to your WaveMaker application.
 
 Once installed, create **firebase** folder under `src/main/webapp/resources` and upload `google-services.json` file to the `src/main/webapp/resources/firebase` in a WaveMaker application.
 

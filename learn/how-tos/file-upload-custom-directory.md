@@ -5,9 +5,9 @@ id: "file-upload-custom-directory"
 
 FileUpload widget enables uploading files to the application. You can now upload the file to a custom folder which provides flexibility to cater to specific requirements. 
 
-As discussed in [FileUpload](https://docs.wavemaker.com/learn/app-development/widgets/form-widgets/file-upload#features), a Java service against the FileUpload widget gets created automatically. You can upload a file to a custom directory by providing the path to the custom folder in the Java service.
+As discussed in [FileUpload](/learn/app-development/widgets/form-widgets/file-upload#features), a Java service against the FileUpload widget gets created automatically. You can upload a file to a custom directory by providing the path to the custom folder in the Java service.
 
-1. Drag and drop the FileUpload widget. To know more, see [FileUpload Basic Usage](https://docs.wavemaker.com/learn/app-development/widgets/form-widgets/file-upload-basic-usage).
+1. Drag and drop the FileUpload widget. To know more, see [FileUpload Basic Usage](/learn/app-development/widgets/form-widgets/file-upload-basic-usage).
 
 2. Go to Java services and inside `getUploadDir` method replace the upload directory path.
 

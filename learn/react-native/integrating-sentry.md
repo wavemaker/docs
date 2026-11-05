@@ -26,7 +26,7 @@ Now, you can follow the steps below to integrate Sentry into a WaveMaker applica
 ### Adding Expo Sentry Plugin to your WaveMaker App​
 - sentry-expo 
 
-Sentry plugins can be installed in a few steps in a WaveMaker application. Please refer to this [page](https://docs.wavemaker.com/learn/react-native/third-party-expo-plugins#expo)
+Sentry plugins can be installed in a few steps in a WaveMaker application. Please refer to this [page](/learn/react-native/third-party-expo-plugins#expo)
 on how to install the plugin.
 
 Once installed,  create `app.json` file and add the following config plugin and upload that `app.json` to `src/main/webapp` in a WaveMaker application.

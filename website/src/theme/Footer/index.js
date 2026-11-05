@@ -44,7 +44,7 @@ export default class Footer extends React.Component {
                   <a href="https://www.wavemaker.com/partner/" target="_blank" >Partners</a>
                 </li>
                 <li>
-                  <a href="https://docs.wavemaker.com/learn/app-development/wavemaker-app-development-faqs/" target="_blank" >FAQs</a>
+                  <a href="/learn/app-development/wavemaker-app-development-faqs/" target="_blank" >FAQs</a>
                 </li>
               </ul>
             </div>

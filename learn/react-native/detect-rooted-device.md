@@ -31,7 +31,7 @@ Checks whether the device has been rooted (Android) or jailbroken (iOS). This is
 
 ### Adding ExpoDevice Plugin to your WaveMaker React Native App
 
-ExpoDevice plugin can be installed in few steps in WaveMaker. Please refer to this [page](https://docs.wavemaker.com/learn/react-native/third-party-expo-plugins#expo)
+ExpoDevice plugin can be installed in few steps in WaveMaker. Please refer to this [page](/learn/react-native/third-party-expo-plugins#expo)
 on how to install a plugin.
 
 ## Integrating ExpoDevice plugin in React Native app

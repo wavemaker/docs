@@ -39,7 +39,7 @@ Before developing a WMX Widget, you need to set up your project locally, so you 
 
 ## 2. Enable Project Sync
 
-To push your local changes to Studio (and pull updates from Studio), you need to set up **[Project Sync](https://docs.wavemaker.com/learn/how-tos/synchronizing-wavemaker-apps-ides-beta/)**.
+To push your local changes to Studio (and pull updates from Studio), you need to set up **[Project Sync](/learn/how-tos/synchronizing-wavemaker-apps-ides-beta/)**.
 
 ### Prerequisites
 

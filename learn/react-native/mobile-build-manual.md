@@ -8,14 +8,14 @@ sidebar_label: "Manual Build"
 To build the mobile app so that it can be listed on the app stores, you can run the build commands provided by the WaveMaker React Native CLI in your local environment. This build process is used when,
 
 - You want to use Continuous Integration and Continuous Deployment (CI/CD) pipeline for building the mobile application.
-- WaveMaker Enterprise Users want to use CLi to build artifacts as they do not have access to [AppChef](https://docs.wavemaker.com/learn/react-native/build-installers).
-- You do not want to use certificates in Appchef to build the artifacts. To know more about certificates in AppChef, see [Build Configuration using AppChef](https://docs.wavemaker.com/learn/hybrid-mobile/mobile-build-appchef#configure-build).
+- WaveMaker Enterprise Users want to use CLi to build artifacts as they do not have access to [AppChef](/learn/react-native/build-installers).
+- You do not want to use certificates in Appchef to build the artifacts. To know more about certificates in AppChef, see [Build Configuration using AppChef](/learn/hybrid-mobile/mobile-build-appchef#configure-build).
 
 :::note
 CI/CD pipeline includes practices and tools used to automate the processes of building, testing, and deploying software applications.
 :::
 
-In general, WaveMaker Studio builds the iOS Package App Store (IPA) and Android Package Kit (APK) files online using our cloud infrastructure namely [AppChef](https://docs.wavemaker.com/learn/react-native/build-installers) and the process outlined in this document is for teams that want to implement a CI/CD pipeline themselves.
+In general, WaveMaker Studio builds the iOS Package App Store (IPA) and Android Package Kit (APK) files online using our cloud infrastructure namely [AppChef](/learn/react-native/build-installers) and the process outlined in this document is for teams that want to implement a CI/CD pipeline themselves.
 
 ## IPA and APK Files
 
@@ -35,7 +35,7 @@ The commands available in [https://github.com/wavemaker/wm-reactnative-cli](http
 
 :::
 
-2. [Export React Native zip](https://docs.wavemaker.com/learn/react-native/export-react-native-zip) from WaveMaker Studio. This zip file helps store the React Native studio project in your local environment and is used to build the IPA or APK files.
+2. [Export React Native zip](/learn/react-native/export-react-native-zip) from WaveMaker Studio. This zip file helps store the React Native studio project in your local environment and is used to build the IPA or APK files.
 
 
 ## Android
