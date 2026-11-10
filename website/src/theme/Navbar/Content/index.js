@@ -11,6 +11,7 @@ import NavbarLogo from '@theme/Navbar/Logo';
 import styles from './styles.module.css';
 import SearchBar from '../../SearchBar';
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import DocsSwitcher from '../DocsSwitcher';
 
 function useNavbarItems() {
   // TODO temporary casting until ThemeConfig type is improved
@@ -43,6 +44,7 @@ function NavbarContentLayout({ left, center, right }) {
         </BrowserOnly>
       </div>
       <div className="navbar__items navbar__items--right">
+        <DocsSwitcher />
         <NavbarItems items={rightItems} />
         <NavbarColorModeToggle className={styles.colorModeToggle} />
         <NavbarItems items={rightEndItems} />
