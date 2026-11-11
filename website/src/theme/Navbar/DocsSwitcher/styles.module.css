@@ -2,7 +2,6 @@
   display: inline-flex;
   align-items: center;
   padding: 3px;
-  margin-right: 0.75rem;
   border: 1px solid var(--wm-navbar-bottom-border, rgba(0, 0, 0, 0.12));
   border-radius: 999px;
   background: rgba(9, 127, 213, 0.08);
@@ -30,13 +29,54 @@ a.option:hover {
   cursor: default;
 }
 
-@media (max-width: 576px) {
-  .switcher {
-    margin-right: 0.25rem;
-    font-size: 0.75rem;
+.short {
+  display: none;
+}
+
+/* Navbar copy: sits before the other right-hand items. */
+.navbar {
+  margin-right: 0.75rem;
+}
+
+/* Drawer copy: only shown inside the mobile menu on phones. */
+.drawer {
+  display: none;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.drawer .option {
+  flex: 1;
+  padding: 10px 12px;
+  text-align: center;
+}
+
+.drawer .full {
+  display: inline;
+}
+
+.drawer .short {
+  display: none;
+}
+
+/* Not enough room next to the search and nav links: use the short labels. */
+@media (max-width: 1400px) {
+  .full {
+    display: none;
   }
 
-  .option {
-    padding: 5px 8px;
+  .short {
+    display: inline;
+  }
+}
+
+/* Phones: the navbar is out of room, so the toggle moves into the menu. */
+@media (max-width: 520px) {
+  .navbar {
+    display: none;
+  }
+
+  .drawer {
+    display: flex;
   }
 }
