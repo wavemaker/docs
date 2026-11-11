@@ -10,6 +10,10 @@ frontend:
      commands:
         - npm run build
   customHeaders:
+    - pattern: '**'
+      headers:
+      - key: 'Cache-Control'
+        value: 'public, max-age=0, s-maxage=0, must-revalidate'
     - pattern: '**/*.js'
       headers:
       - key: 'Cache-Control'
