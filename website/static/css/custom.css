@@ -1926,3 +1926,24 @@ h2.widget-header{
 
 
    
+
+/* Navbar layout: left and right groups size to their content and the search takes the space in between,
+   so a wide right-hand side (links + docs switcher) can no longer spill over the search. */
+.navbar__inner > .navbar__items:first-child,
+.navbar__items--center + .navbar__items--right {
+    flex: 0 0 auto;
+}
+.navbar__items--center {
+    flex: 1 1 0%;
+    justify-content: center;
+    margin: 0;
+}
+.navbar__items--center #header-search {
+    min-width: 0;
+    max-width: 100%;
+}
+.navbar__items--center #header-search .DocSearch-Button {
+    max-width: 100%;
+    min-width: 0;
+    overflow: hidden;
+}
