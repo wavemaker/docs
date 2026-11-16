@@ -21,7 +21,8 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
-| [WaveMaker 11.16.0](/learn/wavemaker-release-notes/v11-16-0) <p style={{color:"red"}}>*latest*</p> | WaveMaker 11.16.0 upgrades generated Angular apps and WaveMaker Studio to Angular 22, and React Native apps to Expo SDK 57. This release also includes enhancements to Data Table, REST API import, and OpenID security configuration, along with several bug fixes across Studio and Web. | 19 October 2026 |
+| [WaveMaker 11.16.2](/learn/wavemaker-release-notes/v11-16-2) <p style={{color:"red"}}>*latest*</p> | WaveMaker 11.16.2 upgrades Node.js to 22.23.4 and npm to 10.9.9 for building Angular and React Native apps. | 23 November 2026 |
+| [WaveMaker 11.16.0](/learn/wavemaker-release-notes/v11-16-0) | WaveMaker 11.16.0 upgrades generated Angular apps and WaveMaker Studio to Angular 22, and React Native apps to Expo SDK 57. This release also includes enhancements to Data Table, REST API import, and OpenID security configuration, along with several bug fixes across Studio and Web. | 19 October 2026 |
 | [WaveMaker 11.15.4](/learn/wavemaker-release-notes/v11-15-4) | WaveMaker 11.15.4 delivers targeted runtime and tooling improvements to strengthen autosave reliability, data handling, and page layout performance. This release also includes key bug fixes and library updates that improve overall stability and developer productivity. | 18 May 2026 |
 | [WaveMaker 11.15.2](/learn/wavemaker-release-notes/v11-15-2)  | In this release enhancements focus on improving styling flexibility, widget behavior, and developer control across forms, charts, and error handling. Bug fixes address a wide range of UI inconsistencies, token gaps, and platform-specific issues, resulting in more stable and predictable app behavior across environments. | 20 Apr 2026 |
 |[WaveMaker 11.15.0](/learn/wavemaker-release-notes/v11-15-0) | WaveMaker 11.15.0 introduces profile management refactoring, a decluttered Studio experience, and autosave improvements. This release also includes enhancements and bug fixes for React Native, along with new token updates and design system features.| 8 Feburary 2026 |
@@ -172,7 +173,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [WaveMaker 11.16.0](/learn/wavemaker-release-notes/v11-16-0)
+Last updated: [WaveMaker 11.16.2](/learn/wavemaker-release-notes/v11-16-2)
 
 ---
 

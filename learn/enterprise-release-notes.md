@@ -22,7 +22,8 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version|Releases Include|What's in it| Release Date|
 |---|---|---|---|
-|**v11.16.0** <p style={{color:"red"}}>*latest*</p> |- [11.16.0](/learn/wavemaker-release-notes/v11-16-0)| WaveMaker 11.16.0 upgrades generated Angular apps and WaveMaker Studio to Angular 22, and React Native apps to Expo SDK 57. This release also includes enhancements to Data Table, REST API import, and OpenID security configuration, along with several bug fixes across Studio and Web. | 19 October 2026 |
+|**v11.16.2** <p style={{color:"red"}}>*latest*</p> |- [11.16.2](/learn/wavemaker-release-notes/v11-16-2)| WaveMaker 11.16.2 upgrades Node.js to 22.23.4 and npm to 10.9.9 for building Angular and React Native apps. | 23 November 2026 |
+|**v11.16.0** |- [11.16.0](/learn/wavemaker-release-notes/v11-16-0)| WaveMaker 11.16.0 upgrades generated Angular apps and WaveMaker Studio to Angular 22, and React Native apps to Expo SDK 57. This release also includes enhancements to Data Table, REST API import, and OpenID security configuration, along with several bug fixes across Studio and Web. | 19 October 2026 |
 |**v11.15.4** |- [11.15.4](/learn/wavemaker-release-notes/v11-15-4)| WaveMaker 11.15.4 delivers targeted runtime and tooling improvements to strengthen autosave reliability, data handling, and page layout performance. This release also includes key bug fixes and library updates that improve overall stability and developer productivity. | 18 May 2026 |
 |**v11.15.2** |- [11.15.2](/learn/wavemaker-release-notes/v11-15-2)| In this release enhancements focus on improving styling flexibility, widget behavior, and developer control across forms, charts, and error handling. Bug fixes address a wide range of UI inconsistencies, token gaps, and platform-specific issues, resulting in more stable and predictable app behavior across environments. | 20 Apr 2026 |
 |**v11.15.0** |- [11.15.0](/learn/wavemaker-release-notes/v11-15-0)| This release focuses on simplifying configuration with improved profile/property management and a cleaner, more streamlined Studio UI. It also includes autosave improvements, design system updates, and bug fixes to enhance stability and overall developer experience. | 8 Feb 2026 |
@@ -101,7 +102,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [WaveMaker 11.16.0](/learn/wavemaker-release-notes/v11-16-0)
+Last updated: [WaveMaker 11.16.2](/learn/wavemaker-release-notes/v11-16-2)
 
 ---
 
@@ -178,9 +179,9 @@ This is the default Tomcat runtime support. Apps can be deployed to any standard
 |Description|	Version|
 |---|---|
 |Java | 21.0.6 |
-|Node| <td className="versiontdbgcolor">22.18.0 -> 22.22.3</td> |
+|Node| <td className="versiontdbgcolor">22.18.0 -> 22.23.4</td> |
 |Maven| 3.9.12 |
-|npm | 10.9.3  |
+|npm | <td className="versiontdbgcolor">10.9.3 -> 10.9.9</td> |
 |Ant| 1.10.11|
 
 For more information about building projects with Maven, see [here](/learn/app-development/deployment/building-with-maven).
@@ -193,9 +194,9 @@ For more information about building projects with Maven, see [here](/learn/app-d
 |Description|	Version|
 |---|---|
 |Java | 17 |
-|Node| <td className="versiontdbgcolor">22.11.0 -> 22.22.3</td> |
+|Node| <td className="versiontdbgcolor">22.11.0 -> 22.23.4</td> |
 |Maven| 3.9.9 |
-|npm | <td className="versiontdbgcolor">10.9.0 -> 10.9.8</td> |
+|npm | <td className="versiontdbgcolor">10.9.0 -> 10.9.9</td> |
 | Android Studio | <td className="versiontdbgcolor">Meerkat 2024.3.1 to Narwhal 4 Feature Drop 2025.1.4 -> Narwhal Feature Drop 2025.1.2 to Rabbit 2 2026.2.2</td> |
 | Xcode | <td className="versiontdbgcolor">16.2 to 26 -> 26.4</td> |
 | SDK Build Tools | 36.0.0|
