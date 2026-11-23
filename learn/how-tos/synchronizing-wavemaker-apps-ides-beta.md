@@ -16,7 +16,15 @@ When working on a project using an IDE, earlier you had to export the project fr
 
 ## Prerequisites
 
-Git has to be installed on your local machine.
+- Git has to be installed on your local machine.
+- An access token for the project you want to sync. An **access token** is a key generated in WaveMaker Studio that lets the Sync Plugin connect to your project without your WaveMaker password or browser session. It is valid for the period you choose (1–90 days). After it expires, generate a new token and enter it when the plugin prompts you. To generate one:
+    1. Open the project in WaveMaker Studio.
+    2. Go to **Project Settings** > **Access Tokens** > **Generate New Token**.
+    3. Choose a validity period (1–90 days) and copy the token value. You will need it when you run the `init` command.
+
+:::note
+The access token is restricted to the project it was created for and to the Sync Plugin operations. It cannot be used to access other projects. If you work on more than one project, generate a separate token for each project.
+:::
 
 ## How to use this plugin
 
@@ -36,16 +44,11 @@ mvn wavemaker-workspace:init
 ```    
 4. Upon running the above Maven command, you will be prompted to enter:
     - the Studio **hostUrl**
-5. Next, you need to enter the Authentication credentials. It can be either
-    - Username & Password which would require:
-        - **user email** - WaveMaker account which has access to the required project and
-        - **password** of the WaveMaker account.
-    - Token - For this, you need to have an active WaveMaker session. Use the URL <https://www.wavemakeronline.com/studio/services/auth/token> to obtain 
-    token value and enter it at the prompt. Do not logout of the WaveMaker session till you complete the synchronization.
+5. Next, enter the **Access Token** generated from **Project Settings** > **Access Tokens** when prompted. Because the plugin does not depend on your browser session, it also works for SSO users, and logging out of Studio does not affect it.
 
-[![](/learn/assets/InitFlow.jpg)](/learn/assets/InitFlow.jpg)
+[![](/learn/assets/InitFlowAccessToken.jpg)](/learn/assets/InitFlowAccessToken.jpg)
 
-6. Once the login is authenticated, you will be presented with a list of projects existing within the Studio Workspace. Choose and enter the Project Number when prompted.
+6. Once the token is validated, the plugin shows the project name and branch linked to the token. Confirm to continue fetching the project.
 7. `Build Success` message will indicate that the project is now available for use from your IDE.
 
 ## How to synchronize your project
@@ -53,7 +56,7 @@ mvn wavemaker-workspace:init
 There are three scenarios wherein you will be dealing with once you start using the IDE.
 
 :::note
-When you log out from WaveMaker Studio, you will be prompted to enter a password using any of the following commands.
+The `pull`, `push`, and `sync` commands reuse the access token saved during `init`. You will be prompted for a new access token only when the saved token has expired or been revoked.
 :::
 
 ### Pull
