@@ -270,7 +270,7 @@ For more information about building projects with Maven, see [here](/learn/app-d
 | Android Studio | <td className="versiontdbgcolor">Meerkat 2024.3.1 to Narwhal 4 Feature Drop 2025.1.4 -> Narwhal Feature Drop 2025.1.2 to Rabbit 2 2026.2.2</td> |
 | Xcode | <td className="versiontdbgcolor">16.2 to 26 -> 26.4</td> |
 | SDK Build Tools | 36.0.0|
-| [wm-reactnative-cli](https://www.npmjs.com/package/@wavemaker/wm-reactnative-cli) | <td className="versiontdbgcolor">1.9.5 -> 1.9.12</td> |
+| [wm-reactnative-cli](https://www.npmjs.com/package/@wavemaker/wm-reactnative-cli) | <td className="versiontdbgcolor">1.9.5 -> 1.9.17</td> |
 | Android Gradle Plugin (AGP) | 8.14.3 |
 
 ### SDK Update
