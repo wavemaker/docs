@@ -18,7 +18,7 @@ Find the how to topics and look for sub-categories under each of the specified c
 ---
 
 ## App Solution
-
+  
 
 *   [How to enable user registration and password encryption](/learn/how-tos/creating-registration-page/)
 *   [How WaveMaker provides support for password encryption](/learn/how-tos/support-password-encryption/)
