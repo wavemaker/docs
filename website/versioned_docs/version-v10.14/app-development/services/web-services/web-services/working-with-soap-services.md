@@ -87,7 +87,7 @@ By default package name is set to the project base package name by the platform
 Name collisions happen while code generation when there is more than one schema definition with the same name that can be from two different external schema files.
 
 Following example depicts the collision of element “root”, because this element is defined twice in two different namespaces:
-
+```xml
 <wsdl:types>
     <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
       xmlns="http://www.xyz.com/schemas/CustService/Services/Schemas/Schema.xsd" 
@@ -116,7 +116,7 @@ Following example depicts the collision of element “root”, because this elem
           </xs:element>
         </xs:schema>
 </wsdl:types>
-
+```
 These collisions can be avoided either by implicit handling by the platform or manual handling using an xjb file.
 
 **Implicit handling of name collisions**
@@ -132,11 +132,11 @@ In manual handling, you have to write an _xjb_ file which defines the customizat
 
 **Writing XJB files**
 
-XJB bindings can be customized by defining separate <jaxws:bindings> element for each namespace, which selects the node with given targetNamespace within the WSDL document.
-
-<jaxws:bindings node=">wsdl:definitions/wsdl:types/xs:schema[@targetNamespace='http://www.xyz.com/schemas/CustService/Services/Schemas/Schema.xsd'"
-
-Inside the <jaxws:bindings> element should define which describes customization of package names/class names in code generation for selected node:
+XJB bindings can be customized by defining separate `<jaxws:bindings>` element for each namespace, which selects the node with given targetNamespace within the WSDL document.
+```xml
+<jaxws:bindings node=">wsdl:definitions/wsdl:types/xs:schema[@targetNamespace='http://www.xyz.com/schemas/CustService/Services/Schemas/Schema.xsd'">
+```
+Inside the `<jaxws:bindings>` element should define which describes customization of package names/class names in code generation for selected node:
 
 1. Suffixing all the classes generated from the schema
     ```

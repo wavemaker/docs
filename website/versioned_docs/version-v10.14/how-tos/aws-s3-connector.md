@@ -19,7 +19,7 @@ This connector exposes api to interact with AWS S3 from WaveMaker application.
 
 ## Step 2: Configure aws-s3-connector properties in profiles
 1. By default externalized connector properties are added in the project profiles [Know More](/learn/connectors/connectors-import#externalizing-connector-properties).
-2. Connector externalized properties are prefixed with **connector.${connectorName}**
+2. Connector externalized properties are prefixed with `connector.${connectorName}`
 
 ```Java
 connector.aws-s3-connector.default.aws.accessKey=

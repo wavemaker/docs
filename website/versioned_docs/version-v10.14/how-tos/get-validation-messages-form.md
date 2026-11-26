@@ -33,7 +33,9 @@ In the following use case, the employee form contains a few required fields. The
 - Step-5: Create another Model variable to design the validation messages.
 - Step-6: On the page created in step-2, drag and drop Button Widget.
 - Step-7: On the button click, select JavaScript from the Events tab properties, and write the following lines of code. This will bind to the Model variable created for the validation messages.
-    - Page.button1Click = function($event, widget) { Page.Variables.validationMessagesInfo.dataSet = Page.Widgets.employeeInfoForm1.validationMessages; };
+    ```js
+    Page.button1Click = function($event, widget) { Page.Variables.validationMessagesInfo.dataSet = Page.Widgets.employeeInfoForm1.validationMessages; };
+    ```
 - Step-8: Drag and drop a Card widget and select a business template.
 - Step-9: Bind the Card widget to the Model variable to show the validation messages. By doing this, the incorrect information gets highlighted when you submit the wrong information.
 - Step-10:

@@ -14,7 +14,7 @@ We will see how List items can be grouped by multiple fields. We will
 We have used the following code snippets:
 
 - JSON file for list of months static variable:
-    
+```json    
      {
       "0": "Jan",
       "1": "Feb",
@@ -29,9 +29,9 @@ We have used the following code snippets:
       "10": "Nov",
       "11": "Dec"
     }
-    
+```    
 - JavaScript for the OnBeforeDatasetReady event:
-    
+```js    
     Page.EmployeeVaronBeforeDatasetReady = function(variable, data) {
         var dataByMonth = _.groupBy(data, function(datum) { 
             //getting the employees grouped by their birth month
@@ -47,7 +47,7 @@ We have used the following code snippets:
         });
         return data;
     };
-    
+```    
 
 <iframe width="708" height="560" src="https://docs.google.com/presentation/d/e/2PACX-1vTCOvaDgtmU4GWwiKhikpdkcNu9yU7m4U5LB55zS7TPGazFcpVYFkOrLuMh8WijzKM5zODgHrM09Y56/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
 
