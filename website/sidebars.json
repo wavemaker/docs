@@ -922,6 +922,7 @@
 				"react-native/custom-app-wrapper",
 				"react-native/ssl-pinning",
 				"react-native/error-handling",
+				"react-native/page-cache",
 				{
 					"type": "category",
 					"label": "Authentication",
