@@ -5,6 +5,9 @@ sidebar_label: "Online Release (WMO)"
 
 ---
 
+
+<h1> test commit </h1>
+
 :::note
 This document applies to WaveMaker Online (WMO) users. If you are an Enterprise user, see [WaveMaker Enterprise Release](/learn/enterprise-release-notes).
 :::
