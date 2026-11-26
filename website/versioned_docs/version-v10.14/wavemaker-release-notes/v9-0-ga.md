@@ -105,7 +105,7 @@ For more information, see [Working with Database Schema](/learn/app-development/
 ### Mobile Enhancements
 
 *   **Offline**: Blob field support has been extended to the offline mode. Now the users can upload files even when offline. Noe the support is for upload not download, that is to view the blob data field content the user has to be online. [#doc](/learn/app-development/services/database-services/working-database-schema/#validators)
-*   Using the _OpenFile_ operation for **Device Variable**, you can allow the user to open files in pdf, document, excel or powerpoint formats. Note for this functionality to work, the device where the app is running should have the app supporting the selected file. [#doc](/learn/hybrid-mobile/device-variables/#operations)
+*   Using the _OpenFile_ operation for **Device Variable**, you can allow the user to open files in pdf, document, excel or powerpoint formats. Note for this functionality to work, the device where the app is running should have the app supporting the selected file. [#doc](/learn/app-development/variables/device-variables/#operations)
 
 ## Bug Fixes
 ---
