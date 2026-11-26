@@ -103,8 +103,8 @@
 										"app-development/services/database-services/data-modelling",
 										"app-development/services/database-services/database-schema-import-modes",
 										"app-development/services/database-services/working-database-schema",
-										"app-development/services/database-services/database-views",
-										"app-development/services/database-services/temporal-support"
+										"app-development/services/database-services/database-views"
+										
 									]
 								},
 								{
