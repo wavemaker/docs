@@ -199,11 +199,11 @@ export default class Index extends React.Component {
               <div className="banner-footer">
                 <span className="banner-footer-msg">
                   <img src="/learn/img/speaker.svg" />
-                  WaveMaker released an update v11.16.0. See what's new.
+                  WaveMaker released an update v11.16.2. See what's new.
                 </span>
                 <a
                   className="banner-footer-action"
-                  href="/learn/wavemaker-release-notes/v11-16-0"
+                  href="/learn/wavemaker-release-notes/v11-16-2"
                 >
                   Read more
                 </a>
