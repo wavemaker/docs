@@ -157,6 +157,27 @@ function DocSearch({ contextualSearch, externalUrlRegex, ...props }) {
           crossOrigin="anonymous"
         />
       </Head>
+      {/* In the navbar's mobile mode the inline field is replaced by this icon, which opens the same search overlay */}
+      {props.elementId === 'header-search' && (
+        <button
+          type="button"
+          className="header-search-icon"
+          aria-label="Search"
+          onClick={onOpen}>
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            aria-hidden="true">
+            <circle cx="11" cy="11" r="7" />
+            <path d="M20 20l-3.5-3.5" />
+          </svg>
+        </button>
+      )}
       <DocSearchModal
         autoFocus={props.autoFocus}
         onClose={onClose}
@@ -174,7 +195,8 @@ function DocSearch({ contextualSearch, externalUrlRegex, ...props }) {
         {...props}
         searchParameters={searchParameters}
         filters={'version:' + useActivePluginAndVersion().activeVersion.name +' OR docusaurus_tag:blog_posts_list'}
-        // placeholder={translations.placeholder}
+        // Same texts as the new docs: the short navbar placeholder while idle, "Search docs" once search is open
+        placeholder={isOpen ? 'Search docs' : props.placeholder}
         // translations={translations.modal}
       />
     </>
@@ -182,5 +204,5 @@ function DocSearch({ contextualSearch, externalUrlRegex, ...props }) {
 }
 export default function SearchBar(props) {
   const { siteConfig } = useDocusaurusContext();
-  return <DocSearch {...siteConfig.themeConfig.algolia} elementId={props.elementId} autoFocus={props.autoFocus} />;
+  return <DocSearch {...siteConfig.themeConfig.algolia} elementId={props.elementId} autoFocus={props.autoFocus} placeholder={props.placeholder} />;
 }

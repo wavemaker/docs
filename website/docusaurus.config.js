@@ -138,11 +138,6 @@ module.exports = {
       },
       "items": [
         {
-          "type": 'docsVersionDropdown',
-          "position": 'right',
-          "className": "version-dropdown"
-        },
-        {
           "to": "blog",
           "label": "Blog",
           "position": "right"
