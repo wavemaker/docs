@@ -119,7 +119,11 @@
   width: 100%;
 }
 
-.chip {
+/* These two toggles are more specific than .trigger (two classes against one), so they win whatever the
+   order of the rules is. Production CSS minifiers merge and reorder rules with identical declarations
+   (e.g. every "display: none"), which silently broke a plain ".chip { display: none }" placed after
+   ".trigger { display: flex }". */
+.trigger.chip {
   display: none;
 }
 
@@ -351,11 +355,11 @@ a.option:focus-visible {
     width: auto;
   }
 
-  .desktop {
+  .trigger.desktop {
     display: none;
   }
 
-  .chip {
+  .trigger.chip {
     display: flex;
     height: 34px;
     padding: 0 8px 0 10px;
