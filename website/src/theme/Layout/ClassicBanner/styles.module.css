@@ -1,0 +1,64 @@
+.banner {
+  /* Above the docs sidebar, which is pulled up under the navbar */
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px var(--ifm-navbar-padding-horizontal, 24px);
+  border-bottom: 1px solid #fde68a;
+  background: #fffbeb;
+  color: #78350f;
+}
+
+.icon {
+  flex: none;
+  color: #b45309;
+}
+
+.link {
+  color: #92400e;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #78350f;
+}
+
+:global([data-theme='dark']) .banner {
+  border-bottom-color: rgba(251, 191, 36, 0.3);
+  background: rgba(251, 191, 36, 0.12);
+  color: #fde68a;
+}
+
+:global([data-theme='dark']) .icon {
+  color: #fbbf24;
+}
+
+:global([data-theme='dark']) .link {
+  color: #fcd34d;
+}
+
+/* Wide screens, pages other than the home page: a slimmer banner without the icon, as in the design */
+@media (min-width: 997px) {
+  .internal {
+    padding-block: 10px;
+  }
+
+  .internal .icon {
+    display: none;
+  }
+}
+
+/* Mobile mode (Docusaurus' own 996px breakpoint): the shorter text, wrapping next to the icon */
+@media (max-width: 996px) {
+  .banner {
+    align-items: flex-start;
+    line-height: 1.45;
+  }
+
+  .pitch {
+    display: none;
+  }
+}

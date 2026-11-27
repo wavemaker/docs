@@ -138,23 +138,6 @@ module.exports = {
       },
       "items": [
         {
-          "type": "doc",
-          "docId": "documentation-reference",
-          "label": "Web",
-          "position": "left"
-        },
-        {
-          "type": "doc",
-          "docId": "react-native/react-native-overview",
-          "label": "Mobile",
-          "position": "left"
-        },
-        {
-          "type": 'docsVersionDropdown',
-          "position": 'right',
-          "className": "version-dropdown"
-        },
-        {
           "to": "blog",
           "label": "Blog",
           "position": "right"

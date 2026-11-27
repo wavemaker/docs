@@ -371,15 +371,15 @@ h3 {
 
 .headerSignIn {
     color: #fff;
-    background-color: #ff6221;
-    border-color: #ff6221;
+    background-color: #c2410c;
+    border-color: #c2410c;
 }
 
 .headerSignIn:hover,
 .headerSignIn:focus {
     color: #fff;
-    background-color: #d3511b;
-    border-color: #d3511b;
+    background-color: #9a3412;
+    border-color: #9a3412;
 }
 
 /* Added Style for Banner */
@@ -1826,9 +1826,6 @@ h2.widget-header{
     .navbar--fixed-top .navbar__items{
         height:100%;
     }
-    .navbar__title.text--truncate{
-        display:none;
-    }
     .navbar-sidebar__back, article .clean-btn{
         color:var(--ifm-menu-color-active);
     }
@@ -1906,17 +1903,6 @@ h2.widget-header{
     }
 } 
 
-@media only screen and (min-width: 996px) and (max-width: 1260px) {
-    .navbar__title.text--truncate{
-        display:none;
-    }
-    #header-search .DocSearch-Button-Keys {
-        display: none;
-    }
-   .navbar__items--center {
-        margin : 0 -100px;
-   }
-} 
 
 @media (max-width: 996px) {
     .banner {
@@ -1927,23 +1913,195 @@ h2.widget-header{
 
    
 
-/* Navbar layout: left and right groups size to their content and the search takes the space in between,
-   so a wide right-hand side (links + docs switcher) can no longer spill over the search. */
-.navbar__inner > .navbar__items:first-child,
-.navbar__items--center + .navbar__items--right {
-    flex: 0 0 auto;
+/* ------------------------------------------------------------------
+   Navbar parity with the new docs (docs.wavemaker.ai)
+   Same structure and rules, so nothing jumps when users switch between the two sites:
+     desktop: logo | docs switcher | search ............ links [color mode] [demo]
+     mobile mode (Docusaurus' own 996px breakpoint): logo, version chip, search ......... [menu]
+   There are no measured breakpoints: the search field and the docs switcher shrink with flex,
+   spacing is fluid, and 996px is the only layout switch.
+   Keep this in sync with src/css/custom.css in the new docs repo.
+------------------------------------------------------------------- */
+:root {
+    --ifm-navbar-height: 66px;
+    --ifm-navbar-padding-vertical: 14px;
+    /* Fluid, like the spacing below: compact on a 360px phone (the smallest we design for), normal from 600px up */
+    --ifm-navbar-padding-horizontal: clamp(12px, 4vw, 24px);
 }
-.navbar__items--center {
-    flex: 1 1 0%;
-    justify-content: center;
+
+.navbar {
+    padding: var(--ifm-navbar-padding-vertical) var(--ifm-navbar-padding-horizontal);
+    --navbar-gap: clamp(4px, calc(4px + (100vw - 360px) / 30), 12px);
+    /* Width of the icon buttons (search, menu); they are always at least 44px tall */
+    --navbar-target: clamp(26px, calc(26px + (100vw - 360px) * 0.075), 44px);
+}
+
+.navbar .navbar__items {
+    gap: var(--navbar-gap);
+}
+
+/* The logo and title keep their width; the search field is what gives way when space runs out */
+.navbar .navbar__brand {
+    gap: 8px;
+    flex-shrink: 0;
+    /* The site's own (larger) title font makes the brand wider than in the new docs; take the difference from the margin */
+    margin-right: 10px;
+}
+
+.navbar .navbar__logo {
     margin: 0;
 }
-.navbar__items--center #header-search {
-    min-width: 0;
-    max-width: 100%;
+
+/* Search sits right after the docs switcher: it grows into the free space (up to 40rem, about 640px) and is
+   the first thing to shrink (high shrink weight), down to the width of its icon */
+.navbar #header-search {
+    flex: 1 10 380px;
+    min-width: 44px;
+    max-width: 40rem;
+    margin: 0 0 0 12px;
 }
-.navbar__items--center #header-search .DocSearch-Button {
-    max-width: 100%;
-    min-width: 0;
+
+/* While idle: a bordered field with the keyboard shortcut as one chip, like the new docs */
+body:not(.search-active) .navbar #header-search .DocSearch-Modal .DocSearch-SearchBar .DocSearch-Form {
+    height: 38px;
+    max-width: none;
+    margin: 0;
     overflow: hidden;
+    border: 1px solid var(--ifm-color-emphasis-300);
+    border-radius: 8px;
+    /* The field is a size container: see the shortcut chip below */
+    container: navbar-search / inline-size;
+}
+
+body:not(.search-active) .navbar #header-search .DocSearch-Modal .DocSearch-SearchBar .DocSearch-Form:hover {
+    border-color: var(--ifm-color-emphasis-500);
+}
+
+.navbar #header-search .DocSearch-Input {
+    min-width: 0;
+}
+
+/* The shortcut chip; when the field is too narrow for it next to the placeholder, it goes */
+.navbar #header-search .DocSearch-Button-Keys {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin: 0;
+    padding: 1px 6px;
+    border: 1px solid var(--ifm-color-emphasis-300);
+    border-radius: 5px;
+}
+
+@container navbar-search (max-width: 15em) {
+    .navbar #header-search .DocSearch-Button-Keys {
+        display: none;
+    }
+}
+
+.navbar .header-search-icon {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    border-radius: 8px;
+    color: var(--ifm-font-color-base);
+    cursor: pointer;
+}
+
+.navbar .header-search-icon:hover {
+    background: var(--ifm-color-emphasis-100);
+}
+
+body.search-active .navbar .header-search-icon {
+    display: none;
+}
+
+/* Demo button: same size as the new docs */
+.navbar__items--right > .headerSignIn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 39px;
+    margin: 0;
+    padding: 0 26px;
+    white-space: nowrap;
+    border-radius: 6px;
+}
+
+/* Mobile menu: the menu button is on the right, so the panel slides in from the right (Infima's default is the left) */
+.navbar-sidebar {
+    left: auto;
+    right: 0;
+    transform: translate3d(100%, 0, 0);
+}
+
+.navbar-sidebar--show .navbar-sidebar {
+    transform: translate3d(0, 0, 0);
+}
+
+/* Below 77rem (about 1232px) there is no room for a usable search field next to the docs switcher and the
+   links (it needs about 200px, as in the design), so the search is a plain icon button that opens the
+   search overlay. This is also the mobile design. */
+@media (max-width: 77rem) {
+    .navbar #header-search {
+        flex: none;
+        min-width: 0;
+        max-width: none;
+    }
+
+    body:not(.search-active) .navbar #header-search .DocSearch-Modal-Container {
+        display: none;
+    }
+
+    .navbar .header-search-icon {
+        display: flex;
+    }
+}
+
+/* Mobile mode (Docusaurus' own 996px breakpoint): logo with the full title, version chip, search icon and menu.
+   The spacing is only as tight as it has to be: it scales smoothly from compact on a 360px phone (the
+   smallest we design for) to the normal desktop spacing and full-size touch targets from 600px up.
+   The links and the demo button are in the mobile menu instead. */
+@media (max-width: 996px) {
+    .navbar__items--right > .headerSignIn {
+        display: none;
+    }
+
+    .navbar .navbar__brand {
+        margin-right: clamp(0px, calc((100vw - 360px) / 15), 16px);
+    }
+
+    /* The search icon sits at the end of the left group, next to the menu button */
+    .navbar #header-search {
+        margin: 0 0 0 auto;
+    }
+
+    .navbar .header-search-icon {
+        width: var(--navbar-target);
+    }
+
+    .navbar .navbar__toggle {
+        width: var(--navbar-target);
+        height: 44px;
+        margin-right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar .navbar__toggle svg {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+/* On the narrowest phones (below the 360px we design for) the logo is enough */
+@media (max-width: 359px) {
+    .navbar .navbar__title {
+        display: none;
+    }
 }

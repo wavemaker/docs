@@ -12,6 +12,7 @@ import styles from './styles.module.css';
 import SearchBar from '../../SearchBar';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 import DocsSwitcher from '../DocsSwitcher';
+import { useDocsSite } from '../DocsSwitcher/site';
 
 function useNavbarItems() {
   // TODO temporary casting until ThemeConfig type is improved
@@ -26,28 +27,35 @@ function NavbarItems({ items }) {
     </>
   );
 }
-function NavbarContentLayout({ left, center, right }) {
+// Same structure as the new docs navbar, so both sites place things in the same spots:
+// logo | docs switcher | search ............ links [color mode] [demo] [menu]
+function NavbarContentLayout({ left }) {
+  const mobileSidebar = useNavbarMobileSidebar();
   const items = useNavbarItems();
   const searchBarItem = items.find((item) => item.type === 'search');
-  const rightItems = items.filter((item) => item.position === 'right' && ((item["className"] && !item["className"].includes('button')) || item["className"] === undefined))
-  const rightEndItems = items.filter((item) => item.position === 'right' && item["className"] && item["className"].includes('button'))
+  // The search field names the docs version it searches, e.g. "Search v11.16 docs"
+  const { current } = useDocsSite();
+  const searchLabel = `Search ${current.label} docs`;
+  const isButton = (item) => item.className && item.className.includes('button');
+  const linkItems = items.filter((item) => item.position === 'right' && !isButton(item));
+  const rightEndItems = items.filter((item) => item.position === 'right' && isButton(item));
   return (
     <div className="navbar__inner">
-      <div className="navbar__items">{left}</div>
-      <div className="navbar__items navbar__items--center">{center}
+      <div className="navbar__items">
+        {left}
         <BrowserOnly>
           {() => !searchBarItem && (document.URL.split('/').slice(-1)[0] != "" || document.URL.split('/').slice(-2)[0] != "learn") && !document.URL.split('/').slice(-1)[0].includes("search") && (
             <div id="header-search">
-              <SearchBar elementId="header-search" autoFocus={false} />
+              <SearchBar elementId="header-search" autoFocus={false} placeholder={searchLabel} />
             </div>
           )}
         </BrowserOnly>
       </div>
       <div className="navbar__items navbar__items--right">
-        <DocsSwitcher />
-        <NavbarItems items={rightItems} />
+        <NavbarItems items={linkItems} />
         <NavbarColorModeToggle className={styles.colorModeToggle} />
         <NavbarItems items={rightEndItems} />
+        {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
       </div>
     </div>
   );
@@ -55,22 +63,15 @@ function NavbarContentLayout({ left, center, right }) {
 export default function NavbarContent() {
   const mobileSidebar = useNavbarMobileSidebar();
   const items = useNavbarItems();
-  const [leftItems, rightItems] = splitNavbarItems(items);
+  const [leftItems] = splitNavbarItems(items);
   return (
     <NavbarContentLayout
       left={
         // TODO stop hardcoding items?
         <>
-          {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
           <NavbarLogo />
+          <DocsSwitcher />
           <NavbarItems items={leftItems} />
-        </>
-      }
-      right={
-        // TODO stop hardcoding items?
-        // Ask the user to add the respective navbar items => more flexible
-        <>
-          <NavbarItems items={rightItems} />
         </>
       }
     />

@@ -1,82 +1,380 @@
-.switcher {
-  display: inline-flex;
+/* Docs version switcher. Same file on both docs sites (ecosystem/docs and oldDocs/docs/website).
+   Font family, size and weight are inherited from each site; only relative sizes are used. */
+
+/* Colours. Light mode uses Infima's neutral palette. In dark mode both sites have a navy page, so the
+   surfaces, borders and text tints are derived from the site's own background and text colours: the
+   switcher then follows each site's dark theme instead of showing Infima's neutral greys. */
+:global(:root) {
+  --docs-switcher-surface: var(--ifm-background-surface-color);
+  --docs-switcher-fill: var(--ifm-color-emphasis-100);
+  --docs-switcher-border: var(--ifm-color-emphasis-300);
+  --docs-switcher-border-hover: var(--ifm-color-emphasis-500);
+  --docs-switcher-divider: var(--ifm-color-emphasis-200);
+  --docs-switcher-muted: var(--ifm-color-emphasis-700);
+  --docs-switcher-hover: var(--ifm-color-emphasis-100);
+  --docs-switcher-badge: var(--ifm-color-emphasis-200);
+  --docs-switcher-badge-text: var(--ifm-color-emphasis-800);
+  --docs-switcher-current: color-mix(
+    in srgb,
+    var(--ifm-color-primary) 10%,
+    transparent
+  );
+  --docs-switcher-shadow-color: rgba(17, 24, 39, 0.16);
+  --docs-switcher-backdrop: rgba(17, 24, 39, 0.45);
+}
+
+:global([data-theme='dark']) {
+  --docs-switcher-surface: color-mix(
+    in srgb,
+    var(--ifm-background-color) 92%,
+    white
+  );
+  --docs-switcher-fill: color-mix(
+    in srgb,
+    var(--ifm-background-color) 94%,
+    white
+  );
+  --docs-switcher-border: color-mix(
+    in srgb,
+    var(--ifm-font-color-base) 22%,
+    transparent
+  );
+  --docs-switcher-border-hover: color-mix(
+    in srgb,
+    var(--ifm-font-color-base) 42%,
+    transparent
+  );
+  --docs-switcher-divider: color-mix(
+    in srgb,
+    var(--ifm-font-color-base) 12%,
+    transparent
+  );
+  --docs-switcher-muted: color-mix(
+    in srgb,
+    var(--ifm-font-color-base) 68%,
+    transparent
+  );
+  --docs-switcher-hover: color-mix(
+    in srgb,
+    var(--ifm-font-color-base) 8%,
+    transparent
+  );
+  --docs-switcher-badge: color-mix(
+    in srgb,
+    var(--ifm-font-color-base) 14%,
+    transparent
+  );
+  --docs-switcher-badge-text: var(--ifm-font-color-base);
+  --docs-switcher-current: color-mix(
+    in srgb,
+    var(--ifm-color-primary) 22%,
+    transparent
+  );
+  --docs-switcher-shadow-color: rgba(0, 0, 0, 0.45);
+  --docs-switcher-backdrop: rgba(0, 0, 0, 0.6);
+}
+.root {
+  position: relative;
+  display: inline-block;
+  /* A fixed width, the same on both docs sites: it never shrinks (the search field is what gives way) */
+  flex: none;
+  width: 13rem;
+}
+
+/* Thin line between the logo and the switcher. */
+.divider {
+  flex: none;
+  width: 1px;
+  height: 24px;
+  background: var(--docs-switcher-border);
+}
+
+.trigger {
+  display: flex;
   align-items: center;
-  padding: 3px;
-  border: 1px solid var(--wm-navbar-bottom-border, rgba(0, 0, 0, 0.12));
-  border-radius: 999px;
-  background: rgba(9, 127, 213, 0.08);
-  font-size: 0.8125rem;
-  font-weight: 500;
+  gap: 8px;
+  box-sizing: border-box;
+  height: 36px;
+  padding: 0 10px 0 12px;
+  border: 1px solid var(--docs-switcher-border);
+  border-radius: 8px;
+  background: var(--docs-switcher-fill);
+  color: var(--ifm-font-color-base);
+  font: inherit;
   line-height: 1;
   white-space: nowrap;
+  cursor: pointer;
+}
+
+.trigger:hover {
+  border-color: var(--docs-switcher-border-hover);
+}
+
+.trigger:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+.desktop.trigger {
+  width: 100%;
+}
+
+/* These two toggles are more specific than .trigger (two classes against one), so they win whatever the
+   order of the rules is. Production CSS minifiers merge and reorder rules with identical declarations
+   (e.g. every "display: none"), which silently broke a plain ".chip { display: none }" placed after
+   ".trigger { display: flex }". */
+.trigger.chip {
+  display: none;
+}
+
+.dot {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.dotAi {
+  background: #6d28d9;
+}
+
+.dotClassic {
+  background: #b45309;
+}
+
+:global([data-theme='dark']) .dotAi {
+  background: #a78bfa;
+}
+
+:global([data-theme='dark']) .dotClassic {
+  background: #fbbf24;
+}
+
+.badge {
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: var(--docs-switcher-badge);
+  color: var(--docs-switcher-badge-text);
+  font-size: 0.85em;
+}
+
+.chevron {
+  display: flex;
+  margin-left: auto;
+  color: var(--docs-switcher-muted);
+  transition: transform 0.15s ease;
+}
+
+.open .chevron {
+  transform: rotate(180deg);
+}
+
+.panel {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  z-index: 200;
+  width: 360px;
+  padding: 8px;
+  border: 1px solid var(--docs-switcher-border);
+  border-radius: 12px;
+  background: var(--docs-switcher-surface);
+  box-shadow: 0 12px 32px var(--docs-switcher-shadow-color);
+  /* The sites' body line-height (1.65) is much looser than the design's tight lines */
+  line-height: 1.25;
+}
+
+.group + .group::before {
+  content: '';
+  display: block;
+  height: 1px;
+  margin: 8px 4px;
+  background: var(--docs-switcher-divider);
+}
+
+.groupTitle {
+  padding: 6px 12px;
+  color: var(--docs-switcher-muted);
+  font-size: 0.78em;
+  letter-spacing: 0.06em;
+  line-height: 1.2;
+}
+
+/* The first label has a little more room above it in the dropdown */
+.panel .group:first-child .groupTitle {
+  padding-top: 10px;
 }
 
 .option {
-  padding: 6px 12px;
-  border-radius: 999px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
   color: var(--ifm-font-color-base);
   text-decoration: none;
 }
 
-a.option:hover {
-  color: var(--ifm-color-primary);
+a.option:hover,
+a.option:focus-visible {
+  background: var(--docs-switcher-hover);
+  color: var(--ifm-font-color-base);
   text-decoration: none;
 }
 
-.active {
-  background: var(--ifm-color-primary);
-  color: #fff;
-  cursor: default;
+.optionCurrent {
+  background: var(--docs-switcher-current);
 }
 
-.short {
-  display: none;
+.option .dot {
+  margin-top: 0.45em;
 }
 
-/* Navbar copy: sits before the other right-hand items. */
-.navbar {
-  margin-right: 0.75rem;
-}
-
-/* Drawer copy: only shown inside the mobile menu on phones. */
-.drawer {
-  display: none;
-  width: 100%;
-  margin-bottom: 0.5rem;
-}
-
-.drawer .option {
+.optionText {
+  display: flex;
   flex: 1;
-  padding: 10px 12px;
-  text-align: center;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
 }
 
-.drawer .full {
-  display: inline;
+.tag {
+  margin-left: 6px;
+  color: var(--ifm-color-primary);
+  font-size: 0.85em;
 }
 
-.drawer .short {
+.optionDescription {
+  color: var(--docs-switcher-muted);
+  font-size: 0.92em;
+}
+
+.check {
+  display: flex;
+  color: var(--ifm-color-primary);
+}
+
+.external {
+  display: flex;
+  margin-top: 2px;
+  color: var(--docs-switcher-muted);
+}
+
+/* Bottom sheet (phones) */
+.sheetRoot {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+}
+
+.backdrop {
+  position: absolute;
+  inset: 0;
+  background: var(--docs-switcher-backdrop);
+}
+
+.sheet {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 10px 16px 28px;
+  border-radius: 20px 20px 0 0;
+  background: var(--docs-switcher-surface);
+  color: var(--ifm-font-color-base);
+  box-shadow: 0 -8px 32px var(--docs-switcher-shadow-color);
+  line-height: 1.25;
+}
+
+.handle {
+  width: 40px;
+  height: 4px;
+  margin: 0 auto 14px;
+  border-radius: 2px;
+  background: var(--docs-switcher-border);
+}
+
+.sheetHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4px 8px;
+}
+
+.sheetClose {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-right: -10px;
+  border: 0;
+  background: transparent;
+  color: var(--docs-switcher-muted);
+  cursor: pointer;
+}
+
+.sheet .option {
+  align-items: center;
+  min-height: 64px;
+  box-sizing: border-box;
+  border: 1px solid var(--docs-switcher-divider);
+}
+
+.sheet .optionCurrent {
+  border-color: color-mix(in srgb, var(--ifm-color-primary) 35%, transparent);
+}
+
+.sheet .groupTitle {
+  padding-inline: 4px;
+}
+
+/* In the sheet the groups are separated by space, not by a line */
+.sheet .group + .group::before {
   display: none;
 }
 
-/* Not enough room next to the search and nav links: use the short labels. */
-@media (max-width: 1400px) {
-  .full {
+.sheet .group + .group .groupTitle {
+  padding-top: 18px;
+}
+
+.sheet .option + .option {
+  margin-top: 8px;
+}
+
+.sheet .option .dot {
+  margin-top: 0;
+}
+
+/* Below 67rem (about 1072px) the full name no longer fits next to the links: the small chip takes over
+   (it is also the mobile design). */
+@media (max-width: 67rem) {
+  .root {
+    width: auto;
+  }
+
+  .trigger.desktop {
     display: none;
   }
 
-  .short {
-    display: inline;
+  .trigger.chip {
+    display: flex;
+    height: 34px;
+    padding: 0 8px 0 10px;
+    gap: 6px;
+  }
+
+  .chip .dot {
+    width: 7px;
+    height: 7px;
   }
 }
 
-/* Phones: the navbar is out of room, so the toggle moves into the menu. */
-@media (max-width: 520px) {
-  .navbar {
+/* Mobile mode (Docusaurus' own 996px breakpoint): no divider after the logo */
+@media (max-width: 996px) {
+  .divider {
     display: none;
-  }
-
-  .drawer {
-    display: flex;
   }
 }
